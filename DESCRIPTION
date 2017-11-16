@@ -1,0 +1,11 @@
+Package: submarines
+Title: Funs and Tools for subs simulation
+Version: 0.0.0.9000
+Authors@R: person("Aidan", "Morrison", email = "aidan@trendlock.com.au", role = c("aut", "cre"))
+Description: Funs and Tools for subs simulation
+Depends: tidyverse
+License: MIT
+Encoding: UTF-8
+LazyData: true
+Suggests: testthat
+RoxygenNote: 6.0.1
