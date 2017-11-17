@@ -7,13 +7,16 @@ library(shiny)
 
 ui <- fluidPage(
   theme = shinytheme("flatly"),
+
+
   titlePanel("shinydrawr no reveal"),
   hr(),
   fluidRow(
     column(width = 8,
            shinydrawrUI("outbreak_stats")),
-    column(width = 3, offset = 1,
-           h2("Drawn values:"), tableOutput("displayDrawn"))
+    fluidRow(
+      column(8, plotOutput("new_plot"))
+    )
   )
 )
 
@@ -21,19 +24,18 @@ ui <- fluidPage(
 server <- function(input, output) {
 
 
-  cutoff <- 2
 
 
-  df <- submarines::df2 %>%
-    mutate(eff.prop = ifelse(speed > cutoff, NA, eff.prop))
+
+  df <- submarines::knots_df
 
   #server side call of the drawr module
   drawChart <- callModule(
     shinydrawr,
     "outbreak_stats",
     data = df,
-    draw_start = cutoff,
-    x_key = "speed",
+    draw_start = 0,
+    x_key = "knots",
     y_key = "eff.prop",
     y_max = 1,
     y_min = 0
@@ -44,17 +46,29 @@ server <- function(input, output) {
 
   #logic for what happens after a user has drawn their values. Note this will fire on editing again too.
   observeEvent(drawChart(), {
+
+    in_df <- submarines::knots_df
+
     drawnValues <- drawChart()
 
     message("drawnValues")
     print(drawnValues)
+    print(length(drawnValues))
+
+    drawnValues <- c(drawnValues, last(drawnValues))
+
+    drawn_data <- in_df %>%
+      mutate(eff.prop = drawnValues)
 
 
-    drawn_data <- tibble(drawn = drawnValues) %>%
-      mutate(row.id = row_number()) %>%
-      select(row.id, drawn)
 
-    output$displayDrawn <- renderTable(drawn_data)
+    output$new_plot <- renderPlot({
+
+      ggplot(drawn_data, aes(x = knots, y = eff.prop)) +
+        geom_line()
+
+    })
+
   })
 
 }

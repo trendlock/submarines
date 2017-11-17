@@ -1,6 +1,11 @@
 
 
-df3 <- tibble(ran.vbl = runif(50)) %>%
-  mutate(row.id = row_number())
-devtools::use_data(df3, overwrite = T)
 
+
+
+knots_df <- tibble(
+  knots = seq(1, 20, 0.25),
+  eff.prop = NA
+)
+
+devtools::use_data(knots_df, overwrite = T)

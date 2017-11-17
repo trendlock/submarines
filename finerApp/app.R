@@ -21,12 +21,10 @@ ui <- fluidPage(
 server <- function(input, output) {
 
 
-  cutoff <- 2
+  cutoff <- 0
 
 
-  df <- submarines::df3 %>%
-    mutate(ran.vbl = ifelse(row.id > cutoff, NA, ran.vbl))
-
+  df <- submarines::knots_df
   #server side call of the drawr module
   drawChart <- callModule(
     shinydrawr,
