@@ -24,8 +24,8 @@ server <- function(input, output) {
   cutoff <- 2
 
 
-  df <- submarines::df2 %>%
-    mutate(eff.prop = ifelse(speed > cutoff, NA, eff.prop))
+  df <- submarines::df3 %>%
+    mutate(ran.vbl = ifelse(row.id > cutoff, NA, ran.vbl))
 
   #server side call of the drawr module
   drawChart <- callModule(
@@ -33,8 +33,8 @@ server <- function(input, output) {
     "outbreak_stats",
     data = df,
     draw_start = cutoff,
-    x_key = "speed",
-    y_key = "eff.prop",
+    x_key = "row.id",
+    y_key = "ran.vbl",
     y_max = 1,
     y_min = 0
   )

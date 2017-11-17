@@ -1,9 +1,11 @@
-#devtools::install_github("nstrayer/shinysense")
+# A small demo app for the shinydrawr function
+#
+# devtools::install_github("nstrayer/shinysense")
 library(shiny)
 library(shinythemes)
 library(shinysense)
 library(tidyverse)
-library(shiny)
+
 
 ui <- fluidPage(
   theme = shinytheme("flatly"),
@@ -19,45 +21,41 @@ ui <- fluidPage(
 
 
 server <- function(input, output) {
+  random_data <- data_frame(time = 1:30, metric = time * sin(time / 6) + rnorm(30)) %>%
+    mutate(metric = ifelse(time > 20, NA, metric))
 
-
-  cutoff <- 2
-
-
-  df <- submarines::df2 %>%
-    mutate(eff.prop = ifelse(speed > cutoff, NA, eff.prop))
-
+  # random_data$metric[c(3,4,5)] = NA
+  cutoff <- 20
   #server side call of the drawr module
   drawChart <- callModule(
     shinydrawr,
     "outbreak_stats",
-    data = df,
+    data = random_data,
     draw_start = cutoff,
-    x_key = "speed",
-    y_key = "eff.prop",
-    y_max = 1,
-    y_min = 0
+    x_key = "time",
+    y_key = "metric",
+    y_max = 20,
+    y_min = -50
   )
-
-
-
 
   #logic for what happens after a user has drawn their values. Note this will fire on editing again too.
   observeEvent(drawChart(), {
-    drawnValues <- drawChart()
+    drawnValues = drawChart()
 
     message("drawnValues")
     print(drawnValues)
 
+    drawn_data <- random_data %>%
+      filter(time >= cutoff) %>%
+      mutate(drawn = drawnValues)
 
-    drawn_data <- tibble(drawn = drawnValues) %>%
-      mutate(row.id = row_number()) %>%
-      select(row.id, drawn)
+    message("drawn_data")
+    print(drawn_data)
 
     output$displayDrawn <- renderTable(drawn_data)
   })
 
 }
 
-shinyApp(ui = ui, server = server)
 # Run the application
+shinyApp(ui = ui, server = server)
