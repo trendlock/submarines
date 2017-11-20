@@ -1,53 +1,81 @@
-#devtools::install_github("nstrayer/shinysense")
+
 library(shiny)
-library(shinythemes)
-library(shinysense)
 library(tidyverse)
-library(shiny)
+library(shiny.semantic)
+library(shinythemes)
+
+#devtools::install_github("nstrayer/shinysense")
+library(shinysense)
 
 ui <- fluidPage(
-  theme = shinytheme("flatly"),
+  theme = shinytheme("united"),
+
+
   titlePanel("shinydrawr no reveal"),
   hr(),
   fluidRow(
     column(width = 8,
            shinydrawrUI("outbreak_stats")),
-    column(width = 3, offset = 1,
-           h2("Drawn values:"), tableOutput("displayDrawn"))
+    fluidRow(
+      column(8, plotOutput("new_plot"))
+    )
   )
 )
 
 
 server <- function(input, output) {
-  random_data <- data_frame(time = 1:30, metric = time * sin(time / 6) + rnorm(30)) %>%
-    mutate(metric = ifelse(time > 20, NA, metric))
 
-  # random_data$metric[c(3,4,5)] = NA
-  cutoff <- 20
+
+
+
+
+  df <- submarines::knots_df
+
   #server side call of the drawr module
   drawChart <- callModule(
     shinydrawr,
     "outbreak_stats",
-    data = random_data,
-    draw_start = cutoff,
-    x_key = "time",
-    y_key = "metric",
-    y_max = 20,
-    y_min = -50
+    data = df,
+    draw_start = 0,
+    x_key = "knots",
+    y_key = "eff.prop",
+    y_max = 1,
+    y_min = 0
   )
+
+
+
 
   #logic for what happens after a user has drawn their values. Note this will fire on editing again too.
   observeEvent(drawChart(), {
-    drawnValues = drawChart()
 
-    drawn_data <- random_data %>%
-      filter(time >= cutoff) %>%
-      mutate(drawn = drawnValues)
+    in_df <- submarines::knots_df
 
-    output$displayDrawn <- renderTable(drawn_data)
+    drawnValues <- drawChart()
+
+    message("drawnValues")
+    print(drawnValues)
+    print(length(drawnValues))
+
+    drawnValues <- c(drawnValues, last(drawnValues))
+
+    drawn_data <- in_df %>%
+      mutate(eff.prop = drawnValues)
+
+
+
+    output$new_plot <- renderPlot({
+
+      ggplot(drawn_data, aes(x = knots, y = eff.prop)) +
+        geom_line()
+
+    })
+
   })
 
 }
 
 shinyApp(ui = ui, server = server)
-# Run the application
+
+
+
