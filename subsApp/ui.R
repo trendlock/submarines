@@ -1,7 +1,8 @@
 library(shiny)
 library(tidyverse)
-library(leaflet)
-library(plotly)
+# library(leaflet)
+# library(plotly)
+
 library(lubridate)
 library(shiny.semantic)
 
@@ -15,69 +16,135 @@ library(submarines)
 shinyUI(
   navbarPage(
     theme = shinytheme("united"),
-    title = "subsApp",
+    title = "App Title",
+
 
     # Tab 1 ====
     tabPanel(
       title = "First Tab Title",
 
-
-      # CSS for progress bar ====
-      tags$head(
-        tags$style(HTML("
-                        .progress-striped .bar {
-                        background-color: #149bdf;
-                        background-image: -webkit-gradient(linear, 0 100%, 100% 0, color-stop(0.25, rgba(255, 255, 255, 0.6)), color-stop(0.25, transparent), color-stop(0.5, transparent), color-stop(0.5, rgba(255, 255, 255, 0.6)), color-stop(0.75, rgba(255, 255, 255, 0.6)), color-stop(0.75, transparent), to(transparent));
-                        background-image: -webkit-linear-gradient(45deg, rgba(255, 255, 255, 0.6) 25%, transparent 25%, transparent 50%, rgba(255, 255, 255, 0.6) 50%, rgba(255, 255, 255, 0.6) 75%, transparent 75%, transparent);
-                        background-image: -moz-linear-gradient(45deg, rgba(255, 255, 255, 0.6) 25%, transparent 25%, transparent 50%, rgba(255, 255, 255, 0.6) 50%, rgba(255, 255, 255, 0.6) 75%, transparent 75%, transparent);
-                        background-image: -o-linear-gradient(45deg, rgba(255, 255, 255, 0.6) 25%, transparent 25%, transparent 50%, rgba(255, 255, 255, 0.6) 50%, rgba(255, 255, 255, 0.6) 75%, transparent 75%, transparent);
-                        background-image: linear-gradient(45deg, rgba(255, 255, 255, 0.6) 25%, transparent 25%, transparent 50%, rgba(255, 255, 255, 0.6) 50%, rgba(255, 255, 255, 0.6) 75%, transparent 75%, transparent);
-                        -webkit-background-size: 40px 40px;
-                        -moz-background-size: 40px 40px;
-                        -o-background-size: 40px 40px;
-                        background-size: 40px 40px;
-                        }")),
-            tags$style(type = 'text/css', "footer{position: absolute; bottom:5%; padding:5px;}")),
-
-
-      fluidRow(
+    fluidPage(
+      splitLayout(
+        #tags$style("body {background-color: #ddd9c5;}"),
 
         # Main Subs Plot ====
-        column(6, shinydrawrUI("outbreak_stats")),
-        column(6,
-               h3("Assumptions"),
-               semanticPage(
-                 fluidRow(
-                   column(4,
-                          # Hotel Load slider ====
-                          div(class = "ui card",
-                              div(class = "content",
-                                  div(class = "right floated meta", "Other info"),
-                                  uiicon("settings"),
-                                  "Hotel Load"),
-                              div(class = "content",
-                                  sliderInput("hotel_load", "Hotel Load", 75, 300, 500),
-                                  textOutput("cor_finder_day_text"),
-                                  uiOutput("hide_events")),
-                              div(class = "image",
-                                  plotOutput("cor_finder_day_plot0")))),
-                   column(4,
+          verticalLayout(
 
-                             # Hotel Load Match ====
-                             div(class = "ui card",
-                                 div(class = "content",
-                                     div(class = "right floated meta", "Other info"),
-                                     uiicon("settings"),
-                                     "Hotel Load"),
-                                 div(class = "content",
-                                     actionButton("go_but", "Select"),
-                                     actionButton("HL_jet_but", "Jet"), actionButton("HL_prop_but", "Prop"),
-                                     textOutput("cor_finder_day_text"),
-                                     uiOutput("hide_events")),
-                                 div(class = "image",
-                                     plotOutput("cor_finder_day_plot0"))))
-                 )
-                )))
-               )
-      )
+                          plotlyOutput("new_plot"),
+                          shinydrawrUI("outbreak_stats")
+
+            ),
+
+          # Assumptions and params ====
+
+          fluidPage(
+            semanticPage(
+
+              fluidRow(
+                br(),
+                div(class = "ui horizontal divider", uiicon("settings"), "Assumptions"),
+                br(),
+                column(4,
+                       # Hotel Load slider ====
+                       div(class = "ui card",
+                           div(class = "content",
+                               div(class = "right floated meta", "(kW)"),
+                               uiicon("settings"),
+                               "Hotel Load"),
+                           div(class = "content",
+                               sliderInput("hotel_load", NULL, 75, 300, 200, post = " kW")),
+                           br(), br(), br(), br())),
+                column(4,
+                       # Onborded Batt  ====
+                       div(class = "ui card",
+                           div(class = "content",
+                               div(class = "right floated meta", "(Tonnes)"),
+                               uiicon("settings"),
+                               "Batteries"),
+                           div(class = "content",
+                               sliderInput("onboarded_batt", "(Onboarded)", 100, 700, 500, post = " Tonnes")),
+                           br(), br(), br())),
+                column(4,
+                       # Hotel Load slider ====
+                       div(class = "ui card",
+                           div(class = "content",
+                               div(class = "right floated meta", " "),
+                               uiicon("settings"),
+                               "Battery Energy Density"),
+                           div(class = "content",
+                               sliderInput("batt_energy_MJ_kg", NULL, 0.08, 0.8, 0.46, step = 0.02, post = " MJ/kg"),
+                               sliderInput("batt_energy_Wh/kg", NULL, 22.2, 222, 124, post = " Wh/kg"))))),
+              br(),
+              fluidRow(
+                div(class = "ui horizontal divider", uiicon("settings"), "Power Reference Point"),
+                br(),
+                column(4,
+                       # Hotel Load Match ====
+                       div(class = "ui card",
+                           div(class = "content",
+                               div(class = "right floated meta", "(kts)"),
+                               uiicon("settings"),
+                               "Hotel Match"),
+                           div(class = "content",
+                               actionButton("HL_jet_but", "Jet"),
+                               actionButton("HL_prop_but", "Prop"),
+                               br(),br(),
+                               HTML("<p>Choose speed at which</p>"),
+                               HTML("<p>Hotel Load = Power Drawn</p>"),
+                               HTML("<p>by propulsion systems:</p>"),
+                               br(),
+                               sliderInput("speed", NULL, 0.5, 7, 5, step = 0.5, post = " kts")),
+                           br(), br(), br(), br()
+                       )),
+                column(4,
+                       # Top Speed + Power Match ====
+                       div(class = "ui card",
+                           div(class = "content",
+                               div(class = "right floated meta", " "),
+                               uiicon("settings"),
+                               "Top Speed + Power"),
+                           div(class = "content",
+                               actionButton("TSP_jet_but", "Jet"),
+                               actionButton("TSP_prop_but", "Prop"),
+                               br(), br(),
+                               HTML("<p>Choose max power of</p>"),
+                               HTML("<p>main motor:</p>"),
+                               br(),
+                               sliderInput("max_power", NULL, 5, 9, 7, post = " MW"),
+                               HTML("<p>Choose Top Speed attained:</p>"),
+                               sliderInput("top_speed", NULL, 16, 24, 20, post = " kts")))),
+                column(4,
+                       # Other known reference ====
+                       div(class = "ui card",
+                           div(class = "content",
+                               uiicon("settings"),
+                               "Other Reference"),
+                           div(class = "content",
+                               actionButton("OKR_jet_but", "Jet"),
+                               actionButton("OKR_prop_but", "Prop"),
+                               br(),br(),
+                               HTML("<p>Choose a known power</p>"),
+                               HTML("<p>(propulsion) and speed</p>"),
+                               HTML("<p>match:</p>"),
+                               br(),
+                               sliderInput("OKR_power", NULL, 50, 5000, 500, post = " kW"),
+                               sliderInput("OKR_speed", NULL, 0.5, 18, 10, post = " kts")))),
+                column(3, br()))
+              )))),
+
+    br(),
+    br(),
+    fluidPage(
+      semanticPage(
+        div(class = "ui horizontal divider", uiicon("settings"), "Title Here"),
+        br(),
+
+        fluidRow(
+          column(4, plotlyOutput("new_plot1")),
+          column(4, plotlyOutput("new_plot2")),
+          column(4, plotlyOutput("new_plot3"))
+        )
+
+      ))
+    ))
   )

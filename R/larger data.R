@@ -4,7 +4,7 @@
 
 
 knots_df <- tibble(
-  knots = seq(1, 20, 0.25),
+  kts = seq(0.5, 20, 0.5),
   eff.prop = NA
 )
 

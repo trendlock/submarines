@@ -19,25 +19,26 @@ calibrator <- function(df, system = "jet", method = "hotel match", hotel = 150, 
 
   if(system == "jet"){
     df. <- df %>%
-      select(speed, hotel.1, eff.jet)
-    colnames(df.) <- c("speed", "hotel.1", "eff")
+      select(kts, hotel, eff.jet) %>%
+      rename(eff = eff.jet)
   }
 
   if(system == "prop"){
     df. <- df %>%
-      select(speed, hotel.1, eff.prop)
-    colnames(df.) <- c("speed", "hotel.1", "eff")
+      select(kts, hotel, eff.prop) %>%
+      rename(eff = eff.prop)
   }
 
   index <- df. %>%
-    mutate(line = case_when(speed == speed. ~ row_number()))
+    mutate(id = row_number(),
+           line = case_when(kts == speed. ~ id))
   index. <- index %>%
     filter(line > 0) %>%
     pull(line)
 
   eff. <- df.$eff[index.]
 
-  const <- speed.^3/(power.*eff.)
+  const <- speed.^3 / (power. * eff.)
 
   const
 
