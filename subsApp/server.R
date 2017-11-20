@@ -38,26 +38,25 @@ shinyServer(function(input, output) {
 
     in_df <- submarines::knots_df
 
+    print("got here")
     drawnValues <- drawChart()
 
     message("drawnValues")
     print(drawnValues)
     print(length(drawnValues))
 
-    drawnValues <- c(drawnValues, last(drawnValues))
-
-    drawn_data <- in_df %>%
-      mutate(eff.prop = drawnValues)
-
-
-
-    output$new_plot <- renderPlot({
-
-      ggplot(drawn_data, aes(x = knots, y = eff.prop)) +
-        geom_line()
+    # drawnValues <- c(drawnValues, last(drawnValues))
+    #
+    # drawn_data <- in_df %>%
+    #   mutate(eff.prop = drawnValues)
+    #
+    #
+    #
+    # output$new_plot <- renderPlot({
+    #
+    #   ggplot(drawn_data, aes(x = knots, y = eff.prop)) +
+    #     geom_line()
 
     })
 
   })
-
-})
