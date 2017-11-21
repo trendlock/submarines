@@ -1,7 +1,7 @@
 library(shiny)
 library(tidyverse)
-# library(leaflet)
-# library(plotly)
+library(shinythemes)
+library(plotly)
 
 library(lubridate)
 library(shiny.semantic)
@@ -30,8 +30,8 @@ shinyUI(
         # Main Subs Plot ====
           verticalLayout(
 
-                          plotlyOutput("new_plot"),
-                          shinydrawrUI("outbreak_stats")
+                          plotlyOutput("eff_plot"),
+                          shinydrawrUI("drawr_plot")
 
             ),
 
@@ -41,7 +41,6 @@ shinyUI(
             semanticPage(
 
               fluidRow(
-                br(),
                 div(class = "ui horizontal divider", uiicon("settings"), "Assumptions"),
                 br(),
                 column(4,
@@ -93,7 +92,7 @@ shinyUI(
                                HTML("<p>Hotel Load = Power Drawn</p>"),
                                HTML("<p>by propulsion systems:</p>"),
                                br(),
-                               sliderInput("speed", NULL, 0.5, 7, 5, step = 0.5, post = " kts")),
+                               sliderInput("HLM_patrol_speed", NULL, 0.5, 7, 5, step = 0.5, post = " kts")),
                            br(), br(), br(), br()
                        )),
                 column(4,
@@ -112,7 +111,7 @@ shinyUI(
                                br(),
                                sliderInput("max_power", NULL, 5, 9, 7, post = " MW"),
                                HTML("<p>Choose Top Speed attained:</p>"),
-                               sliderInput("top_speed", NULL, 16, 24, 20, post = " kts")))),
+                               sliderInput("max_speed", NULL, 16, 24, 20, post = " kts")))),
                 column(4,
                        # Other known reference ====
                        div(class = "ui card",
@@ -136,13 +135,16 @@ shinyUI(
     br(),
     fluidPage(
       semanticPage(
-        div(class = "ui horizontal divider", uiicon("settings"), "Title Here"),
-        br(),
-
         fluidRow(
-          column(4, plotlyOutput("new_plot1")),
-          column(4, plotlyOutput("new_plot2")),
-          column(4, plotlyOutput("new_plot3"))
+          column(4,
+                   div(class = "ui horizontal divider", uiicon("settings"), "Range"),
+                 plotlyOutput("range_plot")),
+          column(4,
+                   div(class = "ui horizontal divider", uiicon("settings"), "Endurance"),
+                 plotlyOutput("endurance_plot")),
+          column(4,
+                   div(class = "ui horizontal divider", uiicon("settings"), "Power"),
+                 plotlyOutput("power_plot"))
         )
 
       ))
