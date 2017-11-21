@@ -1,9 +1,5 @@
-library(dev)
+
 library(plotly)
-
-
-######### SCENARIO 1   ##############
-
 
 df <- tibble(kts = seq(0.5, 20, 0.5))
 
@@ -12,8 +8,14 @@ df <- tibble(kts = seq(0.5, 20, 0.5))
 df <- df %>%
   mutate(eff.jet = c(read_rds("extdata/sample_jet_eff.rds"), read_rds("extdata/sample_jet_eff.rds") %>% tail(1)))
 
+fit_poly_mod <- lm( pull(df, eff.jet)~ poly( pull(df, kts),3))
+
 df <- df %>%
-  mutate(eff.prop = 1 - log(kts + 3)/6 + 0.10 - (kts/500))
+  mutate(eff.jet = fit_poly_mod$fitted.values,
+         eff.prop = 1 - log(kts + 3)/6 + 0.10 - (kts/500))
+
+
+
 
 # save default
 
