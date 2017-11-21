@@ -2,3 +2,4 @@
 
 export(calibrator)
 export(run_subs)
+export(safe_read_rds)
