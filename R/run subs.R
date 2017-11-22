@@ -21,7 +21,7 @@ run_subs <- function(
   # run cal
   const <- calibrator(df,
                       system = system,
-               print      method = method,
+                      method = method,
                       hotel = hotel,
                       patrol = patrol,
                       max.speed = max.speed,
