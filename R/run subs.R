@@ -29,9 +29,14 @@ run_subs <- function(
                       speed = speed,
                       power = power)
 
+  const <- round(const, 2)
+
+
+  kts_raised <- df$kts^3
+  power.mob.req <- kts_raised %>% map_dbl( ~ prod(.x, const))
 
   df <- df %>%
-    mutate(power.mob.req = const * kts^3,
+    mutate(power.mob.req,
            power.mob.drawn.jet = power.mob.req / eff.jet,
            power.mob.drawn.prop = power.mob.req / eff.prop,
            power.tot.jet = power.mob.drawn.jet + hotel,
