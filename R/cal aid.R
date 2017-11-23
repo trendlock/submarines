@@ -48,7 +48,7 @@ calibrator_aid <- function(df, system = "jet", method = "hotel match", hotel = 1
 
   eff. <- df.$eff[index.]
 
-  message(glue::glue("Aid index is {index}"))
+  message(glue::glue("Aid index is {index.}"))
   message(glue::glue("Aid eff. is {eff.}"))
 
   const <- speed.^3/(power.*eff.)

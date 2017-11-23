@@ -48,7 +48,7 @@ calibrator <- function(df, system, method, hotel, patrol, max.speed, max.power, 
 
   eff. <- df.$eff[index.]
 
-  message(glue::glue(" index is {index}"))
+  message(glue::glue(" index is {index.}"))
   message(glue::glue(" eff. is {eff.}"))
 
   speed.^3 / (power. * eff.)
