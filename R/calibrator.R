@@ -17,7 +17,6 @@ calibrator <- function(df, system, method, hotel, patrol, max.speed, max.power, 
 
   if(method == "other reference"){
 
-    print(power)
     speed. <- speed
     power. <- power
   }
@@ -43,12 +42,14 @@ calibrator <- function(df, system, method, hotel, patrol, max.speed, max.power, 
 
 
   df_outcoming <<- index
-  #message(glue::glue("Calibrator: index is {index}"))
   index. <- index %>%
     filter(line > 0) %>%
     pull(line)
 
   eff. <- df.$eff[index.]
+
+  message(glue::glue(" index is {index}"))
+  message(glue::glue(" eff. is {eff.}"))
 
   speed.^3 / (power. * eff.)
 

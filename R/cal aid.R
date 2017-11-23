@@ -4,7 +4,6 @@ calibrator_aid <- function(df, system = "jet", method = "hotel match", hotel = 1
 
 
 
-  print(df)
 
   if(method == "hotel match") {
     speed. <- patrol
@@ -22,19 +21,16 @@ calibrator_aid <- function(df, system = "jet", method = "hotel match", hotel = 1
   }
 
 
-  message(glue::glue("speed. is {speed.}"))
-  message(glue::glue("power. is {power.}"))
+  message(glue::glue("Aid speed. is {speed.}"))
+  message(glue::glue("Aid power. is {power.}"))
 
   if(system == "jet"){
-    print(df)
     df. <- df %>%
       select(kts, hotel, eff.jet) %>%
       rename(eff = eff.jet)
   }
 
   if(system == "prop"){
-    message("this df")
-    print(df)
     df. <- df %>%
       select(kts, hotel, eff.prop) %>%
       rename(eff = eff.prop)
@@ -43,15 +39,17 @@ calibrator_aid <- function(df, system = "jet", method = "hotel match", hotel = 1
   index <- df. %>%
     mutate(line = case_when(kts == speed. ~ row_number()))
 
-  print(index)
 
   index. <- index %>%
     filter(line > 0) %>%
     pull(line)
 
-  print(index.)
+
 
   eff. <- df.$eff[index.]
+
+  message(glue::glue("Aid index is {index}"))
+  message(glue::glue("Aid eff. is {eff.}"))
 
   const <- speed.^3/(power.*eff.)
 
