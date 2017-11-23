@@ -15,8 +15,6 @@ run_subs <- function(
   method
 ) {
 
-  print(df)
-
   # add hotel load
   df <- mutate(df, hotel)
 
@@ -31,20 +29,11 @@ run_subs <- function(
                       speed = speed,
                       power = power)
 
-  const2 <- calibrator_aid(df,
-                           system = system,
-                           method = method,
-                           hotel = hotel,
-                           patrol = patrol,
-                           max.speed = max.speed,
-                           max.power = max.power,
-                           speed = speed,
-                           power = power)
+
 
   const <- round(const, 2)
-  const2 <- round(const2, 2)
   message(glue::glue("const is {const}"))
-  message(glue::glue("const2 is {const2}"))
+
 
   kts_raised <- df$kts^3
   power.mob.req <- kts_raised %>%
@@ -62,22 +51,7 @@ run_subs <- function(
            range.prop = endurance.prop.hour * kts,
            range.jet = endurance.jet.hour * kts)
 
-  # df <- df %>%
-    # mutate(power.mob.req = const*speed^3,
-    #        power.mob.drawn.jet = power.mob.req/eff.jet,
-    #        power.mob.drawn.prop = power.mob.req/eff.prop,
-    #        power.tot.jet = power.mob.drawn.jet + hotel.1,
-    #        power.tot.prop = power.mob.drawn.prop + hotel.1,
-    #        total.energy = total.batt*batt.dens*1000,  ##MJ
-    #        endurance.prop.hour = total.energy*1000/power.tot.prop/3600,
-    #        endurance.jet.hour = total.energy*1000/power.tot.jet/3600,
-    #        range.prop = endurance.prop.hour*speed,
-    #        range.jet = endurance.jet.hour*speed)
-
-
-
-  df <- df %>%
-    gather("cat", "val", 2:ncol(.))
+  df <- suppressWarnings(suppressWarnings(gather(df, "cat", "val", 2:ncol(df))))
 
 
   df

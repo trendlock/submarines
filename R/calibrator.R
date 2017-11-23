@@ -5,6 +5,9 @@ calibrator <- function(df, system, method, hotel, patrol, max.speed, max.power, 
   df <- df %>%
     mutate(hotel)
 
+  message("in df")
+  print(head(df))
+
   if(method == "hotel match") {
     speed. <- patrol
     power. <- hotel
@@ -21,8 +24,12 @@ calibrator <- function(df, system, method, hotel, patrol, max.speed, max.power, 
     power. <- power
   }
 
-  message(glue::glue("speed. is {speed.}"))
-  message(glue::glue("power. is {power.}"))
+  message("speed.")
+  print(speed.)
+  message("power.")
+  print(power.)
+
+  speed. <- ceiling(speed.)
 
   if(system == "jet"){
     df. <- df %>%
@@ -36,20 +43,30 @@ calibrator <- function(df, system, method, hotel, patrol, max.speed, max.power, 
       select(kts, hotel, eff)
   }
 
+  message("df.")
+  print(head(df.))
+
+
   index <- df. %>%
     mutate(id = row_number(),
            line = case_when(kts == speed. ~ id))
 
+  message("index")
+  print(head(index))
 
-  df_outcoming <<- index
+
   index. <- index %>%
     filter(line > 0) %>%
     pull(line)
 
+  message("index.")
+  print(index.)
+
+
   eff. <- df.$eff[index.]
 
-  message(glue::glue(" index is {index.}"))
-  message(glue::glue(" eff. is {eff.}"))
+  message("eff.")
+  print(eff.)
 
   speed.^3 / (power. * eff.)
 

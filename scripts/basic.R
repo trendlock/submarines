@@ -103,7 +103,7 @@ plot <- df2 %>%
   #geom_text(aes(label = round(value, digits = 1)), position = position_dodge(4))+
   labs(title = "Endurance")+
   #theme(axis.title.x = element_blank(), axis.title.y = element_blank())+
-  theme(legend.title=element_blank())
+  theme(legend.title = element_blank())
 ggplotly(plot) %>%
   layout(legend = list(orientation = 'v',y = 0.8, x = 0.7))
 
