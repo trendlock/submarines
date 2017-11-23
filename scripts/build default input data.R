@@ -1,20 +1,10 @@
 
-
-
-# build defauts input data
-
-
 df <- tibble(kts = seq(0.5, 20, 0.5))
 
-# add user input jet eff
-
-default_prop <- list.files("/Users/rosseji/dev/apps/subsApp", full.names = T, pattern = ".rds")[5] %>%
-  read_rds()
 
 
-
-default_jet <- list.files("/Users/rosseji/dev/apps/subsApp", full.names = T, pattern = ".rds")[5] %>%
-  read_rds()
+default_jet <- read_rds("/Users/rosseji/dev/packages/submarines/extdata/saved_jet_input.rds")
+default_prop <- read_rds("/Users/rosseji/dev/packages/submarines/extdata/saved_prop_input.rds")
 
 df <- df %>%
   mutate(eff.jet = default_jet,
@@ -28,5 +18,5 @@ df <- df %>%
          eff.prop = fit_poly_mod2$fitted.values)
 
 
-
+write_rds(df, "/Users/rosseji/dev/apps/subsApp/extdata/default_subs_df.rds")
 

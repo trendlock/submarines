@@ -53,9 +53,6 @@ calibrator <- function(df, system, method, hotel, patrol, max.speed, max.power, 
     mutate(id = row_number(),
            line = case_when(kts == speed. ~ id))
 
-  message("index")
-  print(head(index))
-
 
   index. <- index %>%
     filter(line > 0) %>%
