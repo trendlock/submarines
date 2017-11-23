@@ -67,7 +67,7 @@ calibrator <- function(df, system, method, hotel, patrol, max.speed, max.power, 
   message("eff.")
   print(eff.)
 
-  power./(eff. *speed.^3)
+  (power.* eff.)/(speed.^3)
 
 
 }
