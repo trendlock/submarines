@@ -38,6 +38,8 @@ calibrator <- function(df, system = "jet", method = "hotel match", hotel = 150, 
     mutate(id = row_number(),
            line = case_when(kts == speed. ~ id))
 
+
+  df_outcoming <<- index
   #message(glue::glue("Calibrator: index is {index}"))
   index. <- index %>%
     filter(line > 0) %>%

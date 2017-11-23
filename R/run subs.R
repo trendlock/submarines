@@ -31,6 +31,7 @@ run_subs <- function(
 
   const <- round(const, 2)
 
+  message(glue::glue("const is {const}"))
 
   kts_raised <- df$kts^3
   power.mob.req <- kts_raised %>% map_dbl( ~ prod(.x, const))
