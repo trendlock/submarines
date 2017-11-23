@@ -65,7 +65,7 @@ df <- df %>%
 
 ### find the constant here
 
-const <- calibrator(df = df, system = "jet", method = "max power")
+const <- calibrator(df = df, patrol = 10, system = "jet", method = "hotel match")
 
 df <- df %>%
   mutate(power.mob.req = const*speed^3,
