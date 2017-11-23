@@ -25,7 +25,7 @@ calibrator <- function(df, system, method, hotel, patrol, max.speed, max.power, 
   }
 
 
-  speed. <- ceiling(speed.)
+
 
   message("speed.")
   print(speed.)
