@@ -24,12 +24,14 @@ calibrator <- function(df, system, method, hotel, patrol, max.speed, max.power, 
     power. <- power
   }
 
+
+  speed. <- ceiling(speed.)
+
   message("speed.")
   print(speed.)
   message("power.")
   print(power.)
 
-  speed. <- ceiling(speed.)
 
   if(system == "jet"){
     df. <- df %>%
