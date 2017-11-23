@@ -17,6 +17,10 @@ calibrator <- function(df, system = "jet", method = "hotel match", hotel = 150, 
     power. <- power
   }
 
+  message(glue::glue("Aid speed. is {speed.}"))
+  message(glue::glue("Aid power. is {power.}"))
+
+
   if(system == "jet"){
     df. <- df %>%
       select(speed, hotel.1, eff.jet)
@@ -36,6 +40,9 @@ calibrator <- function(df, system = "jet", method = "hotel match", hotel = 150, 
     pull(line)
 
   eff. <- df.$eff[index.]
+
+  message(glue::glue("Aid index is {index.}"))
+  message(glue::glue("Aid eff. is {eff.}"))
 
   const <- speed.^3/(power.*eff.)
 
