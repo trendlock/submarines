@@ -12,7 +12,7 @@ calibrator <- function(df, system, method, hotel, patrol, max.speed, max.power, 
 
   if(method == "max power") {
     speed. <- max.speed
-    power. <- max.power
+    power. <- max.power * 1000
   }
 
   if(method == "other reference"){
