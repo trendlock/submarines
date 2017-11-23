@@ -1,9 +1,10 @@
 #' @export
 
-calibrator <- function(df, system, method, hotel, patrol, max.speed, max.power, speed, power) {
+calibrator_aid <- function(df, system = "jet", method = "hotel match", hotel = 150, patrol = 2.5, max.speed = 20, max.power = 7000, speed = 10, power = 1000) {
 
-  df <- df %>%
-    mutate(hotel)
+
+
+  print(df)
 
   if(method == "hotel match") {
     speed. <- patrol
@@ -16,41 +17,44 @@ calibrator <- function(df, system, method, hotel, patrol, max.speed, max.power, 
   }
 
   if(method == "other reference"){
-
-    print(power)
     speed. <- speed
     power. <- power
   }
+
 
   message(glue::glue("speed. is {speed.}"))
   message(glue::glue("power. is {power.}"))
 
   if(system == "jet"){
+    print(df)
     df. <- df %>%
-      rename(eff = eff.jet) %>%
-      select(kts, hotel, eff)
+      select(kts, hotel, eff.jet) %>%
+      rename(eff = eff.jet)
   }
 
   if(system == "prop"){
+    message("this df")
+    print(df)
     df. <- df %>%
-      rename(eff = eff.prop) %>%
-      select(kts, hotel, eff)
+      select(kts, hotel, eff.prop) %>%
+      rename(eff = eff.prop)
   }
 
   index <- df. %>%
-    mutate(id = row_number(),
-           line = case_when(kts == speed. ~ id))
+    mutate(line = case_when(kts == speed. ~ row_number()))
 
+  print(index)
 
-  df_outcoming <<- index
-  #message(glue::glue("Calibrator: index is {index}"))
   index. <- index %>%
     filter(line > 0) %>%
     pull(line)
 
+  print(index.)
+
   eff. <- df.$eff[index.]
 
-  speed.^3 / (power. * eff.)
+  const <- speed.^3/(power.*eff.)
 
+  const
 
 }
