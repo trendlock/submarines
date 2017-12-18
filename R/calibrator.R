@@ -37,7 +37,7 @@ calibrator <- function(df, system = "jet", method = "hotel match", hotel = 150, 
 
   eff. <- df.$eff[index.]
 
-  const <- speed.^3/(power.*eff.)
+  const <- power.*eff./(speed.^3)
 
   const
 
