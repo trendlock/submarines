@@ -21,6 +21,13 @@ references:
   issued:
     year: 2005
     
+    
+    
+    
+    
+    
+    
+    
 - id: carlton2007
   title: Marine Propellers and Propulsion
   author:
@@ -43,6 +50,12 @@ references:
     month: 10
     day: 7
     
+    
+    
+    
+    
+    
+    
 - id: sanguri2012
   title: The Guide to Slow Steaming On Ships
   author:
@@ -54,6 +67,15 @@ references:
     year: 2012
     month: 12
     
+    
+    
+    
+    
+    
+    
+    
+    
+    
 - id: WNA2017
   title: Nuclear Powered Ships
   author:
@@ -63,6 +85,14 @@ references:
   publisher: World Nuclear Association
   issued:
     year: 2017
+    
+    
+    
+    
+    
+    
+    
+    
     
 - id: WNA2009
   title: Chernobyl Accident Appendix 1
@@ -102,115 +132,11 @@ references:
 
 ```{r setup, include=FALSE}
 knitr::opts_chunk$set(echo = TRUE)
-
-# Figure numbering functions ====
-
-fig <- local({
-    i <- 0
-    list(
-        cap=function(refName, text, center=FALSE, col="black", inline=FALSE) {
-            i <<- i + 1
-            ref[[refName]] <<- i
-            css_ctr <- ""
-            if (center) css_ctr <- "text-align:center; display:inline-block; width:100%;"
-            cap_txt <- paste0("<span>", text, "</span>")
-            anchor <- paste0("<a name=\"", refName, "\"></a>")
-            if (inline) {
-                paste0(anchor, cap_txt)    
-            } else {
-                list(anchor=anchor, cap_txt=cap_txt)
-            }
-        },
-        
-        ref=function(refName, link=FALSE, checkRef=TRUE) {
-            
-            ## This function puts in a cross reference to a caption. You refer to the
-            ## caption with the refName that was passed to fig$cap() (not the code chunk name).
-            ## The cross reference can be hyperlinked.
-            
-            if (checkRef && !refName %in% names(ref)) stop(paste0("fig$ref() error: ", refName, " not found"))
-            if (link) {
-                paste0("<A HREF=\"#", refName, "\">Figure ", ref[[refName]], "</A>")
-            } else {
-                paste0("Figure ", ref[[refName]])
-            }
-        },
-        
-        ref_all=function(){
-            ## For debugging
-            ref
-        })
-})
-
+library(ggplot2)
 library(knitr)
-knit_hooks$set(plot = function(x, options) {
-    sty <- ""
-    if (options$fig.align == 'default') {
-        sty <- ""
-    } else {
-        sty <- paste0(" style=\"text-align:", options$fig.align, ";\"")
-    }
-    
-    if (is.list(options$fig.cap)) {
-        ## options$fig.cap is a list returned by the function fig$cap()
-        str_caption <- options$fig.cap$cap_txt
-        str_anchr <- options$fig.cap$anchor
-    } else {
-        ## options$fig.cap is a character object (hard coded, no anchor)
-        str_caption <- options$fig.cap
-        str_anchr <- ""
-    }
-    
-    paste('<figure', sty, '>', str_anchr, '<img src="',
-        opts_knit$get('base.url'), paste(x, collapse = '.'),
-        '"><figcaption>', str_caption, '</figcaption></figure>',
-        sep = '')
-    
-})
-
-## This chucnk will read through *this* Rmd file, and attempt to extract all of the 
-## labels (not caption text) used for Figure captions. These labels are used
-## as anchors, so scanning through the document now will allow us to create cross references
-## before the caption actually appears. 
-
-## Get the name of this Rmd file
-rmdFn <- knitr::current_input()  # filename of input document
-
-## Read lines and close connection
-rmdCon <- file(rmdFn, open = "r")
-rmdLines <- readLines(rmdCon)
-close(rmdCon)
-
-## Pull out all occurences of at least one back tick, followed 
-## by any number of characters, followed by fig$cap (all on one line)
-figscap_idx <- grep("`+(.*)fig\\$cap", rmdLines)
-rmdLines <- rmdLines[figscap_idx]
-
-## Get rid of everything up until the start of the caption label
-## This presumes the caption label is the first argument of fig$cap()
-## E.g., fig.cap = fig$cap("my_label", ...)
-rmdLinesSansPre <- sub("(.*)fig\\$cap(.*?)[\"']", "", rmdLines)
-
-## Identify everything up until the first quote
-match_data <- regexpr("(.*?)[\"']", rmdLinesSansPre)
-
-## Reduce the length by one, because we're not interested in the final quote
-attr(match_data, "match.length") <- attr(match_data, "match.length") - 1
-
-## Extract
-fig_labels <- regmatches(rmdLinesSansPre, match_data, invert=FALSE)
-
-if (length(fig_labels) > 0) {
-
-    ## Test for duplicates
-    if (anyDuplicated(fig_labels) > 0) stop("Duplicate caption labels detected")
-    
-    ## Create a named list of Figure numbers
-    ref <- as.list(1:length(fig_labels))
-    names(ref) <- fig_labels
-}  
 
 ```
+
 
 # Contents
 
@@ -283,7 +209,13 @@ Drag is the resistance that a fluid (air or water, in our case) gives to a body 
 But the most sensitive factor in this relationship is the speed at which the object moves through the liquid.  The drag increases not with the speed ($v$), but with the **square** of the speed. This means if the speed doubles, the drag increases by four.  If the speed triples, the drag increases by a factor of nine.
 
 $$F_D = \frac{1}{2}\rho v^2C_DA$$
-`r fig$cap("xenon1", "Xenon poisoning effect following shutdown from @garland2005")`
+
+
+
+\begin{equation} \label{eq:1}
+\sum_{i=0}^{\infty} a_i x^i
+\end{equation}
+
 
 (Technical aside: This law applies wherever the the flow over the surface is turbulent. It is true that for very small objects, or very viscous fluids, or very slow movements a different apples called Stokes Equation, in the case wher Reynolds numbers are less than 1.  Given that sea-water is not particularly viscous, and sumbarines not particularly small, Reynolds numbers are liekly to be much much greater than 1 (one or two thousand), even when moving at only one or two knots.  Since it is unlikely that a significant proportion of the flow over the hull will be laminar, we'll use the drag equation in all modeling going forward when considering drag on the hull). 
 
@@ -317,23 +249,36 @@ Consequently, the difference between the power output a conventional and a nucle
 
 Perhaps more significantly for power-design of nuclear submarines is a little-discussed phenomenon called Xenon poisoning, which affects nuclear reactors when they shut down or lower their power significantly. When Uranium or Plutonium atoms split (or fission) into two smaller isotopes atoms, a variety of different radio nucleides (unstable variants of atoms) are produced.  Two of these are Xenon-135 and Iodine 135.  Iodine is produced much more often, and decays into Xenon-135, which a half-life of about nine hours.  This Xenon has a very special, perhaps unique role in reactors, since they very easily captures the free neutrons which cause the continued fission reactions in Uranium or Plutonium which drive the reactor.  As such, Xenon is known as reactor 'poison' since it can kill the reactor's reactivity in very high doses.
 
-This high neutron-capture from Xenon means that it has a duplicitous relationship with the reactor's power level.  At high levels of reactor power, lots of Xenon-135 and Iodine-135 are produced by the fission process.  The high presence of Xenon reduced the reactor's reactivity.  On the other hand, there are lots of neutrons available to 'burn off' the Xenon (which absobs the neturons to become a different isotope).  This keeps the total level of Xenon in check.  
+This high neutron-capture from Xenon means that it has a duplicitous relationship with the reactor's power level.  At high levels of reactor power, lots of Xenon-135 and Iodine-135 are produced by the fission process.  The high presence of Xenon reduced the reactor's reactivity.  On the other hand, there are lots of neutrons available to 'burn off' the ass Xenon (which absobs the neturons to become a different isotope).  This keeps the total level of Xenon in check.  
 
-The situation becomes much more complicated when the reactor undergoes a sudden change in power output.  If the power is lowered dramatically and suddenly, the production of Xenon continues quite rapidly for some time due to the decay of the large stock of Iodine-135.  With less neutron flux available to 'burn off' the Xenon, the Xenon levels spike, and push down the reactor's reactivity.  Unless the reactor is quickly raised back to relatively high power (~60%) quite quickly (an hour or less), the Xenon levels become so high that the reactor will have to be shut down, otherwise extreme (and dangerous) measures would be required in order to keep the reactor going.  (This is essentially what lead to the Chernobyl Explosion [@WNA2009].)  A fuller discussion of Xenon poisoning can be found in [@garland2005], which demonstrates key concepts related to the poisoning effect shown in `r fig$ref("xenon")`. And you can see that in the [Introduction].
+The situation becomes much more complicated when the reactor undergoes a sudden change in power output.  If the power is lowered dramatically and suddenly, the production of Xenon continues quite rapidly for some time due to the decay of the large stock of Iodine-135.  With less neutron flux available to 'burn off' the Xenon, the Xenon levels spike, and push down the reactor's reactivity.  Unless the reactor is quickly raised back to relatively high power (~60%) quite quickly (an hour or less), the Xenon levels become so high that the reactor will have to be shut down, otherwise extreme (and dangerous) measures would be required in order to keep the reactor going.  (This is essentially what lead to the Chernobyl Explosion [@WNA2009].)  A fuller discussion of Xenon poisoning can be found in [@garland2005], which demonstrates key concepts related to the poisoning effect shown in \ref{fig:ex2}. And you can see that in the [Introduction].
 
 
-![`r fig$cap("xenon", "Xenon poisoning effect following shutdown from")`](XenonPoison.png){width=500px}
+The situation becomes much more complicated when the reactor undergoes a sudden change in power output.  
 
-\pagebreak
 \begin{figure}
 \includegraphics[width=0.9\textwidth]{XenonPoison.png}
-\caption{A prototype of the Job Information dialog  @garland2005}
-\label{fig:jobInformationDialog}
+\caption{A prototype of the Job Information dialog  }
+\label{fig:ex2}
 \end{figure}
+
 
 Consequently, nuclear reactors aren't well suited to rapid fluctuations in power, particularly dramatic reductions in power, as these can lead to instability in the reactor core.  If the reactor is shut down in order to avoid such dangerous circumstances, it generally cannot be started again until Xenon levels have fallen again, which can take a couple of days.  Obviously this is never desirable for a military vessel, and hence is avoided at almost all costs. 
 
+
+\begin{figure}
+```{r, echo=F}
+kable(head(mtcars))
+```
+\caption{A table example}
+\label{fig:tbl1}
+\end{figure}
+
+
 This effect has a dramatic impact on nuclear submarine design, since much of their design is oriented around being able to comfortably disperse large amounts of excess power, rather than with conserving it.  For the propulsion system, this actually makes having an inefficient propulsor at low speeds a considerable advantage.  Since the reactor will likely need to dispose of excess power, particularly during ramp-down, an inefficient propulsion system actually provides a useful power sink.  Since any excess power will have to be disposed of by some other means (normally by pumping more water to remove the power as the heat) inefficiency at low speeds has no penalty, and probably a marginal benefit, since it will reduce overall demand for additional systems.    Provided the excess turbulence inside the pumpjet isn't too noisy, wasting energy through the propulsor is useful. 
+
+
+
 
 It should also be noted that a nuclear reactor's aversion to sudden reductions in power would also have a substantial impact on the design of a submarine's combat system, and it's demand on the Hotel Load. For the same reason, a high Hotel Load, or power-hungry Combat System, could actually be advantageous, as it helps to set an elevated 'floor' for power requirements, reducing the scale of fluctuations in overall power demand from the reactor due to changes in propulsion speed.  
 
