@@ -1,0 +1,92 @@
+\documentclass{article}
+
+\usepackage[backend=bibtex, sorting=none, citestyle=authoryear]{biblatex}
+
+\bibliography{referencess}
+
+
+\title{Efficiency}
+\author{Aidan Morrison}
+
+
+
+\begin{document}
+
+<<include=FALSE>>=
+library(knitr)
+opts_chunk$set(
+concordance=TRUE
+)
+@
+
+
+<<setup, include=FALSE, cache=FALSE, echo=FALSE>>=
+opts_chunk$set(fig.path='figures/plots-', fig.align='center', fig.show='hold', eval=T, echo=F)
+options(replace.assign=TRUE,width=80)
+
+library(tidyverse)
+@
+
+
+\maketitle
+
+
+
+
+
+\section{Contents}
+
+Will need to find the Latex command...
+
+\section{Introduction}
+
+
+The purpose of this paper is to investigate the suitability of the pump-jet selection for Australia's future fleet of submarines.  In particular, the question of the relative efficiency, and quietness of pump-jets in comparison to open propellers is of particular importance.  Much has been made of the significance of the pump-jet in the DCNS (now Naval Group) bid for the submarine, to the extent that it has been claimed that the pump-jet rendered propellers obsolete.
+
+Necessarily, this topic depends upon a considerable amount of physics, particularly around hydrodynamics, fluid mechanics, and turbomachinery, all of which might be difficult or daunting topics to usefully inform a public policy debate. However, in the case of a \$50 billion dollar military acquisition, neglecting to engage with the technical matters that are so crucial to such a decision would be deeply foolish.  To that end, this paper has a very specific ambition.  It doesn't seek to advance the technical field with any new research or insight.  Instead, it aims to make as much of the relvant physics as possible to this particular question comprehensible in laymans terms, and connect the essential concepts as directly as possible with the most important conclusions of public import.
+
+As such, it will tend to make frequent use of diagrams, illustrations, as well as simple prose, and relatively infrequently use mathematical equations, (unless of crucial importance), though some effort is made to point to references where the fuller and more formal derivations of these relationships can be found.
+
+It should be noted that the technical fields involved here are vast and rapidly evolving.  The author makes no claim to be a world authority on the entirety of the topics which are touched. It is quite possible that there are other effects and phenomena which could be relevant which aren't mentioned here, and it's also true that additional advances in the state of the art are being made continually, and might not be known about in public literature.
+
+However, the nature of scientific discovery and technical progress is that many of best discoveries are actually built-upon and confirmed, rather than swept aside, by later developments.  As such, plenty of foundational principals, in particular the conservation laws of energy and momentum and essential principals of mechanics and thermodynamics are just as true, right, and relevant as they were hundreds of years ago.  Consequently, whilst we cannot always know the precise degree of advance in a particular field of engineering, we can still confidently know some of the fundamental bounds and constraints that will be inherent in that field.
+
+In this paper, since we cannot know the precise details of the particular state of the art in largely classified military programs, I will attempt to be particularly clear about those things for which we can have great confidence (often broad principals or relationships which determine trade-offs) and those things which we can't (the precise degrees or points and sensitivities).  To that end, in this paper I've underaken modelling based upon the broad principals which we can have confidence, and conducted sensitivity testing based on a range of plausible values which seem realistic for those things about which we can have less confidence. I have also, in discussion with experts and through reading the available literature, attempted where possible to identify the most plausible of the uncertain values, in order to advance discussion.
+
+With the support of the principal sponsor of this paper, the relevant models may be found in a user-friendly format as a web-app to allow their further interrogation and testing for other plausible scenarios.  In addition, for increased transparency, the relevant code and equations underlying are available on github.
+
+
+\subsection{The necessity of drag, and decelleration, induced by the duct}
+
+
+\begin{equation}
+\label{eq:1}
+F_D = \frac{1}{2}\rho v^2C_DA
+\end{equation}
+
+
+\begin{figure}
+\includegraphics[width=0.9\textwidth]{XenonPoison.png}
+\caption{A prototype of the Job Information dialog \parencite{garland2005}}
+\label{fig:xenon}
+\end{figure}
+
+
+In Figure \ref{fig:ex2} we can see a sample plot of the mtcars data.
+
+\begin{figure}
+<<echo = FALSE>>=
+ggplot(data=iris, aes(x = Sepal.Length, y = Sepal.Width)) +
+  geom_point(aes(color=Species, shape=Species)) +
+  xlab("Sepal Length") +  ylab("Sepal Width") +
+  ggtitle("Sepal Length-Width")
+@
+\caption{An example plot}
+\label{fig:ex2}
+\end{figure}
+
+
+\printbibliography
+
+
+\end{document}
