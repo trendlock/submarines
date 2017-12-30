@@ -55,7 +55,7 @@
 \bibliography{references}
 
 
-\title{Efficiency}
+\title{Efficiency and acoustic considerations for pumpjets in the context of conventionally powered submarines}
 \author{Aidan Morrison}
 \IfFileExists{upquote.sty}{\usepackage{upquote}}{}
 \begin{document}
@@ -185,7 +185,7 @@ Given that submarines almost by definition (since their hull shape doesn't chang
 
 Nuclear submarines vary quite remarkably from conventional submarines because of the means by which they generate their power.  Because of the extremely high energy density in enriched uranium or plutonium, the reactors on board nuclear submarines generate an abundant supply of energy.  Most submarine reactors are reportedly capable of generating between 25 to 50 megawatts (MW) of power, though Russian submarines have hundreds of megawatts of power available \parencite{WNA2017}.
 
-In contrast, the Collins Class Submarine's main motor is rated at less than 6MW, with designs for the future submarine appearing to be only slightly larger \parencite{patrick2012}.  It is fair to say that in terms of maximum power ouput, nuclear submarines could have something like 5-10 times as much power at their disposal, and their **peak** output.
+In contrast, the Collins Class Submarine's main motor is rated at less than 6MW, with designs for the future submarine appearing to be only slightly larger \parencite{patrick2012}.  It is fair to say that in terms of maximum power ouput, nuclear submarines could have something like 5-10 times as much power at their disposal, and their \textbf{peak} output.
 
 The difference between the peak-powers of the submarines significantly understates how different the designs are, because the difference in the total amount of energy stored and available for use in a voyage or dive is vastly greater.  A nuclear submarine might have literally millions of times more energy at its disposal, it is practically unlimited for all intents and purposes on a given voyage. Consequently, wheras a nuclear submarine might regularly conduct transits at or near it's peak power, a diesel electric submarine would probably transit at less than half the speed which it could manage at a sprint, (and use less than a quarter of the energy, as discussed earlier) and on patrol it might be operating at a tenth of the maximum speed, and use maybe just 1\% of as much power on propulsion. In this situation, the amount of power that is drawn for lights, CO2 scrubbing, washing, cooking, heating, as well as the electronics driving the combat systems (the 'Hotel Load') might well become significant, and even be as larger or larger than what is required for propulsion.
 
@@ -198,7 +198,7 @@ This high neutron-capture from Xenon means that it has a duplicitous relationshi
 The situation becomes much more complicated when the reactor undergoes a sudden change in power output.  If the power is lowered dramatically and suddenly, the production of Xenon continues quite rapidly for some time due to the decay of the large stock of Iodine-135.  With less neutron flux available to 'burn off' the Xenon, the Xenon levels spike, and push down the reactor's reactivity.  Unless the reactor is quickly raised back to relatively high power (~60\%) quite quickly (an hour or less), the Xenon levels become so high that the reactor will have to be shut down, otherwise extreme (and dangerous) measures would be required in order to keep the reactor going.  (This is essentially what lead to the Chernobyl Explosion \parencite{WNA2009}.)  A fuller discussion of Xenon poisoning can be found in \citetitle{garland2005}  by \citeauthor{garland2005}, which demonstrates key concepts related to the poisoning effect shown in Figure \ref{fig:XenonPoison.png}.
 
 \begin{figure}
-\includegraphics[width=0.9\textwidth]{XenonPoison.png}
+\includegraphics[width=\textwidth]{XenonPoison.png}
 \caption{Xenon poisoning effect following shutdown \parencite{garland2005}}
 \label{fig:XenonPoison.png}
 \end{figure}
@@ -238,7 +238,7 @@ The conservation of energy also has useful implications for how the efficiency o
 When water or any fluid flows with some speed relative to another solid surface nearby, there is some layer adjacent to the surface in which the speed of the fluid is diminished relative to the main flow.  At a microscopic level, there are some molecules of the fluid on the surface which will be effectively static relative to the surface.  The layer of fluid that joins the gap between the static surface, and the part of the flow which is moving at the full flow speed, is called the boundary layer.  Exactly how thick the boundary layer is, and how the fluid moves in the boundary layer, is extremely important for consideration of efficiency of fluid flows over and around solid surfaces.  In particular, a boundary layer can be either turbulent or laminar in nature, and can transition to turbulent flow after a short distnace of laminar flow, as shown in Figure \ref{fig:BoundaryLayer.png}.
 
 \begin{figure}
-\includegraphics[width=0.9\textwidth]{BoundaryLayer.png}
+\includegraphics[width=\textwidth]{BoundaryLayer.png}
 \caption{The development of a boundary layer \parencite{mollard2011}}
 \label{fig:BoundaryLayer.png}
 \end{figure}
@@ -252,7 +252,7 @@ The alternative is 'turbulent flow', where the fluid moves around in unpredictab
 
 
 \begin{figure}
-\includegraphics[width=0.9\textwidth]{LaminarTurbulent.png}
+\includegraphics[width=\textwidth]{LaminarTurbulent.png}
 \caption{A simple comparison of laminar and turbulent flows from \citetitle{NPdotnet2017} \citeyear{NPdotnet2017}}
 \label{fig:LaminarTurbulent.png}
 \end{figure}
@@ -273,15 +273,15 @@ Imagine what happens when something moves very fast through water.  The front si
 A watching water boil in a glass kettle gives a quick and intuitive insight into the occurrence of cavitation.  Quickly after the kettle starts heating, a considerable noise can be heard, which corresponds to the commencement of cavitation on heating element. At some local point for a moment in time, there is enough energy for the water present to boil.  It tends to be on rough surfaces or in the presence of some impurity that cavitation will occur first (in the blackened part of the surface in this case.)  However, whilst the bubbles on the bottom can be seen plainly on the bottom, they collapse almost straight away again, and leave only a tiny bubble of stable steam ciculating in the water.  It is the rapid expansion and collapse of these bubbles that causes the noise of a kettle, long before it has boiled.
 
 \begin{figure}
-\includegraphics[width=0.9\textwidth]{EarlyCavitation.JPG}
+\includegraphics[width=\textwidth]{EarlyCavitation.JPG}
 \caption{Cavitation bubbles form and collapse creating noise and some tiny bubbles long before boiling occurs}
 \label{fig:EarlyCavitation.JPG}
 \end{figure}
 
-It is only when the water is all at a much higher temperature that the bubbles remain their full size for long enough to detatch and rise all the way to the surface, a process we typically think of as boiling water.  It is worthwhile noting that the sound emitted at this stage is much softer and lower than the early onset of cavitation. Larger bubbles result in lower frequencies of sound being emitted. Even at higher temperature, the rougher parts of the surface provide the points where all the cavitation originate.
+It is only when the water is all at a much higher temperature that the bubbles remain their full size for long enough to detatch and rise all the way to the surface, a process we typically think of as boiling water, as shown in Figure ~\ref{fig:BoilingCavitation.JPG}.  It is worthwhile noting that the sound emitted at this stage is much softer and lower than the early onset of cavitation. Larger bubbles result in lower frequencies of sound being emitted. Even at higher temperature, the rougher parts of the surface provide the points where all the cavitation originate.
 
 \begin{figure}
-\includegraphics[width=0.9\textwidth]{BoilingCavitation.JPG}
+\includegraphics[width=\textwidth]{BoilingCavitation.JPG}
 \caption{Only at very high temperatures do the bubbles endure at full-size in the water and reach the surface}
 \label{fig:BoilingCavitation.JPG}
 \end{figure}
@@ -331,10 +331,13 @@ Flow separation refers to a circumstance when the flow over a surface separates 
 \label{fig:SeparatedAerofoil.jpg}
 \end{figure}
 
-
 In order for flow separation to occur, a fluid must be moving against an adverse pressure gradient, which simply means that the pressure is increasing in the direction of movement, which means the flow is slowing down as it moves.  At the boundary layer, where the flow velocity is already reduced due to drag forces experienced near the surface, the adverse pressure gradient can be enough to reverse the flow altogether.  In this case, the fluid flows in reverse near the surface and forms a vortex, and the main flow becomes separated form the surface by the votex.
 
-
+\begin{figure}
+\includegraphics[width=\textwidth]{FlowSeparation.png}
+\caption{Flow separation involves flow reversal near a surface when a fluid is moving against an adverse pressure gradient, as shown in \parencite{mollard2011}}
+\label{fig:FlowSeparation.png}
+\end{figure}
 
 \section{end}
 

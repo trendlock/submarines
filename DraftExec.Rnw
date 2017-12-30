@@ -5,7 +5,7 @@
 \bibliography{references}
 
 
-\title{Efficiency}
+\title{Efficiency and acoustic considerations for pumpjets in the context of conventionally powered submarines}
 \author{Aidan Morrison}
 
 \begin{document}
@@ -232,7 +232,7 @@ A watching water boil in a glass kettle gives a quick and intuitive insight into
 \label{fig:EarlyCavitation.JPG}
 \end{figure}
 
-It is only when the water is all at a much higher temperature that the bubbles remain their full size for long enough to detatch and rise all the way to the surface, a process we typically think of as boiling water.  It is worthwhile noting that the sound emitted at this stage is much softer and lower than the early onset of cavitation. Larger bubbles result in lower frequencies of sound being emitted. Even at higher temperature, the rougher parts of the surface provide the points where all the cavitation originate.
+It is only when the water is all at a much higher temperature that the bubbles remain their full size for long enough to detatch and rise all the way to the surface, a process we typically think of as boiling water, as shown in Figure ~\ref{fig:BoilingCavitation.JPG}.  It is worthwhile noting that the sound emitted at this stage is much softer and lower than the early onset of cavitation. Larger bubbles result in lower frequencies of sound being emitted. Even at higher temperature, the rougher parts of the surface provide the points where all the cavitation originate.
 
 \begin{figure}
 \includegraphics[width=\textwidth]{BoilingCavitation.JPG}

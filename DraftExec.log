@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.18 (TeX Live 2017) (preloaded format=pdflatex 2017.12.12)  30 DEC 2017 11:36
+This is pdfTeX, Version 3.14159265-2.6-1.40.18 (TeX Live 2017) (preloaded format=pdflatex 2017.12.9)  30 DEC 2017 17:07
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -412,26 +412,25 @@ LaTeX Font Info:    External font `cmex10' loaded for size
 (Font)              <7> on input line 7.
 LaTeX Font Info:    External font `cmex10' loaded for size
 (Font)              <5> on input line 7.
-)
+ [1
+
+{/usr/local/texlive/2017/texmf-var/fonts/map/pdftex/updmap/pdftex.map}])
 \tf@toc=\write5
 \openout5 = `DraftExec.toc'.
 
- [1
-
-{/usr/local/texlive/2017/texmf-var/fonts/map/pdftex/updmap/pdftex.map}] [2] [3]
- [4] [5] [6] [7] [8] [9] [10]
+ [2] [3] [4] [5] [6] [7] [8] [9] [10]
 <XenonPoison.png, id=46, 975.645pt x 609.27625pt>
 File: XenonPoison.png Graphic file (type png)
  <use XenonPoison.png>
 Package pdftex.def Info: XenonPoison.png used on input line 201.
-(pdftex.def)             Requested size: 310.4979pt x 193.90324pt.
+(pdftex.def)             Requested size: 345.0pt x 215.44392pt.
 
 [11] [12 <./XenonPoison.png>] [13]
 <BoundaryLayer.png, id=59, 489.83pt x 161.60374pt>
 File: BoundaryLayer.png Graphic file (type png)
  <use BoundaryLayer.png>
 Package pdftex.def Info: BoundaryLayer.png used on input line 241.
-(pdftex.def)             Requested size: 310.4979pt x 102.44215pt.
+(pdftex.def)             Requested size: 345.0pt x 113.82462pt.
 
 [14 <./BoundaryLayer.png>]
 <LaminarTurbulent.png, id=64, 260.975pt x 247.92625pt>
@@ -439,7 +438,7 @@ File: LaminarTurbulent.png Graphic file (type png)
 
 <use LaminarTurbulent.png>
 Package pdftex.def Info: LaminarTurbulent.png used on input line 255.
-(pdftex.def)             Requested size: 310.4979pt x 294.97916pt.
+(pdftex.def)             Requested size: 345.0pt x 327.75545pt.
  [15 <./LaminarTurbulent.png>]
 Missing character: There is no â in font cmr10!
 Missing character: There is no € in font cmr10!
@@ -452,72 +451,79 @@ Missing character: There is no ™ in font cmr10!
 File: EarlyCavitation.JPG Graphic file (type jpg)
  <use EarlyCavitation.JPG>
 Package pdftex.def Info: EarlyCavitation.JPG used on input line 276.
-(pdftex.def)             Requested size: 310.4979pt x 232.87433pt.
+(pdftex.def)             Requested size: 345.0pt x 258.71838pt.
 
-<BoilingCavitation.JPG, id=70, 4047.12pt x 3035.34pt>
+[16] [17 <./EarlyCavitation.JPG>]
+<BoilingCavitation.JPG, id=76, 4047.12pt x 3035.34pt>
 File: BoilingCavitation.JPG Graphic file (type jpg)
 
 <use BoilingCavitation.JPG>
 Package pdftex.def Info: BoilingCavitation.JPG used on input line 284.
-(pdftex.def)             Requested size: 310.4979pt x 232.87433pt.
- [16] [17 <./EarlyCavitation.JPG> <./BoilingCavitation.JPG>] <IncreasingCavitat
-ion.png, id=77, 590.205pt x 587.19376pt>
+(pdftex.def)             Requested size: 345.0pt x 258.71838pt.
+ [18 <./BoilingCavitation.JPG>]
+<IncreasingCavitation.png, id=80, 590.205pt x 587.19376pt>
 File: IncreasingCavitation.png Graphic file (type png)
 
 <use IncreasingCavitation.png>
 Package pdftex.def Info: IncreasingCavitation.png used on input line 300.
 (pdftex.def)             Requested size: 241.49895pt x 240.25821pt.
 
-<CavitationTypes.png, id=78, 669.50125pt x 600.2425pt>
+<CavitationTypes.png, id=81, 669.50125pt x 600.2425pt>
 File: CavitationTypes.png Graphic file (type png)
 
 <use CavitationTypes.png>
 Package pdftex.def Info: CavitationTypes.png used on input line 307.
 (pdftex.def)             Requested size: 241.49895pt x 216.5176pt.
- [18] [19 <./IncreasingCavitation.png> <./CavitationTypes.png>] [20] <Separated
-Aerofoil.jpg, id=91, 2055.68pt x 1432.35126pt>
+ [19] [20 <./IncreasingCavitation.png> <./CavitationTypes.png>] <SeparatedAerof
+oil.jpg, id=91, 2055.68pt x 1432.35126pt>
 File: SeparatedAerofoil.jpg Graphic file (type jpg)
 
 <use SeparatedAerofoil.jpg>
 Package pdftex.def Info: SeparatedAerofoil.jpg used on input line 329.
 (pdftex.def)             Requested size: 345.0pt x 240.3711pt.
-Package color Info: Redefining color shadecolor on input line 349.
+ [21] [22 <./SeparatedAerofoil.jpg>]
+<FlowSeparation.png, id=98, 742.775pt x 198.7425pt>
+File: FlowSeparation.png Graphic file (type png)
+ <use FlowSeparation.png>
+Package pdftex.def Info: FlowSeparation.png used on input line 337.
+(pdftex.def)             Requested size: 345.0pt x 92.31119pt.
+Package color Info: Redefining color shadecolor on input line 352.
 
-<figures/plots-unnamed-chunk-1-1.pdf, id=92, 505.89pt x 505.89pt>
+<figures/plots-unnamed-chunk-1-1.pdf, id=99, 505.89pt x 505.89pt>
 File: figures/plots-unnamed-chunk-1-1.pdf Graphic file (type pdf)
 
 <use figures/plots-unnamed-chunk-1-1.pdf>
 Package pdftex.def Info: figures/plots-unnamed-chunk-1-1.pdf used on input line
- 351.
+ 354.
 (pdftex.def)             Requested size: 345.0pt x 345.00414pt.
- [21 <./SeparatedAerofoil.jpg>]
-Overfull \hbox (2.80281pt too wide) in paragraph at lines 366--366
+
+Overfull \hbox (2.80281pt too wide) in paragraph at lines 369--369
 \OT1/cmtt/m/n/10 information -[] library / non -[] power -[] nuclear -[] applic
 ations / transport /
  []
 
 
-Overfull \hbox (3.30281pt too wide) in paragraph at lines 366--366
+Overfull \hbox (3.30281pt too wide) in paragraph at lines 369--369
 \OT1/cmtt/m/n/10 org / information -[] library / safety -[] and -[] security / 
 safety -[] of -[] plants /
  []
 
-[22 <./figures/plots-unnamed-chunk-1-1.pdf>]
-Overfull \hbox (6.05276pt too wide) in paragraph at lines 366--366
+[23 <./FlowSeparation.png>] [24 <./figures/plots-unnamed-chunk-1-1.pdf>]
+Overfull \hbox (6.05276pt too wide) in paragraph at lines 369--369
 \OT1/cmtt/m/n/10 dl . kashti . ir / ENBOOKS / NEW / Ship % 20resistance % 20and
  % 20propulsion %
  []
 
-[23] (./DraftExec.aux)
+[25] (./DraftExec.aux)
 Package logreq Info: Writing requests to 'DraftExec.run.xml'.
 \openout1 = `DraftExec.run.xml'.
 
  ) 
 Here is how much of TeX's memory you used:
- 8153 strings out of 492995
- 143316 string characters out of 6132703
- 390823 words of memory out of 5000000
- 11615 multiletter control sequences out of 15000+600000
+ 8159 strings out of 492995
+ 143449 string characters out of 6132704
+ 389916 words of memory out of 5000000
+ 11620 multiletter control sequences out of 15000+600000
  8710 words of font info for 31 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  45i,8n,58p,1316b,1470s stack positions out of 5000i,500n,10000p,200000b,80000s
@@ -535,10 +541,10 @@ exlive/2017/texmf-dist/fonts/type1/public/amsfonts/cm/cmr7.pfb></usr/local/texl
 ive/2017/texmf-dist/fonts/type1/public/amsfonts/cm/cmr8.pfb></usr/local/texlive
 /2017/texmf-dist/fonts/type1/public/amsfonts/cm/cmti10.pfb></usr/local/texlive/
 2017/texmf-dist/fonts/type1/public/amsfonts/cm/cmtt10.pfb>
-Output written on DraftExec.pdf (23 pages, 7552369 bytes).
+Output written on DraftExec.pdf (25 pages, 7598569 bytes).
 PDF statistics:
- 154 PDF objects out of 1000 (max. 8388607)
- 99 compressed objects within 1 object stream
+ 164 PDF objects out of 1000 (max. 8388607)
+ 104 compressed objects within 2 object streams
  0 named destinations out of 1000 (max. 500000)
- 46 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 51 words of extra memory for PDF output out of 10000 (max. 10000000)
 
