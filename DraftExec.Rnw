@@ -100,12 +100,12 @@ However, as a direct and necessary result of this higher tactical silent speed, 
 
 Given the substantial emphasis which was placed on overall range and endurance of the submarine, it is difficult to understand how one particular unique requirement would be elevated so high above the other strategic and tactical advantages afforded by propellers.
 
-\subsection{Speed and Drag - Why very slow is very very $(very)^2$ economical}
+\section{Speed and Drag - Why very slow is very very $(very)^2$ economical}
 
 
 Perhaps the most important relationship to understand is the relationship between speed and drag as it pertains to submarines.  This is immportant because it sets out the fundamental framework as it applies to any submarine, regardless of propulsion type.  (It's also a pretty important for planes, cars, missiles, torpedoes, and basically everything else.)
 
-Drag is the resistance that a fluid (air or water, in our case) gives to a body that is passing through it. Quite simply, it's a force that acts in the opposite direction.  There are multiple sources of drag for different types of scenarios.  For scenarios where an object is in contact with two different types of fluid (like a ship, on the ocean) or when the fluid doesn't really have contact with all of the object (supersonic flight, and supercavitating torpedoes) some more complex physics applies. For a fuller discussion of types of drag, see [@carlton2007]  But in the case of a submarine, which does it's business completely immersed in the ocean, the relevant physics is dominated the skin friction on the hull, which follows a very simple rule and relationship.  The amount of drag ($F_D$) an objet experiences increases directly in proportion to the surface area $A$.  For any given object of a certain (unchanging shape) there will be a constant coefficent ($C_D$) which reflects how aerodynamic or hydrodymanic the shape is.  The drag is also directly proportional to the density of the fluid being moved through, $\rho$.  (Air creates roughly one-thousandth the drag as water does on any given object at a given speed, since it's roughly one thousand times less dense.)
+Drag is the resistance that a fluid (air or water, in our case) gives to a body that is passing through it. Quite simply, it's a force that acts in the opposite direction.  There are multiple sources of drag for different types of scenarios.  For scenarios where an object is in contact with two different types of fluid (like a ship, on the ocean) or when the fluid doesn't really have contact with all of the object (supersonic flight, and supercavitating torpedoes) some more complex physics applies. For a fuller discussion of types of drag, see \parencite{carlton2007}  But in the case of a submarine, which does it's business completely immersed in the ocean, the relevant physics is dominated the skin friction on the hull, which follows a very simple rule and relationship.  The amount of drag ($F_D$) an objet experiences increases directly in proportion to the surface area $A$.  For any given object of a certain (unchanging shape) there will be a constant coefficent ($C_D$) which reflects how aerodynamic or hydrodymanic the shape is.  The drag is also directly proportional to the density of the fluid being moved through, $\rho$.  (Air creates roughly one-thousandth the drag as water does on any given object at a given speed, since it's roughly one thousand times less dense.)
 
 But the most sensitive factor in this relationship is the speed at which the object moves through the liquid.  The drag increases not with the speed ($v$), but with the \textbf{square} of the speed . This means if the speed doubles, the drag increases by four.  If the speed triples, the drag increases by a factor of nine.
 
@@ -293,8 +293,50 @@ In order for flow separation to occur, a fluid must be moving against an adverse
 \label{fig:FlowSeparation.png}
 \end{figure}
 
-\section{end}
+In addition to the necessary loss of efficiency, flow separation can often tend to result in unsteady flows, with the vortices periodically being shed into the flow [@mollard2011 pp. 480].  If this occurs ahead of the blades of a propeller or impeller, such disturbances to the flow can lead to instances of cavitation when otherwise a steady homogenous flow might be well below the cavitation inception point, and can be consequential for the acoustic performance of the system, particulaly if such shedding resonates with characteristic frequencies of any of the machinery.
 
+\section{Basics of Ducted Propellers and Pumpjets}
+
+It's easy to be somewhat confused by the many different names which seem to be associated with related, or similar systems.  Between pumps, pumpjets, water-jets ducted or shrouded propellers, or impellers, there is plenty of grounds for some confusion  In this section, I aim to clarify in simple terms what the important differences between distinctly different systems are, and where some terms are used somewhat interchangeably without doing any great violence to the concepts underlying.
+
+\subsection{Propellers}
+
+Perhaps the best starting point is the most basic, and oldest of the systems which we're considering: the basic screw propeller.  A propeller uses a number of tilted blades attached to a central hub to sweep around disc in the water, and accelerate a column of water passing through the disc.  Due to the slant of the blades, water on the back sides of the blades is pushed astern, and reduced pressure on the front faces pulls more water from ahead to replace it.  As such, it accelerates a column of water, which necessarily is contracted in circumference after the point of acceleration.
+
+\begin{figure}
+\includegraphics[width=\textwidth]{PropellerAction.png}
+\caption{Propellers generate thrust by accelerating a column of water, as shown in \parencite{mollard2011} page 247.}
+\label{fig:PropellerAction.png}
+\end{figure}
+
+A comprehensive description of the development of the propeller can be found in \parencite{@carlton2007}.  Here I won't elaborate on beyond describing some essential features and characteristics with which one ought to be familiar, primarily for the purpose of comparing different propellers and their evolution into impellers of different designs.
+
+Most propellers will have between three and seven blades.  In general they are shaped as an aerofoil, with the convex side being upstream, just as the convex side of a plane wing is above, in order to generate lower pressure and lift as it moves through the air.  The blades tend to be twised so that they have a higher angle of attack closer to the hub, and lesser closer to the extremities, so that those faster moving sections push their respective parts of the water column at an overall similar speed.  The are often also thinner towards the extremities, and will be swept backwards as if dragged by their rotation through the water (skew) and also dragged by the ship's movement throug the water (rake), as seen in Figure ~\ref{fig:SkewRake.png}. Whilst the degree of all these characteristics is highly variable for different applications, these are a few of the commonly referred to characteristics which can be varied in order to optimise performance for any given application.
+
+\begin{figure}
+\includegraphics[width=\textwidth]{SkewRake.png}
+\caption{Propeller geometry including skew and rake, as shown in as shown in \parencite{mollard2011} page 262.}
+\label{fig:SkewRake.png}
+\end{figure}
+
+\subsubsection{Pitch}
+Perhaps one of the most important characteristics of a propeller is its pitch.  The pitch represents the distance that a blade section would travel forward if it carved its way around a helix through one full rotation.  It is intuitive to think of as something akin to the angle-of-attack of the propeller blade to the water, however this is technically misleading as the movement of the water-column incoming to the blade, as well as the speed of rotation, also have a significant bearing on what the actual angle of attack of the blade ends up being.  Whilst technically pitch is a distance (measured in meters), it is often expressed and used in formula as a ratio of the diameter of the propeller, to give it a unitless equivalent, as is common in the description of propellers and propulsion systems.
+
+\begin{figure}
+\includegraphics[width=\textwidth]{HelicalLine.png}
+\caption{A blade section of a propeller traces a helical line around a cylinder as it is rotated as shown in \parencite{carlton2007}}
+\label{fig:HelicalLine.png}
+\end{figure}
+
+\begin{figure}
+\includegraphics[width=\textwidth]{PitchDefinition.png}
+\caption{The definition of pitch is the distance traveled by a blade section along a cylinder, as shown in \parencite{carlton2007}}
+\label{fig:PitchDefinition.png}
+\end{figure}
+
+The selection of the exact blade selection that is selected to define pitch must be specified as being at some fraction of the radius from the centre.  This distance is calculated to be the 'moment mean' or a technical derived effective average, which tends to lie between 0.6R and 0.7R.  A thorough discussion of pitch can be found in \parencite{carlton2007} pages 35-37.
+
+Pitch is of particular importance to the discussion the efficiency of propeller and propulsor design because its optimal choice tends to vary considerably with the different loads which a vessel is intended to operate at, which can also relate to a vessel's design speed.  It is for this reason that a considerable number of vessels actually have variable pitch propellers.  Whilst considerably more complex, expensive, and heavier than a traditional fixed-pitch propeller, the ability to vary the pitch of a propeller assists considerably, particularly when the amount of load (resistance) a vessel is expected to face varies considerably.  Controllable pitch propellers also have advangates in terms of manouverability, since the pitch can be reversed and hence reverse thrust can be produced, without requiring the direction of the power coming from the engines to be reversed.  This has advantages for ferries which undertake frequent docking manouvres in confined spaces \parencite{MAN2017} \parencite{lewis1988}.
 
 
 

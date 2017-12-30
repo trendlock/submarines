@@ -1,0 +1,86 @@
+This is BibTeX, Version 0.99d (TeX Live 2017)
+Capacity: max_strings=100000, hash_size=100000, hash_prime=85009
+The top-level auxiliary file: DraftExec.aux
+The style file: biblatex.bst
+Reallocated glb_str_ptr (elt_size=4) to 20 items from 10.
+Reallocated global_strs (elt_size=20001) to 20 items from 10.
+Reallocated glb_str_end (elt_size=4) to 20 items from 10.
+Reallocated singl_function (elt_size=4) to 100 items from 50.
+Reallocated singl_function (elt_size=4) to 100 items from 50.
+Reallocated singl_function (elt_size=4) to 100 items from 50.
+Reallocated wiz_functions (elt_size=4) to 6000 items from 3000.
+Reallocated singl_function (elt_size=4) to 100 items from 50.
+Reallocated singl_function (elt_size=4) to 100 items from 50.
+Reallocated singl_function (elt_size=4) to 100 items from 50.
+Reallocated singl_function (elt_size=4) to 100 items from 50.
+Reallocated singl_function (elt_size=4) to 100 items from 50.
+Reallocated singl_function (elt_size=4) to 100 items from 50.
+Reallocated singl_function (elt_size=4) to 100 items from 50.
+Database file #1: DraftExec-blx.bib
+Database file #2: references.bib
+I was expecting a `,' or a `}'---line 113 of file references.bib
+ :   
+ :   url={http://www.marinepropulsors.com/proceedings/2015/WA2-1.pdf},
+(Error may have been on previous line)
+I'm skipping whatever remains of this entry
+I was expecting a `,' or a `}'---line 131 of file references.bib
+ :   
+ :   journal={SNAME},
+(Error may have been on previous line)
+I'm skipping whatever remains of this entry
+I was expecting a `,' or a `}'---line 249 of file references.bib
+ :   
+ :   publisher={Australian Strategic Policy Institute},
+(Error may have been on previous line)
+I'm skipping whatever remains of this entry
+I was expecting a `,' or a `}'---line 258 of file references.bib
+ :   
+ :   publisher={Insight Economics},
+(Error may have been on previous line)
+I'm skipping whatever remains of this entry
+Warning--I didn't find a database entry for "@carlton2007"
+Biblatex version: 3.3
+Reallocated wiz_functions (elt_size=4) to 9000 items from 6000.
+Reallocated singl_function (elt_size=4) to 100 items from 50.
+You've used 16 entries,
+            6256 wiz_defined-function locations,
+            1259 strings with 11199 characters,
+and the built_in function-call counts, 70265 in all, are:
+= -- 4754
+> -- 1410
+< -- 580
++ -- 1436
+- -- 420
+* -- 4083
+:= -- 5697
+add.period$ -- 0
+call.type$ -- 16
+change.case$ -- 450
+chr.to.int$ -- 39
+cite$ -- 30
+duplicate$ -- 7501
+empty$ -- 7009
+format.name$ -- 661
+if$ -- 15485
+int.to.chr$ -- 0
+int.to.str$ -- 40
+missing$ -- 0
+newline$ -- 406
+num.names$ -- 825
+pop$ -- 5038
+preamble$ -- 1
+purify$ -- 506
+quote$ -- 0
+skip$ -- 3025
+stack$ -- 0
+substring$ -- 7002
+swap$ -- 1994
+text.length$ -- 280
+text.prefix$ -- 0
+top$ -- 1
+type$ -- 531
+warning$ -- 0
+while$ -- 654
+width$ -- 0
+write$ -- 391
+(There were 4 error messages)

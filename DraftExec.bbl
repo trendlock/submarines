@@ -17,6 +17,31 @@
 \endgroup
 
 \sortlist[entry]{none/global/}
+  \entry{carlton2007}{book}{}
+    \name{author}{1}{}{%
+      {{hash=CJ}{%
+         family={Carlton},
+         familyi={C\bibinitperiod},
+         given={John},
+         giveni={J\bibinitperiod},
+      }}%
+    }
+    \list{publisher}{1}{%
+      {Elsevier}%
+    }
+    \strng{namehash}{CJ1}
+    \strng{fullhash}{CJ1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{labelyear}{2007}
+    \field{title}{Marine Propellers and Propulsion}
+    \verb{url}
+    \verb http://www.nuceng.ca/br_space/2017-09_4d03_6d03/misc_files/xenon_pois
+    \verb oning.pdf
+    \endverb
+    \field{year}{2007}
+  \endentry
+
   \entry{WNA2017}{misc}{}
     \list{publisher}{1}{%
       {World Nuclear Association}%
@@ -232,31 +257,6 @@
     \endverb
   \endentry
 
-  \entry{carlton2007}{book}{}
-    \name{author}{1}{}{%
-      {{hash=CJ}{%
-         family={Carlton},
-         familyi={C\bibinitperiod},
-         given={John},
-         giveni={J\bibinitperiod},
-      }}%
-    }
-    \list{publisher}{1}{%
-      {Elsevier}%
-    }
-    \strng{namehash}{CJ1}
-    \strng{fullhash}{CJ1}
-    \field{labelnamesource}{author}
-    \field{labeltitlesource}{title}
-    \field{labelyear}{2007}
-    \field{title}{Marine Propellers and Propulsion}
-    \verb{url}
-    \verb http://www.nuceng.ca/br_space/2017-09_4d03_6d03/misc_files/xenon_pois
-    \verb oning.pdf
-    \endverb
-    \field{year}{2007}
-  \endentry
-
   \entry{li2013}{article}{}
     \name{author}{5}{}{%
       {{hash=LX}{%
@@ -379,6 +379,32 @@
     \verb https://ntrs.nasa.gov/archive/nasa/casi.ntrs.nasa.gov/19870008232.pdf
     \endverb
     \field{year}{1986}
+  \endentry
+
+  \entry{MAN2017}{misc}{}
+    \name{author}{1}{}{%
+      {{hash=TMD}{%
+         family={Turbo},
+         familyi={T\bibinitperiod},
+         given={MAN Diesel\bibnamedelima &},
+         giveni={M\bibinitperiod\bibinitdelim D\bibinitperiod\bibinitdelim
+  \bibinitperiod},
+      }}%
+    }
+    \strng{namehash}{TMD1}
+    \strng{fullhash}{TMD1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{labelyear}{2017}
+    \field{title}{Basic Principals of Ship Propulsion}
+    \verb{url}
+    \verb https://marine.man.eu/docs/librariesprovider6/propeller-aftship/basic
+    \verb -principles-of-propulsion.pdf?sfvrsn=0
+    \endverb
+    \list{institution}{1}{%
+      {MAN Diesel & Turbo}%
+    }
+    \field{year}{2017}
   \endentry
 \endsortlist
 \endinput
