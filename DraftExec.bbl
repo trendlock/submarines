@@ -1,0 +1,1150 @@
+% $ biblatex auxiliary file $
+% $ biblatex bbl format version 2.8 $
+% Do not modify the above lines!
+%
+% This is an auxiliary file used by the 'biblatex' package.
+% This file may safely be deleted. It will be recreated as
+% required.
+%
+\begingroup
+\makeatletter
+\@ifundefined{ver@biblatex.sty}
+  {\@latex@error
+     {Missing 'biblatex' package}
+     {The bibliography requires the 'biblatex' package.}
+      \aftergroup\endinput}
+  {}
+\endgroup
+
+\sortlist[entry]{none/global/}
+  \entry{carlton2007}{book}{}
+    \name{author}{1}{}{%
+      {{hash=CJ}{%
+         family={Carlton},
+         familyi={C\bibinitperiod},
+         given={John},
+         giveni={J\bibinitperiod},
+      }}%
+    }
+    \list{publisher}{1}{%
+      {Elsevier}%
+    }
+    \strng{namehash}{CJ1}
+    \strng{fullhash}{CJ1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{labelyear}{2007}
+    \field{title}{Marine Propellers and Propulsion}
+    \verb{url}
+    \verb http://www.nuceng.ca/br_space/2017-09_4d03_6d03/misc_files/xenon_pois
+    \verb oning.pdf
+    \endverb
+    \field{year}{2007}
+  \endentry
+
+  \entry{liang2014}{article}{}
+    \name{author}{1}{}{%
+      {{hash=LLH}{%
+         family={Liang},
+         familyi={L\bibinitperiod},
+         given={Lee\bibnamedelima Hong},
+         giveni={L\bibinitperiod\bibinitdelim H\bibinitperiod},
+      }}%
+    }
+    \list{publisher}{1}{%
+      {Seatrade Maritime News}%
+    }
+    \strng{namehash}{LLH1}
+    \strng{fullhash}{LLH1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{labelyear}{2014}
+    \field{title}{The economics of slow steaming}
+    \verb{url}
+    \verb http://www.seatrade-maritime.com/news/americas/the-economics-of-slow-
+    \verb steaming.html
+    \endverb
+    \field{month}{10}
+    \field{year}{2014}
+  \endentry
+
+  \entry{sanguri2012}{article}{}
+    \name{author}{1}{}{%
+      {{hash=SM}{%
+         family={Sanguri},
+         familyi={S\bibinitperiod},
+         given={Mohit},
+         giveni={M\bibinitperiod},
+      }}%
+    }
+    \list{publisher}{1}{%
+      {Marine Insight}%
+    }
+    \strng{namehash}{SM1}
+    \strng{fullhash}{SM1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{labelyear}{2012}
+    \field{title}{The Guide to Slow Steaming On Ships}
+    \verb{url}
+    \verb https://www.marineinsight.com/wp-content/uploads/2013/01/The-guide-to
+    \verb -slow-steaming-on-ships.pdf
+    \endverb
+    \field{month}{12}
+    \field{year}{2012}
+  \endentry
+
+  \entry{WNA2017}{misc}{}
+    \list{publisher}{1}{%
+      {World Nuclear Association}%
+    }
+    \field{labeltitlesource}{title}
+    \field{labelyear}{2017}
+    \field{title}{Nuclear Powered Ships}
+    \verb{url}
+    \verb http://www.world-nuclear.org/information-library/non-power-nuclear-ap
+    \verb plications/transport/nuclear-powered-ships.aspx#ECSArticleLink0
+    \endverb
+    \field{year}{2017}
+  \endentry
+
+  \entry{patrick2012}{article}{}
+    \name{author}{1}{}{%
+      {{hash=PR}{%
+         family={Patrick},
+         familyi={P\bibinitperiod},
+         given={Rex},
+         giveni={R\bibinitperiod},
+      }}%
+    }
+    \list{publisher}{1}{%
+      {Asia-Pacific Defence Reporter}%
+    }
+    \strng{namehash}{PR1}
+    \strng{fullhash}{PR1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{labelyear}{2015}
+    \field{title}{The Driving Factor in the SEA 1000 choice}
+    \verb{url}
+    \verb https://corporate.siemens.com.au/content/dam/internet/siemens-com-au/
+    \verb root/aunz-defence-solutions/apdr-october-2015-issue-future-submarine.
+    \verb pdf
+    \endverb
+    \field{month}{10}
+    \field{year}{2015}
+  \endentry
+
+  \entry{WNA2009}{misc}{}
+    \list{publisher}{1}{%
+      {World Nuclear Association}%
+    }
+    \field{labeltitlesource}{title}
+    \field{labelyear}{2009}
+    \field{title}{Chernobyl Accident Appendix 1}
+    \verb{url}
+    \verb http://www.world-nuclear.org/information-library/safety-and-security/
+    \verb safety-of-plants/appendices/chernobyl-accident-appendix-1-sequence-of
+    \verb -events.aspx
+    \endverb
+    \field{year}{2009}
+  \endentry
+
+  \entry{garland2005}{article}{}
+    \name{author}{1}{}{%
+      {{hash=GB}{%
+         family={Garland},
+         familyi={G\bibinitperiod},
+         given={Bill},
+         giveni={B\bibinitperiod},
+      }}%
+    }
+    \list{publisher}{1}{%
+      {Nuclear Engineering (Originally from McMaster University)}%
+    }
+    \strng{namehash}{GB1}
+    \strng{fullhash}{GB1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{labelyear}{2005}
+    \field{title}{Elementary Physics of Reactor Control Module - Fission
+  Product Poisoning}
+    \verb{url}
+    \verb http://www.nuceng.ca/br_space/2017-09_4d03_6d03/misc_files/xenon_pois
+    \verb oning.pdf
+    \endverb
+    \field{volume}{3}
+    \field{year}{2005}
+  \endentry
+
+  \entry{hamilton1997}{article}{}
+    \name{author}{1}{}{%
+      {{hash=WH}{%
+         family={Waterjets},
+         familyi={W\bibinitperiod},
+         given={Hamilton},
+         giveni={H\bibinitperiod},
+      }}%
+    }
+    \list{publisher}{1}{%
+      {Hamilton Waterjets}%
+    }
+    \strng{namehash}{WH1}
+    \strng{fullhash}{WH1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{labelyear}{1997}
+    \field{title}{Jet Torque}
+    \verb{url}
+    \verb https://corporate.siemens.com.au/content/dam/internet/siemens-com-au/
+    \verb root/aunz-defence-solutions/apdr-october-2015-issue-future-submarine.
+    \verb pdf
+    \endverb
+    \field{volume}{8}
+    \field{month}{03}
+    \field{year}{1997}
+  \endentry
+
+  \entry{mollard2011}{book}{}
+    \name{author}{3}{}{%
+      {{hash=MAF}{%
+         family={Molland},
+         familyi={M\bibinitperiod},
+         given={Anthony\bibnamedelima F},
+         giveni={A\bibinitperiod\bibinitdelim F\bibinitperiod},
+      }}%
+      {{hash=TSR}{%
+         family={Turnock},
+         familyi={T\bibinitperiod},
+         given={Stephen\bibnamedelima R},
+         giveni={S\bibinitperiod\bibinitdelim R\bibinitperiod},
+      }}%
+      {{hash=HDA}{%
+         family={Hudson},
+         familyi={H\bibinitperiod},
+         given={Dominic\bibnamedelima A},
+         giveni={D\bibinitperiod\bibinitdelim A\bibinitperiod},
+      }}%
+    }
+    \list{publisher}{1}{%
+      {Cambridge University Press}%
+    }
+    \strng{namehash}{MAFTSRHDA1}
+    \strng{fullhash}{MAFTSRHDA1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{labelyear}{2011}
+    \field{title}{Ship resistance and propulsion}
+    \verb{url}
+    \verb http://dl.kashti.ir/ENBOOKS/NEW/Ship%20resistance%20and%20propulsion%
+    \verb 20_%20F.Molland%20(2011).pdf
+    \endverb
+    \field{year}{2011}
+  \endentry
+
+  \entry{NPdotnet2017}{misc}{}
+    \list{publisher}{1}{%
+      {nuclear-power.net}%
+    }
+    \field{labeltitlesource}{title}
+    \field{labelyear}{2017}
+    \field{title}{Laminar Flow}
+    \verb{url}
+    \verb http://www.nuclear-power.net/nuclear-engineering/fluid-dynamics/lamin
+    \verb ar-flow-viscous/
+    \endverb
+    \field{year}{2017}
+  \endentry
+
+  \entry{shin2015}{inproceedings}{}
+    \name{author}{3}{}{%
+      {{hash=SKW}{%
+         family={Shin},
+         familyi={S\bibinitperiod},
+         given={Keun\bibnamedelima Woo},
+         giveni={K\bibinitperiod\bibinitdelim W\bibinitperiod},
+      }}%
+      {{hash=RPB}{%
+         family={Regener},
+         familyi={R\bibinitperiod},
+         given={Pelle\bibnamedelima Bo},
+         giveni={P\bibinitperiod\bibinitdelim B\bibinitperiod},
+      }}%
+      {{hash=AP}{%
+         family={Andersen},
+         familyi={A\bibinitperiod},
+         given={Poul},
+         giveni={P\bibinitperiod},
+      }}%
+    }
+    \strng{namehash}{SKWRPBAP1}
+    \strng{fullhash}{SKWRPBAP1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{labelyear}{2015}
+    \field{booktitle}{Fourth International Symposium on Marine Propulsors}
+    \field{pages}{549\bibrangedash 555}
+    \field{title}{Methods for Cavitation Prediction on Tip-Modified Propellers
+  in Ship Wake Fields}
+    \verb{url}
+    \verb http://www.marinepropulsors.com/proceedings/2015/WA2-1.pdf
+    \endverb
+    \field{year}{2015}
+  \endentry
+
+  \entry{lewis1988}{article}{}
+    \name{author}{1}{}{%
+      {{hash=LEV}{%
+         family={Lewis},
+         familyi={L\bibinitperiod},
+         given={Edward\bibnamedelima V},
+         giveni={E\bibinitperiod\bibinitdelim V\bibinitperiod},
+      }}%
+    }
+    \strng{namehash}{LEV1}
+    \strng{fullhash}{LEV1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{labelyear}{1988}
+    \field{pages}{14}
+    \field{title}{Principles of naval architecture}
+    \verb{url}
+    \verb http://opac.vimaru.edu.vn/edata/EBook/Principles%20of%20Naval%20achit
+    \verb ecture%202.pdf
+    \endverb
+    \field{journaltitle}{SNAME}
+    \field{year}{1988}
+  \endentry
+
+  \entry{li2013}{article}{}
+    \name{author}{5}{}{%
+      {{hash=LX}{%
+         family={Li},
+         familyi={L\bibinitperiod},
+         given={Xiaojun},
+         giveni={X\bibinitperiod},
+      }}%
+      {{hash=YS}{%
+         family={Yuan},
+         familyi={Y\bibinitperiod},
+         given={Shouqi},
+         giveni={S\bibinitperiod},
+      }}%
+      {{hash=PZ}{%
+         family={Pan},
+         familyi={P\bibinitperiod},
+         given={Zhongyong},
+         giveni={Z\bibinitperiod},
+      }}%
+      {{hash=LY}{%
+         family={Li},
+         familyi={L\bibinitperiod},
+         given={Yi},
+         giveni={Y\bibinitperiod},
+      }}%
+      {{hash=LW}{%
+         family={Liu},
+         familyi={L\bibinitperiod},
+         given={Wei},
+         giveni={W\bibinitperiod},
+      }}%
+    }
+    \list{publisher}{1}{%
+      {Hindawi Publishing Corporation}%
+    }
+    \strng{namehash}{LX+1}
+    \strng{fullhash}{LXYSPZLYLW1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{labelyear}{2013}
+    \field{title}{Dynamic characteristics of rotating stall in mixed flow pump}
+    \verb{url}
+    \verb https://www.hindawi.com/journals/jam/2013/104629/
+    \endverb
+    \field{volume}{2013}
+    \field{journaltitle}{Journal of Applied Mathematics}
+    \field{year}{2013}
+  \endentry
+
+  \entry{MAN2017}{misc}{}
+    \name{author}{1}{}{%
+      {{hash=TMD}{%
+         family={Turbo},
+         familyi={T\bibinitperiod},
+         given={MAN Diesel\bibnamedelima &},
+         giveni={M\bibinitperiod\bibinitdelim D\bibinitperiod\bibinitdelim
+  \bibinitperiod},
+      }}%
+    }
+    \strng{namehash}{TMD1}
+    \strng{fullhash}{TMD1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{labelyear}{2017}
+    \field{title}{Basic Principals of Ship Propulsion}
+    \verb{url}
+    \verb https://marine.man.eu/docs/librariesprovider6/propeller-aftship/basic
+    \verb -principles-of-propulsion.pdf?sfvrsn=0
+    \endverb
+    \list{institution}{1}{%
+      {MAN Diesel & Turbo}%
+    }
+    \field{year}{2017}
+  \endentry
+
+  \entry{abdel2010}{inproceedings}{}
+    \name{author}{3}{}{%
+      {{hash=AMM}{%
+         family={Abdel-Maksoud},
+         familyi={A\bibinitperiod-M\bibinitperiod},
+         given={Moustafa},
+         giveni={M\bibinitperiod},
+      }}%
+      {{hash=SM}{%
+         family={Steden},
+         familyi={S\bibinitperiod},
+         given={Max},
+         giveni={M\bibinitperiod},
+      }}%
+      {{hash=HJ}{%
+         family={Hundemer},
+         familyi={H\bibinitperiod},
+         given={Jochen},
+         giveni={J\bibinitperiod},
+      }}%
+    }
+    \strng{namehash}{AMMSMHJ1}
+    \strng{fullhash}{AMMSMHJ1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{labelyear}{2010}
+    \field{booktitle}{Proceedings of 28th Symposium on Naval Hydrodynamics,
+  Pasadena}
+    \field{pages}{12\bibrangedash 17}
+    \field{title}{Design of a multi-component propulsor}
+    \field{year}{2010}
+  \endentry
+
+  \entry{wislicenus1973}{report}{}
+    \name{author}{1}{}{%
+      {{hash=WGF}{%
+         family={Wislicenus},
+         familyi={W\bibinitperiod},
+         given={George\bibnamedelima F},
+         giveni={G\bibinitperiod\bibinitdelim F\bibinitperiod},
+      }}%
+    }
+    \strng{namehash}{WGF1}
+    \strng{fullhash}{WGF1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{labelyear}{1973}
+    \field{title}{Hydrodynamic Design Principles of Pumps and Ducting for
+  Waterjet Propulsion}
+    \verb{url}
+    \verb http://www.dtic.mil/dtic/tr/fulltext/u2/775620.pdf
+    \endverb
+    \list{institution}{2}{%
+      {DAVID W TAYLOR NAVAL SHIP RESEARCH}%
+      {DEVELOPMENT CENTER BETHESDA MD}%
+    }
+    \field{type}{techreport}
+    \field{year}{1973}
+  \endentry
+
+  \entry{moulijn2015}{inproceedings}{}
+    \name{author}{1}{}{%
+      {{hash=MJ}{%
+         family={Moulijn},
+         familyi={M\bibinitperiod},
+         given={Joost},
+         giveni={J\bibinitperiod},
+      }}%
+    }
+    \strng{namehash}{MJ1}
+    \strng{fullhash}{MJ1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{labelyear}{2015}
+    \field{booktitle}{Proceedings of the fourth International Symposium on
+  Marine Propulsors SMP}
+    \field{pages}{31}
+    \field{title}{Application of various computational methods to predict the
+  performance and cavitation of ducted propellers}
+    \verb{url}
+    \verb www.marinepropulsors.com/proceedings/2015/WB3-1.pdf
+    \endverb
+    \field{volume}{15}
+    \field{year}{2015}
+  \endentry
+
+  \entry{oosterveld1970}{article}{}
+    \name{author}{1}{}{%
+      {{hash=OMWC}{%
+         family={Oosterveld},
+         familyi={O\bibinitperiod},
+         given={Marinus Willem\bibnamedelima Cornelis},
+         giveni={M\bibinitperiod\bibinitdelim W\bibinitperiod\bibinitdelim
+  C\bibinitperiod},
+      }}%
+    }
+    \list{publisher}{1}{%
+      {H. Veenman \& Zonen}%
+    }
+    \strng{namehash}{OMWC1}
+    \strng{fullhash}{OMWC1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{labelyear}{1970}
+    \field{title}{Wake adapted ducted propellers}
+    \verb{url}
+    \verb http://www.marin.nl/web/Publications/Publication-items/Wake-Adapted-D
+    \verb ucted-Propellers.htm
+    \endverb
+    \field{year}{1970}
+  \endentry
+
+  \entry{haimov2010}{inproceedings}{}
+    \name{author}{4}{}{%
+      {{hash=HH}{%
+         family={Haimov},
+         familyi={H\bibinitperiod},
+         given={H},
+         giveni={H},
+      }}%
+      {{hash=BMJ}{%
+         family={Bobo},
+         familyi={B\bibinitperiod},
+         given={M{\textordfeminine}\bibnamedelima J},
+         giveni={M\bibinitperiod\bibinitdelim J\bibinitperiod},
+      }}%
+      {{hash=VJ}{%
+         family={Vicario},
+         familyi={V\bibinitperiod},
+         given={J},
+         giveni={J},
+      }}%
+      {{hash=DCJ}{%
+         family={Del\bibnamedelima Corral},
+         familyi={D\bibinitperiod\bibinitdelim C\bibinitperiod},
+         given={J},
+         giveni={J},
+      }}%
+    }
+    \strng{namehash}{HH+1}
+    \strng{fullhash}{HHBMJVJDCJ1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{labelyear}{2010}
+    \field{booktitle}{Proceedings of 1st international symposium on fishing
+  vessel energy efficiency E-fishing, Vigo, Spain}
+    \field{title}{Ducted propellers. A solution for better propulsion of ships
+  calculations and practice}
+    \verb{url}
+    \verb http://www.cehipar.es/__files/users/publicaciones/217.pdf
+    \endverb
+    \field{year}{2010}
+  \endentry
+
+  \entry{henderson1964}{report}{}
+    \name{author}{3}{}{%
+      {{hash=HR}{%
+         family={Henderson},
+         familyi={H\bibinitperiod},
+         given={RE},
+         giveni={R\bibinitperiod},
+      }}%
+      {{hash=MJ}{%
+         family={McMahon},
+         familyi={M\bibinitperiod},
+         given={JF},
+         giveni={J\bibinitperiod},
+      }}%
+      {{hash=WG}{%
+         family={Wislicenus},
+         familyi={W\bibinitperiod},
+         given={GF},
+         giveni={G\bibinitperiod},
+      }}%
+    }
+    \strng{namehash}{HRMJWG1}
+    \strng{fullhash}{HRMJWG1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{labelyear}{1964}
+    \field{title}{A method for the design of pumpjets}
+    \verb{url}
+    \verb http://www.dtic.mil/dtic/tr/fulltext/u2/439631.pdf
+    \endverb
+    \list{institution}{1}{%
+      {PENNSYLVANIA STATE UNIV STATE COLLEGE ORDNANCE RESEARCH LAB}%
+    }
+    \field{type}{techreport}
+    \field{year}{1964}
+  \endentry
+
+  \entry{davies2017}{article}{}
+    \name{author}{1}{}{%
+      {{hash=DA}{%
+         family={Davies},
+         familyi={D\bibinitperiod},
+         given={Andrew},
+         giveni={A\bibinitperiod},
+      }}%
+    }
+    \list{publisher}{1}{%
+      {Australian Strategic Policy Institute}%
+    }
+    \strng{namehash}{DA1}
+    \strng{fullhash}{DA1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{labelyear}{2017}
+    \field{title}{Pump up the pump jet?}
+    \verb{url}
+    \verb https://www.aspistrategist.org.au/pump-up-the-pump-jet/
+    \endverb
+    \field{month}{11}
+    \field{year}{2017}
+  \endentry
+
+  \entry{patrick2017}{article}{}
+    \name{author}{1}{}{%
+      {{hash=PR}{%
+         family={Patrick},
+         familyi={P\bibinitperiod},
+         given={Rex},
+         giveni={R\bibinitperiod},
+      }}%
+    }
+    \list{publisher}{1}{%
+      {Australian Parliament House}%
+    }
+    \strng{namehash}{PR1}
+    \strng{fullhash}{PR1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{labelyear}{2017}
+    \field{title}{Senate Estimates Committeee}
+    \verb{url}
+    \verb http://parlview.aph.gov.au/mediaPlayer.php?videoID=379261&operation_m
+    \verb ode=parlview#/4%20from%20around%201201
+    \endverb
+    \field{month}{10}
+    \field{year}{2017}
+  \endentry
+
+  \entry{fujisawa1995}{article}{}
+    \name{author}{1}{}{%
+      {{hash=FN}{%
+         family={Fujisawa},
+         familyi={F\bibinitperiod},
+         given={Nobuyuki},
+         giveni={N\bibinitperiod},
+      }}%
+    }
+    \list{publisher}{1}{%
+      {Hindawi Publishing Corporation}%
+    }
+    \strng{namehash}{FN1}
+    \strng{fullhash}{FN1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{labelyear}{1995}
+    \field{number}{1}
+    \field{pages}{43\bibrangedash 50}
+    \field{title}{Measurements of basic performances for waterjet propulsion
+  systems in water tunnel}
+    \field{volume}{2}
+    \field{journaltitle}{International Journal of Rotating Machinery}
+    \field{year}{1995}
+  \endentry
+
+  \entry{kamal2015}{inproceedings}{}
+    \name{author}{6}{}{%
+      {{hash=MKI}{%
+         family={Mustaffa\bibnamedelima Kamal},
+         familyi={M\bibinitperiod\bibinitdelim K\bibinitperiod},
+         given={I},
+         giveni={I},
+      }}%
+      {{hash=ZK}{%
+         family={Zurcher},
+         familyi={Z\bibinitperiod},
+         given={K},
+         giveni={K},
+      }}%
+      {{hash=BN}{%
+         family={Bose},
+         familyi={B\bibinitperiod},
+         given={Neil},
+         giveni={N\bibinitperiod},
+      }}%
+      {{hash=BJ}{%
+         family={Binns},
+         familyi={B\bibinitperiod},
+         given={Jonathan},
+         giveni={J\bibinitperiod},
+      }}%
+      {{hash=CS}{%
+         family={Chai},
+         familyi={C\bibinitperiod},
+         given={Shuhong},
+         giveni={S\bibinitperiod},
+      }}%
+      {{hash=DG}{%
+         family={Davidson},
+         familyi={D\bibinitperiod},
+         given={Gary},
+         giveni={G\bibinitperiod},
+      }}%
+    }
+    \strng{namehash}{MKI+1}
+    \strng{fullhash}{MKIZKBNBJCSDG1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{labelyear}{2015}
+    \field{booktitle}{The fourth international symposium on marine propulsors}
+    \field{pages}{129\bibrangedash 137}
+    \field{title}{Powering for medium speed wave-piercing catamarans comparing
+  waterjet and screw propeller performance using model testing}
+    \verb{url}
+    \verb http://www.marinepropulsors.com/proceedings/2015/MA3-2.pdf
+    \endverb
+    \field{year}{2015}
+  \endentry
+
+  \entry{giles2010}{misc}{}
+    \name{author}{5}{}{%
+      {{hash=GW}{%
+         family={Giles},
+         familyi={G\bibinitperiod},
+         given={Will},
+         giveni={W\bibinitperiod},
+      }}%
+      {{hash=DPT}{%
+         family={Dinham-Peren},
+         familyi={D\bibinitperiod-P\bibinitperiod},
+         given={Tom},
+         giveni={T\bibinitperiod},
+      }}%
+      {{hash=AS}{%
+         family={Amaratunga},
+         familyi={A\bibinitperiod},
+         given={Shane},
+         giveni={S\bibinitperiod},
+      }}%
+      {{hash=VA}{%
+         family={Vrijdag},
+         familyi={V\bibinitperiod},
+         given={Arthur},
+         giveni={A\bibinitperiod},
+      }}%
+      {{hash=PR}{%
+         family={Partridge},
+         familyi={P\bibinitperiod},
+         given={Richard},
+         giveni={R\bibinitperiod},
+      }}%
+    }
+    \strng{namehash}{GW+1}
+    \strng{fullhash}{GWDPTASVAPR1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{labelyear}{2010}
+    \field{title}{The advanced waterjet: propulsor performance and effect on
+  ship design}
+    \field{journaltitle}{2013-01-20]. http://www, bmtdsl, co.
+  uk/media/5045591/BMTDSL-The-Advanced-Waterj et-Confpaper-INEC-Mayl 0. pdf}
+    \field{year}{2010}
+  \endentry
+
+  \entry{brandau1967}{report}{}
+    \name{author}{1}{}{%
+      {{hash=BJH}{%
+         family={Brandau},
+         familyi={B\bibinitperiod},
+         given={John\bibnamedelima H},
+         giveni={J\bibinitperiod\bibinitdelim H\bibinitperiod},
+      }}%
+    }
+    \strng{namehash}{BJH1}
+    \strng{fullhash}{BJH1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{labelyear}{1967}
+    \field{title}{Aspects of Performance Evaluation of Waterjet Propulsion
+  Systems and a Critical Review of the State-of-the-art}
+    \verb{url}
+    \verb http://www.dtic.mil/dtic/tr/fulltext/u2/827069.pdf
+    \endverb
+    \list{institution}{2}{%
+      {DAVID W TAYLOR NAVAL SHIP RESEARCH}%
+      {DEVELOPMENT CENTER BETHESDA MD DEPT OF HYDROMECHANICS}%
+    }
+    \field{type}{techreport}
+    \field{year}{1967}
+  \endentry
+
+  \entry{bulten2006numerical}{misc}{}
+    \name{author}{1}{}{%
+      {{hash=BNWH}{%
+         family={Bulten},
+         familyi={B\bibinitperiod},
+         given={Norbert Willem\bibnamedelima Herman},
+         giveni={N\bibinitperiod\bibinitdelim W\bibinitperiod\bibinitdelim
+  H\bibinitperiod},
+      }}%
+    }
+    \strng{namehash}{BNWH1}
+    \strng{fullhash}{BNWH1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{labelyear}{2006}
+    \field{number}{02}
+    \field{title}{Numerical analysis of a waterjet propulsion system}
+    \verb{url}
+    \verb http://alexandria.tue.nl/extra2/200612081.pdf
+    \endverb
+    \field{volume}{68}
+    \field{journaltitle}{Dissertation Abstracts International}
+    \field{year}{2006}
+  \endentry
+
+  \entry{stanford2017}{article}{}
+    \name{author}{1}{}{%
+      {{hash=SJ}{%
+         family={Stanford},
+         familyi={S\bibinitperiod},
+         given={Jon},
+         giveni={J\bibinitperiod},
+      }}%
+    }
+    \list{publisher}{1}{%
+      {Insight Economics}%
+    }
+    \strng{namehash}{SJ1}
+    \strng{fullhash}{SJ1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{labelyear}{2017}
+    \field{title}{Australia's Future Submarine Getting This Key Capability
+  Right}
+    \verb{url}
+    \verb http://www.insighteconomics.com.au/reports/2017_Insight_Economics_Sub
+    \verb marine_Report.pdf
+    \endverb
+    \field{month}{09}
+    \field{year}{2017}
+  \endentry
+
+  \entry{bruce1974}{article}{}
+    \name{author}{4}{}{%
+      {{hash=BEP}{%
+         family={Bruce},
+         familyi={B\bibinitperiod},
+         given={Edgar\bibnamedelima Perrin},
+         giveni={E\bibinitperiod\bibinitdelim P\bibinitperiod},
+      }}%
+      {{hash=GW}{%
+         family={Gearhart},
+         familyi={G\bibinitperiod},
+         given={WS},
+         giveni={W\bibinitperiod},
+      }}%
+      {{hash=RJ}{%
+         family={Ross},
+         familyi={R\bibinitperiod},
+         given={JR},
+         giveni={J\bibinitperiod},
+      }}%
+      {{hash=TA}{%
+         family={Treaster},
+         familyi={T\bibinitperiod},
+         given={AL},
+         giveni={A\bibinitperiod},
+      }}%
+    }
+    \strng{namehash}{BEP+1}
+    \strng{fullhash}{BEPGWRJTA1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{labelyear}{1974}
+    \field{title}{The design of pumpjets for hydrodynamic propulsion}
+    \verb{url}
+    \verb https://ntrs.nasa.gov/search.jsp?R=19750003135
+    \endverb
+    \field{year}{1974}
+  \endentry
+
+  \entry{furuya1988}{report}{}
+    \name{author}{2}{}{%
+      {{hash=FO}{%
+         family={Furuya},
+         familyi={F\bibinitperiod},
+         given={Okitsugu},
+         giveni={O\bibinitperiod},
+      }}%
+      {{hash=CWL}{%
+         family={Chiang},
+         familyi={C\bibinitperiod},
+         given={Wen-Li},
+         giveni={W\bibinitperiod-L\bibinitperiod},
+      }}%
+    }
+    \strng{namehash}{FOCWL1}
+    \strng{fullhash}{FOCWL1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{labelyear}{1988}
+    \field{title}{A new pumpjet design theory}
+    \verb{url}
+    \verb http://www.dtic.mil/docs/citations/ADA201353
+    \endverb
+    \list{institution}{1}{%
+      {HONEYWELL INC HOPKINS MN}%
+    }
+    \field{type}{techreport}
+    \field{year}{1988}
+  \endentry
+
+  \entry{mccormick1963design}{article}{}
+    \name{author}{2}{}{%
+      {{hash=MB}{%
+         family={McCormick},
+         familyi={M\bibinitperiod},
+         given={BW},
+         giveni={B\bibinitperiod},
+      }}%
+      {{hash=EJ}{%
+         family={Eisenhuth},
+         familyi={E\bibinitperiod},
+         given={JJ},
+         giveni={J\bibinitperiod},
+      }}%
+    }
+    \strng{namehash}{MBEJ1}
+    \strng{fullhash}{MBEJ1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{labelyear}{1963}
+    \field{number}{10}
+    \field{pages}{2348\bibrangedash 2354}
+    \field{title}{Design and Performance of Propellers and Pumpjets for
+  Underwater Propulsion}
+    \verb{url}
+    \verb https://arc.aiaa.org/doi/abs/10.2514/3.2065?journalCode=aiaaj
+    \endverb
+    \field{volume}{1}
+    \field{journaltitle}{AIAA J}
+    \field{year}{1963}
+  \endentry
+
+  \entry{mcbride1979}{report}{}
+    \name{author}{1}{}{%
+      {{hash=MMW}{%
+         family={McBride},
+         familyi={M\bibinitperiod},
+         given={Mark\bibnamedelima W},
+         giveni={M\bibinitperiod\bibinitdelim W\bibinitperiod},
+      }}%
+    }
+    \strng{namehash}{MMW1}
+    \strng{fullhash}{MMW1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{labelyear}{1979}
+    \field{title}{The design and analysis of turbomachinery in an
+  incompressible, steady flow using the streamline curvature method}
+    \verb{url}
+    \verb www.dtic.mil/dtic/tr/fulltext/u2/a071107.pdf
+    \endverb
+    \list{institution}{1}{%
+      {PENNSYLVANIA STATE UNIV UNIVERSITY PARK APPLIED RESEARCH LAB}%
+    }
+    \field{type}{techreport}
+    \field{year}{1979}
+  \endentry
+
+  \entry{wislicenus1986}{article}{}
+    \name{author}{1}{}{%
+      {{hash=WGF}{%
+         family={Wislicenus},
+         familyi={W\bibinitperiod},
+         given={George\bibnamedelima F},
+         giveni={G\bibinitperiod\bibinitdelim F\bibinitperiod},
+      }}%
+    }
+    \list{publisher}{1}{%
+      {NASA}%
+    }
+    \strng{namehash}{WGF1}
+    \strng{fullhash}{WGF1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{labelyear}{1986}
+    \field{title}{Preliminary design of turbopumps and related machinery}
+    \verb{url}
+    \verb https://ntrs.nasa.gov/archive/nasa/casi.ntrs.nasa.gov/19870008232.pdf
+    \endverb
+    \field{year}{1986}
+  \endentry
+
+  \entry{li2014rotating}{article}{}
+    \name{author}{2}{}{%
+      {{hash=LC}{%
+         family={Li},
+         familyi={L\bibinitperiod},
+         given={Cheng},
+         giveni={C\bibinitperiod},
+      }}%
+      {{hash=WQ}{%
+         family={Weijun},
+         familyi={W\bibinitperiod},
+         given={Qi},
+         giveni={Q\bibinitperiod},
+      }}%
+    }
+    \list{publisher}{1}{%
+      {Fakultet strojarstva i brodogradnje}%
+    }
+    \strng{namehash}{LCWQ1}
+    \strng{fullhash}{LCWQ1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{labelyear}{2014}
+    \field{number}{2}
+    \field{pages}{31\bibrangedash 40}
+    \field{title}{Rotating stall region of Water-Jet pump}
+    \verb{url}
+    \verb http://hrcak.srce.hr/index.php?show=clanak&id_clanak_jezik=185602
+    \endverb
+    \field{volume}{38}
+    \field{journaltitle}{Transactions of FAMENA}
+    \field{year}{2014}
+  \endentry
+
+  \entry{van1996waterjet}{article}{}
+    \name{author}{1}{}{%
+      {{hash=VTTJC}{%
+         family={Van\bibnamedelima Terwisga},
+         familyi={V\bibinitperiod\bibinitdelim T\bibinitperiod},
+         given={Thomas Jan\bibnamedelima Cornelis},
+         giveni={T\bibinitperiod\bibinitdelim J\bibinitperiod\bibinitdelim
+  C\bibinitperiod},
+      }}%
+    }
+    \strng{namehash}{VTTJC1}
+    \strng{fullhash}{VTTJC1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{labelyear}{1996}
+    \field{title}{Waterjet-hull interaction}
+    \list{institution}{1}{%
+      {Technische Universiteit Delft}%
+    }
+    \field{year}{1996}
+  \endentry
+
+  \entry{harvie1965construction}{book}{}
+    \name{author}{1}{}{%
+      {{hash=HJ}{%
+         family={Harvie},
+         familyi={H\bibinitperiod},
+         given={James},
+         giveni={J\bibinitperiod},
+      }}%
+    }
+    \list{publisher}{2}{%
+      {Society of Naval Architects}%
+      {Marine Engineers}%
+    }
+    \strng{namehash}{HJ1}
+    \strng{fullhash}{HJ1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{labelyear}{1965}
+    \field{title}{Construction of an Axial-flow Pump Jet Propulsion Unit}
+    \verb{url}
+    \verb http://mararchief.tudelft.nl/file/22546/
+    \endverb
+    \field{year}{1965}
+  \endentry
+
+  \entry{gearhart1966}{article}{}
+    \name{author}{2}{}{%
+      {{hash=GWS}{%
+         family={Gearhart},
+         familyi={G\bibinitperiod},
+         given={Walter\bibnamedelima S},
+         giveni={W\bibinitperiod\bibinitdelim S\bibinitperiod},
+      }}%
+      {{hash=HRE}{%
+         family={Henderson},
+         familyi={H\bibinitperiod},
+         given={Robert\bibnamedelima E},
+         giveni={R\bibinitperiod\bibinitdelim E\bibinitperiod},
+      }}%
+    }
+    \strng{namehash}{GWSHRE1}
+    \strng{fullhash}{GWSHRE1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{labelyear}{1966}
+    \field{number}{1}
+    \field{pages}{84\bibrangedash 90}
+    \field{title}{Selection of a Propulsor for a Submersible System}
+    \field{volume}{3}
+    \field{journaltitle}{Journal of Aircraft}
+    \field{year}{1966}
+  \endentry
+
+  \entry{suryanarayana2010cavitation}{article}{}
+    \name{author}{4}{}{%
+      {{hash=SC}{%
+         family={Suryanarayana},
+         familyi={S\bibinitperiod},
+         given={Ch},
+         giveni={C\bibinitperiod},
+      }}%
+      {{hash=SB}{%
+         family={Satyanarayana},
+         familyi={S\bibinitperiod},
+         given={B},
+         giveni={B},
+      }}%
+      {{hash=RK}{%
+         family={Ramji},
+         familyi={R\bibinitperiod},
+         given={K},
+         giveni={K},
+      }}%
+      {{hash=RMN}{%
+         family={Rao},
+         familyi={R\bibinitperiod},
+         given={M\bibnamedelima Nageswara},
+         giveni={M\bibinitperiod\bibinitdelim N\bibinitperiod},
+      }}%
+    }
+    \list{publisher}{1}{%
+      {Elsevier}%
+    }
+    \strng{namehash}{SC+1}
+    \strng{fullhash}{SCSBRKRMN1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{labelyear}{2010}
+    \field{number}{4}
+    \field{pages}{185\bibrangedash 194}
+    \field{title}{Cavitation studies on axi-symmetric underwater body with
+  pumpjet propulsor in cavitation tunnel}
+    \verb{url}
+    \verb http://www.sciencedirect.com/science/article/pii/S2092678216302473
+    \endverb
+    \field{volume}{2}
+    \field{journaltitle}{International Journal of Naval Architecture and Ocean
+  Engineering}
+    \field{year}{2010}
+  \endentry
+\endsortlist
+\endinput
