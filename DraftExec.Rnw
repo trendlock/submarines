@@ -17,6 +17,7 @@
 opts_chunk$set(fig.path='figures/plots-', fig.align='center', fig.show='hold', eval=T, echo=F)
 options(replace.assign=TRUE,width=80)
 library(tidyverse)
+library(submarines)
 @
 
 \tableofcontents
@@ -682,6 +683,125 @@ It is also important to understand that the addition of a duct will necessarily 
 \end{figure}
 
 Whilst at very low power levels, or at good depths, it is quite plausible that this doesn't result in any cavitation, which would normally be a likely occurrence if the blades are operating closer to their design power. As such,
+
+\section{App Outputs}
+
+Adjustable figures from App.
+
+
+
+<<compute, echo=F>>=
+
+df <- read_rds("extdata/default_subs_df.rds")
+
+df <- run_subs(df,
+             hotel = 150,
+             total.batt = 500,
+             batt.dens = 0.14,
+             patrol = 2.5,
+             max.speed = 18,
+             max.power = 7,
+             speed = 8,
+             power = 1500,
+             system = "jet",
+             method = "hotel match")
+
+
+eff_plot_df <- df %>%
+  filter(cat %in% c("eff.jet", "eff.prop")) %>%
+  mutate(cat = case_when(
+    cat ==  "eff.prop" ~ "Propeller",
+    cat ==  "eff.jet" ~ "Jet"
+  ))
+
+end_plot_df <- df %>%
+  filter(cat %in% c("endurance.prop.hour", "endurance.jet.hour")) %>%
+  mutate(cat = case_when(
+    cat ==  "endurance.prop.hour" ~ "Propeller",
+    cat ==  "endurance.jet.hour" ~ "Jet"
+  ))
+
+y_max_e <- roundUpNice(max(pull(end_plot_df, val)))
+
+range_plot_df <- df %>%
+  filter(cat %in% c("range.prop", "range.jet")) %>%
+  mutate(cat = case_when(
+    cat ==  "range.prop" ~ "Propeller",
+    cat ==  "range.jet" ~ "Jet"
+  ))
+
+y_max_r <- roundUpNice(max(pull(range_plot_df, val)))
+
+
+power_plot_df <- df %>%
+  filter(cat %in% c("hotel","power.mob.drawn.jet", "power.mob.req", "power.mob.drawn.prop")) %>%
+  mutate(cat = case_when(
+    cat == "hotel" ~ "Hotel Load",
+    cat ==  "power.mob.drawn.prop" ~ "Propulsion Power Drawn Propeller",
+    cat ==  "power.mob.drawn.jet" ~ "Propulsion Power Drawn Jet",
+    cat ==  "power.mob.req" ~ "Thrust Power Required"
+  ))
+
+y_max_p <- roundUpNice(max(pull(power_plot_df, val)))
+@
+
+
+\begin{figure}
+<<plot_eff, echo=FALSE>>=
+ggplot(eff_plot_df, aes(x = kts, y = val, col = cat))+
+        geom_line()+
+        theme_minimal() +
+        scale_y_continuous(breaks=seq(0, 1, 0.2),
+                           name = "Efficiency") +
+        scale_x_continuous(breaks=seq(0, 20, 2))
+@
+\caption{Efficiency}
+\label{fig:Efficiency_plot}
+\end{figure}
+
+\begin{figure}
+<<plot_end, echo=FALSE>>=
+ggplot(end_plot_df, aes(x = kts, y = val, col = cat))+
+          geom_line() +
+          theme_minimal() +
+          scale_y_continuous(breaks=seq(0, y_max_e, (y_max_e/10)),
+                             name = "hours") +
+          scale_x_continuous(breaks=seq(0, 20, 2)) +
+          geom_text(aes(label = round(val, digits = 1)), nudge_y = 2, angle = 45)
+@
+\caption{Endurance}
+\label{fig:Endurance_plot}
+\end{figure}
+
+\begin{figure}
+<<plot_range, echo=FALSE>>=
+ggplot(range_plot_df, aes(x = kts, y = val, col = cat))+
+          geom_line()+
+          theme_minimal()+
+          scale_y_continuous(breaks=seq(0, y_max_r, (y_max_r/10)),
+                             name = "nm") +
+          scale_x_continuous(breaks=seq(0, 20, 2)) +
+          geom_text(aes(label = round(val, digits = 1)), nudge_y = 2, angle = 45)
+@
+\caption{Range}
+\label{fig:Range_plot}
+\end{figure}
+
+
+\begin{figure}
+<<plot_power, echo=FALSE>>=
+        ggplot(power_plot_df, aes(x = kts, y = val, col = cat))+
+          geom_line() +
+          theme_minimal() +
+          scale_y_continuous(breaks=seq(0, y_max_p, (y_max_p/10)),
+                             name = "hours") +
+          scale_x_continuous(breaks=seq(0, 20, 2)) +
+          geom_text(aes(label = round(val, digits = 1)), nudge_y = 2, angle = 45)
+@
+\caption{Power}
+\label{fig:Power_plot}
+\end{figure}
+
 
 \section{Conclusions}
 

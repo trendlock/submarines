@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.18 (TeX Live 2017) (preloaded format=pdflatex 2017.12.12)  2 JAN 2018 10:20
+This is pdfTeX, Version 3.14159265-2.6-1.40.18 (TeX Live 2017) (preloaded format=pdflatex 2017.12.12)  2 JAN 2018 12:38
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -780,7 +780,42 @@ LaTeX Warning: Citation 'willemsen2013' on page 66 undefined on input line 726.
 LaTeX Warning: Citation 'willemsen2013' on page 66 undefined on input line 726.
 
 
-[66 <./InceptionDepth.png>] [67 <./VortexShedding.png>] [68] (./DraftExec.aux)
+Package color Info: Redefining color shadecolor on input line 738.
+<figures/plots-plot_eff-1.pdf, id=307, 505.89pt x 505.89pt>
+File: figures/plots-plot_eff-1.pdf Graphic file (type pdf)
+
+<use figures/plots-plot_eff-1.pdf>
+Package pdftex.def Info: figures/plots-plot_eff-1.pdf used on input line 740.
+(pdftex.def)             Requested size: 345.0pt x 345.00414pt.
+ [66 <./InceptionDepth.png>] [67 <./VortexShedding.png>]
+Package color Info: Redefining color shadecolor on input line 753.
+ <figures/plots-plot_end-1.pdf, id=317, 505.89pt x 505.89pt>
+File: figures/plots-plot_end-1.pdf Graphic file (type pdf)
+
+<use figures/plots-plot_end-1.pdf>
+Package pdftex.def Info: figures/plots-plot_end-1.pdf used on input line 755.
+(pdftex.def)             Requested size: 345.0pt x 345.00414pt.
+Package color Info: Redefining color shadecolor on input line 768.
+
+<figures/plots-plot_range-1.pdf, id=318, 505.89pt x 505.89pt>
+File: figures/plots-plot_range-1.pdf Graphic file (type pdf)
+
+<use figures/plots-plot_range-1.pdf>
+Package pdftex.def Info: figures/plots-plot_range-1.pdf used on input line 770.
+
+(pdftex.def)             Requested size: 345.0pt x 345.00414pt.
+Package color Info: Redefining color shadecolor on input line 784.
+
+<figures/plots-plot_power-1.pdf, id=319, 505.89pt x 505.89pt>
+File: figures/plots-plot_power-1.pdf Graphic file (type pdf)
+
+<use figures/plots-plot_power-1.pdf>
+Package pdftex.def Info: figures/plots-plot_power-1.pdf used on input line 786.
+
+(pdftex.def)             Requested size: 345.0pt x 345.00414pt.
+ [68 <./figures/plots-plot_eff-1.pdf>]
+[69 <./figures/plots-plot_end-1.pdf>] [70 <./figures/plots-plot_range-1.pdf>]
+[71 <./figures/plots-plot_power-1.pdf>] (./DraftExec.aux)
 
 LaTeX Warning: There were undefined references.
 
@@ -797,10 +832,10 @@ Package logreq Info: Writing requests to 'DraftExec.run.xml'.
 
  ) 
 Here is how much of TeX's memory you used:
- 8372 strings out of 492995
- 147883 string characters out of 6132703
+ 8397 strings out of 492995
+ 148588 string characters out of 6132703
  391823 words of memory out of 5000000
- 11802 multiletter control sequences out of 15000+600000
+ 11822 multiletter control sequences out of 15000+600000
  8856 words of font info for 31 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  38i,8n,58p,1621b,1473s stack positions out of 5000i,500n,10000p,200000b,80000s
@@ -818,10 +853,10 @@ ive/2017/texmf-dist/fonts/type1/public/amsfonts/cm/cmr7.pfb></usr/local/texlive
 /2017/texmf-dist/fonts/type1/public/amsfonts/cm/cmr8.pfb></usr/local/texlive/20
 17/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/local/texlive/201
 7/texmf-dist/fonts/type1/public/amsfonts/cm/cmti10.pfb>
-Output written on DraftExec.pdf (68 pages, 11813601 bytes).
+Output written on DraftExec.pdf (71 pages, 11836742 bytes).
 PDF statistics:
- 366 PDF objects out of 1000 (max. 8388607)
- 195 compressed objects within 2 object streams
+ 400 PDF objects out of 1000 (max. 8388607)
+ 217 compressed objects within 3 object streams
  0 named destinations out of 1000 (max. 500000)
- 221 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 241 words of extra memory for PDF output out of 10000 (max. 10000000)
 
