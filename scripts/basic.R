@@ -21,6 +21,8 @@ speeds <- eff$speed
 
 
 eff.jet <- c(0.08,0.1,0.135, 0.2, 0.3, 0.42, 0.46, 0.5, 0.56, 0.6, 0.62, 0.58, 0.57, 0.55, 0.54, 0.54, 0.54, 0.54, 0.54, 0.53)
+
+
 eff.jet.2 <- eff.jet + c(rep(0.01, 20))
 new.eff.jet <- tibble(eff.jet, eff.jet.2) %>%
   gather() %>%
@@ -101,7 +103,7 @@ plot <- df2 %>%
   #geom_text(aes(label = round(value, digits = 1)), position = position_dodge(4))+
   labs(title = "Endurance")+
   #theme(axis.title.x = element_blank(), axis.title.y = element_blank())+
-  theme(legend.title=element_blank())
+  theme(legend.title = element_blank())
 ggplotly(plot) %>%
   layout(legend = list(orientation = 'v',y = 0.8, x = 0.7))
 

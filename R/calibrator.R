@@ -1,6 +1,12 @@
 #' @export
 
-calibrator <- function(df, system = "jet", method = "hotel match", hotel = 150, patrol = 2.5, max.speed = 20, max.power = 7000, speed = 10, power = 1000) {
+calibrator <- function(df, system, method, hotel, patrol, max.speed, max.power, speed, power) {
+
+  df <- df %>%
+    mutate(hotel)
+
+  message("in df")
+  print(head(df))
 
   if(method == "hotel match") {
     speed. <- patrol
@@ -9,36 +15,61 @@ calibrator <- function(df, system = "jet", method = "hotel match", hotel = 150, 
 
   if(method == "max power") {
     speed. <- max.speed
-    power. <- max.power
+    power. <- max.power * 1000
   }
 
   if(method == "other reference"){
+
     speed. <- speed
     power. <- power
   }
 
+
+
+
+  message("speed.")
+  print(speed.)
+  message("power.")
+  print(power.)
+
+
   if(system == "jet"){
     df. <- df %>%
-      select(speed, hotel.1, eff.jet)
-    colnames(df.) <- c("speed", "hotel.1", "eff")
+      rename(eff = eff.jet) %>%
+      select(kts, hotel, eff)
   }
 
   if(system == "prop"){
     df. <- df %>%
-      select(speed, hotel.1, eff.prop)
-    colnames(df.) <- c("speed", "hotel.1", "eff")
+      rename(eff = eff.prop) %>%
+      select(kts, hotel, eff)
   }
 
+  message("df.")
+  print(head(df.))
+
+
   index <- df. %>%
-    mutate(line = case_when(speed == speed. ~ row_number()))
+    mutate(id = row_number(),
+           line = case_when(kts == speed. ~ id))
+
+
   index. <- index %>%
     filter(line > 0) %>%
     pull(line)
 
+  message("index.")
+  print(index.)
+
+
   eff. <- df.$eff[index.]
 
-  const <- power.*eff./(speed.^3)
 
-  const
+  message("eff.")
+  print(eff.)
+
+  (power.* eff.)/(speed.^3)
+
+
 
 }
