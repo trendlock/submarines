@@ -811,6 +811,31 @@
     \field{year}{2006}
   \endentry
 
+  \entry{willemsen2013}{misc}{}
+    \name{author}{1}{}{%
+      {{hash=WJ}{%
+         family={Willemsen},
+         familyi={W\bibinitperiod},
+         given={J.C.},
+         giveni={J\bibinitperiod},
+      }}%
+    }
+    \strng{namehash}{WJ1}
+    \strng{fullhash}{WJ1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{labelyear}{2013}
+    \field{title}{Improving Potential Flow Predictions for Ducted Propellers}
+    \verb{url}
+    \verb http://www.refresco.org/wp-content/uploads/2015/03/2013-Msc_Thesis_Ch
+    \verb risWillemsen.pdf
+    \endverb
+    \list{institution}{1}{%
+      {Marin}%
+    }
+    \field{year}{2013}
+  \endentry
+
   \entry{stanford2017}{article}{}
     \name{author}{1}{}{%
       {{hash=SJ}{%
@@ -836,6 +861,47 @@
     \endverb
     \field{month}{09}
     \field{year}{2017}
+  \endentry
+
+  \entry{lu2016cfd}{article}{}
+    \name{author}{3}{}{%
+      {{hash=LL}{%
+         family={Lu},
+         familyi={L\bibinitperiod},
+         given={Lin},
+         giveni={L\bibinitperiod},
+      }}%
+      {{hash=PG}{%
+         family={Pan},
+         familyi={P\bibinitperiod},
+         given={Guang},
+         giveni={G\bibinitperiod},
+      }}%
+      {{hash=SPK}{%
+         family={Sahoo},
+         familyi={S\bibinitperiod},
+         given={Prasanta\bibnamedelima K},
+         giveni={P\bibinitperiod\bibinitdelim K\bibinitperiod},
+      }}%
+    }
+    \list{publisher}{1}{%
+      {Elsevier}%
+    }
+    \strng{namehash}{LLPGSPK1}
+    \strng{fullhash}{LLPGSPK1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{labelyear}{2016}
+    \field{number}{1}
+    \field{pages}{110\bibrangedash 116}
+    \field{title}{CFD prediction and simulation of a pumpjet propulsor}
+    \verb{url}
+    \verb http://www.sciencedirect.com/science/article/pii/S2092678216000042
+    \endverb
+    \field{volume}{8}
+    \field{journaltitle}{International Journal of Naval Architecture and Ocean
+  Engineering}
+    \field{year}{2016}
   \endentry
 
   \entry{bruce1974}{article}{}
@@ -1024,6 +1090,37 @@
     \field{year}{2014}
   \endentry
 
+  \entry{gearhart1966selection}{article}{}
+    \name{author}{2}{}{%
+      {{hash=GWS}{%
+         family={Gearhart},
+         familyi={G\bibinitperiod},
+         given={Walter\bibnamedelima S},
+         giveni={W\bibinitperiod\bibinitdelim S\bibinitperiod},
+      }}%
+      {{hash=HRE}{%
+         family={Henderson},
+         familyi={H\bibinitperiod},
+         given={Robert\bibnamedelima E},
+         giveni={R\bibinitperiod\bibinitdelim E\bibinitperiod},
+      }}%
+    }
+    \strng{namehash}{GWSHRE1}
+    \strng{fullhash}{GWSHRE1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{labelyear}{1966}
+    \field{number}{1}
+    \field{pages}{84\bibrangedash 90}
+    \field{title}{Selection of a Propulsor for a Submersible System}
+    \verb{url}
+    \verb https://arc.aiaa.org/doi/abs/10.2514/3.59270
+    \endverb
+    \field{volume}{3}
+    \field{journaltitle}{Journal of Aircraft}
+    \field{year}{1966}
+  \endentry
+
   \entry{van1996waterjet}{article}{}
     \name{author}{1}{}{%
       {{hash=VTTJC}{%
@@ -1069,34 +1166,6 @@
     \verb http://mararchief.tudelft.nl/file/22546/
     \endverb
     \field{year}{1965}
-  \endentry
-
-  \entry{gearhart1966}{article}{}
-    \name{author}{2}{}{%
-      {{hash=GWS}{%
-         family={Gearhart},
-         familyi={G\bibinitperiod},
-         given={Walter\bibnamedelima S},
-         giveni={W\bibinitperiod\bibinitdelim S\bibinitperiod},
-      }}%
-      {{hash=HRE}{%
-         family={Henderson},
-         familyi={H\bibinitperiod},
-         given={Robert\bibnamedelima E},
-         giveni={R\bibinitperiod\bibinitdelim E\bibinitperiod},
-      }}%
-    }
-    \strng{namehash}{GWSHRE1}
-    \strng{fullhash}{GWSHRE1}
-    \field{labelnamesource}{author}
-    \field{labeltitlesource}{title}
-    \field{labelyear}{1966}
-    \field{number}{1}
-    \field{pages}{84\bibrangedash 90}
-    \field{title}{Selection of a Propulsor for a Submersible System}
-    \field{volume}{3}
-    \field{journaltitle}{Journal of Aircraft}
-    \field{year}{1966}
   \endentry
 
   \entry{suryanarayana2010cavitation}{article}{}
