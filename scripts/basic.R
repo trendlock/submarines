@@ -32,12 +32,12 @@ eff.jet <- c(new.eff.jet$value)
 
 
 #######  NUMBERS TO ADJUST BY USE IN APP ##########
-hotel <- 150
+hotel <- 200
 total.batt <- 500 #Tonnes,
 batt.dens <- 0.15
 
 #######
-patrol <- 2.5
+patrol <- 4.5
 
 # There are a few different ways of providing a reference point for the power consumption for a given propulsion type.
 # 1. Nominate a speed at which power consumption for propulsion is equal to hotel load, as per Andrew Davies article
@@ -67,7 +67,7 @@ df <- df %>%
 
 ### find the constant here
 
-const <- calibrator(df = df, system = "jet", method = "max power")
+const <- calibrator(df = df, system = "jet", method = "hotel match", patrol = 1.5)
 
 df <- df %>%
   mutate(power.mob.req = const*speed^3,

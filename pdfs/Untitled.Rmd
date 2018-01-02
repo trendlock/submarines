@@ -1,0 +1,57 @@
+---
+title: "Efficiency"
+author: "Aidan Morrison"
+date: "11/12/2017"
+output: pdf_document
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+## Executive Summary
+
+This paper was commissioned in order to investigate whether pumpjets could plausibly be as efficient, or more efficient than a suitably designed open propeller for a conventional submarine. A crucial input to the investigation is a rough understanding of what the speeds of operation are likely to be for a submarine.  Whereas nuclear submarines are reportedly capable of reaching speeds in excess of 30kt, and might transit long distances at such high speeds, conventional sumbarines are not thought of as being able to reach speeds far above 20kt in a sprint, and can only sustain speeds of 8-10kt for long-distance transits.  Moreover, on patrol, a large portion of thier work is done at very low speeds, typically thought to be in the range of 2-4kt. 
+
+The efficiency of the propulsion system at such low speeds is of great significance for a conventional submarine, since it must rely on batteries or other air-independent propulsion sources for power when entirely submerged.  Consequently, excessive energy consumption results in greatly reduced dived endurances.  Since a submarine's position is vastly more likely to be discovered when it is on the surface operating its diesel engines, this ability to remain submerged for a long time is crucially important for combat operations, and in transiting through sensitive or contested areas.  For nuclear submarines, which posess a practically infinite supply of energy from the nuclear reactor, efficiency at low speeds is of no concern.  In fact, dispersing additional energy, (provided it can be done quietly) is probably advantageous for a nuclear submarine, since it will allow the nuclear reactor to avoid running at very low power levels, where the stability of the reactor is reduced.
+
+Pumpjets have been widely adopted by navies operating nuclear submarines.  The principal advantage of a pumpjet relevant to submarines is their ability to avoid problems associated with cavitation, which is known to occur for propellers attempting to operate at high speeds.  Cavitation, which is the rapid expansion and collapse of a bubble or void in the water, is particularly problematic for submarines, since it results in the creation of a great deal of noise which could be detected by an enemy. 
+
+A fundamental requirement of a pump-jet in order to avoid this cavitation is that the the working parts of the jet (the rotating blades inside it, known as the impeller) operate at a higher pressure than propeller blades operating in open water would.  This means that the blades can turn at a lower speed relative to the water they are connected with, allowing a less violent action, which induces less cavitation.  In this way, the jet does it's work less by directly acelerating the water, but by raising its pressure.  This raised pressure is converted back to movement, which produces thrust, as it exits the jet and returns to the same pressure as the surrounding environment.  
+
+The role of the shroud (or tunnel, mantel, duct) around the jet is to allow the pressure to be so raised around the impeller, in a way that is not possible for an open propeller.  By a fundamental requirements of physics, this actually requires that the water be **reduced** before it reaches the impeller. (The kinetic energy embodied in movement is converted into potential energy, or pressure.)  Whilst the duct narrowing at the nozzle also necessarily accelerates the water, (as the additinal pressure imparted by the impeller is converted back to kinetic energy) it's an essential feature of all pump-jets that the water flow is decelerated at the point of reaching the impeller. Consequently, an elementary form of the pump-jet is also termed the 'decelerating duct' applied to a propeller.  Put simply, the water has to slow down to go fast again.
+
+The problems for pump-jets arise when the water is already going slow, and you don't want it to go that much faster.  This is the case when a jet designed for high-speed attempt to operate at a dramatically reduced speed.  (Not to be confused with a vessel with very little water speed working very hard, as might be the case for a tug or barge.)  In this case, the slowing down and speeding up results in an unnecssary additional step which reduces greatly the efficiency of propulsive system. Or, put another way, overcomign the resistance of moving water through the shroud becomes much greater relative to the total thrus produced by the jet. 
+
+It is for this reason that waterjets of any kind are known to have an efficiency curve that falls off towards zero as the net thrust they produce also diminishes to zero (which for a given vessel will correspond to water speed).  This doesn't mean that they don't still work at low speeds and produce some thrust.  All it means is that far more power per unit of thrust will be required than might be at other speeds, as a higher fraction of energy is expended producing the turblence (random, round-and-round movement) inside and around the jet shroud than goes towards direct front-to-back acceleration of the water column, which produces thrust.
+
+Whist estimating the exact shape and level of the efficiency curve for a particular pump-jet and propeller is impossible without detailed knowledge of their design, the over all trends of their shapes in the extremes can be known from well-established principals.  Moreover, the particular demands of a pump-jet suited to a nuclear submarine, (eliminating all cavitation in as wide a range of operating circumstances as possible) considerably narrows the plausible range concerned.  In order to minimise cavitation, the degree of pressure elvation at the impeller would be relatively high, or the total surfaces of the impeller blades much aslo become larger.  Both of these design requirements necessitate changes to the duct or blade designs which would be in tension with overall efficiency, and most pronounced at the lowest of operating speeds.
+
+In the production of this paper I have developed a computational model which maps the impact of different efficiency curves directly to the dived range and endurance of a submarine. The most plausible scenarios I find include the reduction of dived endrance and range between 20% and 50%, or effectively halving time and distance that submarine may remain submerged for during combat operations at speeds around 3-5kt.
+
+My review of the literature confirms that a pumpjet may produce a significant acoustic advantage in circumstances where an open propeller would experience any degree of cavitation. Indeed, it has been remarked by naval researchers that pump-jets could be designed which would not cavitate past the point when the body they propel experienced caviation.   As such, it seems perfectly plausible that pump-jets confer one advantage on a submarine, in that they can accelerate to a higher speed without cavitation occurring.  This is known as a higher 'tactical silent speed'.  
+
+However, at much lower speeds such as patrol speeds (2-4kt) it is most likely that a propeller will be able to operate well below the point of any cavitation inception, and would consequently also be extremely quiet.  Moreover, a jet will necessarily incur substantially larger degrees and types of turbulence in order to produce net thrust in this regime.  These likely include discontinuities and instability in the flow entering the duct and passing through the impeller and stator (flow seperation) as the water is acelerated sufficient to be slowed, and then re-accelerated.  In certain circumstances where resonances might arise these could be highly adverse to acoustic performance.  However, assuming that by careful design such resonances can be eliminated (which we assume has been achieved) these effects would not result in any cavitation, and would only increase the noise attributable to turbulence in solid water, which is far less than for any cavitation. 
+
+But in either case, given the necessarily raised levels of turblence generated by a jet at very low speeds, the claim that the jet is quieter in this regime must rely entirely upon shielding effects from the shroud.  These could be substantial in a directions perpendicular to the direction of travel, but would be much smaller when viewed from the aft or forward directions.  It should also be noted that many underwater acoustic environments, sound tennds to reflect and bend in different directions as it propagates. As such, the claim that pump-jets are universally quieter than propellers should be 
+
+However, as a direct and necessary result of this higher tactical silent speed, some disadvantages will be incurred, owing to the additional drag induced by the shroud which prevents cavitation at the impeller.  These are a lower dived endurance, a lower dived range, a lower overall endurance, a lower overall range, and a worse indescretion ratio. 
+
+Given that 
+
+
+When you click the **Knit** button a document will be generated that includes both content as well as the output of any embedded R code chunks within the document. You can embed an R code chunk like this:
+
+```{r cars}
+summary(cars)
+```
+
+## Including Plots
+
+You can also embed plots, for example:
+
+```{r pressure, echo=FALSE}
+plot(pressure)
+```
+
+Note that the `echo = FALSE` parameter was added to the code chunk to prevent printing of the R code that generated the plot.
