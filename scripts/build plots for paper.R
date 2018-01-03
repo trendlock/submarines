@@ -1,46 +1,43 @@
 
-library(stringr)
+library(submarines)
 
-df <- read_rds("extdata/comb_eff_df.rds")
+df <- read_csv(find::this("/Submarines/eff-data-2018-01-03.csv"))
 
  # df <- read_rds("extdata/default_subs_df.rds")
 
 
-ggplot(df, aes(x = kts, y = eff, col = System)) +
+ggplot(df, aes(x = kts, y = val, col = cat)) +
   geom_line() +
   ylim(0, 1)
 
+plotly::ggplotly()
 
-df_1_j <- df %>%
-  filter(System == "Jet 1") %>%
-  rename(eff.jet = eff)
-df_1_p <- df %>%
-  filter(System == "Prop 1")
-df_1 <-  df_1_j %>%
-  mutate(eff.prop = pull(df_1_p, eff))
+df <- df %>%
+  mutate(set = case_when(
+    cat %in% c("input_prop_1", "input_jet_1") ~ "Middle",
+    cat %in% c("input_prop_2", "input_jet_3") ~ "Close",
+    cat %in% c("input_prop_3", "input_jet_2") ~ "Far"
+  ))
 
-df_2_j <- df %>%
-  filter(System == "Jet 2") %>%
-  rename(eff.jet = eff)
-df_2_p <- df %>%
-  filter(System == "Prop 2")
-df_2 <-  df_2_j %>%
-  mutate(eff.prop = pull(df_2_p, eff))
-
-df_3_j <- df %>%
-  filter(System == "Jet 3") %>%
-  rename(eff.jet = eff)
-df_3_p <- df %>%
-  filter(System == "Prop 3")
-df_3 <-  df_3_j %>%
-  mutate(eff.prop = pull(df_3_p, eff))
+ls <- df %>%
+  split(.$set) %>%
+  map( ~ .x %>%
+         select(-set) %>%
+         mutate(cat = case_when(
+           str_detect(cat, "jet") ~ "eff.jet",
+           str_detect(cat, "prop") ~ "eff.prop"
+         )) %>%
+         spread(cat, val))
 
 
-ls <- list(df_1, df_2, df_3) %>%
+
+
+
+
+ls_comp <- ls %>%
   map( ~ .x %>%
          select(kts, eff.jet, eff.prop) %>%
-         run_subs(
-                  hotel = 150,
+         run_subs(hotel = 150,
                   total.batt = 500,
                   batt.dens = 0.14,
                   patrol = 2.5,
@@ -73,6 +70,15 @@ produce_all_plots <- function(df) {
 
   y_max_e <- roundUpNice(max(pull(end_plot_df, val)))
 
+
+
+  end_prop_plot_df <- end_plot_df %>%
+    spread(cat, val) %>%
+    mutate(diff = (Propeller/Jet -1) * 100)
+
+  y_max_e_p <- roundUpNice(max(pull(end_prop_plot_df, diff)))
+
+
   range_plot_df <- df %>%
     filter(cat %in% c("range.prop", "range.jet")) %>%
     mutate(cat = case_when(
@@ -101,6 +107,8 @@ produce_all_plots <- function(df) {
                        name = "Efficiency") +
     scale_x_continuous(breaks=seq(0, 20, 2))
 
+
+
   end <- ggplot(end_plot_df, aes(x = kts, y = val, col = cat))+
     geom_line() +
     theme_minimal() +
@@ -108,68 +116,77 @@ produce_all_plots <- function(df) {
                        name = "hours") +
     scale_x_continuous(breaks=seq(0, 20, 2))
 
+  end_p <- ggplot(end_prop_plot_df, aes(x = kts, y = diff))+
+    geom_line() +
+    theme_minimal() +
+    scale_y_continuous(name = "% Advantage")
+
   rng <- ggplot(range_plot_df, aes(x = kts, y = val, col = cat))+
     geom_line()+
     theme_minimal()+
-    scale_y_continuous(breaks=seq(0, y_max_r, (y_max_r/10)),
+    scale_y_continuous(breaks=seq(0, 350, (350/10)),
                        name = "nm") +
     scale_x_continuous(breaks=seq(0, 20, 2))
+
+
 
   pwr <- ggplot(power_plot_df, aes(x = kts, y = val, col = cat))+
     geom_line() +
     theme_minimal() +
-    scale_y_continuous(breaks=seq(0, y_max_p, (y_max_p/10)),
+    scale_y_continuous(breaks=seq(0, 32000, (32000/10)),
                        name = "hours") +
     scale_x_continuous(breaks=seq(0, 20, 2))
 
-  list(eff = eff, end = end, rng = rng, pwr =pwr)
+  list(eff = eff, end = end, end_p = end_p, rng = rng,  pwr =pwr)
 }
 
 
 
-ls_plots <- ls %>%
+# another plot
+# proportional change to range?
+
+ls_plots <- ls_comp %>%
   map( ~produce_all_plots(.x))
 
-ls_plots$`Set 1`
 
+
+# check them out
+
+
+# plotly
+
+# ls_plotly <- ls_plots %>%
+#   map( ~ map(.x, ~ plotly::ggplotly(.x)))
+#
+#
+# ls_plots$`Set 1`$end_p
+#
+
+
+ # if you want to plot them together...
 library(gtable)
 library(gridExtra)
 
-obj <- grid.arrange(
-  grobs = list(ls_plots$`Set 1`$eff,
-               ls_plots$`Set 1`$end,
-               ls_plots$`Set 1`$rng,
-               ls_plots$`Set 1`$pwr,
-               ls_plots$`Set 2`$eff,
-               ls_plots$`Set 2`$end,
-               ls_plots$`Set 2`$rng,
-               ls_plots$`Set 2`$pwr,
-               ls_plots$`Set 3`$eff,
-               ls_plots$`Set 3`$end,
-               ls_plots$`Set 3`$rng,
-               ls_plots$`Set 3`$pwr),
-  widths = c(1, 1, 1, 1),
-  layout_matrix = rbind(c(1, 1, 1),
-                        c(1, 1, 1),
-                        c(1, 1, 1)))
-
-
 
 obj <- grid.arrange(
   grobs = list(ls_plots$`Set 1`$eff,
                ls_plots$`Set 1`$end,
+               ls_plots$`Set 1`$end_p,
                ls_plots$`Set 1`$rng,
                ls_plots$`Set 1`$pwr,
                ls_plots$`Set 2`$eff,
                ls_plots$`Set 2`$end,
+               ls_plots$`Set 2`$end_p,
                ls_plots$`Set 2`$rng,
                ls_plots$`Set 2`$pwr,
                ls_plots$`Set 3`$eff,
                ls_plots$`Set 3`$end,
+               ls_plots$`Set 3`$end_p,
                ls_plots$`Set 3`$rng,
                ls_plots$`Set 3`$pwr),
   widths = c(1, 1, 1),
-  layout_matrix = rbind(c(1, 5, 9),
-                        c(2, 6, 10),
-                        c(3, 7, 11),
-                        c(4, 8, 12)))
+  layout_matrix = rbind(c(1, 6, 11),
+                        c(2, 7, 12),
+                        c(3, 8, 13),
+                        c(4, 9, 14),
+                        c(5, 10, 15)))
