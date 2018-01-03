@@ -25,7 +25,11 @@ plot <- df2 %>%
   ggplot(aes(x = speed, y = depth, fill = min.stat.rel.VP))+
   geom_tile()+
   scale_fill_gradientn(colours = rainbow(5))+
+  scale_x_continuous(name ="speed (kt)")+
+  scale_y_continuous(name ="depth (m)")+
+  labs(title = "Cavitation Inception Equivalence Contours", fill = "Indicative \nExcess \nStatic Pressure \n(Atmospheres)")+
   stat_contour(aes(z = min.stat.rel.VP), col = "black")+
   stat_contour(data = df2 %>% filter(temp == 30 & depth <= 100), aes(z = min.stat.rel.VP), col = "red", linetype = 2)
+
 
 ggplotly(plot)
