@@ -17,6 +17,7 @@
 opts_chunk$set(fig.path='figures/plots-', fig.align='center', fig.show='hold', eval=T, echo=F)
 options(replace.assign=TRUE,width=80)
 library(tidyverse)
+library(submarines)
 @
 
 \tableofcontents
@@ -444,7 +445,7 @@ At IMARESTS 10th International Naval Engineering Conference, a paper was present
 \label{fig:BMTShape.png}
 \end{figure}
 
-The paper makes no effort to justify the selection of choice of jets on the efficiency of the propulsion system, instead focussing on improved acoustic performance, and potential machinery space-saving advantages.  The the vessel under consideration would require 250 tonnes more fuel with jets find than with propellers, the jets would require more power to reach equal waterspeed to a conventionally propelled craft right up to 30 kt. The paper states: "This is an encouraging result for a first iteration as the AWJ-21™ arrangement has not been fully optimised and, hence, there is further prospect of reducing the shaft power for this form. If the power could be reduced by 5\% (e.g. by fur ther improving the waterjet/hull fairing), then the AWJ-21™ vessel would be better at all speeds above 25 knots." \parencite{giles2010}
+The paper makes no effort to justify the selection of choice of jets on the efficiency of the propulsion system, instead focussing on improved acoustic performance, and potential machinery space-saving advantages.  The vessel under consideration would require 250 tonnes more fuel with jets find than with propellers, the jets would require more power to reach equal waterspeed to a conventionally propelled craft right up to 30 kt. The paper states: "This is an encouraging result for a first iteration as the AWJ-21™ arrangement has not been fully optimised and, hence, there is further prospect of reducing the shaft power for this form. If the power could be reduced by 5\% (e.g. by fur ther improving the waterjet/hull fairing), then the AWJ-21™ vessel would be better at all speeds above 25 knots." \parencite{giles2010}
 
 \begin{figure}
 \includegraphics[width=\textwidth]{BMTPowering.png}
@@ -462,7 +463,7 @@ In paper also provides specific curves for the efficiency of the propulsor as a 
 
 It appears from recent examples in the literature that there is no evidence of jets approaching the same efficiency as propellers at speeds as low as 10kt.  Indeed, there seems to be considerable evidence that jets of most kinds suffer substantial efficiency penalties relative to propellers in this regime, and that this is understood and accepted as an inevitable design trade-off to be made.  In the case of a submarine, which might spend nearly 100\% of its time travelling at 10kt or less, this disadvantage (as opposed to less than 35\%, as assumed for a surface ship) would become extremely substantial, which will be quantified in later sections.
 
-Moreover, recent literature seems to confirm that efficiency of pumpjets fall off precipitously towards zero the closer that the vessel speed comes to zero.  This stronly suggests the existence of some fundamental constraint in the physics of the operation of jets, which recent advances in technology seems not to have overcome.  To more firmly establish the extent to which adaptation or plausible improvments in technology could or could not change this trend, it is worthwhile considering the theoretical limits that are presented by the physics.  This should further limit the range of error that might be made in estimating realistic bounds of performance for an unknown system.
+Moreover, recent literature seems to confirm that efficiency of pumpjets fall off precipitously towards zero the closer that the vessel speed comes to zero.  This strongly suggests the existence of some fundamental constraint in the physics of the operation of jets, which recent advances in technology seems not to have overcome.  To more firmly establish the extent to which adaptation or plausible improvments in technology could or could not change this trend, it is worthwhile considering the theoretical limits that are presented by the physics.  This should further limit the range of error that might be made in estimating realistic bounds of performance for an unknown system.
 
 \subsection{Theoretical Limitations}
 In this section I will appraise some of the available literature, including some of the most canonical works in the design of pumpjets which is now declassified from US Navy funded research (and still extremely frequently cited by contemporary researchers).  Before doing so, I'll attempt to summarise in simple language the mose essential conclusions in simple language.
@@ -557,7 +558,7 @@ It should be clear from the above analysis that the efficiency of a pumpjet fall
 
 In terms of establishing plausible peaks and cross-over points, the study undertaken in \cite{giles2010} probably provides a sufficient indication as to the current state of the art in the relevant technologies.  Whilst this effort focussed on a surface vessel rather than a   The study was undertaken with the backing of military customers with support and testing facilities (the US Navy), and involved two major companies who are world leaders in maritime engineering (BMT) and waterjet manufacture (Rolls Royce). Even if further technical advances through design refinement were possible, as the authors alude to, the cross-over point in terms of efficiency might be brought down to 25kt.  The prospect that the crossover point lies anywhere near the transit speed of a convetional submarine (8-10kt) appears utterly implausible. In discussions with leading world experts involved in the development of advanced ducted propellers (including those involved in citations) I was told that a pumpjet could not be more efficient than a propeller below 18kt.
 
-With the optimum efficiency of a jet probably being no greater than 60\% or 70\% at its peak efficiency according to many theoretical and experimental studies \parencite{lu2015}, which would quite probably lie considerably higher in terms of waterspeed, these facts, along with the inevitable decline of efficiency towards zero as waterspeed also declines, a suitably constrained set of plausible efficiency curves may be investigated numerically, as will be done later in later sections.
+With the optimum efficiency of a jet probably being no greater than 60\% or 70\% at its peak efficiency according to many theoretical and experimental studies \parencite{lu2016cfd}, which would quite probably lie considerably higher in terms of waterspeed, these facts, along with the inevitable decline of efficiency towards zero as waterspeed also declines, a suitably constrained set of plausible efficiency curves may be investigated numerically, as will be done later in later sections.
 
 \subsection{An assessment of scope for improving the efficiency of a pumpjet at low speeds}
 Before continuing to assess the impact of the likely efficiency curves of pumpjets relative to propellers, it is worthwhile considering what the known literature about the theory of pumps, jets, and turbomachinery might tell us about the potential for a radical advance which make might substantially improve the shape of the curve at very low speeds.  Whilst the field of propulsor design is no doubt complex, and I will not attempt to be exhaustive in detailing all of the potential design considerations which might make an improvement.  However, the pursuit of reasonably comprehensive confidence is aided by the the scale of the gap which probably needs to be closed to make pumpjets comparably efficient to propellers at the relevant speeds.  Minor adjustments and the improvement of small or marginal effects, of which there might be many, will clearly not help in shifting the efficiency peak of a jet from over 25kt to under 10kt.  In other words, this gap will not be closed or noticeably reduced by 'tuning'.  Quite substantial redesign of core characteristics (like mass flow) would be required, which would necessitate a cycle of redesign and tuning virtually all other aspect of the entire jet, as illustrated by numerous guides to the design of such systems (\cite{bruce1974}, \cite{furuya1988}, \cite{mccormick1963design}, \cite{henderson1964}).  As such, I will only consider those parameters which could plausibly be altered quite substantially, where the consideration of larger changes make the likely limits or trade-offs quite clear.
@@ -595,9 +596,9 @@ In addition, whilst it is often demonstrated that for a given propeller under ce
 In other words, the use of highly loaded propellers in such applications is actually particular to design constraints that are unlikely to be present for a submarine, which can position the propeller at the tail of its body, directly behind its centre of mass and drag, and consequenlty have freedom about the optimal size of the blades.  It is well known that a duct cannot improve the performance of a low-loaded propeller which would be the situation for a slow-moving vessel with unconstrained propeller size.  Authoritative references in the literature include \cite{oosterveld1970}, who calculates the minimum thrust coefficient $C_T$ (a measure of loading) for an accelerating duct to improve a propellers performance to be between 1 and 2, as shown in @AcceleratingIdeal.
 
 \begin{figure}
-\includegraphics[width=\textwidth]{DuctedEfficiency.png}
+\includegraphics[width=\textwidth]{AcceleratingIdeal.png}
 \caption{Calculations of 'ideal' efficiencies of accelerating ducts (neglecting drag) in \cite{oosterveld1970} show that a duct can only improve the efficiency of a propeller if it is loaded above a certain degree, and that longer ducts produce better improvements in 'ideal' efficiencies}
-\label{fig:DuctedEfficiency.png}
+\label{fig:AcceleratingIdeal.png}
 \end{figure}
 
 A parallel design change in the switch away from the degree of deceleration in the duct would be the reduction of the nozzle contraction after the rotor.  For waterjets and pumpjets of all sorts, based on fundamental disc actuator theory, the degree of this contraction of the flow area has also been long identified as a means to increase pressure at the rotor, and hence decrease cavitation, but at the direct expense of efficiency \parencite[14]{van1996waterjet}.
@@ -663,7 +664,7 @@ It is generally considered that the existence of cavitation of any sort will ten
 
 Other sources of noise hydrodynamic noise, such as the turbulence produced in the boundary layer of the flow over the hull, or parts of the propulsor, will still contribute to overall noise and some signature, but it will tend to be vastly smaller in magnitude.  This owes to the essentially incompressible nature of water.  Without compression, even very relatively intense votices or tubulent flows will not propagate very much noise, if the water remains perfectly solid.  All of the 'round and round' can't achieve much 'in and out', which is what results in propagated noise.  This obviously doesn't hold true in compressible fluids, such as air, as one would observe noticing the intense noise produced by hand-dryers, aeroplanes, jet engines etc.  It also doesn't hold true within a turbulent flow underwater.  If you were to put a sensor inside a turbulent flow, the rapid movements would result in continual and significant pressure fluctuations, hence noise.  But at a distance, these fluctuations tend to substantially cancel out.  The larger the scale of the eddies and vortices, the further noise might propagate, and also the lower the frequencies of resultant noise might be, which makes noise propagate further.  Likewise, larger caviation voids will tend to emit lower frequency sound aswell, as can be observed from the boiling of a kettle.
 
-However, when dived, it might be reasonably assumed that the complete elimination of all sources of cavitition will be the primary objective of acoustic signature management.  This is neatly put in \cite[88]{gearhart1966}: "The occurence of cavitation in a propulsor results in adegradation of the propulsor operating characteristics if extensive amounts of cavitation exist, and in significant noise when minute amounts occur.  As a result, the performance requirements of a submersible weapon system specify that the occurence or inception of cavitation be avoided below certain operating depths." One might consider that a submarines 'tactical silent speed' would most probably correspond to the speed at which it can operate safely below the point of any cavitation inception.
+However, when dived, it might be reasonably assumed that the complete elimination of all sources of cavitition will be the primary objective of acoustic signature management.  This is neatly put in \cite[88]{gearhart1966selection}: "The occurence of cavitation in a propulsor results in adegradation of the propulsor operating characteristics if extensive amounts of cavitation exist, and in significant noise when minute amounts occur.  As a result, the performance requirements of a submersible weapon system specify that the occurence or inception of cavitation be avoided below certain operating depths." One might consider that a submarines 'tactical silent speed' would most probably correspond to the speed at which it can operate safely below the point of any cavitation inception.
 
 It is crucial to understand that increasing depth necessarily increases the static pressure throughout a propulsion system.  As such, the speed at which cavitation starts to occur, will necessarily be a function of depth.  Approximately every 10m of water adds approximately the equivalent of an atmosphere of pressure.  As such, the static pressure a system experiences at 10m depth will be half that experienced at 30m (since the air in the atmosphere comprises the first atmosphere of pressure).  Consequently, diving deeper will necessarily increase the speeds one can achieve without any cavitation occurring \ref{fig:InceptionDepth.png}.
 
@@ -682,6 +683,125 @@ It is also important to understand that the addition of a duct will necessarily 
 \end{figure}
 
 Whilst at very low power levels, or at good depths, it is quite plausible that this doesn't result in any cavitation, which would normally be a likely occurrence if the blades are operating closer to their design power. As such,
+
+\section{App Outputs}
+
+Adjustable figures from App.
+
+
+
+<<compute, echo=F>>=
+
+df <- read_rds("extdata/default_subs_df.rds")
+
+df <- run_subs(df,
+             hotel = 150,
+             total.batt = 500,
+             batt.dens = 0.14,
+             patrol = 2.5,
+             max.speed = 18,
+             max.power = 7,
+             speed = 8,
+             power = 1500,
+             system = "jet",
+             method = "hotel match")
+
+
+eff_plot_df <- df %>%
+  filter(cat %in% c("eff.jet", "eff.prop")) %>%
+  mutate(cat = case_when(
+    cat ==  "eff.prop" ~ "Propeller",
+    cat ==  "eff.jet" ~ "Jet"
+  ))
+
+end_plot_df <- df %>%
+  filter(cat %in% c("endurance.prop.hour", "endurance.jet.hour")) %>%
+  mutate(cat = case_when(
+    cat ==  "endurance.prop.hour" ~ "Propeller",
+    cat ==  "endurance.jet.hour" ~ "Jet"
+  ))
+
+y_max_e <- roundUpNice(max(pull(end_plot_df, val)))
+
+range_plot_df <- df %>%
+  filter(cat %in% c("range.prop", "range.jet")) %>%
+  mutate(cat = case_when(
+    cat ==  "range.prop" ~ "Propeller",
+    cat ==  "range.jet" ~ "Jet"
+  ))
+
+y_max_r <- roundUpNice(max(pull(range_plot_df, val)))
+
+
+power_plot_df <- df %>%
+  filter(cat %in% c("hotel","power.mob.drawn.jet", "power.mob.req", "power.mob.drawn.prop")) %>%
+  mutate(cat = case_when(
+    cat == "hotel" ~ "Hotel Load",
+    cat ==  "power.mob.drawn.prop" ~ "Propulsion Power Drawn Propeller",
+    cat ==  "power.mob.drawn.jet" ~ "Propulsion Power Drawn Jet",
+    cat ==  "power.mob.req" ~ "Thrust Power Required"
+  ))
+
+y_max_p <- roundUpNice(max(pull(power_plot_df, val)))
+@
+
+
+\begin{figure}
+<<plot_eff, echo=FALSE>>=
+ggplot(eff_plot_df, aes(x = kts, y = val, col = cat))+
+        geom_line()+
+        theme_minimal() +
+        scale_y_continuous(breaks=seq(0, 1, 0.2),
+                           name = "Efficiency") +
+        scale_x_continuous(breaks=seq(0, 20, 2))
+@
+\caption{Efficiency}
+\label{fig:Efficiency_plot}
+\end{figure}
+
+\begin{figure}
+<<plot_end, echo=FALSE>>=
+ggplot(end_plot_df, aes(x = kts, y = val, col = cat))+
+          geom_line() +
+          theme_minimal() +
+          scale_y_continuous(breaks=seq(0, y_max_e, (y_max_e/10)),
+                             name = "hours") +
+          scale_x_continuous(breaks=seq(0, 20, 2)) +
+          geom_text(aes(label = round(val, digits = 1)), nudge_y = 2, angle = 45)
+@
+\caption{Endurance}
+\label{fig:Endurance_plot}
+\end{figure}
+
+\begin{figure}
+<<plot_range, echo=FALSE>>=
+ggplot(range_plot_df, aes(x = kts, y = val, col = cat))+
+          geom_line()+
+          theme_minimal()+
+          scale_y_continuous(breaks=seq(0, y_max_r, (y_max_r/10)),
+                             name = "nm") +
+          scale_x_continuous(breaks=seq(0, 20, 2)) +
+          geom_text(aes(label = round(val, digits = 1)), nudge_y = 2, angle = 45)
+@
+\caption{Range}
+\label{fig:Range_plot}
+\end{figure}
+
+
+\begin{figure}
+<<plot_power, echo=FALSE>>=
+        ggplot(power_plot_df, aes(x = kts, y = val, col = cat))+
+          geom_line() +
+          theme_minimal() +
+          scale_y_continuous(breaks=seq(0, y_max_p, (y_max_p/10)),
+                             name = "hours") +
+          scale_x_continuous(breaks=seq(0, 20, 2)) +
+          geom_text(aes(label = round(val, digits = 1)), nudge_y = 2, angle = 45)
+@
+\caption{Power}
+\label{fig:Power_plot}
+\end{figure}
+
 
 \section{Conclusions}
 
