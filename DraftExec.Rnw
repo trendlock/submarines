@@ -1,9 +1,14 @@
 \documentclass{article}
 
 \usepackage[backend=bibtex, sorting=none, citestyle=authoryear]{biblatex}
-
+\usepackage[margin=0.8in]{geometry}
 \bibliography{references}
 
+
+\usepackage{draftwatermark}
+\SetWatermarkText{DRAFT}
+\SetWatermarkScale{5}
+\SetWatermarkLightness{0.95}
 
 \title{Efficiency}
 \author{Aidan Morrison}
@@ -19,6 +24,8 @@ options(replace.assign=TRUE,width=80)
 library(tidyverse)
 library(submarines)
 @
+
+Para
 
 \tableofcontents
 
@@ -248,7 +255,7 @@ Full and proper derivations of many of the thrust equations for different propul
 Flow separation refers to a circumstance when the flow over a surface separates entirely from the surface, and a new eddy or votex is formed where the flow actually moves in the opposite direction to the dominant flow.  It is of particular significance in hydrodynamics because it can lead to substantial losses of efficiency, as energy is diverted into the kinetic energy of the eddy or vortex, which is unproductive. It tends to occur near the surface of aerofoils with high angles of attack, or in the blades of turbomachinery including diffuser or mixed-flow pumps and ducted propellers operating in off-design conditions, including low flow rates \parencite{li2013}, parencite{bakker2006}, parencite{mcbride1979}, parencite{wislicenus1986}.
 
 \begin{figure}
-\includegraphics[width=\textwidth]{SeparatedAerofoil.jpg}
+\includegraphics[width=0.5\textwidth]{SeparatedAerofoil.jpg}
 \caption{Flow separation occurring over the top of an aerofoil in a wind tunnel. Image courtesy of Deutsches Zentrum fuer Luft- und Raumfahrt e. V. (DLR)}
 \label{fig:SeparatedAerofoil.jpg}
 \end{figure}
@@ -445,15 +452,9 @@ At IMARESTS 10th International Naval Engineering Conference, a paper was present
 \label{fig:BMTShape.png}
 \end{figure}
 
-The paper makes no effort to justify the selection of choice of jets on the efficiency of the propulsion system, instead focussing on improved acoustic performance, and potential machinery space-saving advantages.  The vessel under consideration would require 250 tonnes more fuel with jets find than with propellers, the jets would require more power to reach equal waterspeed to a conventionally propelled craft right up to 30 kt. The paper states: "This is an encouraging result for a first iteration as the AWJ-21™ arrangement has not been fully optimised and, hence, there is further prospect of reducing the shaft power for this form. If the power could be reduced by 5\% (e.g. by fur ther improving the waterjet/hull fairing), then the AWJ-21™ vessel would be better at all speeds above 25 knots." \parencite{giles2010}
+The paper makes no effort to justify the selection of choice of jets on the efficiency of the propulsion system, instead focussing on improved acoustic performance, and potential machinery space-saving advantages.  The vessel under consideration would require 250 tonnes more fuel with jets find than with propellers, the jets would require more power to reach equal waterspeed to a conventionally propelled craft right up to 30 kt.  In the case of this analysis, modifications to the hullform in order to accommodate the jet (which are likely to be more substantial for a surface ship than a submarine) also have an impcat on the resistance offerd by the hull.  This also has an interaction with the different shape of the propulsors, which alters the required level of delivered (effective) power to achieve a given speed, in addition to the considerations of how efficiently the propulsor generates that effective power. The paper states: "This is an encouraging result for a first iteration as the AWJ-21™ arrangement has not been fully optimised and, hence, there is further prospect of reducing the shaft power for this form. If the power could be reduced by 5\% (e.g. by fur ther improving the waterjet/hull fairing), then the AWJ-21™ vessel would be better at all speeds above 25 knots."  This statement, however, is made in reference to the hullform needed to accommodate the jet, rather than the jet itself. \parencite{giles2010}
 
-\begin{figure}
-\includegraphics[width=\textwidth]{BMTPowering.png}
-\caption{Studies on submerged waterjets for military surface craft currently show that jets require more power than conventional propellers right up to 30kt \parencite{giles2010}}
-\label{fig:BMTPowering.png}
-\end{figure}
-
-In paper also provides specific curves for the efficiency of the propulsor as a function of vessel speed, which demonstrated that the waterjet efficiency was lower than that of conventional propellers throughout the speed range, but declined particularly precipitously below speeds of 10kt.  At 5kt, the propeller was more than twice as efficient as the waterjet.
+The paper also provides specific curves for the efficiency of the propulsor as a function of vessel speed, which demonstrated that the waterjet efficiency was lower than that of conventional propellers throughout the speed range, but declined particularly precipitously below speeds of 10kt.  At 5kt, the propeller was more than twice as efficient as the waterjet.
 
 \begin{figure}
 \includegraphics[width=\textwidth]{BMTEfficiency.png}
@@ -629,7 +630,7 @@ The reduction of the length of the shroud in order to reduce drag presents anoth
 If more aggressive shape changes are attemped in a limited space, the deflections of flow and pressure gradients become much more extreme. This leads to a far greater propensity for flow separation to occur.  This can happen inside the duct ahead of the stator, particulalry when any degree of diffusion occurs in order to elevate static pressure at the blades, or any kind of direction change is required as in the case of waterjets. Unlike waterjets, pumpjets also have the potential for separation on the exterior surface, which is an additional concern in the design of duct \cite[13]{henderson1964}.  Given the role of the duct is to change the speed of the flow at the impeller relative to what would occur in its absence (in particular to decelerate it) separation might tend to occur on different surfaces in different operating conditions, depending on the relative pressure gradients and velocity ratios they experience at different speeds and loads.  This substantially complicates the challenge of designing a duct that performs well across a wide speed range. This is illustrated for the case of a waterjet in \cite[20]{bulten2006numerical}.  Equivalent complexities occur in pumpjets operating in low speed ranges (2-6kt, where flow separation occurs ahead of the impeller, inside the shroud.  In the case of an accelerating duct, this phenomenon is also observed at high advance ratios, or the equivalent of low speeds and low loads, as shown and discussed in some detail in \cite{willemsen2013}.
 
 \begin{figure}
-\includegraphics[width=\textwidth]{LowIVR.png}
+\includegraphics[width=0.5\textwidth]{LowIVR.png}
 \caption{A an intake may experience risks of flow separation even at low speeds (Inlet Velocity Ratio) on some surfaces due to certain flow deflections being more severe. Source: \cite{bulten2006numerical}}
 \label{fig:LowIVR.png}
 \end{figure}
@@ -657,7 +658,76 @@ In addition, the substantial reduction in the length of the shroud, both ahead o
 \subsubsection{Summary remarks on potential for redesign of pumpjet for low-speed conditions}
 Overall, while the parameter-space for the alteration of marine-propulsors is large, the parameters which would allow for very dramatic rather than minor changes to propulsor efficiency at low speed are relatively few.  The major ones include increasing the width of the intake, decreasing the length of the duct, and decreasing the pressure inrease at the blades achieved by the duct.  In short, it involves evolving the pumpjet back towards a propeller.  None of these changes could be effected to a substantial degree without some inevitable trade-off in terms of the cavitation performance of the system at higher speeds.
 
-\section{Results of numerical simulation}
+\section{Model Structures and Assumptions}
+
+\subsection{Mathematical Structure}
+
+The core of the model rests upon the assumption that drag increases with the square of the velocity of the submarine.  This is a widely used assumption for fully submerged objects subject to turbulent flows \parencite[5]{wislicenus1973}, \parencite{davies2017}, as also discussed in Section \ref{Speed and Drag - Why very slow is very very $(very)^2$ economical}. Given that the amount of work done (energy consumed) by a system is equal to the distance over which it acts, which scales with speed also, we assume that the Effective Power $P_E$ (also known as Towing Power) required for propulsion to meet a given speed $v$ can be given by Equation \ref{eq:towpower}, where $C_d$ represents a drag constant.
+
+\begin{equation}
+\label{eq:towpower}
+P_E = C_dv^3
+\end{equation}
+
+The power drawn by the propulsion $P_D$ is assumed simply to be the propulsive efficiency at any given speed $\eta_v$ multiplied by the Effective Power, as given in Equation \ref{eq:powerdrawn}.  Using a plausible efficiency assumption and total power required, Equation \ref{eq:powerdrawn} can be used to solve for the constant $C_d$.  Other efficiency factors, such as the efficiency of electric motors or hull efficiency factors are assumed to be either relatively small, or essentially similar between submarines which might be conventionally powered but with a jet or propeller being the main point of difference.  Hence the total power consumed by the submarine is given by Equation \ref{eq:totalpower}.
+
+\begin{equation}
+\label{eq:powerdrawn}
+P_D = \eta_vP_E
+\end{equation}
+
+\begin{equation}
+\label{eq:totalpower}
+P_T = P_D + H
+\end{equation}
+
+With this relationship defined across the speed range, it is elementary to calculate the time that a given speed could be sustained based on a finite energy store (endurance) and the distance covered in this time (range).  This provides the fundamental structure that underlies the model which is used to assess the dived range and enurance of conventionally powered submarines, without using air independent propulsion (AIP).
+
+\subsection{Efficiency Curve Assumptions}
+
+In order to begin to model the likely impact of propulsion system choices on system peformance characteristics such as dived range and endurance, it is necessary to adopt some plausible curves indicating likely levels of efficiency across the operating speed range, in this case assumed to be up to 20kt.
+
+In this case, three possible curves have been selected for each system, representing a high, low, and central assumption for each, with peak efficiency for the propeller at about 65\% at near 5kt, and jet efficiency around 27\% at the sames speed.  The central assumption has been taken in both cases from the study undertaken by BMT and Rolls Royce, as in \cite{giles2010}, and indicated in \ref{fig:BMTShape.png}, since this represents the most direct comparison made as a simple function of waterspeed, with comparable technologies.
+
+Variations from this central line have been made with consideration for some plausible trade-offs, which are intended to be indicative, but plausible.  In the case of the high pumpjet assumption, it is assume that a substantially larger intake area has been chosen in order to achieve higher efficiencies at lower speeds, at the cost of peak ideal efficiency, which might be realised not too far above 20kt for such a design.  The low assumption for the pumpjet is still represents higher efficiencies at equivalent speeds than those given in \cite{fujisawa1995} for a waterjet. It is assumed that for both the central and low pumpjet curves, peak efficiency would not be achieved until a speed considerably above 20kt.  All of the efficiency curves reflect a smaller decline in efficiency than the indicative assumption used by Andrew Davies, namely that efficiency might reduce by a factor of four between transit and patrol speeds, if those speeds also differed by a factor of four \cite{davies2017}.
+
+The higher assumption curve used for the propeller approaches a maximum of just under 72\%.  This performance would not be implausible if a specialised propeller was adopted specificially to deliver peak performance at around this speed. Advanced flexible composite propellers, such as those used by the German submarine builder TKMS \parencite{durrant2016}, are able to achieve very high efficiencies, as well as delayed onset of cavitation, by allowing the blades to deform in certain ways to adapt to their specific degree of loading \parencite{young2007hydroelastic2}.  Such propellers have been observed in experiment to have propulsive efficiencies above 70\% \parencite{young2007hydroelastic}.  In this case I have assumed that this design necessitates the trade-off of steadily declining efficiencies over 10kt, considerably below the speed for which most open propellers are optimised.  Given the ability for composite propellers to adapt their shape as loads increase, it is actually likely that the performance curve in this case is actually far broader. However, assuming a trade-off in this case also facilitates a scenario whereby the efficiencies of a propeller and jet actually cross over at around 18kt, which is relevant to consider, since experts in discussion have ruled out the possibility that a jet could be more efficient at lower speeds than this.
+
+The lower propeller curve shows efficiency still increasing up to around 65\% at 20kt, which might be consistent with a propeller optimised for conventional ship speeds, but probably not likely for a specialised submarine propeller.  For all propeller curves, sharply declining efficiency has been assumed at very low speeds, (2kt or less), in order to reflect the dip seen below 5kt in the efficiency curve seen in Figure \ref{fig:BMTEfficiency.png}, assuming that this is driven by the decline in efficiency shown in Figure \ref{fig:PropDuct.png} at advance ratios approaching 1.  This has been exaccerbated beyond realistic levels in the case of the the low propeller assumption line for the sake of testing sensitivity more dramatically to some losses in this regime.  These efficiency curve assumptions are shown in Figure \ref{fig:Efficiency_assumptions}.
+
+\begin{figure}
+<<plot_efficiency, echo=FALSE, warning=FALSE, message=F >>=
+df <- suppressMessages(read_csv(find::this("/Submarines/eff-data-2018-01-03.csv")))
+
+ # df <- read_rds("extdata/default_subs_df.rds")
+df <- df %>%
+  mutate(system = case_when(str_detect(cat, "jet") ~ "Pumpjet",
+                   str_detect(cat, "prop") ~ "Propeller"),
+         level = case_when(str_detect(cat, "1") ~ "Central",
+                            str_detect(cat, "2") ~ "High",
+                            str_detect(cat, "3") ~ "Low"))
+
+ggplot(df, aes(x = kts, y = val, col = level, linetype = system)) +
+  geom_line(size = 1) +
+  scale_color_manual(values = c("black", "blue", "red") )+
+  ylim(0, 1)+
+  labs(title = "Efficiency Curve Assumptions")+
+  scale_x_continuous(name ="speed (kt)")+
+  scale_y_continuous(name ="efficiency")
+@
+\caption{A range of possible efficiency curves for pumpjets and propellers to be modeled}
+\label{fig:Efficiency_assumptions}
+\end{figure}
+
+\subsection{Hotel Load Assumptions}
+It is also required that some assumptions are made about the hotel load, or the power which the submarine requires which doesn't go to propulsion.  We might assume that this is in the order of 100kw, as suggested in \cite{martinez1995} though official sources of information are few.  It is also likely that the actual hotel load varies considerably as different systems are switched on and off, some of which might be discretionary in combat scenarios (e.g. hot water for washing), and others (such as the combat systems) might have increased demand during crucial phases of combat operations.  It is important to note that the combat system that has been selected for Australias FSM, the AN/BYG-1, is designed for a nuclear submarine, and is reportedly consumes considerably more power than other systems \cite{muir2015}, apparently even in the order of 100kW more. \cite{patrick2011}.  Consequently, the actual hotel load experienced might vary considerably, and as such the model used in the app allows the hotel load assumption to be varied, in order to test sensitivity to this parameter.  A flat 100kW hotel load is used as a starting assumption in the initial calculations in this paper, which as seen, produces realistic results.
+
+\subsection{Battery Assumptions}
+Since the purpose of the task at hand is to assess dived endurance only, this model focuses on a single energy store simulated by a total embarked mass (battery bank) and an energy density of those batteries.  Since the SEA 1000 project has elected not to use lithium electric batteries, the energy density of the batteries can be assumed to be that of lead-acid batteries, which are known to be in the region of 30-50Wh/kg (Watt-hours per kilogram).  Taking a central figure and converting this to Megajoules per kilogram (MJ/kg) we assume 0.14MJ/kg to be the effective energy density of lead acid batteries for our test submarine's purposes.  This parameter can be adjusted easily for sensitivity testing.
+
+It is worthwhile considering that alternative types of battery may be on offer for submarines.  In particular, lithium ion batteries were offered by TKMS in their bid for SEA 1000, and are being installed in Type 212 submarines operated by the German navy, as well as contracted for the new Norwegian submarines, as well as Israeli submarines. Precise energy density of these batteries is not publically available.  For domestic uses such as handheld electronics or solar power applications, lithium ion batteries may have 3-4 times the energy density of lead-acid batteries.  However, the actual useful density of lithium ion batteries can vary widely depending on different chemistries and designs.  It might be assumed that for very large battery banks (such as submarines) where the stability of the battery bank is of critical importance, maximum density migth be sacrificed in favour of additional safety systems, such as increased monitoring, as well as spacing and insulation barriers between cells, in order to prevent thermal runaway in one cell leading to a catastrophic fire.
+
+
 
 \section{Acoustic Considerations}
 It is generally considered that the existence of cavitation of any sort will tend to dominate the acoustic signature of any vessel that doesn't produce any machinery noise by relying on all-electric drive as a conventional submarine would when dived (\cite{giles2010}, \cite{harvie1965construction}).  Its quite possible that during the period when a submarine is snorting, or running its diesel engines, these sources of noise would be a more substantial and distinctive acoustic signature than small amounts of cavitation on the propulsion system, if it were to occur, owing in particular to the low freqency of diesel engines.
@@ -674,6 +744,44 @@ It is crucial to understand that increasing depth necessarily increases the stat
 \label{fig:InceptionDepth.png}
 \end{figure}
 
+This relationship can be expressed in a general form in \ref{fig:InceptionContours}, which has been generated using an approxiate numeric model. As can be seen here, at very low speeds, modest changes in depths can achieve considerable additional surplus pressure in order to prevent cavitation.  However at much higher speeds, sine the pressure diffential scales with the square of the velocity travelled, far greater additional depths are required to achieve sufficient excess static to supress cavitation for a give further speed increase.
+
+\begin{figure}
+<<plot_inception, echo=FALSE, warning=F, message=F>>=
+speed <- rep(seq(0.5,20,0.5),90)
+VP. <- c(rep(1.228*1000,40), rep(2.339*1000,40), rep(4.245*1000,40))
+VP <- rep(VP., 30)
+temp. <- c(rep(10,40), rep(20,40), rep(30,40))
+temp <- rep(temp., 30)
+depth <- c(rep(10,120), rep(20,120), rep(30,120), rep(40,120), rep(50,120), rep(60,120), rep(70,120), rep(80,120), rep(90,120), rep(100,120),
+           rep(110,120), rep(120,120), rep(130,120), rep(140,120), rep(150,120), rep(160,120), rep(170,120), rep(180,120), rep(190,120), rep(200,120),
+           rep(210,120), rep(220,120), rep(230,120), rep(240,120), rep(250,120), rep(260,120), rep(270,120), rep(280,120), rep(290,120), rep(300,120))
+
+df<- tibble(speed, depth, temp, VP)
+df2 <- df %>%
+  mutate(thrust = (speed^2)*35/40*1000,
+         pressure = (100 + depth*10)*1000,
+         disc.pressure = thrust/5,
+         peak.pressure.drop = disc.pressure*10,
+         min.stat.pressure = pressure - peak.pressure.drop,
+         min.stat.rel.VP = (min.stat.pressure - VP)/100000)
+
+df2 %>%
+  filter(temp == 20 & depth <= 100) %>%
+  ggplot(aes(x = speed, y = depth, fill = min.stat.rel.VP))+
+  geom_tile()+
+  scale_fill_gradientn(colours = rainbow(5))+
+  scale_x_continuous(name ="speed (kt)")+
+  scale_y_continuous(name ="depth (m)")+
+  labs(title = "Cavitation Inception Equivalence Contours", fill = "Indicative \nExcess \nStatic Pressure \n(Atmospheres)")+
+  stat_contour(aes(z = min.stat.rel.VP), col = "black")+
+  stat_contour(data = df2 %>% filter(temp == 30 & depth <= 100), aes(z = min.stat.rel.VP), col = "red", linetype = 2)
+
+@
+\caption{Contours showing plausible lines of plausible equivalent cavitation inception}
+\label{fig:InceptionContours}
+\end{figure}
+
 It is also important to understand that the addition of a duct will necessarily to flow separation occuring on the inside of the duct opening at very low speeds which correspond to high advance ratios when load remains constant.  Flow separation tends to lead to vortex shedding, which means that inconsistent flows (vortices) are then ingested into the blades of the impeller.  This effect is well known and document.  A good example is shown on the exterior of an \textbf{accelerating} duct at $J = .8$ in \cite{willemsen2013}.
 
 \begin{figure}
@@ -682,7 +790,8 @@ It is also important to understand that the addition of a duct will necessarily 
 \label{fig:VortexShedding.png}
 \end{figure}
 
-Whilst at very low power levels, or at good depths, it is quite plausible that this doesn't result in any cavitation, which would normally be a likely occurrence if the blades are operating closer to their design power. As such,
+Whilst at very low power levels, or at good depths, it is quite plausible that this doesn't result in any cavitation, which would normally be a likely occurrence if the blades are operating closer to their design power and such such vortices were shed into the intake.
+
 
 \section{App Outputs}
 
@@ -690,7 +799,7 @@ Adjustable figures from App.
 
 
 
-<<compute, echo=F>>=
+<<compute, echo=F, message=F, warning=FALSE>>=
 
 df <- read_rds("extdata/default_subs_df.rds")
 
@@ -746,18 +855,7 @@ y_max_p <- roundUpNice(max(pull(power_plot_df, val)))
 @
 
 
-\begin{figure}
-<<plot_eff, echo=FALSE>>=
-ggplot(eff_plot_df, aes(x = kts, y = val, col = cat))+
-        geom_line()+
-        theme_minimal() +
-        scale_y_continuous(breaks=seq(0, 1, 0.2),
-                           name = "Efficiency") +
-        scale_x_continuous(breaks=seq(0, 20, 2))
-@
-\caption{Efficiency}
-\label{fig:Efficiency_plot}
-\end{figure}
+
 
 \begin{figure}
 <<plot_end, echo=FALSE>>=
@@ -790,21 +888,17 @@ ggplot(range_plot_df, aes(x = kts, y = val, col = cat))+
 
 \begin{figure}
 <<plot_power, echo=FALSE>>=
-        ggplot(power_plot_df, aes(x = kts, y = val, col = cat))+
-          geom_line() +
-          theme_minimal() +
-          scale_y_continuous(breaks=seq(0, y_max_p, (y_max_p/10)),
-                             name = "hours") +
-          scale_x_continuous(breaks=seq(0, 20, 2)) +
-          geom_text(aes(label = round(val, digits = 1)), nudge_y = 2, angle = 45)
+read_rds("extdata/rng_ploy_hotlx.rds")
 @
 \caption{Power}
 \label{fig:Power_plot}
 \end{figure}
 
 
+
+
 \section{Conclusions}
 
-% \printbibliography
+\printbibliography
 
 \end{document}

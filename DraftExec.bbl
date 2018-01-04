@@ -367,17 +367,20 @@
   \endentry
 
   \entry{MAN2017}{misc}{}
-    \name{author}{1}{}{%
-      {{hash=TMD}{%
+    \name{author}{2}{}{%
+      {{hash=DM}{%
+         family={Diesel},
+         familyi={D\bibinitperiod},
+         given={MAN},
+         giveni={M\bibinitperiod},
+      }}%
+      {{hash=T}{%
          family={Turbo},
          familyi={T\bibinitperiod},
-         given={MAN Diesel\bibnamedelima &},
-         giveni={M\bibinitperiod\bibinitdelim D\bibinitperiod\bibinitdelim
-  \bibinitperiod},
       }}%
     }
-    \strng{namehash}{TMD1}
-    \strng{fullhash}{TMD1}
+    \strng{namehash}{DMT1}
+    \strng{fullhash}{DMT1}
     \field{labelnamesource}{author}
     \field{labeltitlesource}{title}
     \field{labelyear}{2017}
@@ -386,8 +389,9 @@
     \verb https://marine.man.eu/docs/librariesprovider6/propeller-aftship/basic
     \verb -principles-of-propulsion.pdf?sfvrsn=0
     \endverb
-    \list{institution}{1}{%
-      {MAN Diesel & Turbo}%
+    \list{institution}{2}{%
+      {MAN Diesel}%
+      {Turbo}%
     }
     \field{year}{2017}
   \endentry
@@ -488,8 +492,9 @@
   C\bibinitperiod},
       }}%
     }
-    \list{publisher}{1}{%
-      {H. Veenman \& Zonen}%
+    \list{publisher}{2}{%
+      {H. Veenman}%
+      {Zonen}%
     }
     \strng{namehash}{OMWC1}
     \strng{fullhash}{OMWC1}
@@ -1137,10 +1142,167 @@
     \field{labeltitlesource}{title}
     \field{labelyear}{1996}
     \field{title}{Waterjet-hull interaction}
+    \verb{url}
+    \verb https://repository.tudelft.nl/islandora/object/uuid:1608dfb6-ee8c-487
+    \verb 5-b2a9-2608bbd0d16c/datastream/OBJ
+    \endverb
     \list{institution}{1}{%
       {Technische Universiteit Delft}%
     }
     \field{year}{1996}
+  \endentry
+
+  \entry{durrant2016}{article}{}
+    \name{author}{1}{}{%
+      {{hash=DP}{%
+         family={Durrant},
+         familyi={D\bibinitperiod},
+         given={Patrick},
+         giveni={P\bibinitperiod},
+      }}%
+    }
+    \list{publisher}{1}{%
+      {Australian Defence Magazine}%
+    }
+    \strng{namehash}{DP1}
+    \strng{fullhash}{DP1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{labelyear}{2017}
+    \field{title}{TKMS argues the benefits of the propeller for Sea 1000}
+    \verb{url}
+    \verb http://www.australiandefence.com.au/news/tkms-argues-the-benefits-of-
+    \verb the-propeller-for-sea-1000
+    \endverb
+    \field{month}{04}
+    \field{year}{2017}
+  \endentry
+
+  \entry{young2007hydroelastic2}{inproceedings}{}
+    \name{author}{2}{}{%
+      {{hash=YYL}{%
+         family={Young},
+         familyi={Y\bibinitperiod},
+         given={Yin\bibnamedelima Lu},
+         giveni={Y\bibinitperiod\bibinitdelim L\bibinitperiod},
+      }}%
+      {{hash=LZ}{%
+         family={Liu},
+         familyi={L\bibinitperiod},
+         given={Zhanke},
+         giveni={Z\bibinitperiod},
+      }}%
+    }
+    \list{organization}{1}{%
+      {American Society of Mechanical Engineers}%
+    }
+    \strng{namehash}{YYLLZ1}
+    \strng{fullhash}{YYLLZ1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{labelyear}{2007}
+    \field{booktitle}{ASME 2007 26th International Conference on Offshore
+  Mechanics and Arctic Engineering}
+    \field{pages}{777\bibrangedash 787}
+    \field{title}{Hydroelastic tailoring of composite naval propulsors}
+    \field{year}{2007}
+  \endentry
+
+  \entry{young2007hydroelastic}{inproceedings}{}
+    \name{author}{1}{}{%
+      {{hash=YYL}{%
+         family={Young},
+         familyi={Y\bibinitperiod},
+         given={Yin\bibnamedelima L},
+         giveni={Y\bibinitperiod\bibinitdelim L\bibinitperiod},
+      }}%
+    }
+    \strng{namehash}{YYL1}
+    \strng{fullhash}{YYL1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{labelyear}{2007}
+    \field{booktitle}{16th international conference on composite materials}
+    \field{title}{Hydroelastic behavior of flexible composite propellers in
+  wake inflow}
+    \verb{url}
+    \verb http://www.iccm-central.org/Proceedings/ICCM16proceedings/contents/pd
+    \verb f/ThuJ/ThJA1-03ge_youngy223554p.pdf
+    \endverb
+    \field{year}{2007}
+  \endentry
+
+  \entry{martinez1995}{article}{}
+    \name{author}{1}{}{%
+      {{hash=MI}{%
+         family={Martinez},
+         familyi={M\bibinitperiod},
+         given={Isodoro},
+         giveni={I\bibinitperiod},
+      }}%
+    }
+    \strng{namehash}{MI1}
+    \strng{fullhash}{MI1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{labelyear}{1995}
+    \field{title}{Marine Propulsion}
+    \verb{url}
+    \verb http://webserver.dmt.upm.es/~isidoro/bk3/c17/Marine%20propulsion.pdf
+    \endverb
+    \field{year}{1995}
+  \endentry
+
+  \entry{muir2015}{article}{}
+    \name{author}{1}{}{%
+      {{hash=MT}{%
+         family={Muir},
+         familyi={M\bibinitperiod},
+         given={Tom},
+         giveni={T\bibinitperiod},
+      }}%
+    }
+    \list{publisher}{1}{%
+      {Australian Defence Magazine}%
+    }
+    \strng{namehash}{MT1}
+    \strng{fullhash}{MT1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{labelyear}{2015}
+    \field{title}{Concerns abound over future submarine combat system}
+    \verb{url}
+    \verb http://www.australiandefence.com.au/news/concerns-abound-over-future-
+    \verb submarine-combat-system
+    \endverb
+    \field{month}{03}
+    \field{year}{2015}
+  \endentry
+
+  \entry{patrick2011}{article}{}
+    \name{author}{1}{}{%
+      {{hash=PR}{%
+         family={Patrick},
+         familyi={P\bibinitperiod},
+         given={Rex},
+         giveni={R\bibinitperiod},
+      }}%
+    }
+    \list{publisher}{1}{%
+      {Asia-Pacific Defence Reporter}%
+    }
+    \strng{namehash}{PR1}
+    \strng{fullhash}{PR1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{labelyear}{2011}
+    \field{title}{Combat Systems Selection For SEA 1000}
+    \verb{url}
+    \verb https://www.asiapacificdefencereporter.com/articles/193/SEA-1000-COMB
+    \verb AT-SYSTEMS-SELECTION-FOR-SEA-1000
+    \endverb
+    \field{month}{10}
+    \field{year}{2011}
   \endentry
 
   \entry{harvie1965construction}{book}{}
