@@ -876,8 +876,6 @@ It seems extremely clear from these conclusions that the general results confirm
 
 A further feature of the results is that the relative difference in performance is much more sensitive to changes in the efficiency of the jet at the relevant speeds, owing to their larger proportional impact at low efficiencies.  Whilst a smoothly declining curve from around or over 50\% at 20kt to zero at 0kt, the precise path taken, particularly the exact level around 3-8kt, is of great importance, substantially more than plausible variations in the propeller curve.  This can be seen in an overlaid plot of the proportional differences in total power demand (hence endurance and range) for the different pairs of curves as in Figure \ref{fig:all_proportions}.
 
-
-
 \begin{figure}
 \begin{knitrout}
 \definecolor{shadecolor}{rgb}{0.969, 0.969, 0.969}\color{fgcolor}
@@ -893,6 +891,64 @@ A further feature of the results is that the relative difference in performance 
 \label{fig:all_proportions}
 \end{figure}
 
+The proportional change in overall power requirement (directly determining both range and endurance) shows that our central scenario shows a propeller driven submarine would have more than 60\% advantage in terms of range and endurance around 5-6kt. It is interesting to note that the proportional change is greatest slightly above the speed where maximum range is achieved, and the point of peak advantage moves steadily towards higher speeds as the difference in efficiency between the systems increases.
+
+As can be seen, even compred to the central propeller curve, choosing a jet efficiency curve somewhat lower than the central assumption means that the peak difference immediately jumps to over 100\%, or effectively allow a propeller powered submarine to achieve double the range and endurance of a pumpjet powered submarine at those speeds.  It is important to note that these speeds in include those speeds which might lie near the maximum speeds that could be sustained by Air Independent Propulsion (AIP) systems \parencite[100]{@stanford2017}.  Consequently, it is likely that a conventional submarine that used pumpjets might only achieve a fraction of the dived range and endurance enhancements generally expected on propeller powered submarines which employ this technology.
+
+The proportional improvements will also be effective rough guides to the likely impact on indescretion ratios and overall range.\footnote{Additional considerations including the size and efficiency of the diesel engines and generators must be included for proper analyses of indescretion ratios, which will not be given here.}  Near patrol speed almost all scenarios show a difference approaching or exceeding 50\%, which will have a material impact on indescretion rates during all combat operations.
+
+Perhaps surprisingly, the impact at transit speeds is still quite significant, with no scenarios showing less than 20\% advantage around 8-10kt. The sensitivity to pumpjet efficiency here is also very high, with three scenarios showing an impact of over 70\%.  Given the likelihood that a submarine's average speed over its range is likely to be dominated by its transit speed, this indicates that the choice of a pumpjet propulsion system will also result in a substantial reduction in the overall range of the submarine, quite probably in the range of between 25-50\%.  This would require the embarkation of significantly larger volumes of diesel to meet minimum range requirements, and also contribute to higher running costs.
+
+\subsection{Sensitivity to Hotel Load}
+
+\begin{figure}
+\begin{knitrout}
+\definecolor{shadecolor}{rgb}{0.969, 0.969, 0.969}\color{fgcolor}
+
+{\centering \includegraphics[width=\maxwidth]{figures/plots-plot_sens_hotel-1} 
+
+}
+
+
+
+\end{knitrout}
+\caption{The impact of the propulsion system efficiencies are very sensitive to changes in the hotel load, including as a proportion.}
+\label{fig:sens_hotel}
+\end{figure}
+
+\subsection{Sensitivity to Battery Changes}
+
+\begin{figure}
+\begin{knitrout}
+\definecolor{shadecolor}{rgb}{0.969, 0.969, 0.969}\color{fgcolor}
+
+{\centering \includegraphics[width=\maxwidth]{figures/plots-plot_sens_battery-1} 
+
+}
+
+
+
+\end{knitrout}
+\caption{The impact of the propulsion system efficiencies are extremely sensitive to battery energy density (or load) though proportions remain fixed.}
+\label{fig:sens_battery}
+\end{figure}
+
+\subsection{The interaction of hotel load, battery energy density, and efficiency curves}
+
+\begin{figure}
+\begin{knitrout}
+\definecolor{shadecolor}{rgb}{0.969, 0.969, 0.969}\color{fgcolor}
+
+{\centering \includegraphics[width=\maxwidth]{figures/plots-plot_sens_corners-1} 
+
+}
+
+
+
+\end{knitrout}
+\caption{Specifying low density batteries and a high hotel load dramatically reduces the proportional and nominal impact of propulsion system efficiencies at low speeds}
+\label{fig:sens_corners}
+\end{figure}
 
 \section{Acoustic Considerations}
 It is generally considered that the existence of cavitation of any sort will tend to dominate the acoustic signature of any vessel that doesn't produce any machinery noise by relying on all-electric drive as a conventional submarine would when dived (\cite{giles2010}, \cite{harvie1965construction}).  Its quite possible that during the period when a submarine is snorting, or running its diesel engines, these sources of noise would be a more substantial and distinctive acoustic signature than small amounts of cavitation on the propulsion system, if it were to occur, owing in particular to the low freqency of diesel engines.

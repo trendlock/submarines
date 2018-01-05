@@ -230,33 +230,50 @@ df_full <- df_full %>%
   bind_rows(df_filler)
 #df_full <- df_filler
 
-df_full %>% write_rds("extdata/df_full_diff_cornered.rds")
+df_full_cornered %>% write_rds("extdata/df_full_diff_cornered.rds")
 
 ######  Let's tru some plots  ######
 
-df_full %>%
+df_full_cornered$hotel <- factor(df_full_cornered$hotel, levels = c("50", "100", "200" ),
+                                  labels = c( "Hotel 50kW", "Hotel 100kW", "Hotel 200kW" ))
+df_full_cornered$battery <- factor(df_full_cornered$battery, levels = c("0.07", "0.14", "0.28" ),
+                                 labels = c( "Battery 0.07MJ/kg", "Battery 0.14MJ/kg", "Battery 0.28MJ/kg" ))
+
+df_full_cornered %>%
   filter(test == "hotel") %>%
   ggplot(aes(x = kts, y = val, col = pair))+
   geom_line()+
-  labs(title = "Hotel Comparison")+
+  labs(col = "Efficiency \nCurve Pair")+
+  scale_y_continuous(name = element_blank())+
   facet_grid(var ~ as.factor(hotel), scales = "free")
 
-df_full %>%
+df_full_cornered %>%
   filter(test == "battery") %>%
   ggplot(aes(x = kts, y = val, col = pair))+
   geom_line()+
-  labs(title = "Battery Comparison")+
+  labs(col = "Efficiency \nCurve Pair")+
+  scale_y_continuous(name = element_blank())+
   facet_grid(var ~ as.factor(battery), scales = "free")
 
 df_full_cornered <- df_full %>%
-  mutate(corner = paste0("a", battery, "and", hotel))
+  mutate(corner = paste0( hotel, " ", battery))
+
+df_full_cornered <- read_rds("extdata/df_full_diff_cornered.rds")
+
+df_full_cornered$var <- factor(df_full_cornered$var, levels =  c("end", "range", "prop"),
+                                 labels = c("Endurance (hrs)", "Range (nm)", "% Change"))
+df_full_cornered$corner <- factor(df_full_cornered$corner, levels = c("200 0.07", "200 0.28","50 0.07", "50 0.28", "100 0.14", "50 0.14",  "200 0.14", "100 0.07", "100 0.28" ),
+                                  labels = c("Hotel 200kW, Battery 0.07MJ/kg", "Hotel 200kW, Battery 0.28MJ/kg", "Hotel 50kW, Battery 0.07MJ/kg", "Hotel 50kW, Battery 0.28MJ/kg",
+                                             "100 0.14", "50 0.14",  "200 0.14", "100 0.07", "100 0.28" ))
 
 df_full_cornered %>%
   filter(test == "corners") %>%
   ggplot(aes(x = kts, y = val, col = pair))+
   geom_line()+
-  labs(title = "Corners")+
-  facet_grid(var ~ corner, scales = "free")
+  labs(col = "Efficiency \nCurve Pair")+
+  scale_y_continuous(name = element_blank())+
+  theme(legend.position="bottom")+
+  facet_grid(var ~ corner, scales = "free", switch = "y")
 
 ################### Filling up the data frame manually  ##################
 df_filler <- ls_plots$`Set 2`$power_plot_df %>%

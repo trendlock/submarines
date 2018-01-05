@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.18 (TeX Live 2017) (preloaded format=pdflatex 2017.12.9)  5 JAN 2018 15:15
+This is pdfTeX, Version 3.14159265-2.6-1.40.18 (TeX Live 2017) (preloaded format=pdflatex 2017.12.9)  6 JAN 2018 00:52
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -527,15 +527,15 @@ File: EarlyCavitation.JPG Graphic file (type jpg)
 <use EarlyCavitation.JPG>
 Package pdftex.def Info: EarlyCavitation.JPG used on input line 254.
 (pdftex.def)             Requested size: 498.66258pt x 373.99765pt.
-
-<BoilingCavitation.JPG, id=57, 4047.12pt x 3035.34pt>
+ [12 <./EarlyCavitation.JPG>]
+<BoilingCavitation.JPG, id=60, 4047.12pt x 3035.34pt>
 File: BoilingCavitation.JPG Graphic file (type jpg)
 
 <use BoilingCavitation.JPG>
 Package pdftex.def Info: BoilingCavitation.JPG used on input line 262.
 (pdftex.def)             Requested size: 498.66258pt x 373.99765pt.
- [12 <./EarlyCavitation.JPG>] [13 <./BoilingCavitation.JPG>] <IncreasingCavitat
-ion.png, id=65, 590.205pt x 587.19376pt>
+ [13 <./BoilingCavitation.JPG>]
+<IncreasingCavitation.png, id=65, 590.205pt x 587.19376pt>
 File: IncreasingCavitation.png Graphic file (type png)
 
 <use IncreasingCavitation.png>
@@ -548,120 +548,121 @@ File: CavitationTypes.png Graphic file (type png)
 <use CavitationTypes.png>
 Package pdftex.def Info: CavitationTypes.png used on input line 282.
 (pdftex.def)             Requested size: 349.06227pt x 312.96135pt.
- [14] [15 <./IncreasingCavitation.png>] [16 <./CavitationTypes.png>] <Separated
-Aerofoil.jpg, id=78, 2055.68pt x 1432.35126pt>
+ [14 <./IncreasingCavitation.png>] [15 <./CavitationTypes.png>] <SeparatedAerof
+oil.jpg, id=75, 2055.68pt x 1432.35126pt>
 File: SeparatedAerofoil.jpg Graphic file (type jpg)
 
 <use SeparatedAerofoil.jpg>
 Package pdftex.def Info: SeparatedAerofoil.jpg used on input line 303.
 (pdftex.def)             Requested size: 249.33128pt x 173.71063pt.
-
+ [16 <./SeparatedAerofoil.jpg>]
 <FlowSeparation.png, id=79, 742.775pt x 198.7425pt>
 File: FlowSeparation.png Graphic file (type png)
  <use FlowSeparation.png>
 Package pdftex.def Info: FlowSeparation.png used on input line 311.
 (pdftex.def)             Requested size: 498.66258pt x 133.4297pt.
 
-[17 <./SeparatedAerofoil.jpg>]
-<PropellerAction.png, id=83, 584.1825pt x 280.04625pt>
+<PropellerAction.png, id=80, 584.1825pt x 280.04625pt>
 File: PropellerAction.png Graphic file (type png)
 
 <use PropellerAction.png>
 Package pdftex.def Info: PropellerAction.png used on input line 325.
 (pdftex.def)             Requested size: 498.66258pt x 239.05743pt.
- [18 <./FlowSeparation.png> <./PropellerAction.png>]
-<SkewRake.png, id=89, 500.87125pt x 327.2225pt>
+ <SkewRake.png, id=81, 500.87125pt x 327.2225pt>
 File: SkewRake.png Graphic file (type png)
- <use SkewRake.png>
+
+<use SkewRake.png>
 Package pdftex.def Info: SkewRake.png used on input line 336.
 (pdftex.def)             Requested size: 498.66258pt x 325.79369pt.
-
-<HelicalLine.png, id=90, 331.2375pt x 205.76875pt>
+ [17 <./FlowSeparation.png>] [18 <./PropellerAction.png> <./SkewRake.png>] <Hel
+icalLine.png, id=91, 331.2375pt x 205.76875pt>
 File: HelicalLine.png Graphic file (type png)
- <use HelicalLine.png>
+
+<use HelicalLine.png>
 Package pdftex.def Info: HelicalLine.png used on input line 345.
 (pdftex.def)             Requested size: 498.66258pt x 309.78894pt.
-
-<PitchDefinition.png, id=91, 645.41125pt x 565.11125pt>
+ <PitchDefinition.png, id=92, 645.41125pt x 565.11125pt>
 File: PitchDefinition.png Graphic file (type png)
 
 <use PitchDefinition.png>
 Package pdftex.def Info: PitchDefinition.png used on input line 351.
 (pdftex.def)             Requested size: 498.66258pt x 436.62013pt.
- [19 <./SkewRake.png>]
-<CPPropeller.png, id=97, 636.3775pt x 405.515pt>
+ <CPPropeller.png, id=93, 636.3775pt x 405.515pt>
 File: CPPropeller.png Graphic file (type png)
- <use CPPropeller.png>
+
+<use CPPropeller.png>
 Package pdftex.def Info: CPPropeller.png used on input line 361.
 (pdftex.def)             Requested size: 498.66258pt x 317.75452pt.
-
-<OpenWater.png, id=98, 678.535pt x 546.04pt>
+ <OpenWater.png, id=94, 678.535pt x 546.04pt>
 File: OpenWater.png Graphic file (type png)
- <use OpenWater.png>
+
+<use OpenWater.png>
 Package pdftex.def Info: OpenWater.png used on input line 370.
 (pdftex.def)             Requested size: 498.66258pt x 401.28876pt.
- [20 <./HelicalLine.png>] [21 <./PitchDefinition.png>] [22 <./CPPropeller.png>]
- [23 <./OpenWater.png>] <SlipRatio.png, id=115, 620.3175pt x 501.875pt>
+ [19 <./HelicalLine.png>] [20 <./PitchDefinition.png>]
+[21 <./CPPropeller.png>] [22 <./OpenWater.png>]
+<SlipRatio.png, id=112, 620.3175pt x 501.875pt>
 File: SlipRatio.png Graphic file (type png)
  <use SlipRatio.png>
 Package pdftex.def Info: SlipRatio.png used on input line 389.
 (pdftex.def)             Requested size: 498.66258pt x 403.44566pt.
 
-[24 <./SlipRatio.png>] <AccelDecel.png, id=120, 738.76pt x 283.0575pt>
+<AccelDecel.png, id=113, 738.76pt x 283.0575pt>
 File: AccelDecel.png Graphic file (type png)
-
-<use AccelDecel.png>
+ <use AccelDecel.png>
 Package pdftex.def Info: AccelDecel.png used on input line 402.
 (pdftex.def)             Requested size: 498.66258pt x 191.0642pt.
- <DuctStreamlines.png, id=121, 471.7625pt x 448.67625pt>
+ [23]
+[24 <./SlipRatio.png> <./AccelDecel.png>]
+<DuctStreamlines.png, id=122, 471.7625pt x 448.67625pt>
 File: DuctStreamlines.png Graphic file (type png)
 
 <use DuctStreamlines.png>
 Package pdftex.def Info: DuctStreamlines.png used on input line 410.
 (pdftex.def)             Requested size: 498.66258pt x 474.26639pt.
- [25 <./AccelDecel.png>] [26 <./DuctStreamlines.png>]
-<CavitatingDuct.png, id=131, 476.78125pt x 318.18875pt>
+
+<CavitatingDuct.png, id=123, 476.78125pt x 318.18875pt>
 File: CavitatingDuct.png Graphic file (type png)
 
 <use CavitatingDuct.png>
 Package pdftex.def Info: CavitatingDuct.png used on input line 425.
 (pdftex.def)             Requested size: 498.66258pt x 332.8117pt.
- [27 <./CavitatingDuct.png>]
-<DuctedEfficiency.png, id=136, 781.92125pt x 731.73375pt>
+
+<DuctedEfficiency.png, id=124, 781.92125pt x 731.73375pt>
 File: DuctedEfficiency.png Graphic file (type png)
 
 <use DuctedEfficiency.png>
 Package pdftex.def Info: DuctedEfficiency.png used on input line 433.
 (pdftex.def)             Requested size: 498.66258pt x 466.65553pt.
-
-<PumpjetOutline.png, id=137, 407.5225pt x 379.4175pt>
+ [25] [26 <./DuctStreamlines.png>] [27 <./CavitatingDuct.png>] [28 <./DuctedEff
+iciency.png>]
+<PumpjetOutline.png, id=141, 407.5225pt x 379.4175pt>
 File: PumpjetOutline.png Graphic file (type png)
  <use PumpjetOutline.png>
 Package pdftex.def Info: PumpjetOutline.png used on input line 446.
 (pdftex.def)             Requested size: 498.66258pt x 464.2955pt.
 
-<PumpjetWaterjet.png, id=138, 771.88374pt x 952.55875pt>
+<PumpjetWaterjet.png, id=142, 771.88374pt x 952.55875pt>
 File: PumpjetWaterjet.png Graphic file (type png)
 
 <use PumpjetWaterjet.png>
 Package pdftex.def Info: PumpjetWaterjet.png used on input line 459.
 (pdftex.def)             Requested size: 498.66258pt x 615.3768pt.
- [28] [29 <./DuctedEfficiency.png>] [30 <./PumpjetOutline.png>] [31 <./PumpjetW
-aterjet.png>]
-<EfficiencyJapan.png, id=155, 470.75874pt x 374.39874pt>
+ [29] [30 <./PumpjetOutline.png>] [31 <./PumpjetWaterjet.png>] <EfficiencyJapan
+.png, id=155, 470.75874pt x 374.39874pt>
 File: EfficiencyJapan.png Graphic file (type png)
 
 <use EfficiencyJapan.png>
 Package pdftex.def Info: EfficiencyJapan.png used on input line 477.
 (pdftex.def)             Requested size: 498.66258pt x 396.59227pt.
-
-<EfficiencyTransport.png, id=156, 488.82625pt x 504.88625pt>
+ [32 <./EfficiencyJapan.png>]
+<EfficiencyTransport.png, id=160, 488.82625pt x 504.88625pt>
 File: EfficiencyTransport.png Graphic file (type png)
 
 <use EfficiencyTransport.png>
 Package pdftex.def Info: EfficiencyTransport.png used on input line 485.
 (pdftex.def)             Requested size: 498.66258pt x 515.05418pt.
- <BMTShape.png, id=157, 1105.12875pt x 277.035pt>
+ <BMTShape.png, id=161, 1105.12875pt x 277.035pt>
 File: BMTShape.png Graphic file (type png)
 
 <use BMTShape.png>
@@ -673,14 +674,14 @@ Missing character: There is no ¢ in font cmr10!
 Missing character: There is no â in font cmr10!
 Missing character: There is no „ in font cmr10!
 Missing character: There is no ¢ in font cmr10!
- [32] [33 <./EfficiencyJapan.png>] [34 <./EfficiencyTransport.png>] <BMTEfficie
-ncy.png, id=169, 1130.2225pt x 454.69875pt>
+ <BMTEfficiency.png, id=162, 1130.2225pt x 454.69875pt>
 File: BMTEfficiency.png Graphic file (type png)
 
 <use BMTEfficiency.png>
 Package pdftex.def Info: BMTEfficiency.png used on input line 505.
 (pdftex.def)             Requested size: 498.66258pt x 200.61618pt.
- [35 <./BMTShape.png> <./BMTEfficiency.png>] [36]
+ [33] [34 <./EfficiencyTransport.png>] [35 <./BMTShape.png> <./BMTEfficiency.pn
+g>] [36]
 <PumpjetEfficiency.png, id=178, 713.66624pt x 907.39pt>
 File: PumpjetEfficiency.png Graphic file (type png)
 
@@ -694,46 +695,47 @@ File: EfficiencyBrandau.png Graphic file (type png)
 <use EfficiencyBrandau.png>
 Package pdftex.def Info: EfficiencyBrandau.png used on input line 566.
 (pdftex.def)             Requested size: 498.66258pt x 624.6461pt.
- [37] [38 <./PumpjetEfficiency.png>]
-<EfficiencyMollard.png, id=190, 492.84125pt x 292.09125pt>
+
+<EfficiencyMollard.png, id=180, 492.84125pt x 292.09125pt>
 File: EfficiencyMollard.png Graphic file (type png)
 
 <use EfficiencyMollard.png>
 Package pdftex.def Info: EfficiencyMollard.png used on input line 576.
 (pdftex.def)             Requested size: 498.66258pt x 295.55356pt.
 
-<EfficiencyBulten.png, id=191, 521.95pt x 278.03876pt>
+<EfficiencyBulten.png, id=181, 521.95pt x 278.03876pt>
 File: EfficiencyBulten.png Graphic file (type png)
 
 <use EfficiencyBulten.png>
 Package pdftex.def Info: EfficiencyBulten.png used on input line 582.
 (pdftex.def)             Requested size: 498.66258pt x 265.63716pt.
- <PropDuct.png, id=192, 716.6775pt x 325.215pt>
+ [37] [38 <./PumpjetEfficiency.png>] [39 <./EfficiencyBrandau.png>] [40 <./Effi
+ciencyMollard.png> <./EfficiencyBulten.png>]
+<PropDuct.png, id=201, 716.6775pt x 325.215pt>
 File: PropDuct.png Graphic file (type png)
-
-<use PropDuct.png>
+ <use PropDuct.png>
 Package pdftex.def Info: PropDuct.png used on input line 592.
 (pdftex.def)             Requested size: 498.66258pt x 226.28925pt.
- <PumpUp.png, id=193, 624.3325pt x 334.24875pt>
-File: PumpUp.png Graphic file (type png)
 
-<use PumpUp.png>
+<PumpUp.png, id=202, 624.3325pt x 334.24875pt>
+File: PumpUp.png Graphic file (type png)
+ <use PumpUp.png>
 Package pdftex.def Info: PumpUp.png used on input line 600.
 (pdftex.def)             Requested size: 498.66258pt x 266.97603pt.
- [39] [40 <./EfficiencyBrandau.png>] [41 <./EfficiencyMollard.png> <./Efficienc
-yBulten.png>] [42 <./PropDuct.png> <./PumpUp.png>]
-<stall.png, id=211, 696.6025pt x 373.395pt>
+ [41 <./PropDuct.png>] [42 <./PumpUp.png>] <stall.png, id=211, 696.6025pt x 373
+.395pt>
 File: stall.png Graphic file (type png)
- <use stall.png>
+
+<use stall.png>
 Package pdftex.def Info: stall.png used on input line 620.
 (pdftex.def)             Requested size: 498.66258pt x 267.29446pt.
-
-<backflow.png, id=212, 794.97pt x 315.1775pt>
+ <backflow.png, id=212, 794.97pt x 315.1775pt>
 File: backflow.png Graphic file (type png)
- <use backflow.png>
+
+<use backflow.png>
 Package pdftex.def Info: backflow.png used on input line 626.
 (pdftex.def)             Requested size: 498.66258pt x 197.70683pt.
- [43] [44 <./stall.png> <./backflow.png>]
+ [43 <./stall.png>] [44 <./backflow.png>]
 <AcceleratingIdeal.png, id=222, 662.475pt x 338.26375pt>
 File: AcceleratingIdeal.png Graphic file (type png)
 
@@ -759,58 +761,58 @@ File: FineCavitation.png Graphic file (type png)
 Package pdftex.def Info: FineCavitation.png used on input line 667.
 (pdftex.def)             Requested size: 498.66258pt x 634.99408pt.
 
-[45] <LowIVR.png, id=229, 430.60875pt x 185.69376pt>
+[45 <./AcceleratingIdeal.png>] [46 <./FineOptimised.png>] [47 <./FineEfficiency
+.png>] [48 <./FineCavitation.png>]
+<LowIVR.png, id=242, 430.60875pt x 185.69376pt>
 File: LowIVR.png Graphic file (type png)
  <use LowIVR.png>
 Package pdftex.def Info: LowIVR.png used on input line 678.
 (pdftex.def)             Requested size: 249.33128pt x 107.52394pt.
 
-<HighIVR.png, id=230, 441.65pt x 202.7575pt>
+<HighIVR.png, id=243, 441.65pt x 202.7575pt>
 File: HighIVR.png Graphic file (type png)
  <use HighIVR.png>
 Package pdftex.def Info: HighIVR.png used on input line 684.
 (pdftex.def)             Requested size: 498.66258pt x 228.94315pt.
 
-<DuctSeparation.png, id=231, 786.94pt x 266.9975pt>
+<DuctSeparation.png, id=244, 786.94pt x 266.9975pt>
 File: DuctSeparation.png Graphic file (type png)
  <use DuctSeparation.png>
 Package pdftex.def Info: DuctSeparation.png used on input line 690.
 (pdftex.def)             Requested size: 498.66258pt x 169.18707pt.
 
-<NozzleDrag.png, id=232, 538.01pt x 395.4775pt>
+<NozzleDrag.png, id=245, 538.01pt x 395.4775pt>
 File: NozzleDrag.png Graphic file (type png)
  <use NozzleDrag.png>
 Package pdftex.def Info: NozzleDrag.png used on input line 696.
 (pdftex.def)             Requested size: 498.66258pt x 366.55923pt.
-
+ [49 <./LowIVR.png> <./HighIVR.png>] [50 <./DuctSeparation.png> <./NozzleDrag.p
+ng>]
 
 LaTeX Warning: Reference `Speed and Drag - Why very slow is very very $(very)^2
-$ economical' on page 46 undefined on input line 710.
+$ economical' on page 51 undefined on input line 710.
 
-[46 <./AcceleratingIdeal.png>] [47 <./FineOptimised.png>] [48 <./FineEfficiency
-.png>] [49 <./FineCavitation.png>] [50 <./LowIVR.png> <./HighIVR.png> <./DuctSe
-paration.png>] [51 <./NozzleDrag.png>] [52]
+[51]
 Package color Info: Redefining color shadecolor on input line 747.
-
-<figures/plots-plot_efficiency-1.pdf, id=264, 505.89pt x 505.89pt>
+ <figures/plots-plot_efficiency-1.pdf, id=261, 505.89pt x 505.89pt>
 File: figures/plots-plot_efficiency-1.pdf Graphic file (type pdf)
 
 <use figures/plots-plot_efficiency-1.pdf>
 Package pdftex.def Info: figures/plots-plot_efficiency-1.pdf used on input line
  749.
 (pdftex.def)             Requested size: 498.66258pt x 498.67125pt.
- [53] [54 <./figures/plots-plot_efficiency-1.pdf>]
+ [52] [53 <./figures/plots-plot_efficiency-1.pdf>]
 Package color Info: Redefining color shadecolor on input line 784.
- <figures/plots-plot_power1-1.pdf, id=276, 505.89pt x 505.89pt>
+ <figures/plots-plot_power1-1.pdf, id=273, 505.89pt x 505.89pt>
 File: figures/plots-plot_power1-1.pdf Graphic file (type pdf)
 
 <use figures/plots-plot_power1-1.pdf>
 Package pdftex.def Info: figures/plots-plot_power1-1.pdf used on input line 786
 .
 (pdftex.def)             Requested size: 498.66258pt x 498.67125pt.
- [55] [56 <./figures/plots-plot_power1-1.pdf>]
+ [54] [55 <./figures/plots-plot_power1-1.pdf>]
 Package color Info: Redefining color shadecolor on input line 812.
- <figures/plots-plot_results1-1.pdf, id=289, 505.89pt x 505.89pt>
+ <figures/plots-plot_results1-1.pdf, id=286, 505.89pt x 505.89pt>
 File: figures/plots-plot_results1-1.pdf Graphic file (type pdf)
 
 <use figures/plots-plot_results1-1.pdf>
@@ -819,7 +821,7 @@ Package pdftex.def Info: figures/plots-plot_results1-1.pdf used on input line 8
 (pdftex.def)             Requested size: 498.66258pt x 498.67125pt.
 Package color Info: Redefining color shadecolor on input line 827.
 
-<figures/plots-plot_results2-1.pdf, id=290, 505.89pt x 505.89pt>
+<figures/plots-plot_results2-1.pdf, id=287, 505.89pt x 505.89pt>
 File: figures/plots-plot_results2-1.pdf Graphic file (type pdf)
 
 <use figures/plots-plot_results2-1.pdf>
@@ -828,7 +830,7 @@ Package pdftex.def Info: figures/plots-plot_results2-1.pdf used on input line 8
 (pdftex.def)             Requested size: 498.66258pt x 498.67125pt.
 Package color Info: Redefining color shadecolor on input line 842.
 
-<figures/plots-plot_results3-1.pdf, id=291, 505.89pt x 505.89pt>
+<figures/plots-plot_results3-1.pdf, id=288, 505.89pt x 505.89pt>
 File: figures/plots-plot_results3-1.pdf Graphic file (type pdf)
 
 <use figures/plots-plot_results3-1.pdf>
@@ -837,90 +839,124 @@ Package pdftex.def Info: figures/plots-plot_results3-1.pdf used on input line 8
 (pdftex.def)             Requested size: 498.66258pt x 498.67125pt.
 Package color Info: Redefining color shadecolor on input line 857.
 
-<figures/plots-plot_results4-1.pdf, id=292, 505.89pt x 505.89pt>
+<figures/plots-plot_results4-1.pdf, id=289, 505.89pt x 505.89pt>
 File: figures/plots-plot_results4-1.pdf Graphic file (type pdf)
 
 <use figures/plots-plot_results4-1.pdf>
 Package pdftex.def Info: figures/plots-plot_results4-1.pdf used on input line 8
 59.
 (pdftex.def)             Requested size: 498.66258pt x 498.67125pt.
-Package color Info: Redefining color shadecolor on input line 883.
+Package color Info: Redefining color shadecolor on input line 881.
 
-<figures/plots-plot_proportions-1.pdf, id=293, 505.89pt x 505.89pt>
+<figures/plots-plot_proportions-1.pdf, id=290, 505.89pt x 505.89pt>
 File: figures/plots-plot_proportions-1.pdf Graphic file (type pdf)
 
 <use figures/plots-plot_proportions-1.pdf>
 Package pdftex.def Info: figures/plots-plot_proportions-1.pdf used on input lin
-e 885.
+e 883.
 (pdftex.def)             Requested size: 498.66258pt x 498.67125pt.
- [57] [58 <./figures/plots-plot_results1-1.pdf>] [59 <./figures/plots-plot_resu
-lts2-1.pdf>] [60 <./figures/plots-plot_results3-1.pdf>] [61 <./figures/plots-pl
-ot_results4-1.pdf>] [62 <./figures/plots-plot_proportions-1.pdf>]
+
+
+LaTeX Warning: Citation '@stanford2017' on page 56 undefined on input line 896.
+
+
+[56] [57 <./figures/plots-plot_results1-1.pdf>] [58 <./figures/plots-plot_resul
+ts2-1.pdf>] [59 <./figures/plots-plot_results3-1.pdf>] [60 <./figures/plots-plo
+t_results4-1.pdf>] [61 <./figures/plots-plot_proportions-1.pdf>]
+Package color Info: Redefining color shadecolor on input line 906.
+
+<figures/plots-plot_sens_hotel-1.pdf, id=335, 505.89pt x 505.89pt>
+File: figures/plots-plot_sens_hotel-1.pdf Graphic file (type pdf)
+
+<use figures/plots-plot_sens_hotel-1.pdf>
+Package pdftex.def Info: figures/plots-plot_sens_hotel-1.pdf used on input line
+ 908.
+(pdftex.def)             Requested size: 498.66258pt x 498.67125pt.
+Package color Info: Redefining color shadecolor on input line 923.
+
+<figures/plots-plot_sens_battery-1.pdf, id=336, 505.89pt x 505.89pt>
+File: figures/plots-plot_sens_battery-1.pdf Graphic file (type pdf)
+
+<use figures/plots-plot_sens_battery-1.pdf>
+Package pdftex.def Info: figures/plots-plot_sens_battery-1.pdf used on input li
+ne 925.
+(pdftex.def)             Requested size: 498.66258pt x 498.67125pt.
+Package color Info: Redefining color shadecolor on input line 940.
+
+<figures/plots-plot_sens_corners-1.pdf, id=337, 505.89pt x 505.89pt>
+File: figures/plots-plot_sens_corners-1.pdf Graphic file (type pdf)
+
+<use figures/plots-plot_sens_corners-1.pdf>
+Package pdftex.def Info: figures/plots-plot_sens_corners-1.pdf used on input li
+ne 942.
+(pdftex.def)             Requested size: 498.66258pt x 498.67125pt.
+
 <InceptionDepth.png, id=338, 525.965pt x 460.72125pt>
 File: InceptionDepth.png Graphic file (type png)
  <use InceptionDepth.png>
-Package pdftex.def Info: InceptionDepth.png used on input line 907.
+Package pdftex.def Info: InceptionDepth.png used on input line 963.
 (pdftex.def)             Requested size: 498.66258pt x 436.82504pt.
+Package color Info: Redefining color shadecolor on input line 972.
 
-[63 <./InceptionDepth.png>]
-Package color Info: Redefining color shadecolor on input line 916.
-
-<figures/plots-plot_inception-1.pdf, id=343, 505.89pt x 505.89pt>
+<figures/plots-plot_inception-1.pdf, id=339, 505.89pt x 505.89pt>
 File: figures/plots-plot_inception-1.pdf Graphic file (type pdf)
 
 <use figures/plots-plot_inception-1.pdf>
 Package pdftex.def Info: figures/plots-plot_inception-1.pdf used on input line 
-918.
+974.
 (pdftex.def)             Requested size: 498.66258pt x 498.67125pt.
 
-<VortexShedding.png, id=344, 823.075pt x 599.23875pt>
+<VortexShedding.png, id=340, 823.075pt x 599.23875pt>
 File: VortexShedding.png Graphic file (type png)
  <use VortexShedding.png>
-Package pdftex.def Info: VortexShedding.png used on input line 932.
+Package pdftex.def Info: VortexShedding.png used on input line 988.
 (pdftex.def)             Requested size: 498.66258pt x 363.04803pt.
-Package color Info: Redefining color shadecolor on input line 947.
-Package color Info: Redefining color shadecolor on input line 981.
 
-<figures/plots-plot_end-1.pdf, id=345, 505.89pt x 505.89pt>
+[62] [63 <./figures/plots-plot_sens_hotel-1.pdf>] [64 <./figures/plots-plot_sen
+s_battery-1.pdf>] [65 <./figures/plots-plot_sens_corners-1.pdf>] [66 <./Incepti
+onDepth.png>] [67 <./figures/plots-plot_inception-1.pdf>]
+Package color Info: Redefining color shadecolor on input line 1003.
+ [68 <./VortexShedding.png>]
+Package color Info: Redefining color shadecolor on input line 1037.
+ <figures/plots-plot_end-1.pdf, id=387, 505.89pt x 505.89pt>
 File: figures/plots-plot_end-1.pdf Graphic file (type pdf)
 
 <use figures/plots-plot_end-1.pdf>
-Package pdftex.def Info: figures/plots-plot_end-1.pdf used on input line 983.
+Package pdftex.def Info: figures/plots-plot_end-1.pdf used on input line 1039.
 (pdftex.def)             Requested size: 498.66258pt x 498.67125pt.
-Package color Info: Redefining color shadecolor on input line 996.
+Package color Info: Redefining color shadecolor on input line 1052.
 
-<figures/plots-plot_range-1.pdf, id=346, 505.89pt x 505.89pt>
+<figures/plots-plot_range-1.pdf, id=388, 505.89pt x 505.89pt>
 File: figures/plots-plot_range-1.pdf Graphic file (type pdf)
 
 <use figures/plots-plot_range-1.pdf>
-Package pdftex.def Info: figures/plots-plot_range-1.pdf used on input line 998.
-
+Package pdftex.def Info: figures/plots-plot_range-1.pdf used on input line 1054
+.
 (pdftex.def)             Requested size: 498.66258pt x 498.67125pt.
-Package color Info: Redefining color shadecolor on input line 1012.
- [64] [65 <./figures/plots-plot_inception-1.pdf>] [66 <./VortexShedding.png>] [
-67 <./figures/plots-plot_end-1.pdf>]
-[68 <./figures/plots-plot_range-1.pdf>] [69]
-Overfull \hbox (67.46385pt too wide) in paragraph at lines 1028--1028
+Package color Info: Redefining color shadecolor on input line 1068.
+ [69] [70 <./figures/plots-plot_end-1.pdf>] [71 <./figures/plots-plot_range-1.p
+df>] [72]
+Overfull \hbox (67.46385pt too wide) in paragraph at lines 1084--1084
 []\OT1/cmr/m/n/10 Rex Patrick. ``Com-bat Sys-tems Se-lec-tion For SEA 1000''. I
 n: (Oct. 2011). \OT1/cmr/m/sc/10 url\OT1/cmr/m/n/10 : $\OT1/cmtt/m/n/10 https :
  / / www . asiapacificdefencereporter .
  []
 
-[70]
-Overfull \hbox (16.6666pt too wide) in paragraph at lines 1028--1028
+
+Overfull \hbox (16.6666pt too wide) in paragraph at lines 1084--1084
 \OT1/cmtt/m/n/10 inquiry -[] future -[] subs -[] may -[] not -[] use -[] austra
 lian -[] steel / news -[] story / 632bd3bdb69a1307da84359605319fc3$\OT1/cmr/m/n
 /10 . 
  []
 
 
-Overfull \hbox (5.21489pt too wide) in paragraph at lines 1028--1028
+Overfull \hbox (5.21489pt too wide) in paragraph at lines 1084--1084
 []\OT1/cmr/m/n/10 Peter Coates. ``Spec-i-fi-ca-tions Ta-ble - Short-fin Bar-rac
 uda Block 1A''. In: (Apr. 2016). \OT1/cmr/m/sc/10 url\OT1/cmr/m/n/10 : $\OT1/cm
 tt/m/n/10 http : / / gentleseas .
  []
 
-[71] (./DraftExec.aux)
+[73] (./DraftExec.aux)
 
 LaTeX Font Warning: Size substitutions with differences
 (Font)              up to 117.38377pt have occurred.
@@ -928,15 +964,20 @@ LaTeX Font Warning: Size substitutions with differences
 
 LaTeX Warning: There were undefined references.
 
+
+Package biblatex Warning: Please (re)run BibTeX on the file(s):
+(biblatex)                DraftExec
+(biblatex)                and rerun LaTeX afterwards.
+
 Package logreq Info: Writing requests to 'DraftExec.run.xml'.
 \openout1 = `DraftExec.run.xml'.
 
  ) 
 Here is how much of TeX's memory you used:
- 9041 strings out of 492995
- 160789 string characters out of 6132704
- 412836 words of memory out of 5000000
- 12439 multiletter control sequences out of 15000+600000
+ 9059 strings out of 492995
+ 161419 string characters out of 6132704
+ 413650 words of memory out of 5000000
+ 12454 multiletter control sequences out of 15000+600000
  9624 words of font info for 34 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  45i,11n,58p,1621b,1473s stack positions out of 5000i,500n,10000p,200000b,80000s
@@ -956,10 +997,10 @@ ive/2017/texmf-dist/fonts/type1/public/amsfonts/cm/cmr7.pfb></usr/local/texlive
 17/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/local/texlive/201
 7/texmf-dist/fonts/type1/public/amsfonts/cm/cmti10.pfb></usr/local/texlive/2017
 /texmf-dist/fonts/type1/public/amsfonts/cm/cmtt10.pfb>
-Output written on DraftExec.pdf (71 pages, 12072346 bytes).
+Output written on DraftExec.pdf (73 pages, 12112248 bytes).
 PDF statistics:
- 445 PDF objects out of 1000 (max. 8388607)
- 247 compressed objects within 3 object streams
+ 471 PDF objects out of 1000 (max. 8388607)
+ 265 compressed objects within 3 object streams
  0 named destinations out of 1000 (max. 500000)
- 271 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 286 words of extra memory for PDF output out of 10000 (max. 10000000)
 

@@ -885,7 +885,55 @@ Perhaps surprisingly, the impact at transit speeds is still quite significant, w
 
 \subsection{Sensitivity to Hotel Load}
 
+\begin{figure}
+<<plot_sens_hotel, echo=FALSE, warning=FALSE, message=F >>=
+df <- read_rds("extdata/df_full_diff_cornered.rds")
+df %>%
+  filter(test == "hotel") %>%
+  ggplot(aes(x = kts, y = val, col = pair))+
+  geom_line()+
+  labs(col = "Efficiency \nCurve Pair")+
+  scale_y_continuous(name = element_blank())+
+  facet_grid(var ~ as.factor(hotel), scales = "free")
+@
+\caption{The impact of the propulsion system efficiencies are very sensitive to changes in the hotel load, including as a proportion.}
+\label{fig:sens_hotel}
+\end{figure}
+
 \subsection{Sensitivity to Battery Changes}
+
+\begin{figure}
+<<plot_sens_battery, echo=FALSE, warning=FALSE, message=F >>=
+df <- read_rds("extdata/df_full_diff_cornered.rds")
+df %>%
+  filter(test == "battery") %>%
+  ggplot(aes(x = kts, y = val, col = pair))+
+  geom_line()+
+  labs(col = "Efficiency \nCurve Pair")+
+  scale_y_continuous(name = element_blank())+
+  facet_grid(var ~ as.factor(battery), scales = "free")
+@
+\caption{The impact of the propulsion system efficiencies are extremely sensitive to battery energy density (or load) though proportions remain fixed.}
+\label{fig:sens_battery}
+\end{figure}
+
+\subsection{The interaction of hotel load, battery energy density, and efficiency curves}
+
+\begin{figure}
+<<plot_sens_corners, echo=FALSE, warning=FALSE, message=F >>=
+df <- read_rds("extdata/df_full_diff_cornered.rds")
+df %>%
+  filter(test == "corners") %>%
+  ggplot(aes(x = kts, y = val, col = pair))+
+  geom_line()+
+  labs(col = "Efficiency \nCurve Pair")+
+  scale_y_continuous(name = element_blank())+
+  theme(legend.position="bottom")+
+  facet_grid(var ~ corner, scales = "free", switch = "y")
+@
+\caption{Specifying low density batteries and a high hotel load dramatically reduces the proportional and nominal impact of propulsion system efficiencies at low speeds}
+\label{fig:sens_corners}
+\end{figure}
 
 \section{Acoustic Considerations}
 It is generally considered that the existence of cavitation of any sort will tend to dominate the acoustic signature of any vessel that doesn't produce any machinery noise by relying on all-electric drive as a conventional submarine would when dived (\cite{giles2010}, \cite{harvie1965construction}).  Its quite possible that during the period when a submarine is snorting, or running its diesel engines, these sources of noise would be a more substantial and distinctive acoustic signature than small amounts of cavitation on the propulsion system, if it were to occur, owing in particular to the low freqency of diesel engines.
