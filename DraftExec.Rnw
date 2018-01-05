@@ -693,7 +693,9 @@ Variations from this central line have been made with consideration for some pla
 
 The higher assumption curve used for the propeller approaches a maximum of just under 72\%.  This performance would not be implausible if a specialised propeller was adopted specificially to deliver peak performance at around this speed. Advanced flexible composite propellers, such as those used by the German submarine builder TKMS \parencite{durrant2016}, are able to achieve very high efficiencies, as well as delayed onset of cavitation, by allowing the blades to deform in certain ways to adapt to their specific degree of loading \parencite{young2007hydroelastic2}.  Such propellers have been observed in experiment to have propulsive efficiencies above 70\% \parencite{young2007hydroelastic}.  In this case I have assumed that this design necessitates the trade-off of steadily declining efficiencies over 10kt, considerably below the speed for which most open propellers are optimised.  Given the ability for composite propellers to adapt their shape as loads increase, it is actually likely that the performance curve in this case is actually far broader. However, assuming a trade-off in this case also facilitates a scenario whereby the efficiencies of a propeller and jet actually cross over at around 18kt, which is relevant to consider, since experts in discussion have ruled out the possibility that a jet could be more efficient at lower speeds than this.
 
-The lower propeller curve shows efficiency still increasing up to around 65\% at 20kt, which might be consistent with a propeller optimised for conventional ship speeds, but probably not likely for a specialised submarine propeller.  For all propeller curves, sharply declining efficiency has been assumed at very low speeds, (2kt or less), in order to reflect the dip seen below 5kt in the efficiency curve seen in Figure \ref{fig:BMTEfficiency.png}, assuming that this is driven by the decline in efficiency shown in Figure \ref{fig:PropDuct.png} at advance ratios approaching 1.  This has been exaccerbated beyond realistic levels in the case of the the low propeller assumption line for the sake of testing sensitivity more dramatically to some losses in this regime.  These efficiency curve assumptions are shown in Figure \ref{fig:Efficiency_assumptions}.
+The lower propeller curve shows efficiency still increasing up to around 65\% at 20kt, which might be consistent with a propeller optimised for conventional ship speeds, but probably not likely for a specialised submarine propeller.  For all propeller curves, sharply declining efficiency has been assumed at very low speeds, (2kt or less), in order to reflect the dip seen below 5kt in the efficiency curve seen in Figure \ref{fig:BMTEfficiency.png}, assuming that this is driven by the decline in efficiency shown in Figure \ref{fig:PropDuct.png} at advance ratios approaching 1.  This has been exaccerbated beyond realistic levels in the case of the the low propeller assumption line for the sake of testing sensitivity more dramatically to some losses in this regime.  It is unlikely that unless some other significant factor not discussed in this paper that a state-of-the-art submarine propeller would not be able to attain maximum efficiencies between 5 and 15kt. Hence, the low propeller curve is considered relatively unlikely, but useful for investigating sensitivity to errors or adjustments.
+
+These efficiency curve assumptions are shown in Figure \ref{fig:Efficiency_assumptions}.
 
 \begin{figure}
 <<plot_efficiency, echo=FALSE, warning=FALSE, message=F >>=
@@ -720,14 +722,170 @@ ggplot(df, aes(x = kts, y = val, col = level, linetype = system)) +
 \end{figure}
 
 \subsection{Hotel Load Assumptions}
-It is also required that some assumptions are made about the hotel load, or the power which the submarine requires which doesn't go to propulsion.  We might assume that this is in the order of 100kw, as suggested in \cite{martinez1995} though official sources of information are few.  It is also likely that the actual hotel load varies considerably as different systems are switched on and off, some of which might be discretionary in combat scenarios (e.g. hot water for washing), and others (such as the combat systems) might have increased demand during crucial phases of combat operations.  It is important to note that the combat system that has been selected for Australias FSM, the AN/BYG-1, is designed for a nuclear submarine, and is reportedly consumes considerably more power than other systems \cite{muir2015}, apparently even in the order of 100kW more. \cite{patrick2011}.  Consequently, the actual hotel load experienced might vary considerably, and as such the model used in the app allows the hotel load assumption to be varied, in order to test sensitivity to this parameter.  A flat 100kW hotel load is used as a starting assumption in the initial calculations in this paper, which as seen, produces realistic results.
+It is also required that some assumptions are made about the hotel load, or the power which the submarine requires which doesn't go to propulsion.  We might assume that this is in the order of 100kw, as suggested in \cite{martinez1995} though official sources of information are few.  It is also likely that the actual hotel load varies considerably as different systems are switched on and off, some of which might be discretionary in combat scenarios (e.g. hot water for washing), and others (such as the combat systems) might have increased demand during crucial phases of combat operations.  It is important to note that the combat system that has been selected for Australias FSM, the AN/BYG-1, is designed for a nuclear submarine, and is reportedly consumes considerably more power than other systems \cite{muir2015}, apparently even in the order of 100kW more. \cite{patrick2011}.  Consequently, the actual hotel load experienced might vary considerably, and as such the model used in the app allows the hotel load assumption to be varied, in order to test sensitivity to this parameter.  A flat 100kW hotel load is used as a starting assumption in the initial calculations in this paper, and some sensitivity analysis is given at half and double this power, to given an indication of the impact of plausible alternative energy demands dependent on operational circumstances, and choice of combat system.
 
 \subsection{Battery Assumptions}
-Since the purpose of the task at hand is to assess dived endurance only, this model focuses on a single energy store simulated by a total embarked mass (battery bank) and an energy density of those batteries.  Since the SEA 1000 project has elected not to use lithium electric batteries, the energy density of the batteries can be assumed to be that of lead-acid batteries, which are known to be in the region of 30-50Wh/kg (Watt-hours per kilogram).  Taking a central figure and converting this to Megajoules per kilogram (MJ/kg) we assume 0.14MJ/kg to be the effective energy density of lead acid batteries for our test submarine's purposes.  This parameter can be adjusted easily for sensitivity testing.
+Since the purpose of the task at hand is to assess dived endurance only, this model focuses on a single energy store simulated by a total embarked mass (battery bank) and an energy density of those batteries.  Since the SEA 1000 project has elected not to use lithium electric batteries, the energy density of the batteries can be assumed to be that of lead-acid batteries, which are known to be in the region of 30-50Wh/kg (Watt-hours per kilogram).  Taking a central figure and converting this to Megajoules per kilogram (MJ/kg) we assume 0.14MJ/kg to be the effective energy density of lead acid batteries for our test submarine's purposes.  This parameter can be adjusted easily for sensitivity testing, and in our case this will be adjusted to half, and double this energy density, noting that lead-acid batteries become much slower to charge as their charge level passes 80\%, and consequently it may be the case that only 50\% of their available capacity might be genuinely available for tactical purposes \parencite{briggs2016}.
 
-It is worthwhile considering that alternative types of battery may be on offer for submarines.  In particular, lithium ion batteries were offered by TKMS in their bid for SEA 1000, and are being installed in Type 212 submarines operated by the German navy, as well as contracted for the new Norwegian submarines, as well as Israeli submarines. Precise energy density of these batteries is not publically available.  For domestic uses such as handheld electronics or solar power applications, lithium ion batteries may have 3-4 times the energy density of lead-acid batteries.  However, the actual useful density of lithium ion batteries can vary widely depending on different chemistries and designs.  It might be assumed that for very large battery banks (such as submarines) where the stability of the battery bank is of critical importance, maximum density migth be sacrificed in favour of additional safety systems, such as increased monitoring, as well as spacing and insulation barriers between cells, in order to prevent thermal runaway in one cell leading to a catastrophic fire.
+It is worthwhile considering that alternative types of battery may be on offer for submarines.  In particular, lithium ion batteries were offered by TKMS in their bid for SEA 1000, and are being installed in Type 212 submarines operated by the German navy, as well as contracted for the new Norwegian submarines, as well as Israeli submarines. Precise energy density of these batteries is not publically available.  For domestic uses such as handheld electronics or solar power applications, lithium ion batteries may have 3-5 times the energy density of lead-acid batteries.  However, the actual useful density of lithium ion batteries can vary widely depending on different chemistries and designs.  It might be assumed that for very large battery banks (such as submarines) where the stability of the battery bank is of critical importance, maximum density migth be sacrificed in favour of additional safety systems, such as increased monitoring, as well as spacing and insulation barriers between cells, in order to prevent thermal runaway in one cell leading to a catastrophic fire.  The realistic energy density advantage that might be obtained as been suggested to lying closer to a factor of two \parencite{greenfield2016}.
+
+The total embarked load of the batteries is not a well-known public figure, though it is likely to be several hundred tonnes in order to provide the likely desired levels of dived endurance.  It has been suggested publically that the approximately 700 tonnes might be required for the Shortfin Barracuda \parencite{ohff2017}.  This would appear to be quite a large fraction of the plausible payload of a submarine, even of over 4000 tonnes displacement, given that a great deal of the potential displacement will be taken by the thick steel involved in constructing a pressure vessel (probably at least a thousand tonnes per submarine) \parencite{jean2017}.  500 tonnes of batteries has been assumed as a nominal figure for these purposes.  Given that the mass of batteries embarked has only a direct and linear relationship with the dived range and endurance, no sensitivity testing will be undertaken on this variable.  Proportional changes to the energy density of the batteries will have equivalent effect for the purposes of measuring the impact on performance. Consideration of likely impacts on space, and hull-resizing, and associated drag are beyond the scope of this paper.
+
+\subsection{Drag Coefficient of Hull}
+
+In the online version of the web-app, alternative reference points or known facts relating a given power output to a speed can be used in order to solve for this constant $C_d$.  For instance, one might assume (as done by \cite{davies2017}) that the hotel load might match the propulsive demand at some given speed, for some given hotel load.  However, given that the precise hotel load is generally not known, and highly variable, and there is potential for the different systems to have widely varying propulsive efficiencies at low speeds, this method is subject to very wide error margins.
+
+Given that any known power consumption level and speed match can be used as a reference, I have chosen instead to use the probable power consumptio at top speed, both of which we have some indication of, and given that propulsive efficiencies of the two systems are likely to be much closer at this speed, there will be less error in likely comparisons between different design concepts.  It is known that the a early German designs for a plausible submarine for SEA 1000 included a 6MW electric motor \parencite{patrick2012}, and the Shortfin Barracuda of Naval Group is often referred to as having a 7MW electric motor \parencite{ohff2017} \parencite{coates2016}, with top speeds ">20kt".  Given the nature of increasing drag at high speeds, it seems unlikely that top speeds will be very far above 20kt. Hence, in this model we have assumed that 20kt will be obtained with the ouput of 6.5MW.
+
+\section{Results and Discussion}
+
+\subsection{Power Demand}
+As part of the calculation of results for each pair of efficiency curves, the power requirements of each respective component (propulsion for the two respective systems, as well as effective power required, and hote load) can be plotted to ensure that realistic results are obtained, which is important for selecting plausible values for the constant $C_d$.  For the central efficiency curves, we can show the resultant power curves for the the assumed values of battery load, energy density, and hotel load, as seen in Figure \ref{fig:power_curve}.
 
 
+\begin{figure}
+<<plot_power1, echo=FALSE, warning=FALSE, message=F >>=
+df <- read_rds("extdata/df_full_complete_fac.rds")
+df %>%
+  filter(var == "Power (kW)", pair %in% c("Central Selections")) %>%
+  ggplot(aes(x = as.numeric(kts), y = as.numeric(val), col = cat))+
+  scale_x_continuous(name ="speed (kt)")+
+  scale_y_continuous(name = "Power (kW)")+
+  labs(title = "Example Power Curves", col = "Power Demand")+
+  geom_line(size = 0.8)
+@
+\caption{With central assumptions, a pumpjet powered submarine reaches 20kt with 6.5MW of delivered power.  Hotel load matches propulsion power demand around or below 5kt.}
+\label{fig:power_curve}
+\end{figure}
+
+It can be seen here that one of Andrew Davies assumptions, regarding hotel load matching propulsion power demand at patrol speeds, might match quite closely with our assumptions at a patrol speed of 4kt for the case of a pumpjet.  It also shows the remarkable impact of the square law on power demands, particularly their effect at low speeds.  At just a few kt, an entire submarine might be propelled by a power level comfortably produced by a large family car.  This gives further explains why it is that efficiencies of propulsion systems aren't routinely discussed at dramatically lowered speeds. Even for jets which have efficiencies which decline much faster than those we've assumed (for example in \cite{fujisawa1995}), the reduction in power demanded falls substantially faster than efficiency.  Consequently, at low speeds nothing dramatic occurs to make the declining efficiencies of consequence to operators. It is often still more economical for such vessels to travel very slowly, well outside the ideal performance range of their propulsion systems, simply because of the drag on the hull.
+
+Overall, this chart is consistent with expectation, and confirms that a plausible value of $C_d$ has been selected under these assumptions.
+
+\subsection{Central Results}
+The plots comparing the resultant endurance and range calculations across the speed range considered are in Figures \ref{fig:central_extreme}, \ref{fig:central_jet}, \ref{fig:central_prop} and \ref{fig:bottom_top}.  In all cases, the comparison for the central efficiency curves have been replotted centrally, in order to highlight varience under each of the different assumption comparisons.
+
+It is clear that under the central assumptions, the declining efficiency of the pumpjet has a very significant impact on range and endurance, particularly at speeds around 4-8kt. It might be noted that under the central assumption, the propeller system achieves 138 hours of dived endurance at 4kt where the pumpjet only manages 91 hours dived endurance at this speed.  Consequently, at a likely patrol speed, the difference amounts of almost exactly two days in dived endurance. One might presume that such a difference is of some considerable tactical significance.  In order to match the propeller's dived endurance, the pumpjet submarine would need to slow to 2.5kt.
+
+The phenomenon manifests itself in a very substantial reduction in the overall range that can be achieved submerged, and a difference between the speed at which maximum range can be achieved.  Under central assumptions, the propeller driven submarine can reach over 540nm, at any speed between 4 and 5kt. The pump-jet driven submarine reaches over 360nm between 3 and 6kt. A difference 180nm dived range would presumeably be of considerable tactical significance.
+
+
+
+\begin{figure}
+<<plot_results1, echo=FALSE, warning=FALSE, message=F >>=
+df <- read_rds("extdata/df_full_complete_fac.rds")
+df %>%
+  filter( pair %in% c("Widest Separation", "Narrowest Separation", "Central Selections")) %>%
+  filter(var %in% c("Efficiency", "Endurance (hrs)", "Range (nm)")) %>%
+  #filter(var == "end_prop", pair %in% c("top", "bottom", "propup", "propdown", "jetup", "jetdown", "wide", "narrow", "mid") ) %>%
+  ggplot(aes(x = as.numeric(kts), y = as.numeric(val), linetype = as.factor(cat), col = level))+
+  geom_line(aes(group = cat))+
+  scale_linetype_manual(labels = c("Propeller", "Pumpjet" ), values = c(1, 2 ) )+
+  scale_colour_manual(values = c("black", "blue", "red") )+
+  scale_x_continuous(name ="speed (kt)")+
+  scale_y_continuous(name =element_blank())+
+  labs(linetype = "system")+
+  facet_grid(var ~ pair, scales = "free", switch =  "y")
+@
+\caption{The most extreme and central assumptions are compared}
+\label{fig:central_extreme}
+\end{figure}
+
+\begin{figure}
+<<plot_results2, echo=FALSE, warning=FALSE, message=F >>=
+df <- read_rds("extdata/df_full_complete_fac.rds")
+df %>%
+  filter( pair %in% c("Jet Lowered", "Jet Raised", "Central Selections")) %>%
+  filter(var %in% c("Efficiency", "Endurance (hrs)", "Range (nm)")) %>%
+  #filter(var == "end_prop", pair %in% c("top", "bottom", "propup", "propdown", "jetup", "jetdown", "wide", "narrow", "mid") ) %>%
+  ggplot(aes(x = as.numeric(kts), y = as.numeric(val), linetype = as.factor(cat), col = level))+
+  geom_line(aes(group = cat))+
+  scale_linetype_manual(labels = c("Propeller", "Pumpjet" ), values = c(1, 2 ) )+
+  scale_colour_manual(values = c("black", "blue", "red") )+
+  scale_x_continuous(name ="speed (kt)")+
+  scale_y_continuous(name =element_blank())+
+  labs(linetype = "system")+
+  facet_grid(var ~ pair, scales = "free", switch =  "y")
+@
+\caption{The impact of different jet efficiency assumptions compared to the central propeller curve shows wide variance}
+\label{fig:central_jet}
+\end{figure}
+
+\begin{figure}
+<<plot_results3, echo=FALSE, warning=FALSE, message=F >>=
+df <- read_rds("extdata/df_full_complete_fac.rds")
+df %>%
+  filter( pair %in% c("Propeller Lowered", "Propeller Raised", "Central Selections")) %>%
+  filter(var %in% c("Efficiency", "Endurance (hrs)", "Range (nm)")) %>%
+  #filter(var == "end_prop", pair %in% c("top", "bottom", "propup", "propdown", "jetup", "jetdown", "wide", "narrow", "mid") ) %>%
+  ggplot(aes(x = as.numeric(kts), y = as.numeric(val), linetype = as.factor(cat), col = level))+
+  geom_line(aes(group = cat))+
+  scale_linetype_manual(labels = c("Propeller", "Pumpjet" ), values = c(1, 2 ) )+
+  scale_colour_manual(values = c("black", "blue", "red") )+
+  scale_x_continuous(name ="speed (kt)")+
+  scale_y_continuous(name =element_blank())+
+  labs(linetype = "system")+
+  facet_grid(var ~ pair, scales = "free", switch =  "y")
+@
+\caption{The impact of different propeller efficiency assumptions compared to the central pumpjet curve shows less variance}
+\label{fig:central_prop}
+\end{figure}
+
+\begin{figure}
+<<plot_results4, echo=FALSE, warning=FALSE, message=F >>=
+df <- read_rds("extdata/df_full_complete_fac.rds")
+df %>%
+  filter( pair %in% c("Lowest Lines", "Highest Lines", "Central Selections")) %>%
+  filter(var %in% c("Efficiency", "Endurance (hrs)", "Range (nm)")) %>%
+  #filter(var == "end_prop", pair %in% c("top", "bottom", "propup", "propdown", "jetup", "jetdown", "wide", "narrow", "mid") ) %>%
+  ggplot(aes(x = as.numeric(kts), y = as.numeric(val), linetype = as.factor(cat), col = level))+
+  geom_line(aes(group = cat))+
+  scale_linetype_manual(labels = c("Propeller", "Pumpjet" ), values = c(1, 2 ) )+
+  scale_colour_manual(values = c("black", "blue", "red") )+
+  scale_x_continuous(name ="speed (kt)")+
+  scale_y_continuous(name =element_blank())+
+  labs(linetype = "system")+
+  facet_grid(var ~ pair, scales = "free", switch =  "y")
+@
+\caption{Comparing the lower and higher lines for both systems together}
+\label{fig:bottom_top}
+\end{figure}
+
+\subsection{Sensitivity of Curve Selection}
+As can be seen from the comprehensive comparison in Figures \ref{fig:central_extreme}, \ref{fig:central_jet}, \ref{fig:central_prop} and \ref{fig:bottom_top}, the shape of curves selected has very different levels of impact at different speeds.  Key observations include how small the impact of efficiency variation to eithre curves tends to be at very low speeds (under 2kt).  This is due to hotel load becoming clearly dominant at such speeds.  The relative difference between the lines also diminishes somewhat towards higher speeds.  More striking, however, is the very dramatic reduction in both range and endurance at higher speeds. At a speed of 20kt, a propeller driven sumbarine might manage to remain dived for 3.6 hours according to these assumptions, where a pumpjet driven submarine might manage just under 3 hours.  A difference of about half an hour would presumeably be of less tactical significance. At any speed above 10kt, neither submarine would be able to remain dived for much more than 24 hours (25.4 hours for the propeller system, 18.3 for the jet).
+
+It should also be noted that these results, and those around 8kt, can also provide some insight into likely snorting intervals and indiscretion ratios.  As given in \cite{patrick2012}, submarines tend to carry diesel power capacity that approaches their main motor power. Whilst the difference between the two systems still appears very significant at these speeds, it appears that if transits occur in the region of 8-10kt, snorts might occurr roughly daily, and last a number of hours.  The indiscretion ratio during commute of the jet system would be significantly impaired given the substantially larger power demands at transit speeds, though a detailed calculation and comparison lies outside the scope of this paper.
+
+It seems extremely clear from these conclusions that the general results confirm very strongly that the impact of the propulsion system is likely to be of the greatest importance in the speed range 3-8kt, where propulsion power is more significant relative to hotel load, but excessive drag does not prohibit significant dives.
+
+A further feature of the results is that the relative difference in performance is much more sensitive to changes in the efficiency of the jet at the relevant speeds, owing to their larger proportional impact at low efficiencies.  Whilst a smoothly declining curve from around or over 50\% at 20kt to zero at 0kt, the precise path taken, particularly the exact level around 3-8kt, is of great importance, substantially more than plausible variations in the propeller curve.  This can be seen in an overlaid plot of the proportional differences in total power demand (hence endurance and range) for the different pairs of curves as in Figure \ref{fig:all_proportions}.
+
+\begin{figure}
+<<plot_proportions, echo=FALSE, warning=FALSE, message=F >>=
+df <- read_rds("extdata/df_full_complete_fac.rds")
+df %>%
+  filter(var == "Advantage Propeller %", pair %in% c("Lowest Lines", "Jet Lowered", "Propeller Lowered", "Widest Separation", "Central Selections", "Narrowest Separation", "Propeller Raised", "Jet Raised", "Highest Lines") ) %>%
+  ggplot(aes(x = as.numeric(kts), y = as.numeric(val), col = pair))+
+  geom_line()+
+  scale_x_continuous(name ="speed (kt)")+
+  labs(col = "Curves Compared")+
+  scale_y_continuous(name ="Percentage Propeller Advantage", breaks=seq(0, 120, 10))
+@
+\caption{The most proportional differences between the propeller and pumpjet performances for a range of assumptions}
+\label{fig:all_proportions}
+\end{figure}
+
+The proportional change in overall power requirement (directly determining both range and endurance) shows that our central scenario shows a propeller driven submarine would have more than 60\% advantage in terms of range and endurance around 5-6kt. It is interesting to note that the proportional change is greatest slightly above the speed where maximum range is achieved, and the point of peak advantage moves steadily towards higher speeds as the difference in efficiency between the systems increases.
+
+As can be seen, even compred to the central propeller curve, choosing a jet efficiency curve somewhat lower than the central assumption means that the peak difference immediately jumps to over 100\%, or effectively allow a propeller powered submarine to achieve double the range and endurance of a pumpjet powered submarine at those speeds.  It is important to note that these speeds in include those speeds which might lie near the maximum speeds that could be sustained by Air Independent Propulsion (AIP) systems \parencite[100]{@stanford2017}.  Consequently, it is likely that a conventional submarine that used pumpjets might only achieve a fraction of the dived range and endurance enhancements generally expected on propeller powered submarines which employ this technology.
+
+The proportional improvements will also be effective rough guides to the likely impact on indescretion ratios and overall range.\footnote{Additional considerations including the size and efficiency of the diesel engines and generators must be included for proper analyses of indescretion ratios, which will not be given here.}  Near patrol speed almost all scenarios show a difference approaching or exceeding 50\%, which will have a material impact on indescretion rates during all combat operations.
+
+Perhaps surprisingly, the impact at transit speeds is still quite significant, with no scenarios showing less than 20\% advantage around 8-10kt. The sensitivity to pumpjet efficiency here is also very high, with three scenarios showing an impact of over 70\%.  Given the likelihood that a submarine's average speed over its range is likely to be dominated by its transit speed, this indicates that the choice of a pumpjet propulsion system will also result in a substantial reduction in the overall range of the submarine, quite probably in the range of between 25-50\%.  This would require the embarkation of significantly larger volumes of diesel to meet minimum range requirements, and also contribute to higher running costs.
+
+\subsection{Sensitivity to Hotel Load}
+
+\subsection{Sensitivity to Battery Changes}
 
 \section{Acoustic Considerations}
 It is generally considered that the existence of cavitation of any sort will tend to dominate the acoustic signature of any vessel that doesn't produce any machinery noise by relying on all-electric drive as a conventional submarine would when dived (\cite{giles2010}, \cite{harvie1965construction}).  Its quite possible that during the period when a submarine is snorting, or running its diesel engines, these sources of noise would be a more substantial and distinctive acoustic signature than small amounts of cavitation on the propulsion system, if it were to occur, owing in particular to the low freqency of diesel engines.

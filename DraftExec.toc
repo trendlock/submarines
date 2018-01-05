@@ -46,60 +46,74 @@
 \defcounter {refsection}{0}\relax 
 \contentsline {subsubsection}{\numberline {5.1.3}Energy waste and efficiency}{9}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {5.2}Boundary Layer}{9}
+\contentsline {subsection}{\numberline {5.2}Boundary Layer}{10}
 \defcounter {refsection}{0}\relax 
 \contentsline {subsection}{\numberline {5.3}Turbulent and Laminar Flow}{10}
 \defcounter {refsection}{0}\relax 
 \contentsline {subsection}{\numberline {5.4}Cavitation}{10}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {5.5}Pressure, Thrust, and Momentum change}{16}
+\contentsline {subsection}{\numberline {5.5}Pressure, Thrust, and Momentum change}{14}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {5.6}Flow separation}{16}
+\contentsline {subsection}{\numberline {5.6}Flow separation}{17}
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {6}Basics of Ducted Propellers and Pumpjets}{18}
+\contentsline {section}{\numberline {6}Basics of Ducted Propellers and Pumpjets}{17}
 \defcounter {refsection}{0}\relax 
 \contentsline {subsection}{\numberline {6.1}Propellers}{18}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsubsection}{\numberline {6.1.1}Pitch}{20}
+\contentsline {subsubsection}{\numberline {6.1.1}Pitch}{19}
 \defcounter {refsection}{0}\relax 
 \contentsline {subsubsection}{\numberline {6.1.2}Pitch and the Advance Ratio}{20}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {6.2}Ducted Propellers}{24}
+\contentsline {subsection}{\numberline {6.2}Ducted Propellers}{25}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsubsection}{\numberline {6.2.1}The Accelerating Duct}{26}
+\contentsline {subsubsection}{\numberline {6.2.1}The Accelerating Duct}{25}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsubsection}{\numberline {6.2.2}The Decelerating Duct or Pumpjet}{26}
+\contentsline {subsubsection}{\numberline {6.2.2}The Decelerating Duct or Pumpjet}{28}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsubsection}{\numberline {6.2.3}Waterjets}{30}
+\contentsline {subsubsection}{\numberline {6.2.3}Waterjets}{28}
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {7}Constraints on the efficiency of pumpjets at low speed}{30}
+\contentsline {section}{\numberline {7}Constraints on the efficiency of pumpjets at low speed}{32}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {7.1}Recent Commentary}{30}
+\contentsline {subsection}{\numberline {7.1}Recent Commentary}{32}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {7.2}Modern literature and results}{33}
+\contentsline {subsection}{\numberline {7.2}Modern literature and results}{32}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {7.3}Theoretical Limitations}{34}
+\contentsline {subsection}{\numberline {7.3}Theoretical Limitations}{36}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {7.4}The impact of duct loss on an ideal propeller}{38}
+\contentsline {subsection}{\numberline {7.4}The impact of duct loss on an ideal propeller}{37}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {7.5}An assessment of scope for improving the efficiency of a pumpjet at low speeds}{44}
+\contentsline {subsection}{\numberline {7.5}An assessment of scope for improving the efficiency of a pumpjet at low speeds}{43}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsubsection}{\numberline {7.5.1}Increase mass-flow by widening area of intake}{44}
+\contentsline {subsubsection}{\numberline {7.5.1}Increase mass-flow by widening area of intake}{43}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsubsection}{\numberline {7.5.2}Reduce degree of diffusion (i.e. switch to accelerating duct) to reduce negative thrust from duct}{46}
+\contentsline {subsubsection}{\numberline {7.5.2}Reduce degree of diffusion (i.e. switch to accelerating duct) to reduce negative thrust from duct}{45}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsubsection}{\numberline {7.5.3}Reduce shroud length to decrease drag on duct}{46}
+\contentsline {subsubsection}{\numberline {7.5.3}Reduce shroud length to decrease drag on duct}{45}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsubsection}{\numberline {7.5.4}Summary remarks on potential for redesign of pumpjet for low-speed conditions}{47}
+\contentsline {subsubsection}{\numberline {7.5.4}Summary remarks on potential for redesign of pumpjet for low-speed conditions}{46}
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {8}Model Structures and Assumptions}{53}
+\contentsline {section}{\numberline {8}Model Structures and Assumptions}{52}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {8.1}Mathematical Structure}{53}
+\contentsline {subsection}{\numberline {8.1}Mathematical Structure}{52}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {8.2}Efficiency Curve Assumptions}{53}
+\contentsline {subsection}{\numberline {8.2}Efficiency Curve Assumptions}{52}
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {9}Acoustic Considerations}{54}
+\contentsline {subsection}{\numberline {8.3}Hotel Load Assumptions}{53}
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {10}App Outputs}{58}
+\contentsline {subsection}{\numberline {8.4}Battery Assumptions}{53}
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {11}Conclusions}{59}
+\contentsline {subsection}{\numberline {8.5}Drag Coefficient of Hull}{55}
+\defcounter {refsection}{0}\relax 
+\contentsline {section}{\numberline {9}Results and Discussion}{55}
+\defcounter {refsection}{0}\relax 
+\contentsline {subsection}{\numberline {9.1}Power Demand}{55}
+\defcounter {refsection}{0}\relax 
+\contentsline {subsection}{\numberline {9.2}Central Results}{55}
+\defcounter {refsection}{0}\relax 
+\contentsline {subsection}{\numberline {9.3}Sensitivity of Curve Selection}{57}
+\defcounter {refsection}{0}\relax 
+\contentsline {section}{\numberline {10}Acoustic Considerations}{57}
+\defcounter {refsection}{0}\relax 
+\contentsline {section}{\numberline {11}App Outputs}{64}
+\defcounter {refsection}{0}\relax 
+\contentsline {section}{\numberline {12}Conclusions}{64}

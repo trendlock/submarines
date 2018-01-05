@@ -27,9 +27,9 @@ plotly::ggplotly()
 
 df <- df %>%
   mutate(set = case_when(
-    cat %in% c("input_prop_2", "input_jet_3") ~ "A",
+    cat %in% c("input_prop_1", "input_jet_1") ~ "A",
     cat %in% c("input_prop_3", "input_jet_2") ~ "B",
-    cat %in% c("input_prop_1", "input_jet_1") ~ "C"
+    cat %in% c("input_prop_2", "input_jet_3") ~ "C"
   ))
 
 ls <- df %>%
@@ -50,9 +50,9 @@ ls <- df %>%
 ls_comp <- ls %>%
   map( ~ .x %>%
          select(kts, eff.jet, eff.prop) %>%
-         run_subs(hotel = 100,
+         run_subs(hotel = 50,
                   total.batt = 500,
-                  batt.dens = 0.14,
+                  batt.dens = 0.28,
                   patrol = 2.5,
                   max.speed = 18,
                   max.power = 7,
@@ -74,7 +74,6 @@ produce_all_plots <- function(df) {
       cat ==  "eff.jet" ~ "Pumpjet"
     ))
 
-
   end_plot_df <- df %>%
     filter(cat %in% c("endurance.prop.hour", "endurance.jet.hour")) %>%
     mutate(cat = case_when(
@@ -84,15 +83,28 @@ produce_all_plots <- function(df) {
 
   y_max_e <- roundUpNice(max(pull(end_plot_df, val)))
 
+  comp_plot_df <- df %>%
+    filter(cat %in% c("eff.jet", "eff.prop", "range.jet", "range.prop", "endurance.prop.hour", "endurance.jet.hour")) %>%
+    mutate(sys = case_when(
+      str_detect(cat,  "prop") ~ "Propeller",
+      str_detect(cat,  "jet") ~ "Pumpjet"),
+      cat = case_when(
+        str_detect(cat,  "end") ~ "end",
+        str_detect(cat,  "eff") ~ "eff",
+        str_detect(cat, "range") ~ "range"))
 
+  diff_plot_df <- comp_plot_df %>%
+    spread(sys, val) %>%
+    mutate(prop = (Propeller/Pumpjet -1) * 100,
+           diff = (Propeller - Pumpjet))
 
   end_prop_plot_df <- end_plot_df %>%
     spread(cat, val) %>%
     mutate(diff = (Propeller/Pumpjet -1) * 100)
 
-
-
   y_max_e_p <- roundUpNice(max(pull(end_prop_plot_df, diff)))
+
+
 
 
   range_plot_df <- df %>%
@@ -107,6 +119,8 @@ produce_all_plots <- function(df) {
   range_prop_plot_df <- range_plot_df %>%
     spread(cat, val) %>%
     mutate(diff = (Propeller/Pumpjet -1) * 100)
+
+
 
 
   power_plot_df <- df %>%
@@ -157,7 +171,7 @@ produce_all_plots <- function(df) {
     scale_x_continuous(breaks=seq(0, 20, 2))
 
   #list(eff = eff, end = end, rng = rng, end_p = end_p,  pwr =pwr)
-  list(eff_plot_df = eff_plot_df, end_plot_df = end_plot_df, range_plot_df = range_plot_df, end_prop_plot_df = end_prop_plot_df, power_plot_df = power_plot_df)
+  list(comp_plot_df = comp_plot_df, end_prop_plot_df = end_prop_plot_df, range_prop_plot_df = range_prop_plot_df, diff_plot_df = diff_plot_df)
 }
 
 
@@ -172,6 +186,77 @@ ls_plots <- ls_comp %>%
 
 #ls_plots$`Set 2`$rng %>% write_rds("extdata/rng_ploy_hotlx.rds")
 
+
+##############  New filling procedure for Difference plots ################
+
+df_filler <- ls_plots$`Set 1`$diff_plot_df
+
+df_filler <- df_filler %>%
+  select(-Propeller, -Pumpjet)
+
+df_filler <- df_filler %>%
+  gather(key = "var", value = "val", prop, diff )
+
+df_filler <- df_filler %>%
+  filter(cat %in% c("end", "range"),
+         !(cat == "range" & var == "prop"))
+
+df_filler <- df_filler %>%
+  spread(key = var, value = val) %>%
+  spread(key = cat, value = diff)
+
+df_filler <- df_filler %>%
+  fill(range, .direction = "up")
+
+df_filler <- df_filler %>%
+  filter(end > 0)
+
+df_filler <- df_filler %>%
+  gather(key = "var", value = "val", -kts)
+
+############### the mutate step ##############
+df_filler <- df_filler %>%
+  mutate(pair = "mid",
+         test = "corners",
+         hotel = 50,
+         battery = 0.28)
+
+df_filler %>%
+  ggplot(aes(x = kts, y = val, col = pair))+
+  geom_line()+
+  facet_grid(var~., scales = "free")
+
+df_full <- df_full %>%
+  bind_rows(df_filler)
+#df_full <- df_filler
+
+df_full %>% write_rds("extdata/df_full_diff_cornered.rds")
+
+######  Let's tru some plots  ######
+
+df_full %>%
+  filter(test == "hotel") %>%
+  ggplot(aes(x = kts, y = val, col = pair))+
+  geom_line()+
+  labs(title = "Hotel Comparison")+
+  facet_grid(var ~ as.factor(hotel), scales = "free")
+
+df_full %>%
+  filter(test == "battery") %>%
+  ggplot(aes(x = kts, y = val, col = pair))+
+  geom_line()+
+  labs(title = "Battery Comparison")+
+  facet_grid(var ~ as.factor(battery), scales = "free")
+
+df_full_cornered <- df_full %>%
+  mutate(corner = paste0("a", battery, "and", hotel))
+
+df_full_cornered %>%
+  filter(test == "corners") %>%
+  ggplot(aes(x = kts, y = val, col = pair))+
+  geom_line()+
+  labs(title = "Corners")+
+  facet_grid(var ~ corner, scales = "free")
 
 ################### Filling up the data frame manually  ##################
 df_filler <- ls_plots$`Set 2`$power_plot_df %>%
@@ -199,33 +284,80 @@ ggplot(df_filler, aes(x = kts, y = val, linetype = cat))+
 df_full <- df_full %>%
   bind_rows(df_filler)
 
-# df_full <- df_full %>%
-#   filter(!cat == "diff")
+#df_full <- df_full_wide
+df_full_wide$pair <- "wide"
+
 # check them out
 
-df_full_narrow <- df_full
-df_full_narrow %>% write_rds("extdata/df_full_narrow.rds")
+df_full_wide <- df_full
+df_full_wide %>% write_rds("extdata/df_full_wide.rds")
 
 
 df_full_complete <- df_full_bottom %>%
   bind_rows(df_full_jetdown, df_full_jetup, df_full_mid, df_full_narrow, df_full_propup, df_full_propdown, df_full_top, df_full_wide)
 
-df_full_complete %>% write_rds("extdata/df_full_complete.rds")
 
-plot <- df_full_complete %>%
-  #filter(var == "end", pair %in% c("wide", "narrow", "mid")) %>%
-  filter(var == "end_prop", pair %in% c("top", "bottom", "propup", "propdown", "jetup", "jetdown", "wide", "narrow", "mid") ) %>%
-  ggplot(aes(x = as.numeric(kts), y = as.numeric(val), linetype = as.factor(cat), col = pair))+
-  geom_line(aes(group = cat))
+# df_full_complete. <- df_full_complete %>%
+#   mutate(cat = str_replace_all(cat, "Propulsion Power Drawn Jet", "Pumpjet"),
+#          cat = str_replace_all(cat, "Propulsion Power Drawn Propeller", "Propeller"))
+
+df_full_complete_end_prop <- df_full_complete %>%
+  filter(var == "end_prop") %>%
+  mutate(level = "not applicable")
+
+df_full_complete. <- df_full_complete
+df_full_complete. <- df_full_complete. %>%
+  filter(!var == "end_prop")
+df_full_complete. <-df_full_complete. %>%
+  bind_rows(df_full_complete_end_prop)
+
+df_full_complete.$pair <- factor(df_full_complete.$pair, levels =  c("bottom", "jetdown", "propdown", "wide", "mid", "narrow", "propup", "jetup", "top"),
+                                 labels = c("Lowest Lines", "Jet Lowered", "Propeller Lowered", "Widest Separation", "Central Selections", "Narrowest Separation", "Propeller Raised", "Jet Raised", "Highest Lines"))
+df_full_complete.$var <- factor(df_full_complete.$var, levels = c("eff", "end", "range", "end_prop", "power"),
+                                labels = c("Efficiency", "Endurance (hrs)", "Range (nm)", "Advantage Propeller %", "Power (kW)"))
+
+df_full_complete <- df_full_complete.
+df_full_complete. %>% write_rds("extdata/df_full_complete_fac.rds")
+
+df <- read_rds("extdata/df_full_complete_fac.rds")
+plot <- df %>%
+  filter(var == "Advantage Propeller %", pair %in% c("Lowest Lines", "Jet Lowered", "Propeller Lowered", "Widest Separation", "Central Selections", "Narrowest Separation", "Propeller Raised", "Jet Raised", "Highest Lines") ) %>%
+  ggplot(aes(x = as.numeric(kts), y = as.numeric(val), col = pair))+
+  geom_line()+
+  scale_x_continuous(name ="speed (kt)")+
+  labs(col = "Curves Compared")+
+  scale_y_continuous(name ="Percentage Propeller Advantage", breaks=seq(0, 120, 10))
 
 ggplotly(plot)
 
-df_full_complete %>%
-  filter( pair %in% c("wide", "narrow", "mid")) %>%
+df <- read_rds("extdata/df_full_complete_fac.rds")
+plot <- df %>%
+  filter(var == "Power (kW)", pair %in% c("Central Selections")) %>%
+  ggplot(aes(x = as.numeric(kts), y = as.numeric(val), col = cat))+
+  scale_x_continuous(name ="speed (kt)")+
+  #scale_y_continuous(name = "Endurance (hrs)")+
+  #labs(title = "Endurance")+
+  geom_line(size = 0.8)
+ggplotly(plot)
+
+
+df <- read_rds("extdata/df_full_complete_fac.rds")
+
+df %>%
+  filter( pair %in% c("Widest Separation", "Narrowest Separation", "Central Selections")) %>%
+  filter(var %in% c("Efficiency", "Endurance (hrs)", "Range (nm)")) %>%
   #filter(var == "end_prop", pair %in% c("top", "bottom", "propup", "propdown", "jetup", "jetdown", "wide", "narrow", "mid") ) %>%
-  ggplot(aes(x = as.numeric(kts), y = as.numeric(val), linetype = as.factor(cat), col = cat))+
+  ggplot(aes(x = as.numeric(kts), y = as.numeric(val), linetype = as.factor(cat), col = level))+
   geom_line(aes(group = cat))+
-  facet_grid(var ~ pair, scales = "free")
+  scale_linetype_manual(labels = c("Propeller", "Pumpjet" ), values = c(1, 2 ) )+
+  scale_colour_manual(values = c("black", "blue", "red") )+
+  scale_x_continuous(name ="speed (kt)")+
+  scale_y_continuous(name =element_blank())+
+  labs(linetype = "system")+
+  facet_grid(var ~ pair, scales = "free", switch =  "y")
+
+
+
 
 # plotly
 

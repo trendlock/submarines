@@ -1205,6 +1205,10 @@
   Mechanics and Arctic Engineering}
     \field{pages}{777\bibrangedash 787}
     \field{title}{Hydroelastic tailoring of composite naval propulsors}
+    \verb{url}
+    \verb http://proceedings.asmedigitalcollection.asme.org/proceeding.aspx?art
+    \verb icleid=1593655
+    \endverb
     \field{year}{2007}
   \endentry
 
@@ -1303,6 +1307,141 @@
     \endverb
     \field{month}{10}
     \field{year}{2011}
+  \endentry
+
+  \entry{briggs2016}{article}{}
+    \name{author}{1}{}{%
+      {{hash=BP}{%
+         family={Briggs},
+         familyi={B\bibinitperiod},
+         given={Peter},
+         giveni={P\bibinitperiod},
+      }}%
+    }
+    \list{publisher}{1}{%
+      {Australian Strategic Policy Institute}%
+    }
+    \strng{namehash}{BP1}
+    \strng{fullhash}{BP1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{labelyear}{2016}
+    \field{title}{SEA1000: the importance of dived endurance (part 1)}
+    \verb{url}
+    \verb https://www.aspistrategist.org.au/sea1000-the-importance-of-dived-end
+    \verb urance-part-1/
+    \endverb
+    \field{month}{03}
+    \field{year}{2016}
+  \endentry
+
+  \entry{greenfield2016}{article}{}
+    \name{author}{1}{}{%
+      {{hash=GP}{%
+         family={Greenfield},
+         familyi={G\bibinitperiod},
+         given={Paul},
+         giveni={P\bibinitperiod},
+      }}%
+    }
+    \list{publisher}{1}{%
+      {Australian Strategic Policy Institute}%
+    }
+    \strng{namehash}{GP1}
+    \strng{fullhash}{GP1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{labelyear}{2016}
+    \field{title}{Australia's Future Submarine: the great battery debate}
+    \verb{url}
+    \verb https://www.aspistrategist.org.au/australias-future-submarine-the-gre
+    \verb at-battery-debate/
+    \endverb
+    \field{month}{04}
+    \field{year}{2016}
+  \endentry
+
+  \entry{ohff2017}{article}{}
+    \name{author}{1}{}{%
+      {{hash=OHJ}{%
+         family={Ohff},
+         familyi={O\bibinitperiod},
+         given={Hans\bibnamedelima J},
+         giveni={H\bibinitperiod\bibinitdelim J\bibinitperiod},
+      }}%
+    }
+    \list{publisher}{1}{%
+      {The Australian}%
+    }
+    \strng{namehash}{OHJ1}
+    \strng{fullhash}{OHJ1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{labelyear}{2017}
+    \field{title}{Sub-optimal? Australia's future submarine charts a rocky
+  course}
+    \verb{url}
+    \verb http://www.theaustralian.com.au/national-affairs/defence/suboptimal-a
+    \verb ustralias-future-submarine-charts-rocky-course/news-story/8d4b09d4702
+    \verb ddbf0ecb772a5cb5eb184
+    \endverb
+    \field{month}{05}
+    \field{year}{2017}
+  \endentry
+
+  \entry{jean2017}{article}{}
+    \name{author}{1}{}{%
+      {{hash=JP}{%
+         family={Jean},
+         familyi={J\bibinitperiod},
+         given={Peter},
+         giveni={P\bibinitperiod},
+      }}%
+    }
+    \list{publisher}{1}{%
+      {The Advertiser}%
+    }
+    \strng{namehash}{JP1}
+    \strng{fullhash}{JP1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{labelyear}{2017}
+    \field{title}{Future Submarine project head Rear Admiral Gregory Sammut
+  tells parliamentary inquiry future subs may not use Australian steel}
+    \verb{url}
+    \verb http://www.adelaidenow.com.au/news/south-australia/future-submarine-p
+    \verb roject-head-rear-admiral-gregory-sammut-tells-parliamentary-inquiry-f
+    \verb uture-subs-may-not-use-australian-steel/news-story/632bd3bdb69a1307da
+    \verb 84359605319fc3
+    \endverb
+    \field{month}{03}
+    \field{year}{2017}
+  \endentry
+
+  \entry{coates2016}{article}{}
+    \name{author}{1}{}{%
+      {{hash=CP}{%
+         family={Coates},
+         familyi={C\bibinitperiod},
+         given={Peter},
+         giveni={P\bibinitperiod},
+      }}%
+    }
+    \list{publisher}{1}{%
+      {Submarine Matters International}%
+    }
+    \strng{namehash}{CP1}
+    \strng{fullhash}{CP1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{labelyear}{2016}
+    \field{title}{Specifications Table - Shortfin Barracuda Block 1A}
+    \verb{url}
+    \verb http://gentleseas.blogspot.com.au/2016/04/specifications-for-shortfin
+    \verb -barracuda.html
+    \endverb
+    \field{month}{04}
+    \field{year}{2016}
   \endentry
 
   \entry{harvie1965construction}{book}{}
