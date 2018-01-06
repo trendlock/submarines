@@ -951,12 +951,16 @@ Perhaps surprisingly, the impact at transit speeds is still quite significant, w
 \end{figure}
 
 \section{Acoustic Considerations}
+
+\subsection{The importance of cavitation inception}
 It is generally considered that the existence of cavitation of any sort will tend to dominate the acoustic signature of any vessel that doesn't produce any machinery noise by relying on all-electric drive as a conventional submarine would when dived (\cite{giles2010}, \cite{harvie1965construction}).  Its quite possible that during the period when a submarine is snorting, or running its diesel engines, these sources of noise would be a more substantial and distinctive acoustic signature than small amounts of cavitation on the propulsion system, if it were to occur, owing in particular to the low freqency of diesel engines.
 
 Other sources of noise hydrodynamic noise, such as the turbulence produced in the boundary layer of the flow over the hull, or parts of the propulsor, will still contribute to overall noise and some signature, but it will tend to be vastly smaller in magnitude.  This owes to the essentially incompressible nature of water.  Without compression, even very relatively intense votices or tubulent flows will not propagate very much noise, if the water remains perfectly solid.  All of the 'round and round' can't achieve much 'in and out', which is what results in propagated noise.  This obviously doesn't hold true in compressible fluids, such as air, as one would observe noticing the intense noise produced by hand-dryers, aeroplanes, jet engines etc.  It also doesn't hold true within a turbulent flow underwater.  If you were to put a sensor inside a turbulent flow, the rapid movements would result in continual and significant pressure fluctuations, hence noise.  But at a distance, these fluctuations tend to substantially cancel out.  The larger the scale of the eddies and vortices, the further noise might propagate, and also the lower the frequencies of resultant noise might be, which makes noise propagate further.  Likewise, larger caviation voids will tend to emit lower frequency sound aswell, as can be observed from the boiling of a kettle.
 
 However, when dived, it might be reasonably assumed that the complete elimination of all sources of cavitition will be the primary objective of acoustic signature management.  This is neatly put in \cite[88]{gearhart1966selection}: "The occurence of cavitation in a propulsor results in adegradation of the propulsor operating characteristics if extensive amounts of cavitation exist, and in significant noise when minute amounts occur.  As a result, the performance requirements of a submersible weapon system specify that the occurence or inception of cavitation be avoided below certain operating depths." One might consider that a submarines 'tactical silent speed' would most probably correspond to the speed at which it can operate safely below the point of any cavitation inception.
 
+
+\subsection{The impact of depth on cavitation}
 It is crucial to understand that increasing depth necessarily increases the static pressure throughout a propulsion system.  As such, the speed at which cavitation starts to occur, will necessarily be a function of depth.  Approximately every 10m of water adds approximately the equivalent of an atmosphere of pressure.  As such, the static pressure a system experiences at 10m depth will be half that experienced at 30m (since the air in the atmosphere comprises the first atmosphere of pressure).  Consequently, diving deeper will necessarily increase the speeds one can achieve without any cavitation occurring \ref{fig:InceptionDepth.png}.
 
 \begin{figure}
@@ -982,6 +986,7 @@ This relationship can be expressed in a general form in \ref{fig:InceptionContou
 \label{fig:InceptionContours}
 \end{figure}
 
+\subsection{The significance of flow separation}
 It is also important to understand that the addition of a duct will necessarily to flow separation occuring on the inside of the duct opening at very low speeds which correspond to high advance ratios when load remains constant.  Flow separation tends to lead to vortex shedding, which means that inconsistent flows (vortices) are then ingested into the blades of the impeller.  This effect is well known and document.  A good example is shown on the exterior of an \textbf{accelerating} duct at $J = .8$ in \cite{willemsen2013}.
 
 \begin{figure}
@@ -990,95 +995,37 @@ It is also important to understand that the addition of a duct will necessarily 
 \label{fig:VortexShedding.png}
 \end{figure}
 
-Whilst at very low power levels, or at good depths, it is quite plausible that this doesn't result in any cavitation, which would normally be a likely occurrence if the blades are operating closer to their design power and such such vortices were shed into the intake.
+Whilst at very low power levels, or at good depths, it is quite plausible that this doesn't result in any cavitation, which would normally be a likely occurrence if the blades are operating closer to their design power and such such vortices were shed into the intake.  However, given the inherently unpredictable and unsteady nation of such vortex formation and shedding, the this phenomenon would increase the risk of cavitation occurring unexpectedly in marginal conditions.  In addition, in the absence of cavitation, the sudden and changing pressure gradients over the blades would dramatically increase the overall pressure fluctuations and turbulence level that occurs within the propulsor.  This would necessarily increase the overall levels of noise generated.  It is plausible that the noise is of sufficiently small level that it is not considered a significant compromise of stealth.  In essence, the higher levels of noise lie below some threshold of significance.  However, it is almost certainly untrue that that pumpjet actually generates less noise overall than a propeller at very low speeds.
 
+\subsection{The impact of duct shielding}
+The presence of the duct around the impeller may also have the effect of preventing the noise from being effectively radiated away from the propulsor.  This may well result in substantial reductions in some types of noise being radiated away from the propulsor in certain directions, which may have given rise to the consistent qualification of 'radiated' being used to descrive the type of noise which differentiated the French submarine bid \parencite{stewart2016, davies2017, ohff2016}, including by the designers of the submarine \parencite{autret2016}.  This is a secondary effect, quite separate to the avoidance of cavitation, which might be seen as an acoustic advantage in circumstances where cavitation might not be expected to occur on either type of propulsor.  It is highly likely that this is the effect which is relied upon to sustain claims that a pumpjet is generally acoustically superior to a propeller, including at low speeds.
 
-\section{App Outputs}
+It should be noted here that shielding effects might comprise the combination two distinct and seperate physically phenomenon: reflection and damping.  Noise tends to be reflected very effectively off hard, smooth surfaces representing the boundary between mediums of very different density (such as steel and water).  Changes in density which are gradual, often representing soft, squishy, or broken surfaces tend, to have the effect of absorbing sound, where the acoustic energy is converted to heat or degradation of the material, rather than reflecting it.  Given the significance of increased drag on any surfaces within the propulsor, it is highly unlikely that any attempt at damping is made within the pumpjet.  However, it should be noted that some pumpjets have been constructed with a hollow design, in order to reduce weight \parencite{harvie1965construction}, which would reduce the thickness of solid steel, though offer some potential opportunity for damping.  Overall, damping is increased in its effectiveness at low frequencies by allowing it to occur over larger distances, corresponding to the sound's increased wavelenght, leading to increased thickness of the transition substance or damping material.  Consequently, effective damping within the propulsor itself is unlikely to be attempted, or limited to medium and higher frequencies, probably suited to reducing noise from normal surface flow turbulence and very early onset cavitation.
 
-Adjustable figures from App.
+The ability of a thin layer of material to reflect noise is also highly frequecy dependent, and also dependent on mass of the shield layer.  As the material becomes thinner and thinner, a hard shield layer will tend increasinly to transmit rather than reflect the noise, a phenomenon that increases as the amplitude (loudness) of the noise increases, and frequency decreases.  Denser materials are more effective at reflecting sound, as more energy (pressure) is required to excite the same movement in the material.  Consequently, the effectiveness of a shield depends on both its thickness and density.  There is therefore some tension inherent in the design of a shield where thickness and total weight are constrained.  A thicker layer solid steel will be very effective at reflecting sound, but have negligible absoption or damping.  A hollow between two thin layers will offer some potential for a soft daping material to be inserted, but at the cost of reflection.
 
+It is most likely that little or no damping or absorbing layer is attempted within the body of the shroud, since increasing the duct thickness above hydrodynamically determined optimum profile is likely to have a detrimental impact on efficiency.  Constructing especially thin layers, and still maintaining an optimal shape to the precision required for housing powerful turbomachinery like the impeller is also likely to involve considerable construction risk and complexity.  Hence the shielding effect is most likely to dominated by the reflective characteristics of the duct, which would seek to internally reflect noise back into the turbulent flow, where sound waves would be increasingly convoluted, and somewhat absorbed through the eventual transition to small-scale turbulence and heat.
 
+The degree to which the total noise generated is reflected internally will also be shape-dependent.  A more concave inner surface, consistent with higher degrees of diffusion in advance of the impeller, and greater nozzle narrowing after it, which is consistent with higher pressure elevation at the impeller (hence improved cavitation characteristics) but higher negative duct thrust, leading to even poorer efficiencies at low speed.  Substantial alteration of duct shape on account of efficiency considerations at low speed are therefore necessarily going to have some impact on the degree of effective shielding that a duct can afford.
 
-\begin{knitrout}
-\definecolor{shadecolor}{rgb}{0.969, 0.969, 0.969}\color{fgcolor}\begin{kframe}
-\begin{verbatim}
-## # A tibble: 6 x 4
-##     kts   eff.jet  eff.prop hotel
-##   <dbl>     <dbl>     <dbl> <dbl>
-## 1   0.5 0.1728660 0.8902062   150
-## 2   1.0 0.2052115 0.8669509   150
-## 3   1.5 0.2356997 0.8463204   150
-## 4   2.0 0.2643992 0.8277603   150
-## 5   2.5 0.2913788 0.8108753   150
-## 6   3.0 0.3167071 0.7953734   150
-## [1] 2.5
-## [1] 150
-## # A tibble: 6 x 3
-##     kts hotel       eff
-##   <dbl> <dbl>     <dbl>
-## 1   0.5   150 0.1728660
-## 2   1.0   150 0.2052115
-## 3   1.5   150 0.2356997
-## 4   2.0   150 0.2643992
-## 5   2.5   150 0.2913788
-## 6   3.0   150 0.3167071
-## [1] 5
-##         5 
-## 0.2913788
-\end{verbatim}
-\end{kframe}
-\end{knitrout}
+\subsubsection{Directional Dependence}
+Two important qualifications must be made regarding shielding.  The first is that its impact is highly directionally dependent.  The pump jet requires openings at the front and back to allow water in and out. Only noise that is reflected internally sufficient to be largely absorbed is effectively shielded.  The larger the areas of the intakes and outlets, the narrower the effective shielding will become.  Consequently, design changes to make the pump more efficient at low speeds, which may include expanding both the inlet and outlent, and diminshing the difference between them, will necessarily be at the expense of diminishing effective width of the shielding 'belt' around the propulsor.
 
+When the submarine is travelling at high speeds, and there is significant flow through the propulsor, the impact of waterspeed through the propulsor might have the additional impact of diminishing the radiation of noise in the forwards direction, in the same way that sound tends tends not to travel well up-wind in air.  However, at very low speeds this effect would be greatly diminished.
 
+It should be noted that in the underwater environment sound can be made to reflect in a variety of directions simply with differences in temperature, salinity, movement, as well as off plenty of nearby underwater objects, including the ocean floor and objects on it.  This phenomenon generally serves to make the art of underwater acoustics extremely complex and unpredictable, and generally contributes to the difficulty of precisely locating a submarine, even when some signature is detected.  However, it also means that direction-dependent reductions signature do not reliably translate to overall reduced probability of detection.
 
+\subsubsection{Frequency Dependence}
+It ought further to be noted that the effectiveness of acoustic shielding is also highly dependent on frequency.  Much lower frequencies are very hard to reflect, and absorb, as can be easily observed in a house with a home-cinema, where lower frequencies emitted by the subwoofer will tend to affect many surrounding rooms, where higher frequency sounds might be substantially muffled by interceding walls. The same acoustic effects are at work in underwater acoustics.
 
-\begin{figure}
-\begin{knitrout}
-\definecolor{shadecolor}{rgb}{0.969, 0.969, 0.969}\color{fgcolor}
+This has an important consequence for shielding for pumpjets at very low speeds because of the occurrence of flow separation and vortex shedding. In the absence of flow separation, and cavitation at very low speeds the most substantial sources of sound would be the turbulent flow over surfaces of in the propulsor.  This noise will tend to be relatively white and high in its frequency owing to the very small length-scales of the eddies and vortices in such turbulence.  The steel shroud would be very effective in reflecting such high frequency noise.  Under acceleration or higher loads, the very instances of cavitation woud also be relatively high frequency, as the voids or cavities would be small at first. These sounds might also be very effectively reflected by the shroud, and consequently diminished.  However, flow separation results in the creation of vortices of a dramatically larger scale than occurs with normal turbulence in a boundary later, and hence generate noise of a much lower frequency.  In addition, as the flow rates slow even further, these vortices are likely to become larger in size, even if lesser in intensity, resulting in further reduction in the frequency of noise generated.  Further to this effect, the rate at which the vortices shed from the surface and impact the impeller will also result in another acoustic signature, of even lower frequency.  Again, at lower flow rates, these vortices will tend to develop and shed more slowly, lowering frequencies further.
 
-{\centering \includegraphics[width=\maxwidth]{figures/plots-plot_end-1} 
+Consequently, whilst for certain types of noise which tend to become both louder and lower in frequency with increasing speed (cavitation), flow separation provides a contrasting characteristic, in that it is likely to decrease in frequecy with decreasing speed.  As lower frequencies tend to propagate much further in open water, this could have a significand adverse impact on the total acoustic signature of the submarine, even if the flow separation doesn't lead to any cavitation.
 
-}
-
-
-
-\end{knitrout}
-\caption{Endurance}
-\label{fig:Endurance_plot}
-\end{figure}
-
-\begin{figure}
-\begin{knitrout}
-\definecolor{shadecolor}{rgb}{0.969, 0.969, 0.969}\color{fgcolor}
-
-{\centering \includegraphics[width=\maxwidth]{figures/plots-plot_range-1} 
-
-}
-
-
-
-\end{knitrout}
-\caption{Range}
-\label{fig:Range_plot}
-\end{figure}
-
-
-\begin{figure}
-\begin{knitrout}
-\definecolor{shadecolor}{rgb}{0.969, 0.969, 0.969}\color{fgcolor}\begin{kframe}
-\begin{verbatim}
-## NULL
-\end{verbatim}
-\end{kframe}
-\end{knitrout}
-\caption{Power}
-\label{fig:Power_plot}
-\end{figure}
-
-
-
+The foregoing consideration suggests that the acoustic signature of a jet-powered submarine might not reduce steadily with speed all the way to stationary movement.  It is plausible that there could be some elevated propulsion signature at very low speeds due to flow separation, and that the submarine's optimal acoustic signature when moving is actually at some slightly higher speed, where smoother flow through the propulsor can be achieved.  However, given that the amplitude, frequency, and combined impact of those two characteristics cannot be accurately evaluated without substantial further work and more detailed system knowledge, it is also possible that the increase in other noise (including hull flow noise and other machinery) at elevated speeds offsets the improvement in the smoothness of the pumpjet's operation.  It is also possible that the overall level of noise radiated by the pumpjet, including under conditions when flow separation occurs, is still considered to be sufficiently low as to not be of significant tactical consequence.  However it is highly unlikely that the accoustic signature of the pumpjet is actually superior to that of an open propeller at very low speeds, when cavitation occurs for neither system, but substantially increased turbulence including flow separation must neccessarily occur for the pumpjet.
 
 \section{Conclusions}
+This is a pretty bad result for the pumpjet.
 
 \printbibliography
 

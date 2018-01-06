@@ -1516,5 +1516,91 @@
   Engineering}
     \field{year}{2010}
   \endentry
+
+  \entry{stewart2016}{article}{}
+    \name{author}{1}{}{%
+      {{hash=SC}{%
+         family={Stewart},
+         familyi={S\bibinitperiod},
+         given={Cameron},
+         giveni={C\bibinitperiod},
+      }}%
+    }
+    \list{publisher}{1}{%
+      {The Australian}%
+    }
+    \strng{namehash}{SC1}
+    \strng{fullhash}{SC1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{labelyear}{2016}
+    \field{title}{The sound of silence - why Germany lost its subs bid}
+    \verb{url}
+    \verb http://www.theaustralian.com.au/national-affairs/defence/the-sound-of
+    \verb -silence--why-germany-lost-its-subs-bid/news-story/4b3d69b49a8371e983
+    \verb 7ed59e4f0faac2?login=1
+    \endverb
+    \field{month}{05}
+    \field{year}{2016}
+  \endentry
+
+  \entry{ohff2016}{article}{}
+    \name{author}{1}{}{%
+      {{hash=OHJ}{%
+         family={Ohff},
+         familyi={O\bibinitperiod},
+         given={Hans\bibnamedelima J},
+         giveni={H\bibinitperiod\bibinitdelim J\bibinitperiod},
+      }}%
+    }
+    \list{publisher}{1}{%
+      {The Conversation}%
+    }
+    \strng{namehash}{OHJ1}
+    \strng{fullhash}{OHJ1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{labelyear}{2016}
+    \field{title}{Why the French submarine won the bid to replace the
+  Collins-class}
+    \verb{url}
+    \verb https://theconversation.com/why-the-french-submarine-won-the-bid-to-r
+    \verb eplace-the-collins-class-58223
+    \endverb
+    \field{month}{04}
+    \field{year}{2016}
+  \endentry
+
+  \entry{autret2016}{article}{}
+    \name{author}{2}{}{%
+      {{hash=AG}{%
+         family={Autret},
+         familyi={A\bibinitperiod},
+         given={Gerard},
+         giveni={G\bibinitperiod},
+      }}%
+      {{hash=CS}{%
+         family={Costello},
+         familyi={C\bibinitperiod},
+         given={Sean},
+         giveni={S\bibinitperiod},
+      }}%
+    }
+    \list{publisher}{1}{%
+      {Australian Strategic Policy Institute}%
+    }
+    \strng{namehash}{AGCS1}
+    \strng{fullhash}{AGCS1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{labelyear}{2016}
+    \field{title}{Designing the Shortfin Barracuda Block 1A}
+    \verb{url}
+    \verb https://www.aspistrategist.org.au/designing-the-shortfin-barracuda-bl
+    \verb ock-1a/
+    \endverb
+    \field{month}{04}
+    \field{year}{2016}
+  \endentry
 \endsortlist
 \endinput
