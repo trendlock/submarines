@@ -17,6 +17,105 @@
 \endgroup
 
 \sortlist[entry]{none/global/}
+  \entry{naval2018}{misc}{}
+    \field{labeltitlesource}{title}
+  \field{howpublished}{\urlhttp://naval-group.com.au/futuresubmarines/barracuda.php}
+    \field{title}{The Shortfin Barracuda Bloack 1A}
+  \endentry
+
+  \entry{stewart2016}{article}{}
+    \name{author}{1}{}{%
+      {{hash=SC}{%
+         family={Stewart},
+         familyi={S\bibinitperiod},
+         given={Cameron},
+         giveni={C\bibinitperiod},
+      }}%
+    }
+    \list{publisher}{1}{%
+      {The Australian}%
+    }
+    \strng{namehash}{SC1}
+    \strng{fullhash}{SC1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{labelyear}{2016}
+    \field{title}{The sound of silence - why Germany lost its subs bid}
+    \verb{url}
+    \verb http://www.theaustralian.com.au/national-affairs/defence/the-sound-of
+    \verb -silence--why-germany-lost-its-subs-bid/news-story/4b3d69b49a8371e983
+    \verb 7ed59e4f0faac2?login=1
+    \endverb
+    \field{month}{05}
+    \field{year}{2016}
+  \endentry
+
+  \entry{stanford2017}{article}{}
+    \name{author}{1}{}{%
+      {{hash=SJ}{%
+         family={Stanford},
+         familyi={S\bibinitperiod},
+         given={Jon},
+         giveni={J\bibinitperiod},
+      }}%
+    }
+    \list{publisher}{1}{%
+      {Insight Economics}%
+    }
+    \strng{namehash}{SJ1}
+    \strng{fullhash}{SJ1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{labelyear}{2017}
+    \field{title}{Australia's Future Submarine Getting This Key Capability
+  Right}
+    \verb{url}
+    \verb http://www.insighteconomics.com.au/reports/2017_Insight_Economics_Sub
+    \verb marine_Report.pdf
+    \endverb
+    \field{month}{09}
+    \field{year}{2017}
+  \endentry
+
+  \entry{davies2017}{article}{}
+    \name{author}{1}{}{%
+      {{hash=DA}{%
+         family={Davies},
+         familyi={D\bibinitperiod},
+         given={Andrew},
+         giveni={A\bibinitperiod},
+      }}%
+    }
+    \list{publisher}{1}{%
+      {Australian Strategic Policy Institute}%
+    }
+    \strng{namehash}{DA1}
+    \strng{fullhash}{DA1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{labelyear}{2017}
+    \field{title}{Pump up the pump jet?}
+    \verb{url}
+    \verb https://www.aspistrategist.org.au/pump-up-the-pump-jet/
+    \endverb
+    \field{month}{11}
+    \field{year}{2017}
+  \endentry
+
+  \entry{sbs2017}{misc}{}
+    \list{publisher}{1}{%
+      {SBS}%
+    }
+    \field{labeltitlesource}{title}
+    \field{labelyear}{2017}
+    \field{title}{Size of new submarines locked in}
+    \verb{url}
+    \verb https://www.sbs.com.au/news/size-of-new-submarines-locked-in
+    \endverb
+    \field{month}{10}
+    \field{year}{2017}
+  \endentry
+
   \entry{carlton2007}{book}{}
     \name{author}{1}{}{%
       {{hash=CJ}{%
@@ -656,31 +755,6 @@
     \field{year}{1964}
   \endentry
 
-  \entry{davies2017}{article}{}
-    \name{author}{1}{}{%
-      {{hash=DA}{%
-         family={Davies},
-         familyi={D\bibinitperiod},
-         given={Andrew},
-         giveni={A\bibinitperiod},
-      }}%
-    }
-    \list{publisher}{1}{%
-      {Australian Strategic Policy Institute}%
-    }
-    \strng{namehash}{DA1}
-    \strng{fullhash}{DA1}
-    \field{labelnamesource}{author}
-    \field{labeltitlesource}{title}
-    \field{labelyear}{2017}
-    \field{title}{Pump up the pump jet?}
-    \verb{url}
-    \verb https://www.aspistrategist.org.au/pump-up-the-pump-jet/
-    \endverb
-    \field{month}{11}
-    \field{year}{2017}
-  \endentry
-
   \entry{patrick2017}{article}{}
     \name{author}{1}{}{%
       {{hash=PR}{%
@@ -991,33 +1065,6 @@
       {Marin}%
     }
     \field{year}{2013}
-  \endentry
-
-  \entry{stanford2017}{article}{}
-    \name{author}{1}{}{%
-      {{hash=SJ}{%
-         family={Stanford},
-         familyi={S\bibinitperiod},
-         given={Jon},
-         giveni={J\bibinitperiod},
-      }}%
-    }
-    \list{publisher}{1}{%
-      {Insight Economics}%
-    }
-    \strng{namehash}{SJ1}
-    \strng{fullhash}{SJ1}
-    \field{labelnamesource}{author}
-    \field{labeltitlesource}{title}
-    \field{labelyear}{2017}
-    \field{title}{Australia's Future Submarine Getting This Key Capability
-  Right}
-    \verb{url}
-    \verb http://www.insighteconomics.com.au/reports/2017_Insight_Economics_Sub
-    \verb marine_Report.pdf
-    \endverb
-    \field{month}{09}
-    \field{year}{2017}
   \endentry
 
   \entry{lu2016cfd}{article}{}
@@ -1677,33 +1724,6 @@
     \field{journaltitle}{International Journal of Naval Architecture and Ocean
   Engineering}
     \field{year}{2010}
-  \endentry
-
-  \entry{stewart2016}{article}{}
-    \name{author}{1}{}{%
-      {{hash=SC}{%
-         family={Stewart},
-         familyi={S\bibinitperiod},
-         given={Cameron},
-         giveni={C\bibinitperiod},
-      }}%
-    }
-    \list{publisher}{1}{%
-      {The Australian}%
-    }
-    \strng{namehash}{SC1}
-    \strng{fullhash}{SC1}
-    \field{labelnamesource}{author}
-    \field{labeltitlesource}{title}
-    \field{labelyear}{2016}
-    \field{title}{The sound of silence - why Germany lost its subs bid}
-    \verb{url}
-    \verb http://www.theaustralian.com.au/national-affairs/defence/the-sound-of
-    \verb -silence--why-germany-lost-its-subs-bid/news-story/4b3d69b49a8371e983
-    \verb 7ed59e4f0faac2?login=1
-    \endverb
-    \field{month}{05}
-    \field{year}{2016}
   \endentry
 
   \entry{ohff2016}{article}{}

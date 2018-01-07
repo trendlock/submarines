@@ -2,91 +2,91 @@
 \defcounter {refsection}{0}\relax 
 \contentsline {section}{\numberline {1}Introduction}{2}
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {2}Executive Summary}{3}
+\contentsline {section}{\numberline {2}Executive Summary}{4}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {2.1}The difference between nuclear and conventional for speed}{3}
+\contentsline {subsection}{\numberline {2.1}The difference between nuclear and conventional for speed}{4}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {2.2}The importance of low speed operation for diesel-electric submarines}{3}
+\contentsline {subsection}{\numberline {2.2}The importance of low speed operation for diesel-electric submarines}{4}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {2.3}What is cavitation}{3}
+\contentsline {subsection}{\numberline {2.3}What is cavitation}{4}
 \defcounter {refsection}{0}\relax 
 \contentsline {subsection}{\numberline {2.4}How does a pump-jet work}{4}
 \defcounter {refsection}{0}\relax 
 \contentsline {subsection}{\numberline {2.5}The necessity of drag, and decelleration, induced by the duct}{4}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {2.6}What happens to a jet at low speed, in simple terms}{4}
+\contentsline {subsection}{\numberline {2.6}What happens to a jet at low speed, in simple terms}{5}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {2.7}Why this isn't easily noticeable in normal circumstances}{4}
+\contentsline {subsection}{\numberline {2.7}Why this isn't easily noticeable in normal circumstances}{5}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {2.8}What the submarine requirement tells us about the duct}{4}
+\contentsline {subsection}{\numberline {2.8}What the submarine requirement tells us about the duct}{5}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {2.9}Quantitative Conclusions}{4}
+\contentsline {subsection}{\numberline {2.9}Quantitative Conclusions}{5}
 \defcounter {refsection}{0}\relax 
 \contentsline {subsection}{\numberline {2.10}The acoustic advantage of jets at higher speed}{5}
 \defcounter {refsection}{0}\relax 
 \contentsline {subsection}{\numberline {2.11}Turbulence and flow separation at low speed}{5}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {2.12}The acoustic question at low speed}{5}
+\contentsline {subsection}{\numberline {2.12}The acoustic question at low speed}{6}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {2.13}The inevitable trade-off}{5}
+\contentsline {subsection}{\numberline {2.13}The inevitable trade-off}{6}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {2.14}The contradiction between stated requirement and chosen technology}{5}
+\contentsline {subsection}{\numberline {2.14}The contradiction between stated requirement and chosen technology}{6}
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {3}Speed and Drag - Why very slow is very very $(very)^2$ economical}{5}
+\contentsline {section}{\numberline {3}Speed and Drag - Why very slow is very very $(very)^2$ economical}{6}
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {4}The difference between nuclear and conventional propulsion}{7}
+\contentsline {section}{\numberline {4}The difference between nuclear and conventional propulsion}{8}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {4.1}Power and Energy}{7}
+\contentsline {subsection}{\numberline {4.1}Power and Energy}{8}
 \defcounter {refsection}{0}\relax 
 \contentsline {subsection}{\numberline {4.2}Xenon poisoning and low power limitations}{8}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {4.3}Recent Commentary}{8}
+\contentsline {subsection}{\numberline {4.3}Recent Commentary}{10}
 \defcounter {refsection}{0}\relax 
 \contentsline {section}{\numberline {5}Some essential concepts}{10}
 \defcounter {refsection}{0}\relax 
 \contentsline {subsection}{\numberline {5.1}Conservation of Energy}{10}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsubsection}{\numberline {5.1.1}Venturi Effect}{10}
+\contentsline {subsubsection}{\numberline {5.1.1}Venturi Effect}{11}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsubsection}{\numberline {5.1.2}Flow Diffusion}{10}
+\contentsline {subsubsection}{\numberline {5.1.2}Flow Diffusion}{11}
 \defcounter {refsection}{0}\relax 
 \contentsline {subsubsection}{\numberline {5.1.3}Energy waste and efficiency}{11}
 \defcounter {refsection}{0}\relax 
 \contentsline {subsection}{\numberline {5.2}Boundary Layer}{11}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {5.3}Turbulent and Laminar Flow}{11}
+\contentsline {subsection}{\numberline {5.3}Turbulent and Laminar Flow}{12}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {5.4}Cavitation}{13}
+\contentsline {subsection}{\numberline {5.4}Cavitation}{12}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {5.5}Pressure, Thrust, and Momentum change}{16}
+\contentsline {subsection}{\numberline {5.5}Pressure, Thrust, and Momentum change}{18}
 \defcounter {refsection}{0}\relax 
 \contentsline {subsection}{\numberline {5.6}Flow separation}{18}
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {6}Basics of Ducted Propellers and Pumpjets}{19}
+\contentsline {section}{\numberline {6}Basics of Ducted Propellers and Pumpjets}{20}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {6.1}Propellers}{19}
+\contentsline {subsection}{\numberline {6.1}Propellers}{20}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsubsection}{\numberline {6.1.1}Pitch}{19}
+\contentsline {subsubsection}{\numberline {6.1.1}Pitch}{21}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsubsection}{\numberline {6.1.2}Pitch and the Advance Ratio}{21}
+\contentsline {subsubsection}{\numberline {6.1.2}Pitch and the Advance Ratio}{22}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {6.2}Ducted Propellers}{25}
+\contentsline {subsection}{\numberline {6.2}Ducted Propellers}{27}
 \defcounter {refsection}{0}\relax 
 \contentsline {subsubsection}{\numberline {6.2.1}The Accelerating Duct}{27}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsubsection}{\numberline {6.2.2}The Decelerating Duct or Pumpjet}{27}
+\contentsline {subsubsection}{\numberline {6.2.2}The Decelerating Duct or Pumpjet}{30}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsubsection}{\numberline {6.2.3}Waterjets}{31}
+\contentsline {subsubsection}{\numberline {6.2.3}Waterjets}{30}
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {7}Constraints on the efficiency of pumpjets at low speed}{31}
+\contentsline {section}{\numberline {7}Constraints on the efficiency of pumpjets at low speed}{34}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {7.1}Recent Commentary}{31}
+\contentsline {subsection}{\numberline {7.1}Recent Commentary}{34}
 \defcounter {refsection}{0}\relax 
 \contentsline {subsection}{\numberline {7.2}Modern literature and results}{34}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {7.3}A simple theoretical explanation}{38}
+\contentsline {subsection}{\numberline {7.3}A simple theoretical explanation}{37}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {7.4}Trade-offs and Limitations on Improvements}{42}
+\contentsline {subsection}{\numberline {7.4}Trade-offs and Limitations on Improvements}{41}
 \defcounter {refsection}{0}\relax 
 \contentsline {subsection}{\numberline {7.5}The impact of duct loss on an ideal propeller}{44}
 \defcounter {refsection}{0}\relax 
@@ -124,22 +124,22 @@
 \defcounter {refsection}{0}\relax 
 \contentsline {subsection}{\numberline {9.5}Sensitivity to Battery Changes}{71}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {9.6}The interaction of hotel load, battery energy density, and efficiency curves}{73}
+\contentsline {subsection}{\numberline {9.6}The interaction of hotel load, battery energy density, and efficiency curves}{74}
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {10}Acoustic Considerations}{73}
+\contentsline {section}{\numberline {10}Acoustic Considerations}{74}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {10.1}The importance of cavitation inception}{73}
+\contentsline {subsection}{\numberline {10.1}The importance of cavitation inception}{74}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {10.2}Impact of speed on cavitation}{73}
+\contentsline {subsection}{\numberline {10.2}Impact of speed on cavitation}{74}
 \defcounter {refsection}{0}\relax 
 \contentsline {subsection}{\numberline {10.3}The impact of depth on cavitation}{76}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {10.4}The significance of flow separation}{76}
+\contentsline {subsection}{\numberline {10.4}The significance of flow separation}{77}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {10.5}The impact of duct shielding}{76}
+\contentsline {subsection}{\numberline {10.5}The impact of duct shielding}{77}
 \defcounter {refsection}{0}\relax 
 \contentsline {subsubsection}{\numberline {10.5.1}Directional Dependence}{80}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsubsection}{\numberline {10.5.2}Frequency Dependence}{81}
+\contentsline {subsubsection}{\numberline {10.5.2}Frequency Dependence}{80}
 \defcounter {refsection}{0}\relax 
 \contentsline {section}{\numberline {11}Conclusions}{81}
