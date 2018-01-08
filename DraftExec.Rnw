@@ -4,6 +4,7 @@
 \usepackage[margin=0.8in]{geometry}
 \bibliography{references}
 
+\usepackage{nameref}
 
 \usepackage{draftwatermark}
 \SetWatermarkText{DRAFT}
@@ -28,7 +29,7 @@ library(submarines)
 
 \tableofcontents
 
-\section{Introduction}
+\section{Introduction} \label{intro}
 
 It is worthwhile explaining briefly the origins and intent of this paper, how it came to be written, and how it ought to be read.
 
@@ -436,7 +437,7 @@ A detailed explanation of the means by which the ideal efficiency of propeller c
 \subsubsection{The Decelerating Duct or Pumpjet}
 Decelerating ducts necessarily produce a negative thrust, since the process of raising the pressure of the water about the impeller (equivalent to slowing it down) necessitate reducing its kinetic energy and consequently momentum.  In a wide range of literature introducing the fundamentals of ducted propellers and water-jets, or discussing their more modern development there is universal acknowledgement that the choice of a decelerating duct is generally made for the avoidance of cavitation for specialised (generally military) purposes, rather than for the achievement of increased efficiency (\cite{carlton2007}, \cite{oosterveld1970}, \cite{mollard2011}, \cite{haimov2010}, \cite{lewis1988}).
 
-In order to achieve a reduction in cavitation, however, care must be taken in the design of a decelerating duct.  Since the negative thrust produced by the duct must necessitate additional work being done by the impeller, there can be circumstances where the additional loading of the impeller out-weighs the impacts of elevating the pressure around it. \cite[24-25]{oosterveld1970} provides a more thorough derivation of the circumstances in which this can be reliably achieved, which generally include larger blade area ratios or with more rows of rotors for higher loading, or circumstances where the loading of the propeller is quite low.  This creates an inevitable and necessary tension between optimisation of a duct for propulsive efficiency and reduction of cavitation, which will be returned to in subsequent section.
+In order to achieve a reduction in cavitation, however, care must be taken in the design of a decelerating duct.  Since the negative thrust produced by the duct must necessitate additional work being done by the impeller, there can be circumstances where the additional loading of the impeller out-weighs the impacts of elevating the pressure around it. \cite[24-25]{oosterveld1970} provides a more thorough derivation of the circumstances in which this can be reliably achieved, which generally include larger blade area ratios or with more rows of rotors for higher loading, or circumstances where the loading of the propeller is quite low.  This creates an inevitable and necessary tension between optimisation of a duct for propulsive efficiency and reduction of cavitation, which will be returned to in Section \ref{waterjets} (\nameref{waterjets}).
 
 It is perhaps most relevant at this point to further clarify the distinction between the different names for related or similar systems.  In \cite[17]{carlton2007} pump jet is described as an "interesting development of the classical ducted propeller". Oosterveld, in his thesis on ducted propellers also states with regard to the decelerating duct "This ducted propeller system is the so called pumpjet" \parencite[8]{oosterveld1970}.  Other authors give separate treatement to ducted propellers and pump jets, though the systems they describe are essentially similar in terms of composition, advantages, and physics \parencite[288]{lewis1988}.
 
@@ -450,7 +451,8 @@ In other definitive literature on the design of pumpjets \parencite{henderson196
 
 The addition of some new parts such as stator blades (to straighten out the flow) and other possible features which make the propeller system more like pump or turbomachinery components might be associated with systems more commonly referred to as pumpjets than ducted propellers.  Not all decelerating ducts have stators, but the impact of the duct on the stream will remain. The key concepts behind the operation of these systems, however, remains essentially similar in their nature and design intent.  In the presence of a duct propellers might be advantageously shaped differently, including maintaing a larger chord lenght right to the shroud, rather than tapering as open propellers tend to lessen vorexs and cavitation on the extremities.  However, there is not to my knowledge any single defining physical characteristic which the transition to the name 'impeller' implies, which woud not be effectively equivalent to specialised propellers for decelerating ducts.  In systems tending to be described as pumpjets or waterjets hubs tend to be larger, blade-numbers higher, twist, skew and rake lower.  No definitive transition point seems to be accepted as having great significance.  Most commonly literature will refer to a 'rotor', a more general term which could encompass both propellers and impellers.
 
-\subsubsection{Waterjets}
+\subsubsection{Waterjets} \label{waterjets}
+
 The use of the word waterjet, as opposed to pumpjet, has a tendency signify that the jet expelled from the shroud or pump is situated above the water, which is desirable in very fast-moving surface vessels which attempt to minimise their contact with the waters surface, including high-speed planing hull vessels, including pleasure craft.  The physics of the two systems, however, are closely related, with the very noticeable exception of the absence of flow considerations for water on the exterior of the duct considerations for waterjets.  However, the physics relating to the impeller and stator blades or (turbomachinery) designed to add energy to the flow are generally extremely closely linked, though a larger variety of diffeent pump types can be chosen for waterjets which might differ more significantly from the natural evolution of a propeller to an axial-flow pump. Many of the essential equations which govern the efficiencies and cavitation performance of pumpjets and waterjets are of the same or extremely similar form, as can be seen in detailed discussions given to both, by similar authors (\cite{wislicenus1973}, \cite{henderson1964}).  There are, however, plenty of instances in recent literature where this distinction regarding the ejection of the jet above and below the waterline is not maintained, and waterjets and pumpjets seem to be used interchangeably \parencite{abdel2010}, or systems are described as 'submerged waterjets' \parencite{buckingham2008submarine}.
 
 \begin{figure}
@@ -514,7 +516,7 @@ Moreover, recent literature seems to confirm that efficiency of pumpjets fall of
 
 Pumpjets are necessarily low in efficiency at very low speeds because they attempt to get the water to do multiple things.  They don't just accelerate a water colum.  They first slow it down (increasing its pressure), then add pressure to it, then accelerate it.  When the total amount of energy embodied in the incoming water stream, and the total amount of energy you want to add to the water both get very small (as they do at very low speed) there simply isn't enough energy to do all things at once to all of the water.  The energy penalty inflicted by using the additional devices becomes very large in proportion, and part of the water doesn't do all the necessary things for the jet to work.  In essence, if you try to slow down something that's already going slowly, it tends to stop  That's exactly what happens in jets operating at very low flow-rates, when flow separation, also known as stall when it occurs between the blades, begins to take place.  When there isn't enough energy to move all the water through the pressure-hurdles imposed by the duct, only some of it moves, and the rest spins in place.
 
-There are other some fundamental limitations on the peak efficiency that can be achieved by jets based on simple calculations of ideal efficiency from momentum theory, which are discussed in the next subsection.  They also provide enduring, reliable limitations on the extent to which ingenuity or design changes might be able to improve the efficiency of jets at low speed. But the primary reason why jet efficiencies decline towards zero at low speed is to do with flow separation \parencite{fujisawa1995}, which is what occurs when the assumptions inherent in momentum theory's analysis of an 'ideal' actuator disc start to break down.
+There are other some fundamental limitations on the peak efficiency that can be achieved by jets based on simple calculations of ideal efficiency from momentum theory, which are discussed in Section \ref{tradeoffs} (\nameref{tradeoffs}).  They also provide enduring, reliable limitations on the extent to which ingenuity or design changes might be able to improve the efficiency of jets at low speed. But the primary reason why jet efficiencies decline towards zero at low speed is to do with flow separation \parencite{fujisawa1995}, which is what occurs when the assumptions inherent in momentum theory's analysis of an 'ideal' actuator disc start to break down.
 
 The conditions which lead to flow separation in a pumpjet can be relatively simply explained in terms of conservation of energy, and conservation of mass. Conservation of mass requires that as a pipe or duct expands, the flow through it necessarily slows down, in order to occupy the large volume, in proportion to the new cross-sectional area.  Conservation of energy requires that it increases in pressure, and defines a very specific relationship between the pressure increase and the change in velocity, which is determined by the shape of the duct.  That relationship says that the static pressure increase is inversely proportional change in velocity \textbf{squared}, as given by Bernoulli's equation, which was discussed in earlier sections.  As a result, at high speeds, the total energy of the system is dominated by its velocity, but at very low speeds the static pressure is much more significant.
 
@@ -542,7 +544,7 @@ Consequently, the geometry of the duct defines a pressure gradient in the intake
 
 Figure \ref{fig:JetLowFlow.png} shows a jet operating at very low speed.  The adverse pressure gradient combined with the drag forces of the boundary layer are sufficient to bring the flow to a stop and reverse it, as shown by the arrow size reducing, and changing direction in the diagram.  This occurs very close to the inner surface near the opening of the duct, and potentially also between the blades of the rotor, beginning the roots \parencite[15]{henderson1964}.  Flow separation necessarily sees additional energy expended in the kinetic energy of the additional vortices and turbulent flows created, which don't result in the creation of thrust, which demands a change in the net momentum of the liquid in a backwards direction.  Consequently, the degree and extent that it occurs necessarily and inevitably reduces the efficiency of the propulsor.  As the flow rates slow further, the areas of flow separation will become larger, effectively reducing the intake area of the jet, and further degrading efficiency.
 
-Flow separation also tends to lead to unsteady flows, with vortices periodically being shed into the main stream as they are speed up or change shape, and then ingested by the impeller and stator blades.  As can be seen by the diagram in Figure \ref{fig:JetLowFlow.png}, regions abound which are adjacent to or behind flow blockages or reversing flow, where considerable turbulence and unsteady forces would exist.  These effects also have acoustic consequences, which will be discussed in Section \ref{Acoustic Considerations}.
+Flow separation also tends to lead to unsteady flows, with vortices periodically being shed into the main stream as they are speed up or change shape, and then ingested by the impeller and stator blades.  As can be seen by the diagram in Figure \ref{fig:JetLowFlow.png}, regions abound which are adjacent to or behind flow blockages or reversing flow, where considerable turbulence and unsteady forces would exist.  These effects also have acoustic consequences, which will be discussed in Section \ref{acousticconsiderations} (\nameref{acousticconsiderations}).
 
 \begin{figure}
 \includegraphics[width=\textwidth]{JetLowFlow.png}
@@ -566,7 +568,7 @@ Consequently, the contraction of the outer shroud at the very end of the duct wi
 \label{fig:Triomph.jpg}
 \end{figure}
 
-\subsection{Trade-offs and Limitations on Improvements}
+\subsection{Trade-offs and Limitations on Improvements} \label{tradeoffs}
 
 Having established that the inevitable decline of a pumpjets efficiency towards lower speeds is driven by the increasing occurrence of flow separation, some consideration ought to be given to the potential scope for the effect to be improved or negated by design changes, or otherwise mitigated with other improvements in efficiency.  Here I have found considerable help from well established literature, many including various old declassified technical reports funded by the US Navy, many of which are frequently cited in the most recent literature as laying out the enduring frameworks for the modern discipline.
 
@@ -1078,7 +1080,7 @@ df %>%
 \label{fig:sens_corners}
 \end{figure}
 
-\section{Acoustic Considerations}
+\section{Acoustic Considerations} \label{acousticconsiderations}
 
 \subsection{The importance of cavitation inception}
 It is generally considered that the existence of cavitation of any sort will tend to dominate the acoustic signature of any vessel that doesn't produce any machinery noise by relying on all-electric drive as a conventional submarine would when dived (\cite{giles2010}, \cite{harvie1965construction}).  Its quite possible that during the period when a submarine is snorting, or running its diesel engines, these sources of noise would be a more substantial and distinctive acoustic signature than small amounts of cavitation on the propulsion system if it were to occur, owing in particular to the low freqency of diesel engines.
