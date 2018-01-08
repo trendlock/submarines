@@ -19,8 +19,11 @@
 \sortlist[entry]{none/global/}
   \entry{naval2018}{misc}{}
     \field{labeltitlesource}{title}
-  \field{howpublished}{\urlhttp://naval-group.com.au/futuresubmarines/barracuda.php}
+    \field{note}{Accessed: 2018-01-08}
     \field{title}{The Shortfin Barracuda Bloack 1A}
+    \verb{url}
+    \verb http://naval-group.com.au/futuresubmarines/barracuda.php
+    \endverb
   \endentry
 
   \entry{stewart2016}{article}{}
@@ -372,6 +375,77 @@
     \field{year}{1997}
   \endentry
 
+  \entry{mccormick1963design}{article}{}
+    \name{author}{2}{}{%
+      {{hash=MB}{%
+         family={McCormick},
+         familyi={M\bibinitperiod},
+         given={BW},
+         giveni={B\bibinitperiod},
+      }}%
+      {{hash=EJ}{%
+         family={Eisenhuth},
+         familyi={E\bibinitperiod},
+         given={JJ},
+         giveni={J\bibinitperiod},
+      }}%
+    }
+    \strng{namehash}{MBEJ1}
+    \strng{fullhash}{MBEJ1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{labelyear}{1963}
+    \field{number}{10}
+    \field{pages}{2348\bibrangedash 2354}
+    \field{title}{Design and Performance of Propellers and Pumpjets for
+  Underwater Propulsion}
+    \verb{url}
+    \verb https://arc.aiaa.org/doi/abs/10.2514/3.2065?journalCode=aiaaj
+    \endverb
+    \field{volume}{1}
+    \field{journaltitle}{AIAA J}
+    \field{year}{1963}
+  \endentry
+
+  \entry{bruce1974}{article}{}
+    \name{author}{4}{}{%
+      {{hash=BEP}{%
+         family={Bruce},
+         familyi={B\bibinitperiod},
+         given={Edgar\bibnamedelima Perrin},
+         giveni={E\bibinitperiod\bibinitdelim P\bibinitperiod},
+      }}%
+      {{hash=GW}{%
+         family={Gearhart},
+         familyi={G\bibinitperiod},
+         given={WS},
+         giveni={W\bibinitperiod},
+      }}%
+      {{hash=RJ}{%
+         family={Ross},
+         familyi={R\bibinitperiod},
+         given={JR},
+         giveni={J\bibinitperiod},
+      }}%
+      {{hash=TA}{%
+         family={Treaster},
+         familyi={T\bibinitperiod},
+         given={AL},
+         giveni={A\bibinitperiod},
+      }}%
+    }
+    \strng{namehash}{BEP+1}
+    \strng{fullhash}{BEPGWRJTA1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{labelyear}{1974}
+    \field{title}{The design of pumpjets for hydrodynamic propulsion}
+    \verb{url}
+    \verb https://ntrs.nasa.gov/search.jsp?R=19750003135
+    \endverb
+    \field{year}{1974}
+  \endentry
+
   \entry{mollard2011}{book}{}
     \name{author}{3}{}{%
       {{hash=MAF}{%
@@ -473,7 +547,6 @@
     \field{labelnamesource}{author}
     \field{labeltitlesource}{title}
     \field{labelyear}{1988}
-    \field{pages}{14}
     \field{title}{Principles of naval architecture}
     \verb{url}
     \verb http://opac.vimaru.edu.vn/edata/EBook/Principles%20of%20Naval%20achit
@@ -906,38 +979,6 @@
     \field{year}{2010}
   \endentry
 
-  \entry{mccormick1963design}{article}{}
-    \name{author}{2}{}{%
-      {{hash=MB}{%
-         family={McCormick},
-         familyi={M\bibinitperiod},
-         given={BW},
-         giveni={B\bibinitperiod},
-      }}%
-      {{hash=EJ}{%
-         family={Eisenhuth},
-         familyi={E\bibinitperiod},
-         given={JJ},
-         giveni={J\bibinitperiod},
-      }}%
-    }
-    \strng{namehash}{MBEJ1}
-    \strng{fullhash}{MBEJ1}
-    \field{labelnamesource}{author}
-    \field{labeltitlesource}{title}
-    \field{labelyear}{1963}
-    \field{number}{10}
-    \field{pages}{2348\bibrangedash 2354}
-    \field{title}{Design and Performance of Propellers and Pumpjets for
-  Underwater Propulsion}
-    \verb{url}
-    \verb https://arc.aiaa.org/doi/abs/10.2514/3.2065?journalCode=aiaaj
-    \endverb
-    \field{volume}{1}
-    \field{journaltitle}{AIAA J}
-    \field{year}{1963}
-  \endentry
-
   \entry{gearhart1966selection}{article}{}
     \name{author}{2}{}{%
       {{hash=GWS}{%
@@ -972,7 +1013,7 @@
   \entry{reddit2016}{article}{}
     \name{author}{1}{}{%
       {{hash=s}{%
-         family={silence_hr},
+         family={silence\_hr},
          familyi={s\bibinitperiod},
       }}%
     }
@@ -1106,45 +1147,6 @@
     \field{journaltitle}{International Journal of Naval Architecture and Ocean
   Engineering}
     \field{year}{2016}
-  \endentry
-
-  \entry{bruce1974}{article}{}
-    \name{author}{4}{}{%
-      {{hash=BEP}{%
-         family={Bruce},
-         familyi={B\bibinitperiod},
-         given={Edgar\bibnamedelima Perrin},
-         giveni={E\bibinitperiod\bibinitdelim P\bibinitperiod},
-      }}%
-      {{hash=GW}{%
-         family={Gearhart},
-         familyi={G\bibinitperiod},
-         given={WS},
-         giveni={W\bibinitperiod},
-      }}%
-      {{hash=RJ}{%
-         family={Ross},
-         familyi={R\bibinitperiod},
-         given={JR},
-         giveni={J\bibinitperiod},
-      }}%
-      {{hash=TA}{%
-         family={Treaster},
-         familyi={T\bibinitperiod},
-         given={AL},
-         giveni={A\bibinitperiod},
-      }}%
-    }
-    \strng{namehash}{BEP+1}
-    \strng{fullhash}{BEPGWRJTA1}
-    \field{labelnamesource}{author}
-    \field{labeltitlesource}{title}
-    \field{labelyear}{1974}
-    \field{title}{The design of pumpjets for hydrodynamic propulsion}
-    \verb{url}
-    \verb https://ntrs.nasa.gov/search.jsp?R=19750003135
-    \endverb
-    \field{year}{1974}
   \endentry
 
   \entry{furuya1988}{report}{}
