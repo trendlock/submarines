@@ -10,6 +10,8 @@
 \usepackage[export]{adjustbox}
 % For split figures
 \usepackage{subcaption}
+%  appendix
+\usepackage[toc,page]{appendix}
 
 \usepackage{draftwatermark}
 \SetWatermarkText{DRAFT}
@@ -21,7 +23,17 @@
 
 \begin{document}
 
-\maketitle
+
+
+\begin{titlepage}
+  \vspace*{\fill}
+  \begin{center}
+    {Efficiency}\\[0.5cm]
+    {Aidan Morrison}\\[0.4cm]
+    2018
+  \end{center}
+  \vspace*{\fill}
+\end{titlepage}
 
 
 <<setup, include=FALSE, cache=FALSE, echo=FALSE>>=
@@ -31,8 +43,11 @@ library(tidyverse)
 library(submarines)
 @
 
+\newpage
 
 \tableofcontents
+
+\newpage
 
 \section{Introduction} \label{intro}
 
@@ -62,51 +77,45 @@ In this paper, since we cannot know the precise details of the particular state 
 
 With the support of the principal sponsor of this paper, the relevant models may be found in a user-friendly format as a web-app to allow their further interrogation and testing for other plausible scenarios.  In addition, for increased transparency, the relevant code and equations underlying are available on github.
 
-\section{Executive Summary}
+\newpage  \section{Executive Summary}
 
-\subsection{The difference between nuclear and conventional for speed}
-This paper was commissioned in order to investigate whether pumpjets could plausibly be as efficient, or more efficient than a suitably designed open propeller for a conventional submarine. A crucial input to the investigation is a rough understanding of what the speeds of operation are likely to be for a submarine.  Whereas nuclear submarines are reportedly capable of reaching speeds in excess of 30kt, and might transit long distances at such high speeds, conventional sumbarines are not thought of as being able to reach speeds far above 20kt in a sprint, and can only sustain speeds of 8-10kt for long-distance transits.  Moreover, on patrol, a large portion of thier work is done at very low speeds, typically thought to be in the range of 2-4kt.
+The selection of the pumpjet propulsion system is quite probably the most significant new technology selection for Australia's future submarines.  Unlike other new technolgoies such as Air Independent Propulsion and Lithium Ion Batteries, which are either in service or entering service in multiple other navies, no other conventionally powered submarines have adopted pump-jet technology, which is currently only used by nuclear submarines.
 
-\subsection{The importance of low speed operation for diesel-electric submarines}
-The efficiency of the propulsion system at such low speeds is of great significance for a conventional submarine, since it must rely on batteries or other air-independent propulsion sources for power when entirely submerged.  Consequently, excessive energy consumption results in greatly reduced dived endurances.  Since a submarine's position is vastly more likely to be discovered when it is on the surface operating its diesel engines, this ability to remain submerged for a long time is crucially important for combat operations, and in transiting through sensitive or contested areas.  For nuclear submarines, which posess a practically infinite supply of energy from the nuclear reactor, efficiency at low speeds is of no concern.  In fact, dispersing additional energy, (provided it can be done quietly) is probably advantageous for a nuclear submarine, since it will allow the nuclear reactor to avoid running at very low power levels, where the stability of the reactor is reduced.
+Despite acknowledging that the pumpjet may have an adverse impact on dived endurance \parencite{sbs2017}, Naval Group justifies the superiority of the pumpjet in the following terms: "In a confrontation between two otherwise identical submarines, the one with pump jet propulsion always has the tactical advantage."  No further explanation of this superiority has been provided in detail, but it is widely held that the pumpjet offered acoustic advantages which were highly regarded by those Australians who were responsible for selecting the design partner \parencite{stewart2016}.
 
-\subsection{What is cavitation}
-Pumpjets have been widely adopted by navies operating nuclear submarines.  The principal advantage of a pumpjet relevant to submarines is their ability to avoid problems associated with cavitation, which is known to occur for propellers attempting to operate at high speeds.  Cavitation, which is the rapid expansion and collapse of a bubble or void in the water, is particularly problematic for submarines, since it results in the creation of a great deal of noise which could be detected by an enemy.
+The comparison between two otherwise identical submarines (though not necessarily limited to engaging just each other in combat), provides a useful and suitable framework for evaluating a single significant technology choice, where most other significantly novel or new technologies were apparently excluded from consideration \parencite{stanford2017}.  The conclusion of this report is that the following statement can be made with confidence:
+\\
+\\
+\emph{In a comparison between two otherwise identical submarines, the one with the pump jet will alwayas have a lower dived endurance, a lower dived range, a worse indescretion ratio, a lower overall endurnace, and a lower overall range, than the one with a conventional propeller.  This will confer a substantial tactical and strategic advantage on the conventionally propelled submarine in a very broad range of operational scenarios.}
+\\
+\\
+Whilst it is broadly acknowledged that propellers have superior efficiency at lower speeds, but jets might have higher efficiency at higher speeds, the precise point of cross-over seemed unclear in public debate.  One informed commentator suggested that the crossover point was likely to be below or near the transit speed of the submarine, and that the pumpjet may offer enhanced range and endurance over the whole mission profile as a consequence \parencite{davies2017}.  This report finds no evidence of a pumpjet of the type used on submarine every being recommended as superior for efficiency in general, and even closely related technologies for more commecial use not advocated below 25kt. During my research I encountered domain experts confident that a pumpjet could simply not feasibly be superior to a suitable propeller at speeds below 18kt.  Evidence of propellers remaining generally superior to waterjets and pumpjets in the speed ranges up to and even over 30kt is abundant.  Consequently, the possibility of some cross-over point leading to any kind of range or endurance advantage relevant for a conventional submarine can be safely ruled out.
 
-\subsection{How does a pump-jet work}
-A fundamental requirement of a pump-jet in order to avoid this cavitation is that the the working parts of the jet (the rotating blades inside it, known as the impeller) operate at a higher pressure than propeller blades operating in open water would.  This means that the blades can turn at a lower speed relative to the water they are connected with, allowing a less violent action, which induces less cavitation.  In this way, the jet does it's work less by directly acelerating the water, but by raising its pressure.  This raised pressure is converted back to movement, which produces thrust, as it exits the jet and returns to the same pressure as the surrounding environment.
+This report also explores in some detail the theoretical concepts which drive the limitations of pumpjet performance at lower speeds in comparison to propellers.  Enduring and fundamental principals of momentum theory provide robust limitations on the circumstances where a propeller's 'ideal efficiency' might be improved by the addition of a duct/or shroud, one type of which constitutes the transition to a 'pumpjet'.  These principals stronly support the the notion that pumpjets will not and indeed cannot suddenly overcome their efficiency disadvantage at low speeds by means of technical ingenuity or innovation.
 
-\subsection{The necessity of drag, and decelleration, induced by the duct}
-The role of the shroud (or tunnel, mantel, duct) around the jet is to allow the pressure to be raised around the impeller, in a way that is not possible for an open propeller.  By a fundamental requirements of physics, this actually requires that the water's incoming speed be \textbf{reduced} before it reaches the impeller. (The kinetic energy embodied in movement is converted into potential energy, or pressure.)  Whilst the duct narrowing at the nozzle also necessarily accelerates the water, (as the additinal pressure imparted by the impeller is converted back to kinetic energy) it's an essential feature of all pump-jets that the water flow is decelerated at the point of reaching the impeller. Consequently, an elementary form of the pump-jet is also termed the 'decelerating duct' applied to a propeller.  Put simply, the water has to slow down to go fast again.
+Furthmore, a particular hydrodynamic phenonomon called 'flow separation' can be identified as the primary cause of the pumpjet's declining efficiency at very low speeds. Put simply, the duct provides an additional hurdle or barrier though which the water must pass when moving through the propuslor.  At very low speeds waterspeeds, this additional resistance is sufficient to stop some of the flow progressing through the jet, creating unsteady eddies and vortices which sap energy from the system, but produce no thrust, driving down efficiency to zero at very low flow-rates.
 
-\subsection{What happens to a jet at low speed, in simple terms}
-The problems for pump-jets arise when the water is already going slow, and you don't want it to go that much faster.  This is the case when a jet designed for high-speed attempt to operate at a dramatically reduced speed.  (Not to be confused with a vessel with very little water speed working very hard, as might be the case for a tug or barge.)  In this case, the slowing down and speeding up results in an unnecssary additional step which reduces greatly the efficiency of propulsive system. Or, put another way, overcomign the resistance of moving water through the shroud becomes much greater relative to the total thrus produced by the jet.
+The design of the pumpjet for military purposes, namely the reduction of acoustic signatures effectively mandates that this must be the way that pumpjets work.  The act of slowing the water down is necessarily equivalent to the act of raising its pressure.  It is this elevated pressure at the point where the blades to their work on the water which enables the blades to avoid cavitation (the rapid expansion and collapse of small voids or bubbles in the water) which is very large source of noise underwater.  Maintaing this advantage to the same level necessitates a duct design which slows water down to the same extent.  The act of slowing water down when it's already going slowly is what causes some of it to stop, which is when flow separation occurs.
 
-\subsection{Why this isn't easily noticeable in normal circumstances}
-It is for this reason that waterjets of any kind are known to have an efficiency curve that falls off towards zero as the net thrust they produce also diminishes to zero (which for a given vessel will correspond to water speed).  This doesn't mean that they don't still work at low speeds and produce some thrust.  All it means is that far more power per unit of thrust will be required than might be at other speeds, as a higher fraction of energy is expended producing the turblence (random, round-and-round movement) inside and around the jet shroud than goes towards direct front-to-back acceleration of the water column, which produces thrust.
+In order to assess the probable magnitude of the impact of this reduction in efficiency at low speeds, a numerical model was developed, based on known principles of physics, and publically available information relating to the likely technologies involved in the future submarine.  The most important and variable assumptions - the efficiency curves of the pumpjet and propeller - were taken from a recent study lead by world-leading engineering companies, supported by the US and Royal Navies, comparing closely related propulsion systems  \parencite{giles2010}.  Knowing that the systems would not be identical to the propulsors on submarines (the precise design of which is obviously secret), additional curves varying from these assumptions were also modelled in all directions, and the combinations combined and tested.
 
-\subsection{What the submarine requirement tells us about the duct}
-Whist estimating the exact shape and level of the efficiency curve for a particular pump-jet and propeller is impossible without detailed knowledge of their design, the over all trends of their shapes in the extremes can be known from well-established principals.  Moreover, the particular demands of a pump-jet suited to a nuclear submarine, (eliminating all cavitation in as wide a range of operating circumstances as possible) considerably narrows the plausible range concerned.  In order to minimise cavitation, the degree of pressure elvation at the impeller would be relatively high, or the total surfaces of the impeller blades much aslo become larger.  Both of these design requirements necessitate changes to the duct or blade designs which would be in tension with overall efficiency, and most pronounced at the lowest of operating speeds.
+The model has been made available publically in the form of a web-app, so that alternative assumptions, including alternative efficiency curves may be tested by the general public.
 
-\subsection{Quantitative Conclusions}
-In the production of this paper I have developed a computational model which maps the impact of different efficiency curves directly to the dived range and endurance of a submarine. The most plausible scenarios I find include the reduction of dived endrance and range between 20\% and 50\%, or effectively halving time and distance that submarine may remain submerged for during combat operations at speeds around 3-5kt.
+The model in its central assumptions was able to achieve very realistic results, which were consistent with other public estimates of performance parameters of conventional submarines and known characteristics \ref{buckingham2008submarine}.  A variety of different assumptions regarding the hotel load, battery density and different combinations of efficiency curves were tested.  The central assumption values showed that a submarine with a conventional propeller had a very substantial advantage in terms of range and endurance across the entire speed range.  This advantage reached a proportional maxium at around 6kt of over 60\%.  However, in nominal terms, the greatest differences occurred at slightly lower speeds.  Under central assumptions, the propeller submarine had an advantage in submerged range of some 200nm at 5kt, and approximately a two-day advantage in dived endurance at 4kt.
 
-\subsection{The acoustic advantage of jets at higher speed}
-My review of the literature confirms that a pumpjet may produce a significant acoustic advantage in circumstances where an open propeller would experience any degree of cavitation. Indeed, it has been remarked by naval researchers that pump-jets could be designed which would not cavitate past the point when the body they propel experienced caviation.   As such, it seems perfectly plausible that pump-jets confer one advantage on a submarine, in that they can accelerate to a higher speed without cavitation occurring.  This is known as a higher 'tactical silent speed'.
+The full range of plausible efficiency curves exhibited a significant efficiency advantage right through transit speeds.  Central assumptions suggested that this would result in the overall range of a submarine being enhanced by approximately 50\% with the use of propellers instead of a pumpjet.  None of the scenarios suggested it was likely that this range advantage would be any less than 20\%.  Given the significant emphasis that has been repeatedly placed the unique requirements for range and endurance for Australia's submarine, this raises substantial questions about suitability of this technology to meet Australia's needs.
 
-\subsection{Turbulence and flow separation at low speed}
-However, at much lower speeds such as patrol speeds (2-4kt) it is most likely that a propeller will be able to operate well below the point of any cavitation inception, and would consequently also be extremely quiet.  Moreover, a jet will necessarily incur substantially larger degrees and types of turbulence in order to produce net thrust in this regime.  These likely include discontinuities and instability in the flow entering the duct and passing through the impeller and stator (flow separation) as the water is acelerated sufficient to be slowed, and then re-accelerated.  In certain circumstances where resonances might arise these could be highly adverse to acoustic performance.  However, assuming that by careful design such resonances can be eliminated (which we assume has been achieved) these effects would not result in any cavitation, and would only increase the noise attributable to turbulence in solid water, which is far less than for any cavitation.
+The model was used to test a wide range of different assumptions.  A further key result of the study established the sensitity of the difference to different assumptions regarding hotel load, and battery energy density.  This showed that the difference between the two systems was made substantially larger with smaller hotel loads, and larger stored electical energy (as might be achieved with lithium-ion batteries), and these two effects combined to give some particularly startling results.  Circumstances where the \textit{difference} in dived range and endurance between the two systems in terms of range and endurance exceeded the \textit{entire} dived range and endurance achieved by many modern conventional submarines frequently arose.
 
-\subsection{The acoustic question at low speed}
-But in either case, given the necessarily raised levels of turblence generated by a jet than a propeller at very low speeds, the claim that the jet is quieter in this regime must rely entirely upon shielding effects from the shroud.  These could be substantial in a directions perpendicular to the direction of travel, but would be much smaller when viewed from the aft or forward directions.  It should also be noted that many underwater acoustic environments, sound tennds to reflect and bend in different directions as it propagates. As such, the claim that pump-jets are universally quieter than propellers should be treated with caution.  In a variety of circumstances, including most operations at patrol speed, it may not always be true.
+The model demonstrated clearly that all of the most pronounced advantages in dived range and endrance occurred at speeds around 3-7kt, generally within plausible speeds achievable with modern AIP systems.  The addition of AIP was briefly considered which revealed that a difference in dived endurance of the order of one month, or thousands of nautical miles, would likely have emerged between the two propulsion systems.
 
-\subsection{The inevitable trade-off}
-However, as a direct and necessary result of this higher tactical silent speed, some disadvantages will be incurred, owing to the additional drag induced by the shroud which prevents cavitation at the impeller.  These are a lower dived endurance, a lower dived range, a lower overall endurance, a lower overall range, and a worse indescretion ratio.
+The consequences of flow separation also has acoustic consequences, which this report explores.  The vortexes and eddies which are created by flow separation tend to be unsteady, and shed periodically into the main flow.  This results in pressure fluctations inside the shroud and more intense, unsteady large-scale types of turbulence occurring as these vortices are ingested into the rotor blades.  These effects are are likely to cause some accoustic signature which becomes lower in frequence as the submarine slows down further and the vortexes become larger, and shed more slowly.  This is in contrast to early stages of cavitation, which would be high frequency at when bubble sizes are small, and move to lower fequences as speed increases and bubbles expand.  Lower frequencies are of particular significance because they tend to propagate further, and would be less effectively shielded by the duct.
 
-\subsection{The contradiction between stated requirement and chosen technology}
-Given the substantial emphasis which was placed on overall range and endurance of the submarine, it is difficult to understand how one particular unique requirement would be elevated so high above the other strategic and tactical advantages afforded by propellers.
+It remains plausible that in the absence of cavitation the noise generated in the propulsor by such flow separation is not loud enough to be of significant tactical concern. However, it is extremely unlikely that at some very low speeds, where conventional propellers experience no cavitation and enjoy steady, smooth flows over the blades, that a pumpjet could actually have a lower acoustic signature, even in terms of radiated noise.  Flow separtion demand that two or three times as much energy is wasted by a pumpjet creating and destroying these unsteady vortexes than a propeller would require to create equal thrust. Consequently, the claim that pumpjets are generally acoustically superior should be treated with some caution.  This claim has strong grounds wherever a conventional propeller might experience cavitation, such as at higher speeds.  But at some very low speeds it is unlikely to be true.
 
-\section{Speed and Drag - Why very slow is very very $(very)^2$ economical}
+Overall, it seems unlikely that the full range of consequences of pumpjet choice have been fully comprehended by the Australian government.  The scale of the probable impact on range and endurance is quite probably so substantial that it is difficult to see how such a performance penalty is consistent with the government's stated aim of acquiring a regionally superior submarine.
+
+\newpage  \section{Speed and Drag - Why very slow is very very $(very)^2$ economical}
 
 Perhaps the most important relationship to understand to comprehend the operation of submarines is the relationship between speed and drag .  This is important because it sets out the fundamental framework as it applies to any submarine, regardless of propulsion type.  (It's also a pretty important for planes, cars, missiles, torpedoes, and basically everything else.)
 
@@ -139,7 +148,7 @@ This imposes a constraint on the way in which literature on jets, propellers, an
 
 Given that submarines almost by definition (since their hull shape doesn't change, and they must carry ballast to make up for any under-loading) are essentially always operating with the same load (total drag force at any given speed), but have to operate over an extremely wide variety of different speeds (a factor of four or more in variance) with severe efficiency concern at all of them, they represent a truely unique engineering question, seldom discussed in commercial applications.  Consequently, there are relevantly few pieces of literature which address the present question directly. However, there are plenty of instances where the relevant physics and trade-offs are explained in depth to address related, but not identical questions.
 
-\section{The difference between nuclear and conventional propulsion}
+\newpage  \section{The difference between nuclear and conventional propulsion}
 
 \subsection{Power and Energy}
 Nuclear submarines vary quite remarkably from conventional submarines because of the means by which they generate their power.  Because of the extremely high energy density in enriched uranium or plutonium, the reactors on board nuclear submarines generate an abundant supply of energy.  Most submarine reactors are reportedly capable of generating between 25 to 50 megawatts (MW) of power, though Russian submarines have hundreds of megawatts of power available \parencite{WNA2017}.
@@ -184,161 +193,7 @@ If it was known that the reactor couldn't be restarted after the poison-out peri
 
 Claims that the power management imperatives of nuclear submarines and diesel electric submarines are even remotely similar at low speeds are generally implausible.  Nuclear submarines will have unconstrained energy reserves, and a vast surplus of spare power capacity when ever operating below top speed.  The dynamics of reactor management dictate that generally avoiding large fluctuation in power, and strictly avoiding sharp and dramtic reductions, will be dominant considerations in a nuclear submarine's power output.  To put things simply, the characterisation that nuclear submarines have "power to burn" is generally sound, and would only ever be challenged when the submarine is travelling at flank speed, or the reactor is shut down due to a (presumeably near-catastrophic) emergency.
 
-\section{Some essential concepts}
-
-\subsection{Conservation of Energy}
-
-This is perhaps one of the most fundamental and well-established principals in physics.  The essential idea is that energy can move or change in form, but it isn't ever created or destroyed.  Machines, plants and animals all derive their energy from a particular other source, which can be measured and evalutated to establish the limits of energy available.  Plants collect energy from sunlight falling on their leaves. Humans (as well as combustion engines) capture the chemical potential energy in organic matter, and release it by combining it with oxygen.  Hydro-electric power plants turn the gravitational potential energy of water stored at a height into electricity.
-
-Conservation of energy has a particularly relevant embodiment in fluid flows, which is given it's primary expression in Bernoullis equation, as given in Equation \ref{eq:bernoullis}.  It says that the total energy in a connected body of fluid with no additional work being done on it is constant ($C$), though it can change in form between kinetic energy (movement, $\frac{1}{2}\rho v^2$), gravitational potential energy (it being elevated, $\rho gz$, relevant for liquids, less for gas) the heat energy in the fluid (not shown, not relevant for incompbressible fluids), and the pressure of the fluid $p$.
-
-\begin{equation}
-\label{eq:bernoullis}
-\frac{1}{2}\rho v^2 + \rho gz + p = C
-\end{equation}
-
-In different fluids, the dynamics of how energy moves between one and another change.  For example, in gases, heating up a confined piece of gas will increase it's pressure, or if it is unconfined, increase its volume. This is particularly important for understanding gas turbines. In the case of a liquid, however, all the molecules are in close contact, and hence can't increase in volume or pressure substantially except by the creation of steam. As such, in the absence of large amounts of cavitation, the terms in the relationship which are most important for our consideration are the relationships between pressure, and kinetic energy, and gravity.
-
-In the case of most waterjets which propel surface vessels, the water is lifted from the bottom of the hull at the intake to the pump, which is generally incorporated inside the hull. This increase in gravitational potential coincides with a slowing down of the water relative to the vessel-speed. Since the jet in such vessels is generally ejected at the same height as the pump, this potential is never regained, and is technically a loss, however at high speeds such a loss is small relative to the total power ouput.  In the case of submarine pumpjets, located on the end of the hull and parallel to the axis of the submarine, this effect (and the term $gz$) are not relevant.
-
-\subsubsection{Venturi Effect}
-In the case of submarines and torpedoes the water doesn't undertake a change in height, since intake and nozzle are generally all in line with the central axis of the submarine or torpedo.  As a consequence, the key relationship in Bernoullis equation is the relationship between the liquids velocity, and its pressure.  The consequence is that when water moves through a pipe (duct, or shroud) it's pressure is inversely related to the square of its velocity.  This means that when a liquid is forced to to travel through a narrowing pipe, it's pressure necessarily decreases as the velocity increases.  This is what underlies the Venturi effect.
-
-\subsubsection{Flow Diffusion}
-The inverse process is where a pipe increases in volume, and the flow is forced to slow down in order to fill the wider area, and the pressure correspondingly increases.  This is a process called 'diffusion', and is important to achieving high pressure levels in many types of water pumps, including those which will be particularly relevant for pumpjets for watercraft propulsion, particularly elevating static pressure levels in order to prevent cavitation \parencite{hamilton1997, mccormick1963design, bruce1974}.
-
-\subsubsection{Energy waste and efficiency}
-The conservation of energy also has useful implications for how the efficiency of systems is thought about.  In particular, because energy is conserved, identifying inefficiencies in a system necessarily involves identifying where energy goes to doing tasks which aren't useful for the intended purpose.  A perfectly efficient system won't do any work that isn't for the intended purpose.  In the case of analysing the efficiency of propulsion systems, the relevant 'work' is almost always related to moving water backwards to produce thrust.  Moving water in directions other than backwards, including random turbulent flows which wind producing heat rather than thust, are two examples of wasted energy.  Noise in the water also reflects energy which is wasted, though the significance of the acoustic signature is not necessarily indicative of the magnitude of energy wasted.
-
-In general terms, energy waste in propulsion systems will result in turbulence (moving water in random chaotic patters, where the energy soon becomes smoothly distributed as heat) and acoustic energy that is propagated away.  Flow separation incolves the creation of larger-scale vortices and eddies, which might be considered as a special case of turbulence, since the length-scale of the unsteady flows is much larger than that of normal turbulence, for instance in a boundary layer.
-
-On important consequences is that whilst increasing creation of noise, flow separation, or turbulence necessarily represent greater amounts of energy wasted, some increase in any given one does not neccessarily indicate the reduction of efficiency of the entire system, as larger amounts of energy may be being saved through reduced wastage through another means, or vice versa. For example, a squeaky join on a car might make a lot of noise, and it will represent some loss of kinetic energy.  However, the brakes can be applied and absorb vastly larger amounts of energy, essentially silently.
-
-Furthermore, efficiency of a system is necessarily given by the a ratio of useful work to total energy expended. Some trends which show increasing levels of energy wasted might be outweighed by larger increases in the overall amount of productive work being achieved.  Pumpjets, which generally tend to require highly turbulent flows, and even more turblent flows at higher speeds, still can become more efficient as speed inceases, as the amount of useful thrust produced increases even faster.  So, despite the wasteful round-and-round movements increasing with speed, the increase in productive front-to-back movement improves even faster, and total efficiency rises.
-
-\subsection{Boundary Layer}
-When water or any fluid flows with some speed relative to another solid surface nearby, there is some layer adjacent to the surface in which the speed of the fluid is diminished relative to the main flow.  At a microscopic level, there are some molecules of the fluid on the surface which will be effectively static relative to the surface.  The layer of fluid that joins the gap between the static surface, and the part of the flow which is moving at the full flow speed, is called the boundary layer.  Exactly how thick the boundary layer is, and how the fluid moves in the boundary layer, is extremely important for consideration of efficiency of fluid flows over and around solid surfaces.  In particular, a boundary layer can be either turbulent or laminar in nature, and can transition to turbulent flow after a short distnace of laminar flow, as shown in Figure \ref{fig:BoundaryLayer.png}.
-
-
-\begin{figure}[h]
-\captionsetup{width=0.5\textwidth}
-\includegraphics[width=0.5\textwidth, center]{BoundaryLayer.png}
-\caption{The development of a boundary layer as shown in \parencite{mollard2011}}
-\label{fig:BoundaryLayer.png}
-\end{figure}
-
-\subsection{Turbulent and Laminar Flow}
-The way that fluids move relative to a surface can one of either two methods.  In 'laminar flow' all the fluid moves in one direction in an smooth and orderly manner, with very little mixing between the layers of fluid travelling at different speeds.
-
-The alternative is 'turbulent flow', where the fluid moves around in unpredictable swirls and circles as well as moving overall in an predominant direction.  There is considerable mixing between all the different layers, and the average speed remains relatively constant in the flow, with the exception of the flow immediately adjacent to the wall, or in the boundary layer.  Becuase turbulence involves a lot of movement that is not overall in one productive direction and contributing to thrust, it necessarily leads to some loss of energy from the overall thrust.  Once the swirls and movements become smaller and smaller, the energy winds up simply as heat in the fluid.
-
-\begin{figure}[h]
-
-
-\begin{subfigure}{0.5\textwidth}
-\includegraphics[width=0.7\linewidth, center]{Laminar.png}
-\caption{Laminar}
-\end{subfigure}
-\begin{subfigure}{0.5\textwidth}
-\includegraphics[width=0.7\linewidth, center]{Turbulent.png}
-\caption{Turbulent}
-\end{subfigure}
-
-\caption{A simple comparison of laminar and turbulent flows from \parencite{NPdotnet2017}}
-\label{fig:LaminarTurbulent.png}
-\end{figure}
-
-The likely point of transition between a flow being turbulent and laminar can be given by unitless number called the Reynolds Number, which is determined by a fluids velocity, viscoscity, density, and a characteristic length-scale over which the flow occurring.  A fuller discussion of these important concepts can be found in \cite{NPdotnet2017}.
-
-Turbulent flows in gasses can be extremely noisy, since those fluids are compressible.  Consequently, the rapid and intense ciruclar movements result in a lot of oscillatory compressions against the surrounding air.  Consequently things like jet engines, vacuum cleaners, hand-dryers, and other devices that create rapid movements in gasses tend to be quite loud, including at some distance.
-
-In essentially incompressible fluids, the random changes in pressure and velocity which are involved in laminar flow tend not to generate nearly as much noise in the surrounding liquid outside the flow.  Because the fluid is incompressible, all of the random 'round and round' movements don't amount to much 'in and out' movement, which is what creates the pressure waves which result in propagated noise. Consequently, whilst turbulent flows do inevitably generate some noise, the amount of noise generated is dramatically greater in the presence of cavitation, where a void opens up in the water, and vastly more 'in and out' movement is able to occur.
-
-\subsection{Cavitation}
-Cavitation is the rapid expansion and collapse of a void, or bubble in water. Put technically, caviation occurs when the local static pressure (pressure in the rest frame of the fluid) falls below the vapour pressure of the fluid (pressure at which the liquid will start to boil).
-
-To try to conceptualise how it occurs in the context of propulsors, one might imagine what happens when something moves very fast through water.  The front side of the object pushes the water forward, but on the back side the water has to push in to fill the space left behind.  If there’s not enough pressure to push the solid water in fast enough, a gap opens up, with just a few gaseous water molecules (steam) inside the cavity.  (This is also described as water boiling at low pressure.)  However the gap doesn’t stay around for long.  Soon the water catches up, and the bubble implodes with a pop, leaving only very tiny bubbles as a result, which you can see in the wake of almost any boat or ship moving at speed.  Whilst some energy turns to heat (the remaining steam in the tiny bubbles) some is propagated away as a sound-wave generated by the implosion.
-
-A watching water boil in a glass kettle gives a quick and intuitive insight into the occurrence of cavitation.  Quickly after the kettle starts heating, a considerable noise can be heard, which corresponds to the commencement of cavitation on heating element. At some local point for a moment in time, there is enough energy for the water present to boil.  It tends to be on rough surfaces or in the presence of some impurity that cavitation will occur first (in the blackened part of the surface in this case.)  However, whilst the bubbles on the bottom can be seen plainly on the bottom, they collapse almost straight away again, and leave only a tiny bubble of stable steam circulating in the water.  It is the rapid expansion and collapse of these bubbles that causes the noise of a kettle, long before it has boiled.
-
-\begin{figure}[h]
-
-\begin{subfigure}{0.5\textwidth}
-\includegraphics[width=0.9\linewidth, height=5cm]{EarlyCavitation.JPG}
-\caption{}
-\end{subfigure}
-\begin{subfigure}{0.5\textwidth}
-\includegraphics[width=0.9\linewidth, height=5cm]{BoilingCavitation.JPG}
-\caption{}
-\end{subfigure}
-
-\caption{(a) Cavitation bubbles form and collapse creating noise and some tiny bubbles long before boiling occurs. (b) Only at very high temperatures do the bubbles endure at full-size in the water and reach the surface.}
-\label{fig:EarlyCavitation.JPG}
-\end{figure}
-
-It is only when the water is all at a much higher temperature that the bubbles remain their full size for long enough to detatch and rise all the way to the surface, a process we typically think of as boiling water.  It is worthwhile noting that the sound emitted at this stage is much softer and lower than the early onset of cavitation. Larger bubbles result in lower frequencies of sound being emitted. Even at higher temperature, the rougher parts of the surface provide the points where all the cavitation originate.
-
-
-Cavitation is extremely important in the study of ship propulsion, since it's occurrence in particular circumstances can lead to substantial losses of efficiency, as well as damage to the propeller and related appendages. It is particularly important for submarines, since the expansion and collapse of these bubbles tends to lead to the creation of noise which is often far larger, and more distincly characteristic than other turbulent disturbences in the water when no cavitation is present.  Consequently, the onset of cavitation can be thought of as a distinct threshold in terms of the acoustic performance of propulsive system.
-
-Despite cavitation necessarily representing some energy being wasted generating unwanted noise in the water, some cavitation inevitably occurs around most propulsion systems operating at full power.  In plenty of cases, the consequences for efficiency are relatively small, as they tend to be dominated by other efficiency considerations in imparting thrust.  Put another way, the savings that can be gained by minimising wastage to turblence can outweigh the losses incurred by having some cavitation occur.  In most cases, propellers are designed to work with a certain extent of cavitation for optimum efficiency under working loads \parencite{shin2015}. Cavitation also occurs to a considerable extent within the jets of most high-speed surface vessels, but doesn't necessarily have a particularly bad effect on their overall efficiency at their intended speed levels.  It is generally only within very specialised military circumstances when the absolute avoidance of cavitation supercedes other concerns for efficiency, and require the elimination of all cavitation entirely \parencite{mollard2011}, \parencite{lewis1988}.  These circumstances include the design of submarines and torpedoes.
-
-In certain special cases, particularly supercavitating propellers or surface-piercing drives, high levels of cavitation can be higly advantageous for efficiency.  However these represent specialised designs, generally only for very high speed vessels, where acoustic concerns are negligible, and are of little concern for this particular endeavour.
-
-Cavitation can occur in a number of different ways at different points and forms on or around the propeller.  It is common for cavitation to occur first near the out extremities of the propeller, where the blades are moving at the highest velocity relative to the water-flow.  Cavitation tends to spread across the back of the blades in a sheet (sheet cavitation), since the back side of the blades are generally the areas of most depressed pressure, though it can also occur in places on the back side of the blades, where the dynamics of the water moving around the blade can produce points of near the edges of significantly reduced pressure.   On surface vessels cavitation tends to occur most when the blades are closes to the surface, where the pressure is lowest.
-
-\begin{figure}[h]
-\captionsetup{width=0.7\textwidth}
-\includegraphics[width=0.7\textwidth, center]{IncreasingCavitation.png}
-\caption{Cavitation frequently occurs first at the extremities, then spreads inwards across the blad face, as shown in \parencite{mollard2011}}
-\label{fig:IncreasingCavitation.png}
-\end{figure}
-
-\begin{figure}[h]
-\captionsetup{width=0.7\textwidth}
-\includegraphics[width=0.7\textwidth, center]{CavitationTypes.png}
-\caption{Different types of cavitation can occur on different parts of the propulsion system as shown in \parencite{carlton2007}}
-\label{fig:CavitationTypes.png}
-\end{figure}
-
-
-\subsection{Pressure, Thrust, and Momentum change}
-A few simple related concepts make up the foundations for many of the simplest and enduring theoretical models (Momentum Theory, still widely and routinely used to model 'ideal' propeller efficiencies by considering the propeller simple disc \parencite[169]{carlton2007}) and other quite intuitive concepts which migth be more readily grasped in understanding propulsors.
-
-Thrust is a force, measured in Newtons, which is generally used to refer to the forces acting on a vessel or object by its propulsion system to move it forward in the water.  Generating thrust is consequently a key objective of any propulsion system.
-
-Pressure is a measure of force divided by an area over which it is applied. Pressures are necessarily applied to some extent over all of the surfaces of any object, including due to the atmostpheric pressure of air.  In considering the efficiency of propulsion systems for solid bodies, thrust is always the consequence of some \textbf{net} pressure difference on different sides and surfaces of an object.  For instance, on a propeller blade, the rear-facing side of the blade is the side that pushes the water backwards, and hence has a raised pressure on its surface.  Being generally backwards facing this acts to push the propeller forwards.  This pressure acts equally to push water backwards, as well as to push the propeller forwards.  Importantly, the forward-facing side of the propeller will expereince a lowered pressure, which also serves to pull water backwards, and suck the propeller forwards.  It is the sum of all the pressure differences on the propeller that result in a net force.
-
-Importantly in hydrodynamics, it is important to consider the possibility of other forces being generated other surfaces which may have an impact on the movement of the vessel.  In the presence of the hull, water being drawn by the propeller can cause pressure changes on other surface of the vessel which may assist or impede producing a net positive thrust.  Submerged jets represent a particular case in point.  A famous home experiment suggests that one compare the thrust (backwards pressure) experienced by someone holding a garden hose creating a jet of water when it is in the air, as opposed to submerged in a pool of water.  When submerged, the backwards pressue appears dramatically reduced.  In fact, this phenomenon is due to a the water-jet drawing adjacent water with it under-water, the movement of which exerts a negative pressure on the outside of the nozzle, conteracting the pressure exerted on the inside of the nozzle. This effect represents one of the important distinctions between the jets which release their water below or above the water-line, and generally means that underwater jets have much lower jet velocity ratios than those released over water.
-
-It is also an important law of physics that force or thrust is equal to the rate of change of momentum. Put simply, the speed at which one speeds something up, or the increasing amount of something which begins to move, is always equivalent in magnitude to the thrust that is produced.  Since momentum is a vector, this simple law requires that the momentum change has to net out to one particular direction in order to produce a net thrust, which provides the core principal for Momentum Theory as it applies to propeller and jets.  Circular movements necessarily are cancelling, and produce no thrust. It is useful to recall however that this principal is simply another complete, alternative way of measuring the consequences of the net pressure differences discussed earlier.  The total rate of change of momentum in the system which is induced as a conseqence of the pressure differentials on all sides of the propulsor must necessarily be equivalent to the total net force that is produced.  For the garden hoze in the pool or bucket, the jet rapidly entering the liquid in one direction necessitates new flows of liquid in other directions, reducing net moment changed. This new liquid movement will exert pressure reductions on the nozzle surface surface, which reduce the net momentum change affected by the entire system.  These net forces, and net momentum change are necessarily equivalent and equal in effect.  Consequently literature seeking to optimise propulsion might discuss analysis referring to both of these effects or phenomena, and neither are in conflict.
-
-Full and proper derivations of many of the thrust equations for different propulsion systems from these principals can be found in plenty of authoritative works, including \cite{lewis1988}, \cite{carlton2007} and \cite{mollard2011}.
-
-\subsection{Flow separation}
-Flow separation refers to a circumstance when the flow over a surface separates entirely from the surface, and a new eddy or votex is formed where the flow actually moves in the opposite direction to the dominant flow.  It is of particular significance in hydrodynamics because it can lead to substantial losses of efficiency, as energy is diverted into the kinetic energy of the eddy or vortex, which is unproductive. It tends to occur near the surface of aerofoils with high angles of attack, or in the blades of turbomachinery including diffuser or mixed-flow pumps and ducted propellers operating in off-design conditions, including low flow rates \parencite{li2013}, parencite{bakker2006}, parencite{mcbride1979}, parencite{wislicenus1986}.
-
-\begin{figure}[h]
-\captionsetup{width=0.5\textwidth}
-\includegraphics[width=0.5\textwidth, center]{SeparatedAerofoil.jpg}
-\caption{Flow separation occurring over the top of an aerofoil in a wind tunnel. Image courtesy of Deutsches Zentrum fuer Luft- und Raumfahrt e. V. (DLR)}
-\label{fig:SeparatedAerofoil.jpg}
-\end{figure}
-
-In order for flow separation to occur, a fluid must be moving against an adverse pressure gradient, which simply means that the static pressure (pressure in the rest frame of the fluid) is increasing in the direction of movement, which means the flow is slowing down as it moves, unless new work is being done on it.  At the boundary layer, where the flow velocity is already reduced due to drag forces experienced near the surface, the adverse pressure gradient can be enough to reverse the flow altogether.  In this case, the fluid flows in reverse near the surface and forms a vortex, and the main flow becomes separated form the surface by the votex.
-
-\begin{figure}[h]
-\captionsetup{width=0.7\textwidth}
-\includegraphics[width=0.7\textwidth, center]{FlowSeparation.png}
-\caption{Flow separation involves flow reversal near a surface when a fluid is moving against an adverse pressure gradient, as shown in \parencite{mollard2011}}
-\label{fig:FlowSeparation.png}
-\end{figure}
-
-In addition to the necessary loss of efficiency, flow separation can often tend to result in unsteady flows, with the vortices periodically being shed into the flow \parencite[480]{mollard2011}.  If this occurs ahead of the blades of a propeller or impeller, such disturbances to the flow can lead to instances of cavitation when otherwise a steady homogenous flow might be well below the cavitation inception point, and can be consequential for the acoustic performance of the system, particulaly if such shedding resonates with characteristic frequencies of any of the machinery.
-
-Flow separation tends to occur earlier for laminar boundary layers than for fully turbulent boundary layers.  Consequently, some systems are able to become more efficient  by deliberately inducing turbulent, where the benefit from reduced friction in the laminar boundary layer is outweighed by the cost suction induced by the larger wake field created by earlier flow separation.  This is the reason that golf balls have dimples, and tennis-balls have fur, to enable them to fly further.  The impact of the increased surface area, and more turbulent flow over the surface, is exceeded by the reduced wake field ( trailing area where the flow is totally separted) behind the ball.
-
-\section{Basics of Ducted Propellers and Pumpjets}
+\newpage  \section{Basics of Ducted Propellers and Pumpjets}
 It's easy to be somewhat confused by the many different names which seem to be associated with related, or similar systems.  Between pumps, pumpjets, water-jets ducted or shrouded propellers, or impellers, there is plenty of grounds for some confusion  In this section, I aim to clarify in simple terms what the important differences between distinctly different systems are, and where some terms are used somewhat interchangeably without doing any great violence to the concepts underlying.  Appreciating where the fundamental as opposed to superficial differences lie is important to understanding subsequently the limitations of different systems.
 
 \subsection{Propellers}
@@ -508,7 +363,7 @@ The use of the word waterjet, as opposed to pumpjet, has a tendency signify that
 \end{figure}
 
 
-\section{Constraints on the efficiency of pumpjets at low speed}
+\newpage  \section{Constraints on the efficiency of pumpjets at low speed}
 
 \subsection{Recent Commentary}
 There has been already some attention given to the probable efficiencies of pump jets at low speed. Recently Andrew Davies published a piece in the The Strategist (ASPI) arguing that the pump jet may actually save fuel at transit speeds (around 8kt) and overall improve the endurance of the submarine, despite likely having lower efficiency at low speeds such as patrol speed \parencite{davies2017}.  This argument relies on pump-jet efficiency still overtaking that of propellers at what is considered a relatively low speed for many applications.  As Andrew acknowledges, further quantification of the likely efficiency is required, as the particular chart which he cites is not quantified.  This section aims to identify as far as is reasonably possible from public literature how the efficiency of a likely pump-jet for a submarine might perform in quantitative terms, relative to a propeller.
@@ -547,11 +402,7 @@ At IMARESTS 10th International Naval Engineering Conference, a paper was present
 \label{fig:BMTShape.png}
 \end{figure}
 
-The paper makes no effort to justify the selection of choice of jets on the efficiency of the propulsion system, instead focussing on improved acoustic performance, and potential machinery space-saving advantages.  The vessel under consideration would require 250 tonnes more fuel with jets find than with propellers, the jets would require more power to reach equal waterspeed to a conventionally propelled craft right up to 30 kt.  In the case of this analysis, modifications to the hullform in order to accommodate the jet (which are likely to be more substantial for a surface ship than a submarine) also have an impcat on the resistance offerd by the hull.  This also has an interaction with the different shape of the propulsors, which alters the required level of delivered (effective) power to achieve a given speed, in addition to the considerations of how efficiently the propulsor generates that effective power. The paper states: "This is an encouraging result for a first iteration as the AWJ-21™ arrangement has not been fully optimised and, hence, there is further prospect of reducing the shaft power for this form. If the power could be reduced by 5\% (e.g. by fur ther improving the waterjet/hull fairing), then the AWJ-21™ vessel would be better at all speeds above 25 knots."  This statement, however, is made in reference to the hullform needed to accommodate the jet, rather than the jet propulsion efficiency itself \parencite{giles2010}.  As the propulsive efficiency curves given in the study show, the propulsors themselves are considerably further from reaching parity, still separated by about 10\% at 25kt.
-
-The paper also provides specific curves for the efficiency of the propulsor as a function of vessel speed, which demonstrated that the waterjet efficiency was lower than that of conventional propellers throughout the speed range, but declined particularly precipitously below speeds of 10kt.  At 5kt, the propeller was more than twice as efficient as the waterjet.  This study has been used to directly inform the 'central' efficiency curves assessed in this analysis.
-
-\begin{figure}[p]
+\begin{figure}
 
 \begin{subfigure}[b]{0.9\textwidth}
 \includegraphics[width=0.8\linewidth, center]{BMTEfficiency1.png}
@@ -564,6 +415,9 @@ The paper also provides specific curves for the efficiency of the propulsor as a
 \label{fig:BMTEfficiency.png}
 \end{figure}
 
+The paper makes no effort to justify the selection of choice of jets on the efficiency of the propulsion system, instead focussing on improved acoustic performance, and potential machinery space-saving advantages.  The vessel under consideration would require 250 tonnes more fuel with jets find than with propellers, the jets would require more power to reach equal waterspeed to a conventionally propelled craft right up to 30 kt.  In the case of this analysis, modifications to the hullform in order to accommodate the jet (which are likely to be more substantial for a surface ship than a submarine) also have an impcat on the resistance offerd by the hull.  This also has an interaction with the different shape of the propulsors, which alters the required level of delivered (effective) power to achieve a given speed, in addition to the considerations of how efficiently the propulsor generates that effective power. The paper states: "This is an encouraging result for a first iteration as the AWJ-21™ arrangement has not been fully optimised and, hence, there is further prospect of reducing the shaft power for this form. If the power could be reduced by 5\% (e.g. by fur ther improving the waterjet/hull fairing), then the AWJ-21™ vessel would be better at all speeds above 25 knots."  This statement, however, is made in reference to the hullform needed to accommodate the jet, rather than the jet propulsion efficiency itself \parencite{giles2010}.  As the propulsive efficiency curves given in the study show, the propulsors themselves are considerably further from reaching parity, still separated by about 10\% at 25kt.
+
+The paper also provides specific curves for the efficiency of the propulsor as a function of vessel speed, which demonstrated that the waterjet efficiency was lower than that of conventional propellers throughout the speed range, but declined particularly precipitously below speeds of 10kt.  At 5kt, the propeller was more than twice as efficient as the waterjet.  This study has been used to directly inform the 'central' efficiency curves assessed in this analysis.
 
 It appears from recent examples in the literature that there is no evidence of jets approaching the same efficiency as propellers at speeds as low as 10kt.  Indeed, there seems to be considerable evidence that jets of most kinds suffer substantial efficiency penalties relative to propellers in this regime, and that this is understood and accepted as an inevitable design trade-off to be made.  In the case of a submarine, which might spend nearly 100\% of its time travelling at 10kt or less, this disadvantage (as opposed to less than 35\%, as assumed for a surface ship in \cite{giles2010}) would become extremely substantial, which will be quantified in later sections.
 
@@ -594,7 +448,7 @@ As can be seen in Figure \ref{fig:JetHighFlow.png}, the duct of a jet is designe
 
 Consequently, the geometry of the duct defines a pressure gradient in the intake and through the nozzle.  The greater the difference in the cross-sectional areas, the greater the total magintude of the pressure differential that will occur, as necessitated by conservation of mass. The same amount must go out as came in.  As the area through which it passes changes, the velocity much change so that the flow rate remains constant, otherwise cavitation will occur.  The rate at which the areas change (how rapidly they expand and contract along the axis) will determine the gradient.  Making the pressure change as smooth as possible is an important aspect to jet design in order to minimise flow separation.
 
-\begin{figure}[p]
+\begin{figure}[h]
 \captionsetup{width=1\textwidth}
 \includegraphics[width=1\textwidth]{JetHighFlow.png}
 \caption{At high flow rates the water has sufficient velocity (indicated by arrow length) to overcome the adverse pressure gradients created by the duct shape, shown by the change from green to red. After the impeller has added further pressure to the water, the water accelerates out of the contracting nozzle through the favourable pressure gradient (red to green) to produce a jet, reaching equal pressure to outside at the exit}
@@ -605,7 +459,7 @@ Figure \ref{fig:JetLowFlow.png} shows a jet operating at very low speed.  The ad
 
 Flow separation also tends to lead to unsteady flows, with vortices periodically being shed into the main stream as they are speed up or change shape, and then ingested by the impeller and stator blades.  As can be seen by the diagram in Figure \ref{fig:JetLowFlow.png}, regions abound which are adjacent to or behind flow blockages or reversing flow, where considerable turbulence and unsteady forces would exist.  These effects also have acoustic consequences, which will be discussed in Section \ref{acousticconsiderations}.
 
-\begin{figure}[p]
+\begin{figure}[h]
 \captionsetup{width=1\textwidth}
 \includegraphics[width=1\textwidth]{JetLowFlow.png}
 \caption{At low flow rates the water has insufficient velocity to overcome the adverse pressure gradients created by the duct shape, and flow separation begins to occur on the duct intake, and between the blades beginning near the roots (stall).  Flow through the jet would be unsteady, with excessive energy expended creating vortices and turbulence that results in little thrust.}
@@ -616,13 +470,13 @@ It is worthwhile noting that the diagrams in Figures \ref{fig:JetHighFlow.png} a
 
 Consequently, the contraction of the outer shroud at the very end of the duct will dominate the final taper of the hub, and actually lead to substantial restriction of the flow.  Similarly, where the body or hub is quite substantial and also tapering steadily, keeping the duct intake parallel to the axis of the body for a small distance, or even just tapering it proportionally less than the hub, can still result in a considerable expansion in the area, and considerable diffusion.  The example in Figure \ref{fig:PumpjetOutline.png} shows a case of extremely sharp flow diffusion on the intake, probably more than what is practially realistics to avoid flow separation, even at quite high speeds. It is important to recognise that this simple relationship with $r^2$ generally means that even moderate changes in terms of diameter, which is what we tend to observe when looking at images and diagrams can actually amount to much more substantial changes in velocity, and hence pressure, which drives the effects described in this section.  A side-by-side comparison of the geometries and flow-lines likely in the case of pumpjet or propeller is give in Figure \ref{fig:Comparison.png}, from  to help illustrate this point.
 
-\begin{figure}[p]
+\begin{figure}[h]
 \includegraphics[width=\textwidth]{Comparison.png}
 \caption{At the end of a tapering body the impact of the contracting hub will be much larger near the intake than near the tail, making the degree of diffusion ahead of the impeller, as well as contraction of the flow in the nozzle after it, much larger in impact than it appears by looking at the external shape. Credit \cite{gearhart1966selection}}
 \label{fig:Comparison.png}
 \end{figure}
 
-\begin{figure}[p]
+\begin{figure}[h]
 \captionsetup{width=0.8\textwidth}
 \includegraphics[width=0.8\textwidth, center]{Triomph.jpg}
 \caption{The outer shape of pumpjets on the aft end of torpedoes or submarines, such as this one on the French Triomphant class on which the Barracuda's jet will be based, may understate the degree of deceleration that the duct achieves. Credit \cite{reddit2016}}
@@ -671,7 +525,7 @@ In \cite[8-14]{wislicenus1973}, Wislicenus expands the relationship in the case 
 
 The conclusion of the analysis, and the plotting of these results for certain possible values of $K$ and $\Delta T$ is: "Its outstanding characteristic is that this efficiency approaches zero rather than unity for $\Delta V / V_0 = 0$, even for small duct losses".
 
-\begin{figure}[h]
+\begin{figure}
 \captionsetup{width=0.6\textwidth}
 \includegraphics[width=0.7\textwidth, center]{PumpjetEfficiency.png}
 \caption{Ideal jet efficiencies sharply appoach zero at low values of $\Delta V / V_0$, where as ideal propeller efficiencies without a duct $K = 0$ approach unity. Credit: \cite{wislicenus1973}}
@@ -680,7 +534,7 @@ The conclusion of the analysis, and the plotting of these results for certain po
 
 Wislicenus also acknowledges \cite{wislicenus1973} another author, Brandau, who makes a different assumption about the relationship between the duct loss and water velocity \parencite{brandau1967} in his derivation (along with another thorough discussion of potential and ideal efficiencies), who produces a different peak efficiency point, but retains a similar overall shape featuring efficiency falling very rapidly to zero at low values of $\Delta V / V_0$, and contrasting this with the ideal propeller, which approaches unity in this low regime.
 
-Charts such as these are generally used with dimensionless ratios on the axes (such as $\Delta V / V_0$) to allow the most general solutions to be used to solve for any given particular vessel size, speed, or loading requirement which might be required, these  confusing to many readers unfamiliar with hydrodynamics.  For the avoidance of any confusion, it is important to note that the value for $\Delta V / V_0$ for a given vessl and propulor may tend to increase with increasing waterspeed of the vessel, however one cannot rely upon this particular value diminishing towards zero at very low speeds, as it does for related by different metrics.  In an idealised circumstance, the flow rate increases directly with vessel speed.  Given that the force produced scales with $\Delta V$, which at constant values of $\Delta V / V_0$ increase in proportion to (if, in the idealised circumstance, vessel speed is equal to $V_0$), an increase in thrust can theoretically match the $V_0^2$ requirement imposed by drag without any change in $\Delta V / V_0$.  However, in practice the water encountered by the propulsor is slowed by the wake field, and so the drag encountered by the vessel may increase faster than velocity of the water entering the intake, an effecnt which is likely non-linear with vessel speed.  So whilst the trend with regards to vessel speed can be known with regards to the graphs in \cite{fig:PumpjetEfficiency}, a direct translation of the x-axis used to vessel speed at any given point is difficult prove without additional system information.  One might generally infer that the sorts of declines in efficiency observed as vessel speed discussed in recent literature correspond with movement towards very low values of $\Delta V / V_0$, though it is possible that alternative derivations have been used, or that the phenomenon known to occur in practice (such as flow separation) aren't adequately captured by such ideal equations derived from momentum theory in order to make a direct translation into real-world application.
+Charts such as these are generally used with dimensionless ratios on the axes (such as $\Delta V / V_0$) to allow the most general solutions to be used to solve for any given particular vessel size, speed, or loading requirement which might be required, these  confusing to many readers unfamiliar with hydrodynamics.  For the avoidance of any confusion, it is important to note that the value for $\Delta V / V_0$ for a given vessl and propulor may tend to increase with increasing waterspeed of the vessel, however one cannot rely upon this particular value diminishing towards zero at very low speeds, as it does for related by different metrics.  In an idealised circumstance, the flow rate increases directly with vessel speed.  Given that the force produced scales with $\Delta V$, which at constant values of $\Delta V / V_0$ increase in proportion to (if, in the idealised circumstance, vessel speed is equal to $V_0$), an increase in thrust can theoretically match the $V_0^2$ requirement imposed by drag without any change in $\Delta V / V_0$.  However, in practice the water encountered by the propulsor is slowed by the wake field, and so the drag encountered by the vessel may increase faster than velocity of the water entering the intake, an effecnt which is likely non-linear with vessel speed.  So whilst the trend with regards to vessel speed can be known with regards to the graphs in \cite{fig:PumpjetEfficiency.png}, a direct translation of the x-axis used to vessel speed at any given point is difficult prove without additional system information.  One might generally infer that the sorts of declines in efficiency observed as vessel speed discussed in recent literature correspond with movement towards very low values of $\Delta V / V_0$, though it is possible that alternative derivations have been used, or that the phenomenon known to occur in practice (such as flow separation) aren't adequately captured by such ideal equations derived from momentum theory in order to make a direct translation into real-world application.
 
 For context, the equations developed by Wislicenus are used for the purposes generally of selecting the ideal propulor diameter, which can be made larger in the case of a propeller to access higher ideal efficiencies.  This is an opportunity which is constrained in the case of jets because the efficiency diminishes at very low values of $\Delta V / V_0$.  This is quite a different constraint to other "practical" considerations as some have suggested, such as weight, or space constraints.  Open propellers may advantageously choose to lower their values of $\Delta V / V_0$ as low as 0.1 in order to obtain ideal efficiencies \parencite{wislicenus1973}.  This still provides a hard limit on potential improvements that can be attained for a pump-jet that has non-zero duct loss.
 
@@ -841,7 +695,7 @@ In addition, the substantial reduction in the length of the shroud, both ahead o
 \subsubsection{Summary remarks on potential for redesign of pumpjet for low-speed conditions}
 Overall, while the parameter-space for the alteration of marine-propulsors is large, the parameters which would allow for very dramatic rather than minor changes to propulsor efficiency at low speed are relatively few.  The major ones include increasing the width of the intake, decreasing the length of the duct, and decreasing the pressure inrease at the blades achieved by the duct.  In short, it involves evolving the pumpjet back towards a propeller.  None of these changes could be effected to a substantial degree without some inevitable trade-off in terms of the cavitation performance of the system at higher speeds.
 
-\section{Model Structures and Assumptions}
+\newpage  \section{Model Structures and Assumptions}
 
 \subsection{Mathematical Structure}
 
@@ -887,7 +741,7 @@ The lower propeller curve shows efficiency still increasing up to around 65\% at
 
 These efficiency curve assumptions are shown in Figure \ref{fig:Efficiency_assumptions}.
 
-\begin{figure}[p]
+\begin{figure}
 <<plot_efficiency, echo=FALSE, warning=FALSE, message=F >>=
 df <- suppressMessages(read_csv(find::this("/Submarines/eff-data-2018-01-03.csv")))
 
@@ -929,13 +783,13 @@ Given that any known power consumption level and speed match can be used as a re
 
 Considerable confirmation that these assumptions are realistic can be made by assessing the endurance of the submarines under the model with other known reference points.  For the central curves, we obtain a dived endurance betwen 60 and 100 hours for both systems at 5kt, reflecting nearly exactly the range of other public estimates of dived enurances endurances which other modern diesel-electric submarines operating only with batteries \parencite[3]{buckingham2008submarine} at around 4kt.  Given that somewhat larger submarines might be somewhat assisted in this respect because their overall volume/surface ratio is slightly higher, this gives confirmation that the model is overall quite realistic in its magnitudes at the most important speeds.  The sames sources also suggests that the same submarines achieve endurances of around 1-2 hours at 20kt, which also confirms that the relationship in our model linking differnt speeds is also in agreement with other models.
 
-\section{Results and Discussion}
+\newpage  \section{Results and Discussion}
 
 \subsection{Power Demand}
 As part of the calculation of results for each pair of efficiency curves, the power requirements of each respective component (propulsion for the two respective systems, as well as effective power required, and hote load) can be plotted to ensure that realistic results are obtained, which is important for selecting plausible values for the constant $C_d$.  For the central efficiency curves, we can show the resultant power curves for the the assumed values of battery load, energy density, and hotel load, as seen in Figure \ref{fig:power_curve}.
 
 
-\begin{figure}[p]
+\begin{figure}
 <<plot_power1, echo=FALSE, warning=FALSE, message=F >>=
 df <- read_rds("extdata/df_full_complete_fac.rds")
 df %>%
@@ -961,7 +815,7 @@ It is clear that under the central assumptions, the declining efficiency of the 
 
 The phenomenon manifests itself in a very substantial reduction in the overall range that can be achieved submerged, and a difference between the speed at which maximum range can be achieved.  Under central assumptions, the propeller driven submarine can reach over 540nm at any speed between 4 and 5kt. The pump-jet driven submarine reaches over 360nm between 3 and 6kt. A difference of 180nm dived range would presumeably be of considerable tactical significance.
 
-\begin{figure}[p]
+\begin{figure}
 <<plot_results1, echo=FALSE, warning=FALSE, message=F >>=
 df <- read_rds("extdata/df_full_complete_fac.rds")
 df %>%
@@ -981,7 +835,7 @@ df %>%
 \label{fig:central_extreme}
 \end{figure}
 
-\begin{figure}[p]
+\begin{figure}
 <<plot_results2, echo=FALSE, warning=FALSE, message=F >>=
 df <- read_rds("extdata/df_full_complete_fac.rds")
 df %>%
@@ -1001,7 +855,7 @@ df %>%
 \label{fig:central_jet}
 \end{figure}
 
-\begin{figure}[p]
+\begin{figure}
 <<plot_results3, echo=FALSE, warning=FALSE, message=F >>=
 df <- read_rds("extdata/df_full_complete_fac.rds")
 df %>%
@@ -1021,7 +875,7 @@ df %>%
 \label{fig:central_prop}
 \end{figure}
 
-\begin{figure}[p]
+\begin{figure}
 <<plot_results4, echo=FALSE, warning=FALSE, message=F >>=
 df <- read_rds("extdata/df_full_complete_fac.rds")
 df %>%
@@ -1050,7 +904,7 @@ It seems extremely clear from these conclusions that the general results confirm
 
 A further feature of the results is that the relative difference in performance is much more sensitive to changes in the efficiency of the jet at the relevant speeds, owing to their larger proportional impact at low efficiencies.  Whilst a smoothly declining efficiency curve from around or over 50\% at 20kt to zero at 0kt might seem moderately well defined, the precise path taken, particularly the exact level around 3-8kt, is of great importance, substantially more than plausible variations in the propeller curve.  This can be seen in an overlaid plot of the proportional differences in total power demand (hence endurance and range) for the different pairs of curves as in Figure \ref{fig:all_proportions}.
 
-\begin{figure}[p]
+\begin{figure}
 <<plot_proportions, echo=FALSE, warning=FALSE, message=F >>=
 df <- read_rds("extdata/df_full_complete_fac.rds")
 df %>%
@@ -1078,7 +932,7 @@ Perhaps surprisingly, the impact at transit speeds is still quite significant, w
 As can be seen in Figure \ref{fig:sens_hotel} the difference between the two systems is very sensitive to changes in hotel load, both in proportional and nominal terms.  The impact of halving the hotel load from 100kw to 50kw more than doubles the \textit{difference} between a pumpjet and propeller dived endurances, from around two days to well over four days at speeds between 2.5 and 3.5kt.  In the context of a submarine which might have a nominal dived requirement at patrol speeds in the order of several days, this suggests that extremely large gains can be made by reducing hotel load.  Increasing the hotel load has the noticeable effect of pushing the speed of largest difference to higher speeds, and substantially reducing the total difference. If the hotel load was doubled to 200kW, the middle efficiency curve pair would still see a difference of nearly a day between the two systems, or around 19.5 hours at speeds of 4.5-5 kts.
 
 
-\begin{figure}[p]
+\begin{figure}
 <<plot_sens_hotel, echo=FALSE, warning=FALSE, message=F >>=
 df <- read_rds("extdata/df_full_diff_cornered.rds")
 df %>%
@@ -1113,7 +967,7 @@ Only brief consideration is given here to the impact of Air Independent Propulsi
 
 Changes in the effective battery energy density will have the same effect as having larger masses of battery stored.  They simply directly impact the total amount of energy available for consumption before recharging batteries while snorkeling. There is therefore no shift in the proportional impact on range and endurance due to this factor, as can be seen in the lower graphs in Figure \ref{fig:sens_battery}.  The nominal impact, however increases directly and linearly with the total energy stored.
 
-\begin{figure}[p]
+\begin{figure}
 <<plot_sens_battery, echo=FALSE, warning=FALSE, message=F >>=
 df <- read_rds("extdata/df_full_diff_cornered.rds")
 df %>%
@@ -1147,9 +1001,7 @@ The most striking feature of this figure however is the impact on the submarine'
 
 This sort of extreme sensitivity ought to have a significant bearing on how the overall performance specifications of the submarine are defined, as seemingly incremental changes to hotel load and electrical energy stores are likely to substantially magnified, or muted, by the choice of propulsion system.
 
-Writing a paragraph here...
-
-\begin{figure}[p]
+\begin{figure}
 <<plot_sens_corners, echo=FALSE, warning=FALSE, message=F>>=
 df <- read_rds("extdata/df_full_diff_cornered.rds")
 df %>%
@@ -1166,7 +1018,7 @@ df %>%
 \label{fig:sens_corners}
 \end{figure}
 
-\section{Acoustic Considerations} \label{acousticconsiderations}
+\newpage  \section{Acoustic Considerations} \label{acousticconsiderations}
 
 \subsection{The importance of cavitation inception}
 It is generally considered that the existence of cavitation of any sort will tend to dominate the acoustic signature of any vessel that doesn't produce any machinery noise by relying on all-electric drive as a conventional submarine would when dived (\cite{giles2010}, \cite{harvie1965construction}).  Its quite possible that during the period when a submarine is snorting, or running its diesel engines, these sources of noise would be a more substantial and distinctive acoustic signature than small amounts of cavitation on the propulsion system if it were to occur, owing in particular to the low freqency of diesel engines.
@@ -1194,7 +1046,7 @@ It is also crucial to understand that increasing depth necessarily increases the
 
 The interaction of these two relationships can be expressed in a general form in figure \ref{fig:InceptionContours}, which has been generated using an approxiate numeric model. As can be seen here, at very low speeds, modest changes in depths can achieve considerable additional surplus pressure in order to prevent cavitation.  However at much higher speeds, since the pressure diffential scales with the square of the velocity travelled, far greater additional depths are required to achieve sufficient excess static to supress cavitation for a give further speed increase.  Whilst certain system parameters such as the blade area and design (or duct design) will have a significant impact on which curve a particular system lies upon, the overall trend of a parabolic cavitation free "bucket" prevailing at low speeds and large depths will generally be robust.  This is confirmed by the close resemblance between the curve shapes found by an experiment on a torpdo in Figure \ref{fig:InceptionDepth.png}, and the numerical model found in Figure \ref{fig:InceptionContours}.
 
-\begin{figure}[p]
+\begin{figure}
 <<plot_inception, echo=FALSE, warning=F, message=F>>=
 speed <- rep(seq(0.5,20,0.5),90)
 VP. <- c(rep(1.228*1000,40), rep(2.339*1000,40), rep(4.245*1000,40))
@@ -1273,43 +1125,166 @@ Consequently, whilst for certain types of noise which tend to become both louder
 
 The foregoing consideration suggests that the acoustic signature of a jet-powered submarine might not reduce steadily with speed all the way to stationary movement.  It is plausible that there could be some elevated propulsion signature at very low speeds due to flow separation, and that the submarine's optimal acoustic signature when moving is actually at some slightly higher speed, where smoother flow through the propulsor can be achieved.  However, given that the amplitude, frequency, and combined impact of those two characteristics cannot be accurately evaluated without substantial further work and more detailed system knowledge, it is also possible that the increase in other noise (including hull flow noise and other machinery) at elevated speeds offsets the improvement in the smoothness of the pumpjet's operation.  It is still quite likely the overall level of noise radiated by the pumpjet, including under conditions when flow separation occurs, is still considered to be sufficiently low in amplitude as to not be of significant tactical consequence.  However it is highly unlikely that the accoustic signature of the pumpjet is actually superior to that of an open propeller at very low speeds, when cavitation occurs for neither system, but substantially increased turbulence including flow separation must neccessarily occur for the pumpjet.
 
-\section{Conclusion}
-
-The selection of the pumpjet propulsion system is quite probably the most significant new technology selection for Australia's future submarines.  Unlike other new technolgoies such as Air Independent Propulsion and Lithium Ion Batteries, which are either in service or entering service in multiple other navies, no other conventionally powered submarines have adopted pump-jet technology, which is currently only used by nuclear submarines.
-
-Despite acknowledging that the pumpjet may have an adverse impact on dived endurance \parencite{sbs2017}, Naval Group justifies the superiority of the pumpjet in the following terms: "In a confrontation between two otherwise identical submarines, the one with pump jet propulsion always has the tactical advantage."  No further explanation of this superiority has been provided in detail, but it is widely held that the pumpjet offered acoustic advantages which were highly regarded by those Australians who were responsible for selecting the design partner \parencite{cameron2016}.
-
-The comparison between two otherwise identical submarines (though not necessarily limited to engaging just each other in combat), provides a useful and suitable framework for evaluating a single significant technology choice, where most other significantly novel or new technologies were apparently excluded from consideration \parencite{stanford2017}.  The conclusion of this report is that the following statement can be made with confidence:
-\n
-\emph{In a comparison between two otherwise identical submarines, the one with the pump jet will alwayas have a lower dived endurance, a lower dived range, a worse indescretion ratio, a lower overall endurnace, and a lower overall range, than the one with a conventional propeller.  This will confer a substantial tactical and strategic advantage on the conventionally propelled submarine in a very broad range of operational scenarios.}
-\n
-
-Whilst it is broadly acknowledged that propellers have superior efficiency at lower speeds, but jets might have higher efficiency at higher speeds, the precise point of cross-over seemed unclear in public debate.  One informed commentator suggested that the crossover point was likely to be below or near the transit speed of the submarine, and that the pumpjet may offer enhanced range and endurance over the whole mission profile as a consequence\parencite{davies2017}.  This report finds no evidence of a pumpjet of the type used on submarine every being recommended as superior for efficiency in general, and even closely related technologies for more commecial use not advocated below 25kt. During my research I encountered domain experts confident that a pumpjet could simply not feasibly be superior to a suitable propeller at speeds below 18kt.  Evidence of propellers remaining generally superior to waterjets and pumpjets in the speed ranges up to and even over 30kt is abundant.  Consequently, the possibility of some cross-over point leading to any kind of range or endurance advantage relevant for a conventional submarine can be safely ruled out.
-
-This report also explores in some detail the theoretical concepts which drive the limitations of pumpjet performance at lower speeds in comparison to propellers.  Enduring and fundamental principals of momentum theory provide robust limitations on the circumstances where a propeller's 'ideal efficiency' might be improved by the addition of a duct/or shroud, one type of which constitutes the transition to a 'pumpjet'.  These principals stronly support the the notion that pumpjets will not and indeed cannot suddenly overcome their efficiency disadvantage at low speeds by means of technical ingenuity or innovation.
-
-Furthmore, a particular hydrodynamic phenonomon called 'flow separation' can be identified as the primary cause of the pumpjet's declining efficiency at very low speeds. Put simply, the duct provides an additional hurdle or barrier though which the water must pass when moving through the propuslor.  At very low speeds waterspeeds, this additional resistance is sufficient to stop some of the flow progressing through the jet, creating unsteady eddies and vortices which sap energy from the system, but produce no thrust, driving down efficiency to zero at very low flow-rates.
-
-The design of the pumpjet for military purposes, namely the reduction of acoustic signatures effectively mandates that this must be the way that pumpjets work.  The act of slowing the water down is necessarily equivalent to the act of raising its pressure.  It is this elevated pressure at the point where the blades to their work on the water which enables the blades to avoid cavitation (the rapid expansion and collapse of small voids or bubbles in the water) which is very large source of noise underwater.  Maintaing this advantage to the same level necessitates a duct design which slows water down to the same extent.  The act of slowing water down when it's already going slowly is what causes some of it to stop, which is when flow separation occurs.
-
-In order to assess the probable magnitude of the impact of this reduction in efficiency at low speeds, a numerical model was developed, based on known principles of physics, and publically available information relating to the likely technologies involved in the future submarine.  The most important and variable assumptions - the efficiency curves of the pumpjet and propeller - were taken from a recent study lead by world-leading engineering companies, supported by the US and Royal Navies, comparing closely related propulsion systems \parencite{giles2010}.  Knowing that the systems would not be identical to the propulsors on submarines (the precise design of which is obviously secret), additional curves varying from these assumptions were also modelled in all directions, and the combinations combined and tested.
-
-The model has been made available publically in the form of a web-app, so that alternative assumptions, including alternative efficiency curves may be tested by the general public.
-
-The model in its central assumptions was able to achieve very realistic results, which were consistent with other public estimates of performance parameters of conventional submarines and known characteristics \ref{buckingham2008submarine}.  A variety of different assumptions regarding the hotel load, battery density and different combinations of efficiency curves were tested.  The central assumption values showed that a submarine with a conventional propeller had a very substantial advantage in terms of range and endurance across the entire speed range.  This advantage reached a proportional maxium at around 6kt of over 60\%.  However, in nominal terms, the greatest differences occurred at slightly lower speeds.  Under central assumptions, the propeller submarine had an advantage in submerged range of some 200nm at 5kt, and approximately a two-day advantage in dived endurance at 4kt.
-
-The full range of plausible efficiency curves exhibited a significant efficiency advantage right through transit speeds.  Central assumptions suggested that this would result in the overall range of a submarine being enhanced by approximately 50\% with the use of propellers instead of a pumpjet.  None of the scenarios suggested it was likely that this range advantage would be any less than 20\%.  Given the significant emphasis that has been repeatedly placed the unique requirements for range and endurance for Australia's submarine, this raises substantial questions about suitability of this technology to meet Australia's needs.
-
-The model was used to test a wide range of different assumptions.  A further key result of the study established the sensitity of the difference to different assumptions regarding hotel load, and battery energy density.  This showed that the difference between the two systems was made substantially larger with smaller hotel loads, and larger stored electical energy (as might be achieved with lithium-ion batteries), and these two effects combined to give some particularly startling results.  Circumstances where the \textit{difference} in dived range and endurance between the two systems in terms of range and endurance exceeded the \textit{entire} dived range and endurance achieved by many modern conventional submarines frequently arose.
-
-The model demonstrated clearly that all of the most pronounced advantages in dived range and endrance occurred at speeds around 3-7kt, generally within plausible speeds achievable with modern AIP systems.  The addition of AIP was briefly considered which revealed that a difference in dived endurance of the order of one month, or thousands of nautical miles, would likely have emerged between the two propulsion systems.
-
-The consequences of flow separation also has acoustic consequences, which this report explores.  The vortexes and eddies which are created by flow separation tend to be unsteady, and shed periodically into the main flow.  This results in pressure fluctations inside the shroud and more intense, unsteady large-scale types of turbulence occurring as these vortices are ingested into the rotor blades.  These effects are are likely to cause some accoustic signature which becomes lower in frequence as the submarine slows down further and the vortexes become larger, and shed more slowly.  This is in contrast to early stages of cavitation, which would be high frequency at when bubble sizes are small, and move to lower fequences as speed increases and bubbles expand.  Lower frequencies are of particular significance because they tend to propagate further, and would be less effectively shielded by the duct.
-
-It remains plausible that in the absence of cavitation the noise generated in the propulsor by such flow separation is not loud enough to be of significant tactical concern. However, it is extremely unlikely that at some very low speeds, where conventional propellers experience no cavitation and enjoy steady, smooth flows over the blades, that a pumpjet could actually have a lower acoustic signature, even in terms of radiated noise.  Flow separtion demand that two or three times as much energy is wasted by a pumpjet creating and destroying these unsteady vortexes than a propeller would require to create equal thrust. Consequently, the claim that pumpjets are generally acoustically superior should be treated with some caution.  This claim has strong grounds wherever a conventional propeller might experience cavitation, such as at higher speeds.  But at some very low speeds it is unlikely to be true.
-
-Overall, it seems unlikely that the full range of consequences of pumpjet choice have been fully comprehended by the Australian government.  The scale of the probable impact on range and endurance is quite probably so substantial that it is difficult to see how such a performance penalty is consistent with the government's stated aim of acquiring a regionally superior submarine.
+\newpage
 
 \printbibliography
+
+\newpage
+
+\appendix
+\section{\\Some essential concepts}
+
+\subsection{Conservation of Energy}
+
+This is perhaps one of the most fundamental and well-established principals in physics.  The essential idea is that energy can move or change in form, but it isn't ever created or destroyed.  Machines, plants and animals all derive their energy from a particular other source, which can be measured and evalutated to establish the limits of energy available.  Plants collect energy from sunlight falling on their leaves. Humans (as well as combustion engines) capture the chemical potential energy in organic matter, and release it by combining it with oxygen.  Hydro-electric power plants turn the gravitational potential energy of water stored at a height into electricity.
+
+Conservation of energy has a particularly relevant embodiment in fluid flows, which is given it's primary expression in Bernoullis equation, as given in Equation \ref{eq:bernoullis}.  It says that the total energy in a connected body of fluid with no additional work being done on it is constant ($C$), though it can change in form between kinetic energy (movement, $\frac{1}{2}\rho v^2$), gravitational potential energy (it being elevated, $\rho gz$, relevant for liquids, less for gas) the heat energy in the fluid (not shown, not relevant for incompbressible fluids), and the pressure of the fluid $p$.
+
+\begin{equation}
+\label{eq:bernoullis}
+\frac{1}{2}\rho v^2 + \rho gz + p = C
+\end{equation}
+
+In different fluids, the dynamics of how energy moves between one and another change.  For example, in gases, heating up a confined piece of gas will increase it's pressure, or if it is unconfined, increase its volume. This is particularly important for understanding gas turbines. In the case of a liquid, however, all the molecules are in close contact, and hence can't increase in volume or pressure substantially except by the creation of steam. As such, in the absence of large amounts of cavitation, the terms in the relationship which are most important for our consideration are the relationships between pressure, and kinetic energy, and gravity.
+
+In the case of most waterjets which propel surface vessels, the water is lifted from the bottom of the hull at the intake to the pump, which is generally incorporated inside the hull. This increase in gravitational potential coincides with a slowing down of the water relative to the vessel-speed. Since the jet in such vessels is generally ejected at the same height as the pump, this potential is never regained, and is technically a loss, however at high speeds such a loss is small relative to the total power ouput.  In the case of submarine pumpjets, located on the end of the hull and parallel to the axis of the submarine, this effect (and the term $gz$) are not relevant.
+
+\subsubsection{Venturi Effect}
+In the case of submarines and torpedoes the water doesn't undertake a change in height, since intake and nozzle are generally all in line with the central axis of the submarine or torpedo.  As a consequence, the key relationship in Bernoullis equation is the relationship between the liquids velocity, and its pressure.  The consequence is that when water moves through a pipe (duct, or shroud) it's pressure is inversely related to the square of its velocity.  This means that when a liquid is forced to to travel through a narrowing pipe, it's pressure necessarily decreases as the velocity increases.  This is what underlies the Venturi effect.
+
+\subsubsection{Flow Diffusion}
+The inverse process is where a pipe increases in volume, and the flow is forced to slow down in order to fill the wider area, and the pressure correspondingly increases.  This is a process called 'diffusion', and is important to achieving high pressure levels in many types of water pumps, including those which will be particularly relevant for pumpjets for watercraft propulsion, particularly elevating static pressure levels in order to prevent cavitation \parencite{hamilton1997, mccormick1963design, bruce1974}.
+
+\subsubsection{Energy waste and efficiency}
+The conservation of energy also has useful implications for how the efficiency of systems is thought about.  In particular, because energy is conserved, identifying inefficiencies in a system necessarily involves identifying where energy goes to doing tasks which aren't useful for the intended purpose.  A perfectly efficient system won't do any work that isn't for the intended purpose.  In the case of analysing the efficiency of propulsion systems, the relevant 'work' is almost always related to moving water backwards to produce thrust.  Moving water in directions other than backwards, including random turbulent flows which wind producing heat rather than thust, are two examples of wasted energy.  Noise in the water also reflects energy which is wasted, though the significance of the acoustic signature is not necessarily indicative of the magnitude of energy wasted.
+
+In general terms, energy waste in propulsion systems will result in turbulence (moving water in random chaotic patters, where the energy soon becomes smoothly distributed as heat) and acoustic energy that is propagated away.  Flow separation incolves the creation of larger-scale vortices and eddies, which might be considered as a special case of turbulence, since the length-scale of the unsteady flows is much larger than that of normal turbulence, for instance in a boundary layer.
+
+On important consequences is that whilst increasing creation of noise, flow separation, or turbulence necessarily represent greater amounts of energy wasted, some increase in any given one does not neccessarily indicate the reduction of efficiency of the entire system, as larger amounts of energy may be being saved through reduced wastage through another means, or vice versa. For example, a squeaky join on a car might make a lot of noise, and it will represent some loss of kinetic energy.  However, the brakes can be applied and absorb vastly larger amounts of energy, essentially silently.
+
+Furthermore, efficiency of a system is necessarily given by the a ratio of useful work to total energy expended. Some trends which show increasing levels of energy wasted might be outweighed by larger increases in the overall amount of productive work being achieved.  Pumpjets, which generally tend to require highly turbulent flows, and even more turblent flows at higher speeds, still can become more efficient as speed inceases, as the amount of useful thrust produced increases even faster.  So, despite the wasteful round-and-round movements increasing with speed, the increase in productive front-to-back movement improves even faster, and total efficiency rises.
+
+\subsection{Boundary Layer}
+When water or any fluid flows with some speed relative to another solid surface nearby, there is some layer adjacent to the surface in which the speed of the fluid is diminished relative to the main flow.  At a microscopic level, there are some molecules of the fluid on the surface which will be effectively static relative to the surface.  The layer of fluid that joins the gap between the static surface, and the part of the flow which is moving at the full flow speed, is called the boundary layer.  Exactly how thick the boundary layer is, and how the fluid moves in the boundary layer, is extremely important for consideration of efficiency of fluid flows over and around solid surfaces.  In particular, a boundary layer can be either turbulent or laminar in nature, and can transition to turbulent flow after a short distnace of laminar flow, as shown in Figure \ref{fig:BoundaryLayer.png}.
+
+
+\begin{figure}[h]
+\captionsetup{width=0.5\textwidth}
+\includegraphics[width=0.5\textwidth, center]{BoundaryLayer.png}
+\caption{The development of a boundary layer as shown in \parencite{mollard2011}}
+\label{fig:BoundaryLayer.png}
+\end{figure}
+
+\subsection{Turbulent and Laminar Flow}
+The way that fluids move relative to a surface can one of either two methods.  In 'laminar flow' all the fluid moves in one direction in an smooth and orderly manner, with very little mixing between the layers of fluid travelling at different speeds.
+
+The alternative is 'turbulent flow', where the fluid moves around in unpredictable swirls and circles as well as moving overall in an predominant direction.  There is considerable mixing between all the different layers, and the average speed remains relatively constant in the flow, with the exception of the flow immediately adjacent to the wall, or in the boundary layer.  Becuase turbulence involves a lot of movement that is not overall in one productive direction and contributing to thrust, it necessarily leads to some loss of energy from the overall thrust.  Once the swirls and movements become smaller and smaller, the energy winds up simply as heat in the fluid.
+
+\begin{figure}[h]
+
+
+\begin{subfigure}{0.5\textwidth}
+\includegraphics[width=0.7\linewidth, center]{Laminar.png}
+\caption{Laminar}
+\end{subfigure}
+\begin{subfigure}{0.5\textwidth}
+\includegraphics[width=0.7\linewidth, center]{Turbulent.png}
+\caption{Turbulent}
+\end{subfigure}
+
+\caption{A simple comparison of laminar and turbulent flows from \parencite{NPdotnet2017}}
+\label{fig:LaminarTurbulent.png}
+\end{figure}
+
+The likely point of transition between a flow being turbulent and laminar can be given by unitless number called the Reynolds Number, which is determined by a fluids velocity, viscoscity, density, and a characteristic length-scale over which the flow occurring.  A fuller discussion of these important concepts can be found in \cite{NPdotnet2017}.
+
+Turbulent flows in gasses can be extremely noisy, since those fluids are compressible.  Consequently, the rapid and intense ciruclar movements result in a lot of oscillatory compressions against the surrounding air.  Consequently things like jet engines, vacuum cleaners, hand-dryers, and other devices that create rapid movements in gasses tend to be quite loud, including at some distance.
+
+In essentially incompressible fluids, the random changes in pressure and velocity which are involved in laminar flow tend not to generate nearly as much noise in the surrounding liquid outside the flow.  Because the fluid is incompressible, all of the random 'round and round' movements don't amount to much 'in and out' movement, which is what creates the pressure waves which result in propagated noise. Consequently, whilst turbulent flows do inevitably generate some noise, the amount of noise generated is dramatically greater in the presence of cavitation, where a void opens up in the water, and vastly more 'in and out' movement is able to occur.
+
+\subsection{Cavitation}
+Cavitation is the rapid expansion and collapse of a void, or bubble in water. Put technically, caviation occurs when the local static pressure (pressure in the rest frame of the fluid) falls below the vapour pressure of the fluid (pressure at which the liquid will start to boil).
+
+To try to conceptualise how it occurs in the context of propulsors, one might imagine what happens when something moves very fast through water.  The front side of the object pushes the water forward, but on the back side the water has to push in to fill the space left behind.  If there’s not enough pressure to push the solid water in fast enough, a gap opens up, with just a few gaseous water molecules (steam) inside the cavity.  (This is also described as water boiling at low pressure.)  However the gap doesn’t stay around for long.  Soon the water catches up, and the bubble implodes with a pop, leaving only very tiny bubbles as a result, which you can see in the wake of almost any boat or ship moving at speed.  Whilst some energy turns to heat (the remaining steam in the tiny bubbles) some is propagated away as a sound-wave generated by the implosion.
+
+A watching water boil in a glass kettle gives a quick and intuitive insight into the occurrence of cavitation.  Quickly after the kettle starts heating, a considerable noise can be heard, which corresponds to the commencement of cavitation on heating element. At some local point for a moment in time, there is enough energy for the water present to boil.  It tends to be on rough surfaces or in the presence of some impurity that cavitation will occur first (in the blackened part of the surface in this case.)  However, whilst the bubbles on the bottom can be seen plainly on the bottom, they collapse almost straight away again, and leave only a tiny bubble of stable steam circulating in the water.  It is the rapid expansion and collapse of these bubbles that causes the noise of a kettle, long before it has boiled.
+
+\begin{figure}[h]
+
+\begin{subfigure}{0.5\textwidth}
+\includegraphics[width=0.9\linewidth, height=5cm]{EarlyCavitation.JPG}
+\caption{}
+\end{subfigure}
+\begin{subfigure}{0.5\textwidth}
+\includegraphics[width=0.9\linewidth, height=5cm]{BoilingCavitation.JPG}
+\caption{}
+\end{subfigure}
+
+\caption{(a) Cavitation bubbles form and collapse creating noise and some tiny bubbles long before boiling occurs. (b) Only at very high temperatures do the bubbles endure at full-size in the water and reach the surface.}
+\label{fig:EarlyCavitation.JPG}
+\end{figure}
+
+It is only when the water is all at a much higher temperature that the bubbles remain their full size for long enough to detatch and rise all the way to the surface, a process we typically think of as boiling water.  It is worthwhile noting that the sound emitted at this stage is much softer and lower than the early onset of cavitation. Larger bubbles result in lower frequencies of sound being emitted. Even at higher temperature, the rougher parts of the surface provide the points where all the cavitation originate.
+
+
+Cavitation is extremely important in the study of ship propulsion, since it's occurrence in particular circumstances can lead to substantial losses of efficiency, as well as damage to the propeller and related appendages. It is particularly important for submarines, since the expansion and collapse of these bubbles tends to lead to the creation of noise which is often far larger, and more distincly characteristic than other turbulent disturbences in the water when no cavitation is present.  Consequently, the onset of cavitation can be thought of as a distinct threshold in terms of the acoustic performance of propulsive system.
+
+Despite cavitation necessarily representing some energy being wasted generating unwanted noise in the water, some cavitation inevitably occurs around most propulsion systems operating at full power.  In plenty of cases, the consequences for efficiency are relatively small, as they tend to be dominated by other efficiency considerations in imparting thrust.  Put another way, the savings that can be gained by minimising wastage to turblence can outweigh the losses incurred by having some cavitation occur.  In most cases, propellers are designed to work with a certain extent of cavitation for optimum efficiency under working loads \parencite{shin2015}. Cavitation also occurs to a considerable extent within the jets of most high-speed surface vessels, but doesn't necessarily have a particularly bad effect on their overall efficiency at their intended speed levels.  It is generally only within very specialised military circumstances when the absolute avoidance of cavitation supercedes other concerns for efficiency, and require the elimination of all cavitation entirely \parencite{mollard2011}, \parencite{lewis1988}.  These circumstances include the design of submarines and torpedoes.
+
+In certain special cases, particularly supercavitating propellers or surface-piercing drives, high levels of cavitation can be higly advantageous for efficiency.  However these represent specialised designs, generally only for very high speed vessels, where acoustic concerns are negligible, and are of little concern for this particular endeavour.
+
+Cavitation can occur in a number of different ways at different points and forms on or around the propeller.  It is common for cavitation to occur first near the out extremities of the propeller, where the blades are moving at the highest velocity relative to the water-flow.  Cavitation tends to spread across the back of the blades in a sheet (sheet cavitation), since the back side of the blades are generally the areas of most depressed pressure, though it can also occur in places on the back side of the blades, where the dynamics of the water moving around the blade can produce points of near the edges of significantly reduced pressure.   On surface vessels cavitation tends to occur most when the blades are closes to the surface, where the pressure is lowest.
+
+\begin{figure}[h]
+\captionsetup{width=0.7\textwidth}
+\includegraphics[width=0.7\textwidth, center]{IncreasingCavitation.png}
+\caption{Cavitation frequently occurs first at the extremities, then spreads inwards across the blad face, as shown in \parencite{mollard2011}}
+\label{fig:IncreasingCavitation.png}
+\end{figure}
+
+\begin{figure}[h]
+\captionsetup{width=0.7\textwidth}
+\includegraphics[width=0.7\textwidth, center]{CavitationTypes.png}
+\caption{Different types of cavitation can occur on different parts of the propulsion system as shown in \parencite{carlton2007}}
+\label{fig:CavitationTypes.png}
+\end{figure}
+
+
+\subsection{Pressure, Thrust, and Momentum change}
+A few simple related concepts make up the foundations for many of the simplest and enduring theoretical models (Momentum Theory, still widely and routinely used to model 'ideal' propeller efficiencies by considering the propeller simple disc \parencite[169]{carlton2007}) and other quite intuitive concepts which migth be more readily grasped in understanding propulsors.
+
+Thrust is a force, measured in Newtons, which is generally used to refer to the forces acting on a vessel or object by its propulsion system to move it forward in the water.  Generating thrust is consequently a key objective of any propulsion system.
+
+Pressure is a measure of force divided by an area over which it is applied. Pressures are necessarily applied to some extent over all of the surfaces of any object, including due to the atmostpheric pressure of air.  In considering the efficiency of propulsion systems for solid bodies, thrust is always the consequence of some \textbf{net} pressure difference on different sides and surfaces of an object.  For instance, on a propeller blade, the rear-facing side of the blade is the side that pushes the water backwards, and hence has a raised pressure on its surface.  Being generally backwards facing this acts to push the propeller forwards.  This pressure acts equally to push water backwards, as well as to push the propeller forwards.  Importantly, the forward-facing side of the propeller will expereince a lowered pressure, which also serves to pull water backwards, and suck the propeller forwards.  It is the sum of all the pressure differences on the propeller that result in a net force.
+
+Importantly in hydrodynamics, it is important to consider the possibility of other forces being generated other surfaces which may have an impact on the movement of the vessel.  In the presence of the hull, water being drawn by the propeller can cause pressure changes on other surface of the vessel which may assist or impede producing a net positive thrust.  Submerged jets represent a particular case in point.  A famous home experiment suggests that one compare the thrust (backwards pressure) experienced by someone holding a garden hose creating a jet of water when it is in the air, as opposed to submerged in a pool of water.  When submerged, the backwards pressue appears dramatically reduced.  In fact, this phenomenon is due to a the water-jet drawing adjacent water with it under-water, the movement of which exerts a negative pressure on the outside of the nozzle, conteracting the pressure exerted on the inside of the nozzle. This effect represents one of the important distinctions between the jets which release their water below or above the water-line, and generally means that underwater jets have much lower jet velocity ratios than those released over water.
+
+It is also an important law of physics that force or thrust is equal to the rate of change of momentum. Put simply, the speed at which one speeds something up, or the increasing amount of something which begins to move, is always equivalent in magnitude to the thrust that is produced.  Since momentum is a vector, this simple law requires that the momentum change has to net out to one particular direction in order to produce a net thrust, which provides the core principal for Momentum Theory as it applies to propeller and jets.  Circular movements necessarily are cancelling, and produce no thrust. It is useful to recall however that this principal is simply another complete, alternative way of measuring the consequences of the net pressure differences discussed earlier.  The total rate of change of momentum in the system which is induced as a conseqence of the pressure differentials on all sides of the propulsor must necessarily be equivalent to the total net force that is produced.  For the garden hoze in the pool or bucket, the jet rapidly entering the liquid in one direction necessitates new flows of liquid in other directions, reducing net moment changed. This new liquid movement will exert pressure reductions on the nozzle surface surface, which reduce the net momentum change affected by the entire system.  These net forces, and net momentum change are necessarily equivalent and equal in effect.  Consequently literature seeking to optimise propulsion might discuss analysis referring to both of these effects or phenomena, and neither are in conflict.
+
+Full and proper derivations of many of the thrust equations for different propulsion systems from these principals can be found in plenty of authoritative works, including \cite{lewis1988}, \cite{carlton2007} and \cite{mollard2011}.
+
+\subsection{Flow separation}
+Flow separation refers to a circumstance when the flow over a surface separates entirely from the surface, and a new eddy or votex is formed where the flow actually moves in the opposite direction to the dominant flow.  It is of particular significance in hydrodynamics because it can lead to substantial losses of efficiency, as energy is diverted into the kinetic energy of the eddy or vortex, which is unproductive. It tends to occur near the surface of aerofoils with high angles of attack, or in the blades of turbomachinery including diffuser or mixed-flow pumps and ducted propellers operating in off-design conditions, including low flow rates \parencite{li2013}, parencite{bakker2006}, parencite{mcbride1979}, parencite{wislicenus1986}.
+
+\begin{figure}[h]
+\captionsetup{width=0.5\textwidth}
+\includegraphics[width=0.5\textwidth, center]{SeparatedAerofoil.jpg}
+\caption{Flow separation occurring over the top of an aerofoil in a wind tunnel. Image courtesy of Deutsches Zentrum fuer Luft- und Raumfahrt e. V. (DLR)}
+\label{fig:SeparatedAerofoil.jpg}
+\end{figure}
+
+In order for flow separation to occur, a fluid must be moving against an adverse pressure gradient, which simply means that the static pressure (pressure in the rest frame of the fluid) is increasing in the direction of movement, which means the flow is slowing down as it moves, unless new work is being done on it.  At the boundary layer, where the flow velocity is already reduced due to drag forces experienced near the surface, the adverse pressure gradient can be enough to reverse the flow altogether.  In this case, the fluid flows in reverse near the surface and forms a vortex, and the main flow becomes separated form the surface by the votex.
+
+\begin{figure}[h]
+\captionsetup{width=0.7\textwidth}
+\includegraphics[width=0.7\textwidth, center]{FlowSeparation.png}
+\caption{Flow separation involves flow reversal near a surface when a fluid is moving against an adverse pressure gradient, as shown in \parencite{mollard2011}}
+\label{fig:FlowSeparation.png}
+\end{figure}
+
+In addition to the necessary loss of efficiency, flow separation can often tend to result in unsteady flows, with the vortices periodically being shed into the flow \parencite[480]{mollard2011}.  If this occurs ahead of the blades of a propeller or impeller, such disturbances to the flow can lead to instances of cavitation when otherwise a steady homogenous flow might be well below the cavitation inception point, and can be consequential for the acoustic performance of the system, particulaly if such shedding resonates with characteristic frequencies of any of the machinery.
+
+Flow separation tends to occur earlier for laminar boundary layers than for fully turbulent boundary layers.  Consequently, some systems are able to become more efficient  by deliberately inducing turbulent, where the benefit from reduced friction in the laminar boundary layer is outweighed by the cost suction induced by the larger wake field created by earlier flow separation.  This is the reason that golf balls have dimples, and tennis-balls have fur, to enable them to fly further.  The impact of the increased surface area, and more turbulent flow over the surface, is exceeded by the reduced wake field ( trailing area where the flow is totally separted) behind the ball.
+
 
 \end{document}
