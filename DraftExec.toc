@@ -90,19 +90,19 @@
 \defcounter {refsection}{0}\relax 
 \contentsline {subsection}{\numberline {7.5}The impact of duct loss on an ideal propeller}{46}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {7.6}An assessment of scope for improving the efficiency of a pumpjet at low speeds}{52}
+\contentsline {subsection}{\numberline {7.6}An assessment of scope for improving the efficiency of a pumpjet at low speeds}{53}
 \defcounter {refsection}{0}\relax 
 \contentsline {subsubsection}{\numberline {7.6.1}Increase mass-flow by widening area of intake}{53}
 \defcounter {refsection}{0}\relax 
 \contentsline {subsubsection}{\numberline {7.6.2}Reduce degree of diffusion (i.e. switch to accelerating duct) to reduce negative thrust from duct}{55}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsubsection}{\numberline {7.6.3}Reduce shroud length to decrease drag on duct}{56}
+\contentsline {subsubsection}{\numberline {7.6.3}Reduce shroud length to decrease drag on duct}{55}
 \defcounter {refsection}{0}\relax 
 \contentsline {subsubsection}{\numberline {7.6.4}Summary remarks on potential for redesign of pumpjet for low-speed conditions}{56}
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {8}Model Structures and Assumptions}{56}
+\contentsline {section}{\numberline {8}Model Structures and Assumptions}{62}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {8.1}Mathematical Structure}{56}
+\contentsline {subsection}{\numberline {8.1}Mathematical Structure}{62}
 \defcounter {refsection}{0}\relax 
 \contentsline {subsection}{\numberline {8.2}Efficiency Curve Assumptions}{62}
 \defcounter {refsection}{0}\relax 
@@ -110,36 +110,36 @@
 \defcounter {refsection}{0}\relax 
 \contentsline {subsection}{\numberline {8.4}Battery Assumptions}{63}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {8.5}Drag Coefficient of Hull}{63}
+\contentsline {subsection}{\numberline {8.5}Drag Coefficient of Hull}{66}
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {9}Results and Discussion}{65}
+\contentsline {section}{\numberline {9}Results and Discussion}{66}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {9.1}Power Demand}{65}
+\contentsline {subsection}{\numberline {9.1}Power Demand}{66}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {9.2}Central Results}{65}
+\contentsline {subsection}{\numberline {9.2}Central Results}{68}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {9.3}Sensitivity of Curve Selection}{67}
+\contentsline {subsection}{\numberline {9.3}Sensitivity of Curve Selection}{68}
 \defcounter {refsection}{0}\relax 
 \contentsline {subsection}{\numberline {9.4}Sensitivity to Hotel Load}{73}
 \defcounter {refsection}{0}\relax 
 \contentsline {subsection}{\numberline {9.5}Sensitivity to Battery Changes}{75}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {9.6}The interaction of hotel load, battery energy density, and efficiency curves}{75}
+\contentsline {subsection}{\numberline {9.6}The interaction of hotel load, battery energy density, and efficiency curves}{77}
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {10}Acoustic Considerations}{75}
+\contentsline {section}{\numberline {10}Acoustic Considerations}{77}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {10.1}The importance of cavitation inception}{75}
+\contentsline {subsection}{\numberline {10.1}The importance of cavitation inception}{77}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {10.2}Impact of speed on cavitation}{78}
+\contentsline {subsection}{\numberline {10.2}Impact of speed on cavitation}{80}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {10.3}The impact of depth on cavitation}{78}
+\contentsline {subsection}{\numberline {10.3}The impact of depth on cavitation}{80}
 \defcounter {refsection}{0}\relax 
 \contentsline {subsection}{\numberline {10.4}The significance of flow separation}{80}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {10.5}The impact of duct shielding}{80}
+\contentsline {subsection}{\numberline {10.5}The impact of duct shielding}{84}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsubsection}{\numberline {10.5.1}Directional Dependence}{83}
+\contentsline {subsubsection}{\numberline {10.5.1}Directional Dependence}{84}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsubsection}{\numberline {10.5.2}Frequency Dependence}{83}
+\contentsline {subsubsection}{\numberline {10.5.2}Frequency Dependence}{85}
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {11}Conclusions}{84}
+\contentsline {section}{\numberline {11}Conclusions}{85}
