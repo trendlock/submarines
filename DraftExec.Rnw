@@ -11,7 +11,7 @@
 % For split figures
 \usepackage{subcaption}
 %  appendix
-\usepackage[toc,page]{appendix}
+\usepackage[titletoc,page]{appendix}
 
 \usepackage{draftwatermark}
 \SetWatermarkText{DRAFT}
@@ -26,13 +26,27 @@
 
 
 \begin{titlepage}
-  \vspace*{\fill}
-  \begin{center}
-    {Efficiency}\\[0.5cm]
-    {Aidan Morrison}\\[0.4cm]
-    2018
-  \end{center}
-  \vspace*{\fill}
+    \begin{center}
+        \vspace*{1cm}
+
+        \vspace{10cm}
+        \textbf{\huge Efficiency}
+
+        \vspace{0.5cm}
+
+
+        \vspace{1.5cm}
+
+        \textbf{Aidan Morrison}
+
+        \vspace{1.5cm}
+        2018
+
+        \vfill
+
+
+
+    \end{center}
 \end{titlepage}
 
 
@@ -1131,8 +1145,8 @@ The foregoing consideration suggests that the acoustic signature of a jet-powere
 
 \newpage
 
-\appendix
-\section{\\Some essential concepts}
+\begin{appendices}
+\section{Some essential concepts}
 
 \subsection{Conservation of Energy}
 
@@ -1285,6 +1299,6 @@ In order for flow separation to occur, a fluid must be moving against an adverse
 In addition to the necessary loss of efficiency, flow separation can often tend to result in unsteady flows, with the vortices periodically being shed into the flow \parencite[480]{mollard2011}.  If this occurs ahead of the blades of a propeller or impeller, such disturbances to the flow can lead to instances of cavitation when otherwise a steady homogenous flow might be well below the cavitation inception point, and can be consequential for the acoustic performance of the system, particulaly if such shedding resonates with characteristic frequencies of any of the machinery.
 
 Flow separation tends to occur earlier for laminar boundary layers than for fully turbulent boundary layers.  Consequently, some systems are able to become more efficient  by deliberately inducing turbulent, where the benefit from reduced friction in the laminar boundary layer is outweighed by the cost suction induced by the larger wake field created by earlier flow separation.  This is the reason that golf balls have dimples, and tennis-balls have fur, to enable them to fly further.  The impact of the increased surface area, and more turbulent flow over the surface, is exceeded by the reduced wake field ( trailing area where the flow is totally separted) behind the ball.
-
+\end{appendices}
 
 \end{document}
