@@ -4,7 +4,12 @@
 \usepackage[margin=0.8in]{geometry}
 \bibliography{references}
 
-\usepackage{nameref}
+%  For caption width
+\usepackage{graphicx,caption}
+% For Centering figs
+\usepackage[export]{adjustbox}
+% For split figures
+\usepackage{subcaption}
 
 \usepackage{draftwatermark}
 \SetWatermarkText{DRAFT}
@@ -152,7 +157,7 @@ This high neutron-capture from Xenon means that it has a duplicitous relationshi
 
 The situation changes suddenly when the reactor undergoes a sudden change in power output.  If the power is lowered dramatically and suddenly, the production of Xenon continues quite rapidly for some time due to the decay of the large stock of Iodine-135.  With less neutron flux available to 'burn off' the Xenon, the Xenon levels spike, and push down the reactor's reactivity.  Unless the reactor is quickly raised back to relatively high power (~60\%) quite quickly (an hour or less), the Xenon levels become so high that the reactor will have to be shut down, otherwise extreme (and dangerous) measures would be required in order to keep the reactor going.  (This is essentially what lead to the Chernobyl Explosion \parencite{WNA2009}.)  A fuller discussion of Xenon poisoning can be found in \cite{garland2005}, which demonstrates key concepts related to the poisoning effect shown in Figure \ref{fig:XenonPoison.png}.
 
-\begin{figure}
+\begin{figure}[h]
 \includegraphics[width=\textwidth]{XenonPoison.png}
 \caption{Xenon poisoning effect following shutdown from \parencite{garland2005}}
 \label{fig:XenonPoison.png}
@@ -215,8 +220,9 @@ Furthermore, efficiency of a system is necessarily given by the a ratio of usefu
 When water or any fluid flows with some speed relative to another solid surface nearby, there is some layer adjacent to the surface in which the speed of the fluid is diminished relative to the main flow.  At a microscopic level, there are some molecules of the fluid on the surface which will be effectively static relative to the surface.  The layer of fluid that joins the gap between the static surface, and the part of the flow which is moving at the full flow speed, is called the boundary layer.  Exactly how thick the boundary layer is, and how the fluid moves in the boundary layer, is extremely important for consideration of efficiency of fluid flows over and around solid surfaces.  In particular, a boundary layer can be either turbulent or laminar in nature, and can transition to turbulent flow after a short distnace of laminar flow, as shown in Figure \ref{fig:BoundaryLayer.png}.
 
 
-\begin{figure}
-\includegraphics[width=\textwidth]{BoundaryLayer.png}
+\begin{figure}[h]
+\captionsetup{width=0.5\textwidth}
+\includegraphics[width=0.5\textwidth, center]{BoundaryLayer.png}
 \caption{The development of a boundary layer as shown in \parencite{mollard2011}}
 \label{fig:BoundaryLayer.png}
 \end{figure}
@@ -226,8 +232,18 @@ The way that fluids move relative to a surface can one of either two methods.  I
 
 The alternative is 'turbulent flow', where the fluid moves around in unpredictable swirls and circles as well as moving overall in an predominant direction.  There is considerable mixing between all the different layers, and the average speed remains relatively constant in the flow, with the exception of the flow immediately adjacent to the wall, or in the boundary layer.  Becuase turbulence involves a lot of movement that is not overall in one productive direction and contributing to thrust, it necessarily leads to some loss of energy from the overall thrust.  Once the swirls and movements become smaller and smaller, the energy winds up simply as heat in the fluid.
 
-\begin{figure}
-\includegraphics[width=\textwidth]{LaminarTurbulent.png}
+\begin{figure}[h]
+
+
+\begin{subfigure}{0.5\textwidth}
+\includegraphics[width=0.7\linewidth, center]{Laminar.png}
+\caption{Laminar}
+\end{subfigure}
+\begin{subfigure}{0.5\textwidth}
+\includegraphics[width=0.7\linewidth, center]{Turbulent.png}
+\caption{Turbulent}
+\end{subfigure}
+
 \caption{A simple comparison of laminar and turbulent flows from \parencite{NPdotnet2017}}
 \label{fig:LaminarTurbulent.png}
 \end{figure}
@@ -245,19 +261,23 @@ To try to conceptualise how it occurs in the context of propulsors, one might im
 
 A watching water boil in a glass kettle gives a quick and intuitive insight into the occurrence of cavitation.  Quickly after the kettle starts heating, a considerable noise can be heard, which corresponds to the commencement of cavitation on heating element. At some local point for a moment in time, there is enough energy for the water present to boil.  It tends to be on rough surfaces or in the presence of some impurity that cavitation will occur first (in the blackened part of the surface in this case.)  However, whilst the bubbles on the bottom can be seen plainly on the bottom, they collapse almost straight away again, and leave only a tiny bubble of stable steam circulating in the water.  It is the rapid expansion and collapse of these bubbles that causes the noise of a kettle, long before it has boiled.
 
-\begin{figure}
-\includegraphics[width=\textwidth]{EarlyCavitation.JPG}
-\caption{Cavitation bubbles form and collapse creating noise and some tiny bubbles long before boiling occurs}
+\begin{figure}[h]
+
+\begin{subfigure}{0.5\textwidth}
+\includegraphics[width=0.9\linewidth, height=5cm]{EarlyCavitation.JPG}
+\caption{}
+\end{subfigure}
+\begin{subfigure}{0.5\textwidth}
+\includegraphics[width=0.9\linewidth, height=5cm]{BoilingCavitation.JPG}
+\caption{}
+\end{subfigure}
+
+\caption{(a) Cavitation bubbles form and collapse creating noise and some tiny bubbles long before boiling occurs. (b) Only at very high temperatures do the bubbles endure at full-size in the water and reach the surface.}
 \label{fig:EarlyCavitation.JPG}
 \end{figure}
 
 It is only when the water is all at a much higher temperature that the bubbles remain their full size for long enough to detatch and rise all the way to the surface, a process we typically think of as boiling water.  It is worthwhile noting that the sound emitted at this stage is much softer and lower than the early onset of cavitation. Larger bubbles result in lower frequencies of sound being emitted. Even at higher temperature, the rougher parts of the surface provide the points where all the cavitation originate.
 
-\begin{figure}
-\includegraphics[width=\textwidth]{BoilingCavitation.JPG}
-\caption{Only at very high temperatures do the bubbles endure at full-size in the water and reach the surface}
-\label{fig:BoilingCavitation.JPG}
-\end{figure}
 
 Cavitation is extremely important in the study of ship propulsion, since it's occurrence in particular circumstances can lead to substantial losses of efficiency, as well as damage to the propeller and related appendages. It is particularly important for submarines, since the expansion and collapse of these bubbles tends to lead to the creation of noise which is often far larger, and more distincly characteristic than other turbulent disturbences in the water when no cavitation is present.  Consequently, the onset of cavitation can be thought of as a distinct threshold in terms of the acoustic performance of propulsive system.
 
@@ -267,14 +287,16 @@ In certain special cases, particularly supercavitating propellers or surface-pie
 
 Cavitation can occur in a number of different ways at different points and forms on or around the propeller.  It is common for cavitation to occur first near the out extremities of the propeller, where the blades are moving at the highest velocity relative to the water-flow.  Cavitation tends to spread across the back of the blades in a sheet (sheet cavitation), since the back side of the blades are generally the areas of most depressed pressure, though it can also occur in places on the back side of the blades, where the dynamics of the water moving around the blade can produce points of near the edges of significantly reduced pressure.   On surface vessels cavitation tends to occur most when the blades are closes to the surface, where the pressure is lowest.
 
-\begin{figure}
-\includegraphics[width=0.7\textwidth]{IncreasingCavitation.png}
+\begin{figure}[h]
+\captionsetup{width=0.7\textwidth}
+\includegraphics[width=0.7\textwidth, center]{IncreasingCavitation.png}
 \caption{Cavitation frequently occurs first at the extremities, then spreads inwards across the blad face, as shown in \parencite{mollard2011}}
 \label{fig:IncreasingCavitation.png}
 \end{figure}
 
-\begin{figure}
-\includegraphics[width=0.7\textwidth]{CavitationTypes.png}
+\begin{figure}[h]
+\captionsetup{width=0.7\textwidth}
+\includegraphics[width=0.7\textwidth, center]{CavitationTypes.png}
 \caption{Different types of cavitation can occur on different parts of the propulsion system as shown in \parencite{carlton2007}}
 \label{fig:CavitationTypes.png}
 \end{figure}
@@ -296,16 +318,18 @@ Full and proper derivations of many of the thrust equations for different propul
 \subsection{Flow separation}
 Flow separation refers to a circumstance when the flow over a surface separates entirely from the surface, and a new eddy or votex is formed where the flow actually moves in the opposite direction to the dominant flow.  It is of particular significance in hydrodynamics because it can lead to substantial losses of efficiency, as energy is diverted into the kinetic energy of the eddy or vortex, which is unproductive. It tends to occur near the surface of aerofoils with high angles of attack, or in the blades of turbomachinery including diffuser or mixed-flow pumps and ducted propellers operating in off-design conditions, including low flow rates \parencite{li2013}, parencite{bakker2006}, parencite{mcbride1979}, parencite{wislicenus1986}.
 
-\begin{figure}
-\includegraphics[width=0.5\textwidth]{SeparatedAerofoil.jpg}
+\begin{figure}[h]
+\captionsetup{width=0.5\textwidth}
+\includegraphics[width=0.5\textwidth, center]{SeparatedAerofoil.jpg}
 \caption{Flow separation occurring over the top of an aerofoil in a wind tunnel. Image courtesy of Deutsches Zentrum fuer Luft- und Raumfahrt e. V. (DLR)}
 \label{fig:SeparatedAerofoil.jpg}
 \end{figure}
 
 In order for flow separation to occur, a fluid must be moving against an adverse pressure gradient, which simply means that the static pressure (pressure in the rest frame of the fluid) is increasing in the direction of movement, which means the flow is slowing down as it moves, unless new work is being done on it.  At the boundary layer, where the flow velocity is already reduced due to drag forces experienced near the surface, the adverse pressure gradient can be enough to reverse the flow altogether.  In this case, the fluid flows in reverse near the surface and forms a vortex, and the main flow becomes separated form the surface by the votex.
 
-\begin{figure}
-\includegraphics[width=\textwidth]{FlowSeparation.png}
+\begin{figure}[h]
+\captionsetup{width=0.7\textwidth}
+\includegraphics[width=0.7\textwidth, center]{FlowSeparation.png}
 \caption{Flow separation involves flow reversal near a surface when a fluid is moving against an adverse pressure gradient, as shown in \parencite{mollard2011}}
 \label{fig:FlowSeparation.png}
 \end{figure}
@@ -320,8 +344,9 @@ It's easy to be somewhat confused by the many different names which seem to be a
 \subsection{Propellers}
 Perhaps the best starting point is the most basic, and oldest of the systems which we're considering: the basic screw propeller.  A propeller uses a number of tilted blades attached to a central hub to sweep around a disc in the water, and accelerate a column of water passing through the disc.  Due to the slant of the blades, water on the back sides of the blades is pushed astern, and reduced pressure on the front faces pulls more water from ahead to replace it.  As such, it accelerates a column of water, which necessarily is contracted in circumference after the point of acceleration.
 
-\begin{figure}
-\includegraphics[width=\textwidth]{PropellerAction.png}
+\begin{figure}[h]
+\captionsetup{width=0.5\textwidth}
+\includegraphics[width=0.5\textwidth, center]{PropellerAction.png}
 \caption{Propellers generate thrust by accelerating a column of water, as shown in  \parencite[247]{mollard2011}}
 \label{fig:PropellerAction.png}
 \end{figure}
@@ -331,8 +356,9 @@ A comprehensive description of the development of the propeller can be found in 
 
 Most propellers will have between three and seven blades.  In general they are shaped as an aerofoil, with the convex side being upstream, just as the convex side of a plane wing is above, in order to generate lower pressure and lift as it moves through the air.  The blades tend to be twised so that they have a higher angle of attack closer to the hub, and lesser closer to the extremities, so that those faster moving sections push their respective parts of the water column at an overall similar speed.  The are often also thinner towards the extremities, and will be swept backwards as if dragged by their rotation through the water (skew) and also dragged by the ship's movement throug the water (rake). Whilst the degree of all these characteristics is highly variable for different applications, these are a few of the commonly referred to characteristics which can be varied in order to optimise performance for any given application.
 
-\begin{figure}
-\includegraphics[width=\textwidth]{SkewRake.png}
+\begin{figure}[h]
+\captionsetup{width=0.5\textwidth}
+\includegraphics[width=0.5\textwidth, center]{SkewRake.png}
 \caption{The development of a boundary layer \parencite[262]{mollard2011}}
 \label{fig:SkewRake.png}
 \end{figure}
@@ -340,14 +366,16 @@ Most propellers will have between three and seven blades.  In general they are s
 \subsubsection{Pitch}
 Perhaps one of the most important characteristics of a propeller is its pitch.  The pitch represents the distance that a blade section would travel forward if it carved its way around a helix through one full rotation.  It is intuitive to think of as something akin to the angle-of-attack of the propeller blade to the water, however this is technically misleading as the movement of the water-column incoming to the blade, as well as the speed of rotation, also have a significant bearing on what the actual angle of attack of the blade ends up being.  Whilst technically pitch is a distance (measured in meters), it is often expressed and used in formula as a ratio of the diameter of the propeller, to give it a unitless equivalent, as is common in the description of many characteristics of propellers and propulsion systems.
 
-\begin{figure}
-\includegraphics[width=\textwidth]{HelicalLine.png}
+\begin{figure}[h]
+\captionsetup{width=0.5\textwidth}
+\includegraphics[width=0.5\textwidth, center]{HelicalLine.png}
 \caption{A blade section of a propeller traces a helical line around a cylinder as it is rotated \parencite{carlton2007}}
 \label{fig:HelicalLine.png}
 \end{figure}
 
-\begin{figure}
-\includegraphics[width=\textwidth]{PitchDefinition.png}
+\begin{figure}[h]
+\captionsetup{width=0.7\textwidth}
+\includegraphics[width=0.7\textwidth, center]{PitchDefinition.png}
 \caption{The definition of pitch is the distance traveled by a blade section along a cylinder, as given in \parencite{carlton2007}}
 \label{fig:PitchDefinition.png}
 \end{figure}
@@ -356,8 +384,9 @@ The selection of the exact blade selection that is used to define pitch must be 
 
 Pitch is of particular importance to the discussion the efficiency of propeller and propulsor design because its optimal choice tends to vary considerably with the different loads which a vessel is intended to operate at, which can also relate to a vessel's design speed.  It is for this reason that a considerable number of vessels actually have variable pitch propellers.  Whilst considerably more complex, expensive, and heavier than a traditional fixed-pitch propeller, the ability to vary the pitch of a propeller assists considerably, particularly when the amount of load (resistance) a vessel is expected to face varies considerably.  Controllable pitch propellers also have advangates in terms of manouverability, since the pitch can be reversed and hence reverse thrust can be produced, without requiring the direction of the power coming from the engines to be reversed.  This has advantages for ferries which undertake frequent docking manouvres in confined spaces (\cite{MAN2017}, \cite{lewis1988}).
 
-\begin{figure}
-\includegraphics[width=\textwidth]{CPPropeller.png}
+\begin{figure}[h]
+\captionsetup{width=0.8\textwidth}
+\includegraphics[width=0.8\textwidth, center]{CPPropeller.png}
 \caption{Controllable Pitch Propellers (CP Propellers) allow the pitch of the blades to be varied. Image credit: \parencite{mollard2011}}
 \label{fig:CPPropeller.png}
 \end{figure}
@@ -365,8 +394,9 @@ Pitch is of particular importance to the discussion the efficiency of propeller 
 \subsubsection{Pitch and the Advance Ratio}
 Pitch is also an extremely important concept to understand because it relates closely to the way that a propeller's 'open-water efficiency' $\eta_O$ is expressed in charts, as well as the advance ratio $J$ that usually comprises the x-axis in such charts.
 
-\begin{figure}
-\includegraphics[width=\textwidth]{OpenWater.png}
+\begin{figure}[h]
+\captionsetup{width=0.8\textwidth}
+\includegraphics[width=0.8\textwidth]{OpenWater.png}
 \caption{A typical chart showing open water efficiency of a propeller, in this case a Wageningen B5-75. Image: MARIN}
 \label{fig:OpenWater.png}
 \end{figure}
@@ -384,8 +414,9 @@ One may also note from the previous figure that for each line representing a giv
 
 A closely related concept here is the slip ratio, which is a measure of the difference between the pitch (the distance the blade section would travel if it traced a perfect helix for one rotation) and the actual distance that the blade did advance through the water.  This is neatly defined and shown in a diagram in \ref{fig:SlipRatio.png}.
 
-\begin{figure}
-\includegraphics[width=\textwidth]{SlipRatio.png}
+\begin{figure}[h]
+\captionsetup{width=0.8\textwidth}
+\includegraphics[width=0.8\textwidth, center]{SlipRatio.png}
 \caption{The slip ratio of a propeller. Image credit: \cite{MAN2017}}
 \label{fig:SlipRatio.png}
 \end{figure}
@@ -397,16 +428,18 @@ A ducted propeller is a propeller in any kind of tubular shroud, casing or nozzl
 
 A detailed description of the essential differences between the two can be easily demonstrated by diagram, which show a simple comparison an acelerating and decelerating duct, which have the shape of the aerofoil section which comprises the duct inverted. \footnote{It should be noted that some designs attempt to strike a balance between efficiency and cavitation performance of accelerating and decelerating ducts for certain purposes, and in such cases the duct shape might not be so clearly contrasted \parencite{abdel2010}.  But for the purposes of explanation, as well as optimisation for military purposes, the distinction between the two will generally be quite clear, and in practice ducts will still tend to decelerate the flow on approach to the impeller unless specifically shaped to narrow in the opening.}
 
-\begin{figure}
+\begin{figure}[h]
+\captionsetup{width=\textwidth}
 \includegraphics[width=\textwidth]{AccelDecel.png}
-\caption{he two types of ducted propeller, accelerating (left) and decelerating (right) as shown in \parencite[249]{mollard2011}}
+\caption{The two types of ducted propeller, accelerating (left) and decelerating (right) as shown in \parencite[249]{mollard2011}}
 \label{fig:AccelDecel.png}
 \end{figure}
 
 A consideration of what happens to the flow as it moves through each type of duct helps to demonstrate how the acceleration and deceleration effects are achieved. In the case of an accelerating nozzle, the area through which the flow must pass contracts prior to the water arriving at the impeller.  In the decellerating case, the available area contracts after the water has passed the impeller. In some cases, a degree of diffusion is actually incorporated ahead of the impeller, whereby the area actually of the flow actually expands ahead of the impeller, which slows down the flow and increases its pressure according to Benoulli's principal \parencite{wislicenus1973}.
 
-\begin{figure}
-\includegraphics[width=\textwidth]{DuctStreamlines.png}
+\begin{figure}[h]
+\captionsetup{width=0.7\textwidth}
+\includegraphics[width=0.7\textwidth, center]{DuctStreamlines.png}
 \caption{The streamlines of flow through different duct types \parencite[214]{lewis1988}}
 \label{fig:DuctStreamlines.png}
 \end{figure}
@@ -420,16 +453,18 @@ A further means by which the efficiency of a propeller can be increased is throu
 
 However, it is important to note that the existence of an accelerating duct by no means eliminates all cavitation.  In fact, given that the static pressure at the impeller is necessarily reduced by an accleratint duct, the propensity for cavitation other surface of the propeller is generally increased.  In many circumstance cavitation can and does still occur in ducted propellers near the blade tips at design loads \parencite{moulijn2015}.
 
-\begin{figure}
-\includegraphics[width=\textwidth]{CavitatingDuct.png}
+\begin{figure}[h]
+\captionsetup{width=0.7\textwidth}
+\includegraphics[width=0.7\textwidth, center]{CavitatingDuct.png}
 \caption{An example of the cavitation occurring at the blade tips of a ducted propeller. Image credit \cite{moulijn2015}}
 \label{fig:CavitatingDuct.png}
 \end{figure}
 
 A detailed explanation of the means by which the ideal efficiency of propeller can be improved can be found in \cite[213-222]{lewis1988}, as well as other texts on marine propulsion, such as \cite{carlton2007}. A substantial work exploring the efficiencies of a range of accelerating and decelerating ducts can also be found in \cite{oosterveld1970}.  A common feature of these extensive studies also show that for ducted propellers, including accelerating ducted propellers, the advantage in terms of efficiency is overall restricted to low waterspeeds.  At higher waterspeeds, the drag induced by the water-movement over the exterior of the duct begins to increase substantially, and the net thrust on the duct becomes negative.  When the exterior of the duct experiences relatively little water velocity, but the interior experiences a great deal more, the greatest advantages of an accelerating duct are realised.  Furthermore, in general these models do not incorporate the effect of flow separation, which is acknowledged as a possibility on both the exterior and interior of ducts, which can dramatically reduce efficiency performance (\cite[20]{oosterveld1970}, \cite[214]{lewis1988}).
 
-\begin{figure}
-\includegraphics[width=\textwidth]{DuctedEfficiency.png}
+\begin{figure}[h]
+\captionsetup{width=0.7\textwidth}
+\includegraphics[width=0.7\textwidth, center]{DuctedEfficiency.png}
 \caption{Accelerating ducts produce a net positive thrust at low advance ratios, but a net negative thrust at higher advance ratios as the drag on the nozzle exterior increases. Image credit:Open-water test results of Ka 3-65 screw series with nozzle no. 19A \parencite{oosterveld1970}}
 \label{fig:DuctedEfficiency.png}
 \end{figure}
@@ -437,12 +472,13 @@ A detailed explanation of the means by which the ideal efficiency of propeller c
 \subsubsection{The Decelerating Duct or Pumpjet}
 Decelerating ducts necessarily produce a negative thrust, since the process of raising the pressure of the water about the impeller (equivalent to slowing it down) necessitate reducing its kinetic energy and consequently momentum.  In a wide range of literature introducing the fundamentals of ducted propellers and water-jets, or discussing their more modern development there is universal acknowledgement that the choice of a decelerating duct is generally made for the avoidance of cavitation for specialised (generally military) purposes, rather than for the achievement of increased efficiency (\cite{carlton2007}, \cite{oosterveld1970}, \cite{mollard2011}, \cite{haimov2010}, \cite{lewis1988}).
 
-In order to achieve a reduction in cavitation, however, care must be taken in the design of a decelerating duct.  Since the negative thrust produced by the duct must necessitate additional work being done by the impeller, there can be circumstances where the additional loading of the impeller out-weighs the impacts of elevating the pressure around it. \cite[24-25]{oosterveld1970} provides a more thorough derivation of the circumstances in which this can be reliably achieved, which generally include larger blade area ratios or with more rows of rotors for higher loading, or circumstances where the loading of the propeller is quite low.  This creates an inevitable and necessary tension between optimisation of a duct for propulsive efficiency and reduction of cavitation, which will be returned to in Section \ref{waterjets} (\nameref{waterjets}).
+In order to achieve a reduction in cavitation, however, care must be taken in the design of a decelerating duct.  Since the negative thrust produced by the duct must necessitate additional work being done by the impeller, there can be circumstances where the additional loading of the impeller out-weighs the impacts of elevating the pressure around it. \cite[24-25]{oosterveld1970} provides a more thorough derivation of the circumstances in which this can be reliably achieved, which generally include larger blade area ratios or with more rows of rotors for higher loading, or circumstances where the loading of the propeller is quite low.  This creates an inevitable and necessary tension between optimisation of a duct for propulsive efficiency and reduction of cavitation, which will be returned to in Section \ref{waterjets}.
 
 It is perhaps most relevant at this point to further clarify the distinction between the different names for related or similar systems.  In \cite[17]{carlton2007} pump jet is described as an "interesting development of the classical ducted propeller". Oosterveld, in his thesis on ducted propellers also states with regard to the decelerating duct "This ducted propeller system is the so called pumpjet" \parencite[8]{oosterveld1970}.  Other authors give separate treatement to ducted propellers and pump jets, though the systems they describe are essentially similar in terms of composition, advantages, and physics \parencite[288]{lewis1988}.
 
-\begin{figure}
-\includegraphics[width=\textwidth]{PumpjetOutline.png}
+\begin{figure}[h]
+\captionsetup{width=0.4\textwidth}
+\includegraphics[width=0.4\textwidth, center]{PumpjetOutline.png}
 \caption{In \cite{carlton2007} the pump jet is described as a development of a classical ducted propeller, with the noticeable addition of a stator}
 \label{fig:PumpjetOutline.png}
 \end{figure}
@@ -455,9 +491,19 @@ The addition of some new parts such as stator blades (to straighten out the flow
 
 The use of the word waterjet, as opposed to pumpjet, has a tendency signify that the jet expelled from the shroud or pump is situated above the water, which is desirable in very fast-moving surface vessels which attempt to minimise their contact with the waters surface, including high-speed planing hull vessels, including pleasure craft.  The physics of the two systems, however, are closely related, with the very noticeable exception of the absence of flow considerations for water on the exterior of the duct considerations for waterjets.  However, the physics relating to the impeller and stator blades or (turbomachinery) designed to add energy to the flow are generally extremely closely linked, though a larger variety of diffeent pump types can be chosen for waterjets which might differ more significantly from the natural evolution of a propeller to an axial-flow pump. Many of the essential equations which govern the efficiencies and cavitation performance of pumpjets and waterjets are of the same or extremely similar form, as can be seen in detailed discussions given to both, by similar authors (\cite{wislicenus1973}, \cite{henderson1964}).  There are, however, plenty of instances in recent literature where this distinction regarding the ejection of the jet above and below the waterline is not maintained, and waterjets and pumpjets seem to be used interchangeably \parencite{abdel2010}, or systems are described as 'submerged waterjets' \parencite{buckingham2008submarine}.
 
-\begin{figure}
-\includegraphics[width=\textwidth]{PumpjetWaterjet.png}
-\caption{A comparison of a pumpjet and waterjet as given in \cite{wislicenus1973}}
+\begin{figure}[h]
+
+\begin{subfigure}{0.5\textwidth}
+\includegraphics[width=0.9\linewidth]{Pumpjet.png}
+\caption{}
+\end{subfigure}
+\begin{subfigure}{0.5\textwidth}
+\includegraphics[width=0.9\linewidth]{Waterjet.png}
+\caption{}
+\end{subfigure}
+
+
+\caption{A comparison of a pumpjet (a) and waterjet (b) as given in \cite{wislicenus1973}}
 \label{fig:PumpjetWaterjet.png}
 \end{figure}
 
@@ -474,16 +520,18 @@ Abundant modern works, including those which involve experimental validation of 
 
 A 1995 Japanese experimental study on the performance of a waterjet demonstrated a close experimental fit to a theoretical relationship which sees the propulsive efficiency of the waterjet fall to zero with craft velocity, with significant declines in efficiency commencing just under 10m/s, or somewhere around 18kt \parencite{fujisawa1995}.
 
-\begin{figure}
-\includegraphics[width=\textwidth]{EfficiencyJapan.png}
+\begin{figure}[h]
+\captionsetup{width=0.7\textwidth}
+\includegraphics[width=0.7\textwidth, center]{EfficiencyJapan.png}
 \caption{A graph from a Japanese study of waterjet efficiency shows efficiency rapidly declining below craft velocities of 10m/s, in accordance with theory. \parencite{fujisawa1995}}
 \label{fig:EfficiencyJapan.png}
 \end{figure}
 
 In 2015 an Australian team including staff from the Australian Maritime College and Incat published results of an experimental study comparing the use of waterjets and propellers for medium-speed ferries operating in the 20-30kt speed range \parencite{kamal2015}.  This study explicitly set out to establish the cross-over point for where propellers become more efficient than jets, since Incat was interested in pioneering highly efficient medium-speed vessels, after having considerable success in very high speed catamarans.  It is again acknowledged as given that at lower speeds propellers are more efficient than waterjets.  The study found that propellers were considerably more efficient over the entire speed range tested, often by a factor of two in terms of transport efficiency.
 
-\begin{figure}
-\includegraphics[width=\textwidth]{EfficiencyTransport.png}
+\begin{figure}[h]
+\captionsetup{width=0.6\textwidth}
+\includegraphics[width=0.6\textwidth, center]{EfficiencyTransport.png}
 \caption{An Australian experimental study aimed at determining the crossover point for the efficiency of jets and propellers in the 20-30kt range revealed much higher power was required across the entire speed range \parencite{kamal2015}}
 \label{fig:EfficiencyTransport.png}
 \end{figure}
@@ -492,7 +540,8 @@ Both of these previous studies confirm the general and widespread assumption tha
 
 At IMARESTS 10th International Naval Engineering Conference, a paper was presented by BMT Defence and Rolls Royce \parencite{giles2010}, outlining a proposal for 'fully submerged waterjets' to be used on future surface ships in order to achieve better acoustic performance, particulalry for an anti-submarine warfare role. The jets comprise a mixed-flow pump coupled to an electric motor, and have been both extensively modelled and also tesed in demonstrator vessels.  These may be a closer representation of the performance characteristics achievable by submerged pumpjets, since shape of the intake and shroud more closely resembles the shape of a pumpjet that might be found on a submarine.  Importantly, this work focuses specifically on the performance of the jets as a function of ship-speed, including identifying possible crossover points.
 
-\begin{figure}
+\begin{figure}[h]
+\captionsetup{width=\textwidth}
 \includegraphics[width=\textwidth]{BMTShape.png}
 \caption{The 'fully submerged waterjet' proposed by BMT and Rolls Royce for military surface craft may more closely represent the duct shape used on submarines than waterjets that release above the surface. \parencite{giles2010}}
 \label{fig:BMTShape.png}
@@ -502,11 +551,19 @@ The paper makes no effort to justify the selection of choice of jets on the effi
 
 The paper also provides specific curves for the efficiency of the propulsor as a function of vessel speed, which demonstrated that the waterjet efficiency was lower than that of conventional propellers throughout the speed range, but declined particularly precipitously below speeds of 10kt.  At 5kt, the propeller was more than twice as efficient as the waterjet.  This study has been used to directly inform the 'central' efficiency curves assessed in this analysis.
 
-\begin{figure}
-\includegraphics[width=\textwidth]{BMTEfficiency.png}
+\begin{figure}[p]
+
+\begin{subfigure}[b]{0.9\textwidth}
+\includegraphics[width=0.8\linewidth, center]{BMTEfficiency1.png}
+\end{subfigure}
+\begin{subfigure}[b]{0.9\textwidth}
+\includegraphics[width=0.8\linewidth, center]{BMTEfficiency2.png}
+\end{subfigure}
+
 \caption{Studies on submerged waterjets for military surface craft currently show that the efficiency of jets decline sharply below 10kt \parencite{giles2010}}
 \label{fig:BMTEfficiency.png}
 \end{figure}
+
 
 It appears from recent examples in the literature that there is no evidence of jets approaching the same efficiency as propellers at speeds as low as 10kt.  Indeed, there seems to be considerable evidence that jets of most kinds suffer substantial efficiency penalties relative to propellers in this regime, and that this is understood and accepted as an inevitable design trade-off to be made.  In the case of a submarine, which might spend nearly 100\% of its time travelling at 10kt or less, this disadvantage (as opposed to less than 35\%, as assumed for a surface ship in \cite{giles2010}) would become extremely substantial, which will be quantified in later sections.
 
@@ -516,7 +573,7 @@ Moreover, recent literature seems to confirm that efficiency of pumpjets fall of
 
 Pumpjets are necessarily low in efficiency at very low speeds because they attempt to get the water to do multiple things.  They don't just accelerate a water colum.  They first slow it down (increasing its pressure), then add pressure to it, then accelerate it.  When the total amount of energy embodied in the incoming water stream, and the total amount of energy you want to add to the water both get very small (as they do at very low speed) there simply isn't enough energy to do all things at once to all of the water.  The energy penalty inflicted by using the additional devices becomes very large in proportion, and part of the water doesn't do all the necessary things for the jet to work.  In essence, if you try to slow down something that's already going slowly, it tends to stop  That's exactly what happens in jets operating at very low flow-rates, when flow separation, also known as stall when it occurs between the blades, begins to take place.  When there isn't enough energy to move all the water through the pressure-hurdles imposed by the duct, only some of it moves, and the rest spins in place.
 
-There are other some fundamental limitations on the peak efficiency that can be achieved by jets based on simple calculations of ideal efficiency from momentum theory, which are discussed in Section \ref{tradeoffs} (\nameref{tradeoffs}).  They also provide enduring, reliable limitations on the extent to which ingenuity or design changes might be able to improve the efficiency of jets at low speed. But the primary reason why jet efficiencies decline towards zero at low speed is to do with flow separation \parencite{fujisawa1995}, which is what occurs when the assumptions inherent in momentum theory's analysis of an 'ideal' actuator disc start to break down.
+There are other some fundamental limitations on the peak efficiency that can be achieved by jets based on simple calculations of ideal efficiency from momentum theory, which are discussed in Section \ref{tradeoffs}.  They also provide enduring, reliable limitations on the extent to which ingenuity or design changes might be able to improve the efficiency of jets at low speed. But the primary reason why jet efficiencies decline towards zero at low speed is to do with flow separation \parencite{fujisawa1995}, which is what occurs when the assumptions inherent in momentum theory's analysis of an 'ideal' actuator disc start to break down.
 
 The conditions which lead to flow separation in a pumpjet can be relatively simply explained in terms of conservation of energy, and conservation of mass. Conservation of mass requires that as a pipe or duct expands, the flow through it necessarily slows down, in order to occupy the large volume, in proportion to the new cross-sectional area.  Conservation of energy requires that it increases in pressure, and defines a very specific relationship between the pressure increase and the change in velocity, which is determined by the shape of the duct.  That relationship says that the static pressure increase is inversely proportional change in velocity \textbf{squared}, as given by Bernoulli's equation, which was discussed in earlier sections.  As a result, at high speeds, the total energy of the system is dominated by its velocity, but at very low speeds the static pressure is much more significant.
 
@@ -526,28 +583,31 @@ At low speeds, the same effect leads to detrimental effects.  The adverse pressu
 
 The same phenomenon is also prone to occur near roots of the blades of the rotor \parencite[15]{henderson1964}.  Necessarily, the blades of the rotor are doing work on the fluid, so unless the impeller is in a region of considerable contraction, pressure will necessarily have to increase significantly through the blades, providing an adverse pressure gradient, which again must be constant radially.  Since closer to the hub the velocity of the blades through the water is lower, the blades tend often to also be longer and deflect the flow even more in order to do the same amount of work on the fluid. With the longer surface over which the fluid must travel, as well as greater angle of deflection, flow separation is prone to occur here too.  The physics will be exactly analogous to that of the separation on the inside of the duct intake, except the pressure gradient will be provided by a different source (the rotor doing work), and the surface (the blade roots) will also be different. This will also mean that the direction of rotation of the vortices will be different, and the location also close to the middle of the jet, instead of the outside.
 
-As can be seen in figure \ref{fig:JetHighFlow.png}, the duct of a jet is designed to operate by deflecting the flow away from the natural path that would occur for a propeller, which would accelerate the stream over its blades directly, with the flow necessarily contracting with the acceleration as shown in Figure \ref{fig:PropellerAction.png}.   Instead, pumpjets tend to use some moderate expansion of the flow in advance of the impeller (diffusion) in order to raise its pressure, and reduce its velocity.  (Allowing the blades to do work on the water at lower speeds and higher pressure is the essence of what reduces cavitation.)  The blades then do their work on the liquid, further raising its pressure.  The duct allows this pressure then to be converted back to kinetic energy, as the water accelerates to move through the contracting area in the nozzle.  This difference in the shape of the flow, and the consequent impacts on the static pressures, are demonstrated in Figure \ref{fig:FlowComparison.png} taken from \cite{mccormick1963design}.
+As can be seen in Figure \ref{fig:JetHighFlow.png}, the duct of a jet is designed to operate by deflecting the flow away from the natural path that would occur for a propeller, which would accelerate the stream over its blades directly, with the flow necessarily contracting with the acceleration as shown in Figure \ref{fig:PropellerAction.png}.   Instead, pumpjets tend to use some moderate expansion of the flow in advance of the impeller (diffusion) in order to raise its pressure, and reduce its velocity.  (Allowing the blades to do work on the water at lower speeds and higher pressure is the essence of what reduces cavitation.)  The blades then do their work on the liquid, further raising its pressure.  The duct allows this pressure then to be converted back to kinetic energy, as the water accelerates to move through the contracting area in the nozzle.  This difference in the shape of the flow, and the consequent impacts on the static pressures, are demonstrated in Figure \ref{fig:FlowComparison.png} taken from \cite{mccormick1963design}.
 
 \begin{figure}
-\includegraphics[width=\textwidth]{FlowComparison.png}
+\captionsetup{width=0.4\textwidth}
+\includegraphics[width=0.4\textwidth, center]{FlowComparison.png}
 \caption{The effect of the duct is to deflect the flow away from the streamlines of an open propeller, elevating the static pressure at the stator blades by slowing the flow down.}
 \label{fig:FlowComparison.png}
 \end{figure}
 
 Consequently, the geometry of the duct defines a pressure gradient in the intake and through the nozzle.  The greater the difference in the cross-sectional areas, the greater the total magintude of the pressure differential that will occur, as necessitated by conservation of mass. The same amount must go out as came in.  As the area through which it passes changes, the velocity much change so that the flow rate remains constant, otherwise cavitation will occur.  The rate at which the areas change (how rapidly they expand and contract along the axis) will determine the gradient.  Making the pressure change as smooth as possible is an important aspect to jet design in order to minimise flow separation.
 
-\begin{figure}
-\includegraphics[width=\textwidth]{JetHighFlow.png}
+\begin{figure}[p]
+\captionsetup{width=1\textwidth}
+\includegraphics[width=1\textwidth]{JetHighFlow.png}
 \caption{At high flow rates the water has sufficient velocity (indicated by arrow length) to overcome the adverse pressure gradients created by the duct shape, shown by the change from green to red. After the impeller has added further pressure to the water, the water accelerates out of the contracting nozzle through the favourable pressure gradient (red to green) to produce a jet, reaching equal pressure to outside at the exit}
 \label{fig:JetHighFlow.png}
 \end{figure}
 
 Figure \ref{fig:JetLowFlow.png} shows a jet operating at very low speed.  The adverse pressure gradient combined with the drag forces of the boundary layer are sufficient to bring the flow to a stop and reverse it, as shown by the arrow size reducing, and changing direction in the diagram.  This occurs very close to the inner surface near the opening of the duct, and potentially also between the blades of the rotor, beginning the roots \parencite[15]{henderson1964}.  Flow separation necessarily sees additional energy expended in the kinetic energy of the additional vortices and turbulent flows created, which don't result in the creation of thrust, which demands a change in the net momentum of the liquid in a backwards direction.  Consequently, the degree and extent that it occurs necessarily and inevitably reduces the efficiency of the propulsor.  As the flow rates slow further, the areas of flow separation will become larger, effectively reducing the intake area of the jet, and further degrading efficiency.
 
-Flow separation also tends to lead to unsteady flows, with vortices periodically being shed into the main stream as they are speed up or change shape, and then ingested by the impeller and stator blades.  As can be seen by the diagram in Figure \ref{fig:JetLowFlow.png}, regions abound which are adjacent to or behind flow blockages or reversing flow, where considerable turbulence and unsteady forces would exist.  These effects also have acoustic consequences, which will be discussed in Section \ref{acousticconsiderations} (\nameref{acousticconsiderations}).
+Flow separation also tends to lead to unsteady flows, with vortices periodically being shed into the main stream as they are speed up or change shape, and then ingested by the impeller and stator blades.  As can be seen by the diagram in Figure \ref{fig:JetLowFlow.png}, regions abound which are adjacent to or behind flow blockages or reversing flow, where considerable turbulence and unsteady forces would exist.  These effects also have acoustic consequences, which will be discussed in Section \ref{acousticconsiderations}.
 
-\begin{figure}
-\includegraphics[width=\textwidth]{JetLowFlow.png}
+\begin{figure}[p]
+\captionsetup{width=1\textwidth}
+\includegraphics[width=1\textwidth]{JetLowFlow.png}
 \caption{At low flow rates the water has insufficient velocity to overcome the adverse pressure gradients created by the duct shape, and flow separation begins to occur on the duct intake, and between the blades beginning near the roots (stall).  Flow through the jet would be unsteady, with excessive energy expended creating vortices and turbulence that results in little thrust.}
 \label{fig:JetLowFlow.png}
 \end{figure}
@@ -556,14 +616,15 @@ It is worthwhile noting that the diagrams in Figures \ref{fig:JetHighFlow.png} a
 
 Consequently, the contraction of the outer shroud at the very end of the duct will dominate the final taper of the hub, and actually lead to substantial restriction of the flow.  Similarly, where the body or hub is quite substantial and also tapering steadily, keeping the duct intake parallel to the axis of the body for a small distance, or even just tapering it proportionally less than the hub, can still result in a considerable expansion in the area, and considerable diffusion.  The example in Figure \ref{fig:PumpjetOutline.png} shows a case of extremely sharp flow diffusion on the intake, probably more than what is practially realistics to avoid flow separation, even at quite high speeds. It is important to recognise that this simple relationship with $r^2$ generally means that even moderate changes in terms of diameter, which is what we tend to observe when looking at images and diagrams can actually amount to much more substantial changes in velocity, and hence pressure, which drives the effects described in this section.  A side-by-side comparison of the geometries and flow-lines likely in the case of pumpjet or propeller is give in Figure \ref{fig:Comparison.png}, from  to help illustrate this point.
 
-\begin{figure}
+\begin{figure}[p]
 \includegraphics[width=\textwidth]{Comparison.png}
 \caption{At the end of a tapering body the impact of the contracting hub will be much larger near the intake than near the tail, making the degree of diffusion ahead of the impeller, as well as contraction of the flow in the nozzle after it, much larger in impact than it appears by looking at the external shape. Credit \cite{gearhart1966selection}}
 \label{fig:Comparison.png}
 \end{figure}
 
-\begin{figure}
-\includegraphics[width=\textwidth]{Triomph.jpg}
+\begin{figure}[p]
+\captionsetup{width=0.8\textwidth}
+\includegraphics[width=0.8\textwidth, center]{Triomph.jpg}
 \caption{The outer shape of pumpjets on the aft end of torpedoes or submarines, such as this one on the French Triomphant class on which the Barracuda's jet will be based, may understate the degree of deceleration that the duct achieves. Credit \cite{reddit2016}}
 \label{fig:Triomph.jpg}
 \end{figure}
@@ -610,8 +671,9 @@ In \cite[8-14]{wislicenus1973}, Wislicenus expands the relationship in the case 
 
 The conclusion of the analysis, and the plotting of these results for certain possible values of $K$ and $\Delta T$ is: "Its outstanding characteristic is that this efficiency approaches zero rather than unity for $\Delta V / V_0 = 0$, even for small duct losses".
 
-\begin{figure}
-\includegraphics[width=\textwidth]{PumpjetEfficiency.png}
+\begin{figure}[h]
+\captionsetup{width=0.6\textwidth}
+\includegraphics[width=0.7\textwidth, center]{PumpjetEfficiency.png}
 \caption{Ideal jet efficiencies sharply appoach zero at low values of $\Delta V / V_0$, where as ideal propeller efficiencies without a duct $K = 0$ approach unity. Credit: \cite{wislicenus1973}}
 \label{fig:PumpjetEfficiency.png}
 \end{figure}
@@ -622,8 +684,9 @@ Charts such as these are generally used with dimensionless ratios on the axes (s
 
 For context, the equations developed by Wislicenus are used for the purposes generally of selecting the ideal propulor diameter, which can be made larger in the case of a propeller to access higher ideal efficiencies.  This is an opportunity which is constrained in the case of jets because the efficiency diminishes at very low values of $\Delta V / V_0$.  This is quite a different constraint to other "practical" considerations as some have suggested, such as weight, or space constraints.  Open propellers may advantageously choose to lower their values of $\Delta V / V_0$ as low as 0.1 in order to obtain ideal efficiencies \parencite{wislicenus1973}.  This still provides a hard limit on potential improvements that can be attained for a pump-jet that has non-zero duct loss.
 
-\begin{figure}
-\includegraphics[width=\textwidth]{EfficiencyBrandau.png}
+\begin{figure}[h]
+\captionsetup{width=0.5\textwidth}
+\includegraphics[width=0.5\textwidth, center]{EfficiencyBrandau.png}
 \caption{Alternative derivations of ideal jet efficiency also show sharply declining efficiency for low values of $\Delta V / V_0$ Credit: \cite{brandau1967}}
 \label{fig:EfficiencyBrandau.png}
 \end{figure}
@@ -632,14 +695,15 @@ The structure of these curves is found to be overall quite similar for both pump
 
 Care should be taken, however, to note that different graphs for efficiency can be produced which have different variables on the x axis.  For example, \cite[247]{mollard2011} a graph of ideal efficiency of a pump jet is shown using the speed of advance divided by the jet speed, or $V_1/V_2$.  Given that the x axis used in the previous charts used $\Delta V / V_0$, which would be related to $V_2-V_1$ in this case, this has the effect of reversing the effective direction of the chart and changing its shape. In this case, for a fixed jet and vessel design, high-speed operations will be towards the left of the chart, and the precipitous decline in efficiency will occur as speed declines to zero, along with thrust, toward the right of the chart, which can be known to correspond to waterspeeds declining to zero at $V_1/V_2=1$.
 
-\begin{figure}
-\includegraphics[width=\textwidth]{EfficiencyMollard.png}
+\begin{figure}[h]
+\captionsetup{width=0.6\textwidth}
+\includegraphics[width=0.6\textwidth, center]{EfficiencyMollard.png}
 \caption{Other modern reference texts might demonstrate jet or propeller efficiencies with different x-axes, effectively reversing the way the graph should be understood for a single system operating at different speeds. Credit:  \cite{mollard2011}}
 \label{fig:EfficiencyMollard.png}
 \end{figure}
 
-\begin{figure}
-\includegraphics[width=\textwidth]{EfficiencyBulten.png}
+\begin{figure}[h] \captionsetup{width=0.6\textwidth}
+\includegraphics[width=0.8\textwidth, center]{EfficiencyBulten.png}
 \caption{Another graph representing efficiency as a function of the ratio of jet velocity to incoming velocity, which shows efficiency declining at low thrust (to the right).  The impact of increasing duct losses can be clearly seen, as opposed to the 'ideal' propeller without a duct. Credit: \cite{bulten2006numerical}}
 \label{fig:EfficiencyBulten.png}
 \end{figure}
@@ -648,7 +712,7 @@ These types of charts correspond more closely in orientation and trend that the 
 
 Readers may observe that the efficiency for all propellers also decline to zero at the other end of the spectrum, most sharply at a point where $J$ equals or exceeds the pitch ratio of the propeller.  As discussed earlier, these correspond to cases where the propeller is slicing along its helical path without exerting any force to move water backwards, or when the slip ratio is zero.  In this circumstance, the rotation of the propeller would not push any net water backwards, and simply act as a paddle-wheel needlessly spinning water.  Such circumstances are unlikely to occur to a significant degree unless a vessel was decelerating, or experienced some other force to assist its propulsion.  It is possible that at extremely low speeds a propeller could somewhat descend to the right of optimal advance ratio, when very dramatically reduced load was encounterd because of the extreme low speed, as might be suggested by the slight reduction in propulsive efficiency of the propeller below 5kt in the BMT study.  These losses of efficiency, however, could never supercede those of a decelerating ducted propeller or jet, which has the shroud which necessarily imposes an \textbf{additional} drag to the watercolumn in excess of any other resistance faced by the rotor.  This effect can be seen clearly even or an accelerating duct, as shown in \ref{fig:PropDuct.png}.
 
-\begin{figure}
+\begin{figure}[h] \captionsetup{width=0.5\textwidth}
 \includegraphics[width=\textwidth]{PropDuct.png}
 \caption{Even the addition of an accelerating ducts substantially reduces efficiency of propellers at very low loadings, or for constant loads, low speeds.  Maximum attainable efficiency is also reduced. Their benefit lies in the bulging of the curve at low advance ratios (higher loads).  Credit: \cite[6]{willemsen2013}}
 \label{fig:PropDuct.png}
@@ -656,8 +720,9 @@ Readers may observe that the efficiency for all propellers also decline to zero 
 
 It should be clear from the above analysis that the efficiency of a pumpjet falling towards zero with a vessel's waterspeed is an enduring and foundational result of basic physics.  The addition of negative thrust on a decelerating duct, no matter how small, requires that efficiency must decline at some point with with blade loading, in contrast with an ideal propeller which rises to unity.  This explains the overall shape given by the the mysterious unquantified chart cited by Andrew Davies \parencite{davies2017} and Access Economics \parencite{stanford2017} shown \ref{fig:PumpUp.png}, and is also consistent with the shapes plotted by more recent studies as shown above, and those presented in other modern publications studying the use of pumpjets \parencite{giles2010} and waterjets \parencite{fujisawa1995}.
 
-\begin{figure}
-\includegraphics[width=\textwidth]{PumpUp.png}
+\begin{figure}[h]
+\captionsetup{width=0.5\textwidth}
+\includegraphics[width=0.6\textwidth, center]{PumpUp.png}
 \caption{The mysterious efficiency comparison chart which has been doing the rounds in the Australian debate probably quite reasonably reflects theoretical physical limits of 'ideal' pumpjets and propellers. Credit: \cite{stanford2017}}
 \label{fig:PumpUp.png}
 \end{figure}
@@ -676,14 +741,16 @@ As noted in \cite{henderson1964}, the key constraint of this variable is that in
 
 It should also noted that in order to substantially increase the opening area of the propeller, the difference between the velocity of movement at the blades nearer to the root (close to the hub) and the extremities of the blades increases substantially.  In order for equivalent work to be done on all of the water distributed radially across area of the impeller, quite a different blade shape might be required, in order to provide a higher deflection of the water close to the root. In these areas, there is increase probability of flow separation occurring, where the velocity of movement of the water across the surface is insufficient to overcome the pressure gradient required to move over the blades.  (In a pump, the pressure necessarily increases as work is done on it.)  Or, since there isn't enough pressure exerted on the whole of the water column to overcome the resistance imposed by the duct, not all of the water moves forward, and some starts to move backwards.  This leads to flow separation, or stall occurring close to the blade roots, which dramatically diminishes the efficiency of the system. A further discussion of this effect can be found in \cite[15,27]{henderson1964},  \cite[807,8012]{bruce1974},  \cite[185]{wislicenus1973}, \cite[60]{mcbride1979} and many other related texts.  This is a general problem that affects a range of axial-flow turbomachinery, particulalry operating in off-design conditions, and will present a general concern for the design of a new pumpjet \cite[185]{wislicenus1986}, \cite{li2013}.
 
-\begin{figure}
-\includegraphics[width=\textwidth]{stall.png}
+\begin{figure}[h]
+\captionsetup{width=0.6\textwidth}
+\includegraphics[width=0.6\textwidth, center]{stall.png}
 \caption{Flow separation, or stall, can occur when the flow over the blades of a pump slows too much, as shown in \cite{li2013}}
 \label{fig:stall.png}
 \end{figure}
 
-\begin{figure}
-\includegraphics[width=\textwidth]{backflow.png}
+\begin{figure}[h]
+\captionsetup{width=0.8\textwidth}
+\includegraphics[width=0.8\textwidth, center]{backflow.png}
 \caption{Stall results in water flowing backwards near the hub of the blades at low flow rates, as shown in \cite{li2014rotating}}
 \label{fig:backflow.png}
 \end{figure}
@@ -701,7 +768,7 @@ In addition, whilst it is often demonstrated that for a given propeller under ce
 
 In other words, the use of highly loaded propellers in such applications is actually particular to design constraints that are unlikely to be present for a submarine, which can position the propeller at the tail of its body, directly behind its centre of mass and drag, and consequenlty have freedom about the optimal size of the blades.  It is well known that a duct cannot improve the performance of a low-loaded propeller which would be the situation for a slow-moving vessel with unconstrained propeller size.  Authoritative references in the literature include \cite{oosterveld1970}, who calculates the minimum thrust coefficient $C_T$ (a measure of loading) for an accelerating duct to improve a propellers performance to be between 1 and 2, as shown in \ref{fig:AcceleratingIdeal.png}.
 
-\begin{figure}
+\begin{figure}[h] \captionsetup{width=0.5\textwidth}
 \includegraphics[width=\textwidth]{AcceleratingIdeal.png}
 \caption{Calculations of 'ideal' efficiencies of accelerating ducts (neglecting drag) in \cite{oosterveld1970} show that a duct can only improve the efficiency of a propeller if it is loaded above a certain degree, and that longer ducts produce better improvements in 'ideal' efficiencies}
 \label{fig:AcceleratingIdeal.png}
@@ -711,49 +778,60 @@ A parallel design change in the switch away from the degree of deceleration in t
 
 Numerous efforts to find suitably compromised duct shapes exist, but even advanced modern designs still exhibit declining efficiency at low speeds, as well as some cavitation during operations at design loads, which still tend to imply relatively high speeds, for example 27kt in \ref{fig:FineOptimised.png} .  Consideration of accelerating duct designs for a military submarine would be extremely unlikely, and be a profound departure from any existing pumpjet designs.
 
-\begin{figure}
-\includegraphics[width=\textwidth]{FineOptimised.png}
-\caption{Extensive work has been done exploring compromise designs for decelerating ducted propellers (pumpjets), including with very modest deceleration in the intake, limited shroud taper, short duct lengths, or essentially incporate some of the advantages of accelerating ducts. Credit: \cite{abdel2010}}
+\begin{figure}[h]
+
+\begin{subfigure}{0.5\textwidth}
+\includegraphics[width=0.9\linewidth]{FineOptimised.png}
+\caption{}
+\end{subfigure}
+\begin{subfigure}{0.5\textwidth}
+\includegraphics[width=0.9\linewidth]{FineCavitation.png}
+\caption{}
+\end{subfigure}
+
+\caption{(a) Extensive work has been done exploring compromise designs for decelerating ducted propellers (pumpjets), including with very modest deceleration in the intake, limited shroud taper, short duct lengths, or essentially incporate some of the advantages of accelerating ducts. (b) TAt optimally efficient conditions (corresponding to 27kt) such designs still exhibit some cavitation. Credit: \cite{abdel2010}}
 \label{fig:FineOptimised.png}
 \end{figure}
 
-\begin{figure}
-\includegraphics[width=\textwidth]{FineEfficiency.png}
+\begin{figure}[h]
+\captionsetup{width=0.7\textwidth}
+\includegraphics[width=0.7\textwidth, center]{FineEfficiency.png}
 \caption{In experimental testing such designs still exhibit sharply falling effiency at high advance ratios, or low speed. Credit:  \cite{abdel2010}}
 \label{fig:FineEfficiency.png}
 \end{figure}
 
-\begin{figure}
-\includegraphics[width=\textwidth]{FineCavitation.png}
-\caption{TAt optimally efficient conditions (corresponding to 27kt) such designs still exhibit some cavitation. Credit: \cite{abdel2010}}
-\label{fig:FineCavitation.png}
-\end{figure}
 
 \subsubsection{Reduce shroud length to decrease drag on duct}
 The reduction of the length of the shroud in order to reduce drag presents another possible means to lower the duct resistance, as shown and discussed in \cite[21-25]{oosterveld1970}. The fundamental difficulty with greatly shortening a duct, however, is that it requires that any changes in the shape and with of the water column be accomplished much shorter distance for the duct to achieve its desired effect, which means that generally it has to achieve less of it.  This means that very low duct lenghts achieve less of an efficiency improvement to the ideal efficiency of a propeller, in those circumstances where they can achieve an improvement  (accelerating ducts at high loads), as discussed above.
 
 If more aggressive shape changes are attemped in a limited space, the deflections of flow and pressure gradients become much more extreme. This leads to a far greater propensity for flow separation to occur.  This can happen inside the duct ahead of the stator, particulalry when any degree of diffusion occurs in order to elevate static pressure at the blades, or any kind of direction change is required as in the case of waterjets. Unlike waterjets, pumpjets also have the potential for separation on the exterior surface, which is an additional concern in the design of duct \cite[13]{henderson1964}.  Given the role of the duct is to change the speed of the flow at the impeller relative to what would occur in its absence (in particular to decelerate it) separation might tend to occur on different surfaces in different operating conditions, depending on the relative pressure gradients and velocity ratios they experience at different speeds and loads.  This substantially complicates the challenge of designing a duct that performs well across a wide speed range. This is illustrated for the case of a waterjet in \cite[20]{bulten2006numerical}.  Equivalent complexities occur in pumpjets operating in low speed ranges (2-6kt, where flow separation occurs ahead of the impeller, inside the shroud.  In the case of an accelerating duct, this phenomenon is also observed on the outside of the shroud at high advance ratios (the equivalent of low speeds and low loads) as shown and discussed in some detail in \cite{willemsen2013}.
 
-\begin{figure}
-\includegraphics[width=0.5\textwidth]{LowIVR.png}
-\caption{A an intake may experience risks of flow separation even at low speeds (Inlet Velocity Ratio) on some surfaces due to certain flow deflections being more severe. Source: \cite{bulten2006numerical}}
+\begin{figure}[h]
+
+\begin{subfigure}{0.5\textwidth}
+\includegraphics[width=0.9\linewidth]{LowIVR.png}
+\caption{}
+\end{subfigure}
+\begin{subfigure}{0.5\textwidth}
+\includegraphics[width=0.9\linewidth]{HighIVR.png}
+\caption{}
+\end{subfigure}
+
+\caption{(a) A an intake may experience risks of flow separation even at low speeds (Inlet Velocity Ratio) on some surfaces due to certain flow deflections being more severe. (b) A an intake may experience risk of flow separation on different surfaces at high speeds (Inlet Velocity Ratio) where other flow deflections are more severe. Source: \cite{bulten2006numerical}}
 \label{fig:LowIVR.png}
 \end{figure}
 
-\begin{figure}
-\includegraphics[width=\textwidth]{HighIVR.png}
-\caption{A an intake may experience risk of flow separation on different surfaces at high speeds (Inlet Velocity Ratio) where other flow deflections are more severe. Source: \cite{bulten2006numerical}}
-\label{fig:HighIVR.png}
-\end{figure}
 
-\begin{figure}
+
+\begin{figure}[h]
 \includegraphics[width=\textwidth]{DuctSeparation.png}
 \caption{Flow separation occurs at on the outside of an accelerating duct at high $J$ values, which corresponds to low loads, or speeds. For high $J$ values, the pressure reduction on the inside of the duct, creating positive duct thrust, can be seen. Source: \cite[73]{willemsen2013}}
 \label{fig:DuctSeparation.png}
 \end{figure}
 
-\begin{figure}
-\includegraphics[width=\textwidth]{NozzleDrag.png}
+\begin{figure}[h]
+\captionsetup{width=0.7\textwidth}
+\includegraphics[width=0.7\textwidth, center]{NozzleDrag.png}
 \caption{Dramatically reducing the length of a duct relative to its diameter ($L/D$) as shown in \cite{oosterveld1970} can reduce its drag, which has the most significant impact at low thrusts or speeds.}
 \label{fig:NozzleDrag.png}
 \end{figure}
@@ -800,15 +878,16 @@ The higher assumption curve used for the propeller approaches a maximum of just 
 
 The lower propeller curve shows efficiency still increasing up to around 65\% at 20kt, which might be consistent with a propeller optimised for conventional ship speeds, but probably not likely for a specialised submarine propeller.  For all propeller curves, sharply declining efficiency has been assumed at very low speeds, (2kt or less), in order to reflect the dip seen below 5kt in the efficiency curve seen in Figure \ref{fig:BMTEfficiency.png}, assuming that this is driven by the decline in efficiency shown in Figure \ref{fig:PropDuct.png} at advance ratios approaching 1.  This has been exaccerbated beyond realistic levels in the case of the the low propeller assumption line for the sake of testing sensitivity more dramatically to some losses in this regime.  It is unlikely that a state-of-the-art submarine propeller would not be able to attain maximum efficiencies between 5 and 15kt, unless some other significant factor not discussed in this paper affects propellers in these regimes. At very low speeds, some small but sudden changes in efficiency may be possible in either direction, particularly as complex effect with multiple overlaid effects take place, for example increasing laminar flow over the propeller blades leading to lower frictional losses, but potentially greater separation.  However, on balance, the low propeller curve is considered relatively unlikely, but useful for investigating sensitivity to errors or adjustments.
 
-\begin{figure}
-\includegraphics[width=\textwidth]{LaminarProp.png}
+\begin{figure}[h]
+\captionsetup{width=0.4\textwidth}
+\includegraphics[width=0.4\textwidth, center]{LaminarProp.png}
 \caption{At very low speeds changes in regimes such as an increase in laminar flow over the blade section could lead to small changes in efficiency, perhaps explaining the distinct rise at low speeds for the properller at ~5kt in Figure \ref{fig:BMTEfficiency.png}}
 \label{fig:LaminarProp.png}
 \end{figure}
 
 These efficiency curve assumptions are shown in Figure \ref{fig:Efficiency_assumptions}.
 
-\begin{figure}
+\begin{figure}[p]
 <<plot_efficiency, echo=FALSE, warning=FALSE, message=F >>=
 df <- suppressMessages(read_csv(find::this("/Submarines/eff-data-2018-01-03.csv")))
 
@@ -856,7 +935,7 @@ Considerable confirmation that these assumptions are realistic can be made by as
 As part of the calculation of results for each pair of efficiency curves, the power requirements of each respective component (propulsion for the two respective systems, as well as effective power required, and hote load) can be plotted to ensure that realistic results are obtained, which is important for selecting plausible values for the constant $C_d$.  For the central efficiency curves, we can show the resultant power curves for the the assumed values of battery load, energy density, and hotel load, as seen in Figure \ref{fig:power_curve}.
 
 
-\begin{figure}
+\begin{figure}[p]
 <<plot_power1, echo=FALSE, warning=FALSE, message=F >>=
 df <- read_rds("extdata/df_full_complete_fac.rds")
 df %>%
@@ -882,9 +961,7 @@ It is clear that under the central assumptions, the declining efficiency of the 
 
 The phenomenon manifests itself in a very substantial reduction in the overall range that can be achieved submerged, and a difference between the speed at which maximum range can be achieved.  Under central assumptions, the propeller driven submarine can reach over 540nm at any speed between 4 and 5kt. The pump-jet driven submarine reaches over 360nm between 3 and 6kt. A difference of 180nm dived range would presumeably be of considerable tactical significance.
 
-
-
-\begin{figure}
+\begin{figure}[p]
 <<plot_results1, echo=FALSE, warning=FALSE, message=F >>=
 df <- read_rds("extdata/df_full_complete_fac.rds")
 df %>%
@@ -904,7 +981,7 @@ df %>%
 \label{fig:central_extreme}
 \end{figure}
 
-\begin{figure}
+\begin{figure}[p]
 <<plot_results2, echo=FALSE, warning=FALSE, message=F >>=
 df <- read_rds("extdata/df_full_complete_fac.rds")
 df %>%
@@ -924,7 +1001,7 @@ df %>%
 \label{fig:central_jet}
 \end{figure}
 
-\begin{figure}
+\begin{figure}[p]
 <<plot_results3, echo=FALSE, warning=FALSE, message=F >>=
 df <- read_rds("extdata/df_full_complete_fac.rds")
 df %>%
@@ -944,7 +1021,7 @@ df %>%
 \label{fig:central_prop}
 \end{figure}
 
-\begin{figure}
+\begin{figure}[p]
 <<plot_results4, echo=FALSE, warning=FALSE, message=F >>=
 df <- read_rds("extdata/df_full_complete_fac.rds")
 df %>%
@@ -973,7 +1050,7 @@ It seems extremely clear from these conclusions that the general results confirm
 
 A further feature of the results is that the relative difference in performance is much more sensitive to changes in the efficiency of the jet at the relevant speeds, owing to their larger proportional impact at low efficiencies.  Whilst a smoothly declining efficiency curve from around or over 50\% at 20kt to zero at 0kt might seem moderately well defined, the precise path taken, particularly the exact level around 3-8kt, is of great importance, substantially more than plausible variations in the propeller curve.  This can be seen in an overlaid plot of the proportional differences in total power demand (hence endurance and range) for the different pairs of curves as in Figure \ref{fig:all_proportions}.
 
-\begin{figure}
+\begin{figure}[p]
 <<plot_proportions, echo=FALSE, warning=FALSE, message=F >>=
 df <- read_rds("extdata/df_full_complete_fac.rds")
 df %>%
@@ -997,21 +1074,11 @@ The proportional improvements will also be effective rough guides to the likely 
 Perhaps surprisingly, the impact at transit speeds is still quite significant, with no scenarios showing less than 20\% advantage around 8-10kt. The sensitivity to pumpjet efficiency here is also very high, with three scenarios showing an impact of over 70\%.  Given the likelihood that a submarine's average speed over its range is likely to be dominated by its transit speed, this indicates that the choice of a pumpjet propulsion system will also result in a substantial reduction in the overall range of the submarine, quite probably in the range of between 25-50\%.  This would require the embarkation of significantly larger volumes of diesel to meet minimum range requirements, and also contribute to higher running costs.
 
 \subsection{Sensitivity to Hotel Load}
+
 As can be seen in Figure \ref{fig:sens_hotel} the difference between the two systems is very sensitive to changes in hotel load, both in proportional and nominal terms.  The impact of halving the hotel load from 100kw to 50kw more than doubles the \textit{difference} between a pumpjet and propeller dived endurances, from around two days to well over four days at speeds between 2.5 and 3.5kt.  In the context of a submarine which might have a nominal dived requirement at patrol speeds in the order of several days, this suggests that extremely large gains can be made by reducing hotel load.  Increasing the hotel load has the noticeable effect of pushing the speed of largest difference to higher speeds, and substantially reducing the total difference. If the hotel load was doubled to 200kW, the middle efficiency curve pair would still see a difference of nearly a day between the two systems, or around 19.5 hours at speeds of 4.5-5 kts.
 
-The difference between pumpjet and propeller propulsion systems in terms of range tends to be found at slightly higher speeds, though this point also moves towards higher speeds as hotel load increases.  With a reduced hotel load of 50kw, the difference between the two systems in the middle scenario is about 370nm for speeds 3.5-4.5kt, substantially greater than the ~200nm around 4.5-5.5kt at a hotel load of 100kW.
 
-It's important to acknowledge that such substantial differences in hotel load merit serious consideration, both in terms system design, as well as for variance in operation of a submarine with a given system design.  As has been discussed, the precise hotel load of submarines is not generally publically available, which justifies senitivity testing around a relatively wide potential range.  The size of the crew required for different designs might vary considerably, as it also would for different missions (for example with the embarkation of a special forces congingent) which would necessarily have considerable impact on energy demand for life support, including sanitation, CO2 scrubbing, and cooking. In addition, it is broadly understood that the AN/BYG-1 combat system consumes substantially more power than other alternatives, reportedly in the order of 100kW \parencite{patrick2011}.
-
-Furthermore, the hotel load may be varied considerably at the captain's discretion depending on operational requirements.  Not all sensors or components of the combat system need to run at all times, for example during long transits in order to reach an operational area, or during a long dive in order to escape an operational area once a large strike has already been conducted.  In wartime, when surfacing to snort within range of enemy airpower or close to naval bases might result in the sumbarine probably being sunk, the crew might willingly forego hot showers, hot meals, and climate-controlled air in order to increase their chances of survival.  Consequently, it is perfectly plausible that changes of hotel load in the order of a factor of two for tactically significant time periods (days) is achievable.  The results of this sensitivity analysis show that the penalty inflicted by the pumpjet will be substantially greater in such circumstances.
-
-The proportional impact of the changes in hotel load area also substantial, and exhibit clearly the same trend of the impact being larger at higher speeds for higher hotel loads. For the efficiency curve pairs that comprise the central selections, decreasing the hotel load to 50kt would see the dived endurance and range of the submarine improved by the adoption of propellers 80\% between 4 and 5.5kt. A much higher hotel load, at 200kW, would see that peak difference over 40\% between 5.5 and 8kt.
-
-It is also clear that increasing the hotel load has a greatly diminised impact on the proportional differences between the systems at higher speeds.  At very high speeds (e.g. 15kt) changes in the hotel load have almost no impact in proportional terms to the difference, which lies at about 30\% in all cases for the central selection of curves. At 9kt, in the region where transit speed is likely to occur, increasing the hotel load by a factor of four (from 50kW to 200kW) only decreases the advantage of the propeller from 48\% to 38\%. Therefore one might say near certainty that any difference between efficiency around these patrol speeds is likely to have a substantial impact on the overall range of the submarine, with differences of much less than 30\% quite unlikely, irrespective of other changes in the submarine design or operation circumstance.
-
-It should also be noted that sensitivity testing has not been shown in this paper around alternative values of the drag coefficient $C_d$ which was solved for by matching peak power output and top speed. It is considered relatively unlikely that such dramatic changes in this constant are plausible.  Furthermore, changing this constant will have a very similar impact to alerations in hotel load, in terms of its affect on the speed where greatest differences will occur and their probable magnitude.  Consequently, consideration of the sensitivity to hotel load is likely to easily encompass the plausible extent, and nature, of the likely uncertainty in this factor.
-
-\begin{figure}
+\begin{figure}[p]
 <<plot_sens_hotel, echo=FALSE, warning=FALSE, message=F >>=
 df <- read_rds("extdata/df_full_diff_cornered.rds")
 df %>%
@@ -1026,7 +1093,8 @@ df %>%
 \label{fig:sens_hotel}
 \end{figure}
 
-\subsection{Sensitivity to Battery Changes}
+The difference between pumpjet and propeller propulsion systems in terms of range tends to be found at slightly higher speeds, though this point also moves towards higher speeds as hotel load increases.  With a reduced hotel load of 50kw, the difference between the two systems in the middle scenario is about 370nm for speeds 3.5-4.5kt, substantially greater than the ~200nm around 4.5-5.5kt at a hotel load of 100kW.
+
 
 Changes in the effective battery energy density will have the same effect as having larger masses of battery stored.  They equivalently impact the total amount of energy available for consumption before recharging batteries while snorkeling. There is therefore no shift in the proportional impact on range and endurance due to this factor, as can be seen in the lower graphs in Figure \ref{fig:sens_battery}.  The nominal impact, however increases directly and linearly with the total energy stored.
 
@@ -1034,13 +1102,18 @@ The results in nominal terms are striking in their magnitude.  In terms of endur
 
 In terms of submerged range, the same proportional impact is also extremely significant.  Doubling the energy stored inceases the \textit{difference} between two otherwise identical submarines to over 400nm under central assumptions at 4.5kt.  That's a larger distance than the width of the Java Sea, the most central body of water in the Indonesian Archipelago, or most of the length of the Malacca Strait.  The tactical significance of such distances are not likely to be lightly dismissed. If far smaller amounts of energy are embarked, the nominal differences reduce to perhaps 100nm, in direct proportion to the reduction of the submarine's dived endurance.  This is still a non-trivial distance in terms of it's tactical signicance, and comprises a substantial fraction of the dived ranges of most non-AIP submarines.  It still represents a significant difference in operational terms, equal approximately to the width of Hainan Island, or neraly twice the length of the Sunda Strait.
 
-The singificant range of different energy density values tested here reflect quite plausibly some of ranges of different energy levels available in operation.  For instance, as has been discussed \parencite{briggs2016, greenfield2016}, lead acid batteries may well only be able to practically utilise about 50\% of their total energy stores for tactical operaions, unless operating in a very low-threat environment and undertaking very slow charging to reach the maximum full charge is possible. In addition, the plausible improvement in enery density of lithium batteries may well be in the order of a factor of two in practice \parencite{greenfield2016}, though theoretical limits of the chemistry suggest much higher may be possible \parencite{davies2016}.
+
+It is also clear that increasing the hotel load has a greatly diminised impact on the proportional differences between the systems at higher speeds.  At very high speeds (e.g. 15kt) changes in the hotel load have almost no impact in proportional terms to the difference, which lies at about 30\% in all cases for the central selection of curves. At 9kt, in the region where transit speed is likely to occur, increasing the hotel load by a factor of four (from 50kW to 200kW) only decreases the advantage of the propeller from 48\% to 38\%. Therefore one might say near certainty that any difference between efficiency around these patrol speeds is likely to have a substantial impact on the overall range of the submarine, with differences of much less than 30\% quite unlikely, irrespective of other changes in the submarine design or operation circumstance.
+
 
 Only brief consideration is given here to the impact of Air Independent Propulsion, which has substantially higher energy densities possible even than Lithium, and also amounts to the addtional embarkation of greater mass. The volumetric energy density of the feedstocks to modern AIP systems (liquid oxygen and methanol) is estimated to be approximately ten times greater than that of lead-acid batteries \parencite{davies2016}, around 4.5MJ/L.  Given the greater mass embarked, and additional studies suggesting that at constant speeds they might extend the dived endurance of a modern submarine from around 60 hours to over 1000 hours (a factor of roughly sixteen) \parencite{buckingham2008submarine} an approximate estimation of the the direction and magnitude of this impact may by scaling up energy density by this factor.  This would amount to adding three further frames to the right of Figure \ref{fig:sens_battery}, with the energy density being doubled in each successive frame. This would plausibly (under the central line selections) amount to more than a month of dived endurance \textit{difference} between AIP inclusive submarines with propellers or pumpjets, amounting to thousands of nautical miles of continuously submerged travel.  This difference would also now be material in terms of the overall range of the submarine amounting to a further 15-20\% reduction in the submarine's overall range.
 
-With such massive differences between the performance of the two systems emerging with the presence of the AIP, it is difficult to see how one could realistically consider a pumpjet as being competitive if a direct comparison were made.
 
-\begin{figure}
+\subsection{Sensitivity to Battery Changes}
+
+Changes in the effective battery energy density will have the same effect as having larger masses of battery stored.  They simply directly impact the total amount of energy available for consumption before recharging batteries while snorkeling. There is therefore no shift in the proportional impact on range and endurance due to this factor, as can be seen in the lower graphs in Figure \ref{fig:sens_battery}.  The nominal impact, however increases directly and linearly with the total energy stored.
+
+\begin{figure}[p]
 <<plot_sens_battery, echo=FALSE, warning=FALSE, message=F >>=
 df <- read_rds("extdata/df_full_diff_cornered.rds")
 df %>%
@@ -1055,6 +1128,16 @@ df %>%
 \label{fig:sens_battery}
 \end{figure}
 
+The results in nominal terms are striking in their magnitude.  In terms of enduracy, doubling the stored electrical energy, for example by adopting lithium batteries, increase the \textit{difference} between the two systems under the central efficiency curve assumptions to nearly four days (93 hours) at 4kt.  Given that most modern, capable submarines are estimated to only be able to achieve dived endurances between 60 and 100 hours on batteries at 4kt \parencite{buckingham2008submarine} this cannot be dismissed in terms of its tactical significance.  Even under the eficiency curve assumptions representing the narrowest spearation considered, the difference in this case would be 59 hours, almost equal to the estimated dived endurance of a Type214 operating without AIP.
+
+The in terms of submerged range, the same proportional impact is also extremely significant.  Doubling the energy stored inceases the \textit{difference} between two otherwise identical submarines to over 400nm under central assumptions at 4.5kt.  That's a larger distance than the width of the Java Sea, the most central body of water in the Indonesian Archipelago, or most of the length of the Malacca Strait.  The tactical significance of such distances are not likely to be lightly dismissed. If far smaller amounts of energy are embarked, the nominal differences reduce to perhaps 100nm, in direct proportion to the reduction of the submarine's dived endurance.  This is still a non-trivial distance in terms of it's tactical signicance, and comprises a substantial fraction of the dived ranges of most non-AIP submarines.  It still represents a significant difference in operational terms, equal approximately to the width of Hainan Island, or neraly twice the length of the Sunda Strait.
+
+The singificant range of different energy density values tested here reflect quite plausibly some of ranges of different energy levels available in operation.  For instance, as has been discussed \parencite{briggs2016, greenfield2016}, lead acid batteries may well only be able to practically utilise about 50\% of their total energy stores for tactical operaions, unless operating in a very low-threat environment and undertaking very slow charging to reach the maximum full charge is possible. In addition, the plausible improvement in enery density of lithium batteries may well be in the order of a factor of two in practice \parencite{greenfield2016}, though theoretical limits of the chemistry suggest much higher may be possible \parencite{davies2016}.
+
+Only brief is given here to the impact of Air Independent Propulsion, which has substantially higher energy densities possible even than Lithium, and also amounts to the addtional embarkation of greater mass. The volumetric energy density of the feedstocks to modern AIP systems (liquid oxygen and methanol) is estimated to be approximately ten times greater than that of lead-acid batteries \parencite{davies2016}, around 4.5MJ/L.  Given the greater mass embarked, and additional studies suggesting that at constant speeds they might extend the dived endurance of a modern submarine from around 60 hours to over 1000 hours (a factor of roughly sixteen) an approximate estimation of the the direction and magnitude of this impact may by scaling up energy density by this factor.  This would amount to adding three further frames to the right of Figure \ref{fig:sens_battery}, with the energy density being doubled in each successive frame. This would plausibly (under the central line selections) amount to more than month of dived endurance \textit{difference} between AIP inclusive submarines with propellers or pumpjets, amounting to thousands of nautical miles of continuously submerged travel.  This difference would also now be material in terms of the overall range of the submarine amounting to a further 15-20\% reduction in the submarine's overall range.
+
+With such massive differences between the performance of the two systems emerging with the presence of the AIP, it is difficult to see how one could realistically consider a pumpjet as being competitive if a direct comparison were made.
+
 \subsection{The interaction of hotel load, battery energy density, and efficiency curves}
 It is interesting to observe how the the combination of changes to the hotel load and battery density interact when altered together, as shown in Figure \ref{fig:sens_corners}.  To the extent that each of these effects contribute to increasing or decreasing the relative difference between the systems, the two clearly combine in a multiplicative fashion.
 
@@ -1064,10 +1147,13 @@ The most striking feature of this figure however is the impact on the submarine'
 
 This sort of extreme sensitivity ought to have a significant bearing on how the overall performance specifications of the submarine are defined, as seemingly incremental changes to hotel load and electrical energy stores are likely to substantially magnified, or muted, by the choice of propulsion system.
 
-\begin{figure}
-<<plot_sens_corners, echo=FALSE, warning=FALSE, message=F >>=
+Writing a paragraph here...
+
+\begin{figure}[p]
+<<plot_sens_corners, echo=FALSE, warning=FALSE, message=F>>=
 df <- read_rds("extdata/df_full_diff_cornered.rds")
 df %>%
+  mutate(corner = str_replace(corner, ", ", "\n")) %>%
   filter(test == "corners") %>%
   ggplot(aes(x = kts, y = val, col = pair))+
   geom_line()+
@@ -1099,15 +1185,16 @@ Whilst a range of very particular and intricate phenomena may be at work, perhap
 \subsection{The impact of depth on cavitation}
 It is also crucial to understand that increasing depth necessarily increases the static pressure throughout a propulsion system.  As such, the speed at which cavitation starts to occur will necessarily be a function of depth.  Approximately every 10m of water adds approximately the equivalent of an atmosphere of pressure.  As such, the static pressure a system experiences at 10m depth will be half that experienced at 30m (since the air in the atmosphere comprises the first atmosphere of pressure).  Consequently, diving deeper will necessarily increase the speeds one can achieve without any cavitation occurring \ref{fig:InceptionDepth.png}.
 
-\begin{figure}
-\includegraphics[width=\textwidth]{InceptionDepth.png}
+\begin{figure}[h]
+\captionsetup{width=0.7\textwidth}
+\includegraphics[width=0.7\textwidth, center]{InceptionDepth.png}
 \caption{Increasing in depth improves the speed achievable before cavitation begins to occur, as shown in the case of a torpedo \parencite{suryanarayana2010cavitation}}
 \label{fig:InceptionDepth.png}
 \end{figure}
 
 The interaction of these two relationships can be expressed in a general form in figure \ref{fig:InceptionContours}, which has been generated using an approxiate numeric model. As can be seen here, at very low speeds, modest changes in depths can achieve considerable additional surplus pressure in order to prevent cavitation.  However at much higher speeds, since the pressure diffential scales with the square of the velocity travelled, far greater additional depths are required to achieve sufficient excess static to supress cavitation for a give further speed increase.  Whilst certain system parameters such as the blade area and design (or duct design) will have a significant impact on which curve a particular system lies upon, the overall trend of a parabolic cavitation free "bucket" prevailing at low speeds and large depths will generally be robust.  This is confirmed by the close resemblance between the curve shapes found by an experiment on a torpdo in Figure \ref{fig:InceptionDepth.png}, and the numerical model found in Figure \ref{fig:InceptionContours}.
 
-\begin{figure}
+\begin{figure}[p]
 <<plot_inception, echo=FALSE, warning=F, message=F>>=
 speed <- rep(seq(0.5,20,0.5),90)
 VP. <- c(rep(1.228*1000,40), rep(2.339*1000,40), rep(4.245*1000,40))
@@ -1148,8 +1235,9 @@ It is noteworthy also that the vapour pressure of water is an important componen
 \subsection{The significance of flow separation}
 The addition of a duct will necessarily lead to flow separation occuring on the inside of the duct opening at some very low speeds which correspond to high advance ratios when load remains constant.  Flow separation tends to lead to vortex shedding, which means that inconsistent flows (vortices) are then ingested into the blades of the impeller.  This effect is well known and documented.  A good example is shown on the exterior of an \textbf{accelerating} duct at $J = .8$ in \cite{willemsen2013}.
 
-\begin{figure}
-\includegraphics[width=\textwidth]{VortexShedding.png}
+\begin{figure}[h]
+\captionsetup{width=0.5\textwidth}
+\includegraphics[width=0.6\textwidth, center]{VortexShedding.png}
 \caption{Vortex shedding following a flow separation leads to eddies being released unsteadily into the main flow stream, as shown here on the exterior of an accelerating duct.  In the case of decelerating duct (pumpjet), duct shape is inverted, leading to the vortices being shed into the impeller blades. \parencite{willemsen2013}}
 \label{fig:VortexShedding.png}
 \end{figure}
@@ -1157,7 +1245,7 @@ The addition of a duct will necessarily lead to flow separation occuring on the 
 Whilst at very low power levels or at good depths, it is quite plausible that this doesn't result in any cavitation, which would normally be a likely occurrence if the blades are operating closer to their design power and such such vortices were shed into the intake.  However, given the inherently unpredictable and unsteady nature of such vortex formation and shedding, this phenomenon would increase the risk of cavitation occurring unexpectedly in marginal conditions.  In addition, in the absence of cavitation, the sudden and changing pressure gradients over the blades would dramatically increase the overall pressure fluctuations and turbulence level that occurs within the propulsor.  This would necessarily increase the overall levels of noise generated.  It is plausible that the noise is of sufficiently low level that it is not considered a significant compromise of stealth.  However, it is almost certainly untrue that that pumpjet actually generates less noise overall than a propeller at very low speeds.
 
 \subsection{The impact of duct shielding}
-The presence of the duct around the impeller may also have the effect of preventing the noise from being effectively radiated away from the propulsor.  This may well result in substantial reductions in some types of noise being radiated away from the propulsor in certain directions, which may have given rise to the consistent qualification of 'radiated' being used to descrive the type of noise which differentiated the French submarine bid \parencite{stewart2016} \parencite{davies2017} \parencite{ohff2016}, including by the designers of the submarine \parencite{autret2016}.  This is a secondary effect, quite separate to the avoidance of cavitation, which might be seen as an acoustic advantage in circumstances where cavitation might not be expected to occur on either type of propulsor.  It is highly likely that this is the effect which is relied upon to sustain claims that a pumpjet is generally acoustically superior to a propeller, including at low speeds.
+The presence of the duct around the impeller may also have the effect of preventing the noise from being effectively radiated away from the propulsor.  This may well result in substantial reductions in some types of noise being radiated away from the propulsor in certain directions, which may have given rise to the consistent qualification of 'radiated' being used to descrive the type of noise which differentiated the French submarine bid (\cite{stewart2016}, \cite{davies2017}, \cite{ohff2016}), including by the designers of the submarine \parencite{autret2016}.  This is a secondary effect, quite separate to the avoidance of cavitation, which might be seen as an acoustic advantage in circumstances where cavitation might not be expected to occur on either type of propulsor.  It is highly likely that this is the effect which is relied upon to sustain claims that a pumpjet is generally acoustically superior to a propeller, including at low speeds.
 
 It should be noted here that shielding effects might comprise the combination two distinct and seperate physically phenomenon: reflection and damping.  Noise tends to be reflected very effectively off hard, smooth surfaces representing the boundary between mediums of very different density (such as steel and water).  Changes in density which are gradual, often representing soft, squishy, or broken surfaces tend, to have the effect of absorbing sound, where the acoustic energy is converted to heat or degradation of the material, rather than reflecting it.  Given the significance of increased drag on any surfaces within the propulsor, it is highly unlikely that any attempt at damping is made within the pumpjet.  However, it should be noted that some pumpjets have been constructed with a hollow design, in order to reduce weight \parencite{harvie1965construction}, which would reduce the thickness of solid steel, though offer some potential opportunity for damping.  Overall, damping is increased in its effectiveness at low frequencies by allowing it to occur over larger distances, corresponding to the sound's increased wavelength, leading to increased thickness of the transition substance or damping material.  Consequently, effective damping within the propulsor itself is unlikely to be attempted, or limited to medium and higher frequencies, probably suited to reducing noise from normal surface flow turbulence and very early onset cavitation.
 
