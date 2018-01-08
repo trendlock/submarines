@@ -18,9 +18,23 @@
 
 \sortlist[entry]{none/global/}
   \entry{naval2018}{misc}{}
+    \name{author}{1}{}{%
+      {{hash=GN}{%
+         family={Group},
+         familyi={G\bibinitperiod},
+         given={Naval},
+         giveni={N\bibinitperiod},
+      }}%
+    }
+    \strng{namehash}{GN1}
+    \strng{fullhash}{GN1}
+    \field{labelnamesource}{author}
     \field{labeltitlesource}{title}
-  \field{howpublished}{\urlhttp://naval-group.com.au/futuresubmarines/barracuda.php}
-    \field{title}{The Shortfin Barracuda Bloack 1A}
+    \field{note}{Accessed 2018-01-08}
+    \field{title}{The Shortfin Barracuda Bloack}
+    \verb{url}
+    \verb http://naval-group.com.au/futuresubmarines/barracuda.php
+    \endverb
   \endentry
 
   \entry{stewart2016}{article}{}
@@ -473,7 +487,6 @@
     \field{labelnamesource}{author}
     \field{labeltitlesource}{title}
     \field{labelyear}{1988}
-    \field{pages}{14}
     \field{title}{Principles of naval architecture}
     \verb{url}
     \verb http://opac.vimaru.edu.vn/edata/EBook/Principles%20of%20Naval%20achit
@@ -969,15 +982,15 @@
     \field{year}{1966}
   \endentry
 
-  \entry{reddit2016}{article}{}
+  \entry{reddit2016}{misc}{}
     \name{author}{1}{}{%
-      {{hash=s}{%
-         family={silence_hr},
-         familyi={s\bibinitperiod},
+      {{hash=S}{%
+         family={Silence\_hr},
+         familyi={S\bibinitperiod},
       }}%
     }
-    \strng{namehash}{s1}
-    \strng{fullhash}{s1}
+    \strng{namehash}{S1}
+    \strng{fullhash}{S1}
     \field{labelnamesource}{author}
     \field{labeltitlesource}{title}
     \field{labelyear}{2016}
