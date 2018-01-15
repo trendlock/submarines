@@ -1032,6 +1032,54 @@ df %>%
 \label{fig:sens_corners}
 \end{figure}
 
+\subsection{Indiscretion Ratios}
+Indiscretion Ratios represent the fraction of time that a submarine must spend on the surface snorting (running diesel engines) in order to maintain a constant speed.  In order to calculate the Indiscretion Ratio, it is necessary to know how much power the diesel engines are able to generate when running while snorting, and how much energy (net of any efficiency losses, hotel load, and power drawn to maintain propulsion) can be directed to recharging the batteries. Reliable information regarding the arrangement of engines, generators is not generally available in the public domain.  However, from \cite{patrick2012}, it can be seen that credible submarine designs might include diesel engines that have a total capacity in the region of 85\% of the maximum power output of the main motor.  Assuming that there are some necessary losses in the generation and recharging process, and plausibly some increase in the hotel load for the operation of additional systems, fur the purposes of this assessment it is assumed that while snorting approximately 5MW might be available to meet propulsion and normal hotel load requirements, and any surplus can be directed towards charging batteries.
+
+The fraction of time required to charge the batteries to a given level at a given speed, relative to the amount of time that the batteries could sustain the submarine at the same speed, then results in an indiscretion ratio.  For similar assumptions to those used for central scenarios, including that hotel load is 100kW, 500tonnes of batteries are embarked, and the energy density of the batteries is that of lead-acid at 0.14MJ/kg, the results for the different efficiency curves considered for the two propulsion systems can be seen in Figure \ref{fig:IRs}.  It should be noted that since the precise machinery choices for the likely submarine cannot be known with great confidence, the indiscretion ratio levels here at any given point have high uncertainties attached.  However, the relative difference between indiscretion ratios at different speeds (the shape of the curve) as well as the difference between the two systems, should be closely resemblant of a real comparison of otherwise identical submarines, even if the level is somewhat shifted.
+
+The graph in \ref{fig:IRs} shows that very low indiscretion ratios, below 5\%, could be plausible for either system at very low speeds under 3kt.  However, these very low indiscretion ratios do not last for a significant range of speeds for the pumpjet system. Whilst for a propeller driven submarine, such very low rates of indiscretion last up to around 6kt, pumpjet propelled submarines are likely to start to see their indiscretion ratios start rising significantly after 4kt. In the region of transit speeds, around 8-10kt, the difference between the two systems becomes clear and substantial.
+
+It should be noted that these plots only extend to 13kts, in contrast to previous plots which extend to 20kt.  Since the propulsive power required to reach higher speeds can consume effectively all the power produced by the diesel engines, and then even exceed it at some speeds, the indiscretion ratios calculated by the method above become extremely large or negative, and don't assist in useful comparison.
+
+\begin{figure}
+<<plot_IR, echo=FALSE, warning=FALSE, message=F>>=
+df <- read_rds("extdata/df_IRs_100.rds")
+df %>%
+  filter(kts < 13.5) %>%
+  ggplot(aes(x = kts, y = IR, col = level, linetype = system))+
+  geom_line(size = 0.8)+
+  scale_color_manual(values = c("black", "blue", "red"))+
+  scale_y_continuous(breaks=seq(0, 1.0, 0.05), name = "Indiscretion Ratio") +
+  scale_x_continuous(breaks=seq(0, 13, 1), name ="speed (kt)")+
+  labs(linetype = "System", col = "Level")
+@
+\caption{Some calculation of plausible indiscretion ratios show that the pumpjet would substantially increase the amount of time spend snorting}
+\label{fig:IRs}
+\end{figure}
+
+
+\begin{figure}
+<<plot_IR_sens, echo=FALSE, warning=FALSE, message=F>>=
+df <- read_rds("extdata/df_IRs_hotels_long.rds")
+df %>%
+  filter(kts < 13.5) %>%
+  ggplot(aes(x = kts, y = value, col = pair))+
+  geom_line()+
+  scale_y_continuous(name = element_blank(),breaks=seq(0, 2.0, 0.1)) +
+  scale_x_continuous( name ="speed (kt)", breaks=seq(0, 14, 1))+
+  labs(col = "Efficiency \nCurve Pair")+
+  facet_grid(key ~ hotel, scales = "free", switch = "y")
+@
+\caption{The additional indiscretion ratio necessitated by a pumpjet, and this difference expressed as a proportion of the indiscretion ratio of a propeller driven submarine. Sensitivity to hotel load is not as great as for endurance or range calculations.}
+\label{fig:IRs_hotel}
+\end{figure}
+
+Figure \ref{fig:IRs_hotel} demonstrates the difference between the two otherwise idendtical submarines' indiscretion ratios as a function of speed, and also what this difference represents as a proportion of the indiscretion ratio at that speed for the submarine as a propeller.  It can be seen here that the indiscretion ratio is generally somewhat less sensitive to variation in hotel load than calculations for range and endurance.  (Indiscretion ratio is also independent of energy density of the batteries, and hence will not be compared.) However, increasing the hotel load does still have the impact of somewhat diminishing the peak difference between the two systems, and moving the point at which the proportional difference peaks to higher speeds.  Where the penalty of the pumpjet on a submarine with a hotel load of 50kW might have the largest impact at 5kt, it the difference would probably be greatest at 6kt and 7kt for a sumbarine with hotel loads of 100kW and 200kW respectively.
+
+The magnitude of the difference is also substantial.  For the central efficiency curve and hotel load assumptions, the pumpjet would cause a sumbarine to increase the time spent snorting for by over 60\% between 5kt and 7.5kt.  One would expect that this would be of considerable tactical consequence. These graphs also demonstrate that the difference does not diminish at higher speeds, infact it begins to increase again above 10kt, as the power required for propulsion begins consume much of the power generated by the diesel engines, and efficiency difference strongly impacts the size of the diminishing surplus available for charging.  It is also clear that the sensitivity to the selection of efficiency curves remains quite strong in this case.  It is clearly plausible that in a range of circumstances the pumpjet could double the time spent snorting.  However, the difference between the lines representing the pair of central efficiency curves, and the narrowest separation, is noticeably smaller, and the impact of chaning hotel load on these lines is also proportionally diminished.  As such, it might be said with considerable confidence that the most likely impact of the pumpjet on indiscetion ratios at any speeds over 4kt will around 40\% or higher.  It would be extremely unlikely that the penalty induced by the pumpjet at speeds of 5kt and above would be any less than 25\%.
+
+
+
 \newpage  \section{Acoustic Considerations} \label{acousticconsiderations}
 
 \subsection{The importance of cavitation inception}

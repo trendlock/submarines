@@ -51,7 +51,7 @@ ls <- df %>%
 ls_comp <- ls %>%
   map( ~ .x %>%
          select(kts, eff.jet, eff.prop) %>%
-         run_subs(hotel = 100,
+         run_subs(hotel = 200,
                   total.batt = 500,
                   batt.dens = 0.14,
                   patrol = 2.5,
@@ -236,11 +236,11 @@ df_full_cornered %>% write_rds("extdata/df_full_diff_cornered.rds")
 
 ########## Time to do some indiscretion ratios (IR)  #############
 
-df_filler <- ls_plots$`Set 3`$power_plot_df
+df_filler <- ls_plots$`Set 1`$power_plot_df
 
 df_filler <- df_filler %>%
-  mutate(pair = "wide",
-         hotel = 100,
+  mutate(pair = "mid",
+         hotel = 200,
          battery = 0.14,
          total.batt = 500)
 
@@ -252,31 +252,78 @@ df_full <- df_full %>%
 ### checking df ###
 df_full %>%
   ggplot(aes(x = kts, y = val, col = pair, linetype = cat))+
-  geom_line()
+  geom_line()+
+  facet_grid(.~hotel, scales = "free")
 
 ### calculations to get IRs ###
 df_IRs <- df_full %>%
   mutate(energy.kJ = total.batt*1000*battery*1000,
-         charge.rate.kw = 5500)
+         charge.rate.kw = 5000)
 
 df_IRs <- df_IRs %>%
   filter(cat %in% c("Propulsion Power Drawn Jet", "Propulsion Power Drawn Propeller"))
 
 df_IRs <- df_IRs %>%
   mutate(endurance.hrs = energy.kJ/(val + hotel)/3600,
-         charge.time.hrs = energy.kJ/charge.rate.kw/3600,
-         IR = charge.time.hrs/endurance.hrs)
+         charge.time.hrs = energy.kJ/(charge.rate.kw-(val + hotel))/3600,
+         IR = charge.time.hrs/endurance.hrs,
+         cat = case_when(str_detect(cat, "Jet") == TRUE ~ "Pumpjet",
+                         str_detect(cat, "Prop") == TRUE ~ "Propeller"),
+         level = case_when(cat == "Pumpjet" & pair == "wide" ~ "Low",
+                           cat == "Propeller" & pair == "wide" ~ "High",
+                           pair == "mid" ~ "Central",
+                           cat == "Pumpjet" & pair == "narrow" ~ "High",
+                           cat == "Propeller" & pair == "narrow" ~ "Low"))
+
+colnames(df_IRs)[2] <- "system"
+
+df_IRs %>% write_rds("extdata/df_IRs_hotels.rds")
 
 plot <- df_IRs %>%
-  ggplot(aes(x = kts, y = IR, col = cat))+
-  geom_line()+
-  scale_y_continuous(breaks=seq(0, 1.3, 0.1),
-                     name = "IR") +
-  scale_x_continuous(breaks=seq(0, 20, 1))+
-  facet_grid(pair~., scales = "free")
+  filter(kts < 13.5) %>%
+  ggplot(aes(x = kts, y = IR, col = level, linetype = system))+
+  geom_line(size = 0.8)+
+  scale_color_manual(values = c("black", "blue", "red"))+
+  scale_y_continuous(breaks=seq(0, 1.0, 0.05), name = "Indiscretion Ratio") +
+  scale_x_continuous(breaks=seq(0, 13, 1), name ="speed (kt)")+
+  labs(linetype = "System", col = "Level")
 
-
+  #scale_linetype_manual("", breaks = system, values = c(1,2))
+  #facet_grid(.~pair, scales = "free")
 ggplotly(plot)
+
+df_IRs_wide <- df_IRs %>%
+  select(-endurance.hrs, -charge.time.hrs, -val, -level) %>%
+  spread(key = system, value = IR)
+
+df_IRs_wide <- df_IRs_wide %>%
+  mutate(diff = Pumpjet - Propeller,
+         prop.diff = diff/Propeller)
+
+df_IRs_long <- df_IRs_wide %>%
+  select(-Pumpjet, -Propeller) %>%
+  gather(key = "key", value = "value", diff, prop.diff)
+
+df_IRs_long$hotel <- factor(df_IRs_long$hotel, levels = c("50", "100", "200" ),
+                                 labels = c( "Hotel 50kW", "Hotel 100kW", "Hotel 200kW" ))
+df_IRs_long$key <- factor(df_IRs_long$key, levels = c("diff", "prop.diff"),
+                           labels = c("Difference in Indiscretion Ratio", "Proportional Difference"))
+
+df_IRs_long %>% write_rds("extdata/df_IRs_hotels_long.rds")
+
+plot <- df_IRs_long %>%
+  filter(kts < 13.5) %>%
+  ggplot(aes(x = kts, y = value, col = pair))+
+  geom_line()+
+  #scale_y_continuous(name = element_blank(),breaks=seq(0, 2.0, 0.1)) +
+  scale_x_continuous( name ="speed (kt)", breaks=seq(0, 14, 1))+
+  labs(col = "Efficiency \nCurve Pair")+
+  facet_grid(key ~ hotel, scales = "free", switch = "y")
+ggplotly(plot)
+
+
+
+
 
 #### Starting some plots for IRs  ######
 
