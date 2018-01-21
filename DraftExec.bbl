@@ -119,6 +119,58 @@
     \field{year}{2017}
   \endentry
 
+  \entry{guillou2017}{article}{}
+    \name{author}{1}{}{%
+      {{hash=NB}{%
+         family={Nicholson},
+         familyi={N\bibinitperiod},
+         given={Brendan},
+         giveni={B\bibinitperiod},
+      }}%
+    }
+    \list{publisher}{1}{%
+      {Australian Strategic Policy Institute}%
+    }
+    \strng{namehash}{NB1}
+    \strng{fullhash}{NB1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{labelyear}{2017}
+    \field{extrayear}{2}
+    \field{title}{The Strategist Six: Hervé Guillou}
+    \verb{url}
+    \verb https://www.aspistrategist.org.au/the-strategist-six-herve-guillou/
+    \endverb
+    \field{month}{10}
+    \field{year}{2017}
+  \endentry
+
+  \entry{sammut2017}{article}{}
+    \name{author}{1}{}{%
+      {{hash=NB}{%
+         family={Nicholson},
+         familyi={N\bibinitperiod},
+         given={Brendan},
+         giveni={B\bibinitperiod},
+      }}%
+    }
+    \list{publisher}{1}{%
+      {Australian Strategic Policy Institute}%
+    }
+    \strng{namehash}{NB1}
+    \strng{fullhash}{NB1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{labelyear}{2017}
+    \field{extrayear}{1}
+    \field{title}{The Strategist Six: Greg Sammut}
+    \verb{url}
+    \verb https://www.aspistrategist.org.au/the-strategist-six-greg-sammut/
+    \endverb
+    \field{month}{10}
+    \field{year}{2017}
+  \endentry
+
   \entry{giles2010}{misc}{}
     \name{author}{5}{}{%
       {{hash=GW}{%
@@ -674,6 +726,68 @@
     \field{year}{1964}
   \endentry
 
+  \entry{hamilton1997}{article}{}
+    \name{author}{1}{}{%
+      {{hash=WH}{%
+         family={Waterjets},
+         familyi={W\bibinitperiod},
+         given={Hamilton},
+         giveni={H\bibinitperiod},
+      }}%
+    }
+    \list{publisher}{1}{%
+      {Hamilton Waterjets}%
+    }
+    \strng{namehash}{WH1}
+    \strng{fullhash}{WH1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{labelyear}{1997}
+    \field{title}{Jet Torque}
+    \verb{url}
+    \verb https://corporate.siemens.com.au/content/dam/internet/siemens-com-au/
+    \verb root/aunz-defence-solutions/apdr-october-2015-issue-future-submarine.
+    \verb pdf
+    \endverb
+    \field{volume}{8}
+    \field{month}{03}
+    \field{year}{1997}
+  \endentry
+
+  \entry{yamaha2018}{misc}{}
+    \field{labeltitlesource}{title}
+    \field{note}{Accessed: 2018-01-21}
+    \field{title}{Jet Drive}
+    \verb{url}
+    \verb https://yamahaoutboards.com/en-us/home/outboards/jet-drive-high-thrus
+    \verb t/jet-drive
+    \endverb
+  \endentry
+
+  \entry{wislicenus1986}{article}{}
+    \name{author}{1}{}{%
+      {{hash=WGF}{%
+         family={Wislicenus},
+         familyi={W\bibinitperiod},
+         given={George\bibnamedelima F},
+         giveni={G\bibinitperiod\bibinitdelim F\bibinitperiod},
+      }}%
+    }
+    \list{publisher}{1}{%
+      {NASA}%
+    }
+    \strng{namehash}{WGF1}
+    \strng{fullhash}{WGF1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{labelyear}{1986}
+    \field{title}{Preliminary design of turbopumps and related machinery}
+    \verb{url}
+    \verb https://ntrs.nasa.gov/archive/nasa/casi.ntrs.nasa.gov/19870008232.pdf
+    \endverb
+    \field{year}{1986}
+  \endentry
+
   \entry{patrick2017}{article}{}
     \name{author}{1}{}{%
       {{hash=PR}{%
@@ -1078,30 +1192,6 @@
     \field{year}{1979}
   \endentry
 
-  \entry{wislicenus1986}{article}{}
-    \name{author}{1}{}{%
-      {{hash=WGF}{%
-         family={Wislicenus},
-         familyi={W\bibinitperiod},
-         given={George\bibnamedelima F},
-         giveni={G\bibinitperiod\bibinitdelim F\bibinitperiod},
-      }}%
-    }
-    \list{publisher}{1}{%
-      {NASA}%
-    }
-    \strng{namehash}{WGF1}
-    \strng{fullhash}{WGF1}
-    \field{labelnamesource}{author}
-    \field{labeltitlesource}{title}
-    \field{labelyear}{1986}
-    \field{title}{Preliminary design of turbopumps and related machinery}
-    \verb{url}
-    \verb https://ntrs.nasa.gov/archive/nasa/casi.ntrs.nasa.gov/19870008232.pdf
-    \endverb
-    \field{year}{1986}
-  \endentry
-
   \entry{li2013}{article}{}
     \name{author}{5}{}{%
       {{hash=LX}{%
@@ -1212,32 +1302,29 @@
     \field{year}{1996}
   \endentry
 
-  \entry{hamilton1997}{article}{}
+  \entry{harvie1965construction}{book}{}
     \name{author}{1}{}{%
-      {{hash=WH}{%
-         family={Waterjets},
-         familyi={W\bibinitperiod},
-         given={Hamilton},
-         giveni={H\bibinitperiod},
+      {{hash=HJ}{%
+         family={Harvie},
+         familyi={H\bibinitperiod},
+         given={James},
+         giveni={J\bibinitperiod},
       }}%
     }
-    \list{publisher}{1}{%
-      {Hamilton Waterjets}%
+    \list{publisher}{2}{%
+      {Society of Naval Architects}%
+      {Marine Engineers}%
     }
-    \strng{namehash}{WH1}
-    \strng{fullhash}{WH1}
+    \strng{namehash}{HJ1}
+    \strng{fullhash}{HJ1}
     \field{labelnamesource}{author}
     \field{labeltitlesource}{title}
-    \field{labelyear}{1997}
-    \field{title}{Jet Torque}
+    \field{labelyear}{1965}
+    \field{title}{Construction of an Axial-flow Pump Jet Propulsion Unit}
     \verb{url}
-    \verb https://corporate.siemens.com.au/content/dam/internet/siemens-com-au/
-    \verb root/aunz-defence-solutions/apdr-october-2015-issue-future-submarine.
-    \verb pdf
+    \verb http://mararchief.tudelft.nl/file/22546/
     \endverb
-    \field{volume}{8}
-    \field{month}{03}
-    \field{year}{1997}
+    \field{year}{1965}
   \endentry
 
   \entry{durrant2016}{article}{}
@@ -1423,6 +1510,33 @@
     \field{year}{2016}
   \endentry
 
+  \entry{ohff201702}{article}{}
+    \name{author}{1}{}{%
+      {{hash=OHJ}{%
+         family={Ohff},
+         familyi={O\bibinitperiod},
+         given={Hans\bibnamedelima J},
+         giveni={H\bibinitperiod\bibinitdelim J\bibinitperiod},
+      }}%
+    }
+    \list{publisher}{1}{%
+      {Naval Forces}%
+    }
+    \strng{namehash}{OHJ1}
+    \strng{fullhash}{OHJ1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{labelyear}{2017}
+    \field{extrayear}{1}
+    \field{title}{Lessons from the Norwegian Submarine Decision}
+    \verb{url}
+    \verb http://www.monch.com/mpg/ebooks/naval-forces/2017/02/mobile/index.htm
+    \verb l#p=19
+    \endverb
+    \field{month}{02}
+    \field{year}{2017}
+  \endentry
+
   \entry{oconnor2017}{article}{}
     \name{author}{1}{}{%
       {{hash=OJ}{%
@@ -1492,6 +1606,7 @@
     \field{labelnamesource}{author}
     \field{labeltitlesource}{title}
     \field{labelyear}{2017}
+    \field{extrayear}{2}
     \field{title}{Sub-optimal? Australia's future submarine charts a rocky
   course}
     \verb{url}
@@ -1581,31 +1696,6 @@
     \endverb
     \field{month}{02}
     \field{year}{2016}
-  \endentry
-
-  \entry{harvie1965construction}{book}{}
-    \name{author}{1}{}{%
-      {{hash=HJ}{%
-         family={Harvie},
-         familyi={H\bibinitperiod},
-         given={James},
-         giveni={J\bibinitperiod},
-      }}%
-    }
-    \list{publisher}{2}{%
-      {Society of Naval Architects}%
-      {Marine Engineers}%
-    }
-    \strng{namehash}{HJ1}
-    \strng{fullhash}{HJ1}
-    \field{labelnamesource}{author}
-    \field{labeltitlesource}{title}
-    \field{labelyear}{1965}
-    \field{title}{Construction of an Axial-flow Pump Jet Propulsion Unit}
-    \verb{url}
-    \verb http://mararchief.tudelft.nl/file/22546/
-    \endverb
-    \field{year}{1965}
   \endentry
 
   \entry{kuiper1981cavitation}{article}{}
