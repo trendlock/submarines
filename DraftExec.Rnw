@@ -91,7 +91,7 @@ With the support of the principal sponsor of this paper, the relevant models may
 
 \newpage  \section{Executive Summary}
 
-The choice of the pumpjet propulsion system is quite probably the most significant new technology inclusion for Australia's future submarines.  Unlike other modern technolgoies such as Air Independent Propulsion and Lithium Ion Batteries, which are either in service or entering service in multiple other navies, no other navies have have adopted pumpjet technology for their conventional sumbarines, which is currently only used by nuclear submarines.
+The choice of the pumpjet propulsion system is quite probably the most significant new technology inclusion for Australia's future submarines.  Unlike other modern technolgoies such as Air Independent Propulsion and Lithium Ion Batteries, which are either in service or entering service in multiple other navies, no other navies have have adopted pumpjet technology for their conventional sumbarines, which is currently only used by nuclear submarines \parencite(coorey2016).
 
 Despite acknowledging that the pumpjet may have an adverse impact on dived endurance \parencite{sbs2017}, Naval Group justifies the superiority of the pumpjet in the following terms: "In a confrontation between two otherwise identical submarines, the one with pump jet propulsion always has the tactical advantage."  No further explanation of this superiority has been provided in detail, but it is widely held that the pumpjet offered acoustic advantages which were highly regarded by those Australians who were responsible for selecting the design partner \parencite{stewart2016}.
 
