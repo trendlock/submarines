@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.18 (TeX Live 2017) (preloaded format=pdflatex 2017.12.9)  21 JAN 2018 18:01
+This is pdfTeX, Version 3.14159265-2.6-1.40.18 (TeX Live 2017) (preloaded format=pdflatex 2017.12.9)  27 JAN 2018 16:10
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -565,6 +565,10 @@ LaTeX Font Info:    External font `cmex10' loaded for size
 \openout5 = `DraftExec.toc'.
 
  [2] [3] [4]
+
+LaTeX Warning: Citation '(' on page 5 undefined on input line 139.
+
+
 Underfull \hbox (badness 10000) in paragraph at lines 143--150
 
  []
@@ -1329,7 +1333,7 @@ ive/2017/texmf-dist/fonts/type1/public/amsfonts/cm/cmr7.pfb></usr/local/texlive
 texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/local/texlive/2017/t
 exmf-dist/fonts/type1/public/amsfonts/cm/cmti10.pfb></usr/local/texlive/2017/te
 xmf-dist/fonts/type1/public/amsfonts/cm/cmtt10.pfb>
-Output written on DraftExec.pdf (83 pages, 13278395 bytes).
+Output written on DraftExec.pdf (83 pages, 13278538 bytes).
 PDF statistics:
  527 PDF objects out of 1000 (max. 8388607)
  289 compressed objects within 3 object streams

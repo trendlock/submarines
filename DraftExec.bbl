@@ -211,8 +211,10 @@
     \field{labelyear}{2010}
     \field{title}{The advanced waterjet: propulsor performance and effect on
   ship design}
-    \field{journaltitle}{2013-01-20]. http://www, bmtdsl, co.
-  uk/media/5045591/BMTDSL-The-Advanced-Waterj et-Confpaper-INEC-Mayl 0. pdf}
+    \verb{url}
+    \verb https://www.bmtdsl.co.uk/media/6097875/BMTDSL-The-Advanced-Waterjet-C
+    \verb onfpaper-INEC-May10.pdf
+    \endverb
     \field{year}{2010}
   \endentry
 

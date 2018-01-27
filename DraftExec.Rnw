@@ -491,7 +491,7 @@ Consequently, the geometry of the duct defines a pressure gradient in the intake
 
 \begin{figure}[h]
 \captionsetup{width=.8\textwidth}
-\includegraphics[width=.8\textwidth]{JetHighFlow.png}
+\includegraphics[width=.8\textwidth, center]{JetHighFlow.png}
 \caption{At high flow rates the water has sufficient velocity (indicated by arrow length) to overcome the adverse pressure gradients created by the duct shape, shown by the change from green to red. After the impeller has added further pressure to the water, the water accelerates out of the contracting nozzle through the favourable pressure gradient (red to green) to produce a jet, reaching equal pressure to outside at the exit}
 \label{fig:JetHighFlow.png}
 \end{figure}
@@ -502,7 +502,7 @@ Flow separation also tends to lead to unsteady flows, with vortices periodically
 
 \begin{figure}[h]
 \captionsetup{width=.8\textwidth}
-\includegraphics[width=.8\textwidth]{JetLowFlow.png}
+\includegraphics[width=.8\textwidth, center]{JetLowFlow.png}
 \caption{At low flow rates the water has insufficient velocity to overcome the adverse pressure gradients created by the duct shape, and flow separation begins to occur on the duct intake, and between the blades beginning near the roots (stall).  Flow through the jet would be unsteady, with excessive energy expended creating vortices and turbulence that results in little thrust.}
 \label{fig:JetLowFlow.png}
 \end{figure}
@@ -663,7 +663,7 @@ In addition, whilst it is often demonstrated that for a given propeller under ce
 
 In other words, the use of highly loaded propellers in such applications is actually particular to design constraints that are unlikely to be present for a submarine, which can position the propeller at the tail of its body, directly behind its centre of mass and drag, and consequenlty have freedom about the optimal size of the blades.  It is well known that a duct cannot improve the performance of a low-loaded propeller which would be the situation for a slow-moving vessel with unconstrained propeller size.  Authoritative references in the literature include \cite{oosterveld1970}, who calculates the minimum thrust coefficient $C_T$ (a measure of loading) for an accelerating duct to improve a propellers performance to be between 1 and 2, as shown in \ref{fig:AcceleratingIdeal.png}.
 
-\begin{figure}[h] \captionsetup{width=0.5\textwidth}
+\begin{figure}[h] \captionsetup{width=0.8\textwidth}
 \includegraphics[width=\textwidth]{AcceleratingIdeal.png}
 \caption{Calculations of 'ideal' efficiencies of accelerating ducts (neglecting drag) in \cite{oosterveld1970} show that a duct can only improve the efficiency of a propeller if it is loaded above a certain degree, and that longer ducts produce better improvements in 'ideal' efficiencies}
 \label{fig:AcceleratingIdeal.png}
