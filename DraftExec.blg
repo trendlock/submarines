@@ -1,0 +1,68 @@
+This is BibTeX, Version 0.99d (TeX Live 2017)
+Capacity: max_strings=100000, hash_size=100000, hash_prime=85009
+The top-level auxiliary file: DraftExec.aux
+The style file: biblatex.bst
+Reallocated glb_str_ptr (elt_size=4) to 20 items from 10.
+Reallocated global_strs (elt_size=20001) to 20 items from 10.
+Reallocated glb_str_end (elt_size=4) to 20 items from 10.
+Reallocated singl_function (elt_size=4) to 100 items from 50.
+Reallocated singl_function (elt_size=4) to 100 items from 50.
+Reallocated singl_function (elt_size=4) to 100 items from 50.
+Reallocated wiz_functions (elt_size=4) to 6000 items from 3000.
+Reallocated singl_function (elt_size=4) to 100 items from 50.
+Reallocated singl_function (elt_size=4) to 100 items from 50.
+Reallocated singl_function (elt_size=4) to 100 items from 50.
+Reallocated singl_function (elt_size=4) to 100 items from 50.
+Reallocated singl_function (elt_size=4) to 100 items from 50.
+Reallocated singl_function (elt_size=4) to 100 items from 50.
+Reallocated singl_function (elt_size=4) to 100 items from 50.
+Reallocated field_info (elt_size=4) to 14452 items from 5000.
+Database file #1: DraftExec-blx.bib
+Database file #2: references.bib
+Warning--I didn't find a database entry for "("
+Warning--I didn't find a database entry for "fig:PumpjetEfficiency.png"
+Biblatex version: 3.3
+Reallocated wiz_functions (elt_size=4) to 9000 items from 6000.
+Reallocated singl_function (elt_size=4) to 100 items from 50.
+You've used 66 entries,
+            6256 wiz_defined-function locations,
+            1519 strings with 21191 characters,
+and the built_in function-call counts, 312239 in all, are:
+= -- 20948
+> -- 6584
+< -- 2468
++ -- 6628
+- -- 1977
+* -- 18931
+:= -- 25879
+add.period$ -- 0
+call.type$ -- 66
+change.case$ -- 1835
+chr.to.int$ -- 132
+cite$ -- 130
+duplicate$ -- 34201
+empty$ -- 30660
+format.name$ -- 3286
+if$ -- 67950
+int.to.chr$ -- 0
+int.to.str$ -- 187
+missing$ -- 0
+newline$ -- 1823
+num.names$ -- 3719
+pop$ -- 21771
+preamble$ -- 1
+purify$ -- 2113
+quote$ -- 0
+skip$ -- 13088
+stack$ -- 0
+substring$ -- 30409
+swap$ -- 9092
+text.length$ -- 1260
+text.prefix$ -- 7
+top$ -- 1
+type$ -- 2227
+warning$ -- 0
+while$ -- 3108
+width$ -- 0
+write$ -- 1758
+(There were 2 warnings)
