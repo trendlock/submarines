@@ -62,10 +62,15 @@
 \usepackage{subcaption}
 %  appendix
 \usepackage[titletoc,page]{appendix}
+\setlength{\parindent}{0em}
+
+
+\usepackage{tikz,lipsum,lmodern}
+\usepackage[most]{tcolorbox}
 
 \usepackage{draftwatermark}
 \SetWatermarkText{DRAFT}
-\SetWatermarkScale{5}
+\SetWatermarkScale{2}
 \SetWatermarkLightness{0.95}
 
 \title{Efficiency}
@@ -80,7 +85,7 @@
         \vspace*{1cm}
 
         \vspace{10cm}
-        \textbf{\huge Efficiency}
+        \textbf{\huge A comparison of pumpjets and propellers for non-nuclear submarine propulsion}
 
         \vspace{0.5cm}
 
@@ -90,7 +95,7 @@
         \textbf{Aidan Morrison}
 
         \vspace{1.5cm}
-        2018
+        January 2018
 
         \vfill
 
@@ -107,6 +112,7 @@
 \tableofcontents
 
 \newpage
+\setlength{\parskip}{1em}
 
 \section{Introduction} \label{intro}
 
@@ -136,16 +142,16 @@ With the support of the principal sponsor of this paper, the relevant models may
 
 \newpage  \section{Executive Summary}
 
-The choice of the pumpjet propulsion system is quite probably the most significant new technology inclusion for Australia's future submarines.  Unlike other modern technolgoies such as Air Independent Propulsion and Lithium Ion Batteries, which are either in service or entering service in multiple other navies, no other navies have have adopted pumpjet technology for their conventional sumbarines, which is currently only used by nuclear submarines \parencite(coorey2016).
+The choice of the pumpjet propulsion system is quite probably the most significant new technology inclusion for Australia's future submarines.  Unlike other modern technolgoies such as Air Independent Propulsion and Lithium Ion Batteries, which are either in service or entering service in multiple other navies, no other navies have have adopted pumpjet technology for their conventional sumbarines, which is currently only used by nuclear submarines \parencite(coorey2016).  Questions have been raised about the efficiency of pumpjets at low speeds \parencite{davies2017}. Propulsive efficiency at low speeds might be very important for conventional submarines since it will largely determine how long they can remain underwater before sufracing to recharge their batteries, but it would be of little or no concern to a nuclear submarine, which has effectively unlimited energy stores.
 
-Despite acknowledging that the pumpjet may have an adverse impact on dived endurance \parencite{sbs2017}, Naval Group justifies the superiority of the pumpjet in the following terms: "In a confrontation between two otherwise identical submarines, the one with pump jet propulsion always has the tactical advantage."  No further explanation of this superiority has been provided in detail, but it is widely held that the pumpjet offered acoustic advantages which were highly regarded by those Australians who were responsible for selecting the design partner \parencite{stewart2016}.
+Despite acknowledging that the pumpjet may have an adverse impact on dived endurance \parencite{sbs2017}, Naval Group justifies the superiority of the pumpjet in the following terms: "In a contest between two otherwise identical submarines, the one with pump jet propulsion always has the tactical advantage."\parencite{guillou2017}  No further explanation of this superiority has been provided in detail.  This report does not attempt to engage with specific tactical encounters such as this, however, it is widely held that the pumpjet offered acoustic advantages which were highly regarded by those Australians who were responsible for selecting the design partner \parencite{stewart2016}.  Commentary from the designers of Shortfin Barracuda Block 1A seem to confirm that it is an acoustic advantage at elevated speeds which drive this tactical advantage when facing another submarine in combat \parencite{autret2016}.
 
-The comparison between two otherwise identical submarines (though not necessarily limited to engaging just each other in combat), provides a useful and suitable framework for evaluating a single significant technology choice, where most other significantly novel or new technologies were apparently excluded from consideration \parencite{stanford2017}.  The conclusion of this report is that the following statement can be made with confidence:
-\\
-\\
-\emph{In a comparison between two otherwise identical submarines, the one with the pump jet will always have a lower dived endurance, a lower dived range, a worse indiscretion ratio, a lower overall endurace, and a lower overall range, than the one with a conventional propeller.  This will confer a substantial tactical and strategic advantage on the conventionally propelled submarine in a very broad range of operational scenarios.}
-\\
-\\
+The comparison between two "otherwise identical" submarines (though not necessarily limited to engaging just each other in combat), provides a useful and suitable framework for evaluating a potential trade-off in terms of other parameters, such as propulsive efficiency.  This is particularly the case given that most other significantly novel or new technologies which might dramatically impact propulsive performance were apparently not included for serious consideration \parencite[10]{stanford2017}.  Whilst many of the pages of this report are concerned with establishing the probable magnitude of the impact of efficiency at a range of speeds, the existence and direction of an efficiency difference between the two systems was quite firmly established at all the speeds most important for sumbarine operations. This allows for a surprisingly simple and strong qualitative conclusion to be reached in terms of the "otherwise identical" submarine comparison.
+
+\begin{tcolorbox}[width=0.8\textwidth, center, colback=blue!5!white,colframe=blue!75!black, title= The Conclusive Qualitative Comparison]
+In a comparison between two otherwise identical submarines, the one with the pumpjet will always have a lower dived endurance, a lower dived range, a worse indiscretion ratio, a lower overall endurace, and a lower overall range, than the one with a propeller.  This will confer a substantial tactical and strategic advantage on the conventionally propelled submarine in a very broad range of operational scenarios.
+\end{tcolorbox}
+
 Whilst it is broadly acknowledged that propellers have superior efficiency at lower speeds, but jets might have higher efficiency at higher speeds, the precise point of cross-over seemed unclear in public debate.  One informed commentator suggested that the crossover point was likely to be below or near the transit speed of the submarine, and that the pumpjet may offer enhanced range and endurance over the whole mission profile as a consequence \parencite{davies2017}.  This report finds no evidence of a pumpjet of the type used on submarine ever being recommended as superior for efficiency in general, and even closely related technologies for more commecial use not advocated below 25kt. During my research I encountered domain experts confident that a pumpjet could simply not feasibly be superior to a suitable propeller at speeds below 18kt.  Evidence of propellers remaining generally superior to waterjets and pumpjets in the speed ranges up to and even over 30kt is abundant.  Consequently, the possibility of some cross-over point leading to any kind of range or endurance advantage relevant for a conventional submarine can be safely ruled out.  The basis for claims made by public officials to the contrary, such as those by Rear Admiral Sammut \parencite{sammut2017}, must be called into question.
 
 This report also explores in some detail the theoretical concepts that drive the limitations of pumpjet performance at lower speeds in comparison to propellers.  Enduring and fundamental principals of momentum theory provide robust limitations on the circumstances where a propeller's 'ideal efficiency' might be improved by the addition of a duct/or shroud, one type of which constitutes the transition to a 'pumpjet'.  These principals stronly support the the notion that pumpjets will not and indeed cannot suddenly overcome their efficiency disadvantage at low speeds by means of technical ingenuity or innovation.
@@ -154,11 +160,68 @@ Furthmore, a particular hydrodynamic phenonemon called 'flow separation' can be 
 
 The design of the pumpjet for military purposes, namely the reduction of acoustic signatures effectively mandates that this must be the way that pumpjets work.  The act of slowing the water down is necessarily equivalent to the act of raising its pressure.  It is this elevated pressure at the point where the blades to their work on the water which enables the blades to avoid cavitation (the rapid expansion and collapse of small voids or bubbles in the water) which is very large source of noise underwater.  Maintaining this advantage to the same level necessitates a duct design which slows water down to the same extent.  The act of slowing water down when it's already going slowly is what causes some of it to stop, which is when flow separation occurs.
 
+\begin{figure}[h]
+
+\begin{subfigure}{0.5\textwidth}
+\includegraphics[width=0.9\linewidth]{HiFlowSmall.png}
+\caption{}
+\end{subfigure}
+\begin{subfigure}{0.5\textwidth}
+\includegraphics[width=0.9\linewidth]{LoFlowSmall.png}
+\caption{}
+\end{subfigure}
+
+\caption{(a) At high speeds, the intake of a pumpjet slows the waterflow and raises its pressure, and it subsequently accelerates through the contracting nozzle to form an efficient jet (b) At low speeds, the pressure gradient created by the duct causes some of the waterflow to stop and reverse.  This 'flow separation' wastes energy spinning water in circles, and dramatically reduces the system's efficiency.}
+\label{fig:HiLoSmall.png}
+\end{figure}
+
 In order to assess the probable magnitude of the impact of this reduction in efficiency at low speeds, a numerical model was developed, based on known principles of physics, and publically available information relating to the likely technologies involved in the future submarine.  The most important and variable assumptions - the efficiency curves of the pumpjet and propeller - were taken from a recent study lead by world-leading engineering companies, supported by the US and Royal Navies, comparing closely related propulsion systems  \parencite{giles2010}.  Knowing that the systems would not be identical to the propulsors on submarines (the precise design of which is obviously secret), additional curves varying from these assumptions were also modelled in all directions, and the combinations combined and tested.
 
 The model has been made available publically in the form of a web-app, so that alternative assumptions, including alternative efficiency curves may be tested by the interested parties.
 
 The model in its central assumptions was able to achieve very realistic results, which were consistent with other public estimates of performance parameters of conventional submarines and their known characteristics \ref{buckingham2008submarine}.  A variety of different assumptions regarding the hotel load, battery density and different combinations of efficiency curves were tested.  The central assumption values showed that a submarine with a conventional propeller had a very substantial advantage in terms of range and endurance across the entire speed range.  This advantage reached a proportional maximum at around 6kt of over 60\%.  However, in nominal terms, the greatest differences occurred at slightly lower speeds.  Under central assumptions, the propeller submarine had an advantage in submerged range of some 200nm at 5kt, and approximately a two-day advantage in dived endurance at 4kt.
+
+\begin{tcolorbox}[width=0.9\textwidth, center, colback=blue!5!white,colframe=blue!75!black, title= Quantitative comparison under central assumptions]
+\begin{center}
+\begin{tabular}{ |c||c|c|c| }
+ \hline
+ \multicolumn{4}{|c|}{4kt Comparison Table} \\
+ \hline
+ Propulsion System & Submerged Range & Submerged Endurance &Indiscretion Ratio\\
+ \hline
+ Propeller &554nm & 138 hours & 2.9\%\\
+ Pumpjet & 366nm & 91 hours & 4.4\%\\
+ \hline
+\end{tabular}
+
+\vspace{6mm}
+\begin{tabular}{ |c||c|c|c| }
+ \hline
+ \multicolumn{4}{|c|}{8kt Comparison Table} \\
+ \hline
+ Propulsion System & Submerged Range & Submerged Endurance & Indiscretion Ratio\\
+ \hline
+ Propeller &357nm & 45 hours & 9.6\%\\
+ Pumpjet & 237nm & 30 hours & 15.1\%\\
+ \hline
+\end{tabular}
+\vspace{6mm}
+
+\begin{tabular}{ |p{3cm}|p{11cm}| }
+ \hline
+ \multicolumn{2}{|c|}{Assumption Table for "otherwise identical" submarines} \\
+ \hline
+ Batteries & 500 tonnes lead-acid, 0.14MJ/kg density, 100\% discharge\\
+ Power Reference & 20kt reached by pumpjet submarine with 6.5MW power delivered\\
+ Efficiency Curve & Central lines in Figure \ref{fig:Efficiency_assumptions} modeled on those in Figure \ref{fig:BMTEfficiency.png}\\
+ Diesel Generators & 5MW delivered for effective re-charging\\
+ Hotel Load & Constant 100kW\\
+ AIP Technology & None\\
+ \hline
+\end{tabular}
+
+\end{center}
+\end{tcolorbox}
 
 The full range of plausible efficiency curves exhibited a significant efficiency advantage right through transit speeds.  Central assumptions suggested that this would result in the overall range of a submarine being enhanced by approximately 50\% with the use of propellers instead of a pumpjet.  None of the scenarios suggested it was likely that this range advantage would be any less than 20\%.  Given the significant emphasis that has been repeatedly placed the unique requirements for range and endurance for Australia's submarine, this raises substantial questions about suitability of this technology to meet Australia's needs.
 
@@ -174,7 +237,8 @@ Overall, it seems unlikely that the full range of consequences of pumpjet choice
 
 \newpage  \section{Speed and Drag - Why very slow is very very $(very)^2$ economical}
 
-Perhaps the most important relationship to understand to comprehend the operation of submarines is the relationship between speed and drag .  This is important because it sets out the fundamental framework as it applies to any submarine, regardless of propulsion type.  (It's also a pretty important for planes, cars, missiles, torpedoes, and basically everything else.)
+\subsection{They physical relationship}
+Perhaps the most important relationship to comprehend in the operation of submarines is the relationship between speed and drag .  This is important because it sets out the fundamental framework as it applies to any submarine, regardless of propulsion type.  (It's also a pretty important for planes, cars, missiles, torpedoes, and basically everything else.)
 
 Drag is the resistance that a fluid (air or water, in our case) gives to a body that is passing through it. Quite simply, it's a force that acts in the opposite direction to movement.  There are multiple sources of drag for different types of scenarios.  For scenarios where an object is in contact with two different types of fluid (like a ship, on the ocean) or when the fluid doesn't really have contact with all of the object (supersonic flight, and supercavitating torpedoes) some more complex physics applies. For a fuller discussion of types of drag in the case of ships, see \cite{carlton2007}.  But in the case of a submarine, which does it's business completely immersed in the ocean, the relevant physics is dominated the skin friction on the hull, which follows a very simple rule and relationship.  The amount of drag ($F_D$) an objet experiences increases directly in proportion to the surface area $A$.  For any given object of a certain (unchanging shape) there will be a constant coefficent ($C_D$) which reflects how aerodynamic or hydrodymanic the shape is.  The drag is also directly proportional to the density of the fluid being moved through, $\rho$.  (Air creates roughly one-thousandth the drag as water does on any given object at a given speed, since it's roughly one thousand times less dense.)
 
@@ -191,6 +255,20 @@ It's crucial to understand, however, that drag is only a force, and doesn't dire
 
 This has a significant consequence for propulsion, since the amount of power (energy expended in a given time) required for thrust scales with the drag, multiplied by the distance covered in a given time.  As such, power required (and fuel/battery consumption) scales with velocity \textbf{cubed} rather than velocity squared.  This means that if you double your speed of travel, fuel consumption for a given period of time will increase by a factor of eight.  Due to the increased speed of travel, the fuel required to cover a given distance will only quadruple.  Hence the range that can be covered with a given amount of energy (assuming propulsion dominates energy requirements) tends to scale with the inverse of velocity squared, whereas the endurance (amount of time that can be spent travelling) scales with the inverse of velocity cubed.
 
+\begin{tcolorbox}[width=0.8\textwidth, center, colback=blue!5!white,colframe=blue!75!black, title= Quick Summary: Sped and Drag]
+Drag directly determines the energy required to cover a given distance. The physics relevant to submarines require that drag increases with speed squared, and the power required by a vessel to reach a given speed scales with speed cubed.  Consequently, the energy \textit{required} to move a vessel a given distance can vary massively over different speeds, often much more than the efficiency of any given system \textit{delivering that energy} will tend to vary.
+\\
+\\
+This means that most vessels will be able to go much further by travelling extremely slowly, almost regardless of particulars of just how they are designed and what propulsion systems they use.  It also means that almost all the attention of propulsion system design focuses on 'design speed', generally pretty close to the top speed, since at very low speed so little thrust (hence fuel) is required that efficiency is of little concern.
+\\
+\\
+For conventional submarines, however, the situation is very different.  They already adopt very low speeds (8-10kt) for transit to maximise the range they can get from their diesel.  Even most commercial shipping, including bulk carriers generally go much faster (16-24kt).  When a submarine dives, it relies on its batteries, which might store less than 1\% of the energy that's stored in its diesel tanks, and consequently has to slow down much more again (~4kt) to get meaningful range before returning to the surface to recharge. Whilst much higher speeds are possible even when dived, up to ~20kt, this has such a dramatic impact on the power demanded that it can't be sustained for useful periods of time, and are consequently only useful in an emergency, or very particular rapidly evolving tactical circumstances.
+\\
+\\
+Since a conventional submarine already has to slow down to a crawl to get good dived range and endurance, the efficiency of the propulsion system now becomes of very great importance, as poor efficiency here will have a signifcant impact on how soon they have to return to the surface.  Nuclear submarines have effectively unlimited energy stores and don't require air to use it, and consequently don't share this concern.  They might also also spend much more of their dived time at much higher speeds as a result.
+\end{tcolorbox}
+
+\subsection{Practical implications for submarines}
 This has a profound impact on the operation and engineering of maritime vessels.  Reducing velocity has such a substantial reduction on hull drag that going slower is almost always a reasonable means of conserving fuel overall.  To the extent that time is non-critical, slower is always much much better.  It's for this reason that during the financial crisis, many cargo shipping companies adopted the practice of slow steaming \parencite{liang2014} in order to conserve fuel, despite this causing a range of possible new engineering issues which need to be accounted for in order to operate the engines at lower than normal power for sustained periods \parencite[8-10]{sanguri2012}. The fuel saving from operating even 30\% slower means that around half the total energy is required for a given journey.  Other incremental costs and inefficiences from operating 'off-design' are frequently outweight by such a dramatic reduction in overall power demand.
 
 This effect is of profound importance to understanding the operations of conventional submarines, which have extremely constrained energy stores when operating under the surface. Diesel fuel when burned has an energy density of approximately 45MJ/kg.  In contrast, a lead-acid battery might have energy densities in the range of 0.08-0.14MJ/kg. With something like 400 times as much energy per kg embarked in diesel, operating on batteries imposes an extreme demand for economy on propulsive power.  Fortuitously for submarines, the square law for drag, and cubed law for power, allow an almost commensurate reduction in power demands to take place by slowing down to very slow speeds when submerged. Hypothetically, a conventional submarine might have a total range of 10,000nm from using it's diesel payload at 8kt.  If an equal weight of lead-acid batteries as fuel were carried, the submarine could only travel about 25nm when submerged at the same speed in a single charge.  But by travelling at 4kt, that quickly increases to 100nm, and 400nm at 2kt (neglecting hotel load here for simplicity).
@@ -234,6 +312,22 @@ Consequently, nuclear reactors aren't well suited to rapid fluctuations in power
 This effect has a dramatic impact on nuclear submarine design, since much of their design is oriented around being able to comfortably disperse large amounts of excess power, rather than with conserving it.  For the propulsion system, this actually makes having an inefficient propulsor at low speeds a considerable advantage.  Since the reactor will likely need to dispose of excess power, particularly during ramp-down, an inefficient propulsion system actually provides a useful power sink.  Since any excess power will have to be disposed of by some other means (normally by pumping more water to remove the power as the heat) inefficiency at low speeds has no penalty, and probably a marginal benefit, since it will reduce overall demand for additional systems such as pumps to remove the excess heat.  Provided the excess turbulence inside the pumpjet isn't too noisy, wasting energy through the propulsor is useful whenever there is an ample surplus, which could be the case whenever operating noticeably below top speed. Whilst reactors can reach considerably lower power outputs safely in when there are low levels of Iodine and Xenon in the stocks are low (after a smooth ramp-down) the requirement to reduce power gradually means that when speed is reduced suddenly (relative to the 9-hour half life of Xenon 135), for example on arrival in theatre or a higher threat area, this high surplus power will be unavoidable.
 
 It should also be noted that a nuclear reactor's aversion to sudden reductions in power would also have a substantial impact on the design of a submarine's combat system, and it's demand on the Hotel Load. For the same reason, a high Hotel Load, or power-hungry Combat System, could actually be advantageous, as it helps to set an elevated 'floor' for power requirements, reducing the scale of fluctuations in overall power demand from the reactor due to changes in propulsion speed.
+
+\begin{tcolorbox}[width=0.8\textwidth, center, colback=blue!5!white,colframe=blue!75!black, title= The other reason reactors are different]
+Nuclear reactors have an enormous amount of energy stored in a small space, so for submarines they may not need refuelling for many years, if every.  However, they vary from other power plants in another crucial way, that can have downsides to their operations.
+\\
+\\
+Most people take an internal combustion engine's ability to vary its power output for granted.  Simply open the throttle, and more power is produced, ease it right off and it drops again.  The engines that drive our cars and trucks are used to going from full power to almost no power every time we change gears, or stop in traffic.  Other than a tiny bit more long-term wear on the engine, there's little consequence to large power fluctuations.
+\\
+\\
+Nuclear reactors don't enjoy the same luxury.  The fissioning of Uranium or Plutonium atoms leaves a range of other unstable nuclear isotopes as by-products, which in turn decay to other nuclear isotopes, some of which absorb neutrons in the reactor core, or have other impacts on the 'reactivity' of the reactor (how fast it goes). As a consequence, nuclear reactors can't freely oscilate thier power levels, as some of these by-products following sudden changes (particulalry dramatic reductions in power) can produce dangerous situations where the reactor can become unstable.  (It was following such a exercise in reducing power that the Chernobyl explosion occurred.)
+\\
+\\
+The physics of these decay chains mean that nuclear reactors, including those in submarines generally avoid sudden changes in power.  Large reductions in power have to be taken in staged steps or a steady ramp-down over many hours, or more likely a couple of days.  Furthermore, if the reactor is ever completely shut-down, it generally can't be started safely again for some time, most likely a couple of days.  For obvious reasons, an operating sumbarine will strictly avoid anything that might risk requiring a shutdown.
+\\
+\\
+The result is that nuclear submarines whenever operating at reduced speeds tend to have an abundance of spare power to dispose of.  The normal desire for energy 'efficiencies' are thrown into reverse, since it's undesirable to reduce the power of the reactor very far, and dangerous to reduce it fast. Whatever excess energy isn't sucked up by hotel load and propulsion has to be dispersed by additional systems, generally pumping water to dispose of the excess energy as heat. As such, in nuclear sumbarine design trading-off propulsive efficiency at low speeds is an easy, or even desirable choice.
+\end{tcolorbox}
 
 \subsection{Recent Commentary}
 Some efforts have been made to 'debunk' such suggestions that nuclear submarines effectively have "unlimited" power \parencite{autret2016}, with the leaders of the DCNS's bid at the time making some effort to suggest that the needs and characteristics of nuclear and diesel-electric submarines "drives the same system design". They make three comments to justify this claim.  The first is that the large submarine proposed by DCNS for Australia uses as much or more power for the hotel load at the most frequently used speeds.  Assuming the authors are referring to speeds between patrol speeds and approaching transit speed, the subsequent analysis will show that this fact may be true, particulalry in the presence of the pumpjet. However on its own this doesn't constitute an argument worthy of any consideration. One might equally argue a glutton can be relied upon not to eat too much at dinner because he eats a dinner sized meal at afternoon tea.
@@ -322,7 +416,7 @@ J = \frac{V_a}{nD}
 
 Where $V_a$ is the speed of advance of the propeller, or the speed at which water arrives at the front-side of the propeller, and $n$ represents the rate of the propeller's rotation (revolutions per second) and $D$ is the propeller's diameter.  For fullness of understanding it is also worthwhile to note here that $V_a$ does not correspond directly to the vessel's speed of travel, though they are related. To some extent, a vessel moving through water will always draw water in its wake along with it, which means that in the wake (where the propeller tends to operate to some extent or other) the water incident on the propeller will arrive at a lower speed than that implied by the ship speed \parencite[15]{MAN2017}.  Another key distinction for the consideration of jets later on is that the speed of advance does not necessarily incporate the movement of water due to the movement induced by the propeller (or duct) itself, which is a distinct effect to that of the wake field. In \cite[213]{lewis1988} $V_A$ is used specifically to denote the undisturbed stream velocity, since the role of certain ducts can be to accelerate or decelerate the stream prior to the water arriving at the blades of the propeller.
 
-One may also note from the previous figure that for each line representing a given pitch, the efficiency falls precipitously towards zero around the point where $J$ reaches $P/D$. This is because this extreme of the curve represents a circumstance where the propeller is rotating, but not actually moving any water, since it is moving through the water at about that speed which corresponds to the exact helical path defined by the pitch being traced. This represents circumstances where a propeller encounters effectively zero load.  This might be the case when a eases it's power, and the momentum of the ship temporarily keeps the ship moving without the propeller exerting much or any net thrust, or where alternative propoulsion sources (sails, or other propellers) are keeping a speed higher than what the propeller actually has push backwards on water to maintain.  Since drag due to friction scales with velocity squared, very low speed do correspond to increasing advance ratios for a given propeller size, as would increases in propeller size for a given speed and pitch ratio. In practice however, under self-propuslion conditions for open propellers, slowing down towards does not elevate the advance ratio far enough past beyond peak efficiencies for overall efficiency to fall very far, as can be seen in Figure \ref{fig:EfficiencyBulten.png}
+One may also note from Figure \ref{fig:OpenWater.png} that for each line representing a given pitch, the efficiency falls precipitously towards zero around the point where $J$ reaches $P/D$. This is because this extreme of the curve represents a circumstance where the propeller is rotating, but not actually moving any water, since it is moving through the water at about that speed which corresponds to the exact helical path defined by the pitch being traced. This represents circumstances where a propeller encounters effectively zero load.  This might be the case when a eases it's power, and the momentum of the ship temporarily keeps the ship moving without the propeller exerting much or any net thrust, or where alternative propoulsion sources (sails, or other propellers) are keeping a speed higher than what the propeller actually has push backwards on water to maintain.  Since drag due to friction scales with velocity squared, very low speed do correspond to increasing advance ratios for a given propeller size, as would increases in propeller size for a given speed and pitch ratio. In practice however, under self-propuslion conditions for open propellers, slowing down towards does not elevate the advance ratio far enough past beyond peak efficiencies for overall efficiency to fall very far, as can be seen in Figure \ref{fig:EfficiencyBulten.png}
 
 A closely related concept here is the slip ratio, which is a measure of the difference between the pitch (the distance the blade section would travel if it traced a perfect helix for one rotation) and the actual distance that the blade did advance through the water.  This is neatly defined and shown in a diagram in \ref{fig:SlipRatio.png}.
 
@@ -398,6 +492,13 @@ It is perhaps most relevant at this point to further clarify the distinction bet
 In other definitive literature on the design of pumpjets \parencite{henderson1964} the difference between a pumpjet and a propeller is a described as being that "the stream of flow through the pumpjet is made to depart from the "natural" or free-stream sufrace that bounds the flow though a standard propeller."  According to the diagrams and the subsequent description it is clear that the definition embraces quite exactly the distinction between an accelerating duct, and a decelerating duct, namely that the flow is slowed at the point it encounters the impeller, where as in a free situation the free stream would contract and accelerate at this point.
 
 The addition of some new parts such as stator blades (to straighten out the flow) and other possible features which make the propeller system more like pump or turbomachinery components might be associated with systems more commonly referred to as pumpjets than ducted propellers.  Not all decelerating ducts have stators, but the impact of the duct on the stream will remain. The key concepts behind the operation of these systems, however, remains essentially similar in their nature and design intent.  In the presence of a duct propellers might be advantageously shaped differently, including maintaing a larger chord lenght right to the shroud, rather than tapering as open propellers tend to in order to lessen vortices and cavitation on the extremities.  However, there is not to my knowledge any single defining physical characteristic which the transition to the name 'impeller' implies, which woud not be effectively equivalent to specialised propellers for decelerating ducts.  In systems tending to be described as pumpjets or waterjets hubs tend to be larger, blade-numbers higher, twist, skew and rake lower.  No definitive transition point seems to be accepted as having great significance.  Most commonly literature will refer to a 'rotor', a more general term which could encompass both propellers and impellers.
+
+\begin{tcolorbox}[width=0.8\textwidth, center, colback=blue!5!white,colframe=blue!75!black, title= The difference between a pumpjet and a propeller]
+In it simplest form, a pumpjet can be thought of as a special type of ducted propeller, or propeller contained inside a shroud.  The impact of the shroud in a pumpjet has the special effect of \textit{decelerating} the water at the point that it reaches the propeller.  This has the dual effect of raising the pressure of the water at the point that the rotor has to do its work on it, which is how pumpjets are able to reduce or eliminate cavitation.
+\\
+\\
+This type of duct shape contrasts with the system most commonly associated with ducted propellers on tug-boats and trawlers, known as accelerating ducts or 'Kort Nozzles'.  This type of duct performs essentially the opposite function to the decelerating duct, contracting in advance of the propeller and acclerating the flow at the stage that it meets propeller.  This effect accentuates the normal contraction of the water-column that occurs in open propellers, and can improve the efficiency of small propellers attempting to exert a large force at low speeds (such as tugs and trawlers) where an optimally sized propeller for such a role would be impractically large for the vessel.  In this circumstance the suction force on the inside of the duct helps generate a positive thrust that is greater than the negative drag on the exterior of the duct.
+\end{tcolorbox}
 
 \subsubsection{Waterjets} \label{waterjets}
 
@@ -488,15 +589,9 @@ At IMARESTS 10th International Naval Engineering Conference, a paper was present
 \label{fig:BMTShape.png}
 \end{figure}
 
-\begin{figure}
-
-\begin{subfigure}[b]{0.9\textwidth}
-\includegraphics[width=0.8\linewidth, center]{BMTEfficiency1.png}
-\end{subfigure}
-\begin{subfigure}[b]{0.9\textwidth}
+\begin{figure}[h]
+\captionsetup{width = 0.9\textwidth}
 \includegraphics[width=0.8\linewidth, center]{BMTEfficiency2.png}
-\end{subfigure}
-
 \caption{Studies on submerged waterjets for military surface craft currently show that the efficiency of jets decline sharply below 10kt \parencite{giles2010}}
 \label{fig:BMTEfficiency.png}
 \end{figure}
@@ -536,7 +631,7 @@ Consequently, the geometry of the duct defines a pressure gradient in the intake
 
 \begin{figure}[h]
 \captionsetup{width=.8\textwidth}
-\includegraphics[width=.8\textwidth]{JetHighFlow.png}
+\includegraphics[width=.8\textwidth, center]{JetHighFlow.png}
 \caption{At high flow rates the water has sufficient velocity (indicated by arrow length) to overcome the adverse pressure gradients created by the duct shape, shown by the change from green to red. After the impeller has added further pressure to the water, the water accelerates out of the contracting nozzle through the favourable pressure gradient (red to green) to produce a jet, reaching equal pressure to outside at the exit}
 \label{fig:JetHighFlow.png}
 \end{figure}
@@ -547,10 +642,17 @@ Flow separation also tends to lead to unsteady flows, with vortices periodically
 
 \begin{figure}[h]
 \captionsetup{width=.8\textwidth}
-\includegraphics[width=.8\textwidth]{JetLowFlow.png}
+\includegraphics[width=.8\textwidth, center]{JetLowFlow.png}
 \caption{At low flow rates the water has insufficient velocity to overcome the adverse pressure gradients created by the duct shape, and flow separation begins to occur on the duct intake, and between the blades beginning near the roots (stall).  Flow through the jet would be unsteady, with excessive energy expended creating vortices and turbulence that results in little thrust.}
 \label{fig:JetLowFlow.png}
 \end{figure}
+
+\begin{tcolorbox}[width=0.8\textwidth, center, colback=blue!5!white,colframe=blue!75!black, title= Why pumjet efficiency declines at low speed]
+Pumpjets have lower efficiency at lower speeds because the shroud forces the stream of water to flow in a very different pattern to what it would naturally.  By expanding and decelerating the flow at the point where it meets the rotor (where it would contract and accelerate without the duct) the duct forces some of the flows kinetic energy to be converted back to pressure.
+\\
+\\
+This has a terrible impact on efficiency when the incoming water doesn't have very much kinetic energy, and not a great deal more needs to be added to it, as happens when a vessel is moving slowly.  The effect of slowing down water that's already going slowly means that some of the water stops, and in fact turns around and creates a vortex, known as 'flow separation'.  The effective size of the water-colum being accelerated reduces and efficiency declines, as more of the system's energy is absorbed in spinning the water around in circles, rather than accelerating it backwards.
+\end{tcolorbox}
 
 It is worthwhile noting that the diagrams in Figures \ref{fig:JetHighFlow.png} and \ref{fig:JetLowFlow.png} do not include a hub for the sake of simplicity.  In practice, the cross-sectional are of the pumpjet naturally only includes that aread between the hub and the duct, and in the case of many pumpjets, particularly those on the ends of torpedoes or submarines, the hub may include/incorporate the tapering tail of the body, for example in Figures \ref{fig:PumpjetOutline.png} or \ref{fig:PumpjetWaterjet.png}.  Particularly in Figure \ref{fig:PumpjetWaterjet.png}, the appearance of the inner side of the shroud to roughly follow contraction of the hub or body gives the optical appearance of very little diffusion or contraction of the flow occurring, as the one dimensional separation might seem to be roughly constant, or even expanding in places where I have earlier explained it generally contracts.  It is important to consider the impact of the second dimension on the actual effective area. Since area of a disc follows $\pi r^2$, the impact of the contraction of the hub will be dramatically larger when it is large than it will be when it is small.
 
@@ -674,6 +776,13 @@ With the optimum efficiency of a jet probably being no greater than 60\% or 70\%
 \subsection{An assessment of scope for improving the efficiency of a pumpjet at low speeds}
 Before continuing to assess the impact of the likely efficiency curves of pumpjets relative to propellers, it is worthwhile considering what the known literature about the theory of pumps, jets, and turbomachinery might tell us about the potential for a radical advance which make might substantially improve the shape of the curve at very low speeds.  Whilst the field of propulsor design is no doubt complex, and I will not attempt to be exhaustive in detailing all of the potential design considerations which might make an improvement.  However, the pursuit of reasonably comprehensive confidence is aided by the the scale of the gap which probably needs to be closed to make pumpjets comparably efficient to propellers at the relevant speeds.  Minor adjustments and the improvement of small or marginal effects, of which there might be many, will clearly not help in shifting the efficiency peak of a jet from over 25kt to under 10kt.  In other words, this gap will not be closed or noticeably reduced by 'tuning'.  Quite substantial redesign of core characteristics (like mass flow) would be required, which would necessitate a cycle of redesign and tuning virtually all other aspect of the entire jet, as illustrated by numerous guides to the design of such systems (\cite{bruce1974}, \cite{furuya1988}, \cite{mccormick1963design}, \cite{henderson1964}).  As such, I will only consider those parameters which could plausibly be altered quite substantially, where the consideration of larger changes make the likely limits or trade-offs quite clear.
 
+\begin{tcolorbox}[width=0.8\textwidth, center, colback=blue!5!white,colframe=blue!75!black, title= Can we just 'tune' the pumpjet to be more efficient at low speeds?]
+A effects different effect and factors working in different directions make the process of re-designing a pumpjet quite complex, and bode poorly for a high-efficiency, low-speed pumpjet.  Generally increasing the mass-flow, by increasing duct size, might be assumed to be a first step. However this increases the size of the shroud, and efficiencies can decline further, since the duct inevitably produces some negative thrust.  Moderating the 'deceleration' by making the shape change more gradual could reduce some flow separation, but make the duct much longer, and increase overall friction drag from the surfaces.  Easy wins are not obvious.
+\\
+\\
+Furthermore, with peak efficiencies for pumpjets generally currently well above 25kt, only quite radical design changes could be expected to have the sort of effect that might make a big enough difference (good efficiency below 10kt), which aren't really within the scope of 'tuning'.  The radical redesigns which might look capable of having a significant impact start to look very much like evolving right back to a propeller, which defeats the acoustic purposes of having a pumpjet in the first place.
+\end{tcolorbox}
+
 \subsubsection{Increase mass-flow by widening area of intake}
 Perhaps the most obvious means by which one might attain substantial increases in efficiency is to increase substantially the mass flow rate.  This is derived from a fundamental relationship, as expressed earlier in the representation of ideal propeller and jet efficiency (prior to the consideration of any drag or other losses) which was given in the earlier equation.  Since excessive velocity differences result in more energy expended than momentum changed, as given by momentum theory and basic mechanics, doing work on a large body of water, rather than working harder on more of it, is generally desirable from an efficiency perspective.  Considering what the appropriate mass-flow should be at design speeds is generally the first thing that is specified to occur in all design processes for pumpjets, and good example of which is in \cite[6-7]{henderson1964}.
 
@@ -708,7 +817,7 @@ In addition, whilst it is often demonstrated that for a given propeller under ce
 
 In other words, the use of highly loaded propellers in such applications is actually particular to design constraints that are unlikely to be present for a submarine, which can position the propeller at the tail of its body, directly behind its centre of mass and drag, and consequenlty have freedom about the optimal size of the blades.  It is well known that a duct cannot improve the performance of a low-loaded propeller which would be the situation for a slow-moving vessel with unconstrained propeller size.  Authoritative references in the literature include \cite{oosterveld1970}, who calculates the minimum thrust coefficient $C_T$ (a measure of loading) for an accelerating duct to improve a propellers performance to be between 1 and 2, as shown in \ref{fig:AcceleratingIdeal.png}.
 
-\begin{figure}[h] \captionsetup{width=0.5\textwidth}
+\begin{figure}[h] \captionsetup{width=0.8\textwidth}
 \includegraphics[width=\textwidth]{AcceleratingIdeal.png}
 \caption{Calculations of 'ideal' efficiencies of accelerating ducts (neglecting drag) in \cite{oosterveld1970} show that a duct can only improve the efficiency of a propeller if it is loaded above a certain degree, and that longer ducts produce better improvements in 'ideal' efficiencies}
 \label{fig:AcceleratingIdeal.png}
@@ -757,7 +866,7 @@ If more aggressive shape changes are attemped in a limited space, the deflection
 \caption{}
 \end{subfigure}
 
-\caption{(a) A an intake may experience risks of flow separation even at low speeds (Inlet Velocity Ratio) on some surfaces due to certain flow deflections being more severe. (b) A an intake may experience risk of flow separation on different surfaces at high speeds (Inlet Velocity Ratio) where other flow deflections are more severe. Source: \cite{bulten2006numerical}}
+\caption{(a) An intake may experience risks of flow separation even at low speeds (Inlet Velocity Ratio) on some surfaces due to certain flow deflections being more severe. (b) A an intake may experience risk of flow separation on different surfaces at high speeds (Inlet Velocity Ratio) where other flow deflections are more severe. Source: \cite{bulten2006numerical}}
 \label{fig:LowIVR.png}
 \end{figure}
 
@@ -1061,6 +1170,19 @@ Where battery density and hotel load are both reduced, the proportional change h
 The most striking feature of this figure however is the impact on the submarine's performance when hotel load is lowered, and battery density is raised simultaneously.  Here the two factors combined have a proportional impact of around 80\% improvement for the switch to propellers under central assumptions, and over 150\% in the scenario of widest separation.  However, in nominal terms, this impact is even more significant, with central scenarios showing a \textit{difference} of over 200 hours between the two systesm under central assumptions at 3kt, and a range difference of over 750nm.  These differences are extremely large, representing plausibly double the expected total ranges and endurances of existing modern diesel-electric submarines. Even if such large changes in hotel load and battery capacity are not simultaneously likely these sensitivitiesquite clearly demonstrate how even modest shifts in both hotel load and battery energy density might combine to have very significant impacts on the appearnce of the pumpjet and propeller comparison.  For instance, a hotel load that reduced by 30\%, and a battery energy density increase of 40\% could plausibly have the impact of doubling the nominal differces between the performance of the two propulsive systems.
 
 This sort of extreme sensitivity ought to have a significant bearing on how the overall performance specifications of the submarine are defined, as seemingly incremental changes to hotel load and electrical energy stores are likely to substantially magnified, or muted, by the choice of propulsion system.
+
+\begin{tcolorbox}[width=0.8\textwidth, center, colback=blue!5!white,colframe=blue!75!black, title= What about hotel load and the system as a whole?]
+The non-propulsive power demand of the submarine (hotel load) has an enormous impact on a conventional submarine's performance underwater. As extra power is drained as time ticks by, underwater endurance and range decline substantially with higher hotel loads.
+\\
+\\
+Hotel load also has a significant impact on the \textit{difference} between the pumpjet and propeller affect the performance of the whole system. By driving the speed at which the propulsion becomes the dominant power demand higher, an extra-large hotel load reduces the overall difference between the two identical submarines, and pushes the peak proportional difference to higher speeds, where endurance and range is naturally lower due to drag increasing.
+\\
+\\
+The inverse relationship leads to even more striking results, particularly if large energy stores (AIP or lithium-ion batteries) are available.  If the hotel load is very low (either because it was designed that way, or discretionary components are shut-down in a high-threat sitation to maximise endurance) then the penalty inflicted by the pumpjet becomes extremely large, quite probably close to a factor of two, amounting to around or over a week of endurance at 3kt, and many hundreds of nautical miles at slightly higher speeds.
+\\
+\\
+The necessary consequence of this dynamic is that selecting a power-hungry combat system such as the AN/BYG-1 in conjunction with the pumpjet and lead-acid batteries for energy when dived will virtually ensure that many substantially smaller conventional sumbarines operating in the Asia Pacific in the coming decades will easily outclass the Shortfin Barracuda in terms of dived range and endurance.
+\end{tcolorbox}
 
 \begin{figure}
 \begin{knitrout}

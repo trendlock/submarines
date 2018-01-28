@@ -171,6 +171,38 @@
     \field{year}{2017}
   \endentry
 
+  \entry{autret2016}{article}{}
+    \name{author}{2}{}{%
+      {{hash=AG}{%
+         family={Autret},
+         familyi={A\bibinitperiod},
+         given={Gerard},
+         giveni={G\bibinitperiod},
+      }}%
+      {{hash=CS}{%
+         family={Costello},
+         familyi={C\bibinitperiod},
+         given={Sean},
+         giveni={S\bibinitperiod},
+      }}%
+    }
+    \list{publisher}{1}{%
+      {Australian Strategic Policy Institute}%
+    }
+    \strng{namehash}{AGCS1}
+    \strng{fullhash}{AGCS1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{labelyear}{2016}
+    \field{title}{Designing the Shortfin Barracuda Block 1A}
+    \verb{url}
+    \verb https://www.aspistrategist.org.au/designing-the-shortfin-barracuda-bl
+    \verb ock-1a/
+    \endverb
+    \field{month}{04}
+    \field{year}{2016}
+  \endentry
+
   \entry{giles2010}{misc}{}
     \name{author}{5}{}{%
       {{hash=GW}{%
@@ -376,38 +408,6 @@
     \endverb
     \field{volume}{3}
     \field{year}{2005}
-  \endentry
-
-  \entry{autret2016}{article}{}
-    \name{author}{2}{}{%
-      {{hash=AG}{%
-         family={Autret},
-         familyi={A\bibinitperiod},
-         given={Gerard},
-         giveni={G\bibinitperiod},
-      }}%
-      {{hash=CS}{%
-         family={Costello},
-         familyi={C\bibinitperiod},
-         given={Sean},
-         giveni={S\bibinitperiod},
-      }}%
-    }
-    \list{publisher}{1}{%
-      {Australian Strategic Policy Institute}%
-    }
-    \strng{namehash}{AGCS1}
-    \strng{fullhash}{AGCS1}
-    \field{labelnamesource}{author}
-    \field{labeltitlesource}{title}
-    \field{labelyear}{2016}
-    \field{title}{Designing the Shortfin Barracuda Block 1A}
-    \verb{url}
-    \verb https://www.aspistrategist.org.au/designing-the-shortfin-barracuda-bl
-    \verb ock-1a/
-    \endverb
-    \field{month}{04}
-    \field{year}{2016}
   \endentry
 
   \entry{buckingham2008submarine}{article}{}

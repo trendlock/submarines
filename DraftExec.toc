@@ -4,116 +4,120 @@
 \defcounter {refsection}{0}\relax 
 \contentsline {section}{\numberline {2}Executive Summary}{5}
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {3}Speed and Drag - Why very slow is very very $(very)^2$ economical}{7}
+\contentsline {section}{\numberline {3}Speed and Drag - Why very slow is very very $(very)^2$ economical}{9}
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {4}The difference between nuclear and conventional propulsion}{9}
+\contentsline {subsection}{\numberline {3.1}They physical relationship}{9}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {4.1}Power and Energy}{9}
+\contentsline {subsection}{\numberline {3.2}Practical implications for submarines}{10}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {4.2}Xenon poisoning and low power limitations}{9}
+\contentsline {section}{\numberline {4}The difference between nuclear and conventional propulsion}{12}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {4.3}Recent Commentary}{10}
+\contentsline {subsection}{\numberline {4.1}Power and Energy}{12}
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {5}Basics of Ducted Propellers and Pumpjets}{12}
+\contentsline {subsection}{\numberline {4.2}Xenon poisoning and low power limitations}{12}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {5.1}Propellers}{12}
+\contentsline {subsection}{\numberline {4.3}Recent Commentary}{14}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsubsection}{\numberline {5.1.1}Pitch}{12}
+\contentsline {section}{\numberline {5}Basics of Ducted Propellers and Pumpjets}{16}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsubsection}{\numberline {5.1.2}Pitch and the Advance Ratio}{13}
+\contentsline {subsection}{\numberline {5.1}Propellers}{16}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {5.2}Ducted Propellers}{15}
+\contentsline {subsubsection}{\numberline {5.1.1}Pitch}{16}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsubsection}{\numberline {5.2.1}The Accelerating Duct}{16}
+\contentsline {subsubsection}{\numberline {5.1.2}Pitch and the Advance Ratio}{18}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsubsection}{\numberline {5.2.2}The Decelerating Duct or Pumpjet}{18}
+\contentsline {subsection}{\numberline {5.2}Ducted Propellers}{20}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsubsection}{\numberline {5.2.3}Waterjets}{19}
+\contentsline {subsubsection}{\numberline {5.2.1}The Accelerating Duct}{21}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {5.3}Pump Types}{20}
+\contentsline {subsubsection}{\numberline {5.2.2}The Decelerating Duct or Pumpjet}{22}
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {6}Constraints on the efficiency of pumpjets at low speed}{22}
+\contentsline {subsubsection}{\numberline {5.2.3}Waterjets}{24}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {6.1}Recent Commentary}{22}
+\contentsline {subsection}{\numberline {5.3}Pump Types}{25}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {6.2}Modern literature and results}{23}
+\contentsline {section}{\numberline {6}Constraints on the efficiency of pumpjets at low speed}{28}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {6.3}A simple theoretical explanation}{25}
+\contentsline {subsection}{\numberline {6.1}Recent Commentary}{28}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {6.4}Trade-offs and Limitations on Improvements}{29}
+\contentsline {subsection}{\numberline {6.2}Modern literature and results}{28}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {6.5}The impact of duct loss on an ideal propeller}{31}
+\contentsline {subsection}{\numberline {6.3}A simple theoretical explanation}{31}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {6.6}An assessment of scope for improving the efficiency of a pumpjet at low speeds}{36}
+\contentsline {subsection}{\numberline {6.4}Trade-offs and Limitations on Improvements}{35}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsubsection}{\numberline {6.6.1}Increase mass-flow by widening area of intake}{37}
+\contentsline {subsection}{\numberline {6.5}The impact of duct loss on an ideal propeller}{37}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsubsection}{\numberline {6.6.2}Reduce degree of diffusion (i.e. switch to accelerating duct) to reduce negative thrust from duct}{39}
+\contentsline {subsection}{\numberline {6.6}An assessment of scope for improving the efficiency of a pumpjet at low speeds}{42}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsubsection}{\numberline {6.6.3}Reduce shroud length to decrease drag on duct}{40}
+\contentsline {subsubsection}{\numberline {6.6.1}Increase mass-flow by widening area of intake}{43}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsubsection}{\numberline {6.6.4}Summary remarks on potential for redesign of pumpjet for low-speed conditions}{41}
+\contentsline {subsubsection}{\numberline {6.6.2}Reduce degree of diffusion (i.e. switch to accelerating duct) to reduce negative thrust from duct}{45}
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {7}Model Structures and Assumptions}{42}
+\contentsline {subsubsection}{\numberline {6.6.3}Reduce shroud length to decrease drag on duct}{47}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {7.1}Mathematical Structure}{42}
+\contentsline {subsubsection}{\numberline {6.6.4}Summary remarks on potential for redesign of pumpjet for low-speed conditions}{48}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {7.2}Efficiency Curve Assumptions}{43}
+\contentsline {section}{\numberline {7}Model Structures and Assumptions}{50}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {7.3}Hotel Load Assumptions}{45}
+\contentsline {subsection}{\numberline {7.1}Mathematical Structure}{50}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {7.4}Battery Assumptions}{47}
+\contentsline {subsection}{\numberline {7.2}Efficiency Curve Assumptions}{51}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {7.5}Drag Coefficient of Hull}{47}
+\contentsline {subsection}{\numberline {7.3}Hotel Load Assumptions}{54}
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {8}Results and Discussion}{49}
+\contentsline {subsection}{\numberline {7.4}Battery Assumptions}{54}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {8.1}Power Demand}{49}
+\contentsline {subsection}{\numberline {7.5}Drag Coefficient of Hull}{55}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {8.2}Central Results}{49}
+\contentsline {section}{\numberline {8}Results and Discussion}{56}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {8.3}Sensitivity of Curve Selection}{49}
+\contentsline {subsection}{\numberline {8.1}Power Demand}{56}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {8.4}Sensitivity to Hotel Load}{55}
+\contentsline {subsection}{\numberline {8.2}Central Results}{56}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {8.5}Sensitivity to Battery Changes}{58}
+\contentsline {subsection}{\numberline {8.3}Sensitivity of Curve Selection}{56}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {8.6}The interaction of hotel load, battery energy density, and efficiency curves}{60}
+\contentsline {subsection}{\numberline {8.4}Sensitivity to Hotel Load}{62}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {8.7}Indiscretion Ratios}{61}
+\contentsline {subsection}{\numberline {8.5}Sensitivity to Battery Changes}{66}
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {9}Acoustic Considerations}{66}
+\contentsline {subsection}{\numberline {8.6}The interaction of hotel load, battery energy density, and efficiency curves}{66}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {9.1}The importance of cavitation inception}{66}
+\contentsline {subsection}{\numberline {8.7}Indiscretion Ratios}{70}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {9.2}Impact of speed on cavitation}{66}
+\contentsline {section}{\numberline {9}Acoustic Considerations}{74}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {9.3}The impact of depth on cavitation}{67}
+\contentsline {subsection}{\numberline {9.1}The importance of cavitation inception}{74}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {9.4}The significance of flow separation}{69}
+\contentsline {subsection}{\numberline {9.2}Impact of speed on cavitation}{74}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {9.5}The impact of duct shielding}{69}
+\contentsline {subsection}{\numberline {9.3}The impact of depth on cavitation}{75}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsubsection}{\numberline {9.5.1}Directional Dependence}{70}
+\contentsline {subsection}{\numberline {9.4}The significance of flow separation}{77}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsubsection}{\numberline {9.5.2}Frequency Dependence}{71}
+\contentsline {subsection}{\numberline {9.5}The impact of duct shielding}{78}
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{Appendix \numberline {A}Some essential concepts}{76}
+\contentsline {subsubsection}{\numberline {9.5.1}Directional Dependence}{79}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {A.1}Conservation of Energy}{76}
+\contentsline {subsubsection}{\numberline {9.5.2}Frequency Dependence}{79}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsubsection}{\numberline {A.1.1}Venturi Effect}{76}
+\contentsline {section}{Appendix \numberline {A}Some essential concepts}{85}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsubsection}{\numberline {A.1.2}Flow Diffusion}{76}
+\contentsline {subsection}{\numberline {A.1}Conservation of Energy}{85}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsubsection}{\numberline {A.1.3}Energy waste and efficiency}{76}
+\contentsline {subsubsection}{\numberline {A.1.1}Venturi Effect}{85}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {A.2}Boundary Layer}{77}
+\contentsline {subsubsection}{\numberline {A.1.2}Flow Diffusion}{85}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {A.3}Turbulent and Laminar Flow}{77}
+\contentsline {subsubsection}{\numberline {A.1.3}Energy waste and efficiency}{86}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {A.4}Cavitation}{78}
+\contentsline {subsection}{\numberline {A.2}Boundary Layer}{86}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {A.5}Pressure, Thrust, and Momentum change}{79}
+\contentsline {subsection}{\numberline {A.3}Turbulent and Laminar Flow}{86}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {A.6}Flow separation}{81}
+\contentsline {subsection}{\numberline {A.4}Cavitation}{87}
+\defcounter {refsection}{0}\relax 
+\contentsline {subsection}{\numberline {A.5}Pressure, Thrust, and Momentum change}{89}
+\defcounter {refsection}{0}\relax 
+\contentsline {subsection}{\numberline {A.6}Flow separation}{91}
