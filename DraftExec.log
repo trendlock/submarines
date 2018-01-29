@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.18 (TeX Live 2017) (preloaded format=pdflatex 2017.12.9)  27 JAN 2018 16:10
+This is pdfTeX, Version 3.14159265-2.6-1.40.18 (TeX Live 2017) (preloaded format=pdflatex 2017.12.9)  27 JAN 2018 18:53
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -564,7 +564,17 @@ LaTeX Font Info:    External font `cmex10' loaded for size
 \tf@toc=\write5
 \openout5 = `DraftExec.toc'.
 
- [2] [3] [4]
+ [2]
+! Undefined control sequence.
+l.113 ...and literature during the CEP \parenctite
+                                                  {costello2016}. It seems t...
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+[3] [4]
 
 LaTeX Warning: Citation '(' on page 5 undefined on input line 139.
 
@@ -1315,7 +1325,7 @@ Here is how much of TeX's memory you used:
  14443 multiletter control sequences out of 15000+600000
  9615 words of font info for 34 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 48i,11n,77p,2126b,1721s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 48i,11n,77p,2128b,1721s stack positions out of 5000i,500n,10000p,200000b,80000s
 </usr/local/texlive/2017/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx10.pfb
 ></usr/local/texlive/2017/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx12.pfb>
 </usr/local/texlive/2017/texmf-dist/fonts/type1/public/amsfonts/cm/cmcsc10.pfb>
@@ -1333,7 +1343,7 @@ ive/2017/texmf-dist/fonts/type1/public/amsfonts/cm/cmr7.pfb></usr/local/texlive
 texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/local/texlive/2017/t
 exmf-dist/fonts/type1/public/amsfonts/cm/cmti10.pfb></usr/local/texlive/2017/te
 xmf-dist/fonts/type1/public/amsfonts/cm/cmtt10.pfb>
-Output written on DraftExec.pdf (83 pages, 13278538 bytes).
+Output written on DraftExec.pdf (83 pages, 13279051 bytes).
 PDF statistics:
  527 PDF objects out of 1000 (max. 8388607)
  289 compressed objects within 3 object streams
