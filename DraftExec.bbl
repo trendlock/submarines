@@ -42,7 +42,6 @@
     \strng{fullhash}{SC1}
     \field{labelnamesource}{author}
     \field{labeltitlesource}{title}
-    \field{labelyear}{2016}
     \field{title}{The sound of silence - why Germany lost its subs bid}
     \verb{url}
     \verb http://www.theaustralian.com.au/national-affairs/defence/the-sound-of
@@ -69,7 +68,6 @@
     \strng{fullhash}{SJ1}
     \field{labelnamesource}{author}
     \field{labeltitlesource}{title}
-    \field{labelyear}{2017}
     \field{title}{Australia's Future Submarine Getting This Key Capability
   Right}
     \verb{url}
@@ -96,7 +94,6 @@
     \strng{fullhash}{DA1}
     \field{labelnamesource}{author}
     \field{labeltitlesource}{title}
-    \field{labelyear}{2017}
     \field{title}{Pump up the pump jet?}
     \verb{url}
     \verb https://www.aspistrategist.org.au/pump-up-the-pump-jet/
@@ -110,7 +107,6 @@
       {SBS}%
     }
     \field{labeltitlesource}{title}
-    \field{labelyear}{2017}
     \field{title}{Size of new submarines locked in}
     \verb{url}
     \verb https://www.sbs.com.au/news/size-of-new-submarines-locked-in
@@ -135,8 +131,6 @@
     \strng{fullhash}{NB1}
     \field{labelnamesource}{author}
     \field{labeltitlesource}{title}
-    \field{labelyear}{2017}
-    \field{extrayear}{2}
     \field{title}{The Strategist Six: Hervé Guillou}
     \verb{url}
     \verb https://www.aspistrategist.org.au/the-strategist-six-herve-guillou/
@@ -161,14 +155,44 @@
     \strng{fullhash}{NB1}
     \field{labelnamesource}{author}
     \field{labeltitlesource}{title}
-    \field{labelyear}{2017}
-    \field{extrayear}{1}
     \field{title}{The Strategist Six: Greg Sammut}
     \verb{url}
     \verb https://www.aspistrategist.org.au/the-strategist-six-greg-sammut/
     \endverb
     \field{month}{10}
     \field{year}{2017}
+  \endentry
+
+  \entry{coorey2016}{article}{}
+    \name{author}{2}{}{%
+      {{hash=PA}{%
+         family={Patrick},
+         familyi={P\bibinitperiod},
+         given={Aaron},
+         giveni={A\bibinitperiod},
+      }}%
+      {{hash=CP}{%
+         family={Coorey},
+         familyi={C\bibinitperiod},
+         given={Phillip},
+         giveni={P\bibinitperiod},
+      }}%
+    }
+    \list{publisher}{1}{%
+      {The Australian Financial Review}%
+    }
+    \strng{namehash}{PACP1}
+    \strng{fullhash}{PACP1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{title}{Coalition plans nuclear-powered submarine fleet over long
+  term}
+    \verb{url}
+    \verb http://www.afr.com/business/manufacturing/coalition-plans-nuclearpowe
+    \verb red-submarine-fleet-over-long-term-20160429-goieal
+    \endverb
+    \field{month}{05}
+    \field{year}{2016}
   \endentry
 
   \entry{autret2016}{article}{}
@@ -193,7 +217,6 @@
     \strng{fullhash}{AGCS1}
     \field{labelnamesource}{author}
     \field{labeltitlesource}{title}
-    \field{labelyear}{2016}
     \field{title}{Designing the Shortfin Barracuda Block 1A}
     \verb{url}
     \verb https://www.aspistrategist.org.au/designing-the-shortfin-barracuda-bl
@@ -240,7 +263,6 @@
     \strng{fullhash}{GWDPTASVAPR1}
     \field{labelnamesource}{author}
     \field{labeltitlesource}{title}
-    \field{labelyear}{2010}
     \field{title}{The advanced waterjet: propulsor performance and effect on
   ship design}
     \verb{url}
@@ -266,7 +288,6 @@
     \strng{fullhash}{CJ1}
     \field{labelnamesource}{author}
     \field{labeltitlesource}{title}
-    \field{labelyear}{2007}
     \field{title}{Marine Propellers and Propulsion}
     \verb{url}
     \verb http://www.nuceng.ca/br_space/2017-09_4d03_6d03/misc_files/xenon_pois
@@ -291,7 +312,6 @@
     \strng{fullhash}{LLH1}
     \field{labelnamesource}{author}
     \field{labeltitlesource}{title}
-    \field{labelyear}{2014}
     \field{title}{The economics of slow steaming}
     \verb{url}
     \verb http://www.seatrade-maritime.com/news/americas/the-economics-of-slow-
@@ -317,7 +337,6 @@
     \strng{fullhash}{SM1}
     \field{labelnamesource}{author}
     \field{labeltitlesource}{title}
-    \field{labelyear}{2012}
     \field{title}{The Guide to Slow Steaming On Ships}
     \verb{url}
     \verb https://www.marineinsight.com/wp-content/uploads/2013/01/The-guide-to
@@ -332,7 +351,6 @@
       {World Nuclear Association}%
     }
     \field{labeltitlesource}{title}
-    \field{labelyear}{2017}
     \field{title}{Nuclear Powered Ships}
     \verb{url}
     \verb http://www.world-nuclear.org/information-library/non-power-nuclear-ap
@@ -357,7 +375,6 @@
     \strng{fullhash}{PR1}
     \field{labelnamesource}{author}
     \field{labeltitlesource}{title}
-    \field{labelyear}{2015}
     \field{title}{The Driving Factor in the SEA 1000 choice}
     \verb{url}
     \verb https://corporate.siemens.com.au/content/dam/internet/siemens-com-au/
@@ -373,7 +390,6 @@
       {World Nuclear Association}%
     }
     \field{labeltitlesource}{title}
-    \field{labelyear}{2009}
     \field{title}{Chernobyl Accident Appendix 1}
     \verb{url}
     \verb http://www.world-nuclear.org/information-library/safety-and-security/
@@ -399,7 +415,6 @@
     \strng{fullhash}{GB1}
     \field{labelnamesource}{author}
     \field{labeltitlesource}{title}
-    \field{labelyear}{2005}
     \field{title}{Elementary Physics of Reactor Control Module - Fission
   Product Poisoning}
     \verb{url}
@@ -435,7 +450,6 @@
     \strng{fullhash}{BJHCHT1}
     \field{labelnamesource}{author}
     \field{labeltitlesource}{title}
-    \field{labelyear}{2008}
     \field{title}{Submarine power and propulsion-application of technology to
   deliver customer benefit}
     \verb{url}
@@ -474,7 +488,6 @@
     \strng{fullhash}{MAFTSRHDA1}
     \field{labelnamesource}{author}
     \field{labeltitlesource}{title}
-    \field{labelyear}{2011}
     \field{title}{Ship resistance and propulsion}
     \verb{url}
     \verb http://dl.kashti.ir/ENBOOKS/NEW/Ship%20resistance%20and%20propulsion%
@@ -500,7 +513,6 @@
     \strng{fullhash}{DMT1}
     \field{labelnamesource}{author}
     \field{labeltitlesource}{title}
-    \field{labelyear}{2017}
     \field{title}{Basic Principals of Ship Propulsion}
     \verb{url}
     \verb https://marine.man.eu/docs/librariesprovider6/propeller-aftship/basic
@@ -526,7 +538,6 @@
     \strng{fullhash}{LEV1}
     \field{labelnamesource}{author}
     \field{labeltitlesource}{title}
-    \field{labelyear}{1988}
     \field{title}{Principles of naval architecture}
     \verb{url}
     \verb http://opac.vimaru.edu.vn/edata/EBook/Principles%20of%20Naval%20achit
@@ -561,7 +572,6 @@
     \strng{fullhash}{AMMSMHJ1}
     \field{labelnamesource}{author}
     \field{labeltitlesource}{title}
-    \field{labelyear}{2010}
     \field{booktitle}{Proceedings of 28th Symposium on Naval Hydrodynamics,
   Pasadena}
     \field{pages}{12\bibrangedash 17}
@@ -582,7 +592,6 @@
     \strng{fullhash}{WGF1}
     \field{labelnamesource}{author}
     \field{labeltitlesource}{title}
-    \field{labelyear}{1973}
     \field{title}{Hydrodynamic Design Principles of Pumps and Ducting for
   Waterjet Propulsion}
     \verb{url}
@@ -609,7 +618,6 @@
     \strng{fullhash}{MJ1}
     \field{labelnamesource}{author}
     \field{labeltitlesource}{title}
-    \field{labelyear}{2015}
     \field{booktitle}{Proceedings of the fourth International Symposium on
   Marine Propulsors SMP}
     \field{pages}{31}
@@ -640,7 +648,6 @@
     \strng{fullhash}{OMWC1}
     \field{labelnamesource}{author}
     \field{labeltitlesource}{title}
-    \field{labelyear}{1970}
     \field{title}{Wake adapted ducted propellers}
     \verb{url}
     \verb http://www.marin.nl/web/Publications/Publication-items/Wake-Adapted-D
@@ -680,7 +687,6 @@
     \strng{fullhash}{HHBMJVJDCJ1}
     \field{labelnamesource}{author}
     \field{labeltitlesource}{title}
-    \field{labelyear}{2010}
     \field{booktitle}{Proceedings of 1st international symposium on fishing
   vessel energy efficiency E-fishing, Vigo, Spain}
     \field{title}{Ducted propellers. A solution for better propulsion of ships
@@ -716,7 +722,6 @@
     \strng{fullhash}{HRMJWG1}
     \field{labelnamesource}{author}
     \field{labeltitlesource}{title}
-    \field{labelyear}{1964}
     \field{title}{A method for the design of pumpjets}
     \verb{url}
     \verb http://www.dtic.mil/dtic/tr/fulltext/u2/439631.pdf
@@ -744,7 +749,6 @@
     \strng{fullhash}{WH1}
     \field{labelnamesource}{author}
     \field{labeltitlesource}{title}
-    \field{labelyear}{1997}
     \field{title}{Jet Torque}
     \verb{url}
     \verb https://corporate.siemens.com.au/content/dam/internet/siemens-com-au/
@@ -782,7 +786,6 @@
     \strng{fullhash}{WGF1}
     \field{labelnamesource}{author}
     \field{labeltitlesource}{title}
-    \field{labelyear}{1986}
     \field{title}{Preliminary design of turbopumps and related machinery}
     \verb{url}
     \verb https://ntrs.nasa.gov/archive/nasa/casi.ntrs.nasa.gov/19870008232.pdf
@@ -806,7 +809,6 @@
     \strng{fullhash}{PR1}
     \field{labelnamesource}{author}
     \field{labeltitlesource}{title}
-    \field{labelyear}{2017}
     \field{title}{Senate Estimates Committeee}
     \verb{url}
     \verb http://parlview.aph.gov.au/mediaPlayer.php?videoID=379261&operation_m
@@ -832,7 +834,6 @@
     \strng{fullhash}{FN1}
     \field{labelnamesource}{author}
     \field{labeltitlesource}{title}
-    \field{labelyear}{1995}
     \field{number}{1}
     \field{pages}{43\bibrangedash 50}
     \field{title}{Measurements of basic performances for waterjet propulsion
@@ -885,7 +886,6 @@
     \strng{fullhash}{MKIZKBNBJCSDG1}
     \field{labelnamesource}{author}
     \field{labeltitlesource}{title}
-    \field{labelyear}{2015}
     \field{booktitle}{The fourth international symposium on marine propulsors}
     \field{pages}{129\bibrangedash 137}
     \field{title}{Powering for medium speed wave-piercing catamarans comparing
@@ -915,7 +915,6 @@
     \strng{fullhash}{MBEJ1}
     \field{labelnamesource}{author}
     \field{labeltitlesource}{title}
-    \field{labelyear}{1963}
     \field{number}{10}
     \field{pages}{2348\bibrangedash 2354}
     \field{title}{Design and Performance of Propellers and Pumpjets for
@@ -947,7 +946,6 @@
     \strng{fullhash}{GWSHRE1}
     \field{labelnamesource}{author}
     \field{labeltitlesource}{title}
-    \field{labelyear}{1966}
     \field{number}{1}
     \field{pages}{84\bibrangedash 90}
     \field{title}{Selection of a Propulsor for a Submersible System}
@@ -970,7 +968,6 @@
     \strng{fullhash}{s1}
     \field{labelnamesource}{author}
     \field{labeltitlesource}{title}
-    \field{labelyear}{2016}
     \field{title}{Propellerporn}
     \verb{url}
     \verb https://www.reddit.com/r/propellerporn/comments/4f2vks/bad_quality_bu
@@ -993,7 +990,6 @@
     \strng{fullhash}{BJH1}
     \field{labelnamesource}{author}
     \field{labeltitlesource}{title}
-    \field{labelyear}{1967}
     \field{title}{Aspects of Performance Evaluation of Waterjet Propulsion
   Systems and a Critical Review of the State-of-the-art}
     \verb{url}
@@ -1021,7 +1017,6 @@
     \strng{fullhash}{BNWH1}
     \field{labelnamesource}{author}
     \field{labeltitlesource}{title}
-    \field{labelyear}{2006}
     \field{number}{02}
     \field{title}{Numerical analysis of a waterjet propulsion system}
     \verb{url}
@@ -1045,7 +1040,6 @@
     \strng{fullhash}{WJ1}
     \field{labelnamesource}{author}
     \field{labeltitlesource}{title}
-    \field{labelyear}{2013}
     \field{title}{Improving Potential Flow Predictions for Ducted Propellers}
     \verb{url}
     \verb http://www.refresco.org/wp-content/uploads/2015/03/2013-Msc_Thesis_Ch
@@ -1085,7 +1079,6 @@
     \strng{fullhash}{LLPGSPK1}
     \field{labelnamesource}{author}
     \field{labeltitlesource}{title}
-    \field{labelyear}{2016}
     \field{number}{1}
     \field{pages}{110\bibrangedash 116}
     \field{title}{CFD prediction and simulation of a pumpjet propulsor}
@@ -1129,7 +1122,6 @@
     \strng{fullhash}{BEPGWRJTA1}
     \field{labelnamesource}{author}
     \field{labeltitlesource}{title}
-    \field{labelyear}{1974}
     \field{title}{The design of pumpjets for hydrodynamic propulsion}
     \verb{url}
     \verb https://ntrs.nasa.gov/search.jsp?R=19750003135
@@ -1156,7 +1148,6 @@
     \strng{fullhash}{FOCWL1}
     \field{labelnamesource}{author}
     \field{labeltitlesource}{title}
-    \field{labelyear}{1988}
     \field{title}{A new pumpjet design theory}
     \verb{url}
     \verb http://www.dtic.mil/docs/citations/ADA201353
@@ -1181,7 +1172,6 @@
     \strng{fullhash}{MMW1}
     \field{labelnamesource}{author}
     \field{labeltitlesource}{title}
-    \field{labelyear}{1979}
     \field{title}{The design and analysis of turbomachinery in an
   incompressible, steady flow using the streamline curvature method}
     \verb{url}
@@ -1234,7 +1224,6 @@
     \strng{fullhash}{LXYSPZLYLW1}
     \field{labelnamesource}{author}
     \field{labeltitlesource}{title}
-    \field{labelyear}{2013}
     \field{title}{Dynamic characteristics of rotating stall in mixed flow pump}
     \verb{url}
     \verb https://www.hindawi.com/journals/jam/2013/104629/
@@ -1266,7 +1255,6 @@
     \strng{fullhash}{LCWQ1}
     \field{labelnamesource}{author}
     \field{labeltitlesource}{title}
-    \field{labelyear}{2014}
     \field{number}{2}
     \field{pages}{31\bibrangedash 40}
     \field{title}{Rotating stall region of Water-Jet pump}
@@ -1292,7 +1280,6 @@
     \strng{fullhash}{VTTJC1}
     \field{labelnamesource}{author}
     \field{labeltitlesource}{title}
-    \field{labelyear}{1996}
     \field{title}{Waterjet-hull interaction}
     \verb{url}
     \verb https://repository.tudelft.nl/islandora/object/uuid:1608dfb6-ee8c-487
@@ -1321,7 +1308,6 @@
     \strng{fullhash}{HJ1}
     \field{labelnamesource}{author}
     \field{labeltitlesource}{title}
-    \field{labelyear}{1965}
     \field{title}{Construction of an Axial-flow Pump Jet Propulsion Unit}
     \verb{url}
     \verb http://mararchief.tudelft.nl/file/22546/
@@ -1345,7 +1331,6 @@
     \strng{fullhash}{DP1}
     \field{labelnamesource}{author}
     \field{labeltitlesource}{title}
-    \field{labelyear}{2017}
     \field{title}{TKMS argues the benefits of the propeller for Sea 1000}
     \verb{url}
     \verb http://www.australiandefence.com.au/news/tkms-argues-the-benefits-of-
@@ -1377,7 +1362,6 @@
     \strng{fullhash}{YYLLZ1}
     \field{labelnamesource}{author}
     \field{labeltitlesource}{title}
-    \field{labelyear}{2007}
     \field{booktitle}{ASME 2007 26th International Conference on Offshore
   Mechanics and Arctic Engineering}
     \field{pages}{777\bibrangedash 787}
@@ -1402,7 +1386,6 @@
     \strng{fullhash}{YYL1}
     \field{labelnamesource}{author}
     \field{labeltitlesource}{title}
-    \field{labelyear}{2007}
     \field{booktitle}{16th international conference on composite materials}
     \field{title}{Hydroelastic behavior of flexible composite propellers in
   wake inflow}
@@ -1426,7 +1409,6 @@
     \strng{fullhash}{MI1}
     \field{labelnamesource}{author}
     \field{labeltitlesource}{title}
-    \field{labelyear}{1995}
     \field{title}{Marine Propulsion}
     \verb{url}
     \verb http://webserver.dmt.upm.es/~isidoro/bk3/c17/Marine%20propulsion.pdf
@@ -1450,7 +1432,6 @@
     \strng{fullhash}{MT1}
     \field{labelnamesource}{author}
     \field{labeltitlesource}{title}
-    \field{labelyear}{2015}
     \field{title}{Concerns abound over future submarine combat system}
     \verb{url}
     \verb http://www.australiandefence.com.au/news/concerns-abound-over-future-
@@ -1476,7 +1457,6 @@
     \strng{fullhash}{PR1}
     \field{labelnamesource}{author}
     \field{labeltitlesource}{title}
-    \field{labelyear}{2011}
     \field{title}{Combat Systems Selection For SEA 1000}
     \verb{url}
     \verb https://www.asiapacificdefencereporter.com/articles/193/SEA-1000-COMB
@@ -1502,7 +1482,6 @@
     \strng{fullhash}{BP1}
     \field{labelnamesource}{author}
     \field{labeltitlesource}{title}
-    \field{labelyear}{2016}
     \field{title}{SEA1000: the importance of dived endurance (part 1)}
     \verb{url}
     \verb https://www.aspistrategist.org.au/sea1000-the-importance-of-dived-end
@@ -1528,8 +1507,6 @@
     \strng{fullhash}{OHJ1}
     \field{labelnamesource}{author}
     \field{labeltitlesource}{title}
-    \field{labelyear}{2017}
-    \field{extrayear}{1}
     \field{title}{Lessons from the Norwegian Submarine Decision}
     \verb{url}
     \verb http://www.monch.com/mpg/ebooks/naval-forces/2017/02/mobile/index.htm
@@ -1555,7 +1532,6 @@
     \strng{fullhash}{OJ1}
     \field{labelnamesource}{author}
     \field{labeltitlesource}{title}
-    \field{labelyear}{2017}
     \field{title}{Battery Showdown Lead-Acid vs Lithium-Ion}
     \verb{url}
     \verb https://medium.com/solar-microgrid/battery-showdown-lead-acid-vs-lith
@@ -1581,7 +1557,6 @@
     \strng{fullhash}{GP1}
     \field{labelnamesource}{author}
     \field{labeltitlesource}{title}
-    \field{labelyear}{2016}
     \field{title}{Australia's Future Submarine: the great battery debate}
     \verb{url}
     \verb https://www.aspistrategist.org.au/australias-future-submarine-the-gre
@@ -1607,8 +1582,6 @@
     \strng{fullhash}{OHJ1}
     \field{labelnamesource}{author}
     \field{labeltitlesource}{title}
-    \field{labelyear}{2017}
-    \field{extrayear}{2}
     \field{title}{Sub-optimal? Australia's future submarine charts a rocky
   course}
     \verb{url}
@@ -1636,7 +1609,6 @@
     \strng{fullhash}{JP1}
     \field{labelnamesource}{author}
     \field{labeltitlesource}{title}
-    \field{labelyear}{2017}
     \field{title}{Future Submarine project head Rear Admiral Gregory Sammut
   tells parliamentary inquiry future subs may not use Australian steel}
     \verb{url}
@@ -1665,7 +1637,6 @@
     \strng{fullhash}{CP1}
     \field{labelnamesource}{author}
     \field{labeltitlesource}{title}
-    \field{labelyear}{2016}
     \field{title}{Specifications Table - Shortfin Barracuda Block 1A}
     \verb{url}
     \verb http://gentleseas.blogspot.com.au/2016/04/specifications-for-shortfin
@@ -1691,7 +1662,6 @@
     \strng{fullhash}{DA1}
     \field{labelnamesource}{author}
     \field{labeltitlesource}{title}
-    \field{labelyear}{2016}
     \field{title}{Future submarine: coming up for air?}
     \verb{url}
     \verb https://www.aspistrategist.org.au/future-submarine-coming-up-for-air/
@@ -1713,7 +1683,6 @@
     \strng{fullhash}{KG1}
     \field{labelnamesource}{author}
     \field{labeltitlesource}{title}
-    \field{labelyear}{1981}
     \field{title}{Cavitation inception on ship propeller models}
     \verb{url}
     \verb https://repository.tudelft.nl/islandora/object/uuid:b971684b-9792-4b4
@@ -1756,7 +1725,6 @@
     \strng{fullhash}{SCSBRKRMN1}
     \field{labelnamesource}{author}
     \field{labeltitlesource}{title}
-    \field{labelyear}{2010}
     \field{number}{4}
     \field{pages}{185\bibrangedash 194}
     \field{title}{Cavitation studies on axi-symmetric underwater body with
@@ -1786,7 +1754,6 @@
     \strng{fullhash}{OHJ1}
     \field{labelnamesource}{author}
     \field{labeltitlesource}{title}
-    \field{labelyear}{2016}
     \field{title}{Why the French submarine won the bid to replace the
   Collins-class}
     \verb{url}
@@ -1802,7 +1769,6 @@
       {nuclear-power.net}%
     }
     \field{labeltitlesource}{title}
-    \field{labelyear}{2017}
     \field{title}{Laminar Flow}
     \verb{url}
     \verb http://www.nuclear-power.net/nuclear-engineering/fluid-dynamics/lamin
@@ -1836,7 +1802,6 @@
     \strng{fullhash}{SKWRPBAP1}
     \field{labelnamesource}{author}
     \field{labeltitlesource}{title}
-    \field{labelyear}{2015}
     \field{booktitle}{Fourth International Symposium on Marine Propulsors}
     \field{pages}{549\bibrangedash 555}
     \field{title}{Methods for Cavitation Prediction on Tip-Modified Propellers
