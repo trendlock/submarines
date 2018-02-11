@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.18 (TeX Live 2017) (preloaded format=pdflatex 2017.12.9)  8 JAN 2018 17:21
+This is pdfTeX, Version 3.14159265-2.6-1.40.18 (TeX Live 2017) (preloaded format=pdflatex 2017.12.9)  11 FEB 2018 17:01
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -188,7 +188,7 @@ Package biblatex Info: ... file 'blx-dm.def' found.
 
 (/usr/local/texlive/2017/texmf-dist/tex/latex/biblatex/blx-dm.def)
 Package biblatex Info: Trying to load biblatex citestyle data model...
-Package biblatex Info: ... file 'authoryear.dbx' not found.
+Package biblatex Info: ... file 'numeric.dbx' not found.
 Package biblatex Info: Trying to load biblatex custom data model...
 Package biblatex Info: ... file 'biblatex-dm.cfg' not found.
 \c@afterword=\count133
@@ -305,18 +305,22 @@ File: standard.bbx 2016/12/05 v3.7 biblatex bibliography style (PK/JW/AB)
 \c@bbx:relatedcount=\count272
 \c@bbx:relatedtotal=\count273
 ))
-Package biblatex Info: Trying to load citation style 'authoryear'...
-Package biblatex Info: ... file 'authoryear.cbx' found.
+Package biblatex Info: Trying to load citation style 'numeric'...
+Package biblatex Info: ... file 'numeric.cbx' found.
 
-(/usr/local/texlive/2017/texmf-dist/tex/latex/biblatex/cbx/authoryear.cbx
-File: authoryear.cbx 2016/12/05 v3.7 biblatex citation style (PK/JW/AB)
+(/usr/local/texlive/2017/texmf-dist/tex/latex/biblatex/cbx/numeric.cbx
+File: numeric.cbx 2016/12/05 v3.7 biblatex citation style (PK/JW/AB)
 Package biblatex Info: Redefining '\cite'.
 Package biblatex Info: Redefining '\parencite'.
 Package biblatex Info: Redefining '\footcite'.
 Package biblatex Info: Redefining '\footcitetext'.
 Package biblatex Info: Redefining '\smartcite'.
+Package biblatex Info: Redefining '\supercite'.
 Package biblatex Info: Redefining '\textcite'.
 Package biblatex Info: Redefining '\textcites'.
+Package biblatex Info: Redefining '\cites'.
+Package biblatex Info: Redefining '\parencites'.
+Package biblatex Info: Redefining '\smartcites'.
 )
 Package biblatex Info: Trying to load configuration file...
 Package biblatex Info: ... file 'biblatex.cfg' found.
@@ -347,58 +351,862 @@ Package: ifxetex 2010/09/12 v0.6 Provides ifxetex conditional
 \Gm@layoutvoffset=\dimen116
 \Gm@dimlist=\toks15
 )
+(/usr/local/texlive/2017/texmf-dist/tex/latex/caption/caption.sty
+Package: caption 2016/02/21 v3.3-144 Customizing captions (AR)
+
+(/usr/local/texlive/2017/texmf-dist/tex/latex/caption/caption3.sty
+Package: caption3 2016/05/22 v1.7-166 caption3 kernel (AR)
+Package caption3 Info: TeX engine: e-TeX on input line 67.
+\captionmargin=\dimen117
+\captionmargin@=\dimen118
+\captionwidth=\dimen119
+\caption@tempdima=\dimen120
+\caption@indent=\dimen121
+\caption@parindent=\dimen122
+\caption@hangindent=\dimen123
+)
+\c@ContinuedFloat=\count277
+)
+(/usr/local/texlive/2017/texmf-dist/tex/latex/adjustbox/adjustbox.sty
+Package: adjustbox 2012/05/21 v1.0 Adjusting TeX boxes (trim, clip, ...)
+
+(/usr/local/texlive/2017/texmf-dist/tex/latex/xkeyval/xkeyval.sty
+Package: xkeyval 2014/12/03 v2.7a package option processing (HA)
+
+(/usr/local/texlive/2017/texmf-dist/tex/generic/xkeyval/xkeyval.tex
+(/usr/local/texlive/2017/texmf-dist/tex/generic/xkeyval/xkvutils.tex
+\XKV@toks=\toks16
+\XKV@tempa@toks=\toks17
+)
+\XKV@depth=\count278
+File: xkeyval.tex 2014/12/03 v2.7a key=value parser (HA)
+))
+(/usr/local/texlive/2017/texmf-dist/tex/latex/adjustbox/adjcalc.sty
+Package: adjcalc 2012/05/16 v1.1 Provides advanced setlength with multiple back
+-ends (calc, etex, pgfmath)
+)
+(/usr/local/texlive/2017/texmf-dist/tex/latex/adjustbox/trimclip.sty
+Package: trimclip 2012/05/16 v1.0 Trim and clip general TeX material
+
+(/usr/local/texlive/2017/texmf-dist/tex/latex/collectbox/collectbox.sty
+Package: collectbox 2012/05/17 v0.4b Collect macro arguments as boxes
+\collectedbox=\box26
+)
+\tc@llx=\dimen124
+\tc@lly=\dimen125
+\tc@urx=\dimen126
+\tc@ury=\dimen127
+Package trimclip Info: Using driver 'tc-pdftex.def'.
+
+(/usr/local/texlive/2017/texmf-dist/tex/latex/adjustbox/tc-pdftex.def
+File: tc-pdftex.def 2012/05/13 v1.0 Clipping driver for pdftex
+))
+\adjbox@Width=\dimen128
+\adjbox@Height=\dimen129
+\adjbox@Depth=\dimen130
+\adjbox@Totalheight=\dimen131
+
+(/usr/local/texlive/2017/texmf-dist/tex/latex/ifoddpage/ifoddpage.sty
+Package: ifoddpage 2016/04/23 v1.1 Conditionals for odd/even page detection
+\c@checkoddpage=\count279
+)
+(/usr/local/texlive/2017/texmf-dist/tex/latex/varwidth/varwidth.sty
+Package: varwidth 2009/03/30 ver 0.92;  Variable-width minipages
+\@vwid@box=\box27
+\sift@deathcycles=\count280
+\@vwid@loff=\dimen132
+\@vwid@roff=\dimen133
+))
+(/usr/local/texlive/2017/texmf-dist/tex/latex/caption/subcaption.sty
+Package: subcaption 2016/05/22 v1.1-161 Sub-captions (AR)
+\c@subfigure=\count281
+\c@subtable=\count282
+)
+(/usr/local/texlive/2017/texmf-dist/tex/latex/appendix/appendix.sty
+Package: appendix 2009/09/02 v1.2b extra appendix facilities
+\c@@pps=\count283
+\c@@ppsavesec=\count284
+\c@@ppsaveapp=\count285
+)
+(/usr/local/texlive/2017/texmf-dist/tex/latex/pgf/frontendlayer/tikz.sty
+(/usr/local/texlive/2017/texmf-dist/tex/latex/pgf/basiclayer/pgf.sty
+(/usr/local/texlive/2017/texmf-dist/tex/latex/pgf/utilities/pgfrcs.sty
+(/usr/local/texlive/2017/texmf-dist/tex/generic/pgf/utilities/pgfutil-common.te
+x
+\pgfutil@everybye=\toks18
+\pgfutil@tempdima=\dimen134
+\pgfutil@tempdimb=\dimen135
+
+(/usr/local/texlive/2017/texmf-dist/tex/generic/pgf/utilities/pgfutil-common-li
+sts.tex))
+(/usr/local/texlive/2017/texmf-dist/tex/generic/pgf/utilities/pgfutil-latex.def
+\pgfutil@abb=\box28
+(/usr/local/texlive/2017/texmf-dist/tex/latex/ms/everyshi.sty
+Package: everyshi 2001/05/15 v3.00 EveryShipout Package (MS)
+))
+(/usr/local/texlive/2017/texmf-dist/tex/generic/pgf/utilities/pgfrcs.code.tex
+Package: pgfrcs 2015/08/07 v3.0.1a (rcs-revision 1.31)
+))
+Package: pgf 2015/08/07 v3.0.1a (rcs-revision 1.15)
+(/usr/local/texlive/2017/texmf-dist/tex/latex/pgf/basiclayer/pgfcore.sty
+(/usr/local/texlive/2017/texmf-dist/tex/latex/pgf/systemlayer/pgfsys.sty
+(/usr/local/texlive/2017/texmf-dist/tex/generic/pgf/systemlayer/pgfsys.code.tex
+Package: pgfsys 2014/07/09 v3.0.1a (rcs-revision 1.48)
+(/usr/local/texlive/2017/texmf-dist/tex/generic/pgf/utilities/pgfkeys.code.tex
+\pgfkeys@pathtoks=\toks19
+\pgfkeys@temptoks=\toks20
+
+(/usr/local/texlive/2017/texmf-dist/tex/generic/pgf/utilities/pgfkeysfiltered.c
+ode.tex
+\pgfkeys@tmptoks=\toks21
+))
+\pgf@x=\dimen136
+\pgf@y=\dimen137
+\pgf@xa=\dimen138
+\pgf@ya=\dimen139
+\pgf@xb=\dimen140
+\pgf@yb=\dimen141
+\pgf@xc=\dimen142
+\pgf@yc=\dimen143
+\w@pgf@writea=\write5
+\r@pgf@reada=\read2
+\c@pgf@counta=\count286
+\c@pgf@countb=\count287
+\c@pgf@countc=\count288
+\c@pgf@countd=\count289
+\t@pgf@toka=\toks22
+\t@pgf@tokb=\toks23
+\t@pgf@tokc=\toks24
+
+(/usr/local/texlive/2017/texmf-dist/tex/generic/pgf/systemlayer/pgf.cfg
+File: pgf.cfg 2008/05/14  (rcs-revision 1.7)
+)
+Driver file for pgf: pgfsys-pdftex.def
+
+(/usr/local/texlive/2017/texmf-dist/tex/generic/pgf/systemlayer/pgfsys-pdftex.d
+ef
+File: pgfsys-pdftex.def 2014/10/11  (rcs-revision 1.35)
+
+(/usr/local/texlive/2017/texmf-dist/tex/generic/pgf/systemlayer/pgfsys-common-p
+df.def
+File: pgfsys-common-pdf.def 2013/10/10  (rcs-revision 1.13)
+)))
+(/usr/local/texlive/2017/texmf-dist/tex/generic/pgf/systemlayer/pgfsyssoftpath.
+code.tex
+File: pgfsyssoftpath.code.tex 2013/09/09  (rcs-revision 1.9)
+\pgfsyssoftpath@smallbuffer@items=\count290
+\pgfsyssoftpath@bigbuffer@items=\count291
+)
+(/usr/local/texlive/2017/texmf-dist/tex/generic/pgf/systemlayer/pgfsysprotocol.
+code.tex
+File: pgfsysprotocol.code.tex 2006/10/16  (rcs-revision 1.4)
+)) (/usr/local/texlive/2017/texmf-dist/tex/latex/xcolor/xcolor.sty
+Package: xcolor 2016/05/11 v2.12 LaTeX color extensions (UK)
+
+(/usr/local/texlive/2017/texmf-dist/tex/latex/graphics-cfg/color.cfg
+File: color.cfg 2016/01/02 v1.6 sample color configuration
+)
+Package xcolor Info: Driver file: pdftex.def on input line 225.
+LaTeX Info: Redefining \color on input line 709.
+Package xcolor Info: Model `cmy' substituted by `cmy0' on input line 1348.
+Package xcolor Info: Model `hsb' substituted by `rgb' on input line 1352.
+Package xcolor Info: Model `RGB' extended on input line 1364.
+Package xcolor Info: Model `HTML' substituted by `rgb' on input line 1366.
+Package xcolor Info: Model `Hsb' substituted by `hsb' on input line 1367.
+Package xcolor Info: Model `tHsb' substituted by `hsb' on input line 1368.
+Package xcolor Info: Model `HSB' substituted by `hsb' on input line 1369.
+Package xcolor Info: Model `Gray' substituted by `gray' on input line 1370.
+Package xcolor Info: Model `wave' substituted by `hsb' on input line 1371.
+)
+(/usr/local/texlive/2017/texmf-dist/tex/generic/pgf/basiclayer/pgfcore.code.tex
+Package: pgfcore 2010/04/11 v3.0.1a (rcs-revision 1.7)
+(/usr/local/texlive/2017/texmf-dist/tex/generic/pgf/math/pgfmath.code.tex
+(/usr/local/texlive/2017/texmf-dist/tex/generic/pgf/math/pgfmathcalc.code.tex
+(/usr/local/texlive/2017/texmf-dist/tex/generic/pgf/math/pgfmathutil.code.tex)
+(/usr/local/texlive/2017/texmf-dist/tex/generic/pgf/math/pgfmathparser.code.tex
+\pgfmath@dimen=\dimen144
+\pgfmath@count=\count292
+\pgfmath@box=\box29
+\pgfmath@toks=\toks25
+\pgfmath@stack@operand=\toks26
+\pgfmath@stack@operation=\toks27
+)
+(/usr/local/texlive/2017/texmf-dist/tex/generic/pgf/math/pgfmathfunctions.code.
+tex
+(/usr/local/texlive/2017/texmf-dist/tex/generic/pgf/math/pgfmathfunctions.basic
+.code.tex)
+(/usr/local/texlive/2017/texmf-dist/tex/generic/pgf/math/pgfmathfunctions.trigo
+nometric.code.tex)
+(/usr/local/texlive/2017/texmf-dist/tex/generic/pgf/math/pgfmathfunctions.rando
+m.code.tex)
+(/usr/local/texlive/2017/texmf-dist/tex/generic/pgf/math/pgfmathfunctions.compa
+rison.code.tex)
+(/usr/local/texlive/2017/texmf-dist/tex/generic/pgf/math/pgfmathfunctions.base.
+code.tex)
+(/usr/local/texlive/2017/texmf-dist/tex/generic/pgf/math/pgfmathfunctions.round
+.code.tex)
+(/usr/local/texlive/2017/texmf-dist/tex/generic/pgf/math/pgfmathfunctions.misc.
+code.tex)
+(/usr/local/texlive/2017/texmf-dist/tex/generic/pgf/math/pgfmathfunctions.integ
+erarithmetics.code.tex)))
+(/usr/local/texlive/2017/texmf-dist/tex/generic/pgf/math/pgfmathfloat.code.tex
+\c@pgfmathroundto@lastzeros=\count293
+))
+(/usr/local/texlive/2017/texmf-dist/tex/generic/pgf/basiclayer/pgfcorepoints.co
+de.tex
+File: pgfcorepoints.code.tex 2013/10/07  (rcs-revision 1.27)
+\pgf@picminx=\dimen145
+\pgf@picmaxx=\dimen146
+\pgf@picminy=\dimen147
+\pgf@picmaxy=\dimen148
+\pgf@pathminx=\dimen149
+\pgf@pathmaxx=\dimen150
+\pgf@pathminy=\dimen151
+\pgf@pathmaxy=\dimen152
+\pgf@xx=\dimen153
+\pgf@xy=\dimen154
+\pgf@yx=\dimen155
+\pgf@yy=\dimen156
+\pgf@zx=\dimen157
+\pgf@zy=\dimen158
+)
+(/usr/local/texlive/2017/texmf-dist/tex/generic/pgf/basiclayer/pgfcorepathconst
+ruct.code.tex
+File: pgfcorepathconstruct.code.tex 2013/10/07  (rcs-revision 1.29)
+\pgf@path@lastx=\dimen159
+\pgf@path@lasty=\dimen160
+)
+(/usr/local/texlive/2017/texmf-dist/tex/generic/pgf/basiclayer/pgfcorepathusage
+.code.tex
+File: pgfcorepathusage.code.tex 2014/11/02  (rcs-revision 1.24)
+\pgf@shorten@end@additional=\dimen161
+\pgf@shorten@start@additional=\dimen162
+)
+(/usr/local/texlive/2017/texmf-dist/tex/generic/pgf/basiclayer/pgfcorescopes.co
+de.tex
+File: pgfcorescopes.code.tex 2015/05/08  (rcs-revision 1.46)
+\pgfpic=\box30
+\pgf@hbox=\box31
+\pgf@layerbox@main=\box32
+\pgf@picture@serial@count=\count294
+)
+(/usr/local/texlive/2017/texmf-dist/tex/generic/pgf/basiclayer/pgfcoregraphicst
+ate.code.tex
+File: pgfcoregraphicstate.code.tex 2014/11/02  (rcs-revision 1.12)
+\pgflinewidth=\dimen163
+)
+(/usr/local/texlive/2017/texmf-dist/tex/generic/pgf/basiclayer/pgfcoretransform
+ations.code.tex
+File: pgfcoretransformations.code.tex 2015/08/07  (rcs-revision 1.20)
+\pgf@pt@x=\dimen164
+\pgf@pt@y=\dimen165
+\pgf@pt@temp=\dimen166
+)
+(/usr/local/texlive/2017/texmf-dist/tex/generic/pgf/basiclayer/pgfcorequick.cod
+e.tex
+File: pgfcorequick.code.tex 2008/10/09  (rcs-revision 1.3)
+)
+(/usr/local/texlive/2017/texmf-dist/tex/generic/pgf/basiclayer/pgfcoreobjects.c
+ode.tex
+File: pgfcoreobjects.code.tex 2006/10/11  (rcs-revision 1.2)
+)
+(/usr/local/texlive/2017/texmf-dist/tex/generic/pgf/basiclayer/pgfcorepathproce
+ssing.code.tex
+File: pgfcorepathprocessing.code.tex 2013/09/09  (rcs-revision 1.9)
+)
+(/usr/local/texlive/2017/texmf-dist/tex/generic/pgf/basiclayer/pgfcorearrows.co
+de.tex
+File: pgfcorearrows.code.tex 2015/05/14  (rcs-revision 1.43)
+\pgfarrowsep=\dimen167
+)
+(/usr/local/texlive/2017/texmf-dist/tex/generic/pgf/basiclayer/pgfcoreshade.cod
+e.tex
+File: pgfcoreshade.code.tex 2013/07/15  (rcs-revision 1.15)
+\pgf@max=\dimen168
+\pgf@sys@shading@range@num=\count295
+)
+(/usr/local/texlive/2017/texmf-dist/tex/generic/pgf/basiclayer/pgfcoreimage.cod
+e.tex
+File: pgfcoreimage.code.tex 2013/07/15  (rcs-revision 1.18)
+
+(/usr/local/texlive/2017/texmf-dist/tex/generic/pgf/basiclayer/pgfcoreexternal.
+code.tex
+File: pgfcoreexternal.code.tex 2014/07/09  (rcs-revision 1.21)
+\pgfexternal@startupbox=\box33
+))
+(/usr/local/texlive/2017/texmf-dist/tex/generic/pgf/basiclayer/pgfcorelayers.co
+de.tex
+File: pgfcorelayers.code.tex 2013/07/18  (rcs-revision 1.7)
+)
+(/usr/local/texlive/2017/texmf-dist/tex/generic/pgf/basiclayer/pgfcoretranspare
+ncy.code.tex
+File: pgfcoretransparency.code.tex 2013/09/30  (rcs-revision 1.5)
+)
+(/usr/local/texlive/2017/texmf-dist/tex/generic/pgf/basiclayer/pgfcorepatterns.
+code.tex
+File: pgfcorepatterns.code.tex 2013/11/07  (rcs-revision 1.5)
+)))
+(/usr/local/texlive/2017/texmf-dist/tex/generic/pgf/modules/pgfmoduleshapes.cod
+e.tex
+File: pgfmoduleshapes.code.tex 2014/03/21  (rcs-revision 1.35)
+\pgfnodeparttextbox=\box34
+)
+(/usr/local/texlive/2017/texmf-dist/tex/generic/pgf/modules/pgfmoduleplot.code.
+tex
+File: pgfmoduleplot.code.tex 2015/08/03  (rcs-revision 1.13)
+)
+(/usr/local/texlive/2017/texmf-dist/tex/latex/pgf/compatibility/pgfcomp-version
+-0-65.sty
+Package: pgfcomp-version-0-65 2007/07/03 v3.0.1a (rcs-revision 1.7)
+\pgf@nodesepstart=\dimen169
+\pgf@nodesepend=\dimen170
+)
+(/usr/local/texlive/2017/texmf-dist/tex/latex/pgf/compatibility/pgfcomp-version
+-1-18.sty
+Package: pgfcomp-version-1-18 2007/07/23 v3.0.1a (rcs-revision 1.1)
+))
+(/usr/local/texlive/2017/texmf-dist/tex/latex/pgf/utilities/pgffor.sty
+(/usr/local/texlive/2017/texmf-dist/tex/latex/pgf/utilities/pgfkeys.sty
+(/usr/local/texlive/2017/texmf-dist/tex/generic/pgf/utilities/pgfkeys.code.tex)
+) (/usr/local/texlive/2017/texmf-dist/tex/latex/pgf/math/pgfmath.sty
+(/usr/local/texlive/2017/texmf-dist/tex/generic/pgf/math/pgfmath.code.tex))
+(/usr/local/texlive/2017/texmf-dist/tex/generic/pgf/utilities/pgffor.code.tex
+Package: pgffor 2013/12/13 v3.0.1a (rcs-revision 1.25)
+
+(/usr/local/texlive/2017/texmf-dist/tex/generic/pgf/math/pgfmath.code.tex)
+\pgffor@iter=\dimen171
+\pgffor@skip=\dimen172
+\pgffor@stack=\toks28
+\pgffor@toks=\toks29
+))
+(/usr/local/texlive/2017/texmf-dist/tex/generic/pgf/frontendlayer/tikz/tikz.cod
+e.tex
+Package: tikz 2015/08/07 v3.0.1a (rcs-revision 1.151)
+
+(/usr/local/texlive/2017/texmf-dist/tex/generic/pgf/libraries/pgflibraryplothan
+dlers.code.tex
+File: pgflibraryplothandlers.code.tex 2013/08/31 v3.0.1a (rcs-revision 1.20)
+\pgf@plot@mark@count=\count296
+\pgfplotmarksize=\dimen173
+)
+\tikz@lastx=\dimen174
+\tikz@lasty=\dimen175
+\tikz@lastxsaved=\dimen176
+\tikz@lastysaved=\dimen177
+\tikzleveldistance=\dimen178
+\tikzsiblingdistance=\dimen179
+\tikz@figbox=\box35
+\tikz@figbox@bg=\box36
+\tikz@tempbox=\box37
+\tikz@tempbox@bg=\box38
+\tikztreelevel=\count297
+\tikznumberofchildren=\count298
+\tikznumberofcurrentchild=\count299
+\tikz@fig@count=\count300
+
+(/usr/local/texlive/2017/texmf-dist/tex/generic/pgf/modules/pgfmodulematrix.cod
+e.tex
+File: pgfmodulematrix.code.tex 2013/09/17  (rcs-revision 1.8)
+\pgfmatrixcurrentrow=\count301
+\pgfmatrixcurrentcolumn=\count302
+\pgf@matrix@numberofcolumns=\count303
+)
+\tikz@expandcount=\count304
+
+(/usr/local/texlive/2017/texmf-dist/tex/generic/pgf/frontendlayer/tikz/librarie
+s/tikzlibrarytopaths.code.tex
+File: tikzlibrarytopaths.code.tex 2008/06/17 v3.0.1a (rcs-revision 1.2)
+)))
+(/usr/local/texlive/2017/texmf-dist/tex/latex/lipsum/lipsum.sty
+Package: lipsum 2014/07/27 v1.3 150 paragraphs of Lorem Ipsum dummy text
+\c@lips@count=\count305
+)
+(/usr/local/texlive/2017/texmf-dist/tex/latex/lm/lmodern.sty
+Package: lmodern 2009/10/30 v1.6 Latin Modern Fonts
+LaTeX Font Info:    Overwriting symbol font `operators' in version `normal'
+(Font)                  OT1/cmr/m/n --> OT1/lmr/m/n on input line 22.
+LaTeX Font Info:    Overwriting symbol font `letters' in version `normal'
+(Font)                  OML/cmm/m/it --> OML/lmm/m/it on input line 23.
+LaTeX Font Info:    Overwriting symbol font `symbols' in version `normal'
+(Font)                  OMS/cmsy/m/n --> OMS/lmsy/m/n on input line 24.
+LaTeX Font Info:    Overwriting symbol font `largesymbols' in version `normal'
+(Font)                  OMX/cmex/m/n --> OMX/lmex/m/n on input line 25.
+LaTeX Font Info:    Overwriting symbol font `operators' in version `bold'
+(Font)                  OT1/cmr/bx/n --> OT1/lmr/bx/n on input line 26.
+LaTeX Font Info:    Overwriting symbol font `letters' in version `bold'
+(Font)                  OML/cmm/b/it --> OML/lmm/b/it on input line 27.
+LaTeX Font Info:    Overwriting symbol font `symbols' in version `bold'
+(Font)                  OMS/cmsy/b/n --> OMS/lmsy/b/n on input line 28.
+LaTeX Font Info:    Overwriting symbol font `largesymbols' in version `bold'
+(Font)                  OMX/cmex/m/n --> OMX/lmex/m/n on input line 29.
+LaTeX Font Info:    Overwriting math alphabet `\mathbf' in version `normal'
+(Font)                  OT1/cmr/bx/n --> OT1/lmr/bx/n on input line 31.
+LaTeX Font Info:    Overwriting math alphabet `\mathsf' in version `normal'
+(Font)                  OT1/cmss/m/n --> OT1/lmss/m/n on input line 32.
+LaTeX Font Info:    Overwriting math alphabet `\mathit' in version `normal'
+(Font)                  OT1/cmr/m/it --> OT1/lmr/m/it on input line 33.
+LaTeX Font Info:    Overwriting math alphabet `\mathtt' in version `normal'
+(Font)                  OT1/cmtt/m/n --> OT1/lmtt/m/n on input line 34.
+LaTeX Font Info:    Overwriting math alphabet `\mathbf' in version `bold'
+(Font)                  OT1/cmr/bx/n --> OT1/lmr/bx/n on input line 35.
+LaTeX Font Info:    Overwriting math alphabet `\mathsf' in version `bold'
+(Font)                  OT1/cmss/bx/n --> OT1/lmss/bx/n on input line 36.
+LaTeX Font Info:    Overwriting math alphabet `\mathit' in version `bold'
+(Font)                  OT1/cmr/bx/it --> OT1/lmr/bx/it on input line 37.
+LaTeX Font Info:    Overwriting math alphabet `\mathtt' in version `bold'
+(Font)                  OT1/cmtt/m/n --> OT1/lmtt/m/n on input line 38.
+)
+(/usr/local/texlive/2017/texmf-dist/tex/latex/tcolorbox/tcolorbox.sty
+Package: tcolorbox 2017/04/25 version 4.03 text color boxes
+
+(/usr/local/texlive/2017/texmf-dist/tex/latex/tools/verbatim.sty
+Package: verbatim 2014/10/28 v1.5q LaTeX2e package for verbatim enhancements
+\every@verbatim=\toks30
+\verbatim@line=\toks31
+\verbatim@in@stream=\read3
+)
+(/usr/local/texlive/2017/texmf-dist/tex/latex/environ/environ.sty
+Package: environ 2014/05/04 v0.3 A new way to define environments
+
+(/usr/local/texlive/2017/texmf-dist/tex/latex/trimspaces/trimspaces.sty
+Package: trimspaces 2009/09/17 v1.1 Trim spaces around a token list
+)
+\@envbody=\toks32
+)
+\tcb@titlebox=\box39
+\tcb@upperbox=\box40
+\tcb@lowerbox=\box41
+\tcb@phantombox=\box42
+\c@tcbbreakpart=\count306
+\c@tcblayer=\count307
+\tcolorbox@number=\count308
+\tcb@temp=\box43
+\tcb@temp=\box44
+\tcb@temp=\box45
+\tcb@temp=\box46
+\tcb@out=\write6
+\tcb@record@out=\write7
+
+(/usr/local/texlive/2017/texmf-dist/tex/latex/tcolorbox/tcbraster.code.tex
+Library (tcolorbox): 'tcbraster.code.tex' version '4.03'
+\c@tcbrastercolumn=\count309
+\c@tcbrasterrow=\count310
+\c@tcbraster=\count311
+) (/usr/local/texlive/2017/texmf-dist/tex/latex/tcolorbox/tcbskins.code.tex
+Library (tcolorbox): 'tcbskins.code.tex' version '4.03'
+\tcb@waterbox=\box47
+
+(/usr/local/texlive/2017/texmf-dist/tex/latex/tcolorbox/tcbskinsjigsaw.code.tex
+Library (tcolorbox): 'tcbskinsjigsaw.code.tex' version '4.03'
+))
+(/usr/local/texlive/2017/texmf-dist/tex/latex/tcolorbox/tcbbreakable.code.tex
+Library (tcolorbox): 'tcbbreakable.code.tex' version '4.03'
+\tcb@testbox=\box48
+\tcb@totalupperbox=\box49
+\tcb@totallowerbox=\box50
+) (/usr/local/texlive/2017/texmf-dist/tex/latex/tcolorbox/tcbhooks.code.tex
+Library (tcolorbox): 'tcbhooks.code.tex' version '4.03'
+) (/usr/local/texlive/2017/texmf-dist/tex/latex/tcolorbox/tcbtheorems.code.tex
+Library (tcolorbox): 'tcbtheorems.code.tex' version '4.03'
+(/usr/local/texlive/2017/texmf-dist/tex/latex/amsmath/amsmath.sty
+Package: amsmath 2016/11/05 v2.16a AMS math features
+\@mathmargin=\skip58
+
+For additional information on amsmath, use the `?' option.
+(/usr/local/texlive/2017/texmf-dist/tex/latex/amsmath/amstext.sty
+Package: amstext 2000/06/29 v2.01 AMS text
+
+(/usr/local/texlive/2017/texmf-dist/tex/latex/amsmath/amsgen.sty
+File: amsgen.sty 1999/11/30 v2.0 generic functions
+\@emptytoks=\toks33
+\ex@=\dimen180
+))
+(/usr/local/texlive/2017/texmf-dist/tex/latex/amsmath/amsbsy.sty
+Package: amsbsy 1999/11/29 v1.2d Bold Symbols
+\pmbraise@=\dimen181
+)
+(/usr/local/texlive/2017/texmf-dist/tex/latex/amsmath/amsopn.sty
+Package: amsopn 2016/03/08 v2.02 operator names
+)
+\inf@bad=\count312
+LaTeX Info: Redefining \frac on input line 213.
+\uproot@=\count313
+\leftroot@=\count314
+LaTeX Info: Redefining \overline on input line 375.
+\classnum@=\count315
+\DOTSCASE@=\count316
+LaTeX Info: Redefining \ldots on input line 472.
+LaTeX Info: Redefining \dots on input line 475.
+LaTeX Info: Redefining \cdots on input line 596.
+\Mathstrutbox@=\box51
+\strutbox@=\box52
+\big@size=\dimen182
+LaTeX Font Info:    Redeclaring font encoding OML on input line 712.
+LaTeX Font Info:    Redeclaring font encoding OMS on input line 713.
+\macc@depth=\count317
+\c@MaxMatrixCols=\count318
+\dotsspace@=\muskip11
+\c@parentequation=\count319
+\dspbrk@lvl=\count320
+\tag@help=\toks34
+\row@=\count321
+\column@=\count322
+\maxfields@=\count323
+\andhelp@=\toks35
+\eqnshift@=\dimen183
+\alignsep@=\dimen184
+\tagshift@=\dimen185
+\tagwidth@=\dimen186
+\totwidth@=\dimen187
+\lineht@=\dimen188
+\@envbody=\toks36
+\multlinegap=\skip59
+\multlinetaggap=\skip60
+\mathdisplay@stack=\toks37
+LaTeX Info: Redefining \[ on input line 2817.
+LaTeX Info: Redefining \] on input line 2818.
+))
+(/usr/local/texlive/2017/texmf-dist/tex/latex/tcolorbox/tcbfitting.code.tex
+Library (tcolorbox): 'tcbfitting.code.tex' version '4.03'
+\tcbfitdim=\dimen189
+\tcb@lowerfitdim=\dimen190
+\tcb@upperfitdim=\dimen191
+\tcb@cur@hbadness=\count324
+) (/usr/local/texlive/2017/texmf-dist/tex/latex/tcolorbox/tcbxparse.code.tex
+Library (tcolorbox): 'tcbxparse.code.tex' version '4.03'
+(/usr/local/texlive/2017/texmf-dist/tex/latex/l3packages/xparse/xparse.sty
+(/usr/local/texlive/2017/texmf-dist/tex/latex/l3kernel/expl3.sty
+Package: expl3 2017/05/13 L3 programming layer (loader) 
+
+(/usr/local/texlive/2017/texmf-dist/tex/latex/l3kernel/expl3-code.tex
+Package: expl3 2017/05/13 L3 programming layer (code)
+\c_max_int=\count325
+\l_tmpa_int=\count326
+\l_tmpb_int=\count327
+\g_tmpa_int=\count328
+\g_tmpb_int=\count329
+\g__prg_map_int=\count330
+\c_log_iow=\count331
+\l_iow_line_count_int=\count332
+\l__iow_line_target_int=\count333
+\l__iow_one_indent_int=\count334
+\l__iow_indent_int=\count335
+\c_zero_dim=\dimen192
+\c_max_dim=\dimen193
+\l_tmpa_dim=\dimen194
+\l_tmpb_dim=\dimen195
+\g_tmpa_dim=\dimen196
+\g_tmpb_dim=\dimen197
+\c_zero_skip=\skip61
+\c_max_skip=\skip62
+\l_tmpa_skip=\skip63
+\l_tmpb_skip=\skip64
+\g_tmpa_skip=\skip65
+\g_tmpb_skip=\skip66
+\c_zero_muskip=\muskip12
+\c_max_muskip=\muskip13
+\l_tmpa_muskip=\muskip14
+\l_tmpb_muskip=\muskip15
+\g_tmpa_muskip=\muskip16
+\g_tmpb_muskip=\muskip17
+\l_keys_choice_int=\count336
+\c__fp_leading_shift_int=\count337
+\c__fp_middle_shift_int=\count338
+\c__fp_trailing_shift_int=\count339
+\c__fp_big_leading_shift_int=\count340
+\c__fp_big_middle_shift_int=\count341
+\c__fp_big_trailing_shift_int=\count342
+\c__fp_Bigg_leading_shift_int=\count343
+\c__fp_Bigg_middle_shift_int=\count344
+\c__fp_Bigg_trailing_shift_int=\count345
+\c__fp_rand_size_int=\count346
+\c__fp_rand_four_int=\count347
+\c__fp_rand_eight_int=\count348
+\l__sort_length_int=\count349
+\l__sort_min_int=\count350
+\l__sort_top_int=\count351
+\l__sort_max_int=\count352
+\l__sort_true_max_int=\count353
+\l__sort_block_int=\count354
+\l__sort_begin_int=\count355
+\l__sort_end_int=\count356
+\l__sort_A_int=\count357
+\l__sort_B_int=\count358
+\l__sort_C_int=\count359
+\c_empty_box=\box53
+\l_tmpa_box=\box54
+\l_tmpb_box=\box55
+\g_tmpa_box=\box56
+\g_tmpb_box=\box57
+\l__box_top_dim=\dimen198
+\l__box_bottom_dim=\dimen199
+\l__box_left_dim=\dimen256
+\l__box_right_dim=\dimen257
+\l__box_top_new_dim=\dimen258
+\l__box_bottom_new_dim=\dimen259
+\l__box_left_new_dim=\dimen260
+\l__box_right_new_dim=\dimen261
+\l__box_internal_box=\box58
+\l__coffin_internal_box=\box59
+\l__coffin_internal_dim=\dimen262
+\l__coffin_offset_x_dim=\dimen263
+\l__coffin_offset_y_dim=\dimen264
+\l__coffin_x_dim=\dimen265
+\l__coffin_y_dim=\dimen266
+\l__coffin_x_prime_dim=\dimen267
+\l__coffin_y_prime_dim=\dimen268
+\c_empty_coffin=\box60
+\l__coffin_aligned_coffin=\box61
+\l__coffin_aligned_internal_coffin=\box62
+\l_tmpa_coffin=\box63
+\l_tmpb_coffin=\box64
+\l__coffin_display_coffin=\box65
+\l__coffin_display_coord_coffin=\box66
+\l__coffin_display_pole_coffin=\box67
+\l__coffin_display_offset_dim=\dimen269
+\l__coffin_display_x_dim=\dimen270
+\l__coffin_display_y_dim=\dimen271
+\l__coffin_bounding_shift_dim=\dimen272
+\l__coffin_left_corner_dim=\dimen273
+\l__coffin_right_corner_dim=\dimen274
+\l__coffin_bottom_corner_dim=\dimen275
+\l__coffin_top_corner_dim=\dimen276
+\l__coffin_scaled_total_height_dim=\dimen277
+\l__coffin_scaled_width_dim=\dimen278
+)
+(/usr/local/texlive/2017/texmf-dist/tex/latex/l3kernel/l3pdfmode.def
+File: l3pdfmode.def 2017/03/18 v L3 Experimental driver: PDF mode
+\l__driver_color_stack_int=\count360
+\l__driver_tmp_box=\box68
+))
+Package: xparse 2017/05/13 L3 Experimental document command parser
+\l__xparse_current_arg_int=\count361
+\g__xparse_grabber_int=\count362
+\l__xparse_m_args_int=\count363
+\l__xparse_mandatory_args_int=\count364
+\l__xparse_v_nesting_int=\count365
+)
+.................................................
+. LaTeX info: "xparse/define-command"
+. 
+. Defining command \tcboxverb with sig. ' O{} v ' on line 128.
+.................................................
+.................................................
+. LaTeX info: "xparse/define-command"
+. 
+. Defining command \tcbsidebyside with sig. ' +O{} +m +m ' on line 280.
+.................................................
+)
+(/usr/local/texlive/2017/texmf-dist/tex/latex/tcolorbox/tcblistingsutf8.code.te
+x
+Library (tcolorbox): 'tcblistingsutf8.code.tex' version '4.03'
+(/usr/local/texlive/2017/texmf-dist/tex/latex/oberdiek/listingsutf8.sty
+Package: listingsutf8 2016/05/16 v1.3 Allow UTF-8 in listings input (HO)
+
+(/usr/local/texlive/2017/texmf-dist/tex/latex/listings/listings.sty
+\lst@mode=\count366
+\lst@gtempboxa=\box69
+\lst@token=\toks38
+\lst@length=\count367
+\lst@currlwidth=\dimen279
+\lst@column=\count368
+\lst@pos=\count369
+\lst@lostspace=\dimen280
+\lst@width=\dimen281
+\lst@newlines=\count370
+\lst@lineno=\count371
+\lst@maxwidth=\dimen282
+
+(/usr/local/texlive/2017/texmf-dist/tex/latex/listings/lstmisc.sty
+File: lstmisc.sty 2015/06/04 1.6 (Carsten Heinz)
+\c@lstnumber=\count372
+\lst@skipnumbers=\count373
+\lst@framebox=\box70
+)
+(/usr/local/texlive/2017/texmf-dist/tex/latex/listings/listings.cfg
+File: listings.cfg 2015/06/04 1.6 listings configuration
+))
+Package: listings 2015/06/04 1.6 (Carsten Heinz)
+
+(/usr/local/texlive/2017/texmf-dist/tex/generic/oberdiek/stringenc.sty
+Package: stringenc 2016/05/16 v1.11 Convert strings between diff. encodings (HO
+)
+
+(/usr/local/texlive/2017/texmf-dist/tex/generic/oberdiek/pdfescape.sty
+Package: pdfescape 2016/05/16 v1.14 Implements pdfTeX's escape features (HO)
+)))
+(/usr/local/texlive/2017/texmf-dist/tex/latex/tcolorbox/tcblistings.code.tex
+Library (tcolorbox): 'tcblistings.code.tex' version '4.03'
+
+(/usr/local/texlive/2017/texmf-dist/tex/latex/tcolorbox/tcblistingscore.code.te
+x
+Library (tcolorbox): 'tcblistingscore.code.tex' version '4.03'
+(/usr/local/texlive/2017/texmf-dist/tex/latex/tcolorbox/tcbprocessing.code.tex
+Library (tcolorbox): 'tcbprocessing.code.tex' version '4.03'
+(/usr/local/texlive/2017/texmf-dist/tex/latex/tools/shellesc.sty
+Package: shellesc 2016/06/07 v0.02a unified shell escape interface for LaTeX
+Package shellesc Info: Restricted shell escape enabled on input line 69.
+))
+\c@tcblisting=\count374
+)))
+(/usr/local/texlive/2017/texmf-dist/tex/latex/tcolorbox/tcbexternal.code.tex
+Library (tcolorbox): 'tcbexternal.code.tex' version '4.03'
+) (/usr/local/texlive/2017/texmf-dist/tex/latex/tcolorbox/tcbmagazine.code.tex
+Library (tcolorbox): 'tcbmagazine.code.tex' version '4.03'
+) (/usr/local/texlive/2017/texmf-dist/tex/latex/tcolorbox/tcbvignette.code.tex
+Library (tcolorbox): 'tcbvignette.code.tex' version '4.03'
+
+(/usr/local/texlive/2017/texmf-dist/tex/generic/pgf/frontendlayer/tikz/librarie
+s/tikzlibraryfadings.code.tex
+File: tikzlibraryfadings.code.tex 2009/11/15 v3.0.1a (rcs-revision 1.2)
+
+(/usr/local/texlive/2017/texmf-dist/tex/generic/pgf/libraries/pgflibraryfadings
+.code.tex
+File: pgflibraryfadings.code.tex 2008/02/07 v3.0.1a (rcs-revision 1.3)
+))))
 (/usr/local/texlive/2017/texmf-dist/tex/latex/draftwatermark/draftwatermark.sty
 Package: draftwatermark 2015/02/19 1.2 Put a gray textual watermark on document
  pages
 (/usr/local/texlive/2017/texmf-dist/tex/latex/everypage/everypage.sty
 Package: everypage 2007/06/20 1.1 Hooks to run on every page
 )
-\sc@wm@hcenter=\skip58
-\sc@wm@vcenter=\skip59
-\sc@wm@fontsize=\skip60
+\sc@wm@hcenter=\skip67
+\sc@wm@vcenter=\skip68
+\sc@wm@fontsize=\skip69
 )
 (/usr/local/texlive/2017/texmf-dist/tex/latex/upquote/upquote.sty
 Package: upquote 2012/04/19 v1.3 upright-quote and grave-accent glyphs in verba
 tim
+
+(/usr/local/texlive/2017/texmf-dist/tex/latex/base/textcomp.sty
+Package: textcomp 2017/04/05 v2.0i Standard LaTeX package
+Package textcomp Info: Sub-encoding information:
+(textcomp)               5 = only ISO-Adobe without \textcurrency
+(textcomp)               4 = 5 + \texteuro
+(textcomp)               3 = 4 + \textohm
+(textcomp)               2 = 3 + \textestimated + \textcurrency
+(textcomp)               1 = TS1 - \textcircled - \t
+(textcomp)               0 = TS1 (full)
+(textcomp)             Font families with sub-encoding setting implement
+(textcomp)             only a restricted character set as indicated.
+(textcomp)             Family '?' is the default used for unknown fonts.
+(textcomp)             See the documentation for details.
+Package textcomp Info: Setting ? sub-encoding to TS1/1 on input line 79.
+
+(/usr/local/texlive/2017/texmf-dist/tex/latex/base/ts1enc.def
+File: ts1enc.def 2001/06/05 v3.0e (jk/car/fm) Standard LaTeX file
 )
+LaTeX Info: Redefining \oldstylenums on input line 334.
+Package textcomp Info: Setting cmr sub-encoding to TS1/0 on input line 349.
+Package textcomp Info: Setting cmss sub-encoding to TS1/0 on input line 350.
+Package textcomp Info: Setting cmtt sub-encoding to TS1/0 on input line 351.
+Package textcomp Info: Setting cmvtt sub-encoding to TS1/0 on input line 352.
+Package textcomp Info: Setting cmbr sub-encoding to TS1/0 on input line 353.
+Package textcomp Info: Setting cmtl sub-encoding to TS1/0 on input line 354.
+Package textcomp Info: Setting ccr sub-encoding to TS1/0 on input line 355.
+Package textcomp Info: Setting ptm sub-encoding to TS1/4 on input line 356.
+Package textcomp Info: Setting pcr sub-encoding to TS1/4 on input line 357.
+Package textcomp Info: Setting phv sub-encoding to TS1/4 on input line 358.
+Package textcomp Info: Setting ppl sub-encoding to TS1/3 on input line 359.
+Package textcomp Info: Setting pag sub-encoding to TS1/4 on input line 360.
+Package textcomp Info: Setting pbk sub-encoding to TS1/4 on input line 361.
+Package textcomp Info: Setting pnc sub-encoding to TS1/4 on input line 362.
+Package textcomp Info: Setting pzc sub-encoding to TS1/4 on input line 363.
+Package textcomp Info: Setting bch sub-encoding to TS1/4 on input line 364.
+Package textcomp Info: Setting put sub-encoding to TS1/5 on input line 365.
+Package textcomp Info: Setting uag sub-encoding to TS1/5 on input line 366.
+Package textcomp Info: Setting ugq sub-encoding to TS1/5 on input line 367.
+Package textcomp Info: Setting ul8 sub-encoding to TS1/4 on input line 368.
+Package textcomp Info: Setting ul9 sub-encoding to TS1/4 on input line 369.
+Package textcomp Info: Setting augie sub-encoding to TS1/5 on input line 370.
+Package textcomp Info: Setting dayrom sub-encoding to TS1/3 on input line 371.
+Package textcomp Info: Setting dayroms sub-encoding to TS1/3 on input line 372.
+
+Package textcomp Info: Setting pxr sub-encoding to TS1/0 on input line 373.
+Package textcomp Info: Setting pxss sub-encoding to TS1/0 on input line 374.
+Package textcomp Info: Setting pxtt sub-encoding to TS1/0 on input line 375.
+Package textcomp Info: Setting txr sub-encoding to TS1/0 on input line 376.
+Package textcomp Info: Setting txss sub-encoding to TS1/0 on input line 377.
+Package textcomp Info: Setting txtt sub-encoding to TS1/0 on input line 378.
+Package textcomp Info: Setting lmr sub-encoding to TS1/0 on input line 379.
+Package textcomp Info: Setting lmdh sub-encoding to TS1/0 on input line 380.
+Package textcomp Info: Setting lmss sub-encoding to TS1/0 on input line 381.
+Package textcomp Info: Setting lmssq sub-encoding to TS1/0 on input line 382.
+Package textcomp Info: Setting lmvtt sub-encoding to TS1/0 on input line 383.
+Package textcomp Info: Setting lmtt sub-encoding to TS1/0 on input line 384.
+Package textcomp Info: Setting qhv sub-encoding to TS1/0 on input line 385.
+Package textcomp Info: Setting qag sub-encoding to TS1/0 on input line 386.
+Package textcomp Info: Setting qbk sub-encoding to TS1/0 on input line 387.
+Package textcomp Info: Setting qcr sub-encoding to TS1/0 on input line 388.
+Package textcomp Info: Setting qcs sub-encoding to TS1/0 on input line 389.
+Package textcomp Info: Setting qpl sub-encoding to TS1/0 on input line 390.
+Package textcomp Info: Setting qtm sub-encoding to TS1/0 on input line 391.
+Package textcomp Info: Setting qzc sub-encoding to TS1/0 on input line 392.
+Package textcomp Info: Setting qhvc sub-encoding to TS1/0 on input line 393.
+Package textcomp Info: Setting futs sub-encoding to TS1/4 on input line 394.
+Package textcomp Info: Setting futx sub-encoding to TS1/4 on input line 395.
+Package textcomp Info: Setting futj sub-encoding to TS1/4 on input line 396.
+Package textcomp Info: Setting hlh sub-encoding to TS1/3 on input line 397.
+Package textcomp Info: Setting hls sub-encoding to TS1/3 on input line 398.
+Package textcomp Info: Setting hlst sub-encoding to TS1/3 on input line 399.
+Package textcomp Info: Setting hlct sub-encoding to TS1/5 on input line 400.
+Package textcomp Info: Setting hlx sub-encoding to TS1/5 on input line 401.
+Package textcomp Info: Setting hlce sub-encoding to TS1/5 on input line 402.
+Package textcomp Info: Setting hlcn sub-encoding to TS1/5 on input line 403.
+Package textcomp Info: Setting hlcw sub-encoding to TS1/5 on input line 404.
+Package textcomp Info: Setting hlcf sub-encoding to TS1/5 on input line 405.
+Package textcomp Info: Setting pplx sub-encoding to TS1/3 on input line 406.
+Package textcomp Info: Setting pplj sub-encoding to TS1/3 on input line 407.
+Package textcomp Info: Setting ptmx sub-encoding to TS1/4 on input line 408.
+Package textcomp Info: Setting ptmj sub-encoding to TS1/4 on input line 409.
+))
 Package biblatex Info: Trying to load language 'english'...
 Package biblatex Info: ... file 'english.lbx' found.
 
 (/usr/local/texlive/2017/texmf-dist/tex/latex/biblatex/lbx/english.lbx
 File: english.lbx 2016/12/05 v3.7 biblatex localization (PK/JW/AB)
 )
-\@quotelevel=\count277
-\@quotereset=\count278
+\@quotelevel=\count375
+\@quotereset=\count376
 
 (./DraftExec.aux)
 \openout1 = `DraftExec.aux'.
 
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 66.
-LaTeX Font Info:    ... okay on input line 66.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 66.
-LaTeX Font Info:    ... okay on input line 66.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 66.
-LaTeX Font Info:    ... okay on input line 66.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 66.
-LaTeX Font Info:    ... okay on input line 66.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 66.
-LaTeX Font Info:    ... okay on input line 66.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 66.
-LaTeX Font Info:    ... okay on input line 66.
-
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 79.
+LaTeX Font Info:    ... okay on input line 79.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 79.
+LaTeX Font Info:    ... okay on input line 79.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 79.
+LaTeX Font Info:    ... okay on input line 79.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 79.
+LaTeX Font Info:    ... okay on input line 79.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 79.
+LaTeX Font Info:    ... okay on input line 79.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 79.
+LaTeX Font Info:    ... okay on input line 79.
+LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 79.
+LaTeX Font Info:    Try loading font information for TS1+cmr on input line 79.
+ (/usr/local/texlive/2017/texmf-dist/tex/latex/base/ts1cmr.fd
+File: ts1cmr.fd 2014/09/29 v2.5h Standard LaTeX font definitions
+)
+LaTeX Font Info:    ... okay on input line 79.
+LaTeX Font Info:    Try loading font information for OT1+lmr on input line 79.
+(/usr/local/texlive/2017/texmf-dist/tex/latex/lm/ot1lmr.fd
+File: ot1lmr.fd 2009/10/30 v1.6 Font defs for Latin Modern
+)
 (/usr/local/texlive/2017/texmf-dist/tex/context/base/mkii/supp-pdf.mkii
 [Loading MPS to PDF converter (version 2006.09.02).]
-\scratchcounter=\count279
-\scratchdimen=\dimen117
-\scratchbox=\box26
-\nofMPsegments=\count280
-\nofMParguments=\count281
-\everyMPshowfont=\toks16
-\MPscratchCnt=\count282
-\MPscratchDim=\dimen118
-\MPnumerator=\count283
-\makeMPintoPDFobject=\count284
-\everyMPtoPDFconversion=\toks17
+\scratchcounter=\count377
+\scratchdimen=\dimen283
+\scratchbox=\box71
+\nofMPsegments=\count378
+\nofMParguments=\count379
+\everyMPshowfont=\toks39
+\MPscratchCnt=\count380
+\MPscratchDim=\dimen284
+\MPnumerator=\count381
+\makeMPintoPDFobject=\count382
+\everyMPtoPDFconversion=\toks40
 ) (/usr/local/texlive/2017/texmf-dist/tex/latex/oberdiek/epstopdf-base.sty
 Package: epstopdf-base 2016/05/15 v2.6 Base part for package epstopdf
 
@@ -432,8 +1240,8 @@ Package biblatex Info: Trying to load bibliographic data...
 Package biblatex Info: ... file 'DraftExec.bbl' found.
 
 (./DraftExec.bbl)
-Package biblatex Info: Reference section=0 on input line 66.
-Package biblatex Info: Reference segment=0 on input line 66.
+Package biblatex Info: Reference section=0 on input line 79.
+Package biblatex Info: Reference segment=0 on input line 79.
 
 *geometry* driver: auto-detecting
 *geometry* detected driver: pdftex
@@ -469,527 +1277,868 @@ Package biblatex Info: Reference segment=0 on input line 66.
 * \@reversemarginfalse
 * (1in=72.27pt=25.4mm, 1cm=28.453pt)
 
-LaTeX Font Info:    External font `cmex10' loaded for size
-(Font)              <12> on input line 68.
-LaTeX Font Info:    External font `cmex10' loaded for size
-(Font)              <8> on input line 68.
-LaTeX Font Info:    External font `cmex10' loaded for size
-(Font)              <6> on input line 68.
-(./DraftExec.toc
-LaTeX Font Info:    External font `cmex10' loaded for size
+Package caption Info: Begin \AtBeginDocument code.
+Package caption Info: listings package is loaded.
+Package caption Info: End \AtBeginDocument code.
+ABD: EveryShipout initializing macros
+\c@lstlisting=\count383
+
+(/usr/local/texlive/2017/texmf-dist/tex/latex/base/inputenc.sty
+Package: inputenc 2015/03/17 v1.2c Input encoding file
+\inpenc@prehook=\toks41
+\inpenc@posthook=\toks42
+) [1{/usr/local/texlive/2017/texmf-var/fonts/map/pdftex/updmap/pdftex.map}
+
+] (./DraftExec.toc
+LaTeX Font Info:    Try loading font information for OML+lmm on input line 7.
+
+(/usr/local/texlive/2017/texmf-dist/tex/latex/lm/omllmm.fd
+File: omllmm.fd 2009/10/30 v1.6 Font defs for Latin Modern
+)
+LaTeX Font Info:    Try loading font information for OMS+lmsy on input line 7.
+
+(/usr/local/texlive/2017/texmf-dist/tex/latex/lm/omslmsy.fd
+File: omslmsy.fd 2009/10/30 v1.6 Font defs for Latin Modern
+)
+LaTeX Font Info:    Try loading font information for OMX+lmex on input line 7.
+
+(/usr/local/texlive/2017/texmf-dist/tex/latex/lm/omxlmex.fd
+File: omxlmex.fd 2009/10/30 v1.6 Font defs for Latin Modern
+)
+LaTeX Font Info:    External font `lmex10' loaded for size
+(Font)              <10> on input line 7.
+LaTeX Font Info:    External font `lmex10' loaded for size
 (Font)              <7> on input line 7.
-LaTeX Font Info:    External font `cmex10' loaded for size
+LaTeX Font Info:    External font `lmex10' loaded for size
 (Font)              <5> on input line 7.
+ [1])
+\tf@toc=\write8
+\openout8 = `DraftExec.toc'.
+
+ [2] [3]
+[4] [5] <HiFlowSmall.png, id=66, 1220.56pt x 620.3175pt>
+File: HiFlowSmall.png Graphic file (type png)
+ <use HiFlowSmall.png>
+Package pdftex.def Info: HiFlowSmall.png used on input line 166.
+(pdftex.def)             Requested size: 224.39662pt x 114.03758pt.
+
+<LoFlowSmall.png, id=68, 1220.56pt x 620.3175pt>
+File: LoFlowSmall.png Graphic file (type png)
+ <use LoFlowSmall.png>
+Package pdftex.def Info: LoFlowSmall.png used on input line 170.
+(pdftex.def)             Requested size: 224.39662pt x 114.03758pt.
+
+Overfull \hbox (2.2222pt too wide) in paragraph at lines 165--173
+[]$[]$ $[]$ 
+ []
 
 
-LaTeX Font Warning: Font shape `OT1/cmr/m/n' in size <142.26378> not available
-(Font)              size <24.88> substituted on input line 79.
-
-[1{/usr/local/texlive/2017/texmf-var/fonts/map/pdftex/updmap/pdftex.map}
-
-])
-\tf@toc=\write5
-\openout5 = `DraftExec.toc'.
+LaTeX Warning: Reference `buckingham2008submarine' on page 6 undefined on input
+ line 182.
 
 
-[2] [3] [4] [5]
-LaTeX Font Info:    External font `cmex10' loaded for size
-(Font)              <14.4> on input line 149.
- [6] [7] [8] <XenonPoison.png, id=40, 975.645pt x 609.27625pt>
+Overfull \hbox (4.84323pt too wide) in paragraph at lines 210--222
+ [][] 
+ []
+
+[6 <./HiFlowSmall.png> <./LoFlowSmall.png>] [7] [8]
+LaTeX Font Info:    External font `lmex10' loaded for size
+(Font)              <14.4> on input line 238.
+LaTeX Font Info:    External font `lmex10' loaded for size
+(Font)              <8> on input line 252.
+LaTeX Font Info:    External font `lmex10' loaded for size
+(Font)              <6> on input line 252.
+
+Underfull \hbox (badness 10000) in paragraph at lines 259--269
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 259--269
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 259--269
+
+ []
+
+[9] [10] [11] [12] <XenonPoison.png, id=101, 975.645pt x 609.27625pt>
 File: XenonPoison.png Graphic file (type png)
 
 <use XenonPoison.png>
-Package pdftex.def Info: XenonPoison.png used on input line 201.
+Package pdftex.def Info: XenonPoison.png used on input line 305.
 (pdftex.def)             Requested size: 498.66258pt x 311.40544pt.
- [9 <./XenonPoison.png>] [10] [11]
-<BoundaryLayer.png, id=52, 489.83pt x 161.60374pt>
-File: BoundaryLayer.png Graphic file (type png)
- <use BoundaryLayer.png>
-Package pdftex.def Info: BoundaryLayer.png used on input line 264.
-(pdftex.def)             Requested size: 498.66258pt x 164.52293pt.
 
-<LaminarTurbulent.png, id=53, 260.975pt x 247.92625pt>
-File: LaminarTurbulent.png Graphic file (type png)
+Underfull \hbox (badness 10000) in paragraph at lines 317--330
 
-<use LaminarTurbulent.png>
-Package pdftex.def Info: LaminarTurbulent.png used on input line 275.
-(pdftex.def)             Requested size: 498.66258pt x 473.73938pt.
- [12]
-Missing character: There is no ‚ in font cmr10!
-Missing character: There is no Ä in font cmr10!
-Missing character: There is no ô in font cmr10!
-Missing character: There is no ‚ in font cmr10!
-Missing character: There is no Ä in font cmr10!
-Missing character: There is no ô in font cmr10!
+ []
 
-<EarlyCavitation.JPG, id=57, 4047.12pt x 3035.34pt>
-File: EarlyCavitation.JPG Graphic file (type jpg)
- <use EarlyCavitation.JPG>
-Package pdftex.def Info: EarlyCavitation.JPG used on input line 294.
-(pdftex.def)             Requested size: 498.66258pt x 373.99765pt.
 
-[13 <./BoundaryLayer.png>] [14 <./LaminarTurbulent.png>] [15 <./EarlyCavitation
-.JPG>] <BoilingCavitation.JPG, id=70, 4047.12pt x 3035.34pt>
-File: BoilingCavitation.JPG Graphic file (type jpg)
+Underfull \hbox (badness 1205) in paragraph at lines 317--330
+\OT1/lmr/m/n/10 Most peo-ple take an in-ter-nal com-bus-tion en-gine's abil-ity
+ to vary its power
+ []
 
-<use BoilingCavitation.JPG>
-Package pdftex.def Info: BoilingCavitation.JPG used on input line 302.
-(pdftex.def)             Requested size: 498.66258pt x 373.99765pt.
- [16 <./BoilingCavitation.JPG>]
-<IncreasingCavitation.png, id=74, 590.205pt x 587.19376pt>
-File: IncreasingCavitation.png Graphic file (type png)
 
-<use IncreasingCavitation.png>
-Package pdftex.def Info: IncreasingCavitation.png used on input line 316.
-(pdftex.def)             Requested size: 349.06227pt x 347.28354pt.
+Underfull \hbox (badness 10000) in paragraph at lines 317--330
 
-<CavitationTypes.png, id=75, 669.50125pt x 600.2425pt>
-File: CavitationTypes.png Graphic file (type png)
+ []
 
-<use CavitationTypes.png>
-Package pdftex.def Info: CavitationTypes.png used on input line 322.
-(pdftex.def)             Requested size: 349.06227pt x 312.96135pt.
- [17 <./IncreasingCavitation.png>] [18 <./CavitationTypes.png>] <SeparatedAerof
-oil.jpg, id=84, 2055.68pt x 1432.35126pt>
-File: SeparatedAerofoil.jpg Graphic file (type jpg)
 
-<use SeparatedAerofoil.jpg>
-Package pdftex.def Info: SeparatedAerofoil.jpg used on input line 345.
-(pdftex.def)             Requested size: 249.33128pt x 173.71063pt.
+Underfull \hbox (badness 10000) in paragraph at lines 317--330
 
-<FlowSeparation.png, id=85, 742.775pt x 198.7425pt>
-File: FlowSeparation.png Graphic file (type png)
- <use FlowSeparation.png>
-Package pdftex.def Info: FlowSeparation.png used on input line 353.
-(pdftex.def)             Requested size: 498.66258pt x 133.4297pt.
+ []
 
-[19] [20 <./SeparatedAerofoil.jpg> <./FlowSeparation.png>]
-<PropellerAction.png, id=94, 584.1825pt x 280.04625pt>
+
+Underfull \hbox (badness 10000) in paragraph at lines 317--330
+
+ []
+
+[13 <./XenonPoison.png>] [14] [15]
+<PropellerAction.png, id=112, 584.1825pt x 280.04625pt>
 File: PropellerAction.png Graphic file (type png)
 
 <use PropellerAction.png>
-Package pdftex.def Info: PropellerAction.png used on input line 369.
-(pdftex.def)             Requested size: 498.66258pt x 239.05743pt.
- [21 <./PropellerAction.png>]
-<SkewRake.png, id=99, 500.87125pt x 327.2225pt>
+Package pdftex.def Info: PropellerAction.png used on input line 355.
+(pdftex.def)             Requested size: 249.33128pt x 119.52444pt.
+ <SkewRake.png, id=113, 500.87125pt x 327.2225pt>
 File: SkewRake.png Graphic file (type png)
- <use SkewRake.png>
-Package pdftex.def Info: SkewRake.png used on input line 380.
-(pdftex.def)             Requested size: 498.66258pt x 325.79369pt.
 
-<HelicalLine.png, id=100, 331.2375pt x 205.76875pt>
+<use SkewRake.png>
+Package pdftex.def Info: SkewRake.png used on input line 367.
+(pdftex.def)             Requested size: 249.33128pt x 162.89185pt.
+
+
+LaTeX Warning: `h' float specifier changed to `ht'.
+
+[16 <./PropellerAction.png>]
+<HelicalLine.png, id=118, 331.2375pt x 205.76875pt>
 File: HelicalLine.png Graphic file (type png)
  <use HelicalLine.png>
-Package pdftex.def Info: HelicalLine.png used on input line 389.
-(pdftex.def)             Requested size: 498.66258pt x 309.78894pt.
+Package pdftex.def Info: HelicalLine.png used on input line 377.
+(pdftex.def)             Requested size: 249.33128pt x 154.88818pt.
 
-<PitchDefinition.png, id=101, 645.41125pt x 565.11125pt>
+<PitchDefinition.png, id=119, 645.41125pt x 565.11125pt>
 File: PitchDefinition.png Graphic file (type png)
 
 <use PitchDefinition.png>
-Package pdftex.def Info: PitchDefinition.png used on input line 395.
-(pdftex.def)             Requested size: 498.66258pt x 436.62013pt.
- [22 <./SkewRake.png>]
-<CPPropeller.png, id=106, 636.3775pt x 405.515pt>
+Package pdftex.def Info: PitchDefinition.png used on input line 384.
+(pdftex.def)             Requested size: 349.06227pt x 305.62978pt.
+
+
+LaTeX Warning: `h' float specifier changed to `ht'.
+
+<CPPropeller.png, id=120, 636.3775pt x 405.515pt>
 File: CPPropeller.png Graphic file (type png)
  <use CPPropeller.png>
-Package pdftex.def Info: CPPropeller.png used on input line 405.
-(pdftex.def)             Requested size: 498.66258pt x 317.75452pt.
+Package pdftex.def Info: CPPropeller.png used on input line 395.
+(pdftex.def)             Requested size: 398.93158pt x 254.20732pt.
 
-<OpenWater.png, id=107, 678.535pt x 546.04pt>
+
+LaTeX Warning: `h' float specifier changed to `ht'.
+
+[17 <./SkewRake.png> <./HelicalLine.png>]
+<OpenWater.png, id=126, 678.535pt x 546.04pt>
 File: OpenWater.png Graphic file (type png)
  <use OpenWater.png>
-Package pdftex.def Info: OpenWater.png used on input line 414.
-(pdftex.def)             Requested size: 498.66258pt x 401.28876pt.
- [23 <./HelicalLine.png>] [24 <./PitchDefinition.png>] [25 <./CPPropeller.png>]
- [26 <./OpenWater.png>] <SlipRatio.png, id=125, 620.3175pt x 501.875pt>
-File: SlipRatio.png Graphic file (type png)
- <use SlipRatio.png>
-Package pdftex.def Info: SlipRatio.png used on input line 433.
-(pdftex.def)             Requested size: 498.66258pt x 403.44566pt.
+Package pdftex.def Info: OpenWater.png used on input line 405.
+(pdftex.def)             Requested size: 398.93158pt x 321.02766pt.
 
-[27 <./SlipRatio.png>] <AccelDecel.png, id=130, 738.76pt x 283.0575pt>
+
+LaTeX Warning: `h' float specifier changed to `ht'.
+
+[18 <./PitchDefinition.png>] <SlipRatio.png, id=132, 620.3175pt x 501.875pt>
+File: SlipRatio.png Graphic file (type png)
+
+<use SlipRatio.png>
+Package pdftex.def Info: SlipRatio.png used on input line 425.
+(pdftex.def)             Requested size: 398.93158pt x 322.76112pt.
+
+
+LaTeX Warning: `h' float specifier changed to `ht'.
+
+[19 <./CPPropeller.png>] <AccelDecel.png, id=137, 738.76pt x 283.0575pt>
 File: AccelDecel.png Graphic file (type png)
 
 <use AccelDecel.png>
-Package pdftex.def Info: AccelDecel.png used on input line 446.
+Package pdftex.def Info: AccelDecel.png used on input line 439.
 (pdftex.def)             Requested size: 498.66258pt x 191.0642pt.
- <DuctStreamlines.png, id=131, 471.7625pt x 448.67625pt>
+
+
+LaTeX Warning: `h' float specifier changed to `ht'.
+
+<DuctStreamlines.png, id=138, 471.7625pt x 448.67625pt>
 File: DuctStreamlines.png Graphic file (type png)
 
 <use DuctStreamlines.png>
-Package pdftex.def Info: DuctStreamlines.png used on input line 454.
-(pdftex.def)             Requested size: 498.66258pt x 474.26639pt.
- [28 <./AccelDecel.png>] [29 <./DuctStreamlines.png>]
-<CavitatingDuct.png, id=140, 476.78125pt x 318.18875pt>
+Package pdftex.def Info: DuctStreamlines.png used on input line 448.
+(pdftex.def)             Requested size: 349.06227pt x 331.98784pt.
+
+
+LaTeX Warning: `h' float specifier changed to `ht'.
+
+[20 <./OpenWater.png>] [21 <./SlipRatio.png>]
+<CavitatingDuct.png, id=147, 476.78125pt x 318.18875pt>
 File: CavitatingDuct.png Graphic file (type png)
 
 <use CavitatingDuct.png>
-Package pdftex.def Info: CavitatingDuct.png used on input line 469.
-(pdftex.def)             Requested size: 498.66258pt x 332.8117pt.
- [30 <./CavitatingDuct.png>]
-<DuctedEfficiency.png, id=145, 781.92125pt x 731.73375pt>
+Package pdftex.def Info: CavitatingDuct.png used on input line 464.
+(pdftex.def)             Requested size: 349.06227pt x 232.96527pt.
+
+
+LaTeX Warning: `h' float specifier changed to `ht'.
+
+<DuctedEfficiency.png, id=148, 781.92125pt x 731.73375pt>
 File: DuctedEfficiency.png Graphic file (type png)
 
 <use DuctedEfficiency.png>
-Package pdftex.def Info: DuctedEfficiency.png used on input line 477.
-(pdftex.def)             Requested size: 498.66258pt x 466.65553pt.
+Package pdftex.def Info: DuctedEfficiency.png used on input line 473.
+(pdftex.def)             Requested size: 349.06227pt x 326.65329pt.
 
-<PumpjetOutline.png, id=146, 407.5225pt x 379.4175pt>
+
+LaTeX Warning: `h' float specifier changed to `ht'.
+
+[22 <./AccelDecel.png>] <PumpjetOutline.png, id=153, 407.5225pt x 379.4175pt>
 File: PumpjetOutline.png Graphic file (type png)
- <use PumpjetOutline.png>
-Package pdftex.def Info: PumpjetOutline.png used on input line 490.
-(pdftex.def)             Requested size: 498.66258pt x 464.2955pt.
 
-[31] [32 <./DuctedEfficiency.png>] [33 <./PumpjetOutline.png>]
-<PumpjetWaterjet.png, id=159, 771.88374pt x 952.55875pt>
-File: PumpjetWaterjet.png Graphic file (type png)
+<use PumpjetOutline.png>
+Package pdftex.def Info: PumpjetOutline.png used on input line 487.
+(pdftex.def)             Requested size: 199.46198pt x 185.70778pt.
 
-<use PumpjetWaterjet.png>
-Package pdftex.def Info: PumpjetWaterjet.png used on input line 503.
-(pdftex.def)             Requested size: 498.66258pt x 615.3768pt.
 
-<EfficiencyJapan.png, id=160, 470.75874pt x 374.39874pt>
+LaTeX Warning: `h' float specifier changed to `ht'.
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 497--501
+
+ []
+
+[23 <./DuctStreamlines.png>] [24 <./CavitatingDuct.png>]
+<Pumpjet.png, id=163, 706.64pt x 376.40625pt>
+File: Pumpjet.png Graphic file (type png)
+ <use Pumpjet.png>
+Package pdftex.def Info: Pumpjet.png used on input line 510.
+(pdftex.def)             Requested size: 224.39662pt x 119.52776pt.
+
+<Waterjet.png, id=164, 674.52pt x 433.62pt>
+File: Waterjet.png Graphic file (type png)
+ <use Waterjet.png>
+Package pdftex.def Info: Waterjet.png used on input line 514.
+(pdftex.def)             Requested size: 224.39662pt x 144.25293pt.
+
+Overfull \hbox (2.2222pt too wide) in paragraph at lines 509--517
+[]$[]$ $[]$ 
+ []
+
+
+LaTeX Warning: `h' float specifier changed to `ht'.
+
+[25 <./DuctedEfficiency.png>]
+<AxialMixed.png, id=169, 380.42125pt x 159.59625pt>
+File: AxialMixed.png Graphic file (type png)
+ <use AxialMixed.png>
+Package pdftex.def Info: AxialMixed.png used on input line 534.
+(pdftex.def)             Requested size: 224.39662pt x 94.14148pt.
+
+<MixedHub.png, id=170, 471.7625pt x 273.02pt>
+File: MixedHub.png Graphic file (type png)
+ <use MixedHub.png>
+Package pdftex.def Info: MixedHub.png used on input line 538.
+(pdftex.def)             Requested size: 224.39662pt x 129.86497pt.
+
+Overfull \hbox (2.2222pt too wide) in paragraph at lines 533--541
+[]$[]$ $[]$ 
+ []
+
+
+LaTeX Warning: `h' float specifier changed to `ht'.
+
+[26 <./PumpjetOutline.png> <./Pumpjet.png> <./Waterjet.png>]
+
+LaTeX Warning: Reference `li2013' on page 27 undefined on input line 549.
+
+[27 <./AxialMixed.png> <./MixedHub.png>]
+<EfficiencyJapan.png, id=182, 470.75874pt x 374.39874pt>
 File: EfficiencyJapan.png Graphic file (type png)
 
 <use EfficiencyJapan.png>
-Package pdftex.def Info: EfficiencyJapan.png used on input line 522.
-(pdftex.def)             Requested size: 498.66258pt x 396.59227pt.
- [34] [35 <./PumpjetWaterjet.png>] [36 <./EfficiencyJapan.png>] <EfficiencyTran
-sport.png, id=172, 488.82625pt x 504.88625pt>
+Package pdftex.def Info: EfficiencyJapan.png used on input line 567.
+(pdftex.def)             Requested size: 349.06227pt x 277.6163pt.
+
+
+LaTeX Warning: `h' float specifier changed to `ht'.
+
+<EfficiencyTransport.png, id=183, 488.82625pt x 504.88625pt>
 File: EfficiencyTransport.png Graphic file (type png)
 
 <use EfficiencyTransport.png>
-Package pdftex.def Info: EfficiencyTransport.png used on input line 530.
-(pdftex.def)             Requested size: 498.66258pt x 515.05418pt.
- <BMTShape.png, id=173, 1105.12875pt x 277.035pt>
+Package pdftex.def Info: EfficiencyTransport.png used on input line 576.
+(pdftex.def)             Requested size: 299.20059pt x 309.03558pt.
+
+
+LaTeX Warning: `h' float specifier changed to `ht'.
+
+[28] <BMTShape.png, id=187, 1105.12875pt x 277.035pt>
 File: BMTShape.png Graphic file (type png)
-
-<use BMTShape.png>
-Package pdftex.def Info: BMTShape.png used on input line 540.
+ <use BMTShape.png>
+Package pdftex.def Info: BMTShape.png used on input line 587.
 (pdftex.def)             Requested size: 498.66258pt x 125.00276pt.
-Missing character: There is no ‚ in font cmr10!
-Missing character: There is no Ñ in font cmr10!
-Missing character: There is no ¢ in font cmr10!
-Missing character: There is no ‚ in font cmr10!
-Missing character: There is no Ñ in font cmr10!
-Missing character: There is no ¢ in font cmr10!
- <BMTEfficiency.png, id=174, 1130.2225pt x 454.69875pt>
-File: BMTEfficiency.png Graphic file (type png)
 
-<use BMTEfficiency.png>
-Package pdftex.def Info: BMTEfficiency.png used on input line 550.
-(pdftex.def)             Requested size: 498.66258pt x 200.61618pt.
- [37] [38 <./EfficiencyTransport.png>] [39 <./BMTShape.png> <./BMTEfficiency.pn
-g>] <FlowComparison.png, id=188, 519.9425pt x 513.92pt>
+
+LaTeX Warning: `h' float specifier changed to `ht'.
+
+<BMTEfficiency2.png, id=188, 972.63374pt x 696.6025pt>
+File: BMTEfficiency2.png Graphic file (type png)
+
+<use BMTEfficiency2.png>
+Package pdftex.def Info: BMTEfficiency2.png used on input line 594.
+(pdftex.def)             Requested size: 398.93158pt x 285.71516pt.
+
+
+LaTeX Warning: `h' float specifier changed to `ht'.
+
+[29 <./EfficiencyJapan.png>] [30 <./EfficiencyTransport.png>] [31 <./BMTShape.p
+ng>] <FlowComparison.png, id=202, 519.9425pt x 513.92pt>
 File: FlowComparison.png Graphic file (type png)
 
 <use FlowComparison.png>
-Package pdftex.def Info: FlowComparison.png used on input line 576.
-(pdftex.def)             Requested size: 498.66258pt x 492.88707pt.
- [40] [41 <./FlowComparison.png>]
-<JetHighFlow.png, id=196, 1304.875pt x 712.6625pt>
+Package pdftex.def Info: FlowComparison.png used on input line 625.
+(pdftex.def)             Requested size: 199.46198pt x 197.15012pt.
+ <JetHighFlow.png, id=203, 1304.875pt x 712.6625pt>
 File: JetHighFlow.png Graphic file (type png)
- <use JetHighFlow.png>
-Package pdftex.def Info: JetHighFlow.png used on input line 584.
-(pdftex.def)             Requested size: 498.66258pt x 272.34784pt.
+
+<use JetHighFlow.png>
+Package pdftex.def Info: JetHighFlow.png used on input line 634.
+(pdftex.def)             Requested size: 398.93158pt x 217.87828pt.
 
 
-LaTeX Warning: Reference `Acoustic Considerations' on page 42 undefined on inpu
-t line 591.
+LaTeX Warning: `h' float specifier changed to `ht'.
 
-<JetLowFlow.png, id=197, 1222.5675pt x 745.78625pt>
+[32 <./BMTEfficiency2.png>]
+<JetLowFlow.png, id=208, 1222.5675pt x 745.78625pt>
 File: JetLowFlow.png Graphic file (type png)
  <use JetLowFlow.png>
-Package pdftex.def Info: JetLowFlow.png used on input line 594.
-(pdftex.def)             Requested size: 498.66258pt x 304.19255pt.
+Package pdftex.def Info: JetLowFlow.png used on input line 645.
+(pdftex.def)             Requested size: 398.93158pt x 243.34494pt.
 
-[42 <./JetHighFlow.png>] [43 <./JetLowFlow.png>]
-<Comparison.png, id=207, 544.0325pt x 245.91875pt>
+
+LaTeX Warning: `h' float specifier changed to `ht'.
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 651--655
+
+ []
+
+[33 <./FlowComparison.png>] <Comparison.png, id=213, 544.0325pt x 245.91875pt>
 File: Comparison.png Graphic file (type png)
- <use Comparison.png>
-Package pdftex.def Info: Comparison.png used on input line 604.
+
+<use Comparison.png>
+Package pdftex.def Info: Comparison.png used on input line 662.
 (pdftex.def)             Requested size: 498.66258pt x 225.42245pt.
 
-<Triomph.jpg, id=208, 1027.84pt x 770.88pt>
+
+LaTeX Warning: `h' float specifier changed to `ht'.
+
+<Triomph.jpg, id=214, 1027.84pt x 770.88pt>
 File: Triomph.jpg Graphic file (type jpg)
  <use Triomph.jpg>
-Package pdftex.def Info: Triomph.jpg used on input line 610.
-(pdftex.def)             Requested size: 498.66258pt x 374.00574pt.
- [44 <./Comparison.png>] [45 <./Triomph.jpg>] [46]
-<PumpjetEfficiency.png, id=219, 713.66624pt x 907.39pt>
+Package pdftex.def Info: Triomph.jpg used on input line 669.
+(pdftex.def)             Requested size: 398.93158pt x 299.19519pt.
+
+
+LaTeX Warning: `h' float specifier changed to `ht'.
+
+[34 <./JetHighFlow.png>] [35 <./JetLowFlow.png>] [36 <./Comparison.png>]
+[37 <./Triomph.jpg>] <PumpjetEfficiency.png, id=232, 713.66624pt x 907.39pt>
 File: PumpjetEfficiency.png Graphic file (type png)
 
 <use PumpjetEfficiency.png>
-Package pdftex.def Info: PumpjetEfficiency.png used on input line 658.
-(pdftex.def)             Requested size: 498.66258pt x 634.01949pt.
+Package pdftex.def Info: PumpjetEfficiency.png used on input line 718.
+(pdftex.def)             Requested size: 349.06227pt x 443.8081pt.
 
 
-LaTeX Warning: Citation 'figLPumpjetEfficiency' on page 47 undefined on input l
-ine 665.
+LaTeX Warning: Citation 'fig:PumpjetEfficiency.png' on page 38 undefined on inp
+ut line 725.
 
-<EfficiencyBrandau.png, id=220, 663.47874pt x 831.105pt>
+<EfficiencyBrandau.png, id=233, 663.47874pt x 831.105pt>
 File: EfficiencyBrandau.png Graphic file (type png)
 
 <use EfficiencyBrandau.png>
-Package pdftex.def Info: EfficiencyBrandau.png used on input line 670.
-(pdftex.def)             Requested size: 498.66258pt x 624.6461pt.
- [47] [48 <./PumpjetEfficiency.png>] [49 <./EfficiencyBrandau.png>] <Efficiency
-Mollard.png, id=235, 492.84125pt x 292.09125pt>
+Package pdftex.def Info: EfficiencyBrandau.png used on input line 731.
+(pdftex.def)             Requested size: 249.33128pt x 312.32304pt.
+
+
+LaTeX Warning: `h' float specifier changed to `ht'.
+
+[38] [39 <./PumpjetEfficiency.png>]
+<EfficiencyMollard.png, id=242, 492.84125pt x 292.09125pt>
 File: EfficiencyMollard.png Graphic file (type png)
 
 <use EfficiencyMollard.png>
-Package pdftex.def Info: EfficiencyMollard.png used on input line 680.
-(pdftex.def)             Requested size: 498.66258pt x 295.55356pt.
+Package pdftex.def Info: EfficiencyMollard.png used on input line 742.
+(pdftex.def)             Requested size: 299.20059pt x 177.33302pt.
 
-<EfficiencyBulten.png, id=236, 521.95pt x 278.03876pt>
+
+LaTeX Warning: `h' float specifier changed to `ht'.
+
+<EfficiencyBulten.png, id=243, 521.95pt x 278.03876pt>
 File: EfficiencyBulten.png Graphic file (type png)
 
 <use EfficiencyBulten.png>
-Package pdftex.def Info: EfficiencyBulten.png used on input line 686.
-(pdftex.def)             Requested size: 498.66258pt x 265.63716pt.
- [50 <./EfficiencyMollard.png>]
-<PropDuct.png, id=242, 716.6775pt x 325.215pt>
+Package pdftex.def Info: EfficiencyBulten.png used on input line 748.
+(pdftex.def)             Requested size: 398.93158pt x 212.51227pt.
+
+
+LaTeX Warning: `h' float specifier changed to `ht'.
+
+<PropDuct.png, id=244, 716.6775pt x 325.215pt>
 File: PropDuct.png Graphic file (type png)
  <use PropDuct.png>
-Package pdftex.def Info: PropDuct.png used on input line 696.
+Package pdftex.def Info: PropDuct.png used on input line 758.
 (pdftex.def)             Requested size: 498.66258pt x 226.28925pt.
 
-<PumpUp.png, id=243, 624.3325pt x 334.24875pt>
-File: PumpUp.png Graphic file (type png)
- <use PumpUp.png>
-Package pdftex.def Info: PumpUp.png used on input line 704.
-(pdftex.def)             Requested size: 498.66258pt x 266.97603pt.
- [51 <./EfficiencyBulten.png>] [52 <./PropDuct.png> <./PumpUp.png>]
-<stall.png, id=253, 696.6025pt x 373.395pt>
-File: stall.png Graphic file (type png)
- <use stall.png>
-Package pdftex.def Info: stall.png used on input line 724.
-(pdftex.def)             Requested size: 498.66258pt x 267.29446pt.
 
-<backflow.png, id=254, 794.97pt x 315.1775pt>
+LaTeX Warning: `h' float specifier changed to `ht'.
+
+[40 <./EfficiencyBrandau.png>] <PumpUp.png, id=249, 624.3325pt x 334.24875pt>
+File: PumpUp.png Graphic file (type png)
+
+<use PumpUp.png>
+Package pdftex.def Info: PumpUp.png used on input line 767.
+(pdftex.def)             Requested size: 299.20059pt x 160.18765pt.
+
+
+LaTeX Warning: `h' float specifier changed to `ht'.
+
+[41 <./EfficiencyMollard.png>]
+Underfull \hbox (badness 10000) in paragraph at lines 780--784
+
+ []
+
+[42 <./EfficiencyBulten.png>] <stall.png, id=259, 696.6025pt x 373.395pt>
+File: stall.png Graphic file (type png)
+
+<use stall.png>
+Package pdftex.def Info: stall.png used on input line 795.
+(pdftex.def)             Requested size: 299.20059pt x 160.37439pt.
+
+
+LaTeX Warning: `h' float specifier changed to `ht'.
+
+<backflow.png, id=260, 794.97pt x 315.1775pt>
 File: backflow.png Graphic file (type png)
  <use backflow.png>
-Package pdftex.def Info: backflow.png used on input line 730.
-(pdftex.def)             Requested size: 498.66258pt x 197.70683pt.
- [53] [54 <./stall.png> <./backflow.png>]
-<AcceleratingIdeal.png, id=263, 662.475pt x 338.26375pt>
+Package pdftex.def Info: backflow.png used on input line 802.
+(pdftex.def)             Requested size: 398.93158pt x 158.16547pt.
+
+
+LaTeX Warning: `h' float specifier changed to `ht'.
+
+[43 <./PropDuct.png>] [44 <./PumpUp.png> <./stall.png>]
+<AcceleratingIdeal.png, id=271, 662.475pt x 338.26375pt>
 File: AcceleratingIdeal.png Graphic file (type png)
 
 <use AcceleratingIdeal.png>
-Package pdftex.def Info: AcceleratingIdeal.png used on input line 749.
+Package pdftex.def Info: AcceleratingIdeal.png used on input line 821.
 (pdftex.def)             Requested size: 498.66258pt x 254.62108pt.
 
-<FineOptimised.png, id=264, 540.0175pt x 464.73625pt>
-File: FineOptimised.png Graphic file (type png)
- <use FineOptimised.png>
-Package pdftex.def Info: FineOptimised.png used on input line 759.
-(pdftex.def)             Requested size: 498.66258pt x 429.15807pt.
 
-<FineEfficiency.png, id=265, 560.0925pt x 409.53pt>
+LaTeX Warning: `h' float specifier changed to `ht'.
+
+[45 <./backflow.png>] <FineOptimised.png, id=276, 540.0175pt x 464.73625pt>
+File: FineOptimised.png Graphic file (type png)
+
+<use FineOptimised.png>
+Package pdftex.def Info: FineOptimised.png used on input line 833.
+(pdftex.def)             Requested size: 224.39662pt x 193.11014pt.
+ <FineCavitation.png, id=277, 536.0025pt x 682.55pt>
+File: FineCavitation.png Graphic file (type png)
+
+<use FineCavitation.png>
+Package pdftex.def Info: FineCavitation.png used on input line 837.
+(pdftex.def)             Requested size: 224.39662pt x 285.74213pt.
+
+Overfull \hbox (2.2222pt too wide) in paragraph at lines 832--840
+[]$[]$ $[]$ 
+ []
+
+
+LaTeX Warning: `h' float specifier changed to `ht'.
+
+<FineEfficiency.png, id=278, 560.0925pt x 409.53pt>
 File: FineEfficiency.png Graphic file (type png)
  <use FineEfficiency.png>
-Package pdftex.def Info: FineEfficiency.png used on input line 765.
-(pdftex.def)             Requested size: 498.66258pt x 364.63052pt.
+Package pdftex.def Info: FineEfficiency.png used on input line 847.
+(pdftex.def)             Requested size: 349.06227pt x 255.23698pt.
 
-<FineCavitation.png, id=266, 536.0025pt x 682.55pt>
-File: FineCavitation.png Graphic file (type png)
- <use FineCavitation.png>
-Package pdftex.def Info: FineCavitation.png used on input line 771.
-(pdftex.def)             Requested size: 498.66258pt x 634.99408pt.
 
-[55] <LowIVR.png, id=271, 430.60875pt x 185.69376pt>
+LaTeX Warning: `h' float specifier changed to `ht'.
+
+<LowIVR.png, id=279, 430.60875pt x 185.69376pt>
 File: LowIVR.png Graphic file (type png)
  <use LowIVR.png>
-Package pdftex.def Info: LowIVR.png used on input line 782.
-(pdftex.def)             Requested size: 249.33128pt x 107.52394pt.
+Package pdftex.def Info: LowIVR.png used on input line 861.
+(pdftex.def)             Requested size: 224.39662pt x 96.76814pt.
 
-<HighIVR.png, id=272, 441.65pt x 202.7575pt>
+<HighIVR.png, id=280, 441.65pt x 202.7575pt>
 File: HighIVR.png Graphic file (type png)
  <use HighIVR.png>
-Package pdftex.def Info: HighIVR.png used on input line 788.
-(pdftex.def)             Requested size: 498.66258pt x 228.94315pt.
+Package pdftex.def Info: HighIVR.png used on input line 865.
+(pdftex.def)             Requested size: 224.39662pt x 103.01822pt.
 
-<DuctSeparation.png, id=273, 786.94pt x 266.9975pt>
+Overfull \hbox (2.2222pt too wide) in paragraph at lines 860--868
+[]$[]$ $[]$ 
+ []
+
+
+LaTeX Warning: `h' float specifier changed to `ht'.
+
+<DuctSeparation.png, id=281, 786.94pt x 266.9975pt>
 File: DuctSeparation.png Graphic file (type png)
  <use DuctSeparation.png>
-Package pdftex.def Info: DuctSeparation.png used on input line 794.
+Package pdftex.def Info: DuctSeparation.png used on input line 876.
 (pdftex.def)             Requested size: 498.66258pt x 169.18707pt.
 
-<NozzleDrag.png, id=274, 538.01pt x 395.4775pt>
+
+LaTeX Warning: `h' float specifier changed to `ht'.
+
+<NozzleDrag.png, id=282, 538.01pt x 395.4775pt>
 File: NozzleDrag.png Graphic file (type png)
  <use NozzleDrag.png>
-Package pdftex.def Info: NozzleDrag.png used on input line 800.
-(pdftex.def)             Requested size: 498.66258pt x 366.55923pt.
- [56 <./AcceleratingIdeal.png>] [57 <./FineOptimised.png>] [58 <./FineEfficienc
-y.png>]
-[59 <./FineCavitation.png>] [60 <./LowIVR.png> <./HighIVR.png> <./DuctSeparatio
-n.png>] [61 <./NozzleDrag.png>] [62]
-<LaminarProp.png, id=305, 270.00874pt x 326.21875pt>
+Package pdftex.def Info: NozzleDrag.png used on input line 883.
+(pdftex.def)             Requested size: 349.06227pt x 256.58664pt.
+
+
+LaTeX Warning: `h' float specifier changed to `ht'.
+
+[46 <./AcceleratingIdeal.png>] [47 <./FineOptimised.png> <./FineCavitation.png>
+] [48 <./FineEfficiency.png> <./LowIVR.png> <./HighIVR.png>] [49 <./DuctSeparat
+ion.png>] [50 <./NozzleDrag.png>]
+<LaminarProp.png, id=307, 270.00874pt x 326.21875pt>
 File: LaminarProp.png Graphic file (type png)
  <use LaminarProp.png>
-Package pdftex.def Info: LaminarProp.png used on input line 848.
-(pdftex.def)             Requested size: 498.66258pt x 602.48973pt.
-Package color Info: Redefining color shadecolor on input line 857.
+Package pdftex.def Info: LaminarProp.png used on input line 936.
+(pdftex.def)             Requested size: 199.46198pt x 240.98991pt.
 
-<figures/plots-plot_efficiency-1.pdf, id=306, 505.89pt x 505.89pt>
+
+Package xcolor Warning: Incompatible color definition on input line 945.
+
+<figures/plots-plot_efficiency-1.pdf, id=308, 505.89pt x 505.89pt>
 File: figures/plots-plot_efficiency-1.pdf Graphic file (type pdf)
 
 <use figures/plots-plot_efficiency-1.pdf>
 Package pdftex.def Info: figures/plots-plot_efficiency-1.pdf used on input line
- 859.
+ 947.
 (pdftex.def)             Requested size: 498.66258pt x 498.67125pt.
- [63] [64 <./LaminarProp.png>]
-[65 <./figures/plots-plot_efficiency-1.pdf>]
-Package color Info: Redefining color shadecolor on input line 896.
+ [51 <./LaminarProp.png>] [52 <./figures/plots-plot_efficiency-1.pdf>] [53] [54
+]
 
-<figures/plots-plot_power1-1.pdf, id=322, 505.89pt x 505.89pt>
+Package xcolor Warning: Incompatible color definition on input line 986.
+
+<figures/plots-plot_power1-1.pdf, id=328, 505.89pt x 505.89pt>
 File: figures/plots-plot_power1-1.pdf Graphic file (type pdf)
 
 <use figures/plots-plot_power1-1.pdf>
-Package pdftex.def Info: figures/plots-plot_power1-1.pdf used on input line 898
+Package pdftex.def Info: figures/plots-plot_power1-1.pdf used on input line 988
 .
 (pdftex.def)             Requested size: 498.66258pt x 498.67125pt.
- [66] [67 <./figures/plots-plot_power1-1.pdf>]
-Package color Info: Redefining color shadecolor on input line 924.
- <figures/plots-plot_results1-1.pdf, id=335, 505.89pt x 505.89pt>
+
+
+Package xcolor Warning: Incompatible color definition on input line 1012.
+
+<figures/plots-plot_results1-1.pdf, id=329, 505.89pt x 505.89pt>
 File: figures/plots-plot_results1-1.pdf Graphic file (type pdf)
 
 <use figures/plots-plot_results1-1.pdf>
-Package pdftex.def Info: figures/plots-plot_results1-1.pdf used on input line 9
-26.
+Package pdftex.def Info: figures/plots-plot_results1-1.pdf used on input line 1
+014.
 (pdftex.def)             Requested size: 498.66258pt x 498.67125pt.
-Package color Info: Redefining color shadecolor on input line 939.
 
-<figures/plots-plot_results2-1.pdf, id=336, 505.89pt x 505.89pt>
+
+Package xcolor Warning: Incompatible color definition on input line 1027.
+
+<figures/plots-plot_results2-1.pdf, id=330, 505.89pt x 505.89pt>
 File: figures/plots-plot_results2-1.pdf Graphic file (type pdf)
 
 <use figures/plots-plot_results2-1.pdf>
-Package pdftex.def Info: figures/plots-plot_results2-1.pdf used on input line 9
-41.
+Package pdftex.def Info: figures/plots-plot_results2-1.pdf used on input line 1
+029.
 (pdftex.def)             Requested size: 498.66258pt x 498.67125pt.
-Package color Info: Redefining color shadecolor on input line 954.
 
-<figures/plots-plot_results3-1.pdf, id=337, 505.89pt x 505.89pt>
+
+Package xcolor Warning: Incompatible color definition on input line 1042.
+
+<figures/plots-plot_results3-1.pdf, id=331, 505.89pt x 505.89pt>
 File: figures/plots-plot_results3-1.pdf Graphic file (type pdf)
 
 <use figures/plots-plot_results3-1.pdf>
-Package pdftex.def Info: figures/plots-plot_results3-1.pdf used on input line 9
-56.
+Package pdftex.def Info: figures/plots-plot_results3-1.pdf used on input line 1
+044.
 (pdftex.def)             Requested size: 498.66258pt x 498.67125pt.
-Package color Info: Redefining color shadecolor on input line 969.
 
-<figures/plots-plot_results4-1.pdf, id=338, 505.89pt x 505.89pt>
+
+Package xcolor Warning: Incompatible color definition on input line 1057.
+
+<figures/plots-plot_results4-1.pdf, id=332, 505.89pt x 505.89pt>
 File: figures/plots-plot_results4-1.pdf Graphic file (type pdf)
 
 <use figures/plots-plot_results4-1.pdf>
-Package pdftex.def Info: figures/plots-plot_results4-1.pdf used on input line 9
-71.
+Package pdftex.def Info: figures/plots-plot_results4-1.pdf used on input line 1
+059.
 (pdftex.def)             Requested size: 498.66258pt x 498.67125pt.
-Package color Info: Redefining color shadecolor on input line 993.
+ [55] [56 <./figures/plots-plot_power1-1.pdf>] [57 <./figures/plots-plot_result
+s1-1.pdf>] [58 <./figures/plots-plot_results2-1.pdf>] [59 <./figures/plots-plot
+_results3-1.pdf>] [60 <./figures/plots-plot_results4-1.pdf>]
 
-<figures/plots-plot_proportions-1.pdf, id=339, 505.89pt x 505.89pt>
+Package xcolor Warning: Incompatible color definition on input line 1081.
+
+<figures/plots-plot_proportions-1.pdf, id=377, 505.89pt x 505.89pt>
 File: figures/plots-plot_proportions-1.pdf Graphic file (type pdf)
 
 <use figures/plots-plot_proportions-1.pdf>
 Package pdftex.def Info: figures/plots-plot_proportions-1.pdf used on input lin
-e 995.
+e 1083.
 (pdftex.def)             Requested size: 498.66258pt x 498.67125pt.
- [68] [69 <./figures/plots-plot_results1-1.pdf>] [70 <./figures/plots-plot_resu
-lts2-1.pdf>] [71 <./figures/plots-plot_results3-1.pdf>] [72 <./figures/plots-pl
-ot_results4-1.pdf>] [73] [74 <./figures/plots-plot_proportions-1.pdf>]
-Package color Info: Redefining color shadecolor on input line 1031.
+ [61] [62 <./figures/plots-plot_proportions-1.pdf>]
 
-<figures/plots-plot_sens_hotel-1.pdf, id=387, 505.89pt x 505.89pt>
+Package xcolor Warning: Incompatible color definition on input line 1109.
+
+<figures/plots-plot_sens_hotel-1.pdf, id=389, 505.89pt x 505.89pt>
 File: figures/plots-plot_sens_hotel-1.pdf Graphic file (type pdf)
 
 <use figures/plots-plot_sens_hotel-1.pdf>
 Package pdftex.def Info: figures/plots-plot_sens_hotel-1.pdf used on input line
- 1033.
+ 1111.
 (pdftex.def)             Requested size: 498.66258pt x 498.67125pt.
- [75] [76 <./figures/plots-plot_sens_hotel-1.pdf>]
-Package color Info: Redefining color shadecolor on input line 1060.
+ [63] [64 <./figures/plots-plot_sens_hotel-1.pdf>]
 
-<figures/plots-plot_sens_battery-1.pdf, id=399, 505.89pt x 505.89pt>
+Package xcolor Warning: Incompatible color definition on input line 1144.
+
+<figures/plots-plot_sens_battery-1.pdf, id=401, 505.89pt x 505.89pt>
 File: figures/plots-plot_sens_battery-1.pdf Graphic file (type pdf)
 
 <use figures/plots-plot_sens_battery-1.pdf>
 Package pdftex.def Info: figures/plots-plot_sens_battery-1.pdf used on input li
-ne 1062.
+ne 1146.
 (pdftex.def)             Requested size: 498.66258pt x 498.67125pt.
-Package color Info: Redefining color shadecolor on input line 1077.
+ [65] [66 <./figures/plots-plot_sens_battery-1.pdf>]
+Underfull \hbox (badness 10000) in paragraph at lines 1177--1187
 
-<figures/plots-plot_sens_corners-1.pdf, id=400, 505.89pt x 505.89pt>
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 1177--1187
+
+ []
+
+
+Underfull \hbox (badness 1616) in paragraph at lines 1177--1187
+\OT1/lmr/m/n/10 The in-verse re-la-tion-ship leads to even more strik-ing re-su
+lts, par-tic-u-larly if
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 1177--1187
+
+ []
+
+
+Package xcolor Warning: Incompatible color definition on input line 1191.
+
+<figures/plots-plot_sens_corners-1.pdf, id=414, 505.89pt x 505.89pt>
 File: figures/plots-plot_sens_corners-1.pdf Graphic file (type pdf)
 
 <use figures/plots-plot_sens_corners-1.pdf>
 Package pdftex.def Info: figures/plots-plot_sens_corners-1.pdf used on input li
-ne 1079.
+ne 1193.
 (pdftex.def)             Requested size: 498.66258pt x 498.67125pt.
- [77] [78 <./figures/plots-plot_sens_battery-1.pdf>] [79 <./figures/plots-plot_
-sens_corners-1.pdf>]
-<InceptionDepth.png, id=421, 525.965pt x 460.72125pt>
+ [67] [68 <./figures/plots-plot_sens_corners-1.pdf>]
+
+Package xcolor Warning: Incompatible color definition on input line 1215.
+
+<figures/plots-plot_IR-1.pdf, id=426, 505.89pt x 505.89pt>
+File: figures/plots-plot_IR-1.pdf Graphic file (type pdf)
+
+<use figures/plots-plot_IR-1.pdf>
+Package pdftex.def Info: figures/plots-plot_IR-1.pdf used on input line 1217.
+(pdftex.def)             Requested size: 498.66258pt x 498.67125pt.
+
+
+Package xcolor Warning: Incompatible color definition on input line 1231.
+
+<figures/plots-plot_IR_sens-1.pdf, id=427, 505.89pt x 505.89pt>
+File: figures/plots-plot_IR_sens-1.pdf Graphic file (type pdf)
+
+<use figures/plots-plot_IR_sens-1.pdf>
+Package pdftex.def Info: figures/plots-plot_IR_sens-1.pdf used on input line 12
+33.
+(pdftex.def)             Requested size: 498.66258pt x 498.67125pt.
+ [69] [70 <./figures/plots-plot_IR-1.pdf>] [71 <./figures/plots-plot_IR_sens-1.
+pdf>] [72] [73]
+<InceptionDepth.png, id=455, 525.965pt x 460.72125pt>
 File: InceptionDepth.png Graphic file (type png)
  <use InceptionDepth.png>
-Package pdftex.def Info: InceptionDepth.png used on input line 1110.
-(pdftex.def)             Requested size: 498.66258pt x 436.82504pt.
-Package color Info: Redefining color shadecolor on input line 1119.
+Package pdftex.def Info: InceptionDepth.png used on input line 1271.
+(pdftex.def)             Requested size: 349.06227pt x 305.7712pt.
 
-<figures/plots-plot_inception-1.pdf, id=422, 505.89pt x 505.89pt>
+
+Package xcolor Warning: Incompatible color definition on input line 1280.
+
+<figures/plots-plot_inception-1.pdf, id=456, 505.89pt x 505.89pt>
 File: figures/plots-plot_inception-1.pdf Graphic file (type pdf)
 
 <use figures/plots-plot_inception-1.pdf>
 Package pdftex.def Info: figures/plots-plot_inception-1.pdf used on input line 
-1121.
+1282.
 (pdftex.def)             Requested size: 498.66258pt x 498.67125pt.
-
-<VortexShedding.png, id=423, 823.075pt x 599.23875pt>
+ [74 <./InceptionDepth.png>] [75 <./figures/plots-plot_inception-1.pdf>]
+<VortexShedding.png, id=470, 823.075pt x 599.23875pt>
 File: VortexShedding.png Graphic file (type png)
  <use VortexShedding.png>
-Package pdftex.def Info: VortexShedding.png used on input line 1138.
-(pdftex.def)             Requested size: 498.66258pt x 363.04803pt.
+Package pdftex.def Info: VortexShedding.png used on input line 1300.
+(pdftex.def)             Requested size: 299.20059pt x 217.82881pt.
 
-[80] [81 <./InceptionDepth.png>] [82 <./figures/plots-plot_inception-1.pdf>]
-[83 <./VortexShedding.png>] [84]
-Overfull \hbox (23.98117pt too wide) in paragraph at lines 1176--1176
-[]\OT1/cmr/m/it/10 The Short-fin Bar-racuda Bloack 1A\OT1/cmr/m/n/10 . Ac-cesse
-d: 2018-01-08. \OT1/cmr/m/sc/10 url\OT1/cmr/m/n/10 : $\OT1/cmtt/m/n/10 http : /
+[76 <./VortexShedding.png>]
+Underfull \hbox (badness 10000) in paragraph at lines 1319--1326
+
+ []
+
+
+Underfull \hbox (badness 1448) in paragraph at lines 1319--1326
+\OT1/lmr/m/n/10 Pumpjets have an acous-tic ad-van-tage be-cause they can avoid 
+cav-i-ta-tion in
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 1319--1326
+
+ []
+
+[77] [78] [79]
+LaTeX Font Info:    Try loading font information for OT1+lmtt on input line 134
+8.
+ (/usr/local/texlive/2017/texmf-dist/tex/latex/lm/ot1lmtt.fd
+File: ot1lmtt.fd 2009/10/30 v1.6 Font defs for Latin Modern
+)
+Overfull \hbox (23.70335pt too wide) in paragraph at lines 1349--1349
+[]\OT1/lmr/m/it/10 The Short-fin Bar-racuda Bloack 1A\OT1/lmr/m/n/10 . Ac-cesse
+d: 2018-01-08. \OT1/lmr/m/sc/10 url\OT1/lmr/m/n/10 : $\OT1/lmtt/m/n/10 http : /
  / naval -[] group . com . au / futuresubmarines /
  []
 
-[85] [86]
-Overfull \hbox (0.49269pt too wide) in paragraph at lines 1176--1176
-[]\OT1/cmr/m/n/10 silence[]hr. ``Pro-peller-porn''. In: \OT1/cmr/m/it/10 Red-di
-t \OT1/cmr/m/n/10 (2016). \OT1/cmr/m/sc/10 url\OT1/cmr/m/n/10 : $\OT1/cmtt/m/n/
-10 https : / / www . reddit . com / r / propellerporn / comments /
+
+Overfull \hbox (8.58995pt too wide) in paragraph at lines 1349--1349
+[]\OT1/lmr/m/n/10 Brendan Nichol-son. ``The Strate-gist Six: Herv√© Guil-lou''.
+ In: (Oct. 2017). \OT1/lmr/m/sc/10 url\OT1/lmr/m/n/10 : $\OT1/lmtt/m/n/10 https
+ : / / www . aspistrategist .
  []
 
-[87]
-Overfull \hbox (67.46385pt too wide) in paragraph at lines 1176--1176
-[]\OT1/cmr/m/n/10 Rex Patrick. ``Com-bat Sys-tems Se-lec-tion For SEA 1000''. I
-n: (Oct. 2011). \OT1/cmr/m/sc/10 url\OT1/cmr/m/n/10 : $\OT1/cmtt/m/n/10 https :
+
+Overfull \hbox (2.47815pt too wide) in paragraph at lines 1349--1349
+[]\OT1/lmr/m/n/10 Brendan Nichol-son. ``The Strate-gist Six: Greg Sam-mut''. In
+: (Oct. 2017). \OT1/lmr/m/sc/10 url\OT1/lmr/m/n/10 : $\OT1/lmtt/m/n/10 https : 
+/ / www . aspistrategist .
+ []
+
+[80] [81]
+Overfull \hbox (66.9043pt too wide) in paragraph at lines 1349--1349
+[]\OT1/lmr/m/n/10 Rex Patrick. ``Com-bat Sys-tems Se-lec-tion For SEA 1000''. I
+n: (Oct. 2011). \OT1/lmr/m/sc/10 url\OT1/lmr/m/n/10 : $\OT1/lmtt/m/n/10 https :
  / / www . asiapacificdefencereporter .
  []
 
 
-Overfull \hbox (16.6666pt too wide) in paragraph at lines 1176--1176
-\OT1/cmtt/m/n/10 inquiry -[] future -[] subs -[] may -[] not -[] use -[] austra
-lian -[] steel / news -[] story / 632bd3bdb69a1307da84359605319fc3$\OT1/cmr/m/n
+Overfull \hbox (16.66928pt too wide) in paragraph at lines 1349--1349
+\OT1/lmtt/m/n/10 inquiry -[] future -[] subs -[] may -[] not -[] use -[] austra
+lian -[] steel / news -[] story / 632bd3bdb69a1307da84359605319fc3$\OT1/lmr/m/n
 /10 . 
  []
 
 
-Overfull \hbox (5.21489pt too wide) in paragraph at lines 1176--1176
-[]\OT1/cmr/m/n/10 Peter Coates. ``Spec-i-fi-ca-tions Ta-ble - Short-fin Bar-rac
-uda Block 1A''. In: (Apr. 2016). \OT1/cmr/m/sc/10 url\OT1/cmr/m/n/10 : $\OT1/cm
+Overfull \hbox (4.65334pt too wide) in paragraph at lines 1349--1349
+[]\OT1/lmr/m/n/10 Peter Coates. ``Spec-i-fi-ca-tions Ta-ble - Short-fin Bar-rac
+uda Block 1A''. In: (Apr. 2016). \OT1/lmr/m/sc/10 url\OT1/lmr/m/n/10 : $\OT1/lm
 tt/m/n/10 http : / / gentleseas .
  []
 
-[88] (./DraftExec.aux)
+[82] [83] [84] <BoundaryLayer.png, id=503, 489.83pt x 161.60374pt>
+File: BoundaryLayer.png Graphic file (type png)
 
-LaTeX Font Warning: Size substitutions with differences
-(Font)              up to 117.38377pt have occurred.
+<use BoundaryLayer.png>
+Package pdftex.def Info: BoundaryLayer.png used on input line 1391.
+(pdftex.def)             Requested size: 249.33128pt x 82.25653pt.
 
+
+LaTeX Warning: `h' float specifier changed to `ht'.
+
+[85] <Laminar.png, id=507, 213.79875pt x 69.25874pt>
+File: Laminar.png Graphic file (type png)
+ <use Laminar.png>
+Package pdftex.def Info: Laminar.png used on input line 1405.
+(pdftex.def)             Requested size: 174.53113pt x 56.53783pt.
+
+<Turbulent.png, id=508, 215.80624pt x 68.255pt>
+File: Turbulent.png Graphic file (type png)
+ <use Turbulent.png>
+Package pdftex.def Info: Turbulent.png used on input line 1409.
+(pdftex.def)             Requested size: 174.53113pt x 55.20187pt.
+
+Overfull \hbox (2.2222pt too wide) in paragraph at lines 1404--1412
+[]$[]$ $[]$ 
+ []
+
+[86 <./BoundaryLayer.png> <./Laminar.png> <./Turbulent.png>]
+<EarlyCavitation.JPG, id=515, 4047.12pt x 3035.34pt>
+File: EarlyCavitation.JPG Graphic file (type jpg)
+ <use EarlyCavitation.JPG>
+Package pdftex.def Info: EarlyCavitation.JPG used on input line 1433.
+(pdftex.def)             Requested size: 224.35228pt x 142.2349pt.
+
+<BoilingCavitation.JPG, id=516, 4047.12pt x 3035.34pt>
+File: BoilingCavitation.JPG Graphic file (type jpg)
+
+<use BoilingCavitation.JPG>
+Package pdftex.def Info: BoilingCavitation.JPG used on input line 1437.
+(pdftex.def)             Requested size: 224.35228pt x 142.2349pt.
+
+Overfull \hbox (2.2222pt too wide) in paragraph at lines 1432--1440
+[]$[]$ $[]$ 
+ []
+
+[87 <./EarlyCavitation.JPG> <./BoilingCavitation.JPG>]
+<IncreasingCavitation.png, id=520, 590.205pt x 587.19376pt>
+File: IncreasingCavitation.png Graphic file (type png)
+
+<use IncreasingCavitation.png>
+Package pdftex.def Info: IncreasingCavitation.png used on input line 1458.
+(pdftex.def)             Requested size: 349.06227pt x 347.28354pt.
+
+<CavitationTypes.png, id=521, 669.50125pt x 600.2425pt>
+File: CavitationTypes.png Graphic file (type png)
+
+<use CavitationTypes.png>
+Package pdftex.def Info: CavitationTypes.png used on input line 1465.
+(pdftex.def)             Requested size: 349.06227pt x 312.96135pt.
+
+
+LaTeX Warning: `h' float specifier changed to `ht'.
+
+[88 <./IncreasingCavitation.png>] [89 <./CavitationTypes.png>]
+<SeparatedAerofoil.jpg, id=530, 2055.68pt x 1432.35126pt>
+File: SeparatedAerofoil.jpg Graphic file (type jpg)
+
+<use SeparatedAerofoil.jpg>
+Package pdftex.def Info: SeparatedAerofoil.jpg used on input line 1489.
+(pdftex.def)             Requested size: 249.33128pt x 173.71063pt.
+
+<FlowSeparation.png, id=531, 742.775pt x 198.7425pt>
+File: FlowSeparation.png Graphic file (type png)
+ <use FlowSeparation.png>
+Package pdftex.def Info: FlowSeparation.png used on input line 1498.
+(pdftex.def)             Requested size: 349.06227pt x 93.39987pt.
+
+[90 <./SeparatedAerofoil.jpg> <./FlowSeparation.png>] [91] (./DraftExec.aux)
 
 LaTeX Warning: There were undefined references.
 
@@ -1003,33 +2152,36 @@ Package logreq Info: Writing requests to 'DraftExec.run.xml'.
 
  ) 
 Here is how much of TeX's memory you used:
- 9104 strings out of 492995
- 162476 string characters out of 6132704
- 421066 words of memory out of 5000000
- 12495 multiletter control sequences out of 15000+600000
- 9624 words of font info for 34 fonts, out of 8000000 for 9000
+ 35205 strings out of 492995
+ 717323 string characters out of 6132704
+ 1191610 words of memory out of 5000000
+ 38165 multiletter control sequences out of 15000+600000
+ 56333 words of font info for 44 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 45i,11n,58p,2118b,1473s stack positions out of 5000i,500n,10000p,200000b,80000s
-</usr/local/texlive/2017/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx10.pfb
-></usr/local/texlive/2017/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx12.pfb>
-</usr/local/texlive/2017/texmf-dist/fonts/type1/public/amsfonts/cm/cmcsc10.pfb>
-</usr/local/texlive/2017/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb><
-/usr/local/texlive/2017/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi12.pfb></
-usr/local/texlive/2017/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi7.pfb></us
-r/local/texlive/2017/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb></usr/
-local/texlive/2017/texmf-dist/fonts/type1/public/amsfonts/cm/cmr12.pfb></usr/lo
-cal/texlive/2017/texmf-dist/fonts/type1/public/amsfonts/cm/cmr17.pfb></usr/loca
-l/texlive/2017/texmf-dist/fonts/type1/public/amsfonts/cm/cmr5.pfb></usr/local/t
-exlive/2017/texmf-dist/fonts/type1/public/amsfonts/cm/cmr6.pfb></usr/local/texl
-ive/2017/texmf-dist/fonts/type1/public/amsfonts/cm/cmr7.pfb></usr/local/texlive
-/2017/texmf-dist/fonts/type1/public/amsfonts/cm/cmr8.pfb></usr/local/texlive/20
-17/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/local/texlive/201
-7/texmf-dist/fonts/type1/public/amsfonts/cm/cmti10.pfb></usr/local/texlive/2017
-/texmf-dist/fonts/type1/public/amsfonts/cm/cmtt10.pfb>
-Output written on DraftExec.pdf (88 pages, 13004950 bytes).
+ 63i,11n,101p,10468b,1510s stack positions out of 5000i,500n,10000p,200000b,80000s
+{/usr/local/texlive/2017/texmf-dist/fonts/enc/dvips/lm/lm-rmtt.enc}{/usr/loca
+l/texlive/2017/texmf-dist/fonts/enc/dvips/lm/lm-rmsc.enc}{/usr/local/texlive/20
+17/texmf-dist/fonts/enc/dvips/lm/lm-mathsy.enc}{/usr/local/texlive/2017/texmf-d
+ist/fonts/enc/dvips/lm/lm-rm.enc}{/usr/local/texlive/2017/texmf-dist/fonts/enc/
+dvips/lm/lm-mathit.enc}</usr/local/texlive/2017/texmf-dist/fonts/type1/public/l
+m/lmbx10.pfb></usr/local/texlive/2017/texmf-dist/fonts/type1/public/lm/lmbx12.p
+fb></usr/local/texlive/2017/texmf-dist/fonts/type1/public/lm/lmcsc10.pfb></usr/
+local/texlive/2017/texmf-dist/fonts/type1/public/lm/lmmi10.pfb></usr/local/texl
+ive/2017/texmf-dist/fonts/type1/public/lm/lmmi12.pfb></usr/local/texlive/2017/t
+exmf-dist/fonts/type1/public/lm/lmmi7.pfb></usr/local/texlive/2017/texmf-dist/f
+onts/type1/public/lm/lmr10.pfb></usr/local/texlive/2017/texmf-dist/fonts/type1/
+public/lm/lmr12.pfb></usr/local/texlive/2017/texmf-dist/fonts/type1/public/lm/l
+mr17.pfb></usr/local/texlive/2017/texmf-dist/fonts/type1/public/lm/lmr5.pfb></u
+sr/local/texlive/2017/texmf-dist/fonts/type1/public/lm/lmr6.pfb></usr/local/tex
+live/2017/texmf-dist/fonts/type1/public/lm/lmr7.pfb></usr/local/texlive/2017/te
+xmf-dist/fonts/type1/public/lm/lmr8.pfb></usr/local/texlive/2017/texmf-dist/fon
+ts/type1/public/lm/lmr9.pfb></usr/local/texlive/2017/texmf-dist/fonts/type1/pub
+lic/lm/lmri10.pfb></usr/local/texlive/2017/texmf-dist/fonts/type1/public/lm/lms
+y10.pfb></usr/local/texlive/2017/texmf-dist/fonts/type1/public/lm/lmtt10.pfb>
+Output written on DraftExec.pdf (92 pages, 13922796 bytes).
 PDF statistics:
- 517 PDF objects out of 1000 (max. 8388607)
- 289 compressed objects within 3 object streams
+ 603 PDF objects out of 1000 (max. 8388607)
+ 329 compressed objects within 4 object streams
  0 named destinations out of 1000 (max. 500000)
- 306 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 502 words of extra memory for PDF output out of 10000 (max. 10000000)
 
