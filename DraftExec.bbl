@@ -272,6 +272,41 @@
     \field{year}{2010}
   \endentry
 
+  \entry{buckingham2008submarine}{article}{}
+    \name{author}{3}{}{%
+      {{hash=BJ}{%
+         family={Buckingham},
+         familyi={B\bibinitperiod},
+         given={John},
+         giveni={J\bibinitperiod},
+      }}%
+      {{hash=HC}{%
+         family={Hodge},
+         familyi={H\bibinitperiod},
+         given={Christopher},
+         giveni={C\bibinitperiod},
+      }}%
+      {{hash=HT}{%
+         family={Hardy},
+         familyi={H\bibinitperiod},
+         given={Timonthy},
+         giveni={T\bibinitperiod},
+      }}%
+    }
+    \strng{namehash}{BJHCHT1}
+    \strng{fullhash}{BJHCHT1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{title}{Submarine power and propulsion-application of technology to
+  deliver customer benefit}
+    \verb{url}
+    \verb http://www.bmtdsl.co.uk/media/6097999/BMTDSL-Sub-Power-and-propulsion
+    \verb -Confpaper-UDTEurope-Jun08.pdf
+    \endverb
+    \field{journaltitle}{UDT Europe, Glasgow}
+    \field{year}{2008}
+  \endentry
+
   \entry{carlton2007}{book}{}
     \name{author}{1}{}{%
       {{hash=CJ}{%
@@ -423,41 +458,6 @@
     \endverb
     \field{volume}{3}
     \field{year}{2005}
-  \endentry
-
-  \entry{buckingham2008submarine}{article}{}
-    \name{author}{3}{}{%
-      {{hash=BJ}{%
-         family={Buckingham},
-         familyi={B\bibinitperiod},
-         given={John},
-         giveni={J\bibinitperiod},
-      }}%
-      {{hash=HC}{%
-         family={Hodge},
-         familyi={H\bibinitperiod},
-         given={Christopher},
-         giveni={C\bibinitperiod},
-      }}%
-      {{hash=HT}{%
-         family={Hardy},
-         familyi={H\bibinitperiod},
-         given={Timonthy},
-         giveni={T\bibinitperiod},
-      }}%
-    }
-    \strng{namehash}{BJHCHT1}
-    \strng{fullhash}{BJHCHT1}
-    \field{labelnamesource}{author}
-    \field{labeltitlesource}{title}
-    \field{title}{Submarine power and propulsion-application of technology to
-  deliver customer benefit}
-    \verb{url}
-    \verb http://www.bmtdsl.co.uk/media/6097999/BMTDSL-Sub-Power-and-propulsion
-    \verb -Confpaper-UDTEurope-Jun08.pdf
-    \endverb
-    \field{journaltitle}{UDT Europe, Glasgow}
-    \field{year}{2008}
   \endentry
 
   \entry{mollard2011}{book}{}
