@@ -18,41 +18,65 @@
 \usepackage{tikz,lipsum,lmodern}
 \usepackage[most]{tcolorbox}
 
-\usepackage{draftwatermark}
-\SetWatermarkText{DRAFT}
-\SetWatermarkScale{1.5}
-\SetWatermarkLightness{0.95}
+% for cover page
+\usepackage{geometry}
+\usepackage{xcolor}
+\usepackage{graphicx}
+
+% \usepackage{draftwatermark}
+% \SetWatermarkText{DRAFT}
+% \SetWatermarkScale{1.5}
+% \SetWatermarkLightness{0.95}
 
 \title{Efficiency}
 \author{Aidan Morrison}
 
+% \SweaveOpts{concordance=TRUE}
+\definecolor{titlepagecolor}{cmyk}{0, 0, 0, .30}
+\definecolor{namecolor}{cmyk}{0, 0, 0, .80}
+
 \begin{document}
 
 
+%-----------------------------------------------------------------
 
+% ----------------------------------------------------------------
 \begin{titlepage}
-    \begin{center}
-        \vspace*{1cm}
+\newgeometry{left=7.5cm} %defines the geometry for the titlepage
+\pagecolor{titlepagecolor}
+\noindent
 
-        \vspace{10cm}
-        \textbf{\huge A comparison of pumpjets and propellers for non-nuclear submarine propulsion}
-
-        \vspace{0.5cm}
-
-
-        \vspace{1.5cm}
-
-        \textbf{Aidan Morrison}
-
-        \vspace{1.5cm}
-        January 2018
-
-        \vfill
-
+{\huge \textsf{A comparison of pumpjets and}}
+\vskip\baselineskip
+{\huge \textsf{propellers for non-nuclear}}
+\vskip\baselineskip
+{\huge \textsf{submarine propulsion}}
+\vskip\baselineskip
+\noindent
+\textbf{Aidan Morrison}
+\vskip\baselineskip
+\textsf{January 2018}
+\vskip\baselineskip
+\vskip\baselineskip
 
 
-    \end{center}
+\vfill
+\noindent
+
+
+\includegraphics[width=6cm]{tl_logo.png}\\[-1em]
+\color{white}
+\makebox[0pt][l]{\rule{1.3\textwidth}{1pt}}
+\par
+\noindent
+\textbf{\textsf{Trendlock}} \textcolor{namecolor}{\textsf{Consulting}}
+
 \end{titlepage}
+\restoregeometry % restores the geometry
+\nopagecolor% Use this to restore the color pages to white
+
+
+\newpage
 
 
 <<setup, include=FALSE, cache=FALSE, echo=FALSE>>=
