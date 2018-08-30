@@ -6,7 +6,7 @@
 \defcounter {refsection}{0}\relax 
 \contentsline {section}{\numberline {3}Speed and Drag - Why very slow is very very $(very)^2$ economical}{9}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {3.1}They physical relationship}{9}
+\contentsline {subsection}{\numberline {3.1}The physical relationship}{9}
 \defcounter {refsection}{0}\relax 
 \contentsline {subsection}{\numberline {3.2}Practical implications for submarines}{10}
 \defcounter {refsection}{0}\relax 
