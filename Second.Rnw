@@ -1,0 +1,130 @@
+\documentclass{article}
+
+\usepackage[backend=bibtex, sorting=none, citestyle=numeric]{biblatex}
+\usepackage[margin=0.8in]{geometry}
+\bibliography{references}
+
+%  For caption width
+\usepackage{graphicx,caption}
+% For Centering figs
+\usepackage[export]{adjustbox}
+% For split figures
+\usepackage{subcaption}
+%  appendix
+\usepackage[titletoc,page]{appendix}
+\setlength{\parindent}{0em}
+
+
+\usepackage{tikz,lipsum,lmodern}
+\usepackage[most]{tcolorbox}
+
+% for cover page
+\usepackage{geometry}
+\usepackage{xcolor}
+\usepackage{graphicx}
+
+% \usepackage{draftwatermark}
+% \SetWatermarkText{DRAFT}
+% \SetWatermarkScale{1.5}
+% \SetWatermarkLightness{0.95}
+
+\title{Efficiency}
+\author{Aidan Morrison}
+
+% \SweaveOpts{concordance=TRUE}
+\definecolor{titlepagecolor}{cmyk}{0, 0, 0, .30}
+\definecolor{namecolor}{cmyk}{0, 0, 0, .80}
+
+\begin{document}
+
+
+%-----------------------------------------------------------------
+
+% ----------------------------------------------------------------
+\begin{titlepage}
+\newgeometry{left=7.5cm} %defines the geometry for the titlepage
+\pagecolor{titlepagecolor}
+\noindent
+
+{\huge \textsf{A response to the Government response}}
+\vskip\baselineskip
+{\huge \textsf{(Or lack thereof)}}
+\vskip\baselineskip
+{\huge \textsf{on the question of the pumpjet}}
+\vskip\baselineskip
+\noindent
+\textbf{Aidan Morrison}
+\vskip\baselineskip
+\textsf{August 2018}
+\vskip\baselineskip
+\vskip\baselineskip
+
+
+\vfill
+\noindent
+
+
+\includegraphics[width=6cm]{tl_logo.png}\\[-1em]
+\color{white}
+\makebox[0pt][l]{\rule{1.3\textwidth}{1pt}}
+\par
+\noindent
+\textbf{\textsf{Trendlock}} \textcolor{namecolor}{\textsf{Consulting}}
+
+\end{titlepage}
+\restoregeometry % restores the geometry
+\nopagecolor% Use this to restore the color pages to white
+
+
+\newpage
+
+
+<<setup, include=FALSE, cache=FALSE, echo=FALSE>>=
+opts_chunk$set(fig.path='figures/plots-', fig.align='center', fig.show='hold', eval=T, echo=F)
+options(replace.assign=TRUE,width=80)
+library(tidyverse)
+library(submarines)
+@
+
+\newpage
+
+\tableofcontents
+
+\newpage
+\setlength{\parskip}{1em}
+
+\section{Introduction} \label{intro}
+
+The pumpjet propulsion system is a key feature of Naval Group’s Shortfin Barracuda submarine concept, and was apparently a key reason why the concept was selected by the Australian Government as the basis for the design of Australia’s new submarine under project SEA 1000.  Naval Group’s official website, reinforced by comments from officials representing both Naval Group and the Australian Government,  claims that the pumpjet system offers acoustic advantages which will make the Shortfin Barracuda much more effective than a submarine driven by a conventional propeller.
+
+However, over a number of years now the pumpjet choice has attracted sustained attention and criticism, mostly around its efficiency at low speeds, where a diesel-electric submarine would necessarily spend a great deal of its operating time.  I was commissioned by Gary Johnston to investigate this topic in detail and produce a report, which concluded that a very substantial reduction in dived range and endurance (as well as overall range) would necessarily result from the pumpjet choice.  Furthermore, that paper challenged the assumption that the pumpjet would be acoustically superior at low speeds, where open propellers would have no cavitation, and cause much less turbulence than the equivalent jet.
+
+That paper, and a subsequent blog post on the topic which made the paper publically available, attracted the interest of the Senate Economics Reference Committee Inquiry into the Future of Naval Shipbuilding in Australia.  Senator Chris Ketter asked written questions on notice to the Department of Defence requesting responses to the paper specifically, and related comments from public officials, with a return date of 3rd April 2018.  I was also invited to provide evidence to the committee in a public hearing on the 7th of June 2018.  In that public hearing, I stood by the conclusions of my substantive paper, which was: "between two otherwise identical submarines, the one with the pump jet will always have a lower dived endurance, a lower dived range, a worse indiscretion ratio, a lower overall endurance and a lower overall range than the one with the propeller."  In the presence of both the outgoing acting CEO of Naval Group Australia Brent Clark, and General Manager of Submarines (for Defence) Stephen Johnson, I pointed out that that statement was yet to be challenged, and that I'd be very surprised if anyone with technical competence or professional integrity sought to challenge it.
+
+In their own evidence during the course of the day, neither of those two did choose to challenge it.  Senator Kim Carr requested that defence produce a written response to that report for the committee prior to their handing down of their finaly report for the Inquiry, and Defence agreed to do their best in the time available, with the head of Capability and Sustainment Group (CASG) Kim Gillis noting that "we do hold that expertise", whilst making clear his reluctance to make a response clear, with comments such as "I regularly get correspondence from the public saying that almost every decision that we've made for the last 50 years on a defence matter is wrong, because somebody has an opinion".  In the final report of the committee, this request, and defence's acceptance of it was noted, but no acknowledgement was made of whether any response was actually received, or what it contained.
+
+In the August edition of Australian Defence Magazine a major article was featured on the pumpjet question, referencing both my testimony in the hearing and the paper.  Comment for the article was sought from CASG, the Royal Australian Navy (RAN) and Naval Group, and none was forthcoming.  However, some substantial comments were provided by Dr David Kershaw, the chief of DSTG's Maritime Division, who was also Science and Technology advisor for a time on SEA 1000, the Future Submarine Project.
+
+This paper has been commissioned by Gary Johnston of Submarines for Australia to provide a summary of the responses that have been received from official sources (in government, and Naval Group) to the earlier major report, and respond to them.  Only two substantive arguments emerge seeking to engage with the technical arguments made in the earlier paper.  The first is that the large size of the submarine now makes the pumpjet viable, where as for smaller submarines the large weight of the pumpjet would make it unviable, and that the pumpjet would be generally well-suited to smaller sumbarines as well were it not for this weight consideration.  The second is that interaction between the pumpjet and the hull obviate the evidence I have produced showing that pumpjet efficiency declines at low speeds, which are claimed to neglect considering such interactions.  This paper seeks to consider those two lines of reasoning in sufficient detail to suitably discuss the circumstances in which such arguments might be made.
+
+
+
+\begin{appendices}
+\section{Extracts from public statements}
+
+\subsection{Hansard Element}
+
+CHAIR: Senator, Hanson, you had a couple of final questions.
+
+Senator HANSON: The one reason for selecting the Shortfin Barracuda was stated to be that it has a very quiet pump-jet propulsion system, as used on nuclear submarines. Engineering experts said at the time that pump-jets were inefficient for conventional submarines, but Naval Group said that propellers were now obsolete. Recently, however, Naval Group said that propellers may be used instead. Just two weeks ago Naval Group said that we may have to go back to propellers. So, are we going with pump-jet propulsion or are we going back to propellers?
+
+Vice Adm. Griggs: The Commonwealth intends to incorporate a pump-jet into the Future Submarine, and the design is proceeding along on that basis.
+
+Senator HANSON: When the choice of Naval Group was announced, the Minister for Defence Industry stated that all 12 submarines would be built in Australia. At the same time, then President Hollande announced the creation of 4,000 jobs in France, while his defence minister stated on French TV that the first two submarines would be built in France. Can the minister explain the discrepancy and assure the Senate that all submarines will be built in Australia.
+
+Senator Payne: All the submarines will be built in Australia.
+
+\end{appendices}
+
+
+\end{document}
