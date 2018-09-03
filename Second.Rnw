@@ -95,34 +95,83 @@ library(submarines)
 
 \section{Introduction} \label{intro}
 
-The pumpjet propulsion system is a key feature of Naval Group’s Shortfin Barracuda submarine concept, and was apparently a key reason why the concept was selected by the Australian Government as the basis for the design of Australia’s new submarine under project SEA 1000.  Naval Group’s official website, reinforced by comments from officials representing both Naval Group and the Australian Government,  claims that the pumpjet system offers acoustic advantages which will make the Shortfin Barracuda much more effective than a submarine driven by a conventional propeller.
+The pumpjet propulsion system is a key feature of Naval Group's Shortfin Barracuda submarine concept, and was apparently a key reason why the concept was selected by the Australian Government as the basis for the design of Australia's new submarine under project SEA 1000.  Naval Group's official website, reinforced by comments from officials representing both Naval Group and the Australian Government,  claims that the pumpjet system offers acoustic advantages which will make the Shortfin Barracuda much more effective than a submarine driven by a conventional propeller.
 
-However, over a number of years now the pumpjet choice has attracted sustained attention and criticism, mostly around its efficiency at low speeds, where a diesel-electric submarine would necessarily spend a great deal of its operating time.  I was commissioned by Gary Johnston to investigate this topic in detail and produce a report, which concluded that a very substantial reduction in dived range and endurance (as well as overall range) would necessarily result from the pumpjet choice.  Furthermore, that paper challenged the assumption that the pumpjet would be acoustically superior at low speeds, where open propellers would have no cavitation, and cause much less turbulence than the equivalent jet.
+However, over a number of years now the pumpjet choice has attracted sustained attention and criticism, mostly around its efficiency at low speeds, where a diesel-electric submarine would necessarily spend a great deal of its operating time.  I was commissioned by Gary Johnston to investigate this topic in detail and produce a report \parencite{morrison2018}, which concluded that a very substantial reduction in dived range and endurance (as well as overall range) would necessarily result from the pumpjet choice.  Furthermore, that paper challenged the assumption that the pumpjet would be acoustically superior at low speeds, where open propellers would have no cavitation, and cause much less turbulence than the equivalent jet.
 
-That paper, and a subsequent blog post on the topic which made the paper publically available, attracted the interest of the Senate Economics Reference Committee Inquiry into the Future of Naval Shipbuilding in Australia.  Senator Chris Ketter asked written questions on notice to the Department of Defence requesting responses to the paper specifically, and related comments from public officials, with a return date of 3rd April 2018.  I was also invited to provide evidence to the committee in a public hearing on the 7th of June 2018.  In that public hearing, I stood by the conclusions of my substantive paper, which was: "between two otherwise identical submarines, the one with the pump jet will always have a lower dived endurance, a lower dived range, a worse indiscretion ratio, a lower overall endurance and a lower overall range than the one with the propeller."  In the presence of both the outgoing acting CEO of Naval Group Australia Brent Clark, and General Manager of Submarines (for Defence) Stephen Johnson, I pointed out that that statement was yet to be challenged, and that I'd be very surprised if anyone with technical competence or professional integrity sought to challenge it.
+That paper, and a subsequent blog post on the topic which made the paper publically available, attracted the interest of the Senate Economics Reference Committee Inquiry into the Future of Naval Shipbuilding in Australia.  Senator Chris Ketter asked written questions on notice to the Department of Defence requesting responses to the paper specifically, and related comments from public officials, with a return date of 3rd April 2018.  I was also invited to provide evidence to the committee in a public hearing on the 7th of June 2018.  In that public hearing, I stood by the conclusions of my substantive paper, which was: ``between two otherwise identical submarines, the one with the pump jet will always have a lower dived endurance, a lower dived range, a worse indiscretion ratio, a lower overall endurance and a lower overall range than the one with the propeller."  In the presence of both the outgoing acting CEO of Naval Group Australia Brent Clark, and General Manager of Submarines (for Defence) Stephen Johnson, I pointed out that that statement was yet to be challenged, and that I'd be very surprised if anyone with technical competence or professional integrity sought to challenge it.
 
-In their own evidence during the course of the day, neither of those two did choose to challenge it.  Senator Kim Carr requested that defence produce a written response to that report for the committee prior to their handing down of their finaly report for the Inquiry, and Defence agreed to do their best in the time available, with the head of Capability and Sustainment Group (CASG) Kim Gillis noting that "we do hold that expertise", whilst making clear his reluctance to make a response clear, with comments such as "I regularly get correspondence from the public saying that almost every decision that we've made for the last 50 years on a defence matter is wrong, because somebody has an opinion".  In the final report of the committee, this request, and defence's acceptance of it was noted, but no acknowledgement was made of whether any response was actually received, or what it contained.
+In their own evidence during the course of the day, neither of those two did choose to challenge it.  Senator Kim Carr requested that defence produce a written response to that report for the committee prior to their handing down of their finaly report for the Inquiry, and Defence agreed to do their best in the time available, with the head of Capability and Sustainment Group (CASG) Kim Gillis noting that ``we do hold that expertise", whilst making clear his reluctance to make a response clear, with comments such as "I regularly get correspondence from the public saying that almost every decision that we've made for the last 50 years on a defence matter is wrong, because somebody has an opinion".  In the final report of the committee, this request, and defence's acceptance of it was noted, but no acknowledgement was made of whether any response was actually received, or what it contained \parencite{SERC2018final}.
 
-In the August edition of Australian Defence Magazine a major article was featured on the pumpjet question, referencing both my testimony in the hearing and the paper.  Comment for the article was sought from CASG, the Royal Australian Navy (RAN) and Naval Group, and none was forthcoming.  However, some substantial comments were provided by Dr David Kershaw, the chief of DSTG's Maritime Division, who was also Science and Technology advisor for a time on SEA 1000, the Future Submarine Project.
+In the August edition of Australian Defence Magazine a major article was featured on the pumpjet question \parencite{kerr2018}, referencing both my testimony in the hearing and the paper.  Comment for the article was sought from CASG, the Royal Australian Navy (RAN) and Naval Group, and none was forthcoming.  However, some substantial comments were provided by Dr David Kershaw, the chief of DSTG's Maritime Division, who was also Science and Technology advisor for a time on SEA 1000, the Future Submarine Project.
 
 This paper has been commissioned by Gary Johnston of Submarines for Australia to provide a summary of the responses that have been received from official sources (in government, and Naval Group) to the earlier major report, and respond to them.  Only two substantive arguments emerge seeking to engage with the technical arguments made in the earlier paper.  The first is that the large size of the submarine now makes the pumpjet viable, where as for smaller submarines the large weight of the pumpjet would make it unviable, and that the pumpjet would be generally well-suited to smaller sumbarines as well were it not for this weight consideration.  The second is that interaction between the pumpjet and the hull obviate the evidence I have produced showing that pumpjet efficiency declines at low speeds, which are claimed to neglect considering such interactions.  This paper seeks to consider those two lines of reasoning in sufficient detail to suitably discuss the circumstances in which such arguments might be made.
 
 
+\section{A brief chronology of comment}
+
+The following gives a brief overview of the significant known public comments regarding the pumpjet that have been made by official representatives of either the Commonwealth of Australia, or Naval Group, formally known as DCNS.  Only brief quotations are selected here, with references being made to the full excerpts either in Appendices or References.
+
+\begin{tcolorbox}[width=0.9\textwidth, center, colback=red!5!white,colframe=red!75!black, title= \textbf{28 May 2012 - Senate Estimates}]
+\textit{Senator Johnston directly challenges Rear Admiral Justin Moffit (then director of SEA 1000) about the pumpjet proposal.  Full exchange in \ref{SENMoffit}.}
+\\
+\\
+\textbf{Senator JOHNSTON:} I am told that there are no pump jets on any conventional class submarines in the world.
+\\
+\textbf{Rear Adm. Moffitt:} That is quite right. It might be a very easy task for us to write it off. I do not know, because I have not done-
+\\
+\textbf{Senator JOHNSTON:} The French and the Russians have tried. No-one has used them. They are not being used on anything other than nuclear powered submarines-particularly the Americans.
+\\
+\textbf{Rear Adm. Moffitt:} If it does not look like it makes sense, I will rule it out. But I cannot give you the answer to that yet because we have not done the work.
+\\
+\textbf{Senator JOHNSTON:} Who had the idea to look at pump jets? Where did that come from? Did it come from capability group saying that we had better had a look at that?
+\\
+\textbf{Rear Adm. Moffitt:} I do not know the answer to that. I doubt that there is a clear answer.
+
+
+\end{tcolorbox}
+
+
+
+\newpage
+
+\printbibliography
+
+\newpage
 
 \begin{appendices}
+
 \section{Extracts from public statements}
 
-\subsection{Hansard Element}
+\subsection{Hansard Extract, Senate Estimates - 28th May 2012 \cite{SE2012moffit}}\label{SENMoffit}
 
-CHAIR: Senator, Hanson, you had a couple of final questions.
+\textbf{Senator JOHNSTON:} There were announcements made about these various studies. You have explained propulsion and energy storage. I get that. Signatures and stealth performance is self evident. You have touched on combat systems and the hydrodynamics of the propellers. But pump jets is the one that has the big question mark over it. Why are we looking at pump jets?
 
-Senator HANSON: The one reason for selecting the Shortfin Barracuda was stated to be that it has a very quiet pump-jet propulsion system, as used on nuclear submarines. Engineering experts said at the time that pump-jets were inefficient for conventional submarines, but Naval Group said that propellers were now obsolete. Recently, however, Naval Group said that propellers may be used instead. Just two weeks ago Naval Group said that we may have to go back to propellers. So, are we going with pump-jet propulsion or are we going back to propellers?
+\textbf{Rear Adm. Moffitt:}  Why are we looking at it?
 
-Vice Adm. Griggs: The Commonwealth intends to incorporate a pump-jet into the Future Submarine, and the design is proceeding along on that basis.
+\textbf{Senator JOHNSTON:} Why are we looking at pump jets on a conventionally powered submarine?
 
-Senator HANSON: When the choice of Naval Group was announced, the Minister for Defence Industry stated that all 12 submarines would be built in Australia. At the same time, then President Hollande announced the creation of 4,000 jobs in France, while his defence minister stated on French TV that the first two submarines would be built in France. Can the minister explain the discrepancy and assure the Senate that all submarines will be built in Australia.
+\textbf{Rear Adm. Moffitt:}  We are not specifically ruling in or out anything at the moment. Pump jets are in use in submarines and we will-
 
-Senator Payne: All the submarines will be built in Australia.
+\textbf{Senator JOHNSTON:} Mainly nuclear submarines with a speed far and away beyond 25 knots.
+
+\textbf{Rear Adm. Moffitt:}  That is true, as I understand it. The issue is that we need to understand that, because we have not got much knowledge of it, before we rule it in or out. There are many new technologies, including pump jets, AIP and lithium batteries, that have emerged since we executed the Collins program about which we know relatively little and wish to become more educated about than we are today before we recommend to government that they be included or discounted. We just do not know enough to give a sensible answer to government at the moment. I am not saying that pump jets are in. Nor am I saying that they are out. We just do not know enough yet.
+
+\textbf{Senator JOHNSTON:} What is our methodology to get that information? Who are we asking? How much is all that costing?
+
+\textbf{Rear Adm. Moffitt:}  We will be relying fairly heavily on DSTO to help us with that. We will also be fairly keen to get some advice from the US Navy on that as well.
+
+\textbf{Senator JOHNSTON:} I am told that there are no pump jets on any conventional class submarines in the world.
+
+\textbf{Rear Adm. Moffitt:}  That is quite right. It might be a very easy task for us to write it off. I do not know, because I have not done-
+
+\textbf{Senator JOHNSTON:} The French and the Russians have tried. No-one has used them. They are not being used on anything other than nuclear powered submarines—particularly the Americans.
+
+\textbf{Rear Adm. Moffitt:}  If it does not look like it makes sense, I will rule it out. But I cannot give you the answer to that yet because we have not done the work.
+
+\textbf{Senator JOHNSTON:} Who had the idea to look at pump jets? Where did that come from? Did it come from capability group saying that we had better had a look at that?
+
+\textbf{Rear Adm. Moffitt:}  I do not know the answer to that. I doubt that there is a clear answer. It is a submarine technology that we think that we need to know more about than we do today. I do not anticipate spending a substantial amount of money to get the understanding that I am looking for—I may not have to spend anything at all.
 
 \end{appendices}
 
