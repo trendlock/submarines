@@ -130,6 +130,24 @@ The following gives a brief overview of the significant known public comments re
 
 \end{tcolorbox}
 
+\begin{tcolorbox}[width=0.9\textwidth, center, colback=blue!5!white,colframe=blue!75!black, title= \textbf{10 Feb 2016 - Sean Costello, CEO DCNS Australia}]
+\textit{In a blog post\parencite{costello2016} for the ASPI Strategist prior to the announcement in April, Sean Costello describes the significance of the pump jet technology to their bid.}
+\\
+\\
+``As a complete submarine power, we understand conventional propulsion, which is why we also understand that propulsion is but one part of the submarine puzzle. In designing to the Australian requirement, it should come as no surprise then that the conventionally powered Shortfin Barracuda Block 1A is only 5\% lighter than its nuclear cousin."
+\\
+\\
+``There’s no better example of what I’m talking about than the offer from France to transfer to Australia sovereign control and use of pump-jet propulsion technology for the Shortfin Barracuda—technology resident only in France, the UK and the USA. Technology born from the French SSBN program a generation ago. The stealth and hydrodynamic performances of pump jet propulsion are of course classified and in Australia known only to DCNS and the Australian Government."
+
+\end{tcolorbox}
+
+\begin{tcolorbox}[width=0.9\textwidth, center, colback=blue!5!white,colframe=blue!75!black, title= \textbf{8 Apr 2016 - Sean Costello, CEO DCNS Australia, and Gerard Autret, Chief Naval Architect of the Shortfin Barracuda}]
+\textit{In a blog post\parencite{autret2016} for the ASPI Strategist prior to the announcement in April, Sean Costello describes a number of the major features and design approaches for the Shortfin Barracuda, including relating the choice of the pumpjet closely to an accoustic requirement to close with another submarine at higher speed.}
+\\
+\\
+``The challenge for any attack submarine is to maintain a nearly silent acoustic signature at a speed necessary to manoeuvre within weapons range of the target. The nuclear Barracuda is designed to reduce radiated noise when operating at a speed sufficient in order to close a threat submarine undetected. Of particular importance is the pump-jet propulsor, which combines a rotor and stator within a duct to significantly reduce the level of radiated noise through the effects of wake harmonisation and avoidance of cavitation."
+\end{tcolorbox}
+
 
 \begin{tcolorbox}[width=0.9\textwidth, center, colback=blue!5!white,colframe=blue!75!black, title= \textbf{May 2016 onwards - DCNS/Naval Group Website for Shortfin Barracuda}]
 \textit{The official website for the submarine claims the advantages of the pumpjet in specific terms, drawing comparisons with "obsolete propeller technology" and "otherwise identical submarines".  Last accessed 4 Sept 2018 \parencite{naval2018}.}
@@ -150,6 +168,22 @@ The following gives a brief overview of the significant known public comments re
 ``However decisions on forms of propulsion are ultimately a matter for the Australian Government."\parencite{iggulden2017}
 
 \end{tcolorbox}
+
+
+\begin{tcolorbox}[width=0.9\textwidth, center, colback=blue!5!white,colframe=blue!75!black, title= \textbf{25 Oct 2017 - Hevre Guillou, CEO Naval Group}]
+\textit{In an interview that was published in a post\parencite{guillou2017} on the ASPI Strategist the global CEO of Naval group responds to a question from Brendan Nicholson asking whether the Australian submarine will be fitted with a pump jet, following Jean-Michel Billig's comments.}
+\\
+\\
+``Naval Group is the manufacturer of both conventional propeller-driven submarines and larger nuclear submarines with the propulsor. The propulsor’s inclusion means the future submarine will move more quietly than submarines with obsolete propeller technology. In a contest between two otherwise identical submarines, the one with the pump jet always has the tactical advantage. The propulsor was an integral part of our bid. The Department of Defence says it intends to use the pump jet propulsion system."
+\end{tcolorbox}
+
+\begin{tcolorbox}[width=0.9\textwidth, center, colback=black!5!white,colframe=black!75!black, title= \textbf{31 Oct 2017 - Greg Sammut, head of SEA 1000}]
+\textit{In an interview that was published in a post\parencite{sammut2017} on the ASPI Strategist the leader of the future submarine project for the RAN responds to a question from Brendan Nicholson asking whether there is any doubt about using the pump-jet.}
+\\
+\\
+``We are using pump-jet propulsion that was offered by France. Some claims about the pump jet are misleading. It’s not purely for use in nuclear submarines. It can be efficient across the entire speed range, taking account of the submarine’s size, the speed required and stealth. It needs to be tuned to the hull of the submarine. The hull needs to be tuned to the pump jet."
+\end{tcolorbox}
+
 
 
 \begin{tcolorbox}[width=0.9\textwidth, center, colback=black!5!white,colframe=black!75!black, title= \textbf{3 November 2017 - Department of Defence, in response to Question on Notice from Senator Xenophon from October 2017}]
@@ -223,7 +257,7 @@ design and certification to get to this point.
 \end{tcolorbox}
 
 \begin{tcolorbox}[width=0.9\textwidth, center, colback=black!5!white,colframe=black!75!black, title= \textbf{9 February 2018 - Department of Defence, in response to Question on Notice from Senator Rex Patrick in December 2017}]
-\textit{Senator Patrick inquires about the nature, cost, and conclusions of earlier research into pumpjets undertaken as part of \$214 million worth of ``de-risking" studies already undertaken, as well as the schedule and cost of subsequent research and development of the pumpjet.  Prior research consisted of a single 99 page report obtained via literature review and discussion with experts at a cost of $68,825.  Ongoing research included $1.1million spent to date to develop a generic submarine and pumpjet design, compuational and analytic models, and validation of these models through experimental studies.  The development and test program is not scheduled to commence until the last quarter of 2018.  Full questions and responses can be found in \ref{QON148}, \ref{QON150}, \ref{QON151}}
+\textit{Senator Patrick inquires about the nature, cost, and conclusions of earlier research into pumpjets undertaken as part of \$214 million worth of ``de-risking" studies already undertaken, as well as the schedule and cost of subsequent research and development of the pumpjet.  Prior research consisted of a single 99 page report obtained via literature review and discussion with experts at a cost of \$68,825.  Ongoing research included \$1.1million spent to date to develop a generic submarine and pumpjet design, compuational and analytic models, and validation of these models through experimental studies.  The development and test program is not scheduled to commence until the last quarter of 2018.  Full questions and responses can be found in \ref{QON148}, \ref{QON150}, \ref{QON151}}
 \\
 \\
 ``The study concluded that pumpjets have the potential to deliver increased propulsive efficiency and lower shaft torque requirements, relative to an open propeller. This should lead to beneficial platform systems and operational impacts to increase vessel speed and/or submerged endurance.
@@ -233,6 +267,59 @@ The study developed a parametric model of pumpjet thrust and efficiency that has
 ``Specifications for the pump jet are being developed as design of the Future Submarine proceeds. Initial inputs will be developed in the last quarter of 2018, which marks the beginning of the development and test program for the pump jet. Development, testing, and assurance will be conducted by several parties including Naval Group, Direction générale de l’armement (DGA), and DSTG. Testing and assurance activities will take place in France (including at the premises of the DGA Techniques Hydrodynamiques in Val de Reuil) and Australia. Testing will be largely completed by CDR."
 
 \end{tcolorbox}
+
+\begin{tcolorbox}[width=0.9\textwidth, center, colback=black!5!white,colframe=black!75!black, title= \textbf{3 April 2018 - Department of Defence, in response to Question on Notice from Senator Chris Ketter in December 2018}]
+\textit{Senator Ketter asks Question 1, referencing specifically Greg Sammut in \parencite{sammut2017} and my paper \parencite{morrison2018} asks specifically whether Defence maintians that the pumpjet can be efficient across the entire speed range. Full question can be found in \ref{QON1}.}
+\\
+\\
+Question: Does defence still maintain that a pump-jet can be efficient across the entire speed range?
+\\
+\\
+Answer: ``The efficiency of pump-jets designed for submarine use cannot be determined through comparisons with water-jets and ducted propellers, which are different in their operation from pump-jets. Moreover, the global efficiency of submarine pump-jets cannot be derived from ‘open water’ tests of pump-jets, where the pump-jet is assessed independently of the hull of the submarine. A correctly designed pump-jet, suited to the aft hull shape of the submarine, achieves better optimisation of efficiency and stealth than any propeller, even at low speeds."
+
+\end{tcolorbox}
+
+
+\begin{tcolorbox}[width=0.9\textwidth, center, colback=black!5!white,colframe=black!75!black, title= \textbf{3 April 2018 - Department of Defence, in response to Question on Notice from Senator Chris Ketter in December 2018}]
+\textit{Senator Ketter asks Question 2, inquiring as to how Defence assesses Naval Group's opinion regarding the pumpjet's suitability, following Jean-Michel Billig's comments.  Full questions and responses  can be found in \ref{QON2}.}
+\\
+\\
+Question: Is Defence still confident that Naval Group still hold the opinion that the pump-jet is wellsuited to diesel-electric submarines?
+\\
+\\
+Answer: ``Defence intends to use the pump jet propulsion system for the Future Submarine that wasoffered by Naval Group as part of their Competitive Evaluation Proposal and remains onoffer to Australia."
+
+\end{tcolorbox}
+
+\begin{tcolorbox}[width=0.9\textwidth, center, colback=black!5!white,colframe=black!75!black, title= \textbf{3 April 2018 - Department of Defence, in response to Question on Notice from Senator Chris Ketter in December 2018}]
+\textit{Senator Ketter asks Question 3, which focuses specifically on whether Defence believes the pumpjet is acoustically superior across the entire speed range, or just at higher speeds, referencing my paper \parencite{morrison2018}, Herve Guillou \parencite{guillou2017} and Costello and Autret \parencite{autret2016}.  Full question and response can be found in \ref{QON3}.}
+\\
+\\
+Question: Is Defence of the belief that the pump-jet is quieter than propellers at all operating speeds, or is it the case, as suggested by Mr Morrison, that at some low speeds propellers are acoustically superior, and only at higher speeds is the pump-jet acoustically superior?
+\\
+\\
+Answer: ``See response to Senate Economics Reference Committee Question on Notice, Q1 – Pump Jet Efficiency Across the Entire Speed Range."
+
+\end{tcolorbox}
+
+\begin{tcolorbox}[width=0.9\textwidth, center, colback=blue!5!white,colframe=blue!75!black, title= \textbf{17 May 2018 - Brent Clark, Acting CEO Naval Group Australia}]
+\textit{In an interview that was published in a post\parencite{guillou2017} on the ASPI Strategist the Autralian CEO of Naval group explains to Brendan Nicholson why Naval Group is recommending the pumpjet for the Shortfin Barracuda, and answers some critics.}
+\\
+\\
+The company building the Navy’s 12 new submarines says they'll be the world’s first conventional boats big enough to effectively use the company's pump jet propulsion system. French Naval Group Australia says that its propulsor will prove much quieter than a propeller on the 4,700‑tonne submarine it has dubbed the 'Shortfin Barracuda'.
+\\
+\\
+Naval Group Australia's interim CEO, Brent Clark, tells The Strategist that the decision about the best propulsion system for the submarine will be made by the Defence Department, but that he hadn’t had any indication that it would chose anything but a propulsor. 'We've had every indication that they like what was offered.'
+\\
+\\
+The propulsor that Naval Group is recommending for its Shortfin Barracuda consists of a propeller within a duct to reduce noise and the water disturbance known as cavitation, which can give away a boat’s position to hunters. Clark says he’s read many negative comments about propulsors, but some critics used very old studies to try and justify their argument.
+\\
+\\
+"A lot of people don’t fully comprehend, I think, that yes, a propulsor on a 1,500-tonne coastal submarine would make no sense. But we’re not building a 1,500-tonne coastal submarine. We’re building quite a large submarine. And this is the first time that a conventional submarine's been large enough to take a propulsor."
+
+\end{tcolorbox}
+
+
 
 
 \newpage
@@ -617,6 +704,180 @@ design and certification to get to this point.
 \begin{figure}[h]
 \includegraphics[width=0.7\textwidth, center]{QON3.png}
 \end{figure}
+
+\newpage
+\subsection{Hansard Extract, Senate Economic References Committee Public Hearing - 7th June 2018 \cite{SEN2018morrison}}\label{SENmorrison}
+
+\textbf{Mr Morrison:} I would firstly like to thank and acknowledge two supporters: Mr Gary Johnston from Submarines for Australia, without whose support I wouldn't have been able to put together the substantial report that you have today; and my partner in Trendlock, the analytics consulting company that we used to deliver the report, whose help was invaluable.
+
+In my opening remarks I would like to briefly restate the core conclusions only, and then I'd like to contrast and compare those with some other public statements that have been made on the record by Naval Group officials and officials of the Australian government. The key conclusions that I arrived at were that pump jets have a far lower efficiency than propellers at a low speed of travel in contrast to high speeds, where jets tend to become more efficient. The crossover does not lie near or anywhere under the probable transit speed of eight to 10 knots of a diesel-electric submarine. One world-renowned expert I discussed the matter with said it was impossible that a pump jet could be designed to be more efficient than a well-designed propeller under 18 knots.
+
+One of the main reasons for the precipitous decline in propulsive efficiency at low speeds is directly linked to the mechanisms that enable the acoustic advantage to be achieved at high speeds. The duct has the effect of slowing the water down where the blades do their work on it. This has the effect of raising the pressure, which is what reduces the phenomenon of cavitation. Consequently, redesigning or modifying a pump jet to improve propulsive efficiency at low speeds cannot be done without necessitating some trade-off in terms of acoustic advantage achieved through the elimination of cavitation at higher speed. Very importantly, I also concluded that the extent of the efficiency declines at low speeds over the operational profile of a diesel-electric submarine will be substantial. An improvement in the order of 50 per cent or more in dive range or endurance could be achieved through switching back to conventional propellers. This could amount to some days dived on station or hundreds of nautical miles. In my report, I made the conclusive comparison that, between two otherwise identical submarines, the one with the pump jet will always have a lower dived endurance, a lower dived range, a worse indiscretion ratio, a lower overall endurance and a lower overall range than the one with the propeller. This statement, so far as I know, has yet to be challenged, and I'd be very surprised if anyone with technical competence or professional integrity sought to challenge it.
+
+In contrast, I would like to quickly turn to a couple of other statements that have been made on the public record. The first is from the official Naval Group website, which says about the Shortfin Barracuda:
+
+``Pump jet propulsion means the Shortfin Barracuda can move more quietly than submarines with obsolete propeller technology."
+
+This is a very interesting statement because at face values it reads as if to say that pump jets are now so quiet that propellers have become obsolete. I know that that interpretation has been made, and I think it has been made before this committee or another Senate committee. Part of my further research that you have before you today indicated that the phenomenon that leads to increased turbulence at very low speeds is also likely to produce much more noise than a propeller would at very low speeds. This is a phenomenon called flow separation. It actually seems to me very surprising that the claim would be made that at very low speeds a pump jet would indeed be quieter than a well-designed propeller. Read more literally, it actually sounds like a different statement might be made, for the pump jet is only quieter when compared with an obsolete propeller. This could actually be the statement that was intended to be made, in which case it is perfectly consistent with the research that I have done and put before you today.
+
+It might be very strange to try to figure out—and it was to me—why it would be useful to have a submarine that was only quieter at relatively high speeds and actually conferred disadvantages at all other speeds, including acoustically, with a significant trade-off in terms of overall range. It seemed like it would be quite a strange tactical circumstance that would require such a thing. In particular, and this is something else that needs emphasising, high speed for a submarine is actually still low speed for basically any other surface ship. Even very slow cargo ships moving at 18 or 20 knots move much faster than a submarine would be able to sustain for any significant period of time. Warships, of course, can easily go much, much faster, so it's difficult to see what that particular circumstance would be. I would like to emphasise that the committee should pay particular attention to what that circumstance might be.
+
+Again, on the Naval Group public website, it is stated that:
+
+``In a confrontation between two otherwise identical submarines, the one with pump jet propulsion always has the tactical advantage."
+
+This is a very interesting statement as well. It certainly does not hold against a nuclear submarine. It wouldn't hold against any kind of surface ship. It doesn't hold in a strategic sense, either, because the necessity to snort more frequently on the way in and the lower dived endurance on station would mean that you'd be more exposed more quickly after any encounter. However, tactically, once the encounter has already happened and a target has been acquired, it is plausible that this statement is still true. It is quite clear that, since some considerable time ago, DCNS has been very, very well aware of what the advantages and disadvantages are of pump jet propulsion. There are also a number of other statements on the public record that also concur and fit extremely well with the research that I've done. In particular, statements by Jean-Michel Billig, who said back in October in 2017 that they may switch back to propellers and even insert AIP for higher underwater endurance, are perfectly consistent with the research that I've done. As well, more recently, the statements by Brent Clark on the ASPI Strategist blog published only a couple of weeks ago suggesting that a pump jet would not be suitable for a small submarine—but this submarine, being big enough, is perfectly consistent, as I pointed out in my public reply, with the research that I have already conducted. It seems to me that there is no contradiction clearly put by any representative of Naval Group to the research that I have presented on pump jets.
+
+I would like to compare that briefly to a couple of statements that have been made by representatives of the Commonwealth. Perhaps the first that is worth turning to is that by Rear Admiral Greg Sammut:
+
+``It can be efficient across the entire speed range, taking account of the submarine’s size, the speed required and stealth. It needs to be tuned to the hull of the submarine. The hull needs to be tuned to the pump jet."
+
+This was a statement made in October 2017, also published in an ASPI Strategist blog post his is a strange statement, because the first part—that it can be efficient across the entire speed range—taken on its own does not seem to be possible to be true. It seems to be completely false. Taking into account the submarine's size, the speed requirement and stealth, it seems to suggest that only if the admiral meant that he didn't actually want it to be efficient, and therefore could treat it as efficient—that seems to be the only way that it could be reconciled with reality and the physics that I've discovered.
+
+The subsequent statements are even more peculiar - that it needs to be tuned to the hull of the submarine. As far as I can tell, the hull of the submarine proposed is so close in length and diameter to the one that's actually already being built by the French for the nuclear version, it seems very, very, strange indeed to make a tuning when such a small adjustment would be required. In contrast, if what was actually meant was that the pump jet should be tuned to the speed, the degree of the change in the speed of the operational profile would necessitate such a drastic overhaul to the design of the propulsion system that the idea of tuning seems quite thoroughly out of place. This is, to put it simply, as if someone bought an efficient hybrid car like a Prius and then decided to fit it with tank tracks from a dozer or a battle tank, and then argued they would tune the tank tracks back to be as efficient as the Prius was in the first place. It goes radically against what the technology was intended for in the first place. The idea of tuning is completely odd to any technical reading of the story.
+
+I'd like to look at one further public statement that was made. That is from Stephen Johnson. This was made in relation to an answer that was given to this committee some time ago. When challenged very specifically about efficiency by Senator Patrick, he made this statement:
+
+``No matter what kind of propeller or propulsion pump jet you design, it has to be optimised for a particular speed. There are classes of surface ships that look to optimise cross ocean transit. Physics usually keeps you around 17 to 18 knots, and then there is the cost of maintenance and the cost of repair and the fact that there's no particular stealth requirement. Typically, you will find that those ships will use an open-tip propeller. However, other ships, cruise ships in particular, use an electric shrouded pod, which is a variation of a pump-jet technology."
+
+This also struck me as quite strange, because in my research I went to some lengths to make sure that I understood all the different variants of different types of propulsors, including propellers, ducted propellers, shrouds of various sorts and the way the different names are used. So far as I can tell, despite the fact that cruise ships typically travel substantially faster than would be possible for any diesel and electric submarine, this is particularly strange because I can't find any evidence of any propulsor used on a cruise ship that does indeed include a shroud. It seems to me that some confusion might have occurred about what a propulsor actually is in this case. To clarify, my best understanding is that 'propulsor' is a perfectly general term that can be applied to basically any basic pump-jet propulsor or any other device to push something through the water. It is sometimes used just to differentiate novel, different or contrasting systems.
+
+I wonder whether here Mr Johnson has actually been confused with the Azipods that are installed on large cruise ships. They do use an electric motor, that's the only similarity I can find with the pump jet, and are indeed open to propellers and are quite similar to the propulsion systems used on the LHD. That is the best explanation that I can find so far for these comments. I certainly can't find any evidence of any shrouds being used on cruise-ship propulsion. Moreover, I can't find any evidence of pump jets of this sort being used on any ship, for which economic travel is a main priority, operating below the speeds of about 25 or 30 knots. So it's very interesting to wonder what exactly Mr Johnson was referring to in this case.
+
+I will rest my opening statement there, but there are other statements as well and other matters to do with the way the procurement process and design process looks to be unfolding that seem concerning from the readings of the physics that I have done so far. I'm happy to have some further questions.
+
+CHAIR: Thank you. I just want to place on record that since the commencement of the public hearing this morning Senator Reynolds has been joining us over the telephone line. She is now here with us.
+
+Senator PATRICK: Mr Morrison, firstly I will point out that Mr Johnson is in the back of the room, so he'll have an opportunity later today to rebut anything that you've said.
+
+Mr Morrison: Excellent.
+
+CHAIR: We'll certainly give him that opportunity. In terms of your credentials—you haven't explained. Have you got engineering or scientific credentials?
+
+Mr Morrison: I have a physics background. I studied theoretical physics at the ANU and got first-class honours in theoretical particle physics. I commenced a PhD at the University of Melbourne, which I didn't finish. I went to start a small defence technology company, designing small boats and torpedos for maritime warfare—a swarming concept. We used pump jets. We selected pump jets for the torpedo and water jets for the boat, so I became familiar with the particular systems and the trade-offs involved in those during that time. I had considerable discussions with manufacturers, naval architects et cetera during that process. I would like to point out that we selected pump jets for both those applications. I'm a fan of pump jets per se. They're very good. They're a go-to in many circumstances. It is a very peculiar, quite odd, situation to employ them on a conventional submarine.
+
+Senator PATRICK: I just want to make sure that I've understood you correctly. You are saying that physics suggests that the pump jet is not efficient at the low speeds that a conventional submarine typically operates at in an operational area?
+
+Mr Morrison: That's right.
+
+Senator PATRICK: Of course, they use pump jets on nuclear powered submarines. Your paper says that's not a problem because they have no problems in respect of generating power, and you actually even say it's helpful.
+
+Mr Morrison: Yes. Would you like me to clarify that point?
+
+Senator PATRICK: Yes.
+
+Mr Morrison: Nuclear reactors have a tendency to have different instabilities build up when they try to oscillate their power outputs radically. There are different decaying isotopes, xenon in particular, that make the reactor less stable after it has dramatically reduced its pressure. They prefer to operate in a steady state. They certainly wouldn't like to go down to very low power and then very high power and then very low power. That makes them somewhat more difficult to manage. So, to the extent of keeping a floor, a minimum level of energy required, they wouldn't need to pull the energy down below. That would be useful. They would reduce the extent that they would have to run other pumps or other systems to be able to take the excess energy out of the reactor.
+
+Senator PATRICK: To your knowledge, are there any other conventional submarines—clearly, there are nuclear submarines that use a propulsor, or pump jets, but are you aware of any other conventional submarines that use them?
+
+Mr Morrison: There are none in service at all. I'm aware of a prototype or demonstrator that was built once on a Russian submarine, a Kilo class submarine. I've seen a photo of that, but as far as I can tell it was never put into much active service.
+
+Senator PATRICK: The bottom line for you is that it's problematic for a conventional submarine for all the reasons that you mentioned in terms of 'efficiency is king'. It affects indiscretion ratios and it exposes a submarine, because it will have to snort more often.
+
+Mr Morrison: That's right. It seems like a genuinely strange choice. Once you take out the superpowers that a nuclear reactor confers on a submarine, leaving the pump jet is a massive hindrance to everything else about a diesel-electric submarine. The impact on the indiscretion ratio range, dive and endurance seems quite substantial.
+
+Senator PATRICK: I tabled a document on 15 December, and it was pointed out that it was a 1963 declassified document from the US Navy. There were some criticisms levelled at me because of the age of the document. How reliable is the physics? Are you satisfied that the physics hasn't changed substantially, such that the information in the public domain could be wrong?
+
+Mr Morrison: I'm absolutely satisfied. I have done quite a bit of research. As I mention in my blog post, I have referred to many more modern papers as well. The field of hydrodynamic propulsion does evolve; it does change. However, it tends to build on and confirm some of the most foundational and fundamental principles on which the conclusions that I am sure your paper and a few others that I have here with me, which are from, as you say, the sixties and seventies, are built.
+It is particularly important when you are reading more modern literature that you find typically authors who wrote during those times who still consistently turn up in the references; they are still referred to. They are not dismissed in any regard. They are referred to as, I suppose, 'the greats' who wrote the books on these topics. They produced the full discussions of a comprehensive method for designing a pump jet. Even at that time, it was clear that pump jets never were intended - and I can give you some quotes, if you like, from certain old papers - for those very low speeds at all. In fact, they were really only advantageous at quite high speeds where cavitation was a severe problem.
+
+Senator PATRICK: What you're saying is akin to saying that we shouldn't reject Einstein's theory of relativity just because it's old?
+
+Mr Morrison: That's absolutely right. It's foundational, in fact. I can see nothing—and I have discussed this with other current experts—that has overturned the books, so to speak, on these matters. So I think some of those old foundational papers—and, indeed, I think I quoted one where it is surmised in a sentence—reached the conclusion: 'It's not good at low speeds'—almost as simply as that. They don't go back and re-labour and reprove what has been so long and well established in the annals of physics.
+
+Senator PATRICK: You say that, acoustically, the pump jet is actually noisier at low speeds?
+
+Mr Morrison: I think that's highly probable. I won't make the absolutely categorical claim, as I've done with the efficiency, but I think that is extremely highly probably because, as you can see from my efficiency research, a pump-jet would be producing something like twice as much energy release to turbulence at those very low speeds as what a propeller would be. It's hard to see how something discharging twice as much energy into the water can still remain quieter. Indeed, in this case, the sorts of turbulence are very large scale vortices. This phenomenon called flow separation and the periodic vortex shedding that might occur into the rotors, that's a relatively low-frequency sound; it's not the sort of high-frequency sound that might be associated with the very, very early onset of cavitation. For very high-frequency sounds, the shielding from the duct is likely to be effective—still only in the directions that are perpendicular to the access of the shaft, but will be somewhat effective. At the lower frequencies, I think there is good reason to think the shielding will not be as effective. I won't make the absolutely categorical claim that it has to be much noisier, but it seems difficult to believe how it is superior. I've never heard anyone explicitly make that claim, that it is actually acoustically superior at low speeds to a state-of-the-art propeller. I would be very surprised if that was the case.
+
+Senator PATRICK: Chair, I would like to table a paper that was produced by DCNS in 2012 at a UDT conference? Will you permit me to do that?
+
+CHAIR: Is there any objection to that document being tabled? No? That's okay.
+
+Senator PATRICK: I would like the witness to have a look at it. I think the company was called DCN then, and it's their engineering area. Could you look on page 8 of this document? I've highlighted the relevant text. This is about the French Scorpene submarine and the permanent magnet motor. It says: 'The main advantages in terms of signatures of a permanent magnet motor is the ability to maintain a very low turns per knot, even with a high output, thanks to the high torques that are available for that particular motor. This low TPK reduces significantly the propeller cavitation apparition risks. For instance, within conventional operating depths, so 150 metres and higher'—which I presume is French for deeper—'no cavitation is expected whatever speed may be.' That tends to suggest to me that the French designed a propeller back in 2002 that does not cavitate at any speed provided you are below 150 metres. Is that consistent with your view on propellers versus pump-jets?
+
+Mr Morrison: Yes, that's absolutely consistent. I think there's a diagram that I've drawn in my report, in the acoustics section. It's absolutely the case that raising the static pressure, which is what happens when you go very deep—and it's also what the shroud of the duct attempts to achieve to the water flow in a pump-jet—is what reduces the onset of cavitation, which is the principal cause of all the noise. Going deep simply does reduce or eliminate that. I think that, in this case, it is quite probable that at more modest speeds you'd be able to go quite shallow, potentially up to almost all of the routinely-used speeds of a diesel-electric submarine. The reason why you would want to be able to go in very shallow water at very high speeds for a very short period of time—it seems like a very narrow and a very obscure tactical advantage indeed, and that seems to be confirmed by the limitation of the superiority to a contest against another diesel-electric submarine only. It's hard to imagine how, against any other target, it could be useful.
+
+Senator PATRICK: You've got an engineering background. You said you've worked on some projects. What do you see is the risk, if you were to categorise the risk of Defence achieving the publicly-stated performance expectations of the pump-jet—that is, efficiency across the entire speed range and acoustically quiet?
+
+Mr Morrison: If they mean 'efficiency' to be anything close to a propeller across the entire speed range, I think achieving efficiency is impossible. I don't think they'll achieve that at all. I'd like to point out as well that there are a couple of other comments that seem particularly at odds regarding the engineering process and the design process that's happening here. It was stated by Rear Admiral Greg Sammut in the same post I referred to earlier. He said:
+``We did not specify that the boat should have or not have air-independent propulsion or lithium-ion batteries, rather that it met our requirements. We'll continue to look at all applicable technologies as we go through the design process."
+
+I think Brent Clark, in his very recent post on the ASPI Strategist, said the decision about the best propulsion for the submarine will be made by the Defence department. He is indicating quite clearly the final decision is yet to be made. And yet, still as of October, Admiral Sammut was saying:
+
+``Work on establishing the dimensions of the submarine is complete. That pre-sizing—the initial length, diameter, displacement and other key parameters …"
+
+It seems very clear that the size of the hull, the total displacement, the volume of the hull is now fixed. It seems very clear as well that the requirements are fixed, one would think.
+
+However, that sits greatly at odds with the idea that the technology surrounding propulsion, particularly pump-jets, is not fixed. The reason for that is quite simple. As I've described through my research, the difference in efficiency is sufficiently large that to meet the same fixed requirement would differ the amount of fuel and batteries required in the order of hundreds of tonnes—hundreds of tonnes—for this sized submarine. It seems very difficult to imagine how, for a submarine, which basically has to be perfectly neutrally buoyant in all its operations, we could add or subtract hundreds of tonnes in the same fixed displacement without having a catastrophic engineering failure. I'm talking about Super Seasprite style: build the air frame, set the requirements. They simply do not go together whichever way you put them. The risk that you simply have a submarine that doesn't float or doesn't sink—I'm not sure which is worse—is abundantly clear from these. The only alternative that I can see is that they actually haven't fixed the requirements. They've designed the hull and they'll have whatever performance turns out of whatever technologies they put into it in whatever volumes seem suitable.
+
+Senator PATRICK: I think you've partly answered this, but what do you see the risk is for the submarine project of proceeding with the pump-jet, noting you say it's impossible to achieve everything that they want to achieve and particularly noting the weight, the size and the fact that it's positioned on the arced extremity of the submarine?
+
+Mr Morrison: I think it adds exactly the point I've made: This is a very, very major change. I didn't even mention that; it's in addition to the additional total volume of fuel and batteries required. Locating something that large and heavy, the shroud will be many tonnes, tens of tonnes, at the rear end. Quite frankly, it looks incomprehensible. I don't know how you could consider saying that you've just won a concept about a submarine if you haven't defined the propulsion system or the type of battery or whether it has got AIP. There is simply nothing more important in the engineering of the whole thing than fixing those sorts of things in place. It seems extremely odd to me that they are saying they're still considering these things and they've fixed the size of the submarine and they're making progress on the design, because all these things will have such a radical impact on the amount of weight embarked and the balance of the whole thing. It seems like an incomprehensible sequence of events to have happening at this stage.
+
+Senator PATRICK: Thank you. That's all I have.
+
+Senator KIM CARR: Mr Morrison, it's a very important point you make. You're going to the very fundamental design questions that are at the heart of a major acquisition for this country. I'm just wondering what are you seeking from this committee in terms of the propositions you're putting before us?
+
+Mr Morrison: Look, I'm just offering my evidence here. To me it seems that the pump-jet is strange. I find it difficult to believe that this is the primary design feature that we have knowingly and deliberately selected. Whatever has led to that, I just suggest this committee needs to get to the bottom of why it was selected because it doesn't seem consistent with building a world-class submarine and it seems like we could be heading on a track that could lead to a real procurement mess. I would just direct your focus of figuring out how we got here, because if the forces that put such a strange engineering choice into the submarine are still at work then there could be worse to come in the future and it doesn't bode well for a successful procurement.
+
+Senator KIM CARR: Given where we are in the procurement process, I think it is incumbent upon us to determine what we do with your evidence. What are you actually recommending we do? For instance, if I might be so bold: I'm not certain this committee would have the technical expertise to evaluate what you're saying, and the Department of Defence clearly challenges what you're saying, so where do we go to evaluate what you're proposing?
+
+Mr Morrison: So far as I can tell, this is not controversial. Whilst it seems to be very technical physics, the paper that you -
+
+Senator KIM CARR: I'm not certain the Department of Defence would agree with your proposition that it's not controversial.
+
+Mr Morrison: I'd be very interested to see that. I've had discussions with other concerned physicists and people in the naval community about this, and I've heard of discussions had with the Department of Defence and some of the basis for their thinking that pump jets are as efficient, plausibly, over the whole speed range. I'm quite confident that further investigation needs to be done of that. I've been pointed to a particular chart, and I think they've misread it; I think they haven't been able to interpret it. So, I think you should dig hard. I'm quite confident of the research. I think that my paper to you is a carefully and meticulously researched statement of what is relatively obvious. I'm not aware of anyone in the marine engineering community seriously proposing that you would ever select a pump jet for something designed to operate anywhere near, let alone below, 10 knots. It is quite a strange proposition, so I think you should investigate it very, very seriously indeed.
+
+Senator KIM CARR: You're seeking from this committee further investigation of your claims. Is that the essence of your recommendation to us?
+
+Mr Morrison: Yes, and I would also strongly suggest that you carefully investigate the basis for the anti-submarine-warfare superiority claim. To me, that seems the last plausible thread of logic on which you could justify a submarine choice with a pump jet, and that's to say last plausible and not categorically and obviously untrue. There are gross doubts that I have about that as well: how you could ever acquire such a small target passively; how you would measure the range that you were at and know that you would be able to close in the short distance that you're able to; whether you'd be able to keep track of your target when you accelerate to those high speeds—there are a whole bunch of reasons which look almost as dubious as the proposition about pump jets being efficient.
+
+I'm actually seeking to do some more research on that topic exactly, because it seems perfectly clear that that is the only situation in which there's a plausible case that the pump jet might be of any value, and I think your focus should very much dwell there. I'd like to get some more resources to conduct a thorough study of that, and I think that it should be challenged very directly with Defence—whether we're buying a submarine for all our strategic needs or whether we have just selected one particular scenario to justify a choice that's based on some other justification. I can't see a logical justification for having made this particular design choice other than that. That is the last plausible reason there might be, and it's only barely plausible. I think it should be investigated very thoroughly.
+
+Senator KIM CARR: You're saying you're undertaking further research. What's the state of that research?
+
+Mr Morrison: It's very early. I'm basically seeking further financial support to be able to do the same sort of sustained and thorough investigation as in the paper that you've got before you today. I haven't been able to get that yet, but I think it would be worthwhile. I think it would be in the interests of the Commonwealth to determine whether there is serious merit in that statement. I wouldn't make the sort of categorical and strong claims I've made about efficiency about the anti-submarine scenario without doing that sort of research. I like to take the academia, the literature and the physics very seriously. But I think that sort of thing should be done quite urgently because I think there have been some very strange, potentially misleading—perhaps deliberately misleading—statements made about the superiority of the pump jet.
+
+Senator KIM CARR: This committee is due to report on 27 June. I'm not certain we'd have a lot more time to -
+
+Senator PATRICK: Senator Carr, if I may, just to kick this along a bit—it's a very good thought you're having. Do you have a security clearance?
+
+Mr Morrison: No.
+
+Senator PATRICK: That would preclude you from getting in. My thought was you could perhaps go inside, work with Defence and then pop out and say either, 'I'm not convinced,' or, 'I am convinced,' keeping it at an unclassified level.
+
+Mr Morrison: The rules of physics are not classified or classifiable, and I think that's -
+
+Senator KIM CARR: I'm interested in pursuing what you're saying. As a citizen, I think you're entitled to put views which go to the heart of this procurement. I'm not saying that you're right. Please don't misinterpret me—I'm not qualified to say that you're correct, but I am interested in what you're saying because of the seriousness of the propositions you're advancing. I am trying to come to grips with what we do with what you're saying. We've only got limited time. I'm clearly of the view we're about to face a general election, and it may well be that there will be a different set of circumstances after that election. In terms of this immediate report that's required to go to the parliament, we need to find a way to evaluate what you're saying, given that this committee, in my view, doesn't internally have the capacity to technically evaluate your claims.
+
+Mr Morrison: Might I suggest, as a way to trying to seek validation, you could see whether anyone else would contradict or oppose some of the simple statements that I've made.
+
+Senator KIM CARR: We'll ask the Department of Defence but it will not surprise me if they tell me there's a technical reason why you can't be right.
+
+Mr Morrison: I'd be amazed to see that. Having been challenged, I would be amazed if someone wants to restate—and I've made some careful statements in my report. You can ask them whether I'm wrong and see what they come back with. I'd need to be quite badly wrong on most of this.
+
+Senator KIM CARR: Would you accept it on technical grounds, if they can demonstrate that you're wrong in theory?
+
+Mr Morrison: The whole thing has got to be wrong. It's got to be utterly wrong. I think this is worthwhile. If I was to go to a particular page of my report—on page 32, if you like, there's a chart from a paper that was done not too many years ago by BMT Defence Services—you can see the graph there—that shows the efficiency curve of a fully submerged water jet and a propeller going down to low speeds. Just look at the shape of the curve and the gap between those. If the department comes back and says I'm wrong on some technicality, some small thing, which means the lower curve is not exactly right and it needs to be shifted up a tiny bit, that would simply not matter at all. The conclusions I am putting to you would still be right. They need to argue that the curve literally does not decline anything like that point, and I don't think anyone would try to make that case.
+
+Senator KIM CARR: I think that's a reasonable proposition. We may well seek from the department a critique of your paper -
+
+Mr Morrison: I'd be interested if they say it's not exactly the right design.
+
+Senator KIM CARR: in the normal peer review process.
+
+Mr Morrison: I am very happy to submit to my peers on this matter. I'm really quite confident. Or you might consider that this justifies further inquiry or extending this inquiry or a Senate inquiry.
+
+Senator KIM CARR: That's right. But it may well be that the department agrees that it requires further inquiry. Is that what you're suggesting to us?
+
+Mr Morrison: I think that when they check their numbers, yes, they might agree.
+
+Senator KIM CARR: I look forward to that. Thank you very much.
+
+CHAIR: Thank you very much, Mr Morrison.
+
+...
+
 
 
 \end{appendices}
