@@ -128,9 +128,111 @@ The following gives a brief overview of the significant known public comments re
 \\
 \textbf{Rear Adm. Moffitt:} I do not know the answer to that. I doubt that there is a clear answer.
 
+\end{tcolorbox}
+
+
+\begin{tcolorbox}[width=0.9\textwidth, center, colback=blue!5!white,colframe=blue!75!black, title= \textbf{May 2016 onwards - DCNS/Naval Group Website for Shortfin Barracuda}]
+\textit{The official website for the submarine claims the advantages of the pumpjet in specific terms, drawing comparisons with "obsolete propeller technology" and "otherwise identical submarines".  Last accessed 4 Sept 2018 \parencite{naval2018}.}
+\\
+\\
+``Pump jet propulsion means the Shortfin Barracuda can move more quietly than submarines with obsolete propeller technology. In a confrontation between two otherwise identical submarines, the one with pump jet propulsion always has the tactical advantage."
+
 
 \end{tcolorbox}
 
+\begin{tcolorbox}[width=0.9\textwidth, center, colback=blue!5!white,colframe=blue!75!black, title= \textbf{4 October 2017 - Jean-Michel Billig, Executive Director Australian submarine Program, Naval Group}]
+\textit{In comments to journalists at the PACIFIC 2017 trade show, the Naval Group executive in charge of the Australian Program speculates that convetional propellers may be used on the Shortfin Barracuda \parencite{sbs2017}.  Subsequent reports quote Naval Group shifting responsibility for the propulsion choice to the Australian Government.}
+\\
+\\
+``The vessels may end up with conventional propellers as well as air independent propulsion, which helps to increase underwater endurance, Mr Billig said."
+\\
+\\
+``However decisions on forms of propulsion are ultimately a matter for the Australian Government."\parencite{iggulden2017}
+
+\end{tcolorbox}
+
+
+\begin{tcolorbox}[width=0.9\textwidth, center, colback=black!5!white,colframe=black!75!black, title= \textbf{3 November 2017 - Department of Defence, in response to Question on Notice from Senator Xenophon from October 2017}]
+\textit{As quoted in an ASPI Strategist blog post\parencite{davies2017}, and also by Senator Patrick in \ref{SENjohnson}, the Department of Defence argued in defence of the pump jet's efficiency.}
+\\
+\\
+'A [pump jet] can provide higher propulsive efficiency across the speed range of a submarine, including the patrol speed of conventional submarines'.
+
+\end{tcolorbox}
+
+\begin{tcolorbox}[width=0.9\textwidth, center, colback=red!5!white,colframe=red!75!black, title= \textbf{25 Oct 2017 - Senate Estimates}]
+\textit{Senator Hanson directly challenges Rear Admiral Gregory Sammut (then director of SEA 1000) about the pumpjet proposal.  Full exchange in \ref{SENhanson}.}
+\\
+\\
+\textbf{Rear Adm. Sammut:}   I think the point that we're trying to make here is that the proposal
+offered by France included a pump jet.
+
+\textbf{Senator Hanson:}   So it is pump jet? So you're going pump jet?
+
+\textbf{Rear Adm. Sammut:}   The proposal—
+
+\textbf{Senator Hanson:}   This is why you've chosen them as the design—to go with the pump
+jet. So it's not propellers, is it?
+
+\textbf{Rear Adm. Sammut:}   The proposal offered by France included a pump jet, and that's the
+proposal that we've accepted. A pump jet remains on offer, and that's what we intend to use
+for the Future Submarine.
+
+\textbf{Senator Hanson:}   And that's why you chose France's Naval Group to—
+
+\textbf{Rear Adm. Sammut:}   No, that is not, alone, why we chose France....
+\\
+\\
+\textit{Extensive remarks from Rear Adm. Sammut, and further questions from Senator Hanson about whether the proposal involves converting a nuclear submarine to a diesel sumbarine}
+\\
+\\
+\textbf{Rear Adm. Sammut:}  ...  The effort is not to convert an
+existing boat into a diesel-electric submarine; we're designing a submarine using many of the
+learnings and references that come out of the Barracuda design. A good example there would
+be something like hull diameter. If you're going to change the diameter of the hull of a
+submarine, you're into a whole new set of calculations about the structural integrity and
+strength of the submarine. If we can utilise the work that France has already done in having a
+hull diameter that's very similar to Barracuda, we can leverage all of that design work, which
+has not only gone into the Barracuda but also has been tested by France in their methods of
+design and certification to get to this point.
+
+\end{tcolorbox}
+
+\begin{tcolorbox}[width=0.9\textwidth, center, colback=red!5!white,colframe=red!75!black, title= \textbf{15 Dec 2017 - Senate Estimates}]
+\textit{Senator Rex Patrick asks Stephen Johnson (General Manager Submarines) about the pumpjet proposal, and produces documents suggesting they are less efficient at low speed.  The Defence Chief Scientist, Dr Zelinsky, and Chief of Defence Force, Air Chief Marshal Binskin, and Head of Capability and Sustainment Group, Kim Gillis are also involved in the discussion, defending the choice of the pumpjet.  Senator Patrick also specifically raises the concern about the impact of the weight of the pumpjet at the extremity of the submarine.   Full exchange in \ref{SENjohnson}.}
+\\
+\\
+\textbf{Senator PATRICK:} Mr Johnson, there's been a lot of talk about pump jets. I've now tabled a document which has come from the United States, from Connecticut. You'd be very familiar with the organisation there. That basically describes the characteristics of pump jets, their pros and cons, as any piece of engineering equipment has. The document—and there's also another document that I've taken from an ASPI site—shows the efficiency characteristics of a pump jet. Both the US document—now declassified—and the document from the ASPI website suggest that, at low speed, pump jets are relatively inefficient compared to, say, a propeller. That may well be the reason why we see a pump jet on a Mark 48 torpedo but generally not on merchant ships and so forth. Would you care to comment on that?
+
+\textbf{Mr Johnson:} As we said just a little earlier, the design process—whether it is a propeller or propulsion—is very much keyed to the criteria that you look for. The first thing I said was speed. No matter what kind of propeller or propulsion pump jet you design, it has to be optimised for a particular speed. There are classes of surface ships that look to optimise cross-ocean transit. Physics usually keeps you around 17 to 18 knots, and then there is the cost of maintenance and the cost of repair and the fact that there's no particular stealth requirement. Typically, you will find that those ships will use an open-tip propeller. However, other ships, cruise ships in particular, use an electric shrouded pod, which is a variation of a pump-jet technology. Of course, the technology gets changed over time, so the older a document is, the more it's dated to that point in time.
+\\
+\\
+...
+\\
+\\
+\textbf{Mr Johnson:} We were talking about optimising for the speed and the characteristics of the pump jet. The decision-making process for submarines is a little more complicated because there's an acoustic performance aspect as well as the pure efficiency of the blade-propulsor-pump jet arrangement. Without going into details, it's a decision that we make with Navy, but I'm confident, having done this a few times already, that we are going to find this pump-jet approach to be the optimum for our particular circumstances for this particular submarine.
+\\
+\\
+...
+\\
+\\
+\textbf{Senator PATRICK:} Okay. I'll go back to you, Mr Johnson. Noting that you're saying that this is based on something that hasn't been to sea yet - it will go to sea on the Barracuda; presumably that's the submarine you're referring to-there's still a risk that's sitting there. As the guardian of the taxpayer, I know where you sit. I have a responsibility from the taxpayers' perspective to ask: do you have a fallback position if the data that comes from the French trials, or other trials that you might do, presents you with data that's inconsistent with the operational profile that you intend for the submarine?
+
+\textbf{Mr Johnson:} Yes. We will understand the performance data early enough in the design that we can accommodate whatever is required. And then, just to reassure you, it's really going to be an adjustment to the design of the pump jet, not a decision to leave it. Without going into too much detail, the curve that you're referring to is about the efficiency of the propeller, not about its acoustic performance. As you know, there's nothing free in physics, so those are different-shaped curves. What we seek to do, as Chief of the Defence Force said, is to make the right balance of multiple dimensions of this now.
+
+\end{tcolorbox}
+
+\begin{tcolorbox}[width=0.9\textwidth, center, colback=black!5!white,colframe=black!75!black, title= \textbf{9 February 2018 - Department of Defence, in response to Question on Notice from Senator Rex Patrick in December 2017}]
+\textit{Senator Patrick inquires about the nature, cost, and conclusions of earlier research into pumpjets undertaken as part of \$214 million worth of ``de-risking" studies already undertaken, as well as the schedule and cost of subsequent research and development of the pumpjet.  Prior research consisted of a single 99 page report obtained via literature review and discussion with experts at a cost of $68,825.  Ongoing research included $1.1million spent to date to develop a generic submarine and pumpjet design, compuational and analytic models, and validation of these models through experimental studies.  The development and test program is not scheduled to commence until the last quarter of 2018.  Full questions and responses can be found in \ref{QON148}, \ref{QON150}, \ref{QON151}}
+\\
+\\
+``The study concluded that pumpjets have the potential to deliver increased propulsive efficiency and lower shaft torque requirements, relative to an open propeller. This should lead to beneficial platform systems and operational impacts to increase vessel speed and/or submerged endurance.
+The study developed a parametric model of pumpjet thrust and efficiency that has been used as the basis for more recent studies into pumpjet performance."
+\\
+\\
+``Specifications for the pump jet are being developed as design of the Future Submarine proceeds. Initial inputs will be developed in the last quarter of 2018, which marks the beginning of the development and test program for the pump jet. Development, testing, and assurance will be conducted by several parties including Naval Group, Direction générale de l’armement (DGA), and DSTG. Testing and assurance activities will take place in France (including at the premises of the DGA Techniques Hydrodynamiques in Val de Reuil) and Australia. Testing will be largely completed by CDR."
+
+\end{tcolorbox}
 
 
 \newpage
@@ -172,6 +274,350 @@ The following gives a brief overview of the significant known public comments re
 \textbf{Senator JOHNSTON:} Who had the idea to look at pump jets? Where did that come from? Did it come from capability group saying that we had better had a look at that?
 
 \textbf{Rear Adm. Moffitt:}  I do not know the answer to that. I doubt that there is a clear answer. It is a submarine technology that we think that we need to know more about than we do today. I do not anticipate spending a substantial amount of money to get the understanding that I am looking for—I may not have to spend anything at all.
+
+\newpage
+\subsection{Hansard Extract, Senate Estimates - 25th October 2017 \cite{SEN2017hanson}}\label{SENhanson}
+
+\textbf{Senator Hanson:}   I have a question about the Shortfin Barracuda subs. Just to get it on the record, is it correct that the cost of the contract is \$50 billion?
+
+\textbf{Rear Adm. Sammut:}   The cost of the program is \$50 billion in acquisition. That is not the cost of the contract per se; that is the costs that will be required to establish the submarine capability in full, which extends to not only the acquisition of the submarines but the
+establishment of the facilities necessary to operate the submarine; the establishment of a shipyard to be able to build those submarines; wharfs; training centres; test and integration facilities for the combat system; the acquisition of the combat system; and the establishment
+of a sovereign capability in Australia as well.
+
+\textbf{Senator Hanson:}   Is that for a total of 12 submarines?
+
+\textbf{Rear Adm. Sammut:}   That's for the submarine capability, which comprises, as part of
+that, 12 submarines.
+
+\textbf{Senator Hanson:}   When was the contract signed?
+
+\textbf{Rear Adm. Sammut:}   There will be several contracts signed for the delivery of the Future
+Submarine. The first contract was signed in September last year. That was known as the
+design and mobilisation contract, under which we have commenced design activities and
+activities in terms of mobilising both Naval Group and Lockheed Martin, along with the
+Commonwealth, to commence that design process, which will continue over the next several
+years. By way of example, we have commenced the design of the submarine itself. We've also
+established a resident project office in Cherbourg. We have commenced basing our people in
+France. We've started the development of our engineering plans, the establishment of an
+integrated master schedule and so on.
+
+\textbf{Senator Hanson:}   At what time prior to that did you do investigations around other
+submarines—how many months prior to signing that contract? How much time and effort did
+the Defence Force put into looking at other subs that were available prior to the Shortfin
+Barracuda?
+
+\textbf{Rear Adm. Sammut:}   We commenced the competitive evaluation process in 2015 and
+work on other options had been proceeding from about 2011. So there was about four years of
+work looking at various options that included military off the shelf, modified military off the
+shelf, and evolved Collins.
+
+\textbf{Senator Hanson:}   With regard to the Shortfin Barracuda, you have signed a contract
+with Naval Group, which is a French firm. Did you specifically go looking for a diesel
+submarine? Or what were you looking for?
+
+\textbf{Rear Adm. Sammut:}   The competitive evaluation process was for a conventionally
+powered submarine, a diesel-electric submarine, not any other form of submarine.
+\textbf{Senator Hanson:}   Was it based on a pump jet sub?
+
+\textbf{Rear Adm. Sammut:}   What we were looking for was based on the best solution that the
+three international participants within the competitive evaluation process could offer to meet
+Australia's capability requirements. We did not specify to any of the participants the form of
+solution it should take, the form of the submarine. It was up to those international participants
+to present their design and, more importantly, their design capabilities to meet Australia's
+capability requirements for its Future Submarine.
+
+\textbf{Senator Hanson:}   You didn't want a nuclear sub, that was completely out of the
+equation?
+
+\textbf{Rear Adm. Sammut:}   That's correct, a nuclear submarine was not in consideration. The
+government policy was that we were to acquire conventionally powered submarines, the
+Future Submarine.
+
+\textbf{Senator Hanson:}   So you were looking at either a pump jet or a diesel?
+
+\textbf{Rear Adm. Sammut:}   I think you're confusing, Senator, a pump jet as being a nuclearpowered
+submarine, versus what is in fact a conventionally powered submarine. A pump jet is
+a form of propulsion. It's not a form of power for the submarine. It is a form of propulsion that
+fits to the back of the submarine and, rather than taking the form of a conventional propeller,
+it takes the form of a shrouded rotor with a set of stators in there that, in operation, creates
+thrust through the water.
+
+\textbf{Senator Hanson:}   All right. How are the Shortfin Barracuda run—on what?
+
+\textbf{Rear Adm. Sammut:}   I think the point that we're trying to make here is that the proposal
+offered by France included a pump jet.
+
+\textbf{Senator Hanson:}   So it is pump jet? So you're going pump jet?
+
+\textbf{Rear Adm. Sammut:}   The proposal—
+
+\textbf{Senator Hanson:}   This is why you've chosen them as the design—to go with the pump
+jet. So it's not propellers, is it?
+
+\textbf{Rear Adm. Sammut:}   The proposal offered by France included a pump jet, and that's the
+proposal that we've accepted. A pump jet remains on offer, and that's what we intend to use
+for the Future Submarine.
+
+\textbf{Senator Hanson:}   And that's why you chose France's Naval Group to—
+
+\textbf{Rear Adm. Sammut:}   No, that is not, alone, why we chose France. There are a number of
+things. I am on record as providing testimony at the Senate of the number of things we
+considered in the selection of Naval Group as our international partner. There were a range of
+factors, and they were all over the capability of the international partner to deliver a regionally
+superior submarine and one which Australia would have the sovereign capacity to operate and
+sustain throughout its life. There were a number of criteria in mind.
+We looked at the capabilities. That includes the platform capabilities. We looked at the
+ability of the international partners to work with the combat system integrator of our choice.
+Those things in particular pertain to the capability of the boat. We looked at rough order of
+magnitude costs and schedules to ensure the participants understood the scale of the program
+that we were embarking upon and could give us insights into the manner in which they would
+manage costs and schedules throughout the program. We looked at matters concerning
+program management. We looked at the design and the way that safety is incorporated into
+the design. It's important that that was understood from the outset because, whilst the
+international partner would be designing the submarine, it would be the Commonwealth that
+would be responsible for certifying the submarine as safe and fit for operations, and we
+needed to make sure that the certifying process would match the design philosophy.
+We looked at methods of sustainment. We looked at the manner in which each of the
+participants would support the establishment of a sovereign sustainment capability in
+Australia. Of course, that was a key lesson from the Collins program. Even though we built
+the submarines in Australia, it took us some time to establish the sovereign capacity to sustain
+those boats. Indeed, having done that now is the reason why we are able to deliver beyond
+international benchmark availability. We also looked into the way in which data would be
+transferred to Australia, the manner in which intellectual property would also be managed in
+the program. We looked at the ability of the participants to manage risks. Again, throughout
+this complex program, that would be a very important factor. I would say that we didn't just
+pick a submarine with a pump jet; we picked an international partner that could meet a range
+of requirements to achieve not only a regionally superior submarine but the sovereign
+capacity to operate and sustain that submarine and to deliver that within the time frame that
+would be necessary.
+I'd like to point out that that process was peer reviewed and it was peer reviewed by an
+expert advisory panel. The expert advisory panel found that the process was sound and that
+the participants had been treated fairly. I might add that the expert advisory panel also met
+with each of the participants on several occasions to ensure that they were satisfied that the
+process was being run competently and soundly. I'd also say that the results of our work were
+peer reviewed by former program managers from the United States, who made no
+recommendations to change the course and the manner in which we were conducting the
+competitive evaluation process and indeed came to the conclusion that the manner in which it
+was being conducted would indeed lead to appropriate recommendations on the selection of
+an international partner.
+
+\textbf{Senator Hanson:}   That is correct: you did get advice from the United States, from US
+Navy secretary Don Winter, retired US Navy Vice Admiral Paul Sullivan and Rear Admiral
+Thomas Eccles. They were actually on this based on sound experience. But the fact is that
+America had not launched a diesel submarine for 55 years.
+
+\textbf{Rear Adm. Sammut:}   This was about a submarine program. These are people with a lot of
+experience in submarine design. Might I also add that we have a lot of experience in the
+operation of diesel-electric submarines ourselves. We understand many of the factors around
+battery technology. I'd just like to add—
+
+\textbf{Senator Hanson:}   Sorry, I have limited time with this. I just want to ask you—
+
+\textbf{Senator GALLACHER:} Surely courtesy on both sides is required here.
+
+\textbf{CHAIR:} Senator Hanson has the call.
+
+\textbf{Senator Hanson:}   I agree, but I need to ask these questions. I just have to say: you're
+actually going to put pump jets into a sub. Is it true that pump-jet submarines can stay
+underwater for only 20 minutes?
+
+\textbf{Rear Adm. Sammut:}   No, I do not know what you're referring to about pump-jet
+submarines remaining underwater for 20 minutes. Can I be clear again: a pump jet is a form
+of propeller. It has no bearing on how deep a submarine can go or how long it can stay
+underwater. They are matters that pertain to the platform design of the submarine.
+
+\textbf{Senator Hanson:}   What about a diesel sub? We are going diesel.
+
+\textbf{Rear Adm. Sammut:}   We are going to buy diesel-electric submarines, and I can assure
+you they are going to stay underwater for much longer than 20 minutes.
+
+\textbf{Senator Hanson:}   Three days? What's the period of time?
+
+\textbf{Rear Adm. Sammut:}   I am not going to reveal what our requirements are for submerged
+endurance. That is classified.
+
+\textbf{Senator Hanson:}   I don't think it's classified.
+
+CHAIR: You don't get to make the call on what's classified and unclassified in this
+conversation.
+
+\textbf{Senator Hanson:}   So you can't disclose knowledge of how long a diesel sub can stay
+underwater compared to a nuclear sub?
+
+Mr Johnson: A diesel-electric submarine can stay underwater depending on the way it's
+designed. That refers to matters about the size of the battery, the manner in which the hotel
+load, which is the power that is consumed by the submarine when it's operating, is used and
+so forth. There are a number of factors that go into the period of time that a diesel-electric
+submarine can remain submerged.
+
+\textbf{Senator Hanson:}   This Barracuda—there is still one on the slipways in France that
+hasn't even been tested. We're basing the design on that which has not been tested. Do you
+believe that is in our interest?
+
+\textbf{Rear Adm. Sammut:}   We have selected Naval Group as competent designers of dieselelectric
+submarines and indeed ocean-going submarines. We made that assessment on the
+basis of the competitive evaluation process, which, as I've endeavoured to explain, was a very
+thorough process. We have no reason to believe that France is not capable of designing a
+submarine to meet our requirements.
+
+\textbf{Senator Hanson:}   You don't believe we may be making the same mistakes as we did
+with the Collins class when that was first designed, which cost us billions of dollars?
+
+\textbf{Rear Adm. Sammut:}   No, I don't, because we've learned many lessons from the Collins
+program and implemented those as we've gone forward with the Future Submarine.
+
+\textbf{Senator Hanson:}   Is the Barracuda designed as a nuclear sub—that is, basically is a
+nuclear sub?
+
+\textbf{Rear Adm. Sammut:}   The French Barracuda, the submarine that they will be employing
+in their navy, is a nuclear powered submarine. The submarine that we're working on with
+Naval Group is a diesel-electric submarine.
+
+\textbf{Senator Hanson:}   But it is still the Shortfin Barracuda, which is a nuclear sub, so we're
+taking a nuclear sub and we're going to make it a diesel sub.
+
+\textbf{Rear Adm. Sammut:}   No, we are designing a submarine that will have a certain lineage in
+the work that France has done in designing both the Barracuda and conventional submarines.
+That's quite natural in any submarine design and build process. If you looked at any nation
+designing and building a submarine, they will always refer back to the lineage of designs
+they've done. What we have the benefit of doing here with France is leveraging the design
+work that they've done in the Barracuda and a number of conventional submarines that
+they've designed, built and delivered to other navies, and using that as the basis for the design
+of the Future Submarine, which I said, is a conventionally-powered submarine. You cannot
+convert a nuclear submarine to conventional power. That has often been stated in the media,
+and I understand most recently in the Insight Economics report. The effort is not to convert an
+existing boat into a diesel-electric submarine; we're designing a submarine using many of the
+learnings and references that come out of the Barracuda design. A good example there would
+be something like hull diameter. If you're going to change the diameter of the hull of a
+submarine, you're into a whole new set of calculations about the structural integrity and
+strength of the submarine. If we can utilise the work that France has already done in having a
+hull diameter that's very similar to Barracuda, we can leverage all of that design work, which
+has not only gone into the Barracuda but also has been tested by France in their methods of
+design and certification to get to this point.
+
+\newpage
+\subsection{Hansard Extract, Senate Estimates - 15th December 2017 \cite{SEN2017johnson}}\label{SENjohnson}
+
+\textbf{Senator KITCHING:} Are the future subs going to have pump jet propulsion?
+
+\textbf{Mr Johnson:} Yes, they will. Given you're interested, I might take a moment or two to explain.
+
+\textbf{Senator KITCHING:} Yes, sure. Thank you.
+
+\textbf{Mr Johnson:} The method of designing for either a propeller system or a propulser system, a pump jet, is very similar. It starts with key parameters: how fast do we want to go, how big, what's the weight and diameter of the vessel that we're going to power, is it a surface ship or a submarine—although the calculations are really different—and then what's the shape of that hull? All of those things then establish the particular characteristics of a propeller or a propulser pump jet design. The submarine that we're building is well suited, and the requirements that we have for performance are stringent that the pump jet technology is the optimum approach. Since it's a new design—contrary to misunderstandings in the press, this is a new design—we're in a good position to do those calculations for the pump jet from day one and to balance the submarine's designs so that it performs very well with that pump jet technology. That's been our plan since the selection of what was then DCNS and is now Naval Group France.
+
+.
+.
+.
+
+\textbf{Senator PATRICK:} I go back to pump jets, if that's possible. Maybe the Chief Defence Scientist could come to the table if he's about. He might be able to help.
+
+\textbf{Senator Payne:} Dr Zelinsky will be here somewhere.
+
+\textbf{Senator PATRICK:} Mr Johnson, there's been a lot of talk about pump jets. I've now tabled a document which has come from the United States, from Connecticut. You'd be very familiar with the organisation there. That basically describes the characteristics of pump jets, their pros and cons, as any piece of engineering equipment has. The document—and there's also another document that I've taken from an ASPI site—shows the efficiency characteristics of a pump jet. Both the US document—now declassified—and the document from the ASPI website suggest that, at low speed, pump jets are relatively inefficient compared to, say, a propeller. That may well be the reason why we see a pump jet on a Mark 48 torpedo but generally not on merchant ships and so forth. Would you care to comment on that?
+
+\textbf{Mr Johnson:} As we said just a little earlier, the design process—whether it is a propeller or propulsion—is very much keyed to the criteria that you look for. The first thing I said was speed. No matter what kind of propeller or propulsion pump jet you design, it has to be optimised for a particular speed. There are classes of surface ships that look to optimise cross-ocean transit. Physics usually keeps you around 17 to 18 knots, and then there is the cost of maintenance and the cost of repair and the fact that there's no particular stealth requirement. Typically, you will find that those ships will use an open-tip propeller. However, other ships, cruise ships in particular, use an electric shrouded pod, which is a variation of a pump-jet technology. Of course, the technology gets changed over time, so the older a document is, the more it's dated to that point in time.
+
+\textbf{Air Chief Marshal Binskin:} Can I just confirm—we've got two documents and I'm trying to make sure we've baselined ourselves here. We've got one document, which is the 1963 document.
+
+\textbf{Senator PATRICK:} That's correct.
+
+\textbf{Air Chief Marshal Binskin:} We haven't got the other document yet.
+
+\textbf{Senator PATRICK:} It's just a diagram.
+
+\textbf{Air Chief Marshal Binskin:} Thanks for that.
+
+\textbf{Senator Payne:} I'm sure the officials can speak in the general, Senator, in response to your questions, but, if your questions go to the detail of that original larger document, you can hardly expect them to speak to the specifics of it.
+
+\textbf{Senator PATRICK:} Sure.
+
+\textbf{Mr Johnson:} We were talking about optimising for the speed and the characteristics of the pump jet. The decision-making process for submarines is a little more complicated because there's an acoustic performance aspect as well as the pure efficiency of the blade-propulsor-pump jet arrangement. Without going into details, it's a decision that we make with Navy, but I'm confident, having done this a few times already, that we are going to find this pump-jet approach to be the optimum for our particular circumstances for this particular submarine.
+
+\textbf{Senator PATRICK:} The general summary of that larger document is that pump jets are most efficient at high speed. That's where you get the benefit because there's the cost of the propulsor and the weight of the propulsor. The shroud, for example, is great for reducing cavitation at high speed, which is typically what a nuclear powered submarine might do in transiting from one place to another. Indeed, to my knowledge, the only submarines that are fitted with pump jets, other than one Agosta 70 French submarine it was trialled on and one Russian submarine, are nuclear powered submarines. So the data in the public domain suggests that the advantages of the pump jet occur at high speed. The diagram that you're looking at shows efficiency at low speed, and that's where a submarine spends most of its time in an operational area. A question was asked by Senator Xenophon back in October about this efficiency problem. The answer came back that 'a submarine propulsor can provide higher propulsive efficiency than a propeller across the speed range of a submarine, including the patrol speed'. I don't want you to go to the technical details or anything that's classified, but are you saying about the diagram that I've presented, which is in the public domain, that there's now new technology that would be contrary to that?
+
+\textbf{Air Chief Marshal Binskin:} No. I think what Mr Johnson's saying is that all aspects of our concept of operations will be factored into the submarine design in order for it to be best able to conduct the operations we need. So I don't think we should be talking in any more detail than that here in an open forum.
+
+\textbf{Senator PATRICK:} Let me tell you my concern.
+
+\textbf{Air Chief Marshal Binskin:} I think I understand your concern.
+
+\textbf{Senator PATRICK:} Actually, it's a concern that relates to risk in some sense. When you put this really heavy pump jet at the back end of a submarine and then at some later stage you find that in actual fact the pump jet doesn't perform as you might have expected, noting what is in the public domain, to change that out, noting it's a big, heavy thing at the extremities of the submarine, will have significant impact on the design. So my question to you is: are you relying on data that is based on a real in-situ propulsor somewhere or are you relying on modelling data to make this decision?
+
+\textbf{Mr Johnson:} The decision to use a pump jet was carefully made. It includes a wider understanding of their use in other applications—leaving that open. We have already accessed a relatively large scale model, so its physical data, and we will have the advantage of slightly different but very similar arrangements when the French attack submarine goes to sea. The risk that you note is certainly a valid concern, but the information that we have is across a wide spectrum of available sources, some not available to you, and the fact is that we will have this very early full-size, full-scale performance data of a different propulser, but nevertheless one from the same team in a very similar hull shape. At this point, the Commonwealth should be very comfortable with the calculated decision that we're making.
+
+\textbf{Senator PATRICK:} Thank you very much, and I will come back to you briefly on that. Back in 2014, Senator Johnston was making inquiries as to the way in which the Commonwealth was spending \$214 million of de-risking money for their submarines. In amongst that money was a study on pump jets. I will refer you to the Hansard of 28 May 2012, where it makes it clear that DSTO were doing some studies on pump jets. Are you aware of those studies and the outcomes of those studies?
+
+\textbf{Dr Zelinsky:} I'm aware that we have been studying propulsers, propellers, various forms of propulsion for submarines, but I cannot, at this stage, give you the outcomes of that study from five years ago. I'd have to take that on notice. Subsequently, as we have gone through the competitive evaluation process, we have provided work and studies to that. I am sure our work has matured and our work does underpin the work of CASG.
+
+\textbf{Mr Gillis:} This is a 1963 document, which took a number of years to be declassified to this point. As I think most of the people here know, submarine technology and what we decide, and how and why we decide it, is, by its nature, classified. We want to be really careful that we don't go into a point where the money and great effort that's been undertaken by our Defence Science and Technology Group, the work we've done with our partners, is then put on any sort of public forum for debating.
+
+\textbf{Senator PATRICK:} I wasn't after the detail.
+
+\textbf{Mr Gillis:} The issue we have is that we have some of the best scientists in the world; we have some of the most experienced submarine program managers in the world working at it. We partner around the world to ensure we get the best possible outcome. As the head of procurement, I trust that those people are making good, sound decisions not based on very dated data; they are based on very up-to-date data. And as you saw, it's a \$200 million-plus investment by the government, and one of the aspects was propulsion. I think you should be comfortable that we have invested the money. The issue is I have no intention of putting that sort of information in the public domain.
+
+\textbf{Senator PATRICK:} Sure. All I'm after is just some indication from the chief scientist, noting there's a diagram on the table, as to whether or not he's comfortable. That is the question. I'm not asking him to go to the detail.
+
+\textbf{CHAIR:} So is your question essentially: is the chief scientist comfortable that the science backing up the decision of Defence is sound?
+
+\textbf{Senator PATRICK:} Yes.
+
+\textbf{Dr Zelinsky:} Yes.
+
+\textbf{CHAIR:} Thank you.
+
+\textbf{Senator PATRICK:} Okay. I'll go back to you, Mr Johnson. Noting that you're saying that this is based on something that hasn't been to sea yet—it will go to sea on the Barracuda; presumably that's the submarine you're referring to—there's still a risk that's sitting there. As the guardian of the taxpayer, I know where you sit. I have a responsibility from the taxpayers' perspective to ask: do you have a fallback position if the data that comes from the French trials, or other trials that you might do, presents you with data that's inconsistent with the operational profile that you intend for the submarine?
+
+\textbf{Mr Johnson:} Yes. We will understand the performance data early enough in the design that we can accommodate whatever is required. And then, just to reassure you, it's really going to be an adjustment to the design of the pump jet, not a decision to leave it. Without going into too much detail, the curve that you're referring to is about the efficiency of the propeller, not about its acoustic performance. As you know, there's nothing free in physics, so those are different-shaped curves. What we seek to do, as Chief of the Defence Force said, is to make the right balance of multiple dimensions of this now.
+
+\textbf{CHAIR:} Senator, did you want a private briefing to go into the detail?
+
+\textbf{Senator PATRICK:} No, I'm satisfied with that; I'm satisfied with the detail.
+
+\textbf{Mr Johnson:} One other reassurance: we will run scaled model testing, and that will start relatively soon. It's a standard approach. It's been used by the French navy and the US navy for a long time. We're going to march right down the path, and we will do it with the chief scientist.
+
+\newpage
+\subsection{Answer to Question on Notice}\label{QON148}
+
+\begin{figure}[h]
+\includegraphics[width=0.8\textwidth, center]{QON148.png}
+\end{figure}
+
+\newpage
+\subsection{Answer to Question on Notice}\label{QON150}
+
+\begin{figure}[h]
+\includegraphics[width=0.7\textwidth, center]{QON150.png}
+\end{figure}
+
+\newpage
+\subsection{Answer to Question on Notice}\label{QON151}
+\begin{figure}[h]
+\includegraphics[width=0.7\textwidth, center]{QON151.png}
+\end{figure}
+
+\begin{figure}[h]
+\includegraphics[width=0.7\textwidth, center]{QON151p2.png}
+\end{figure}
+
+\newpage
+\subsection{Answer to Question on Notice}\label{QON1}
+\begin{figure}[h]
+\includegraphics[width=0.7\textwidth, center]{QON1.png}
+\end{figure}
+
+\newpage
+\subsection{Answer to Question on Notice}\label{QON2}
+\begin{figure}[h]
+\includegraphics[width=0.7\textwidth, center]{QON2.png}
+\end{figure}
+
+\newpage
+\subsection{Answer to Question on Notice}\label{QON3}
+\begin{figure}[h]
+\includegraphics[width=0.7\textwidth, center]{QON3.png}
+\end{figure}
+
 
 \end{appendices}
 
