@@ -14,7 +14,6 @@
 \usepackage[titletoc,page]{appendix}
 \setlength{\parindent}{0em}
 
-
 \usepackage{tikz,lipsum,lmodern}
 \usepackage[most]{tcolorbox}
 
@@ -630,6 +629,42 @@ The competence of RADM Sammut's program management and the technical advisors on
 
 \newpage
 
+\section{The drag resistance of underwater bodies}
+It has been asserted a number of times, both in reference \parencite{kerr2018} and \parencite{defence2018} that it is only surface vessels who experience substantial changes in the drag they experience at different speeds, owing to the wave-making resistance that they encounter.
+
+
+\begin{quotation}
+``Since submerged submarines do not have to overcome wave resistance, the efficiency of a propulsor can be considered independent of speed..."\\ - \textit{Dr David Kershaw, Chief of Maritime DSTG} \parencite{kerr2018}
+\label{resistancequotekershaw}
+\end{quotation}
+
+\begin{quotation}
+``The efficiency of a propulsor, whether it is a pumpjet or propeller, for a submerged submarine is related to the total submerged resistance and is essentially constant over speed" \\ - \textit{Department of Defence} \parencite{defence2018}
+\label{resistancequotedefence}
+\end{quotation}
+
+
+\begin{quotation}
+``6. There are two primary components of resistance to forward motion for a surface ship, the underwater drag created by the hull form and the wave making resistance. The underwater drag is comprised mainly of frictional resistance and is a form of drag due to the viscosity of the water and the shape of the body. Also, when a vessel is on the surface it will generate surface waves. The wave-making resistance is the resistance caused by the generation of these surface waves and is a function of the speed. \\
+7. Deeply submerged submarines do not experience this wave-making resistance. This means that the propulsive efficiency for a submerged body will remain constant over the speed range; whereas the propulsive efficiency drops off for a surface ship as it moves away from the design speed. This is independent of the type of propulsor. Therefore, the propulsive efficiency of a pumpjet designed for a submarine does not vary significantly with the speed of the boat."  \\ - \textit{Department of Defence} \parencite{defence2018}
+\label{resistancequotedefence2}
+\end{quotation}
+
+These statements again use a seemingly relevant truth, in order to distract or obscure a subsequent falsehood.  It is indeed true that surface ships do encounter wavemaking resistance, and that this varies substantially as a function of speed, and submarines do not encounter this  type of resistance.  It is true that skin friction, (which is the shear component of the drag forces of any body that moves through a viscous fluid which act along its sides) as well as pressure resistance (the forces normal to the hull, which are non-cancelling on the nose and the tail) comprises the majority of the drag that applies to a fully submerged submarine.  However, to claim that these forces are constant with speed is to claim the most bizarre and obtuse denial of the most basic and well-established physics in this respect.  These forces scale with velocity squared.   As such, speed plays the dominant role in considering the efficiency of propulsors on submerged bodies, since they also have their efficiency fall away at off-design conditions.
+
+It is simply not credible that the Department of Defence can genuinely hold such a utterly  naive belief that is so clearly contradicted by known experience and the most basic and abundant literature on this topic.  Were it the case that the resistance faced by a fully-submerged body was ``essentially constant over speed" then a submarine or torpedo could reach any speed that it liked by applying the same force, and would have unlimited speed.   This would mean that even a diesel submarine would also have unlimited range by virtue of it's ability to reach any speed  that it liked.  This assertion  by defence is so utterly and blatantly ridiculous that there is no plausible way that it could be genuinely held to be a true by any one of even moderate technical competence.  It is difficult to even believe that it could be held with any confidence by even moderately intelligent adults of little or no technical background.   It is difficult to avoid reaching the conlcusion that the statement was given in a state of extreme contempt for the intelligence of the intended reader, as it constitutes without any doubt a deliberate lie and active attempt to mislead.
+
+Almost every available source or text makes clear that the drag in water generally scales with velocity squared, including submerged vessels.
+
+\begin{figure}[h]
+\captionsetup{width=0.7\textwidth}
+\includegraphics[width=0.7\textwidth, center]{drag1.png}
+\caption{Taken from the appendix of \textbf(Fundamentals of Submarine Concept  Design) by  CAPT Harry A. Jackson USN (Ret.) \parencite{jackson1992}.  Note that the $V^2$ which indicates the relationship with velocity squared relationship}
+\label{fig:drag1.png}
+\end{figure}
+
+
+
 \section{The weight and size argument}
 Both Dr David Kershaw, Chief of Maritime Division at DSTG\parencite{kerr2018}, as well as Mr Brent Clark\parencite{clark2018} have both made arugments to the effect of suggesting that it was the Australian submarine's very large size which is what made the pumpjet viable, where it might not be for smaller submarines.  I responded directly to Clark's comments arguing that the size necessitated by the extra fuel and batteries a pumpjet demanded could hardly be counted as an advantage \parencite{morrison2018b}.  However, Dr Kershaw's argument reveals a different as to why it was that size was important.  His comments make it clear that it is actually the large weight of the pumpjet \textit{itself} rather than the additional fuel and batteries it required, that was significant.
 
@@ -677,8 +712,15 @@ It is widely acknowledged (for example in all of references \parencite{Carlton20
 \begin{figure}[h]
 \captionsetup{width=0.7\textwidth}
 \includegraphics[width=0.7\textwidth, center]{roteff3.png}
-\caption{One text's explanations of the variance between open-water efficiency and behind a hull from page 14 of \parencite{MAN2017}}
+\caption{One text's desciption of the various types of efficiency from page 14 of \parencite{MAN2017}}
 \label{fig:roteff3.png}
+\end{figure}
+
+\begin{figure}[h]
+\captionsetup{width=0.7\textwidth}
+\includegraphics[width=0.7\textwidth, center]{roteff5.png}
+\caption{One text's explanations of the variance between open-water efficiency and behind a hull from page 16 of \parencite{MAN2017}}
+\label{fig:roteff5.png}
 \end{figure}
 
 \begin{figure}[h]
