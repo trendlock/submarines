@@ -14,6 +14,8 @@
 \usepackage[titletoc,page]{appendix}
 \setlength{\parindent}{0em}
 
+\usepackage{placeins}
+
 \usepackage{tikz,lipsum,lmodern}
 \usepackage[most]{tcolorbox}
 
@@ -691,6 +693,8 @@ The assertion that the resistance of a submerged body is constant with speed is 
 \label{fig:drag1.png}
 \end{figure}
 
+\FloatBarrier
+
 \newpage
 
 \section{The drag resistance of underwater bodies}
@@ -762,9 +766,10 @@ Almost every available source or text makes clear that the drag in water general
 \label{fig:drag2.png}
 \end{figure}
 
-
+\FloatBarrier
 
 \section{The weight and size argument}
+
 Both Dr David Kershaw, Chief of Maritime Division at DSTG\parencite{kerr2018}, as well as Mr Brent Clark\parencite{clark2018} have both made arugments to the effect of suggesting that it was the Australian submarine's very large size which is what made the pumpjet viable, where it might not be for smaller submarines.  I responded directly to Clark's comments arguing that the size necessitated by the extra fuel and batteries a pumpjet demanded could hardly be counted as an advantage \parencite{morrison2018b}.  However, Dr Kershaw's argument reveals a different takon on why size is important.  His comments make it clear that it is actually the large weight of the pumpjet \textit{itself} rather than the additional fuel and batteries it required, that was significant.
 
 This argument implies that a smaller submarine couldn't adequately provide sufficient buoyancy or balance to support the heavy pumpjet. If the submarine couldn't provide such buoyancy or balance, the consequences would be catastophic failure, specifically the submarine would tend to either tail-stand, or sink.  It would be unthinkable for a competent manufacturer, conscious of the weight of the pumpjet and such risks, to neglect to account for such risks.  Weights and balances are known and predictable quantities, which could most easily be accounted for in the design of a new submarine.
@@ -799,6 +804,22 @@ Further physical arguments could be made as to how the weight of the pumpjet oug
 It is difficult to imagine what sort of circumstance would lead both an acting CEO of the contracted design partner, who was aware of the experience of the French experiment with the Agosta, as well as a very senior defence scientist to make such demonstrably false claims in public.  In the case of Dr Kershaw, it can be seen that he deliberately and repeatedly (at the conclusion of his interview  \parencite{kerr2018}) drew attention to the size being significant.  His concluding remarks for the interview were that ``The size of the Future Submarine means a pumpjet is a real game changer for optimising the performance of the submarine in its intended role...". To deliberately mount an argument that is so simply ridiculed and dismissed as being so significant seems to be a bizarre choice for a supposedly competent scientist to make.  If stronger arguments were available, one would assume that they would be made instead. With over a million dollars already spent on modelling and experiments, one would assume that if the results of that research could confidently refute the conclusions my own research \parencite{morrison2018}, such a desperate and embarrassing statement would not need to be made.
 
 In a clear parallel with the argument that the performance of propulsion systems on submerged bodies is independed of speed because they don't face wave-making resistance, this line of reasoning involves the presentation of a seemingly relevant, comprehensible technical truth which is used to justify a completely blatant technical falsehood.  Even if Dr Kershaw is not familiar with this area of science and speaking outside his competence, it is difficult to see how such a pattern of argument would occur so consistently by accident.  For Dr Kershaw to genuinely believe in the arguments that he is making here is almost unthinkable.  For him to casually or accidentally make such careless arguments also seems implausibly reckless.  An alternative explanation is that the results of the research already conducted by the government broadly support the conclusions of my own research, and this is well known by Dr Kershaw, and  that these unfortunate statements are being made in a desparate attempt to deflect attention in order to avoid admitting this fact.
+
+\begin{tcolorbox}[width=0.9\textwidth, center, colback=green!5!white,colframe=green!75!black, title= \textbf{How a scientist feels being told that the pumpjet is a gamechanger for our diesel-electric submarine because it is so large, where it wouldn't make sense on a smaller one}]
+
+Bruce: I'm not sure about using these fat nobbly tires on my road-bike for the cycle tour... No-one else is using such tyres on a road-bike, I think they'd be slow and inefficient.
+
+James: Don't be silly!  Everyone else would love to use fat nobbly tyres on a road-bike, the only reason they can't is that those cyclists themselves are just so slim and athletic, and can't use the nobbly fat nobbly tyes. Bruce, don't you realise that you're the \textit{only} cyclist every attempting this tour who weights 200kg, roughly three times what most road-cyclistst weigh? If a 70kg rider attempted those speeds with fat knobbly tyres, they wouldn't have the weight to stabilise the forces involved, and they'd be thrown off their bicycle in a catastophic crash which would probably be fatal.  But for fat cyclists such as yourself, fat nobbly tires are a real game-changer!
+
+Bruce:  What about that one lonely guy over there riding on fat knobbly tyres.  He looks like he weighs about 70kg, and he's not having a catastopic crash, he's just going really slow and looks tired.  Maybe that's why he's sticking to the footpath.
+
+James: Oh...
+
+Bruce: And didn't you also tell me that you tried riding with fat nobbly tires once years ago?  How did you survive the catastophic crash?
+
+\end{tcolorbox}
+
+\FloatBarrier
 
 \newpage
 
@@ -1022,8 +1043,14 @@ It should be noted that a pumpjet's duct also has the effect of decelerating the
 \label{fig:HiLoSmall.png}
 \end{figure}
 
+\FloatBarrier
+
 \section{Discussion}
-Having given due consideration to the three signiciant arguments that have been made in response to my paper, one can only conclude that either a degree of incompetence hitherto unthinkeable pervades defence, or alternatively the arguments are disingenuous.
+
+
+
+
+
 
 % \begin{tcolorbox}[width=0.9\textwidth, center, colback=green!5!white,colframe=green!75!black, title= \textbf{How a scientist feels about the pumpjet smoothing argument}]
 % Imagine that you came to buy a coffee from a your favourite cafe, only to find that they weren't selling any coffee that day, and wouldn't be selling any more indefinitely.  Their coffee maching had been removed, and they were only selling cold-drip, coffee, stored in little bottles in the fridge. Overcoming initial shock (since you weren't aware of any other cafes who would make such a bizarre decision as to not sell espresso-coffee as a substantial part of their offering), you made some tentative inquiries as to why.
@@ -1034,6 +1061,8 @@ Having given due consideration to the three signiciant arguments that have been 
 %
 % You read the statement again, not quite believing that a hazard so obviously known and successfully navigated by millions of coffee drinkers every day, could be the cause of such a decision.  Althought it's true the owner didn't lie about it being a health and safety concern, and you can't dispute the facts about the coffee temperatures being above 65 degrees, you still conclude that owner is either insane, or trying to disguise some other reason for abandoning the espresso coffee.
 % \end{tcolorbox}
+
+\FloatBarrier
 
 \printbibliography
 
@@ -1375,13 +1404,15 @@ design and certification to get to this point.
 \textbf{Mr Johnson:} One other reassurance: we will run scaled model testing, and that will start relatively soon. It's a standard approach. It's been used by the French navy and the US navy for a long time. We're going to march right down the path, and we will do it with the chief scientist.
 
 \newpage
+
 \subsection{Answer to Question on Notice}\label{QON148}
 
 \begin{figure}[h]
-\includegraphics[width=0.8\textwidth, center]{QON148.png}
+\includegraphics[width=0.7\textwidth, center]{QON148.png}
 \end{figure}
 
 \newpage
+
 \subsection{Answer to Question on Notice}\label{QON150}
 
 \begin{figure}[h]
@@ -1389,7 +1420,9 @@ design and certification to get to this point.
 \end{figure}
 
 \newpage
+
 \subsection{Answer to Question on Notice}\label{QON151}
+
 \begin{figure}[h]
 \includegraphics[width=0.7\textwidth, center]{QON151.png}
 \end{figure}
@@ -1399,24 +1432,31 @@ design and certification to get to this point.
 \end{figure}
 
 \newpage
+
 \subsection{Answer to Question on Notice}\label{QON1}
+
 \begin{figure}[h]
 \includegraphics[width=0.7\textwidth, center]{QON1.png}
 \end{figure}
 
 \newpage
+
 \subsection{Answer to Question on Notice}\label{QON2}
+
 \begin{figure}[h]
 \includegraphics[width=0.7\textwidth, center]{QON2.png}
 \end{figure}
 
 \newpage
+
 \subsection{Answer to Question on Notice}\label{QON3}
+
 \begin{figure}[h]
 \includegraphics[width=0.7\textwidth, center]{QON3.png}
 \end{figure}
 
 \newpage
+
 \subsection{Hansard Extract, Senate Economic References Committee Public Hearing - 7th June 2018 \cite{SEN2018morrison}}\label{SENmorrison}
 
 \textbf{Mr Morrison:} I would firstly like to thank and acknowledge two supporters: Mr Gary Johnston from Submarines for Australia, without whose support I wouldn't have been able to put together the substantial report that you have today; and my partner in Trendlock, the analytics consulting company that we used to deliver the report, whose help was invaluable.
