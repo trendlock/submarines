@@ -15,6 +15,7 @@
 \setlength{\parindent}{0em}
 
 \usepackage{placeins}
+\usepackage{wrapfig}
 
 \usepackage{tikz,lipsum,lmodern}
 \usepackage[most]{tcolorbox}
@@ -24,10 +25,10 @@
 \usepackage{xcolor}
 \usepackage{graphicx}
 
-\usepackage{draftwatermark}
-\SetWatermarkText{DRAFT}
-\SetWatermarkScale{1.5}
-\SetWatermarkLightness{0.95}
+% \usepackage{draftwatermark}
+% \SetWatermarkText{DRAFT}
+% \SetWatermarkScale{1.5}
+% \SetWatermarkLightness{0.95}
 
 \title{Efficiency}
 \author{Aidan Morrison}
@@ -95,13 +96,13 @@ library(submarines)
 \setlength{\parskip}{1em}
 
 \section{Executive Summary}
-In January 2018, I produced a detailed report\parencite{morrison2018}, commissioned by Gary Johnston from Submarines for Australia, in order to examine the question of the efficiency of a pumpjet.   Pumpjets, whilst common on nuclear submarines which can operate at high speeds (above 25kt) for sustained periods, are generally not used on diesel-electric submarines, which need to operate at very low speeds (around 10kt during transit, and under 5kt during combat operations).  Considerable emphasis had been placed on the significance of the pumpjet proposed in the successful French bid made by DCNS (now Naval Group) for Australia's Future Submarine.  I concluded that an inevitable characteristic of pumpjets - directly necessitated by the characteristics which gave them good acoustic performance at high speeds - was very low propulsive performance (efficiency) at low speeds.  This would mean that a diesel-electric submarine would suffer poorer range and endurance, and significantly worse dived range and endurance, as well as a worse indiscretion ratio due to the use of a pumpjet.  Given the profound importance of these characteristics to all diesel-electric submarines, as well as the elevated importance of range and endurance to the Australian requirement, it would appear that a pumpjet can be safely regarded as entirely unsuitable for Australia's Future Submarine.
+In January 2018, I produced a detailed report\parencite{morrison2018}, commissioned by Gary Johnston from Submarines for Australia, in order to examine the question of the efficiency of a pumpjet.   Pumpjets, whilst common on nuclear submarines which can operate at high speeds (above 25kt) for sustained periods, are generally not used on diesel-electric submarines, which need to operate at very low speeds (around 10kt during transit, and under 5kt during combat operations).  Considerable emphasis had been placed on the significance of the pumpjet proposed in the successful French bid made by DCNS (now Naval Group) for Australia's Future Submarine.  I concluded that an inevitable characteristic of pumpjets - directly necessitated by the characteristics which gave them good acoustic performance at high speeds - was very low propulsive performance (efficiency) at low speeds.  This would mean that a diesel-electric submarine would suffer poorer range and endurance, and significantly worse dived range and endurance, as well as a worse indiscretion ratio due to the use of a pumpjet.  Given the profound importance of these characteristics to all diesel-electric submarines, as well as the elevated importance of range and endurance to the Australian requirement, it appears from these results that a pumpjet can be safely regarded as entirely unsuitable for Australia's Future Submarine.
 
-On June 7 2018, I appeared as a witness before the Senate Economic References Committee \parencite{SEN2018morrison}, where I defended and expanded upon my results.  My evidence was presented in the presence of senior officials from Defence and Naval Group, who steadfastly refused to comment.  The Committee directed Defence to provide a written response to my paper prior to the conclusion of the Inquiry into the Future of Australia's Naval Shipbuilding Industry (scheduled for the 27th of June) which they finally produced in mid September.  Submarines for Australia had already commissioned me to write a subsequent report in reply to the responses that had appeared in responses to Questions on Notice in Parliament, and also in the media.  With Defence's submission finally received, this paper is in a position to comprehensively assess the totality of the arguments put by Defence against the conclusions of my previous paper.
+On June 7 2018, I appeared as a witness before the Senate Economic References Committee \parencite{SEN2018morrison}, where I defended and expanded upon my results.  My evidence was presented in the presence of senior officials from Defence and Naval Group, who steadfastly refused to comment.  The Committee directed Defence to provide a written response to my paper prior to the conclusion of the Inquiry into the Future of Australia's Naval Shipbuilding Industry (scheduled for the 27th of June) which they finally produced in mid September.  Submarines for Australia had already commissioned me to write a subsequent report in reply to the responses that had appeared in answers to Questions on Notice in Parliament, and also in the media.  With Defence's submission finally received, this paper is in a position to comprehensively assess the totality of the arguments put by Defence against the conclusions of my previous paper.
 
-With the receipt of the written report it has become clear that Defence has no credible basis for rejecting the findings of my research.  Their arguments are so completely incongruous with the most essential and frankly obvious physical principles, it appears that Defences has quite thoroughly disgraced their technical credibility in making this response.
+With the receipt of the written report it has become clear that Defence has no credible basis for rejecting the findings of my research.  Their arguments are so completely incongruous with the most essential (and relatively obvious) physical principles, it appears that Defences has quite thoroughly disgraced their technical credibility in making this response.
 
-Their claim that pumpjets can be efficient across the entire speed range, including patrol speed, are instead based on the assumption that the efficiency of propulsors operating on fully-submerged bodies (like submarines) is ``essentially constant over speed"\parencite{defence2018} \parencite{kerr2018}.  This is supported by the argument that efficiency relates to resistance, and that resistance faced by underwater bodies does not vary with speed, since it is only wave-making resistance (encountered by vessels on the surface) that is the speed-dependent component of resistance.
+Their claim that pumpjets can be efficient across the entire speed range, including patrol speed, are based on the assumption that the efficiency of propulsors operating on fully-submerged bodies (like submarines) is ``essentially constant over speed"\parencite{defence2018} \parencite{kerr2018}.  This is supported by the argument that efficiency relates to resistance, and that resistance faced by underwater bodies does not vary with speed, since it is only wave-making resistance (encountered by vessels on the surface) that is the speed-dependent component of resistance.
 
 This is simply untrue.  It is a bizarre, irrational claim with no basis whatsoever in physics.  It is frankly bewildering that such a claim could be made, given how easily it's falsehood can be established by even moderate research, or simple logic.  If it were true, then submarines and torpedoes would be able to elevate their speed without increased resistance, and consequently reach any speed they might choose without requiring larger motors, or more fuel, and hence attain virtually unlimited range.
 
@@ -116,7 +117,7 @@ Such a revelation necessitates a further question regarding whether such mislead
 Notwithstanding the improbability that the incompetence of Defence is so completely pervasive that all of this research failed to yield even a basic understanding of hydrodynamics, the probability that the necessary degree of ignorance has occurred through arrangement rather than accident can be most firmly established by three simple propositions:
 
 \begin{enumerate}
-\item  \textbf{The French know the answer.}  As one of only two countries in the world who have designed and produced both pumpjets and propellers, nuclear and conventional submarines, and fitted and operated each type of propulsor on both types of submarines, there can be no doubt whatsoever that Naval Group and the French Government do have a well-formed opinion about the performance of pumpjets on diesel-electric submarines.  They would have extensive operational performance data from their in-service SSBNS which use the pumpjet.  They would have extremely detailed modelling, and tank-test results from the pumpjet from the almost-complete Barracuda class, which has an identical hull diameter to the proposed Shortfin Barracuda. They would have extensive operational performance data from their own Rubis Class nuclear submarines, which still use propellers, as well as the results of earlier tests, confirmed to have occurred by Naval Group Officials\parencite{SEN2018morrison}, where a pumpjet was fitted to a diesel-electric Agosta Class submarine.  That they have adequate performance data from all the necessary reference points to assess the likely performance of the proposed pumpjet on our own submarine is entirely beyond dispute.
+\item  \textbf{The French know the answer.}  As one of only two countries in the world who have designed and produced both pumpjets and propellers, nuclear and conventional submarines, and fitted and operated each type of propulsor on both types of submarines, there can be no doubt whatsoever that Naval Group and the French Government do have a well-formed opinion about the performance of pumpjets on diesel-electric submarines.  They would have extensive operational performance data from their in-service SSBNs which use the pumpjet.  They would have extremely detailed modelling, and tank-test results from the pumpjet from the almost-complete Barracuda class, which has an identical hull diameter to the proposed Shortfin Barracuda. They would have extensive operational performance data from their own Rubis Class nuclear submarines, which still use propellers, as well as the results of earlier tests, confirmed to have occurred by Naval Group Officials\parencite{SEN2018morrison}, where a pumpjet was fitted to a diesel-electric Agosta Class submarine.  That they have adequate performance data from all the necessary reference points to assess the likely performance of the proposed pumpjet on our own submarine is entirely beyond dispute.
 
 \item  \textbf{The French gave the answer to the Australians.} It would naturally be a matter of profound neglect on the part of Australian officials to fail to ascertain the necessary performance data - both acoustic and propulsive efficiency - from the French during a Competitive Evaluation Process.  Any doubt that this occurred, however, can be reliably dismissed on account of public statements made by DCNS during the CEP claiming proudly that ``The stealth and hydrodynamic performances of pump jet propulsion are of course classified and in Australia known only to DCNS and the Australian Government."\parencite{costello2016}. Given RADM Sammut's repeated statements \parencite{SEN2016sammut} \parencite{SEN2017hanson} to Senate Estimates that  ``the way in which technical data would be transferred to Australia and the way in which intellectual property would be managed" was one of the reasons that DCNS was selected as design partner, and DCNS's clear pride in  ``the offer from France to transfer to Australia sovereign control and use of pump-jet propulsion technology"\parencite{costello2016} there can also be no doubt that after the conclusion of the CEP and the commencement of design, absolutely nothing would have prevented Australia seeking further performance details or reference points, or even assistance in interpretation in the case that the information provided in the CEP was found to be in any way insufficient or unclear.
 
@@ -140,11 +141,13 @@ However, the impression of cluelessness is so severe, it is difficult to reconci
 
 The gravity of reaching such a conclusion is difficult to understate, given the likely nature of the motives which would attend to such a decision.  One would presume that one would not advance into the public arena a submarine design which was known to be nonviable, and lead to deep embarrassment and ridicule if subjected to thorough scrutiny, unless the real motive for the design or partner choice was even less capable of withstanding public scrutiny.  The possibility that this is the case must be considered very seriously, given the difficulty of reconciling recent events with the counter-factual proposition:
 
-After the initial publication of my first report, three Questions on Notice were asked by Senator Ketter, specifically referencing my report[\ref{QON1}, \ref{QON2}, \ref{QON3}].  Whilst Defence avoiding answering all of them directly, one of them was particularly brazenly side-stepped.  Asked ``Is Defence still confident that Naval Group still hold the opinion that the pump-jet is well suited to diesel-electric submarines?" Defence merely reiterated their intent is to use the pumpjets as offered, strictly avoiding mentioning anyone's opinion, either their own or Naval Group's.  If the answer actually was what we would all assume it should be, that would have been a very easy question to answer directly.  A simple `yes' would be sufficient.  If the answer was `no', then we must assume that at the time of writing (presumably before the return date of 3 April, though Defence isn't always timely) that Defence had an inkling (at the very least) of what Naval Group undoubtedly knew all along - that pumpjets are entirely unsuitable for diesel-electric submarines.  In avoiding answering the question directly, Defence was not just misleading the Parliament, but clearly acting to shelter Naval Group from subsequent questions about fraudulent or misleading conduct during the CEP.
+After the initial publication of my first report, three Questions on Notice were asked by Senator Ketter, specifically referencing my report[\ref{QON1}, \ref{QON2}, \ref{QON3}].  Whilst Defence avoided answering all of them directly, one of them was particularly brazenly side-stepped.  Asked ``Is Defence still confident that Naval Group still hold the opinion that the pump-jet is well suited to diesel-electric submarines?" Defence merely reiterated their intent is to use the pumpjets as offered, strictly avoiding mentioning anyone's opinion, either their own or Naval Group's.  If the answer actually was what we would all assume it should be, that would have been a very easy question to answer directly.  A simple `yes' would be sufficient.  If the answer was `no', then we must assume that at the time of writing (presumably before the return date of 3 April, though Defence isn't always timely) that Defence had an inkling (at the very least) of what Naval Group undoubtedly knew all along - that pumpjets are entirely unsuitable for diesel-electric submarines.  In avoiding answering the question directly, Defence was not just misleading the Parliament, but clearly acting to shelter Naval Group from subsequent questions about fraudulent or misleading conduct during the CEP.
 
-Giving Defence the most generous possible interpretation, one might allow the possibility that Defence were just coming to grips with being completely hood-winked during the CEP by their chosen design-partner, and perhaps felt that their wrath at being deliberately deceived ought not be publicly vented, or at least not at this stage.  One might, at a stretch, allow that maintaining the opportunity for the partner to save-face was still a useful bargaining-chip that our Defence chiefs to use in order to bring a potentially treacherous contractor to heel. (Presumeably in addition to a range of contractual penalties, as well as the commercial leverage the Commonwealth would have by being able to re-introduce competition into the design process as many have suggested ought be done in any case \parencite{stanford2017}, or simply not proceed to a build contract on completion of the design.)
+Giving Defence the most generous possible interpretation, one might allow the possibility that Defence was just coming to grips with being completely hood-winked during the CEP by their chosen design-partner, and perhaps felt that their wrath at being deliberately deceived ought not be publicly vented, or at least not at this stage.  News that negotiations have largely broken-down\parencite{greene2018} could well be considered in this light.  One might, at a stretch, allow that maintaining the opportunity for the partner to save-face was still a useful bargaining-chip that our Defence chiefs to use in order to bring a potentially treacherous contractor to heel. (Presumably in addition to a range of contractual penalties, as well as the commercial leverage the Commonwealth would have by being able to re-introduce competition into the design process as many have suggested ought be done in any case \parencite{stanford2017}, or simply not proceed to a build contract on completion of the design.)
 
-The state of commercial negotiations between the Commonwealth and Naval Group, as revealed in the Senate Economic References Committee \parencite{SEN2018morrison}, show that Defence was moving in exactly the opposite direction - shocking Senators with the revelation that Defence was looking instead to contract immediately with DCNS for the full construction of all 12 submarines, to the complete exclusion of the Australian Submarine Corporation, within coming months as part of the Strategic Partnering Agreement.  This would effectively wipe out the opportunity for any competitive tension at any stage of the \$79 billion five-decade project within the first two years of a five-year design phase.
+However, at least at the time of the final public hearing for the Inquiry into the Future of Naval Shipbuilding in Australia \parencite{SEN2018morrison}, it appeared that Defence was moving in exactly the opposite direction.  Senators on the committee were deeply concerned with establishing just how early it was during or after the CEP process that Defence agreed (with Naval Group) that they would be the \textit{builder} of the submarines, not just the design partner as previously assumed, and that Australian Submarine Corporation was to be consumed by DCNS.\footnote{On the 20th of June 2017 the Acting CEO of DCNS, Brent Clark stated that ``from our perspective, ASC will be consumed by DCNS."}  A further topic of substantial interest was whether the Strategic Partnering Agreement (SPA) that was currently being negotiated would commit the Commonwealth to use DCNS as the \textit{builder} of \textit{all 12} submarines. It was clear to anyone in the room that Defence's responses implied that it was very likely that this would be the case.
+
+Taken together, these observations paint a very different picture of the intended direction of Defence's relationship with DCNS.  Defence appeared to be excluding two options which might have been assumed as likely or even default courses of action for a government seeking to minimise risk and retain some sovereign control over a crucial defence project:  either that the chosen foreign design partner would be expected to work with a local builder (one would assume ASC) to deliver the build, or that allocation of the actual build contract (or contracts, in the case they proceed in blocks) be left until a later stage when the detailed design (or preceding block of submarines) was closer to being completed satisfactorily.  As members of the committee were clearly conscious, the apparent course taken by defence would effectively wipe out the opportunity for any competitive tension (or external technical scrutiny) at any stage of the \$79 billion five-decade project within the first two years of a five-year detailed design phase.  Why Defence might be contemplating eliminating, rather than exercising opportunities to increase competitive tension at a time when it was becoming clear that the pumpjet proposal was disingenuous is extremely unclear.
 
 In light of these events, I find the most plausible explanation to be the worst:
 \begin{itemize}
@@ -154,10 +157,11 @@ In light of these events, I find the most plausible explanation to be the worst:
 \item This belief was known by that group to be false - either because pumpjets would not ultimately be used or their use would be generally disadvantageous - at the same time that is was central to justifying a choice of design partner who's proposal was substantially more expensive and slower to deliver, for which no more defensible reason could be found.
 \end{itemize}
 
-In summary, I conclude that the pumpjet was a fraudulent, rather than incomptent proposal, used to construct the fiction that France's vaunted heritage as a designer of nuclear submarines offers a substantial technical advantage to a non-nuclear submarine.  There is almost no chance that it will be included in the detailed design.  In reality, without a nuclear reactor, there is relatively little relevant nuclear-related technology or experience (other than the combat system, mandated from a 3rd party) which is usefully transferable.  The extent to which the bottom of the barrel needed to be scraped to maintain this fiction was illustrated when RADM Sammut was challenged on the benefit of the nuclear design after facing pressure on the pumpjet, and was forced to refer to the `diameter of the hull' as being a key learning[\ref{SENhanson}].  Given the relatively more accessible engineering concepts involved, such claim would be much more easily subjected to public ridicule had it been more substantially promoted, as the pumpjet was.\footnote{Among the many engineering challenges presented in designing a new submarine, ensuring the structural integrity of the hull at a new diameter is one of the most well-understood and predictable.  The Collins Class was evolved from a submarine of smaller hull diameter, and this aspect of the design and development encountered no problems.  In 2006, DSTO commissioned a paper suggesting that the Collins Class replacement be designed at a wider hull, which didn't correspond to that of the Barracuda.\parencite{joubert2006}}  In contrast, those countries whose own navies relied entirely upon diesel-electric submarines would likely boast significant advantages in technologies which are genuine game-changers for diesel-electric submarines, such as advanced composite propellers, Air-Independent Propulsion, and Lithium-Ion batteries, which we are now told won't be included in the Future Submarine \textit{because} of the pumpjet\parencite{bergmann2018}.  To that extent, it is almost certain that the pumpjet proposal will not only impose a substantial cost on Australian taxpayers (tens of billions of dollars), but also substantially degrade Australia's future military capability.
+In summary, I conclude that the pumpjet was a fraudulent, rather than incompetent proposal, used to construct the fiction that France's heritage as a designer of nuclear submarines offers a substantial technical advantage to a non-nuclear submarine.   In reality, without a nuclear reactor, there is essentially no nuclear-related technology or experience which is usefully transferable to a diesel-electric submarine.  The extent to which the bottom of the barrel needed to be scraped to maintain this fiction was illustrated when RADM Sammut was challenged on the benefit of the nuclear design after facing pressure on the pumpjet, and was forced to refer to the `diameter of the hull' as being a key learning[\ref{SENhanson}].  Given the relatively more accessible engineering concepts involved, such a claim would be much more easily subjected to public ridicule had it been more substantially promoted, as the pumpjet was.\footnote{Among the many engineering challenges presented in designing a new submarine, ensuring the structural integrity of the hull at a new diameter is one of the most well-understood and predictable.  The Collins Class was evolved from a submarine of smaller hull diameter, and this aspect of the design and development encountered no problems.  In 2006, DSTO commissioned a paper suggesting that the Collins Class replacement be designed at a wider hull, which didn't correspond to that of the Barracuda.\parencite{joubert2006}}  In contrast, those countries whose own navies relied entirely upon diesel-electric submarines would likely boast significant advantages in technologies which are genuine game-changers for diesel-electric submarines, such as advanced composite propellers, Air-Independent Propulsion, and Lithium-Ion batteries, which we are now told won't be included in the Future Submarine \textit{because} of the pumpjet\parencite{bergmann2018}.  To that extent, it is almost certain that the pumpjet proposal will not only impose a substantial cost on Australian taxpayers (tens of billions of dollars), but also substantially degrade Australia's future military capability.
 
-In light of these considerations, Defence should be required to explain again what their reasons were for choosing the French as a design partner, as there can now be no doubt that the pumpjet played no legitimate part in it.  Any claims to the contrary are made either out of incompetence, as Defence's latest response might have us believe, or are made with the deliberate intent of misleading.
+In light of these considerations, Defence should be required to explain again what their reasons were for choosing the French as a design partner, as there can now be no doubt that the pumpjet played no legitimate part in it.  The use of a pumpjet will inevitably cause a diesel-electric submarine to have poorer endurance and range, particularly dived endurance and range, and a poorer indiscretion ratio than one with open-tipped propellers.  Any claims to the contrary are made either out of incompetence, as Defence's latest response might have us believe, or are made with the deliberate intent of misleading.
 
+\newpage
 
 \section{Introduction} \label{intro}
 
@@ -173,12 +177,12 @@ In the August edition of Australian Defence Magazine a feature article titled `F
 
 This paper has been commissioned by Gary Johnston to provide a summary of the responses that have been received from official sources (in government, and Naval Group) to the earlier major report, and respond to them.  At the time of its original commissioning, two substantive arguments emerge seeking to engage with the technical arguments made in the earlier paper.  The first is that the large size of the submarine now makes the pumpjet viable, where as for smaller submarines the large weight of the pumpjet would make it nonviable, and that the pumpjet would be generally well-suited to smaller submarines as well were it not for this weight consideration.  The second is that interaction between the pumpjet and the hull obviate the evidence I have produced showing that pumpjet efficiency declines at low speeds, which are claimed to neglect considering such interactions.
 
-In early September, the Department of Defence gave a six-page written response to my paper, a full three months after the initial request. The two substantive arguments already identified were repeated, but the weight of their argument actually came to rest on another assumption.  This assumption was mentioned already by Dr Kershaw in the ADM article, but it was so completely at odds with the most basic physics that I was inclined to dismiss it as perhaps a clumsily worded statement made in an interview compounded by a little journalistic mis-quotation, rather than a substantive argument.   The re-appearance of this argument, which was spelled out and repeated multiple times in a written document that was prepared by Defence over the course of three months (well after any nominal deadline for timeliness had elapsed) dispelled all illusions that the argument was included by accident.  As such, I have also addressed it here as one of three substantial arguments made against my earlier conclusions regarding pumpjet efficiency.  This third argument coming from a document so cafeully and deliberately prepared has had a material impact on the strength of the conclusions of this paper, which seeks to consider all three lines of reasoning in sufficient detail to suitably discuss the circumstances in which such arguments might be made.
+In early September, the Department of Defence gave a six-page written response to my paper, a full three months after the initial request. The two substantive arguments already identified were repeated, but the weight of their argument actually came to rest on another assumption.  This assumption was mentioned already by Dr Kershaw in the ADM article, but it was so completely at odds with the most basic physics that I was inclined to dismiss it as perhaps a clumsily worded statement made in an interview compounded by a little journalistic mis-quotation, rather than a substantive argument.   The re-appearance of this argument, which was spelled out and repeated multiple times in a written document that was prepared by Defence over the course of three months (well after any nominal deadline for timeliness had elapsed) dispelled all illusions that the argument was included by accident.  As such, I have also addressed it here as one of three substantial arguments made against my earlier conclusions regarding pumpjet efficiency.  This third argument coming from a document so carefully and deliberately prepared has had a material impact on the strength of the conclusions of this paper, which seeks to consider all three lines of reasoning in sufficient detail to suitably discuss the circumstances in which such arguments might be made.
 
 This paper commences with a chronologically sequenced history of the most significant comments that have been made by public officials or Naval Group/DCNS with respect to the pumpjet, highlighting the most important implications of each in their context.  These are followed by three sections, addressing in more detail the three substantive arguments against my conclusions.  Some discussion developing the final conclusions follows, followed by appendices which include more substantial extracts or originals sources where appropriate, for reference.
 
 \newpage
-\section{A brief chronology of comment}
+\section{A chronology of comment}
 
 The following gives a brief overview of the significant known public comments regarding the pumpjet that have been made by official representatives of either the Commonwealth of Australia, or Naval Group, formally known as DCNS.  Only brief quotations are selected here, with references being made to the full excerpts either in Appendices or References.  Any emphasis in-text has been added.
 
@@ -446,7 +450,7 @@ The statement that `inputs for the pump jet' will be developed in the last quart
 Perhaps more remarkable is what this implies about the value (or eventuality) of pumpjet technology being transferred from France to Australia, and how that sits with statements made by RADM Sammut in particular.  DCNS originally boasted about their intention to transfer the technology to Australia \parencite{costello2016}.  RADM Sammut has since claimed that the way that ``data would be transferred to Australia" was amongst the reasons for his selection of DCNS as a design partner, whilst simultaneously citing the importance of the hull-diameter remaining identical to the nuclear submarine from which ours would be derived, in order to avoid ``a whole new set of calculations".  Only days later, he refers the need for the jet to be ``tuned to the hull" and the hull would be ``tuned to the pump jet'. In contrast to the `tuning' statement, this answer describes a ground-up development process from inputs which are yet to be determined, which raises a serious question as what value there is in having a design partner who intends to transfer that technology from near-complete submarine with an identical diameter hull.  One would assume that if such a ground-up development process were to be embarked upon which would necessarily have a feed-back loop with the final shaping of the hull, this would necessarily substantially heighten project risk. One would further assume that substantial work have been done to establish the suitability of the technology in advance, and the viability of reaching sufficient performance to meet the likely inputs in relatively tight development spiral with limited impacts on other systems or capabilities.
 
 \subsection{Department of Defence, to Senator Ketter's Questions on Notice}
-\begin{tcolorbox}[width=0.9\textwidth, center, colback=black!5!white,colframe=black!75!black, title= \textbf{3 April 2018 - Department of Defence, in response to Question on Notice from Senator Chris Ketter in December 2018}]
+\begin{tcolorbox}[width=0.9\textwidth, center, colback=black!5!white,colframe=black!75!black, title= \textbf{3 April 2018 - Department of Defence, in response to Question on Notice from Senator Chris Ketter with return date of 3 April 2018}]
 \textit{Senator Ketter asks Question 1, referencing specifically Greg Sammut in \parencite{sammut2017} and my paper \parencite{morrison2018} asks specifically whether Defence maintains that the pumpjet can be efficient across the entire speed range. Full question can be found in \ref{QON1}.}
 \\
 \\
@@ -462,7 +466,7 @@ This answer to a question again rests on the claim that the influence of the hul
 However, the response also avoids directly answering the question which specifically refers to efficiency in isolation.  By only claiming that the pumpjet ``achieves better optimisation of efficiency \textit{and stealth}, even at low speeds", the response avoids directly contradicting the evidence that pumpjet efficiency inevitably declines dramatically at low speeds, which is the core contention of the paper in question.
 
 
-\begin{tcolorbox}[width=0.9\textwidth, center, colback=black!5!white,colframe=black!75!black, title= \textbf{3 April 2018 - Department of Defence, in response to Question on Notice from Senator Chris Ketter in December 2018}]
+\begin{tcolorbox}[width=0.9\textwidth, center, colback=black!5!white,colframe=black!75!black, title= \textbf{3 April 2018 - Department of Defence, in response to Question on Notice from Senator Chris Ketter with return date 3 April 2018}]
 \textit{Senator Ketter asks Question 2, inquiring as to how Defence assesses Naval Group's opinion regarding the pumpjet's suitability, following Jean-Michel Billig's comments.  Full questions and responses  can be found in \ref{QON2}.}
 \\
 \\
@@ -789,6 +793,30 @@ The assertion that the resistance of a submerged body is constant with speed is 
 \label{fig:drag1.png}
 \end{figure}
 
+
+\subsection{Department of Defence, to Senator Patrick's Questions on Notice}
+\begin{tcolorbox}[width=0.9\textwidth, center, colback=black!5!white,colframe=black!75!black, title= \textbf{Sept 2018 - Department of Defence, in response to Question on Notice from Senator Rex Patrick with return date 18 July 2018}]
+\textit{Senator Patrick asks a series of questions regarding the technical readiness level (TRL) of various technologies in the Future Submarine Program, and which ones were included or excluded in the French pre-concept design in the CEP. Full questions and answers can be found in Appendix \ref{QON827}.}
+\\
+\\
+\textbf{Question:} What is the Technological Readiness Level (TRL) of the propulsor being advanced for inclusion in the future submarine design.
+
+\textbf{Answer:} The technology to be used in the propulsor for the Future Submarine is assessed to be at TRL 9 noting it has been in operational use since the end of the 1990s on French submarines. The propulsor for the Future Submarine will be based on this technology.
+\\
+\\
+\textbf{Question:} Has an AIP been ruled out as a Future Submarine System in the early design work.
+
+\textbf{Answer:} At this point of the design process, increased battery and recharging capacity is proving more effective than the addition of AIP in meeting Australia's submarine mission requirements.
+
+\end{tcolorbox}
+
+This response to Questions on Notice clearly demonstrates that the technology being referred to for the pumpjet is indeed the in-service design from the Triomphant Class of SSBNs in the French Navy.  There is no conceivable way that any technology at a higher level of readiness than TRL 7 would not have detailed performance data available, across the full range of operating conditions\parencite{DSTG2018a}.  Alternatively, if the proposal is actually to design a new pumpjet ground-up for the radically different operating speed profile, then this answer is almost certainly misleading, as the actual propulsor to be used is probably at TRL 2, or at best TRL 3.  However, as I have argued before the Senate[\ref{SENmorrison}] and in Reference \parencite{morrison2018}, any attempt to develop a pumpjet that is as efficient as a propeller at low speeds is essentially impossible. The elevated pressure (and lower speed) of water at the rotor which allows the superior acoustic performance at high speed \textit{necessitates} the decline in efficiency at low speeds.
+
+The comment regarding AIP also confirms that RADM Sammut's words in the APDR are not simply careless statements to the media or poor reporting, but represent a considered position of Defence - that AIP is still being considered, (i.e. not ruled out) but doesn't currently appear superior in meeting `mission requirements'.  Another clear implication of this statement is that the mission requirements do exist, and are fixed.  If they are not so, then this statement would be most severely misleading.  This response also seems to confirm that a back-to-front design process is indeed in place, whereby the size of the hull is fixed, whilst there is still a large enough portion of the available displacement unallocated that one could consider an AIP system (several hundreds of tonnes) as one of a plurality of options to include.  That Defence requires an \textit{increased} level of batteries in order to meet the requirement can only mean that the previous nominal load of batteries was insufficienct to meet the requirement, or that the plan now is to very substantially exceed the requirement.
+
+As was discussed earlier in this section, the scale of the impact in terms of performance and displacement of major technology choices such as the type of batteries, type of propulsor, and inclusion of AIP is so large that their status would need to be determined very early in pre-concept design, well in advance of the final hull dimensions being finalised.  Otherwise the resultant variation in displacement/performance will result either in a potential engineering catastrophe (of Super-Seasprite proportions, i.e. the vessel doesn't sink and/or float), or a performance outcome that will not even remotely resemble the performance specified in the requirement.
+
+
 \FloatBarrier
 
 \newpage
@@ -817,7 +845,7 @@ It has been asserted a number of times, both in reference \parencite{kerr2018} a
 These statements again use a seemingly relevant truth, in order to distract or obscure a subsequent falsehood.  It is indeed true that surface ships do encounter wave-making resistance, and that this varies substantially as a function of speed, and submarines do not encounter this  type of resistance.  It is true that skin friction, (which is the shear component of the drag forces of any body that moves through a viscous fluid which act along its sides) as well as pressure resistance (the forces normal to the hull, which are non-cancelling on the nose and the tail) comprises essentially all of the drag that applies to a fully submerged submarine, as shown in Figure \ref{fig:drag4.png}.  However, to claim that these forces are constant with speed is to claim the most bizarre and obtuse denial of the most basic and well-established physics in this respect.  These forces scale with velocity squared, a fact which has been widely known and accepted since Froude conducted his skin-friction tests in the 1870s.\footnote{It should be noted that our understanding of skin friction has improved somewhat since the 1870s.  In particular, the distinction between laminar and turbulent flows and the transition between these two regimes as demonstrated by Osborne Reynolds in the 1880s was significant, since it was discovered that laminar flows exerted a lower skin friction, and it is the turbulent flows which scale with velocity squared.  However, whilst some effort is made to attempt to achieve some laminar flow over bow-mounted sensors in submarines at certain speeds, it is widely accepted that such a large vessel as a submarine is almost entirely enveloped by turbulent flows at essentially all operating speeds, and consequently the $V^2$ relationship has been essentially universally accepted as the dominant relationship for this purpose, including for the calculation of scalar drag coefficients (which represent the impact of the shape and smoothness of the hull) to which much design effort and literature is devoted.}  The results of those tests are shown in Figure \ref{fig:dragfroude.png}. As such, speed plays the dominant role in considering the efficiency of propulsors on submerged bodies, since they also have their efficiency fall away at off-design conditions.
 
 
-\begin{tcolorbox}[width=0.9\textwidth, center, colback=green!5!white,colframe=green!75!black, title= \textbf{How a scientist feels about being told that because underwater bodies don't make waves, the resistance they encounter is constant with speed}]
+\begin{tcolorbox}[width=0.9\textwidth, center, colback=olive!5!white,colframe=olive!75!black, title= \textbf{How a scientist feels about being told that because underwater bodies don't make waves, the resistance they encounter is constant with speed}]
 
 You know how camels have to carry two big heavy humps on their back?  Yeah, well pigs don't have to carry those two big heavy humps!  That's why pigs can fly.
 
@@ -828,35 +856,35 @@ It is simply not credible that the Department of Defence can genuinely hold such
 Almost every available source or text makes clear that the drag in water generally scales with velocity squared, including submerged vessels.
 
 \begin{figure}[h]
-\captionsetup{width=0.7\textwidth}
+\captionsetup{width=0.9\textwidth}
 \includegraphics[width=0.7\textwidth, center]{drag4.png}
 \caption{A breakdown of the components of resistance taken from Reference \parencite{mollard2011} does indeed reveal that deeply submerged submarines encounter no wave-making pressure, but still encounter frictional resistance (which scales with velocity squared).}
 \label{fig:drag4.png}
 \end{figure}
 
 \begin{figure}[h]
-\captionsetup{width=0.7\textwidth}
+\captionsetup{width=0.9\textwidth}
 \includegraphics[width=0.7\textwidth, center]{dragfroude.png}
 \caption{A table showing the results of Froude's original experiments used to measure skin friction of various surfaces in the 1870s, taken from reference \parencite{lewis1988}.  Note that the exponent of velocity is determined consistently to be about 2. }
 \label{fig:dragfroude.png}
 \end{figure}
 
 \begin{figure}[h]
-\captionsetup{width=0.7\textwidth}
+\captionsetup{width=0.9\textwidth}
 \includegraphics[width=0.7\textwidth, center]{drag1.png}
 \caption{Taken from the appendix of \underline(Fundamentals of Submarine Concept  Design) by  CAPT Harry A. Jackson USN (Ret.) \parencite{jackson1992}.  Note that the $V^2$ which indicates the relationship with velocity squared relationship}
 \label{fig:drag1.png}
 \end{figure}
 
 \begin{figure}[h]
-\captionsetup{width=0.7\textwidth}
+\captionsetup{width=0.9\textwidth}
 \includegraphics[width=0.7\textwidth, center]{drag3.png}
 \caption{Taken from Research Paper commissioned by Department of Navy (US) titled \underline{Elements of the drag of underwater bodies} \parencite{granville1976}.  Note that the $U^2$ which indicates the relationship with velocity squared relationship}
 \label{fig:drag3.png}
 \end{figure}
 
 \begin{figure}[h]
-\captionsetup{width=0.7\textwidth}
+\captionsetup{width=0.9\textwidth}
 \includegraphics[width=0.7\textwidth, center]{drag2.png}
 \caption{Taken from conference paper by Professor Volker Bertram titled \underline{Submarine Hull Design} \parencite{bertram2012}, same equation can also be found in published textbook by same author \parencite{bertram2000}.  Note that the $V^2$ which indicates the relationship with velocity squared relationship}
 \label{fig:drag2.png}
@@ -901,7 +929,7 @@ It is difficult to imagine what sort of circumstance would lead both an acting C
 
 In a clear parallel with the argument that the performance of propulsion systems on submerged bodies is independent of speed because they don't face wave-making resistance, this line of reasoning involves the presentation of a seemingly relevant, comprehensible technical truth which is used to justify a completely blatant technical falsehood.  Even if Dr Kershaw is not familiar with this area of science and is speaking outside his competence, it is difficult to see how such a pattern of argument would occur so consistently by accident.  For Dr Kershaw to genuinely believe in the arguments that he is making here is almost unthinkable.  For him to casually or accidentally make such careless arguments also seems implausibly reckless.  An alternative explanation is that the results of the research already conducted by the government broadly support the conclusions of my own research, and this is well known by Dr Kershaw, and  that these unfortunate statements are being made in a desperate attempt to deflect attention in order to avoid admitting this fact.
 
-\begin{tcolorbox}[width=0.9\textwidth, center, colback=green!5!white,colframe=green!75!black, title= \textbf{How a scientist feels being told that the pumpjet is a game-changer for our diesel-electric submarine because it is so large, where it wouldn't make sense on a smaller one}]
+\begin{tcolorbox}[width=0.9\textwidth, center, colback=olive!5!white,colframe=olive!75!black, title= \textbf{How a scientist feels being told that the pumpjet is a game-changer for our diesel-electric submarine because it is so large, where it wouldn't make sense on a smaller one}]
 
 \textbf{Bruce:} I'm not sure about using these fat knobbly tires on my road-bike for the cycle tour... No-one else is using such tyres on a road-bike, I think they'd be slow and inefficient.
 
@@ -945,7 +973,7 @@ To argue that none of these concepts have any useful bearing or meaning when app
 % In the case of a pumpjet mounted on the aft end of a body of revolution such as a torpedo or submarine, for the most important elements in determining efficiency (such as mass flow rate) control lies in the designers hands to adapt the shape of the shroud to that of the hub in order to maintain equivalent volumes between the hub and the shroud, and preserve equivalent streamlines.  The ratio between the area of the inlet, and the area of the outlet, and the ratio between the velocities of the water stream at the inlet and outlet of the shroud, are fundamental parameters in pumpjet design with regards to efficiency, as can be seen from a reading of Reference \parencite{henderson1964}, or Reference \parencite{abdel2010}.  And whilst in the discussion of different propulsion mechanisms alternative definitions and nomenclatures may be used in various forms of literature (for instance, to discuss the pump efficiency as a component of the jet efficiency, or account for different non-ideal effects in building up from an ideal model as seen in Reference \parencite{wislicenus1973}, or because of the focus of that particular study) all will allow for a method of accounting for velocity variance in the incoming flow, and the effect of propulsors action on the boundary layer or wake ahead of it.
 % Ultimately, all marine propulsion theory can be related to the acceleration of water, and despite the differences in the different means by which that acceleration occurs, there are natural bounds and limits to the extent to which the impact of accelerated water flow around a hull become incomparable due to the methods of that acceleration occurring.
 
-\begin{tcolorbox}[width=0.9\textwidth, center, colback=green!5!white,colframe=green!75!black, title= \textbf{How a scientist feels about being told the pumpjet efficiency can't be assessed because it depends on the hull}]
+\begin{tcolorbox}[width=0.9\textwidth, center, colback=olive!5!white,colframe=olive!75!black, title= \textbf{How a scientist feels about being told the pumpjet efficiency can't be assessed because it depends on the hull}]
 
 \textbf{Bruce:} I'd like to buy some light, breathable shoes to go running with.
 
@@ -1182,7 +1210,22 @@ Taking it as given that the French do have possession of adequate and far more d
 
 This poses a seemingly irreconcilable tension between the desperate, implausible arguments currently being made by Defence, and the almost certainty that they have quite definitive and reliable results readily available to them.  It is difficult to accept as likely that such desperate and embarrassing arguments are being made because Defence genuinely doesn't know better, if the means to know better are actually so close at hand.  It seems far more probable that Defence actually is in possession of clear, conclusive evidence which broadly supports the conclusions of my report, and is now deliberately concealing that evidence, and attempting to excuse why they have not drawn the obvious conclusions that any sensible person normally would: that a pumpjet is entirely unsuited to a diesel-electric submarine.
 
+\newpage
 
+\section{About the Author}
+
+\begin{wrapfigure}{r}{0.35\textwidth}
+  \begin{center}
+    \includegraphics[width=0.28\textwidth]{aidan.jpg}
+  \end{center}
+  \caption{Aidan Morrison}
+\end{wrapfigure}
+
+Aidan Morrison is a physicist, entrepreneur and data-scientist who lives in Sydney with his wife Constance.  He graduated from the Australian National University with First Class Honours in Theoretical Particle Physics, and commenced a PhD in Experimental Particle Physics, doing work on the ATLAS Experiment at CERN searching for the Higgs Boson.
+
+He left his PhD incomplete in order to found Rubber Ducky Defence, a start-up dedicated to developing small naval platforms and weapons for swarm warfare, and chose waterjets and pumpjets respectively for the  semi-submersible Swarm Combat Vessel and medium-weight torpedo involved.  Rubber Ducky responded to Requests for Proposal (RFPs) for SEA 1778 and JP 1770, by adapting this vessel to meet a requirement for deployable mine-countermeasures and rapid environmental assessment.  This requirement included towing and deploying a range of fully-submerged sensors, decoys, remotely and autonomously operated underwater vehicles in a variety of speeds to meet the specified conceptual operations.  Endurance and range were crucial considerations in responding to the Preliminary Function and Performance Specifications for these two projects.  A detailed proposal evolved from this concept and submitted to DSTO's Concept Technology Demonstrator program in 2013 was acknowledged as ``probably a world-class development".
+
+His other accomplishments include co-founding a bar-restaurant in Randwick called Bat Country, and developing a predictive forecasting tool for hospitality businesses using machine-learning techniques under Trendlock, which also undertakes additional consulting services.  He has also lead a team of economic analysts at boutique think-tank, and currently works as a data-scientist at Tridant, most recently using machine-learning and statistical techniques to implement predictive maintenance routines for heavy industrial machinery.
 
 % \begin{tcolorbox}[width=0.9\textwidth, center, colback=green!5!white,colframe=green!75!black, title= \textbf{How a scientist feels about the pumpjet smoothing argument}]
 % Imagine that you came to buy a coffee from a your favourite cafe, only to find that they weren't selling any coffee that day, and wouldn't be selling any more indefinitely.  Their coffee maching had been removed, and they were only selling cold-drip, coffee, stored in little bottles in the fridge. Overcoming initial shock (since you weren't aware of any other cafes who would make such a bizarre decision as to not sell espresso-coffee as a substantial part of their offering), you made some tentative inquiries as to why.
@@ -1196,7 +1239,16 @@ This poses a seemingly irreconcilable tension between the desperate, implausible
 
 \FloatBarrier
 
+\newpage
+
+
+\begin{flushleft}
+
 \printbibliography
+
+\end{flushleft}
+
+\FloatBarrier
 
 \newpage
 
@@ -2036,8 +2088,25 @@ Dr Kershaw concluded.
 \includegraphics[width=0.9\textwidth, center]{def6.png}
 \end{figure}
 
+\FloatBarrier
 
+\newpage
+
+\subsection{Answer to Question on Notice}\label{QON827}
+
+\begin{figure}[h]
+\includegraphics[width=0.7\textwidth, center]{QON827a.png}
+\end{figure}
+
+\newpage
+
+\begin{figure}[h]
+\includegraphics[width=0.7\textwidth, center]{QON827b.png}
+\end{figure}
+
+\FloatBarrier
 \end{appendices}
+
 
 
 \end{document}
